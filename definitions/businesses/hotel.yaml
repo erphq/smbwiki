@@ -1,0 +1,20 @@
+id: hotel
+name: Hotel
+codes:
+  naics: "721110"
+catalog_group: food-lodging
+extends: lodging-base
+summary: >
+  A hotel sells dated room inventory while operating a building that
+  remains occupied around the clock. Reservations, arrivals, room
+  readiness, guest identity, access, folios, service requests,
+  maintenance, security, and departure all change the same live room map.
+
+  Demand and staffing vary by day, channel, room type, group commitment,
+  and length of stay. Front desk, housekeeping, maintenance, and
+  management need one current record of what is occupied, clean,
+  inspected, held, out of service, promised, and still unresolved for a
+  guest.
+supply_chain:
+  buys_from: [linen-service, hospitality-supply-distributor]
+  sells_to: [individual-client]

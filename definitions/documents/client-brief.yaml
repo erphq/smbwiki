@@ -1,0 +1,6 @@
+id: client-brief
+name: Client brief
+kind: document
+summary: >
+  The client, problem, desired result, constraints, available inputs,
+  decision owners, and timing known before scope is agreed.

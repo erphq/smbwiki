@@ -1,0 +1,6 @@
+id: laboratory-technologist
+name: Laboratory technologist
+kind: role
+summary: >
+  Accepts specimens, performs validated tests, reviews control results,
+  and releases or escalates laboratory findings.

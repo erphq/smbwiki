@@ -1,0 +1,24 @@
+id: tax-preparation-service
+name: Tax Preparation Service
+codes:
+  naics: "541213"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A tax preparation service gathers identity, filing history, income,
+  deductions, credits, elections, entity records, and supporting
+  documents for a defined return. Intake must expose missing forms,
+  changed circumstances, conflicting information, and deadlines early.
+
+  Preparation connects source evidence to classifications, calculations,
+  review questions, client decisions, signatures, filing, payment or
+  refund instructions, and retained records. Seasonal volume makes queue
+  state and missing-client information as important as technical work.
+revenue_model:
+  - id: return-preparation
+    note: preparation and filing of defined tax returns
+  - id: planning-and-response
+    note: separately authorized projections, notices, amendments, and advisory work
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+supply_chain:
+  sells_to: [individual-client, commercial-client]

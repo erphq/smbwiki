@@ -1,0 +1,109 @@
+id: single-family-home-builder
+name: Single-Family Home Builder
+codes:
+  naics: '236115'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A single-family home builder controls a house from lot and plan review
+  through permits, trade contracts, selections, construction, inspections, and
+  buyer turnover. The operating schedule has to join municipal approvals,
+  long-lead material, owner decisions, lender draws, and a sequence of small
+  subcontractors working on one exposed asset.
+
+
+  Margin is fixed long before every field condition is known. The builder
+  protects it by resolving scope interfaces, releasing selections on time,
+  documenting changes, checking concealed work, and closing punch items before
+  trade crews leave. Warranty exposure begins at handover, so commissioning
+  and owner instruction are production work.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: lot-due-diligence
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: residential-preconstruction
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: home-selections-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: residential-trade-sequencing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: homeowner-handover
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - building-material-distributor
+    - specialty-subcontractor
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

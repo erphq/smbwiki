@@ -1,0 +1,6 @@
+id: lease-application
+name: Lease application
+kind: document
+summary: >
+  Applicant, unit, screening consent, identity, income, occupancy, and
+  required supporting information.

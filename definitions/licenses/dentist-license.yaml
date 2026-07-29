@@ -1,0 +1,8 @@
+id: dentist-license
+name: Dentist license
+kind: license
+geo: [us]
+summary: >
+  State professional authorization to practice dentistry, maintained
+  through education, renewal, and disciplinary oversight.
+jurisdiction: state

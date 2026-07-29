@@ -1,0 +1,7 @@
+id: accounting
+name: Accounting
+kind: software-category
+summary: >
+  The ledger: AP, AR, payroll postings, and financial statements.
+erpai_category: finance
+erpai_apps: []

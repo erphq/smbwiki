@@ -1,0 +1,7 @@
+id: labor-cost-percentage
+name: Labor cost percentage
+kind: metric
+summary: >
+  Labor cost as a share of revenue.
+unit: percent
+direction: lower

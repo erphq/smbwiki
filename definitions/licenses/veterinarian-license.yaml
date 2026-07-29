@@ -1,0 +1,8 @@
+id: veterinarian-license
+name: Veterinarian license
+kind: license
+geo: [us]
+summary: >
+  State professional authorization to practice veterinary medicine,
+  maintained through renewal and the applicable licensing board.
+jurisdiction: state

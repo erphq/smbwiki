@@ -1,0 +1,38 @@
+id: dialysis-center
+name: Dialysis Center
+codes:
+  naics: "621492"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  A dialysis center schedules repeated treatments against a prescribed
+  order, vascular access, target fluid removal, laboratory results,
+  medications, machine, station, water system, and qualified staff.
+  Patient condition at arrival can change the safe treatment plan.
+
+  Each session records pre-treatment assessment, machine and dialysate
+  checks, connection, monitoring, interventions, medications,
+  disconnection, post-treatment state, and unresolved findings. Facility
+  control also covers water quality, infection prevention, emergency
+  readiness, equipment maintenance, and supply continuity.
+revenue_model:
+  - id: dialysis-treatments
+    note: recurring facility treatments billed under covered renal-care arrangements
+  - id: related-clinical-services
+    note: eligible medications, tests, training, and support tied to treatment
+  - remove: [patient-services, preventive-care]
+skills:
+  - ref: care-plan-delivery
+    roles: [clinician, clinical-assistant]
+    documents: [care-plan, medication-record, incident-report]
+    metrics: [incident-rate]
+    software: [care-management, electronic-health-record]
+licenses:
+  us:
+    - ref: dialysis-facility-certification
+      requirement: required
+      condition: Required for the modeled facility to operate and participate in the applicable coverage program.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [dialysis-supply-distributor]
+  sells_to: [patient, payer]

@@ -1,0 +1,6 @@
+id: tracking-coordinator
+name: Tracking coordinator
+kind: role
+summary: >
+  Confirms appointments and milestones, watches active loads, records
+  exceptions, and keeps shipper and carrier communication current.

@@ -1,0 +1,72 @@
+id: laundromat
+name: Laundromat
+codes:
+  naics: "812310"
+catalog_group: personal-recreation
+summary: >
+  A laundromat sells washer and dryer cycles through unattended or
+  attendant-supported machines. Payment, machine activation, water,
+  heat, drainage, cycle completion, and customer access have to work
+  together for each vend.
+
+  Machine condition, cleaning, lint removal, utilities, payment
+  settlement, refunds, and maintenance form the daily operating record.
+  One failed machine shifts demand to the remaining capacity and can
+  create queues. Transaction and utility patterns help the operator
+  identify equipment or collection issues between site visits.
+revenue_model:
+  - id: washer-cycles
+    note: self-service wash programs priced by machine size and cycle
+  - id: dryer-time
+    note: timed drying capacity purchased after washing
+  - id: vending
+    note: detergent, softener, bags, and other visit supplies
+skills:
+  - ref: machine-activation
+    roles: [attendant]
+    documents: [machine-transaction]
+    metrics: [revenue-per-machine]
+    software: [laundromat-management, unattended-payment-system]
+  - ref: self-service-laundry
+    roles: [attendant]
+    documents: [machine-transaction, cycle-record]
+    metrics: [turns-per-machine-day, cycle-failure-rate]
+    software: [laundromat-management]
+  - ref: payment-reconciliation
+    roles: [owner-operator, attendant]
+    documents: [machine-transaction, collection-log]
+    software: [laundromat-management, accounting]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician, owner-operator]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [machine-uptime]
+    software: [facility-management, laundromat-management]
+  - ref: facility-cleaning
+    roles: [attendant]
+    documents: [cleaning-log]
+    software: [facility-management]
+  - ref: utility-monitoring
+    roles: [owner-operator]
+    documents: [utility-bill, cycle-record]
+    metrics: [utility-cost-per-cycle]
+    software: [laundromat-management, accounting]
+  - ref: accounts-payable
+    roles: [owner-operator]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: attendant
+      - role: maintenance-technician
+supply_chain:
+  buys_from: [laundry-equipment-distributor, utility-provider]
+  sells_to: [retail-consumer, apartment-operator]
+products:
+  - commercial-washer-extractor
+  - commercial-tumble-dryer
+  - coin-counting-kiosk
+  - vending-machine
+  - laundry-folding-machine
+seo:
+  title: "Laundromat: How the Business Works | smbwiki"

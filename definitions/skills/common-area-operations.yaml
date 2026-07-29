@@ -1,0 +1,95 @@
+id: common-area-operations
+name: Common-area operations
+kind: skill
+department: operations
+summary: >-
+  Plans inspection, cleaning, security, waste, lighting, landscape,
+  life-safety access, comfort, and repair across shared tenant areas.
+  Common-area operations leaves a current work basis, a field record, and
+  acceptance evidence that another operator can trace.
+inputs:
+  - lease
+outputs:
+  - property-operating-statement
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before common-area operations, read the current scope and revisions,
+      then verify current leases, tenant contacts, vendor contracts, property
+      budget, building systems, compliance calendar, and owner authority.
+  - name: Set the field controls
+    note: >-
+      Translate common-area operations into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During common-area operations, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept common-area operations, check the completed work against
+      accurate charges and recoveries, maintained common areas, controlled
+      vendors, documented tenant work, and timely owner reporting, then close
+      correction and issue the resulting record.
+tension: >-
+  Common-area operations has to remain inside its acceptance basis while
+  production moves. Lease duties, physical operations, and accounting can
+  drift apart until a tenant dispute or major repair exposes the gap.
+failure_modes:
+  - name: Common-area operations starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      common-area operations is settled.
+    signal: >-
+      The common-area operations work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Common-area operations closes without evidence
+    cost: >-
+      A concealed condition or required result from common-area operations
+      cannot be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Common-area operations is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Common-area operations is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Common-area operations starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Common-area operations uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Commercial lease and property operations
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of common-area operations.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for common-area operations have to be captured while
+      the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Common-area operations can use digital revisions, checklists, hold points,
+    photo capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting common-area operations
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop common-area operations before work
+    begins?
+  - >-
+    Which record proves common-area operations was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

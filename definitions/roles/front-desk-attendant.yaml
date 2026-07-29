@@ -1,0 +1,6 @@
+id: front-desk-attendant
+name: Front desk attendant
+kind: role
+summary: >
+  Monitors entry, handles account exceptions, answers member questions,
+  and keeps the visible facility handoff working.

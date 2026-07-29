@@ -1,0 +1,6 @@
+id: beverage-release-record
+name: Beverage release record
+kind: document
+summary: >
+  Specification, sample identity, laboratory and sensory results,
+  exceptions, disposition, released quantity, and release authority.

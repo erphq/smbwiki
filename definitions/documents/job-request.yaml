@@ -1,0 +1,6 @@
+id: job-request
+name: Job request
+kind: document
+summary: >
+  A qualified inbound job before it is scheduled: customer, problem,
+  urgency.

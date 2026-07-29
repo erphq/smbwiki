@@ -1,0 +1,110 @@
+id: framing-contractor
+name: Framing Contractor
+codes:
+  naics: '238130'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A framing contractor converts structural plans and field control into
+  floors, walls, roofs, openings, sheathing, connectors, and bracing. Layout
+  is repeated across many pieces, so a small error in control, bearing, or
+  rough opening can propagate into cladding, windows, cabinets, mechanical
+  runs, and finish work.
+
+
+  The crew balances installed quantity with load-path details and inspection
+  readiness. Lumber condition, component deliveries, temporary bracing,
+  weather, and access shape the sequence. Daily checks capture concealed
+  connectors and changed conditions before sheathing or the next trade removes
+  the evidence needed for correction.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: framing-layout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: floor-framing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: wall-framing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+      - production-plan-attainment
+    software:
+      - construction-management
+  - ref: roof-framing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: rough-opening-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - lumberyard
+    - engineered-wood-supplier
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

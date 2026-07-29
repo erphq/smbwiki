@@ -1,0 +1,27 @@
+id: remediation-contractor
+name: Remediation Contractor
+codes:
+  naics: "562910"
+catalog_group: construction-property
+extends: project-services-base
+summary: >
+  A remediation contractor contains and removes hazardous or damaged
+  material under a defined assessment, work area, method, clearance
+  requirement, and waste path. Site history, sampling, occupant
+  protection, utilities, access, and insurer or owner decisions shape
+  the work package.
+
+  Conditions change as assemblies open. The crew records containment,
+  air or moisture control, removed quantities, transport, cleaning,
+  tests, photographs, and changed scope before evidence disappears.
+  Release depends on the specified verification and documented transfer
+  to reconstruction or occupancy.
+revenue_model:
+  - id: emergency-mitigation
+    note: containment, extraction, drying, and stabilization after a loss
+  - id: regulated-remediation
+    note: planned removal and clearance under a defined hazardous-material scope
+  - remove: [quoted-projects]
+supply_chain:
+  buys_from: [environmental-testing-laboratory, waste-disposal-facility]
+  sells_to: [homeowner, property-management-company]

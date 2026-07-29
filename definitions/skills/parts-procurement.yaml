@@ -1,0 +1,91 @@
+id: parts-procurement
+name: Parts procurement
+kind: skill
+department: supply
+summary: >
+  Parts procurement turns authorized repair work into the exact
+  components and supplies required at the bay. Identification, source,
+  price, expected arrival, receipt, and return status stay tied to the
+  repair so technical fit and job cost remain visible.
+inputs: [work-authorization]
+outputs: [purchase-order, supplier-invoice]
+steps:
+  - name: Translate the authorized work
+    role: parts-manager
+    consumes: [work-authorization]
+    note: >
+      Vehicle identity, equipment variant, and repair method determine
+      the part specification before price is compared.
+  - name: Choose source and promise
+    role: parts-manager
+    note: >
+      Availability, fit confidence, warranty, return terms, and delivery
+      time are considered together.
+  - name: Place the order
+    role: parts-manager
+    produces: [purchase-order]
+    note: >
+      The order carries the repair reference and required date so the
+      supplier promise can be checked.
+  - name: Receive to the repair
+    role: parts-manager
+    produces: [supplier-invoice]
+    note: >
+      Quantity, damage, identifiers, cores, and invoice cost are checked
+      before the part reaches the technician.
+tension: >
+  Fast availability competes with fit confidence and economic recovery.
+  The quickest part can save a bay today; a wrong, nonreturnable, or
+  weakly supported part creates delay and cost after installation.
+failure_modes:
+  - name: Wrong variant
+    cost: >
+      The vehicle occupies capacity while the replacement is sourced and
+      the first part enters a return process.
+    signal: >
+      The order was placed from year and model without a complete vehicle
+      or installed-part identifier.
+  - name: Part arrives without job ownership
+    cost: >
+      Material is misplaced, installed on another repair, or excluded
+      from the job cost.
+    signal: >
+      Received parts lack a repair-order label or assigned location.
+  - name: Core or return expires
+    cost: >
+      Recoverable value becomes a permanent supplier charge.
+    signal: >
+      Removed parts and rejected components have no return owner or due
+      date.
+maturity:
+  - level: run badly
+    looks_like: >
+      Technicians search supplier sites from the bay and parts arrive
+      without repair labels or return tracking.
+  - level: run well
+    looks_like: >
+      Fit, source, arrival, cost, receipt, and returns are controlled by
+      one parts queue tied to authorized work.
+  - level: run excellently
+    looks_like: >
+      Supplier performance and fit history guide sourcing, and the shop
+      knows which open part can delay each repair.
+competencies:
+  - name: Parts identification
+    note: >
+      Similar-looking components can differ by production date, option,
+      calibration, connector, or installed system.
+  - name: Supply recovery
+    note: >
+      The parts manager protects credits, cores, warranties, and return
+      windows after the bay has finished with the item.
+automation:
+  now: >
+    Catalog lookup, cross references, availability and price search,
+    order transmission, receiving labels, and return reminders.
+  human: >
+    Resolving uncertain fit, judging substitutions, escalating a delayed
+    repair, and deciding which supplier promise is credible.
+questions:
+  - Which open repair is currently waiting for a part without a confirmed arrival?
+  - Are cores and rejected parts tracked until credit is received?

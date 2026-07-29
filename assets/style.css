@@ -1,0 +1,261 @@
+/* smbwiki: quiet wiki, per sphinxstack tokens. White, dense, flat.
+   Blue links, hairline rules, no accent system. Mono only for literals. */
+
+:root {
+  --ink: #202122;
+  --soft: #54595d;
+  --muted: #72777d;
+  --hair: #c8ccd1;
+  --hair-lt: #eaecf0;
+  --blue: #0645ad;
+  --blue-visited: #0b0080;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font: 15px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: #fff;
+}
+.wrap { max-width: 66rem; margin: 0 auto; padding: 0 1.25rem; }
+
+header { border-bottom: 1px solid var(--hair); background: #fff; }
+header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding-top: 0.9rem; padding-bottom: 0.9rem;
+}
+.wordmark { font: 700 1.15rem/1 Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif; color: var(--ink); text-decoration: none; }
+.wordmark::after { content: "."; color: var(--muted); }
+nav a { font-size: 0.92rem; color: var(--blue); text-decoration: none; margin-left: 1.1rem; }
+nav a:hover { text-decoration: underline; }
+footer { border-top: 1px solid var(--hair); margin-top: 3rem; }
+footer .wrap { padding-top: 0.9rem; padding-bottom: 1.6rem; font-size: 0.85rem; color: var(--soft); }
+footer a { color: var(--blue); text-decoration: none; }
+
+main.wrap { padding-top: 1.4rem; padding-bottom: 1rem; }
+.kicker { font-size: 0.82rem; color: var(--muted); margin: 0 0 0.15rem; }
+.statline { font-size: 0.9rem; color: var(--muted); margin: -0.2rem 0 0.9rem; }
+.statline b { color: var(--ink); font-weight: 700; }
+.skill-line { font-size: 0.9rem; color: var(--soft); border-left: 2px solid var(--ink); padding-left: 0.8rem; margin: 0.9rem 0; }
+
+h1 { font: 400 2.1rem/1.2 Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", Georgia, serif; letter-spacing: -0.01em; margin: 0 0 0.6rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--hair); }
+h2 { font: 400 1.4rem/1.25 Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", Georgia, serif; margin: 2.1rem 0 0.5rem; }
+h2::after { content: ""; display: block; width: 3.5rem; border-bottom: 2px solid var(--ink); margin-top: 0.3rem; }
+p { margin: 0.55rem 0; }
+ul, ol { margin: 0.55rem 0; padding-left: 1.5rem; }
+li { margin: 0.3rem 0; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+main a:visited { color: var(--blue-visited); }
+.muted { color: var(--muted); font-weight: 400; }
+.note { color: var(--soft); }
+.dangling { color: var(--muted); }
+.source { margin-top: 2.2rem; font-size: 0.85rem; color: var(--muted); }
+.dense { line-height: 1.9; }
+
+/* homepage shared-node indexes: columned, one item per line */
+.index-cols { columns: 4 13rem; column-gap: 2.6rem; list-style: none; margin: 0.6rem 0 0; padding: 0; font-size: 0.92rem; }
+.index-cols li { break-inside: avoid; margin: 0; padding: 0.16rem 0; }
+.usecount { color: var(--muted); font-size: 0.78rem; }
+
+/* tables */
+.tblwrap { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 0.92rem; min-width: 100%; }
+th, td { text-align: left; padding: 0.35rem 0.9rem 0.35rem 0; border-bottom: 1px solid var(--hair-lt); vertical-align: top; }
+th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap; }
+
+/* homepage business catalog: grouped text index, sized for 100 types */
+.business-sectors { margin: 0; }
+.business-sector {
+  display: grid;
+  grid-template-columns: 10.5rem minmax(0, 1fr);
+  gap: 0 1.4rem;
+  margin: 0 0 1.3rem;
+}
+.business-sector h3 {
+  margin: 0.15rem 0 0;
+  color: var(--soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.business-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.28rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.business-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  min-width: 0;
+  margin: 0;
+}
+.business-list a { min-width: 0; }
+.business-list span {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* homepage hero: same structure, given room. White field, no tint band.
+   Hierarchy comes from type scale and vertical rhythm, not boxes. */
+.home-lead {
+  margin-top: clamp(2.4rem, 6vw, 4.5rem);
+  padding-bottom: clamp(2.4rem, 4.5vw, 3.4rem);
+  border-bottom: 1px solid var(--hair-lt);
+}
+.home-lead h1 {
+  margin: 0 0 1.05rem; padding: 0; border: 0;
+  font: 400 clamp(2.5rem, 5vw, 3.6rem)/1.05 Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", Georgia, serif;
+  letter-spacing: -0.022em;
+}
+.deck {
+  max-width: 32rem; margin: 0;
+  font: 400 clamp(1.24rem, 1.9vw, 1.42rem)/1.42 Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", Georgia, serif;
+  color: #4a4f54;
+}
+.home-brief {
+  display: grid;
+  grid-template-columns: minmax(0, 34rem) minmax(13rem, 1fr);
+  gap: clamp(2.5rem, 7vw, 6rem);
+  align-items: start;
+  margin-top: clamp(2.4rem, 4.5vw, 3.4rem);
+}
+.home-copy { font-size: 1.055rem; line-height: 1.72; }
+.home-copy p { margin: 0; }
+.home-copy p + p { margin-top: 1.15rem; }
+.thesis { color: var(--soft); }
+/* navigation column: hairline-separated rows, not bullets */
+.contents { margin: 0; padding: 0; list-style: none; }
+.contents li { margin: 0; }
+/* rules sit between rows only, so the first link aligns with the copy */
+.contents a { display: block; padding: 0.72rem 0; border-top: 1px solid var(--hair-lt); }
+.contents li:first-child a { padding-top: 0; border-top: 0; }
+.home-lead + h2 { margin-top: clamp(2.2rem, 4vw, 2.7rem); }
+
+/* catalog filter: one field above the index, revealed only when it works */
+.catalog-filter { display: grid; grid-template-columns: 10.5rem minmax(0, 1fr); gap: 0 1.4rem; align-items: baseline; margin: 0.6rem 0 1.1rem; }
+.catalog-filter label { color: var(--soft); font-size: 0.82rem; font-weight: 600; }
+.catalog-filter input {
+  grid-column: 2; width: 100%; max-width: 26rem; font: inherit; color: var(--ink);
+  background: #fff; border: 1px solid var(--hair); border-radius: 2px; padding: 0.32rem 0.5rem;
+}
+.catalog-filter input:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; border-color: var(--blue); }
+.filter-hint { grid-column: 2; margin: 0.35rem 0 0; font-size: 0.82rem; color: var(--muted); }
+.filter-hint button { font: inherit; color: var(--blue); background: none; border: 0; padding: 0; cursor: pointer; }
+.filter-hint button:hover { text-decoration: underline; }
+.filter-status { margin: 0 0 0.8rem 11.9rem; font-size: 0.82rem; color: var(--soft); }
+.filter-empty { margin: 0 0 0.8rem 11.9rem; font-size: 0.9rem; color: var(--soft); }
+[hidden] { display: none !important; }
+
+/* shared and specific work */
+.split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 3rem; margin-top: 1.1rem; }
+.split h3 { margin: 0 0 0.4rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--hair-lt); color: var(--soft); font-size: 0.82rem; font-weight: 600; }
+.tally { list-style: none; margin: 0; padding: 0; font-size: 0.95rem; }
+.tally li { display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem; margin: 0; padding: 0.26rem 0; }
+.tally span { flex: 0 0 auto; color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+
+@media (max-width: 720px) {
+  .home-lead { margin-top: 1.8rem; padding-bottom: 2rem; }
+  .home-lead h1 { font-size: 2.35rem; }
+  .home-brief { grid-template-columns: 1fr; gap: 1.6rem; margin-top: 1.7rem; }
+  .business-sector { grid-template-columns: 1fr; gap: 0.4rem; }
+  .business-list { grid-template-columns: 1fr; }
+  .catalog-filter { grid-template-columns: 1fr; gap: 0.3rem; }
+  .catalog-filter input, .filter-hint { grid-column: 1; }
+  .filter-status, .filter-empty { margin-left: 0; }
+  .split { grid-template-columns: 1fr; gap: 1.4rem; }
+}
+
+/* diagrams */
+.diagram-shell { overflow-x: auto; }
+.diagram { max-width: 100%; height: auto; display: block; margin: 0.7rem 0; }
+.diagram rect { fill: #fff; stroke: #9aa0a6; }
+.diagram a:hover rect { fill: #eaf3ff; stroke: var(--blue); }
+.diagram text { font: 12.5px -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--ink); text-anchor: middle; }
+.diagram a text { fill: var(--blue); }
+.diagram path { stroke: var(--muted); stroke-width: 1.1; }
+.diagram marker path { fill: var(--muted); stroke: none; }
+.diagram text.edge { font: italic 10.5px Palatino, "Palatino Linotype", Georgia, serif; fill: var(--muted); }
+/* CSS text-anchor beats the presentation attribute, so opt in by class */
+.diagram text.edge.from-left { text-anchor: start; }
+.diagram text.step-name { font-size: 12.5px; }
+.diagram rect.self { stroke: var(--ink); stroke-width: 1.6; }
+.diagram text.step-role { font: italic 10px Palatino, "Palatino Linotype", Georgia, serif; fill: var(--muted); }
+.step-notes { margin-top: 0.8rem; }
+.step-notes li { margin: 0.45rem 0; }
+.step-notes strong { font-weight: 600; }
+
+/* interactive operating graph */
+.op-wrap { position: relative; border: 1px solid var(--hair); }
+#opcanvas { width: 100%; height: 30rem; }
+.op-medium #opcanvas { height: 22rem; }
+.op-small #opcanvas { height: 14rem; }
+.op-tools { position: absolute; top: 0.5rem; right: 0.5rem; z-index: 5; display: flex; gap: 0.3rem; }
+.op-tools button { font: 600 0.85rem/1 -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: #fff; border: 1px solid var(--hair); border-radius: 2px; padding: 0.35em 0.6em; cursor: pointer; }
+.op-tools button:hover { border-color: var(--ink); }
+.op-tools button:focus-visible, .graph-relationships summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.graph-relationships { margin-top: 0.45rem; font-size: 0.84rem; color: var(--soft); }
+.graph-relationships summary { width: fit-content; color: var(--blue); cursor: pointer; }
+.graph-relationships ul { columns: 2 22rem; margin-top: 0.45rem; }
+.graph-relationships li { break-inside: avoid; }
+.graph-relationships li span { color: var(--muted); }
+#opcanvas.graph-error { height: auto; min-height: 8rem; padding: 3rem 1rem; color: var(--soft); }
+
+.figcaption { font: italic 0.88rem/1.5 Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif; color: var(--soft); margin: 0.2rem 0 0; }
+.figcaption a { font-style: normal; }
+
+@media (max-width: 720px) {
+  #opcanvas { height: 24rem; }
+  .graph-relationships ul { columns: 1; }
+}
+.dept { margin: 1.5rem 0 0.3rem; font: 600 0.82rem/1.4 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--soft); text-transform: uppercase; letter-spacing: 0.06em; }
+.dept .muted { text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+/* what a skill is: a full-width inset panel, laid out across so it stays
+   short. As a right-hand box in the hero grid it left a tall column of
+   dead white beside the lead; this reads as a magazine pull-out instead. */
+.skillbox {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 1rem 2.6rem;
+  margin: 2.1rem 0 0;
+  padding: 1.3rem 1.5rem;
+  background: #f8f9fa;
+  border: 1px solid var(--hair-lt);
+  border-radius: 2px;
+  font-size: 0.92rem;
+  line-height: 1.62;
+}
+.skillbox h2 {
+  margin: 0 0 0.5rem; padding: 0; border: 0;
+  font: 400 1.2rem/1.25 Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+.skillbox h2::after { display: none; }
+.skillbox p { margin: 0 0 0.7rem; }
+.skillbox p:last-child { margin-bottom: 0; }
+.skillbox-text, .skillbox-try { min-width: 0; }
+.skillbox-sub {
+  margin: 0 0 0.3rem; color: var(--muted);
+  font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em;
+}
+.skillbox .note { font-size: 0.86rem; }
+.paste { margin: 0 0 0.7rem; }
+.paste code {
+  display: block; overflow-x: auto; white-space: pre-wrap; word-break: break-word;
+  font: 0.78rem/1.55 var(--mono); color: var(--ink);
+  background: #fff; border: 1px solid var(--hair); border-radius: 2px;
+  padding: 0.55rem 0.65rem;
+}
+
+@media (max-width: 720px) {
+  .skillbox { grid-template-columns: 1fr; gap: 1.1rem; padding: 1.1rem 1.15rem; }
+}

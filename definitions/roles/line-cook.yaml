@@ -1,0 +1,6 @@
+id: line-cook
+name: Line cook
+kind: role
+summary: >
+  Executes a station during service against ticket times and recipe
+  specs.

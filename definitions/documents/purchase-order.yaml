@@ -1,0 +1,5 @@
+id: purchase-order
+name: Purchase order
+kind: document
+summary: >
+  A committed order to a supplier: items, quantities, agreed prices.

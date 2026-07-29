@@ -1,0 +1,9 @@
+id: field-service-management
+name: Field service management
+kind: software-category
+summary: >
+  Intake, scheduling, dispatch, work orders, quoting, and mobile tech
+  workflow for trades businesses; the operational spine of field
+  services.
+erpai_category: operations
+erpai_apps: []

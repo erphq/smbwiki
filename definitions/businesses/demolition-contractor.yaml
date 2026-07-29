@@ -1,0 +1,109 @@
+id: demolition-contractor
+name: Demolition Contractor
+codes:
+  naics: '238910'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A demolition contractor surveys, isolates, removes, sorts, hauls, and
+  documents existing building or site work in a controlled sequence.
+  Structural stability, hazardous materials, active utilities, occupied
+  neighbors, dust, noise, access, salvage, and disposal rules have to be
+  settled before removal accelerates.
+
+
+  Existing drawings are incomplete evidence. The contractor opens work
+  carefully, compares the actual assembly with the engineering survey, and
+  stops when load paths or materials differ. Daily control tracks exclusion
+  zones, remaining stability, debris routes, regulated waste, changed
+  conditions, and the exact limits left ready for new construction.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: pre-demolition-engineering-survey
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: hazardous-material-coordination
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: utility-isolation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: selective-demolition
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: demolition-waste-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - waste-disposal-facility
+    - hazardous-material-abatement-contractor
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

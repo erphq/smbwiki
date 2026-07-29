@@ -1,0 +1,64 @@
+id: production-shop-base
+name: Production shop (base)
+abstract: true
+revenue_model:
+  - id: production-orders
+    note: specified goods produced and sold by unit, lot, or project
+  - id: setup-and-engineering
+    note: preparation and technical work charged for custom production
+skills:
+  - ref: lead-intake
+    roles: [office-manager, estimator]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [customer-relationship-management]
+  - ref: quoting
+    roles: [estimator, production-manager]
+    documents: [quote]
+    metrics: [quote-win-rate]
+    software: [manufacturing-operations]
+  - ref: production-control
+    roles: [production-manager, machine-operator]
+    documents: [customer-order, production-order, routing-sheet]
+    metrics: [on-time-completion, first-pass-yield, scrap-rate]
+    software: [manufacturing-operations]
+  - ref: production-quality-control
+    roles: [quality-inspector, machine-operator]
+    documents: [production-order, routing-sheet, quality-report]
+    metrics: [first-pass-yield, scrap-rate]
+    software: [manufacturing-operations]
+  - ref: purchasing
+    roles: [production-manager]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management, manufacturing-operations]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician, machine-operator]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [manufacturing-operations]
+  - ref: customer-invoicing
+    roles: [office-manager]
+    documents: [delivery-ticket, customer-invoice]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-payable
+    roles: [office-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: production-manager
+        reports:
+          - role: machine-operator
+          - role: quality-inspector
+          - role: maintenance-technician
+supply_chain:
+  sells_to: [commercial-client]

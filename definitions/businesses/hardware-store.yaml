@@ -1,0 +1,26 @@
+id: hardware-store
+name: Hardware Store
+codes:
+  naics: "444140"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A hardware store carries many low-volume items whose dimensions,
+  material, thread, finish, rating, and application determine whether
+  they solve the customer's problem. Staff translate a described repair
+  or project into compatible parts, tools, quantities, and safe use.
+
+  Inventory accuracy is difficult because small items share bins, bulk
+  goods are cut or counted, and returns may lose packaging or identity.
+  Receiving, bin location, special orders, key or material services,
+  rental, and checkout need to preserve exact item and customer
+  commitments.
+revenue_model:
+  - id: hardware-and-supply-sales
+    note: stocked repair, building, garden, and tool merchandise
+  - id: special-orders-and-services
+    note: sourced items and location-specific cutting, key, repair, or rental services
+  - remove: [merchandise-sales, special-orders]
+supply_chain:
+  buys_from: [hardware-wholesaler]
+  sells_to: [retail-consumer, general-contractor]

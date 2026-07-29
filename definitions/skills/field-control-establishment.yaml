@@ -1,0 +1,97 @@
+id: field-control-establishment
+name: Field control establishment
+kind: skill
+department: operations
+summary: >-
+  Selects stable control, verifies coordinate and elevation basis, observes
+  redundant measurements, checks closure, and protects references. Field
+  control establishment leaves a current work basis, a field record, and
+  acceptance evidence that another operator can trace.
+inputs:
+  - site-plan
+outputs:
+  - survey-plat
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before field control establishment, read the current scope and
+      revisions, then verify defined survey purpose, current deeds and plats,
+      adjoining records, coordinate basis, access, equipment checks, and field
+      safety plan.
+  - name: Set the field controls
+    note: >-
+      Translate field control establishment into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During field control establishment, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept field control establishment, check the completed work against
+      traceable evidence, closed measurements, resolved boundary opinion, set
+      or found monuments, complete notes, and signed deliverable, then close
+      correction and issue the resulting record.
+tension: >-
+  Field control establishment has to remain inside its acceptance basis while
+  production moves. Treating record dimensions as field truth can move a
+  boundary opinion away from controlling evidence.
+failure_modes:
+  - name: Field control establishment starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for field
+      control establishment is settled.
+    signal: >-
+      The field control establishment work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Field control establishment closes without evidence
+    cost: >-
+      A concealed condition or required result from field control
+      establishment cannot be verified without opening, repeat work, delay, or
+      a disputed exception.
+    signal: >-
+      Field control establishment is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Field control establishment is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Field control establishment starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Field control establishment uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Boundary evidence and measurement adjustment
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of field control establishment.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for field control establishment have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Field control establishment can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting field control establishment
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop field control establishment before
+    work begins?
+  - >-
+    Which record proves field control establishment was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

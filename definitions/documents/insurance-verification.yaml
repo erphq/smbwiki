@@ -1,0 +1,6 @@
+id: insurance-verification
+name: Insurance verification
+kind: document
+summary: >
+  A dated record of eligibility, benefits, limits, exclusions, and
+  expected patient responsibility confirmed with a payer.

@@ -1,0 +1,98 @@
+id: broker-authority-compliance
+name: Broker authority compliance
+kind: skill
+department: compliance
+geo: [us]
+summary: >
+  Broker authority compliance keeps the brokerage's federal operating
+  authority supported by current financial responsibility and process
+  agent filings. The operator monitors filing and public authority status,
+  coordinates changes or replacement before interruption, and keeps a
+  current record for people deciding whether the brokerage may operate.
+inputs: [financial-security-filing, process-agent-designation]
+outputs: [broker-authority-record]
+steps:
+  - name: Verify supporting filings
+    role: carrier-compliance-specialist
+    consumes: [financial-security-filing, process-agent-designation]
+    note: >
+      Legal entity and authority identifiers match the current financial
+      security and process-agent records filed for the brokerage.
+  - name: Monitor authority status
+    role: carrier-compliance-specialist
+    note: >
+      Public status, filing state, cancellation or invalidation notice,
+      effective date, and unresolved agency correspondence are reviewed
+      through an owned queue.
+  - name: Control changes and replacements
+    role: carrier-compliance-specialist
+    note: >
+      Entity, address, surety or trust, process agent, and registration
+      changes are coordinated with the authorized filer and confirmed in
+      the agency record.
+  - name: Publish the authority record
+    role: carrier-compliance-specialist
+    produces: [broker-authority-record]
+    note: >
+      Current status, identifiers, supporting filings, verification time,
+      open notice, owner, and operating restriction remain visible.
+tension: >
+  Low administrative burden competes with uninterrupted operating
+  authority. Supporting filings can appear static for long periods; a
+  cancellation, invalid designation, or unmatched entity change can
+  threaten authority before the commercial team sees a problem.
+failure_modes:
+  - name: Financial security replacement gaps
+    cost: >
+      Authority faces interruption while the brokerage believes a new
+      bond or trust replaced the prior filing.
+    signal: >
+      Cancellation or change notice exists without confirmed replacement
+      status in the agency record.
+  - name: Process-agent designation becomes invalid
+    cost: >
+      The brokerage cannot rely on the filing required to maintain active
+      authority and must answer agency action.
+    signal: >
+      Process-agent change, cancellation, or invalidation has no verified
+      replacement filing.
+  - name: Internal record outlives public status
+    cost: >
+      Staff continue arranging transportation while the governing public
+      record shows inactive, pending, or otherwise restricted authority.
+    signal: >
+      The authority record has no recent public verification time.
+maturity:
+  - level: run badly
+    looks_like: >
+      Authority is treated as permanent and supporting documents are
+      revisited only when a customer or agency raises an issue.
+  - level: run well
+    looks_like: >
+      Public status, financial security, process agent, notices, entity
+      data, changes, and verification ownership are reviewed together.
+  - level: run excellently
+    looks_like: >
+      Filing events trigger immediate review, replacement status is
+      confirmed before reliance, and operating teams receive clear
+      restrictions from the current public record.
+competencies:
+  - name: Filing-state interpretation
+    note: >
+      Submitted, accepted, active, cancelled, invalid, pending, and public
+      authority states have different operating consequences.
+  - name: Regulated change control
+    note: >
+      Entity and supporting-party changes must reach the right authorized
+      filer and later be verified in the agency system.
+automation:
+  now: >
+    Public status monitoring, filing-event alerts, document registers,
+    change workflows, owner queues, and internal operating restrictions.
+  human: >
+    Agency and filer coordination, conflicting records, legal or
+    compliance interpretation, response to notices, and authority to stop
+    regulated activity.
+questions:
+  - When was active authority last verified from the public agency record?
+  - What open filing notice or entity change can affect operating authority?

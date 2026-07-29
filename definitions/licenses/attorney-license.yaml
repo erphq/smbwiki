@@ -1,0 +1,7 @@
+id: attorney-license
+name: Attorney license
+kind: license
+jurisdiction: US
+summary: >
+  Admission and continuing authorization to practice law in the
+  applicable state or federal jurisdiction.

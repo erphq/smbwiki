@@ -1,0 +1,6 @@
+id: guest-check
+name: Guest check
+kind: document
+summary: >
+  Table, seats, ordered items, adjustments, discounts, taxes, gratuity,
+  tender, payment state, and responsible server.

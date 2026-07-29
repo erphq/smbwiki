@@ -1,0 +1,6 @@
+id: physician
+name: Physician
+kind: role
+summary: >
+  Evaluates patients, owns diagnostic and treatment decisions, records
+  clinical reasoning, and directs follow-up care.

@@ -1,0 +1,7 @@
+id: financial-security-filing
+name: Financial security filing
+kind: document
+geo: [us]
+summary: >
+  Federal filing showing the surety bond or trust fund that supports a
+  freight broker's required financial responsibility.

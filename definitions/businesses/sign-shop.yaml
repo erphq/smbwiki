@@ -1,0 +1,39 @@
+id: sign-shop
+name: Sign Shop
+codes:
+  naics: "339950"
+catalog_group: logistics-production
+extends: production-shop-base
+summary: >
+  A sign shop turns message, brand files, dimensions, material, viewing
+  distance, lighting, mounting, site conditions, code, and installation
+  access into a proof and production package. Approval fixes content,
+  scale, color, substrate, finish, and location before fabrication.
+
+  Work may move through printing, cutting, routing, welding, wiring,
+  painting, assembly, inspection, packing, permitting, and field
+  installation. The shop connects proof version, material, components,
+  production quantity, test, hardware, site survey, permit, lift or crew,
+  photographs, and customer acceptance.
+skills:
+  - ref: install-project
+    roles: [crew-lead, field-crew]
+    documents: [work-order, job-photos]
+    metrics: [install-gross-margin]
+    software: [project-operations]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: production-manager
+        reports:
+          - role: machine-operator
+          - role: quality-inspector
+          - role: maintenance-technician
+      - role: crew-lead
+        reports:
+          - role: field-crew
+supply_chain:
+  buys_from: [sign-supply-distributor]
+  sells_to: [individual-client, commercial-client, general-contractor]

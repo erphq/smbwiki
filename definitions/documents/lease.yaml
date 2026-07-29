@@ -1,0 +1,6 @@
+id: lease
+name: Lease
+kind: document
+summary: >
+  The signed occupancy term, rent, deposit, parties, premises, rules,
+  responsibilities, notices, and renewal conditions.

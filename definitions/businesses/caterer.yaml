@@ -1,0 +1,57 @@
+id: caterer
+name: Caterer
+codes:
+  naics: "722320"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A caterer sells a dated event plan. Guest count, menu, service style,
+  venue access, rentals, staffing, delivery, setup, food holding, and
+  cleanup become one scope that has to survive changes before the event.
+
+  Production is divided between advance preparation, timed cooking,
+  packing, loading, transport, and service at a site controlled by the
+  venue. A missing pan, serving tool, power detail, or dietary
+  count may be difficult to recover after departure. The final load
+  check and named event lead carry the plan into the venue.
+revenue_model:
+  - id: drop-off-events
+    note: prepared orders delivered for customer-managed service
+  - id: staffed-events
+    note: food, equipment, setup, service labor, and cleanup sold together
+  - remove: [dine-in, takeout, catering]
+skills:
+  - ref: lead-intake
+    roles: [general-manager]
+    documents: [job-request]
+    software: [customer-relationship-management]
+  - ref: quoting
+    roles: [general-manager, head-chef]
+    documents: [job-request, quote]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management]
+  - ref: event-production-planning
+    roles: [general-manager, head-chef]
+    documents: [quote, order-ticket, prep-list]
+    software: [customer-relationship-management, kitchen-display-system]
+  - ref: delivery-dispatch
+    roles: [general-manager, driver]
+    documents: [order-ticket, delivery-ticket]
+    metrics: [delivery-time]
+    software: [delivery-management]
+  - remove: [order-taking]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: server
+          - role: driver
+      - role: head-chef
+        reports:
+          - role: line-cook
+          - role: dishwasher
+supply_chain:
+  sells_to: [individual-client, commercial-client]
+seo:
+  title: "Caterer: How the Business Works | smbwiki"

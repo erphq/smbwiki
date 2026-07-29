@@ -1,0 +1,46 @@
+id: landscaping-company
+name: Landscaping Company
+codes:
+  naics: "561730"
+catalog_group: construction-property
+extends: project-services-base
+summary: >
+  A landscaping company combines recurring route work with site
+  projects. Maintenance crews revisit the same properties on a service
+  cadence. Project crews install planting, drainage, irrigation,
+  lighting, hardscape, or soil work from a quoted plan.
+
+  Route density, travel, weather, seasonal growth, equipment readiness,
+  and site access determine how much field time becomes productive
+  work. Each property also carries local knowledge: gates, pets,
+  irrigation controls, preferred cut or pruning, fragile areas, and
+  customer-approved changes. That record has to survive crew changes.
+revenue_model:
+  - id: recurring-maintenance
+    note: scheduled property visits sold on a recurring agreement
+  - id: landscape-projects
+    note: planting, irrigation, drainage, and hardscape work sold by scope
+  - remove: [quoted-projects]
+skills:
+  - ref: maintenance-agreements
+    roles: [office-manager, crew-lead]
+    documents: [service-agreement]
+    software: [project-operations]
+  - ref: dispatch
+    roles: [office-manager, crew-lead]
+    documents: [job-request, work-order]
+    metrics: [jobs-per-tech-day]
+    software: [field-service-management]
+  - ref: field-job-execution
+    roles: [crew-lead, field-crew]
+    documents: [work-order, job-photos]
+    metrics: [callback-rate]
+    software: [field-service-management]
+  - ref: staff-scheduling
+    roles: [office-manager]
+    documents: [shift-schedule]
+    software: [workforce-management]
+supply_chain:
+  sells_to: [homeowner]
+seo:
+  title: "Landscaping Company: How the Business Works | smbwiki"

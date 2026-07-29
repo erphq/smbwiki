@@ -1,0 +1,8 @@
+id: chiropractor-license
+name: Chiropractor license
+kind: license
+geo: [us]
+summary: >
+  State professional authorization to practice chiropractic within the
+  scope and renewal requirements of the licensing board.
+jurisdiction: state

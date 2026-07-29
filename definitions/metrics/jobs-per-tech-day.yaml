@@ -1,0 +1,7 @@
+id: jobs-per-tech-day
+name: Jobs per tech-day
+kind: metric
+summary: >
+  Completed jobs per technician per working day.
+unit: count
+direction: higher

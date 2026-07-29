@@ -1,0 +1,8 @@
+id: facility-management
+name: Facility management
+kind: software-category
+summary: >
+  Asset register, inspections, work requests, preventive schedules,
+  downtime, and repair history for premises and equipment.
+erpai_category: operations
+erpai_apps: []

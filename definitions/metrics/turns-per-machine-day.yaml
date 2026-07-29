@@ -1,0 +1,7 @@
+id: turns-per-machine-day
+name: Turns per machine-day
+kind: metric
+summary: >
+  Completed paid cycles per installed machine per operating day.
+unit: count
+direction: higher

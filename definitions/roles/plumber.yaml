@@ -1,0 +1,7 @@
+id: plumber
+name: Plumber
+kind: role
+summary: >
+  Diagnoses, repairs, and installs water, waste, gas, and fixture
+  systems at customer sites. Records scope, approvals, materials, and
+  completion evidence on the work order.

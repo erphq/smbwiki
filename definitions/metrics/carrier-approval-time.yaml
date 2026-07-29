@@ -1,0 +1,8 @@
+id: carrier-approval-time
+name: Carrier approval time
+kind: metric
+summary: >
+  Elapsed time from a complete carrier packet to approved or rejected
+  status.
+unit: hours
+direction: lower

@@ -1,0 +1,109 @@
+id: structural-steel-erector
+name: Structural Steel Erector
+codes:
+  naics: '238120'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A structural steel erector unloads, rigs, raises, stabilizes, connects,
+  aligns, and inspects fabricated members in the sequence required by the
+  structure and crane plan. Erection drawings, shipping order, concrete
+  strength, anchor condition, access, weather, fall protection, and temporary
+  stability must agree before each lift.
+
+
+  Installed tonnage is visible progress, but connection completion and
+  stability control the real risk. Bolting, welding, decking, survey
+  adjustment, and inspection follow the raising gang. A misplaced member or
+  damaged anchor can stop several crews, so the daily plan preserves
+  alternatives and a direct route to engineering decisions.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: steel-erection-planning
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: hoisting-rigging-steel
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: structural-bolting
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: field-welding-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: steel-erection-inspection
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - structural-steel-fabricator
+    - crane-service
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

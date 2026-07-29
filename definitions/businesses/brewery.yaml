@@ -1,0 +1,56 @@
+id: brewery
+name: Brewery
+codes:
+  naics: "312120"
+catalog_group: food-lodging
+extends: beverage-production-base
+summary: >
+  A brewery schedules brewhouse, fermentation, conditioning, packaging,
+  cold storage, and cleaning capacity across recipes that occupy
+  equipment for different lengths of time. Ingredient lots, water,
+  yeast, temperatures, transfers, losses, tests, and tank identity
+  remain attached to each batch.
+
+  Finished beer reaches customers through packaged wholesale, taproom,
+  or direct channels under different inventory and tax records. The
+  operator must protect product stability, keg and package custody,
+  alcohol production records, labels, excise reporting, and the
+  distinction between available liquid and committed packaging.
+revenue_model:
+  - id: wholesale-beer
+    note: packaged beer and kegs sold through distribution or direct accounts
+  - id: taproom-sales
+    note: brewery product sold for on-premises consumption
+  - remove: [wholesale-beverages, direct-beverage-sales]
+skills:
+  - ref: retail-sale
+    roles: [sales-associate, retail-manager]
+    documents: [stock-record, sales-receipt, return-record]
+    metrics: [average-ticket, gross-margin-percentage]
+    software: [retail-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: beverage-production-lead
+        reports:
+          - role: cellar-operator
+          - role: packaging-operator
+          - role: beverage-quality-technician
+          - role: maintenance-technician
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+licenses:
+  us:
+    - ref: brewers-notice
+      requirement: required
+      condition: Required before the brewery begins federally regulated beer production.
+      as_of: "2026-07-29"
+    - ref: liquor-license
+      requirement: conditional
+      condition: Required for the taproom or other direct alcohol sales covered by state or local licensing rules.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [malt-supplier, hop-supplier, packaging-distributor]
+  sells_to: [retail-consumer, commercial-client, beverage-distributor]

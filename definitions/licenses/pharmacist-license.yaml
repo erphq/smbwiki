@@ -1,0 +1,7 @@
+id: pharmacist-license
+name: Pharmacist license
+kind: license
+jurisdiction: US
+summary: >
+  State professional authorization for an individual to practice
+  pharmacy and perform the final dispensing check.

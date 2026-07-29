@@ -1,0 +1,103 @@
+id: professional-service-delivery
+name: Professional service delivery
+kind: skill
+department: operations
+summary: >
+  Professional service delivery carries an authorized engagement
+  through planning, technical work, review, release, and closeout.
+  Evidence, judgment, versions, time, client decisions, and billing
+  state remain attached to the same assignment.
+inputs: [engagement-letter]
+outputs: [deliverable, time-record]
+steps:
+  - name: Plan the work
+    role: professional
+    consumes: [engagement-letter]
+    note: >
+      Deliverables, methods, sources, dependencies, reviewers,
+      milestones, budget, and client decision points become an
+      executable plan.
+  - name: Perform and record
+    role: professional
+    produces: [time-record]
+    note: >
+      Work is completed against the current scope while assumptions,
+      evidence, issues, decisions, and effort are recorded.
+  - name: Review the work product
+    role: principal
+    consumes: [time-record]
+    note: >
+      Technical sufficiency, scope, evidence, calculation, consistency,
+      risk, and presentation are checked by the required authority.
+  - name: Release the deliverable
+    role: principal
+    produces: [deliverable]
+    note: >
+      The approved version, limitations, decisions requested, and
+      delivery evidence reach the authorized client recipient.
+  - name: Close the engagement stage
+    role: client-coordinator
+    consumes: [deliverable, time-record]
+    note: >
+      Acceptance, follow-up, open items, records, unbilled work, and
+      the next authorized stage are reconciled.
+tension: >
+  Thoroughness competes with the client's deadline and fee boundary.
+  More analysis can reduce uncertainty; uncontrolled analysis consumes
+  capacity without changing the decision the engagement was hired to
+  support.
+failure_modes:
+  - name: Work follows an obsolete scope
+    cost: >
+      A technically sound deliverable answers a superseded question or
+      omits a newly authorized requirement.
+    signal: >
+      Team members hold different engagement versions or change
+      decisions live only in messages.
+  - name: Review is compressed into release
+    cost: >
+      Errors, unsupported conclusions, and scope gaps reach the client
+      under the firm's authority.
+    signal: >
+      Reviewer receives the first complete work product at the delivery
+      deadline.
+  - name: Performed work remains invisible
+    cost: >
+      Managers cannot see budget consumption, staffing pressure,
+      unbilled value, or recurring rework.
+    signal: >
+      Time and issue records arrive days after the work or only when an
+      invoice is prepared.
+maturity:
+  - level: run badly
+    looks_like: >
+      Professionals hold the assignment in personal files and the
+      client discovers status at the deadline.
+  - level: run well
+    looks_like: >
+      Plan, evidence, work, review, version, time, delivery, and
+      closeout share one engagement record.
+  - level: run excellently
+    looks_like: >
+      Delivery evidence improves scoping, methods, knowledge reuse,
+      review gates, staffing, and engagement economics.
+competencies:
+  - name: Technical execution
+    note: >
+      The practitioner applies the discipline's methods and knows what
+      evidence can support the conclusion.
+  - name: Review and release judgment
+    note: >
+      The principal distinguishes useful additional work from delay and
+      refuses unsupported release.
+automation:
+  now: >
+    Work plans, assignments, time capture, document control, templates,
+    evidence retrieval, calculations, review routing, delivery, and
+    work-in-progress reporting.
+  human: >
+    Professional judgment, source evaluation, novel analysis, material
+    uncertainty, client advice, ethical duties, and release authority.
+questions:
+  - Which deliverable is closest to release without an identified reviewer?
+  - Which engagement is consuming effort beyond its authorized scope or budget?

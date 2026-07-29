@@ -1,0 +1,6 @@
+id: load-tender
+name: Load tender
+kind: document
+summary: >
+  Complete shipment offer prepared for carrier sourcing, with pickup,
+  delivery, freight, equipment, rate basis, and contact instructions.

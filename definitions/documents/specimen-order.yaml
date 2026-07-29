@@ -1,0 +1,6 @@
+id: specimen-order
+name: Specimen order
+kind: document
+summary: >
+  Patient, ordering clinician, requested tests, specimen requirements,
+  collection identity, priority, and reporting instructions.

@@ -1,0 +1,79 @@
+id: dental-clinic
+name: Dental Clinic
+codes:
+  naics: "621210"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  A dental clinic schedules preventive, diagnostic, restorative, and
+  elective care across dentists, hygienists, assistants, rooms, and
+  equipment. Intake and examination update the patient chart, proposed
+  work enters a treatment plan, and accepted care is arranged across the
+  required visits.
+
+  Recall work brings patients back when continuing care is due. Claims
+  and patient balances depend on coverage information and complete
+  clinical notes. Instrument flow runs alongside the appointment
+  schedule through cleaning, packaging, sterilization, storage, and
+  release for use.
+revenue_model:
+  - id: preventive-visits
+    note: examinations, hygiene, and imaging that recur on a patient
+      schedule
+  - id: restorative-treatment
+    note: fillings, crowns, endodontic work, and other accepted plans
+      delivered across one or more visits
+  - id: elective-treatment
+    note: cosmetic and noncovered work paid directly by the patient
+  - remove: [patient-services, preventive-care]
+skills:
+  - ref: patient-intake
+    roles: [receptionist, dental-assistant]
+    documents: [appointment-record, patient-registration, patient-chart]
+    software: [practice-management, electronic-health-record]
+  - ref: clinical-care
+    roles: [dentist, dental-hygienist, dental-assistant]
+    documents: [appointment-record, patient-chart, clinical-note, treatment-plan]
+    metrics: [chair-utilization, treatment-acceptance-rate]
+    software: [electronic-health-record, practice-management]
+  - ref: patient-recall
+    roles: [receptionist, dental-hygienist]
+    documents: [patient-chart, recall-list]
+    metrics: [recall-reappointment-rate]
+    software: [practice-management]
+  - ref: instrument-sterilization
+    roles: [dental-assistant]
+    documents: [instrument-log, sterilization-log]
+    software: [practice-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+        reports:
+          - role: receptionist
+          - role: billing-specialist
+      - role: dentist
+        reports:
+          - role: dental-hygienist
+          - role: dental-assistant
+licenses:
+  us:
+    - ref: dentist-license
+      requirement: required
+      condition: Required for dentists performing regulated dental services.
+      as_of: "2026-07-29"
+    - ref: dental-hygienist-license
+      requirement: required
+      condition: Required for dental hygienists performing regulated preventive and delegated care.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [dental-supply-distributor, dental-laboratory]
+  sells_to: [patient, payer]
+products:
+  - dental-chair-unit
+  - dental-autoclave
+  - dental-xray
+  - dental-intraoral-camera
+  - dental-handpiece
+seo:
+  title: "Dental Clinic: How the Business Works | smbwiki"

@@ -1,0 +1,6 @@
+id: optometrist
+name: Optometrist
+kind: role
+summary: >
+  Examines vision and eye health, prescribes corrective care, records
+  findings, and decides when another provider is needed.

@@ -1,0 +1,8 @@
+id: active-member-rate
+name: Active member rate
+kind: metric
+summary: >
+  Members with a recorded facility visit inside the operator's chosen
+  activity window.
+unit: percent
+direction: higher

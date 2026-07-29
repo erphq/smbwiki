@@ -1,0 +1,6 @@
+id: room-status
+name: Room status
+kind: document
+summary: >
+  Current occupancy, cleaning, inspection, maintenance, and saleable
+  state of each room.

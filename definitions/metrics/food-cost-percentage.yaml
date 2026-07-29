@@ -1,0 +1,8 @@
+id: food-cost-percentage
+name: Food cost percentage
+kind: metric
+summary: >
+  Ingredient cost as a share of food revenue; the controlling number
+  of every kitchen.
+unit: percent
+direction: lower

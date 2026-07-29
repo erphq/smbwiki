@@ -1,0 +1,109 @@
+id: tile-contractor
+name: Tile Contractor
+codes:
+  naics: '238340'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A tile contractor prepares substrates, waterproofs wet areas, lays out
+  patterns, sets tile, grouts joints, installs movement sealant, and protects
+  the finish. The visible grid depends on substrate flatness, drainage, room
+  geometry, tile variation, transitions, fixtures, and approved focal lines.
+
+
+  Bond and water control are largely concealed after setting. Mixing, open
+  time, coverage checks, membrane transitions, movement joints, and flood
+  tests carry more risk than the final wipe-down suggests. The crew uses
+  samples and dry layout to settle appearance before committing expensive
+  material to mortar.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: tile-substrate-preparation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: tile-waterproofing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: tile-layout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: tile-setting
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+      - material-waste-rate
+    software:
+      - construction-management
+  - ref: grout-and-seal
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - tile-distributor
+    - setting-material-manufacturer
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

@@ -1,0 +1,95 @@
+id: restaurant-reservations-and-seating
+name: Restaurant reservations and seating
+kind: skill
+department: operations
+summary: >
+  Restaurant reservations and seating turns bookings and walk-ins into
+  an honest wait and table plan. Party needs, table capacity, arrival
+  state, dining duration, server load, and reset readiness remain
+  visible while the room changes.
+inputs: [restaurant-reservation]
+outputs: [table-status]
+steps:
+  - name: Maintain the reservation book
+    role: host
+    consumes: [restaurant-reservation]
+    note: >
+      Date, time, party size, contact, table needs, deposits or policy,
+      notes, changes, cancellation, and confirmation remain current.
+  - name: Read the room
+    role: host
+    note: >
+      Occupied, reserved, resetting, blocked, and available tables are
+      considered with server sections and the active kitchen load.
+  - name: Quote and sequence arrivals
+    role: host
+    note: >
+      Reservations and walk-ins receive a realistic wait and a durable
+      place in the arrival order without promising the same capacity twice.
+  - name: Seat and hand off
+    role: host
+    produces: [table-status]
+    note: >
+      Party, table, server, seating time, needs, and current service
+      state are visible to the floor team.
+  - name: Release the table
+    role: host
+    consumes: [table-status]
+    note: >
+      Payment, departure, clearing, reset, and readiness update the
+      table before it is offered again.
+tension: >
+  Maximizing occupied seats competes with keeping arrival promises and
+  service flow. Seating every open table can overload a server or the
+  kitchen and turn apparent capacity into a longer guest wait.
+failure_modes:
+  - name: Reservation and walk-in queues diverge
+    cost: >
+      Staff promise the same future table twice and resolve the conflict
+      in front of arriving guests.
+    signal: >
+      Wait estimates do not change when reservations arrive early or late.
+  - name: Table availability ignores reset state
+    cost: >
+      A party is called before the table is clean, complete, and ready.
+    signal: >
+      Seated status follows departure before reset is confirmed.
+  - name: Seating ignores downstream load
+    cost: >
+      Several parties enter the same server or kitchen queue together,
+      delaying greetings, drinks, and courses.
+    signal: >
+      Open tables are filled while one section or production station is
+      already behind.
+maturity:
+  - level: run badly
+    looks_like: >
+      Reservations, quoted waits, and table state live on separate lists
+      and staff walk the room to learn what is available.
+  - level: run well
+    looks_like: >
+      Booking, arrival, wait, table, server, stage, departure, and reset
+      share one current room view.
+  - level: run excellently
+    looks_like: >
+      Arrival and turn evidence improves booking intervals, section
+      design, staffing, wait quotes, and pacing decisions.
+competencies:
+  - name: Live capacity judgment
+    note: >
+      The host reads physical tables together with party needs, service
+      stages, server capacity, and kitchen load.
+  - name: Promise communication
+    note: >
+      Wait and reservation commitments must stay honest as actual
+      arrivals and dining durations change.
+automation:
+  now: >
+    Booking, confirmations, waitlist, table map, quoted waits, seating,
+    server rotation, status updates, and no-show reporting.
+  human: >
+    Party needs, pacing, exceptions, accessibility, guest communication,
+    and recovery when promised and actual capacity differ.
+questions:
+  - Which arriving party is promised against a table that is not yet truly available?
+  - Where is seating pace exceeding the floor or kitchen's current capacity?

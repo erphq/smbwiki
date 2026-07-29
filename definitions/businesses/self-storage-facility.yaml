@@ -1,0 +1,31 @@
+id: self-storage-facility
+name: Self-Storage Facility
+codes:
+  naics: "531130"
+catalog_group: logistics-production
+extends: property-operations-base
+summary: >
+  A self-storage facility sells controlled access to individually
+  identified units under a rental agreement, gate rules, insurance or
+  protection terms, prohibited-use limits, and recurring billing. Unit
+  size, condition, availability, rate, lock state, and customer identity
+  anchor the tenancy.
+
+  A small staff manages listings, reservations, move-in, access,
+  payments, delinquency, notices, inspections, maintenance, vacancy,
+  move-out, abandoned property, and security incidents. Gate events and
+  camera evidence document activity; the tenancy record controls access
+  authority for each unit.
+revenue_model:
+  - id: unit-rent
+    note: recurring charges for identified storage-unit occupancy
+  - id: protection-and-merchandise
+    note: eligible coverage, locks, boxes, and related customer items
+  - remove: [management-fees, leasing-fees]
+skills:
+  - ref: facility-access
+    roles: [property-manager]
+    documents: [access-credential]
+    software: [access-control-system, property-management-system]
+supply_chain:
+  sells_to: [individual-client, commercial-client]

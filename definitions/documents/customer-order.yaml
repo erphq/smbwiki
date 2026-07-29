@@ -1,0 +1,6 @@
+id: customer-order
+name: Customer order
+kind: document
+summary: >
+  Customer, item or service specification, quantity, price, due date,
+  delivery terms, and current approval state.

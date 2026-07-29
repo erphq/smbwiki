@@ -1,0 +1,6 @@
+id: host
+name: Host
+kind: role
+summary: >
+  Controls reservations, arrival order, quoted waits, table assignment,
+  party needs, seating state, and the handoff to dining-room service.

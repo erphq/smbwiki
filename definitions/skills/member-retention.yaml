@@ -1,0 +1,94 @@
+id: member-retention
+name: Member retention
+kind: skill
+department: sales
+summary: >
+  Member retention watches for loss of use or service friction, resolves
+  problems within the agreement, and processes cancellation requests to
+  a confirmed end state. The work distinguishes a recoverable experience
+  from a member's clear decision to leave.
+inputs: [attendance-log, cancellation-request]
+outputs: [cancellation-record]
+steps:
+  - name: Find meaningful risk
+    role: membership-advisor
+    consumes: [attendance-log]
+    note: >
+      Visit change, unresolved service issues, failed access, and account
+      contact provide context beyond a low-use flag.
+  - name: Resolve the service issue
+    role: membership-advisor
+    note: >
+      The advisor owns a specific access, billing, class, equipment, or
+      facility problem through closure.
+  - name: Receive the cancellation
+    role: membership-advisor
+    consumes: [cancellation-request]
+    note: >
+      Request date, requested end, agreement terms, reason, and preferred
+      confirmation route are recorded once.
+  - name: Complete and confirm
+    role: membership-advisor
+    produces: [cancellation-record]
+    note: >
+      Billing end, access end, final amount, refund or credit, and
+      confirmation use the same effective date.
+tension: >
+  Relationship recovery competes with respecting a clear exit decision.
+  A useful intervention can save a member whose experience failed;
+  obstructing cancellation turns a service problem into a trust problem.
+failure_modes:
+  - name: Low use treated as consent to contact
+    cost: >
+      Members receive generic pressure that ignores injury, travel,
+      preference, or privacy.
+    signal: >
+      Outreach begins from attendance alone with no service context or
+      contact rule.
+  - name: Cancellation remains pending
+    cost: >
+      Charges and access continue beyond the expected end and create a
+      dispute.
+    signal: >
+      Requests have intake dates but no owner, effective date, or
+      confirmation.
+  - name: Save offer hides the original failure
+    cost: >
+      A discount delays departure while the unresolved access, billing,
+      cleanliness, class, or equipment issue persists.
+    signal: >
+      Retention notes record offer acceptance and omit issue closure.
+maturity:
+  - level: run badly
+    looks_like: >
+      Retention means calling inactive members and routing cancellation
+      through a slow exception process.
+  - level: run well
+    looks_like: >
+      Service issues have owners and cancellation requests close with
+      aligned billing, access, and confirmation dates.
+  - level: run excellently
+    looks_like: >
+      Reasons change operations, outreach reflects member context, and
+      the business can explain both recovered relationships and clean
+      exits.
+competencies:
+  - name: Service recovery
+    note: >
+      The advisor identifies the specific failed promise and coordinates
+      the person who can correct it.
+  - name: Boundary judgment
+    note: >
+      The operator recognizes the point where further persuasion harms
+      the relationship and completes the requested exit.
+automation:
+  now: >
+    Usage-change signals, service-case routing, cancellation intake,
+    agreement-rule calculation, effective-date synchronization, and
+    confirmation.
+  human: >
+    Sensitive outreach, complaint understanding, recovery decisions,
+    exceptions, and recognition of an unambiguous decision to leave.
+questions:
+  - Which open cancellation request still lacks a confirmed end date?
+  - What recurring service failure appears in recent cancellation reasons?

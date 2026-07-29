@@ -1,0 +1,6 @@
+id: production-manager
+name: Production manager
+kind: role
+summary: >
+  Releases work to production, sequences labor and equipment, clears
+  constraints, and keeps due dates and actual cost current.

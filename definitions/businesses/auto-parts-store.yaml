@@ -1,0 +1,20 @@
+id: auto-parts-store
+name: Auto Parts Store
+codes:
+  naics: "441330"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  An auto parts store translates vehicle identity, configuration,
+  symptom or repair scope, and existing component into a compatible
+  part, fluid, tool, or accessory. Year, make, model, engine, production
+  split, side, connector, dimensions, and supersession can all matter.
+
+  Inventory includes new, remanufactured, core-exchange, hazardous,
+  warranty, special-order, and returned product. The transaction record
+  connects application lookup, selected part, customer vehicle, core,
+  warranty, condition, and disposition before returned product can
+  reenter saleable stock.
+supply_chain:
+  buys_from: [auto-parts-distributor]
+  sells_to: [retail-consumer, auto-repair-shop]

@@ -1,0 +1,6 @@
+id: batch-record
+name: Batch record
+kind: document
+summary: >
+  Lot identity, ingredients, vessel, quantities, temperatures, timings,
+  transfers, additions, losses, observations, and operator signoffs.

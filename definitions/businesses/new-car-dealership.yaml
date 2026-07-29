@@ -1,0 +1,21 @@
+id: new-car-dealership
+name: New Car Dealership
+codes:
+  naics: "441110"
+catalog_group: retail-vehicles
+extends: vehicle-dealer-base
+summary: >
+  A new car dealership receives allocated and ordered vehicles from a
+  manufacturer, tracks each unit through transport, inspection,
+  preparation, accessories, display, demonstration, sale, funding,
+  registration, warranty, and accounting. Model, trim, options, color,
+  incentives, and vehicle identity control the deal.
+
+  Sales, finance, parts, and service share the customer and vehicle but
+  run different queues. The dealership must preserve manufacturer
+  program eligibility, disclosure, lender conditions, trade payoff,
+  due-bill promises, title work, delivery readiness, warranty activation,
+  and final gross on the same deal.
+supply_chain:
+  buys_from: [vehicle-manufacturer]
+  sells_to: [retail-consumer, commercial-client, fleet-operator]

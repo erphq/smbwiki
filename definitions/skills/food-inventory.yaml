@@ -1,0 +1,88 @@
+id: food-inventory
+name: Food inventory
+kind: skill
+department: supply
+summary: >
+  Food inventory controls perishable ingredients from count through
+  order, receipt, storage, and use. The operator compares expected stock
+  with physical stock, protects shelf life, and places purchase orders
+  early enough for the next production period.
+inputs: [supplier-invoice]
+outputs: [purchase-order]
+steps:
+  - name: Count by storage area
+    note: >
+      Open containers, partial cases, prepared product, and goods in the
+      wrong location are included in the same physical count.
+  - name: Check use and shelf life
+    consumes: [supplier-invoice]
+    note: >
+      Recent receipts, expected demand, lead time, and what will expire
+      before use shape the order quantity.
+  - name: Place the replenishment order
+    produces: [purchase-order]
+    note: >
+      Unit, pack size, substitution rule, required date, and destination
+      are explicit for each line.
+  - name: Receive into rotation
+    note: >
+      Quantity, temperature, condition, date, and invoice difference are
+      checked before new stock is stored behind older usable stock.
+tension: >
+  Product availability competes with freshness and cash. Extra stock
+  protects service from a late supplier; excess perishables become waste
+  before they can become sales.
+failure_modes:
+  - name: Pack-size error
+    cost: >
+      The operation orders or costs the wrong quantity because case,
+      weight, and recipe records use conflicting units.
+    signal: >
+      Counts and orders use unit labels that differ from the supplier
+      invoice.
+  - name: New stock hides old stock
+    cost: >
+      Usable product expires in storage while later receipts are opened
+      first.
+    signal: >
+      Multiple dates of the same item are found without a clear rotation
+      order.
+  - name: Receiving exception disappears
+    cost: >
+      The business pays for shortages, damage, or rejected temperature
+      conditions.
+    signal: >
+      Supplier invoice quantity is posted before receipt condition is
+      recorded.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff order from visual gaps and waste is discovered during
+      cleaning or at the end of the period.
+  - level: run well
+    looks_like: >
+      Counts, shelf life, demand, open orders, receipts, and invoice
+      differences are reviewed on a repeatable cadence.
+  - level: run excellently
+    looks_like: >
+      Variance points to specific items and storage areas, supplier
+      reliability shapes safety stock, and waste changes future orders.
+competencies:
+  - name: Unit control
+    note: >
+      Recipe portions, count units, purchase packs, and invoice units
+      must convert without guesswork.
+  - name: Perishable judgment
+    note: >
+      The buyer understands how condition, remaining life, demand, and
+      storage capacity affect the amount worth receiving.
+automation:
+  now: >
+    Count sheets, unit conversions, reorder suggestions, purchase orders,
+    expiry prompts, invoice comparison, and variance reporting.
+  human: >
+    Physical condition checks, substitution acceptance, demand
+    interpretation, and decisions about short-dated or rejected goods.
+questions:
+  - Which ingredient variance remains unexplained after the last count?
+  - What stock will expire before the current demand plan can use it?

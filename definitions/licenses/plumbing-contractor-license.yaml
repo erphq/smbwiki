@@ -1,0 +1,9 @@
+id: plumbing-contractor-license
+name: Plumbing contractor license
+kind: license
+geo: [us]
+summary: >
+  Business or qualifying-party authorization required in many
+  jurisdictions before a contractor can offer regulated plumbing work.
+  Scope, bonding, and responsible-master requirements vary by place.
+jurisdiction: state or local

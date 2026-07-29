@@ -1,0 +1,8 @@
+id: incident-rate
+name: Incident rate
+kind: metric
+summary: >
+  Recorded care or safety incidents relative to occupied days or
+  delivered visits.
+unit: incidents per 1,000 service days
+direction: lower

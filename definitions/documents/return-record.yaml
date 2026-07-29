@@ -1,0 +1,6 @@
+id: return-record
+name: Return record
+kind: document
+summary: >
+  Original transaction, returned item, condition, reason, disposition,
+  and refund or exchange decision.

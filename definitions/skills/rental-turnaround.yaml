@@ -1,0 +1,104 @@
+id: rental-turnaround
+name: Rental turnaround
+kind: skill
+department: operations
+summary: >
+  Rental turnaround commits a specific asset, records condition at
+  handoff, tracks the rental term, inspects return, closes added
+  charges, and restores availability. Agreement, custody, meter,
+  accessories, damage, maintenance, and billing remain aligned.
+inputs: [rental-agreement, equipment-condition-report]
+outputs: [equipment-condition-report, customer-invoice]
+steps:
+  - name: Reserve a suitable asset
+    role: rental-agent
+    consumes: [rental-agreement]
+    note: >
+      Customer, use, dates, location, capacity, attachments, transport,
+      operator requirements, and availability are confirmed.
+  - name: Inspect and release
+    role: rental-agent
+    consumes: [equipment-condition-report]
+    note: >
+      Identity, operating state, meter, fuel or charge, accessories,
+      existing damage, instructions, and custody signatures are fixed.
+  - name: Maintain the active rental
+    role: rental-agent
+    consumes: [rental-agreement]
+    note: >
+      Extension, exchange, service, location, incident, late status,
+      and payment authority stay attached to the asset and customer.
+  - name: Receive and assess
+    role: maintenance-technician
+    produces: [equipment-condition-report]
+    note: >
+      Return time, meter, fuel or charge, accessories, cleanliness,
+      damage, function, and required maintenance are compared with
+      release condition.
+  - name: Close and restore
+    role: rental-agent
+    consumes: [equipment-condition-report]
+    produces: [customer-invoice]
+    note: >
+      Time, usage, transport, consumables, cleaning, damage, credits,
+      payment, service hold, and next availability are reconciled.
+tension: >
+  Asset utilization competes with inspection and service readiness.
+  Returning an asset to availability quickly protects revenue;
+  incomplete condition and maintenance work transfers failure and
+  dispute to the next customer.
+failure_modes:
+  - name: Asset promised without identity
+    cost: >
+      The reserved class exists in theory while no suitable physical
+      unit is ready for the customer.
+    signal: >
+      Reservation reaches pickup day without an assigned or confirmed
+      asset.
+  - name: Handoff condition is weak
+    cost: >
+      Damage, missing accessories, fuel, meter, and cleanliness become
+      disputes at return.
+    signal: >
+      Release report lacks timestamped condition and customer
+      acknowledgment.
+  - name: Returned asset becomes available before service
+    cost: >
+      The next rental begins with hidden damage, overdue maintenance,
+      or missing equipment.
+    signal: >
+      Availability changes before return inspection closes all holds.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff know which assets are out, and condition or added charges
+      are reconstructed when the customer returns.
+  - level: run well
+    looks_like: >
+      Reservation, asset, agreement, release condition, active changes,
+      return, charge, maintenance, and availability share one record.
+  - level: run excellently
+    looks_like: >
+      Utilization and failure evidence improves fleet mix, rate,
+      preventive service, replacement, deposits, and customer
+      qualification.
+competencies:
+  - name: Asset suitability
+    note: >
+      The operator matches intended use to capacity, configuration,
+      transport, site, and operator requirements.
+  - name: Condition and charge judgment
+    note: >
+      Staff distinguish expected wear, customer damage, maintenance,
+      missing items, and evidence needed for a fair charge.
+automation:
+  now: >
+    Availability, reservations, asset assignment, agreements, payments,
+    inspections, photos, meters, service holds, added charges, and
+    utilization reporting.
+  human: >
+    Suitability, operating instruction, condition, damage causation,
+    safety, disputed charges, and release after repair.
+questions:
+  - Which upcoming reservation has no confirmed ready asset?
+  - Which returned asset is marked available with an unresolved condition or service item?

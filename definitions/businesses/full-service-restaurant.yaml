@@ -1,0 +1,48 @@
+id: full-service-restaurant
+name: Full-Service Restaurant
+codes:
+  naics: "722511"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A full-service restaurant manages tables from arrival through payment.
+  Reservations and walk-ins become a seating plan, servers turn table
+  decisions into timed tickets, and the kitchen releases courses while
+  the dining room continues to change.
+
+  The manager watches demand, table state, kitchen load, staffing,
+  product availability, guest issues, and payment at the same time.
+  Prep and purchasing happen before the room fills. During service,
+  accurate seat and course information keeps the floor and kitchen on
+  the same promise.
+revenue_model:
+  - remove: [catering]
+skills:
+  - ref: restaurant-reservations-and-seating
+    roles: [host, general-manager]
+    documents: [restaurant-reservation, table-status]
+    metrics: [reservation-no-show-rate, table-turn-time]
+    software: [restaurant-pos]
+  - ref: restaurant-payment-closeout
+    roles: [server, general-manager]
+    documents: [order-ticket, guest-check, payment-record, shift-closeout]
+    metrics: [average-ticket, check-close-variance]
+    software: [restaurant-pos, accounting]
+  - ref: guest-recovery
+    roles: [server, general-manager]
+    documents: [order-ticket, guest-check, guest-issue-record]
+    metrics: [guest-issue-resolution-time]
+    software: [restaurant-pos, customer-relationship-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: host
+          - role: server
+      - role: head-chef
+        reports:
+          - role: line-cook
+          - role: dishwasher
+seo:
+  title: "Full-Service Restaurant: How the Business Works | smbwiki"

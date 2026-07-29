@@ -1,0 +1,6 @@
+id: claims-coordinator
+name: Claims coordinator
+kind: role
+summary: >
+  Collects shipment evidence, identifies responsible parties, files and
+  tracks claims, and coordinates financial resolution.

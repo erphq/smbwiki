@@ -1,0 +1,57 @@
+id: vehicle-dealer-base
+name: Vehicle dealer (base)
+abstract: true
+revenue_model:
+  - id: vehicle-margin
+    note: sale price less acquisition and reconditioning cost of each unit
+  - id: finance-and-products
+    note: dealer participation and authorized protection products in a funded deal
+  - id: trade-and-wholesale
+    note: value recovered from trades and units sold outside retail inventory
+skills:
+  - ref: lead-intake
+    roles: [vehicle-salesperson]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [customer-relationship-management, dealership-management]
+  - ref: retail-replenishment
+    roles: [retail-manager, stock-associate]
+    documents: [purchase-order, inventory-receipt, stock-record]
+    metrics: [inventory-turnover]
+    software: [dealership-management]
+  - ref: vehicle-sales
+    roles: [vehicle-salesperson, finance-manager]
+    documents: [client-profile, stock-record, vehicle-purchase-agreement, sales-receipt]
+    metrics: [vehicle-gross-profit]
+    software: [dealership-management]
+  - ref: repair-execution
+    roles: [automotive-technician, shop-foreman]
+    documents: [repair-order, work-authorization, repair-completion]
+    metrics: [technician-efficiency]
+    software: [dealership-management, auto-repair-management]
+  - ref: repair-quality-control
+    roles: [shop-foreman, automotive-technician]
+    documents: [repair-completion, quality-check]
+    metrics: [comeback-rate]
+    software: [dealership-management, auto-repair-management]
+  - ref: payment-reconciliation
+    roles: [finance-manager]
+    documents: [sales-receipt, payment-record]
+    software: [dealership-management, accounting]
+  - ref: accounts-payable
+    roles: [finance-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [dealership-management, accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: vehicle-salesperson
+          - role: stock-associate
+      - role: finance-manager
+      - role: shop-foreman
+        reports:
+          - role: automotive-technician
+supply_chain:
+  sells_to: [retail-consumer, commercial-client]

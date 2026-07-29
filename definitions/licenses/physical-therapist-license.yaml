@@ -1,0 +1,8 @@
+id: physical-therapist-license
+name: Physical therapist license
+kind: license
+geo: [us]
+summary: >
+  State professional authorization to practice physical therapy within
+  the scope and renewal requirements of the licensing board.
+jurisdiction: state

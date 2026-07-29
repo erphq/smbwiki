@@ -1,0 +1,59 @@
+id: beverage-production-base
+name: Beverage production (base)
+abstract: true
+revenue_model:
+  - id: wholesale-beverages
+    note: packaged or bulk beverages sold to distributors and trade accounts
+  - id: direct-beverage-sales
+    note: finished beverages sold through permitted direct channels
+skills:
+  - ref: lead-intake
+    roles: [office-manager, beverage-production-lead]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [customer-relationship-management]
+  - ref: beverage-batch-production
+    roles: [beverage-production-lead, cellar-operator, packaging-operator]
+    documents: [batch-record, packaging-record]
+    metrics: [batch-yield]
+    software: [manufacturing-operations, inventory-management]
+  - ref: beverage-quality-release
+    roles: [beverage-quality-technician, beverage-production-lead]
+    documents: [batch-record, lab-result, beverage-release-record]
+    metrics: [batch-release-conformance]
+    software: [manufacturing-operations]
+  - ref: purchasing
+    roles: [beverage-production-lead, office-manager]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management, manufacturing-operations]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician, beverage-production-lead]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [manufacturing-operations]
+  - ref: customer-invoicing
+    roles: [office-manager]
+    documents: [delivery-ticket, customer-invoice]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-payable
+    roles: [office-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: beverage-production-lead
+        reports:
+          - role: cellar-operator
+          - role: packaging-operator
+          - role: beverage-quality-technician
+          - role: maintenance-technician
+supply_chain:
+  sells_to: [commercial-client]

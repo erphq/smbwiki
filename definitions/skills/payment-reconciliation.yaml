@@ -1,0 +1,87 @@
+id: payment-reconciliation
+name: Payment reconciliation
+kind: skill
+department: finance
+summary: >
+  Payment reconciliation closes a collection period by matching
+  machine transactions to coin, cash, card, and mobile settlements.
+  Differences stay open until the operator can identify timing,
+  hardware, handling, or recording as the cause.
+inputs: [machine-transaction]
+outputs: [collection-log]
+steps:
+  - name: Freeze the period
+    consumes: [machine-transaction]
+    note: >
+      A cutoff prevents late-arriving transactions from changing the
+      total while money is being counted.
+  - name: Count each payment stream
+    note: >
+      Coin, cash, and electronic settlements retain separate totals so
+      one stream cannot hide another.
+  - name: Match and investigate
+    note: >
+      The operator checks settlement timing and machine counters before
+      treating a difference as loss.
+  - name: Close the collection log
+    produces: [collection-log]
+    note: >
+      The signed variance and its explanation remain attached to the
+      period.
+tension: >
+  Fast close competes with variance resolution. Closing early gives the
+  owner a timely revenue number; carrying an unexplained difference
+  forward removes the evidence needed to find a machine or handling
+  problem.
+failure_modes:
+  - name: Mixed collection periods
+    cost: >
+      Transactions and money from different cutoffs are compared, so
+      the reported variance cannot be resolved.
+    signal: >
+      Collection times differ from the transaction-report cutoff.
+  - name: Settlement timing mistaken for loss
+    cost: >
+      Staff or equipment are investigated for money that was still in
+      transit from the payment processor.
+    signal: >
+      Electronic differences clear by themselves on the next settlement
+      date.
+  - name: Unexplained repeat variance
+    cost: >
+      A faulty acceptor, skimming pattern, or counting weakness continues
+      across collection periods.
+    signal: >
+      The same location or machine family shows a difference repeatedly.
+maturity:
+  - level: run badly
+    looks_like: >
+      Money is deposited without a recorded cutoff and differences are
+      accepted as part of the business.
+  - level: run well
+    looks_like: >
+      Each payment stream is reconciled to a fixed period and every
+      variance has a recorded explanation.
+  - level: run excellently
+    looks_like: >
+      Repeat differences identify specific machines or handling points
+      early enough for corrective work before the next collection.
+competencies:
+  - name: Cutoff discipline
+    note: >
+      The operator understands when each payment stream becomes final
+      and keeps the comparison period stable.
+  - name: Variance investigation
+    note: >
+      Counter readings, settlement timing, and collection handling must
+      be separated before responsibility is assigned.
+automation:
+  now: >
+    Transaction aggregation, processor settlement matching, expected
+    cash calculation, and repeat-variance alerts.
+  human: >
+    Physical counts, custody review, damaged acceptor inspection, and
+    deciding whether a difference indicates loss or a timing issue.
+questions:
+  - Does every collection log use the same cutoff as its transaction report?
+  - Which machines account for the current unexplained difference?

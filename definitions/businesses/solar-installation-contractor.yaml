@@ -1,0 +1,109 @@
+id: solar-installation-contractor
+name: Solar Installation Contractor
+codes:
+  naics: '238210'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A solar installation contractor surveys a site, designs a photovoltaic
+  system, secures permits and utility approval, procures equipment, installs
+  the array and electrical work, commissions monitoring, and closes
+  inspection. Roof condition, structure, shade, service capacity, shutdown,
+  access, and interconnection rules shape each job.
+
+
+  Physical installation can finish before the system is allowed to operate.
+  Permit corrections, utility documents, labels, settings, inspection, and
+  permission to operate remain critical-path work. The contractor records
+  attachments, wiring, torque, tests, and production so the owner and future
+  service team can understand the installed system.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: solar-site-assessment
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: photovoltaic-system-design
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: solar-permitting-and-interconnection
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: array-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: solar-commissioning
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - solar-equipment-distributor
+    - electric-utility
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

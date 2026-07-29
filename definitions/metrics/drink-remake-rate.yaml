@@ -1,0 +1,9 @@
+id: drink-remake-rate
+name: Drink remake rate
+kind: metric
+summary: >
+  The share of prepared drinks that must be made again because the
+  ticket was read incorrectly, the recipe was missed, or the result did
+  not meet the order.
+unit: percent
+direction: lower

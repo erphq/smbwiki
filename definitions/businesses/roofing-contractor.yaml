@@ -1,0 +1,38 @@
+id: roofing-contractor
+name: Roofing Contractor
+codes:
+  naics: "238160"
+catalog_group: construction-property
+extends: project-services-base
+summary: >
+  A roofing contractor sells a measured assembly, then removes the
+  existing roof and exposes conditions hidden during estimating.
+  Material, disposal, access, fall protection, crew
+  size, permit timing, and forecast all have to support the same start.
+
+  Daily production is governed by dry-in. The crew needs to leave each
+  active area protected before weather changes or the site is released.
+  Deck damage and flashing conditions create the common scope decisions,
+  so photographs, quantities, customer approval, and price have to move
+  while the condition is still visible.
+revenue_model:
+  - id: replacement-projects
+    note: full roof systems sold from measurement, specification, and site scope
+  - id: repair-projects
+    note: bounded leak, flashing, drainage, and storm-damage work
+  - remove: [quoted-projects]
+skills:
+  - ref: install-project
+    roles: [estimator, crew-lead, field-crew]
+    documents: [quote, permit, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: permits-inspections
+    roles: [office-manager]
+    documents: [permit]
+    software: [project-operations]
+  - remove: [project-delivery]
+supply_chain:
+  sells_to: [homeowner, general-contractor]
+seo:
+  title: "Roofing Contractor: How the Business Works | smbwiki"

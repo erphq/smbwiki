@@ -1,0 +1,6 @@
+id: service-provider
+name: Service provider
+kind: role
+summary: >
+  Performs an appointment-based personal service, records what was
+  delivered, and identifies safety, consent, and follow-up needs.

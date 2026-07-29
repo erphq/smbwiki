@@ -1,0 +1,32 @@
+id: residential-remodeler
+name: Residential Remodeler
+codes:
+  naics: "236118"
+catalog_group: construction-property
+extends: project-services-base
+summary: >
+  A residential remodeler coordinates design decisions, existing
+  conditions, permits, selections, long-lead items, subcontractors, and
+  an occupied home under one changing project. The accepted scope needs
+  enough detail to distinguish allowance, exclusion, owner choice, and
+  concealed-condition work.
+
+  Demolition reveals information after schedule and price have been
+  committed. Daily control links the field condition to a decision,
+  cost, revised sequence, and customer approval before work covers it.
+  Protection, access, utilities, cleanup, punch work, and final records
+  matter as much as the installed finish.
+revenue_model:
+  - id: remodeling-projects
+    note: managed renovation scope sold under a fixed price or cost-based agreement
+  - id: design-and-preconstruction
+    note: planning, investigation, estimating, and selection work before construction
+  - remove: [quoted-projects]
+skills:
+  - ref: permits-inspections
+    roles: [office-manager, estimator]
+    documents: [permit]
+    software: [project-operations]
+supply_chain:
+  buys_from: [building-material-distributor, specialty-subcontractor]
+  sells_to: [homeowner]

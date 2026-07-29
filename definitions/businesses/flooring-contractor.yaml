@@ -1,0 +1,25 @@
+id: flooring-contractor
+name: Flooring Contractor
+codes:
+  naics: "238330"
+catalog_group: construction-property
+extends: project-services-base
+summary: >
+  A flooring contractor turns room measurements, substrate condition,
+  material selection, pattern, transitions, access, and occupied-space
+  constraints into a priced installation. Ordered material has to match
+  the approved product, dye lot, quantity, waste allowance, and start.
+
+  Field production depends on what sits below the finished floor.
+  Moisture, flatness, adhesive, demolition, furniture, acclimation, and
+  hidden damage can change the sequence and scope. The crew records
+  condition and approval before covering evidence that supports a change.
+revenue_model:
+  - id: installation-projects
+    note: material and labor sold for a measured flooring scope
+  - id: preparation-and-repair
+    note: demolition, leveling, moisture control, and substrate correction
+  - remove: [quoted-projects]
+supply_chain:
+  buys_from: [flooring-distributor]
+  sells_to: [homeowner, general-contractor]

@@ -1,0 +1,88 @@
+id: delivery-dispatch
+name: Delivery dispatch
+kind: skill
+department: operations
+summary: >
+  Delivery dispatch releases completed orders to drivers, groups
+  compatible stops, and chooses a route that can keep each customer
+  promise. Food readiness, travel, building access, driver capacity, and
+  handoff evidence all affect the sequence.
+inputs: [order-ticket]
+outputs: [delivery-ticket]
+steps:
+  - name: Confirm dispatch readiness
+    consumes: [order-ticket]
+    note: >
+      The order, packaging, address, contact, payment state, and promised
+      time are complete before assignment.
+  - name: Build compatible runs
+    note: >
+      Stops share a driver only when travel and handoff time keep each
+      order inside its usable delivery window.
+  - name: Assign driver and route
+    produces: [delivery-ticket]
+    note: >
+      Stop sequence, items, customer instruction, contact route, and
+      exception owner travel with the driver.
+  - name: Manage the live run
+    note: >
+      Delays, failed contact, wrong addresses, and returns update the
+      customer and dispatch board while recovery is still possible.
+tension: >
+  Route density competes with product condition and promise time.
+  Combining stops lowers travel per order; waiting for one more order or
+  adding a distant stop spends the time already promised to earlier
+  customers.
+failure_modes:
+  - name: Ready time assumed
+    cost: >
+      A driver waits for production while earlier completed orders lose
+      delivery time.
+    signal: >
+      Assignment occurs from expected completion with no ready event.
+  - name: Building access omitted
+    cost: >
+      A short map distance becomes a long handoff and later stops miss
+      their promises.
+    signal: >
+      Repeated delays cluster at locations with parking, gate, lobby, or
+      elevator requirements.
+  - name: Exception has no dispatcher
+    cost: >
+      The driver, customer, and store each wait for another party to
+      decide on redelivery, substitution, or return.
+    signal: >
+      Active delivery tickets show delay without a named next action.
+maturity:
+  - level: run badly
+    looks_like: >
+      Drivers take whichever order is visible and delivery status depends
+      on phone calls back to the store.
+  - level: run well
+    looks_like: >
+      Readiness, route, promise, driver, customer instruction, and live
+      exception status are visible on each delivery ticket.
+  - level: run excellently
+    looks_like: >
+      Actual handoff and travel patterns improve routing rules, batch
+      decisions use product condition, and exceptions reach customers
+      before the promise fails.
+competencies:
+  - name: Time-window routing
+    note: >
+      The dispatcher understands that food readiness and building handoff
+      can matter as much as road distance.
+  - name: Exception control
+    note: >
+      Fast decisions on failed contact, address errors, and delayed
+      production protect every stop still on the run.
+automation:
+  now: >
+    Address validation, readiness events, driver assignment, route
+    suggestions, tracking, customer updates, and proof-of-handoff capture.
+  human: >
+    Batch judgment, recovery tradeoffs, customer contact, unsafe delivery
+    conditions, and decisions about redelivery or return.
+questions:
+  - Which part of delivery time is currently invisible to dispatch?
+  - What condition allows one delayed stop to be removed from a driver's run?

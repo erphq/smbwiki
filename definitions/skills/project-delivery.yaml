@@ -1,0 +1,108 @@
+id: project-delivery
+name: Project delivery
+kind: skill
+department: operations
+summary: >
+  Project delivery carries an accepted scope through field planning,
+  readiness, site control, production, change approval, and closeout.
+  The crew receives one current field package, while the office keeps
+  cost, schedule, customer decisions, and completion evidence attached
+  to the same job.
+inputs: [quote]
+outputs: [work-order, job-photos]
+steps:
+  - name: Build the field package
+    role: estimator
+    consumes: [quote]
+    produces: [work-order]
+    note: >
+      Accepted scope, measurements, selections, exclusions, access,
+      customer duties, cost allowance, and change authority enter one
+      controlled work order.
+  - name: Clear readiness
+    role: crew-lead
+    consumes: [work-order]
+    note: >
+      Labor, material, equipment, site access, predecessor work,
+      protection, weather exposure, and required approvals are checked
+      before the crew is committed.
+  - name: Establish the site
+    role: crew-lead
+    note: >
+      Existing condition, work limits, staging, safety, protection,
+      neighbors or occupants, and the day's completion point are
+      confirmed before production begins.
+  - name: Run production and changes
+    role: crew-lead
+    note: >
+      Installed quantity, labor, material use, defects, delays, and
+      changed conditions stay current, while added scope stops for a
+      priced decision.
+  - name: Inspect and release
+    role: crew-lead
+    produces: [job-photos]
+    note: >
+      Completed scope, cleanup, punch work, operating or finish checks,
+      customer acceptance, warranty information, and final evidence are
+      reviewed before the job leaves the board.
+tension: >
+  Crew continuity competes with readiness and change control. Keeping
+  people producing protects the schedule; starting through missing
+  material, unclear scope, or unresolved site conditions turns labor
+  into delay and unpriced work.
+failure_modes:
+  - name: Crew arrives before the job is ready
+    cost: >
+      Paid field time is spent finding access, material, equipment,
+      decisions, or predecessor work.
+    signal: >
+      A committed start still has an open critical item without an
+      owner and due time.
+  - name: Field condition changes scope silently
+    cost: >
+      Added labor and material reach final billing without a customer
+      decision or recoverable price.
+    signal: >
+      Daily notes describe work outside the accepted scope and no
+      approved change.
+  - name: Completion outruns closeout
+    cost: >
+      The crew leaves while punch work, evidence, cleanup, instruction,
+      or acceptance remains disputed.
+    signal: >
+      The job is marked complete before the closeout record can identify
+      who inspected and accepted it.
+maturity:
+  - level: run badly
+    looks_like: >
+      The accepted quote becomes a start date, and the crew resolves
+      scope, supply, access, and changes in the field.
+  - level: run well
+    looks_like: >
+      Field package, readiness, site setup, daily production, changes,
+      inspection, and closeout share one controlled job.
+  - level: run excellently
+    looks_like: >
+      Actual production and failure evidence improve estimating,
+      readiness gates, crew plans, and the price of recurring risk.
+competencies:
+  - name: Production planning
+    note: >
+      The operator turns scope and quantities into a feasible sequence
+      for labor, material, equipment, access, and site conditions.
+  - name: Field commercial control
+    note: >
+      The crew lead has to distinguish correction, included work, and a
+      changed condition before cost loses its approval route.
+automation:
+  now: >
+    Work packages, readiness lists, crew schedules, daily logs, quantity
+    and time capture, photo records, change requests, punch lists, and
+    closeout reminders.
+  human: >
+    Site interpretation, production sequence, workmanship, crew
+    direction, changed-condition judgment, customer decisions, and
+    release of completed work.
+questions:
+  - Which committed project still lacks one item the crew needs to keep producing?
+  - What field change is consuming cost without a priced customer decision?

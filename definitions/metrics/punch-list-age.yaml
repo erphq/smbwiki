@@ -1,0 +1,7 @@
+id: punch-list-age
+name: Punch list age
+kind: metric
+summary: >
+  Elapsed time between recording a punch item and verified closure.
+unit: days
+direction: lower

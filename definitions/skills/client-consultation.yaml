@@ -1,0 +1,91 @@
+id: client-consultation
+name: Client consultation
+kind: skill
+department: sales
+summary: >
+  Client consultation turns a booked service and prior history into an
+  agreed result the stylist can execute within the client's current hair
+  condition, available time, maintenance tolerance, and budget. For
+  chemical and color work, the recorded formula preserves the technical
+  plan for later visits.
+inputs: [appointment-record, client-profile]
+outputs: [formula-card]
+steps:
+  - name: Reconfirm the booked work
+    role: stylist
+    consumes: [appointment-record, client-profile]
+    note: >
+      The client describes the desired change while the stylist reviews
+      prior services, sensitivities, home care, and known formula history.
+  - name: Assess current condition
+    role: stylist
+    note: >
+      Hair and scalp condition, existing color, length, density, texture,
+      and integrity set the safe technical range.
+  - name: Agree on the service plan
+    role: stylist
+    note: >
+      Result, limitations, maintenance, service sequence, timing, and
+      price assumptions are clear before preparation begins.
+  - name: Record the formula
+    role: stylist
+    produces: [formula-card]
+    note: >
+      Product, shade, ratio, placement, processing, and adaptation are
+      specific enough for the result to be reviewed later.
+tension: >
+  Desired change competes with hair condition and repeatability. The
+  client may want a larger result in one visit; the service has to remain
+  inside what the current hair and recorded plan can support.
+failure_modes:
+  - name: Reference image becomes the specification
+    cost: >
+      Hair history, starting condition, and maintenance requirements are
+      ignored while both parties imagine different versions of the result.
+    signal: >
+      The plan records an image and service name with no condition or
+      limitation notes.
+  - name: Prior chemical history incomplete
+    cost: >
+      The planned process reacts unpredictably or causes avoidable damage.
+    signal: >
+      Existing color or texture service is visible while the profile
+      history is blank.
+  - name: Formula lacks placement detail
+    cost: >
+      The next visit repeats products but produces a different result.
+    signal: >
+      The card lists shades and ratios without section, placement, timing,
+      or root and length treatment.
+maturity:
+  - level: run badly
+    looks_like: >
+      Consultation is a short preference question and technical decisions
+      are made after the service clock has started.
+  - level: run well
+    looks_like: >
+      Desired result, current condition, limitations, price, maintenance,
+      and technical plan are agreed and recorded before service.
+  - level: run excellently
+    looks_like: >
+      Prior outcomes improve the next formula, condition changes are
+      visible, and the client can explain the staged result and home care.
+competencies:
+  - name: Visual translation
+    note: >
+      The stylist converts the client's words and references into shape,
+      tone, placement, texture, and maintenance decisions.
+  - name: Condition judgment
+    note: >
+      Technical ambition has to be adjusted to the hair and scalp present
+      today.
+automation:
+  now: >
+    History retrieval, consultation forms, photo records, formula storage,
+    service timing, product calculation, and maintenance reminders.
+  human: >
+    Condition assessment, expectation alignment, aesthetic judgment,
+    touch, consent, and responsibility for the technical plan.
+questions:
+  - What limitation or maintenance requirement did the client agree to?
+  - Could another stylist understand the placement and processing from the formula card?

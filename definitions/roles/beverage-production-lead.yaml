@@ -1,0 +1,6 @@
+id: beverage-production-lead
+name: Beverage production lead
+kind: role
+summary: >
+  Owns batch scheduling, vessel use, transfers, cellar state, packaging
+  readiness, product release, and the records connecting each lot.

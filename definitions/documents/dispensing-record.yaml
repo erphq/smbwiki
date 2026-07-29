@@ -1,0 +1,6 @@
+id: dispensing-record
+name: Dispensing record
+kind: document
+summary: >
+  Prescription, product and lot, quantity, label, pharmacist check,
+  claim, patient handoff, and counseling state.

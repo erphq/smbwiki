@@ -1,0 +1,6 @@
+id: sales-associate
+name: Sales associate
+kind: role
+summary: >
+  Helps a customer select merchandise, confirms price and availability,
+  completes the sale, and records returns or special orders.

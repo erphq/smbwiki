@@ -1,0 +1,6 @@
+id: property-manager
+name: Property manager
+kind: role
+summary: >
+  Owns leasing, tenant accounts, maintenance priorities, vendor work,
+  property records, and communication with the asset owner.

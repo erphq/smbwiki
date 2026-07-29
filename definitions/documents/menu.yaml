@@ -1,0 +1,6 @@
+id: menu
+name: Menu
+kind: document
+summary: >
+  The sellable catalog: items, prices, modifiers. The pricing
+  decisions in it set the gross margin ceiling.

@@ -1,0 +1,89 @@
+id: facility-access
+name: Facility access
+kind: skill
+department: operations
+summary: >
+  Facility access validates a credential and its current permissions at
+  the entry point, admits the member when conditions are met, records the
+  visit, and routes exceptions to staff. Entry state remains connected
+  to the account that granted it.
+inputs: [access-credential]
+outputs: [attendance-log]
+steps:
+  - name: Read the credential
+    role: front-desk-attendant
+    consumes: [access-credential]
+    note: >
+      The entry event identifies the credential, member, location, and
+      time before a decision is made.
+  - name: Evaluate current permission
+    role: front-desk-attendant
+    note: >
+      Plan access, account state, hours, location rules, age, guest, and
+      supervision conditions are applied consistently.
+  - name: Admit or route the exception
+    role: front-desk-attendant
+    note: >
+      Staff see the reason and the allowed remedy without sharing private
+      account detail across the lobby.
+  - name: Record the entry result
+    role: front-desk-attendant
+    produces: [attendance-log]
+    note: >
+      Successful entry and denied or overridden attempts remain distinct.
+tension: >
+  Frictionless entry competes with access control and duty of care.
+  Members expect the door to work immediately; weak exception handling
+  admits the wrong person or turns an account issue into a public dispute.
+failure_modes:
+  - name: Shared credential
+    cost: >
+      An unverified person enters under another member's permissions and
+      the attendance record becomes unreliable.
+    signal: >
+      One credential appears in implausibly close entry events or repeated
+      identity exceptions.
+  - name: Override without reason
+    cost: >
+      Temporary judgment becomes invisible policy and account problems
+      remain unresolved.
+    signal: >
+      Manual admissions lack operator, reason, and expected follow-up.
+  - name: Door and desk hold different status
+    cost: >
+      A corrected account still fails entry or an ended account remains
+      active.
+    signal: >
+      Staff must resave or recreate credentials after account changes.
+maturity:
+  - level: run badly
+    looks_like: >
+      The door accepts tokens while the desk maintains a separate list of
+      members who should be allowed through.
+  - level: run well
+    looks_like: >
+      Current account permissions drive entry and every exception leaves
+      a reason, operator, result, and follow-up.
+  - level: run excellently
+    looks_like: >
+      Access synchronization is monitored, suspicious use patterns surface
+      early, and front-desk recovery protects privacy and flow.
+competencies:
+  - name: Discreet exception handling
+    note: >
+      The attendant has to resolve identity and account problems without
+      exposing personal details or creating a lobby confrontation.
+  - name: Permission judgment
+    note: >
+      Safety, guest, age, supervision, and temporary access cases require
+      consistent application beyond a paid or unpaid flag.
+automation:
+  now: >
+    Credential validation, permission lookup, door control, visit logs,
+    duplicate-use alerts, and account synchronization.
+  human: >
+    Identity disputes, safety concerns, privacy-sensitive explanation,
+    temporary exceptions, and escalation when the system state is wrong.
+questions:
+  - Which manual access override still lacks a resolved account action?
+  - How quickly does an agreement change reach every entry point?

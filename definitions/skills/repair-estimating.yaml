@@ -1,0 +1,92 @@
+id: repair-estimating
+name: Repair estimating
+kind: skill
+department: sales
+summary: >
+  Repair estimating turns inspection findings into a priced scope the
+  customer and shop can both understand. Labor operations, parts,
+  outside work, fees, and tax are tied back to a finding before the
+  estimate is presented.
+inputs: [inspection-report]
+outputs: [repair-estimate]
+steps:
+  - name: Separate the findings
+    role: service-advisor
+    consumes: [inspection-report]
+    note: >
+      Safety, the stated concern, maintenance, and optional improvement
+      remain separate choices.
+  - name: Build labor and parts
+    role: service-advisor
+    note: >
+      Each operation includes the labor, parts, supplies, and outside
+      services needed to finish it.
+  - name: Check availability and overlap
+    role: parts-manager
+    note: >
+      Parts timing and labor shared between operations can change both
+      price and the date promised.
+  - name: Issue the estimate
+    role: service-advisor
+    produces: [repair-estimate]
+    note: >
+      The customer can see what fixes the concern, what can wait, and
+      what changes if only part of the scope is chosen.
+tension: >
+  Complete disclosure competes with decision clarity. Every supported
+  finding belongs in the record; presenting unrelated work as one total
+  makes approval harder and hides the purpose of each line.
+failure_modes:
+  - name: Unsupported line item
+    cost: >
+      The advisor cannot explain why the work is needed and customer
+      trust shifts from the finding to the price.
+    signal: >
+      An estimate operation has no matching finding in the inspection
+      report.
+  - name: Partial approval breaks the plan
+    cost: >
+      The shop starts work that cannot be completed safely or efficiently
+      without a declined companion operation.
+    signal: >
+      Bundled labor or required related parts are hidden across optional
+      lines.
+  - name: Availability omitted
+    cost: >
+      The customer approves a price and leaves the vehicle, then learns
+      the required part has no confirmed arrival.
+    signal: >
+      Special-order parts have price but no source or expected date.
+maturity:
+  - level: run badly
+    looks_like: >
+      The estimate is one total assembled from habit and the advisor
+      explains the scope from memory.
+  - level: run well
+    looks_like: >
+      Every line traces to evidence, required and optional work are
+      separated, and parts timing is known before approval.
+  - level: run excellently
+    looks_like: >
+      Common overlaps and dependencies are handled consistently, declined
+      work remains visible, and actual repair results improve future
+      estimates.
+competencies:
+  - name: Scope construction
+    note: >
+      A technically correct finding must become a complete repair
+      operation with no missing labor, material, or prerequisite.
+  - name: Plain explanation
+    note: >
+      The advisor translates evidence and consequence without turning the
+      estimate into pressure.
+automation:
+  now: >
+    Labor-guide lookup, parts pricing, tax calculation, canned-operation
+    assembly, availability checks, and digital presentation.
+  human: >
+    Separating choices, handling overlapping work, and deciding how much
+    uncertainty the estimate needs to expose.
+questions:
+  - Can every estimate line be traced to a recorded finding?
+  - What happens operationally if the customer approves only part of the scope?

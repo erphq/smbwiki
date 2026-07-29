@@ -1,0 +1,97 @@
+id: equipment-maintenance
+name: Equipment maintenance
+kind: skill
+department: maintenance
+summary: >
+  Equipment maintenance receives a reported fault or planned service,
+  controls the asset's operating state, diagnoses and completes the work,
+  verifies safe function, and records return to service. The same skill
+  applies to customer-facing machines and supporting facility equipment.
+inputs: [maintenance-request]
+outputs: [maintenance-log]
+steps:
+  - name: Triage the operating risk
+    role: maintenance-technician
+    consumes: [maintenance-request]
+    note: >
+      Injury, water, heat, electrical, fire, product, and secondary-damage
+      risk determine isolation and response priority.
+  - name: Control the asset
+    role: maintenance-technician
+    note: >
+      Out-of-service status is visible at the equipment and in the system
+      used by staff and customers.
+  - name: Diagnose and plan
+    role: maintenance-technician
+    note: >
+      Symptoms, conditions, readings, service history, parts, and external
+      support are resolved before repair begins.
+  - name: Repair and verify
+    role: maintenance-technician
+    note: >
+      Safety functions and normal operation are tested under a realistic
+      load before release.
+  - name: Record return to service
+    role: maintenance-technician
+    produces: [maintenance-log]
+    note: >
+      Fault, cause, work, parts, downtime, readings, and follow-up stay
+      attached to the asset.
+tension: >
+  Equipment availability competes with safe and complete repair.
+  Returning an asset quickly protects capacity; release without causal
+  diagnosis and a loaded test moves the failure into customer use.
+failure_modes:
+  - name: Unsafe asset remains available
+    cost: >
+      A known fault causes injury, property damage, lost product, or a
+      larger equipment failure.
+    signal: >
+      The maintenance request is high priority while the asset still
+      appears in service.
+  - name: Symptom cleared without cause
+    cost: >
+      The same intermittent fault returns after staff and customers begin
+      relying on the equipment.
+    signal: >
+      The log records reset, adjustment, or restart with no finding or
+      condition.
+  - name: Repair tested unloaded
+    cost: >
+      The asset passes at idle and fails under heat, weight, flow, cycle,
+      or repeated use.
+    signal: >
+      Return-to-service readings omit the operating condition of the test.
+maturity:
+  - level: run badly
+    looks_like: >
+      Faults are marked with paper, repairs happen between other work, and
+      service history depends on one technician's memory.
+  - level: run well
+    looks_like: >
+      Risk controls operating state, each repair has diagnosis and loaded
+      verification, and the asset history is current.
+  - level: run excellently
+    looks_like: >
+      Repeat faults and service intervals drive planned work, parts and
+      vendor dependencies are visible, and release criteria are specific
+      to the asset.
+competencies:
+  - name: Hazard triage
+    note: >
+      The operator distinguishes lost capacity from conditions that can
+      harm people, property, product, or connected equipment.
+  - name: Fault isolation
+    note: >
+      Symptoms under actual operating conditions have to become a causal
+      finding before parts and downtime are committed.
+automation:
+  now: >
+    Service intervals, fault intake, asset status, work queues, parts
+    history, downtime, sensor alerts, and required release checks.
+  human: >
+    Physical inspection, hazard control, diagnosis, repair, loaded
+    verification, and responsibility for safe release.
+questions:
+  - Which out-of-service asset has no confirmed cause or next action?
+  - What evidence supports the latest return-to-service decision?

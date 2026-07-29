@@ -1,0 +1,7 @@
+id: batch-yield
+name: Batch yield
+kind: metric
+summary: >
+  Saleable beverage quantity recovered from the recorded batch input.
+unit: percent
+direction: higher

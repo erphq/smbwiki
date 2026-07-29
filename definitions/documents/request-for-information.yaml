@@ -1,0 +1,6 @@
+id: request-for-information
+name: Request for information
+kind: document
+summary: >
+  Dated field question, referenced drawing or condition, requested
+  clarification, response, and resulting cost or schedule effect.

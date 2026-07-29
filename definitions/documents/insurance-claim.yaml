@@ -1,0 +1,6 @@
+id: insurance-claim
+name: Insurance claim
+kind: document
+summary: >
+  A coded request for payer reimbursement tied to a patient, provider,
+  date of service, and supporting clinical record.

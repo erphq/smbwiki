@@ -1,0 +1,91 @@
+id: clinical-care
+name: Clinical care
+kind: skill
+department: operations
+summary: >
+  Clinical care assesses the patient's current condition, reaches and
+  explains clinical decisions, delivers appropriate treatment, and
+  records what occurred. The signed note supports continuity, follow-up,
+  and billing after the patient leaves.
+inputs: [appointment-record, patient-chart]
+outputs: [clinical-note, treatment-plan]
+steps:
+  - name: Establish the current concern
+    role: clinician
+    consumes: [appointment-record, patient-chart]
+    note: >
+      The visit begins with the patient's report and relevant changes
+      since the prior record.
+  - name: Examine and assess
+    role: clinician
+    note: >
+      Findings are recorded with enough specificity to support the
+      decision and later comparison.
+  - name: Decide and deliver care
+    role: clinician
+    note: >
+      Options, risks, expected result, and follow-up are discussed at the
+      point where the plan can still change.
+  - name: Sign the clinical record
+    role: clinician
+    produces: [clinical-note, treatment-plan]
+    note: >
+      Care delivered and care proposed remain distinct in the record.
+tension: >
+  Patient throughput competes with attention and record completeness.
+  Schedule pressure is real; a rushed history, examination, explanation,
+  or note moves clinical uncertainty into later care.
+failure_modes:
+  - name: Carried-forward finding
+    cost: >
+      The record presents an old observation as current and distorts the
+      next clinical decision.
+    signal: >
+      Repeated notes contain identical findings despite a changed visit
+      purpose.
+  - name: Delivered care and planned care mixed
+    cost: >
+      The patient, billing team, and next clinician cannot tell what
+      happened and what remains proposed.
+    signal: >
+      Procedures appear in the plan and note without completion status.
+  - name: Note closed after memory fades
+    cost: >
+      Specific findings, materials, instructions, or exceptions are lost
+      and later reconstructed from incomplete cues.
+    signal: >
+      Unsigned notes remain open after the clinical day.
+maturity:
+  - level: run badly
+    looks_like: >
+      The schedule drives the visit, documentation is finished later, and
+      the patient leaves unsure about the next decision.
+  - level: run well
+    looks_like: >
+      Current concern, findings, delivered care, proposed care, and
+      follow-up are complete and signed together.
+  - level: run excellently
+    looks_like: >
+      The record supports another clinician's continuation, recurring
+      documentation defects are corrected, and patient questions shape
+      the final plan.
+competencies:
+  - name: Clinical reasoning
+    note: >
+      Findings, history, risk, and patient preference have to become a
+      defensible decision under uncertainty.
+  - name: Patient explanation
+    note: >
+      A plan is usable only when the patient understands the condition,
+      choices, expected course, and next action.
+automation:
+  now: >
+    History summarization, documentation templates, medication and
+    interaction checks, coding prompts, follow-up tasks, and unsigned-note
+    queues.
+  human: >
+    Examination, diagnosis, consent, treatment judgment, physical care,
+    and responsibility for the signed clinical decision.
+questions:
+  - Could another clinician continue care from this record without guessing?
+  - Which unsigned note is currently delaying follow-up or billing?

@@ -1,0 +1,19 @@
+id: clothing-boutique
+name: Clothing Boutique
+codes:
+  naics: "458110"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A clothing boutique buys a narrow assortment across style, size,
+  color, season, delivery window, and price point, then presents it as a
+  coherent collection. Each variant needs its own availability even
+  when the sales floor shows one sample.
+
+  Customer service includes fit, coordination, fitting-room custody,
+  holds, alterations, special orders, and returns. The owner uses sell
+  through, margin, aged stock, size gaps, return reasons, and open-to-buy
+  capacity to decide when to reorder, mark down, transfer, or stop.
+supply_chain:
+  buys_from: [apparel-brand, apparel-wholesaler]
+  sells_to: [retail-consumer]

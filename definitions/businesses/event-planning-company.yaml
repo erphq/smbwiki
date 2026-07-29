@@ -1,0 +1,34 @@
+id: event-planning-company
+name: Event Planning Company
+codes:
+  naics: "561920"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  An event planning company turns purpose, audience, date, location,
+  budget, format, program, guest experience, accessibility, and client
+  authority into one coordinated production. Venue, vendors, permits,
+  contracts, deposits, design, invitations, logistics, staffing, and
+  contingency plans converge on a fixed time.
+
+  The planner manages dependencies under limited opportunities for
+  advance testing.
+  Change control connects the client decision to supplier scope, cost,
+  schedule, floor plan, run of show, guest communication, and payment.
+  On the event day, command routes for safety, timing, vendor failure,
+  weather, and attendee issues remain explicit.
+revenue_model:
+  - id: planning-and-production-fees
+    note: professional coordination sold by project, phase, or management fee
+  - id: vendor-and-event-services
+    note: authorized procurement, staffing, and supplied production work
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+skills:
+  - ref: event-production-planning
+    roles: [principal, professional, client-coordinator]
+    documents: [client-brief, work-order]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations, professional-services-automation]
+supply_chain:
+  buys_from: [venue-operator, event-vendor]
+  sells_to: [individual-client, commercial-client]

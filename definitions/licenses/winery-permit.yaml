@@ -1,0 +1,7 @@
+id: winery-permit
+name: Winery permit
+kind: license
+jurisdiction: US
+summary: >
+  Federal TTB approval for bonded winery or related wine-premises
+  operations before production begins.

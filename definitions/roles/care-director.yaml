@@ -1,0 +1,6 @@
+id: care-director
+name: Care director
+kind: role
+summary: >
+  Owns admission, care planning, staffing coverage, clinical
+  escalation, incident review, and regulated facility records.

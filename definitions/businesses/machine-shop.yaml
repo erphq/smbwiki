@@ -1,0 +1,20 @@
+id: machine-shop
+name: Machine Shop
+codes:
+  naics: "332710"
+catalog_group: logistics-production
+extends: production-shop-base
+summary: >
+  A machine shop converts drawings, models, material, tolerances,
+  quantity, process requirements, and due date into routings across
+  cutting, setup, machining, inspection, outside processing, and
+  finishing. Revision and material identity control every released job.
+
+  Capacity is consumed by setup, programming, fixtures, run time,
+  inspection, tool wear, rework, and queue. Operators report actual
+  quantities and exceptions while the work is recoverable. Final
+  release ties accepted parts to material, operations, measurements,
+  deviations, certificates, and delivery.
+supply_chain:
+  buys_from: [metal-service-center, tooling-distributor]
+  sells_to: [commercial-client]

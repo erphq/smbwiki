@@ -1,0 +1,87 @@
+id: machine-activation
+name: Machine activation
+kind: skill
+department: operations
+summary: >
+  Machine activation accepts a customer's payment, applies it to the
+  selected machine and program, and creates the transaction that ties
+  revenue to equipment use. Failed payment and failed start remain
+  distinguishable so the customer and operator can recover correctly.
+inputs: []
+outputs: [machine-transaction]
+steps:
+  - name: Identify machine and program
+    note: >
+      Location, machine, price, available cycle, and customer selection
+      are fixed before payment is requested.
+  - name: Accept and confirm value
+    note: >
+      Coin, card, stored value, or mobile authorization reaches a clear
+      success or failure state once.
+  - name: Authorize the machine
+    note: >
+      The paid amount and selected cycle are sent to the intended machine
+      with a response the payment system can associate.
+  - name: Record the activation
+    produces: [machine-transaction]
+    note: >
+      Payment result, machine response, amount, program, time, and any
+      refund or service path share one transaction identity.
+tension: >
+  Frictionless starting competes with transaction integrity. Customers
+  expect immediate machine response; weak correlation between payment and
+  activation creates duplicate charges, free cycles, and disputes no one
+  can reconstruct.
+failure_modes:
+  - name: Payment succeeds and machine stays idle
+    cost: >
+      The customer loses time and trust while staff decide whether to
+      refund, retry, or move the load.
+    signal: >
+      Successful payment has no matching machine-start response.
+  - name: Retry creates duplicate value
+    cost: >
+      The customer is charged twice or receives two activations while the
+      system treats both as valid.
+    signal: >
+      Repeated attempts share machine and time but lack a linked recovery
+      state.
+  - name: Wrong machine receives the cycle
+    cost: >
+      Another customer's equipment starts and the paid customer has no
+      usable service.
+    signal: >
+      Activation complaints cluster where machine labels or selection
+      screens are ambiguous.
+maturity:
+  - level: run badly
+    looks_like: >
+      Payment totals exist separately from machine starts and staff issue
+      refunds from the customer's description.
+  - level: run well
+    looks_like: >
+      Each attempt links payment, program, machine response, refund, and
+      final outcome under one transaction.
+  - level: run excellently
+    looks_like: >
+      Correlation failures surface immediately, recovery can move value
+      safely, and repeated activation faults create maintenance requests.
+competencies:
+  - name: Transaction-state reasoning
+    note: >
+      Payment authorization, captured value, machine command, machine
+      response, refund, and retry are separate states with different remedies.
+  - name: Customer recovery
+    note: >
+      The operator can restore paid service quickly while preserving a
+      record that prevents double value.
+automation:
+  now: >
+    Pricing, payment acceptance, machine commands, response correlation,
+    digital receipts, refunds, and activation-failure alerts.
+  human: >
+    Coin and hardware inspection, identity or value disputes, physical
+    machine checks, and safe recovery when systems disagree.
+questions:
+  - Which successful payment currently lacks a confirmed machine start?
+  - Can a retry be traced to the original failed activation?

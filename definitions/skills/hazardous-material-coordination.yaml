@@ -1,0 +1,99 @@
+id: hazardous-material-coordination
+name: Hazardous-material coordination
+kind: skill
+department: compliance
+summary: >-
+  Stops disturbance until surveys, sampling, regulated scope, notifications,
+  containment, clearance, and disposal responsibilities are resolved.
+  Hazardous-material coordination leaves a current work basis, a field record,
+  and acceptance evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - daily-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before hazardous-material coordination, read the current scope and
+      revisions, then verify completed engineering survey, utility shutdown,
+      hazardous-material disposition, exclusion zones, removal sequence, and
+      disposal routes.
+  - name: Set the field controls
+    note: >-
+      Translate hazardous-material coordination into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During hazardous-material coordination, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept hazardous-material coordination, check the completed work
+      against specified removals, stable remaining structure, protected
+      services and finishes, segregated waste, clean limits, and documented
+      changed conditions, then close correction and issue the resulting
+      record.
+tension: >-
+  Hazardous-material coordination has to remain inside its acceptance basis
+  while production moves. Unknown loads, materials, utilities, and hidden
+  connections make an unplanned removal sequence dangerous and destructive.
+failure_modes:
+  - name: Hazardous-material coordination starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      hazardous-material coordination is settled.
+    signal: >-
+      The hazardous-material coordination work package still has an open
+      drawing, access, material, predecessor, or approval dependency when
+      labor is assigned.
+  - name: Hazardous-material coordination closes without evidence
+    cost: >-
+      A concealed condition or required result from hazardous-material
+      coordination cannot be verified without opening, repeat work, delay, or
+      a disputed exception.
+    signal: >-
+      Hazardous-material coordination is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Hazardous-material coordination is driven by crew availability and
+      visible completion; readiness, hold points, and acceptance evidence are
+      resolved afterward.
+  - level: run well
+    looks_like: >-
+      Hazardous-material coordination starts from a checked basis, follows a
+      named sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Hazardous-material coordination uses field evidence, production
+      variance, defects, and closeout results to improve the next estimate,
+      work package, and control point.
+competencies:
+  - name: Demolition sequence and existing-condition judgment
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of hazardous-material coordination.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for hazardous-material coordination have to be
+      captured while the relevant condition can still be observed and
+      corrected.
+automation:
+  now: >-
+    Hazardous-material coordination can use digital revisions, checklists,
+    hold points, photo capture, test fields, correction assignment, and
+    closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting hazardous-material
+    coordination remain human.
+questions:
+  - >-
+    Which unresolved condition can stop hazardous-material coordination before
+    work begins?
+  - >-
+    Which record proves hazardous-material coordination was accepted before it
+    was covered, loaded, energized, occupied, or handed over?

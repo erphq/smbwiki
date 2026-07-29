@@ -1,0 +1,7 @@
+id: workforce-management
+name: Workforce management
+kind: software-category
+summary: >
+  Shift scheduling, time clocks, and labor-cost forecasting.
+erpai_category: hr
+erpai_apps: []

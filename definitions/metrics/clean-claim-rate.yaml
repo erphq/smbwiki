@@ -1,0 +1,8 @@
+id: clean-claim-rate
+name: Clean claim rate
+kind: metric
+summary: >
+  Claims accepted for processing on first submission without rejection
+  for missing, invalid, or inconsistent information.
+unit: percent
+direction: higher

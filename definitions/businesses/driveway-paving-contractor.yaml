@@ -1,0 +1,109 @@
+id: driveway-paving-contractor
+name: Driveway Paving Contractor
+codes:
+  naics: '238990'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A driveway paving contractor removes failed pavement, prepares subgrade,
+  places aggregate base, lays asphalt, compacts the mat, seals surfaces, and
+  marks small private drives or parking areas. Drainage, section thickness,
+  edge support, access, weather, truck timing, and traffic closure determine
+  the production plan.
+
+
+  The finished surface can hide weak support and thin lifts. Proof rolling,
+  moisture control, lift measurement, temperature, joint construction, roller
+  pattern, and density evidence protect the work before cooling fixes the
+  result. Release timing and owner access are managed so early traffic does
+  not mark or displace new pavement.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: paving-subgrade-preparation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: aggregate-base-placement
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: asphalt-placement
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: pavement-compaction
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: sealcoating-and-striping
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - asphalt-plant
+    - aggregate-supplier
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

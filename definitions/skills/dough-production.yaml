@@ -1,0 +1,95 @@
+id: dough-production
+name: Dough production
+kind: skill
+department: operations
+summary: >
+  Dough production plans, mixes, divides, ferments, and stages dough for
+  a later service period. The batch has to reach the required strength,
+  temperature, size, and fermentation state when the oven needs it;
+  missed timing cannot be recovered during a rush.
+inputs: [prep-list]
+outputs: []
+steps:
+  - name: Set the batch plan
+    role: pizzaiolo
+    consumes: [prep-list]
+    note: >
+      On-hand dough, expected service demand, usable life, room
+      temperature, and refrigeration capacity set the mix quantity.
+  - name: Mix to the target
+    role: pizzaiolo
+    note: >
+      Ingredient temperature, mixing development, and final dough
+      temperature are recorded for the conditions of that batch.
+  - name: Divide and identify
+    role: pizzaiolo
+    note: >
+      Ball weight, batch identity, and production time stay visible after
+      the dough leaves the mixer.
+  - name: Control fermentation
+    role: pizzaiolo
+    note: >
+      Time and temperature are adjusted through the planned room and cold
+      stages while the dough can still respond.
+  - name: Stage for service
+    role: pizzaiolo
+    note: >
+      Trays are released in the order and quantity the make line can use
+      before quality declines.
+tension: >
+  Available dough competes with fermentation quality and waste. Extra
+  production protects sales volume; dough made too early, held too long,
+  or produced beyond demand cannot deliver the intended product.
+failure_modes:
+  - name: Final temperature missed
+    cost: >
+      Fermentation runs ahead or behind the schedule even when the written
+      formula was followed.
+    signal: >
+      Batch records include mix time but omit flour, water, room, or final
+      dough temperature.
+  - name: Batch identity lost
+    cost: >
+      Staff cannot rotate dough by production condition or learn which
+      change caused a service problem.
+    signal: >
+      Trays reach storage without batch and time labels.
+  - name: Service release mistimed
+    cost: >
+      Dough reaches the line too cold, overproofed, or in more quantity
+      than the station can use.
+    signal: >
+      Staged trays return to refrigeration or remain open through the
+      service period.
+maturity:
+  - level: run badly
+    looks_like: >
+      The same formula and clock are used every day while room and
+      ingredient conditions change around them.
+  - level: run well
+    looks_like: >
+      Batch quantity, final temperature, fermentation stages, labels, and
+      service release are recorded and owned.
+  - level: run excellently
+    looks_like: >
+      Sales, waste, weather, refrigeration, and batch outcomes improve the
+      next plan while product characteristics remain consistent.
+competencies:
+  - name: Fermentation reading
+    note: >
+      The pizzaiolo interprets dough condition and temperature across
+      time, using the clock as one input.
+  - name: Batch planning
+    note: >
+      Tomorrow's usable quantity has to be chosen before tomorrow's demand
+      is known.
+automation:
+  now: >
+    Formula scaling, temperature calculations, batch labels, fermentation
+    timers, demand history, and waste reporting.
+  human: >
+    Dough feel and maturity judgment, responses to ingredient and weather
+    variation, and the decision to advance, hold, or discard a batch.
+questions:
+  - What condition caused the last batch to miss its service target?
+  - How much staged dough can the line use before its quality changes?

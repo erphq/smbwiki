@@ -1,0 +1,6 @@
+id: instrument-log
+name: Instrument log
+kind: document
+summary: >
+  Instruments or packs entering a sterilization cycle, with load and
+  handling details.

@@ -1,0 +1,109 @@
+id: poured-concrete-contractor
+name: Poured Concrete Contractor
+codes:
+  naics: '238110'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A poured concrete contractor turns survey control, excavation, forms,
+  reinforcement, embeds, mix supply, crews, pumps, weather, and testing into
+  foundations and structural elements. The placement window is short, while
+  the dimensions and concealed components have to be right before the first
+  truck unloads.
+
+
+  Production depends on forming and steel readiness, predictable truck
+  spacing, access, consolidation, finishing time, and curing protection. A
+  missed embed, weak support, cold joint, poor cover, or uncontrolled surface
+  cannot be corrected cheaply after hardening. Placement records connect field
+  conditions to test results and payment quantities.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: formwork-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: reinforcement-placement
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: concrete-placement
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: concrete-finishing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: concrete-curing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - ready-mix-concrete-producer
+    - reinforcing-steel-supplier
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

@@ -1,0 +1,33 @@
+id: managed-it-service-provider
+name: Managed IT Service Provider
+codes:
+  naics: "541513"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A managed IT service provider accepts continuing responsibility for a
+  defined set of users, devices, identities, networks, applications,
+  backups, security controls, vendors, and service hours. Onboarding has
+  to establish inventory, access, baseline condition, ownership, and
+  escalation before support promises begin.
+
+  Daily work mixes alerts, requests, incidents, changes, maintenance,
+  procurement, projects, and third-party dependencies. The provider
+  keeps each action attached to affected assets, authority, evidence,
+  risk, communication, time, and closure, while recurring reviews expose
+  unsupported systems and repeated failure.
+revenue_model:
+  - id: recurring-managed-service
+    note: defined support and operations coverage billed by user, device, or agreement
+  - id: projects-and-procurement
+    note: separately authorized implementation and supplied equipment
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+skills:
+  - ref: maintenance-agreements
+    roles: [principal, professional]
+    documents: [service-agreement, work-order]
+    metrics: [agreement-renewal-rate]
+    software: [professional-services-automation]
+supply_chain:
+  buys_from: [technology-distributor, cloud-service-provider]
+  sells_to: [commercial-client]

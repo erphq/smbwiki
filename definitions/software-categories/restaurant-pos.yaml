@@ -1,0 +1,8 @@
+id: restaurant-pos
+name: Restaurant POS
+kind: software-category
+summary: >
+  Order capture, payment, and menu management at the point of sale;
+  the transactional system of record for a food business.
+erpai_category: sales
+erpai_apps: []

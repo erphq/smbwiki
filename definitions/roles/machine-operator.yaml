@@ -1,0 +1,6 @@
+id: machine-operator
+name: Machine operator
+kind: role
+summary: >
+  Sets up and runs production equipment to the current work
+  instruction, recording quantities, checks, downtime, and scrap.

@@ -1,0 +1,50 @@
+id: warehouse-base
+name: Warehouse (base)
+abstract: true
+revenue_model:
+  - id: storage-fees
+    note: space and custody sold by unit, pallet, bin, or time
+  - id: handling-fees
+    note: receiving, picking, packing, and related movement work
+skills:
+  - ref: client-engagement
+    roles: [warehouse-manager, office-manager]
+    documents: [client-brief, engagement-letter]
+    software: [customer-relationship-management]
+  - ref: inventory-fulfillment
+    roles: [warehouse-manager, warehouse-associate]
+    documents: [inventory-receipt, customer-order, stock-record, pick-list, delivery-ticket]
+    metrics: [inventory-accuracy, order-cycle-time]
+    software: [warehouse-management]
+  - ref: staff-scheduling
+    roles: [warehouse-manager]
+    documents: [shift-schedule]
+    software: [workforce-management]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [facility-management]
+  - ref: invoicing
+    roles: [office-manager]
+    documents: [customer-invoice]
+    software: [accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-payable
+    roles: [office-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: warehouse-manager
+        reports:
+          - role: warehouse-associate
+          - role: maintenance-technician
+supply_chain:
+  sells_to: [commercial-client]

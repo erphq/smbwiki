@@ -1,0 +1,85 @@
+id: patient-recall
+name: Patient recall
+kind: skill
+department: sales
+summary: >
+  Patient recall identifies people due or overdue for recurring care,
+  checks that the recommendation and contact route are current, and
+  works the list through response, booking, deferral, or documented
+  refusal. The chart remains the source of the next due date.
+inputs: [patient-chart]
+outputs: [recall-list]
+steps:
+  - name: Calculate who is due
+    consumes: [patient-chart]
+    produces: [recall-list]
+    note: >
+      The due date follows the documented care interval and the latest
+      completed visit.
+  - name: Clean the worklist
+    note: >
+      Duplicates, completed care, inactive patients, bad contact details,
+      and clinical exceptions are resolved before outreach.
+  - name: Work the contact sequence
+    note: >
+      Each attempt records channel, result, promised action, and the next
+      date someone should act.
+  - name: Close the recall outcome
+    note: >
+      Booking, deferral, refusal, transfer, and unreachable status remain
+      distinguishable in the patient record.
+tension: >
+  A full future schedule competes with patient choice and contact trust.
+  Consistent follow-up protects continuity of care; repeated generic
+  messages after a clear response turn recall into noise.
+failure_modes:
+  - name: Due list built from missing completion
+    cost: >
+      Patients receive outreach for care already performed and lose
+      confidence in the record.
+    signal: >
+      Recent completed visits still appear on the recall list.
+  - name: Attempts without disposition
+    cost: >
+      Staff repeat the same outreach while no one knows whether the
+      patient deferred, declined, transferred, or remained unreachable.
+    signal: >
+      Contact counts increase while outcome fields remain blank.
+  - name: High-risk recall buried
+    cost: >
+      A clinically important follow-up waits behind routine recurring
+      outreach.
+    signal: >
+      The list is sorted only by due date with no clinical priority.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff call from a printed list when the schedule looks empty and
+      completed or declined patients remain on it.
+  - level: run well
+    looks_like: >
+      The recall list comes from current chart dates, attempts have
+      outcomes, and future actions have owners.
+  - level: run excellently
+    looks_like: >
+      Clinical priority, contact preference, and past response shape the
+      queue, and completion reliably creates the next due event.
+competencies:
+  - name: Record hygiene
+    note: >
+      Recall quality depends on accurate completion dates, intervals,
+      contact details, and patient status.
+  - name: Respectful persistence
+    note: >
+      The operator can maintain continuity without ignoring a patient's
+      response or preferred contact route.
+automation:
+  now: >
+    Due-date calculation, list generation, reminders, contact sequences,
+    response capture, and suppression after defined outcomes.
+  human: >
+    Clinical prioritization, sensitive outreach, interpretation of
+    ambiguous responses, and escalation when delay creates risk.
+questions:
+  - Why is the oldest clinically important recall still open?
+  - Does every contact attempt leave a clear outcome and next action?

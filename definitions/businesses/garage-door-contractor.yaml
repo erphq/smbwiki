@@ -1,0 +1,109 @@
+id: garage-door-contractor
+name: Garage Door Contractor
+codes:
+  naics: '238290'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A garage door contractor surveys openings, installs sectional or overhead
+  doors, fits tracks and hardware, balances springs and cables, adds operators
+  and controls, and services failed systems. Opening geometry, structure,
+  headroom, vehicle clearance, power, access, and selected door weight
+  determine the equipment and method.
+
+
+  Stored spring energy and a heavy moving door make setup and testing central
+  to the job. A powered cycle does not prove balance, attachment, force, or
+  entrapment protection. The technician verifies manual operation, travel
+  limits, reversal devices, release, seals, controls, and owner instruction
+  before handover.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: opening-and-headroom-survey
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - work-order
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: overhead-door-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - work-order
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: door-operator-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - work-order
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: spring-and-cable-balancing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - work-order
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: garage-door-safety-testing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - work-order
+      - commissioning-record
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+supply_chain:
+  buys_from:
+    - overhead-door-distributor
+    - access-control-distributor
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

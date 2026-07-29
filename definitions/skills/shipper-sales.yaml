@@ -1,0 +1,91 @@
+id: shipper-sales
+name: Shipper sales
+kind: skill
+department: sales
+summary: >
+  Shipper sales develops freight demand the brokerage can price and
+  operate. The work identifies the customer's decision process, recurring
+  lanes or project need, commodity and service constraints, credit and
+  payment expectations, incumbent problems, and the first load request.
+inputs: []
+outputs: [load-request]
+steps:
+  - name: Establish operating fit
+    role: shipper-sales-representative
+    note: >
+      Freight type, geography, volume pattern, equipment, service level,
+      shipper role, and brokerage capability are aligned before pursuing a
+      quote.
+  - name: Map the buying process
+    role: shipper-sales-representative
+    note: >
+      Decision owner, routing guide, tender method, credit approval,
+      pricing event, required documents, and performance review are known.
+  - name: Qualify the lane and problem
+    role: shipper-sales-representative
+    note: >
+      Origin, destination, timing, commodity, volume variability,
+      appointment behavior, accessorial exposure, and current failure are
+      specific enough for operations to evaluate.
+  - name: Create the load request
+    role: shipper-sales-representative
+    produces: [load-request]
+    note: >
+      The first opportunity carries the actual movement requirement,
+      customer promise, commercial owner, and next decision.
+tension: >
+  Pipeline growth competes with operating fit and credit quality. Broad
+  pursuit fills the sales board; freight outside the brokerage's carrier,
+  service, or payment capability creates losses after the customer says yes.
+failure_modes:
+  - name: Volume claim lacks shipment evidence
+    cost: >
+      Pricing and carrier development are built around freight that never
+      enters the tender stream.
+    signal: >
+      Forecasted lanes have no sample history, calendar, award rule, or
+      first shipment date.
+  - name: Service promise precedes operations review
+    cost: >
+      Sales commits coverage, tracking, appointment, or recovery the
+      operating team cannot deliver consistently.
+    signal: >
+      Customer-facing requirements appear only after the first load request.
+  - name: Payment path remains unknown
+    cost: >
+      Loads move before credit, billing portal, document, and payment-term
+      requirements are established.
+    signal: >
+      A pricing opportunity advances with no credit owner or payable route.
+maturity:
+  - level: run badly
+    looks_like: >
+      Sales collects lanes and contact details while operations discovers
+      freight condition and customer rules after award.
+  - level: run well
+    looks_like: >
+      Fit, buying process, lane facts, service expectations, credit, and
+      first movement are qualified before the load request.
+  - level: run excellently
+    looks_like: >
+      Win and loss reasons refine target accounts, actual tenders correct
+      pipeline claims, and operations joins before material promises.
+competencies:
+  - name: Freight discovery
+    note: >
+      The seller can uncover timing, facility, commodity, equipment,
+      accessorial, and communication details hidden behind a lane pair.
+  - name: Commercial qualification
+    note: >
+      Customer urgency, decision authority, credit, volume evidence, and
+      operating fit determine whether the opportunity deserves effort.
+automation:
+  now: >
+    Account research, activity capture, lane history, credit workflow,
+    qualification prompts, follow-up, and load-request creation.
+  human: >
+    Trust building, discovery, fit judgment, negotiation access, and
+    deciding when attractive volume would be poor freight.
+questions:
+  - What operating promise still awaits operations review?
+  - What evidence supports the volume and timing on the highest-value open lane?

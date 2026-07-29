@@ -1,0 +1,32 @@
+id: barber-shop
+name: Barber Shop
+codes:
+  naics: "812111"
+catalog_group: personal-recreation
+extends: personal-services-base
+summary: >
+  A barber shop sells short, repeat services through appointments,
+  walk-ins, or both. Queue position, barber availability, requested cut,
+  prior result, hair and skin condition, sanitation, service time, and
+  price shape each chair assignment.
+
+  The service record can be brief but still needs to preserve the details
+  that make the next visit repeatable. The operator watches chair use,
+  walk-in waits, rebooking, product stock, cash, commissions or chair
+  arrangements, tool sanitation, and the point where a requested service
+  exceeds available time or safe practice.
+revenue_model:
+  - id: barbering-services
+    note: cuts, shaves, grooming, and related chair services
+  - id: products-and-chair-arrangements
+    note: retail products and location-specific chair revenue
+  - remove: [booked-services, retail-products]
+licenses:
+  us:
+    - ref: barber-license
+      requirement: required
+      condition: Required for individuals performing regulated barbering services under the applicable state program.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [beauty-supply-distributor]
+  sells_to: [individual-client]

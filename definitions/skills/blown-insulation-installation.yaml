@@ -1,0 +1,97 @@
+id: blown-insulation-installation
+name: Blown insulation installation
+kind: skill
+department: operations
+summary: >-
+  Sets coverage markers, machine settings, bag count, depth, density, access
+  path, and drift protection for even installed coverage. Blown insulation
+  installation leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - inspection-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before blown insulation installation, read the current scope and
+      revisions, then verify complete air-control layer, dry cavities, closed
+      leaks, installed services, approved insulation system, and safe access.
+  - name: Set the field controls
+    note: >-
+      Translate blown insulation installation into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During blown insulation installation, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept blown insulation installation, check the completed work
+      against continuous thermal and air boundary, full depth, correct
+      density, protected clearances, and documented concealed work, then close
+      correction and issue the resulting record.
+tension: >-
+  Blown insulation installation has to remain inside its acceptance basis
+  while production moves. Voids, compression, wind washing, and bypasses can
+  survive inspection while degrading comfort and energy use for the life of
+  the assembly.
+failure_modes:
+  - name: Blown insulation installation starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for blown
+      insulation installation is settled.
+    signal: >-
+      The blown insulation installation work package still has an open
+      drawing, access, material, predecessor, or approval dependency when
+      labor is assigned.
+  - name: Blown insulation installation closes without evidence
+    cost: >-
+      A concealed condition or required result from blown insulation
+      installation cannot be verified without opening, repeat work, delay, or
+      a disputed exception.
+    signal: >-
+      Blown insulation installation is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Blown insulation installation is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Blown insulation installation starts from a checked basis, follows a
+      named sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Blown insulation installation uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Thermal and air-boundary continuity
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of blown insulation installation.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for blown insulation installation have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Blown insulation installation can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting blown insulation
+    installation remain human.
+questions:
+  - >-
+    Which unresolved condition can stop blown insulation installation before
+    work begins?
+  - >-
+    Which record proves blown insulation installation was accepted before it
+    was covered, loaded, energized, occupied, or handed over?

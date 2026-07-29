@@ -1,0 +1,108 @@
+id: fence-contractor
+name: Fence Contractor
+codes:
+  naics: '238990'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A fence contractor lays out and installs posts, rails, panels, fabric,
+  gates, operators, and hardware across changing grade and uncertain property
+  edges. Boundary authority, utilities, easements, access, material, gate
+  loads, and owner expectations need agreement before holes are opened.
+
+
+  Most production is repetitive, but corners, slopes, gates, structures, and
+  utility crossings hold the risk. The crew controls line, post depth,
+  spacing, concrete or driven support, clearances, fasteners, and finish
+  damage. Closeout verifies security, safe edges, gate operation, cleanup, and
+  restoration of disturbed ground.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: boundary-layout-verification
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: fence-post-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: fence-panel-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: gate-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: fence-closeout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - fence-material-distributor
+    - gate-operator-distributor
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

@@ -1,0 +1,115 @@
+id: elevator-service-contractor
+name: Elevator Service Contractor
+codes:
+  naics: '238290'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  An elevator service contractor maintains, troubleshoots, repairs,
+  modernizes, tests, and documents vertical-transport equipment. Each unit
+  combines mechanical, electrical, control, door, communication, and safety
+  systems under code inspection, building access, outage, and rescue
+  constraints.
+
+
+  Callbacks are intermittent and often disrupt occupied buildings, so
+  diagnosis must preserve fault evidence before resetting the equipment.
+  Maintenance history, parts compatibility, shutdown control, testing, and log
+  records shape the response. Returning a unit to service requires functional
+  and safety checks beyond clearing the original symptom.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: elevator-maintenance-planning
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - service-ticket
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: elevator-diagnostics
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - service-ticket
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: elevator-repair
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - service-ticket
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: elevator-modernization
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - service-ticket
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+  - ref: elevator-code-testing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - service-ticket
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - field-service-management
+supply_chain:
+  buys_from:
+    - elevator-parts-distributor
+    - elevator-manufacturer
+  sells_to:
+    - homeowner
+    - general-contractor
+licenses:
+  us:
+    - ref: elevator-contractor-license
+      requirement: conditional
+      condition: Required only where the state or locality licenses firms performing the covered elevator work.
+      as_of: "2026-07-29"
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

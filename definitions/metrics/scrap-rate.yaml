@@ -1,0 +1,8 @@
+id: scrap-rate
+name: Scrap rate
+kind: metric
+summary: >
+  Input material or produced quantity that cannot be recovered into
+  saleable output.
+unit: percent
+direction: lower

@@ -1,0 +1,6 @@
+id: installer
+name: Installer
+kind: role
+summary: >
+  Prepares the work area, installs the specified system or finish, records
+  concealed conditions, and completes required checks and corrections.

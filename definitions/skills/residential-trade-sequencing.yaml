@@ -1,0 +1,95 @@
+id: residential-trade-sequencing
+name: Residential trade sequencing
+kind: skill
+department: operations
+summary: >-
+  Coordinates inspections, dry-in, rough trades, insulation, finishes,
+  fixtures, and correction work across a compact site with dependent crews.
+  Residential trade sequencing leaves a current work basis, a field record,
+  and acceptance evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - closeout-package
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before residential trade sequencing, read the current scope and
+      revisions, then verify approved plans, lot controls, selections,
+      permits, trade scopes, and long-lead dates.
+  - name: Set the field controls
+    note: >-
+      Translate residential trade sequencing into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During residential trade sequencing, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept residential trade sequencing, check the completed work against
+      the approved plan, inspection record, owner selections, and turnover
+      requirements, then close correction and issue the resulting record.
+tension: >-
+  Residential trade sequencing has to remain inside its acceptance basis while
+  production moves. A missed dependency can idle several trades and move the
+  promised completion date.
+failure_modes:
+  - name: Residential trade sequencing starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      residential trade sequencing is settled.
+    signal: >-
+      The residential trade sequencing work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Residential trade sequencing closes without evidence
+    cost: >-
+      A concealed condition or required result from residential trade
+      sequencing cannot be verified without opening, repeat work, delay, or a
+      disputed exception.
+    signal: >-
+      Residential trade sequencing is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Residential trade sequencing is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Residential trade sequencing starts from a checked basis, follows a
+      named sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Residential trade sequencing uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Residential construction sequencing
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of residential trade sequencing.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for residential trade sequencing have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Residential trade sequencing can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting residential trade sequencing
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop residential trade sequencing before
+    work begins?
+  - >-
+    Which record proves residential trade sequencing was accepted before it
+    was covered, loaded, energized, occupied, or handed over?

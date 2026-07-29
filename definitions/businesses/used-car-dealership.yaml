@@ -1,0 +1,21 @@
+id: used-car-dealership
+name: Used Car Dealership
+codes:
+  naics: "441120"
+catalog_group: retail-vehicles
+extends: vehicle-dealer-base
+summary: >
+  A used car dealership acquires individual vehicles whose title,
+  history, condition, equipment, mileage, keys, repairs, market value,
+  and sale readiness differ even within the same model. Appraisal and
+  reconditioning establish the real inventory cost and represented
+  condition before retail pricing.
+
+  Cash is tied to each unit from acquisition through sale or wholesale
+  exit. The operator watches title status, days in stock,
+  reconditioning delay, price changes, demonstration, financing,
+  disclosure, trade, funding, post-sale promise, and gross by vehicle.
+  Missing ownership or condition evidence can prevent a completed sale.
+supply_chain:
+  buys_from: [retail-consumer, vehicle-auction]
+  sells_to: [retail-consumer, commercial-client, vehicle-auction]

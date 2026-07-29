@@ -1,0 +1,97 @@
+id: field-measurement-and-scribing
+name: Field measurement and scribing
+kind: skill
+department: operations
+summary: >-
+  Transfers out-of-square walls, floors, ceilings, and openings into
+  controlled cuts, reveals, fillers, and scribe lines. Field measurement and
+  scribing leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - punch-list
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before field measurement and scribing, read the current scope and
+      revisions, then verify stable conditioned space, verified field
+      dimensions, dry material, approved profiles and samples, complete
+      backing, and protected access.
+  - name: Set the field controls
+    note: >-
+      Translate field measurement and scribing into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During field measurement and scribing, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept field measurement and scribing, check the completed work
+      against fit, reveal, joint, operation, fastening, surface condition,
+      alignment, hardware, and finish readiness, then close correction and
+      issue the resulting record.
+tension: >-
+  Field measurement and scribing has to remain inside its acceptance basis
+  while production moves. Finish carpentry absorbs accumulated framing,
+  drywall, floor, and casework tolerances in the most visible work.
+failure_modes:
+  - name: Field measurement and scribing starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for field
+      measurement and scribing is settled.
+    signal: >-
+      The field measurement and scribing work package still has an open
+      drawing, access, material, predecessor, or approval dependency when
+      labor is assigned.
+  - name: Field measurement and scribing closes without evidence
+    cost: >-
+      A concealed condition or required result from field measurement and
+      scribing cannot be verified without opening, repeat work, delay, or a
+      disputed exception.
+    signal: >-
+      Field measurement and scribing is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Field measurement and scribing is driven by crew availability and
+      visible completion; readiness, hold points, and acceptance evidence are
+      resolved afterward.
+  - level: run well
+    looks_like: >-
+      Field measurement and scribing starts from a checked basis, follows a
+      named sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Field measurement and scribing uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Field fitting and finish tolerance control
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of field measurement and scribing.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for field measurement and scribing have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Field measurement and scribing can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting field measurement and
+    scribing remain human.
+questions:
+  - >-
+    Which unresolved condition can stop field measurement and scribing before
+    work begins?
+  - >-
+    Which record proves field measurement and scribing was accepted before it
+    was covered, loaded, energized, occupied, or handed over?

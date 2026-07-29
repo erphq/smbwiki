@@ -1,0 +1,7 @@
+id: ticket-time
+name: Ticket time
+kind: metric
+summary: >
+  Minutes from order fired to order ready.
+unit: minutes
+direction: lower

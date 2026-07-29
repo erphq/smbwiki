@@ -1,0 +1,6 @@
+id: home-inspector
+name: Home inspector
+kind: role
+summary: >
+  Examines accessible building components, distinguishes observed defects
+  from limitations, and produces a condition report for the client.

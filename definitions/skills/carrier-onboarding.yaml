@@ -1,0 +1,96 @@
+id: carrier-onboarding
+name: Carrier onboarding
+kind: skill
+department: supply
+summary: >
+  Carrier onboarding verifies that a motor carrier is the entity it
+  claims to be and is currently eligible for the work the brokerage may
+  assign. Identity, authority, insurance, safety, operating capability,
+  contracts, contacts, and payment instructions receive an approval
+  state with limits and ongoing monitoring.
+inputs: [carrier-packet]
+outputs: [approved-carrier-record]
+steps:
+  - name: Verify identity and control
+    role: carrier-compliance-specialist
+    consumes: [carrier-packet]
+    note: >
+      Legal entity, authority identifiers, addresses, domains, phones,
+      signer, tax details, and bank-change route are checked through
+      independent sources.
+  - name: Verify operating eligibility
+    role: carrier-compliance-specialist
+    note: >
+      Authority, insurance, safety information, equipment, geography, and
+      commodity fit are current for the freight under consideration.
+  - name: Review fraud and payment risk
+    role: carrier-compliance-specialist
+    note: >
+      Recent identity changes, contact inconsistencies, assignment
+      pressure, bank changes, and document anomalies receive explicit
+      resolution.
+  - name: Approve with controls
+    role: carrier-compliance-specialist
+    produces: [approved-carrier-record]
+    note: >
+      Approval date, work limits, required rechecks, payment setup,
+      monitoring, and suspension conditions remain visible to sourcing.
+tension: >
+  Fast access to capacity competes with identity, safety, and payment
+  assurance. Delayed approval can lose a truck; weak approval can place
+  freight or payment under a stolen, invalid, or unsuitable identity.
+failure_modes:
+  - name: Packet contact verifies itself
+    cost: >
+      A fraudulent actor controls every phone, email, document, and bank
+      check used for approval.
+    signal: >
+      No identity or insurance fact is confirmed through an independent
+      source.
+  - name: Approval outlives eligibility
+    cost: >
+      Sourcing assigns freight after authority, insurance, or an internal
+      restriction has changed.
+    signal: >
+      The approved record has no monitored status or last verification
+      time.
+  - name: Bank change bypasses identity control
+    cost: >
+      Legitimate carrier payment is redirected and recovery begins after
+      funds leave.
+    signal: >
+      Payment instructions change through the same contact requesting the
+      change.
+maturity:
+  - level: run badly
+    looks_like: >
+      A complete-looking packet is approval and sourcing can assign the
+      carrier indefinitely.
+  - level: run well
+    looks_like: >
+      Independent identity, authority, insurance, safety, capability,
+      contract, payment, limits, and recheck status support approval.
+  - level: run excellently
+    looks_like: >
+      Monitoring suspends changed records before assignment, fraud signals
+      alter controls, and sourcing can explain every carrier restriction.
+competencies:
+  - name: Entity verification
+    note: >
+      The specialist recognizes which facts share a source and builds an
+      independent chain from legal entity to operating contact.
+  - name: Freight-fit judgment
+    note: >
+      General active status has to be narrowed to the equipment, geography,
+      commodity, insurance, and service of the proposed load.
+automation:
+  now: >
+    Authority and insurance monitoring, identity comparisons, document
+    extraction, safety feeds, duplicate detection, approval rules, and
+    recheck queues.
+  human: >
+    Fraud investigation, conflicting sources, capability interviews,
+    exception approval, bank-change verification, and suspension judgment.
+questions:
+  - Which independent source verifies the person currently controlling this carrier account?
+  - What change would automatically prevent this carrier from receiving a load?

@@ -1,0 +1,8 @@
+id: report-turnaround-time
+name: Report turnaround time
+kind: metric
+summary: >
+  Elapsed time between completing required fieldwork and delivering the
+  signed client report.
+unit: days
+direction: lower

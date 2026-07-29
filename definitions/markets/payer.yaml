@@ -1,0 +1,7 @@
+id: payer
+name: Payer
+kind: market
+summary: >
+  An insurer, public program, employer, guardian, or other responsible
+  party that authorizes or pays some or all charges for another
+  person's care or service.

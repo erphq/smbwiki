@@ -1,0 +1,91 @@
+id: repair-checkout
+name: Repair checkout
+kind: skill
+department: operations
+summary: >
+  Repair checkout reconciles the authorized work with the completed
+  repair, explains the result and remaining recommendations, collects
+  payment, and transfers the vehicle back to the customer. Pickup is the
+  final chance to resolve a scope or price difference before release.
+inputs: [quality-check]
+outputs: [customer-invoice, payment-record]
+steps:
+  - name: Confirm release
+    role: service-advisor
+    consumes: [quality-check]
+    note: >
+      The advisor checks that quality control passed and any remaining
+      limitation is ready to explain.
+  - name: Reconcile the invoice
+    role: service-advisor
+    produces: [customer-invoice]
+    note: >
+      Authorized lines, installed parts, labor, tax, deposits, and
+      credits agree before the customer sees the total.
+  - name: Explain the result
+    role: service-advisor
+    note: >
+      The customer hears what caused the concern, what changed, what was
+      tested, and which recommendations remain open.
+  - name: Collect and release
+    role: service-advisor
+    produces: [payment-record]
+    note: >
+      Payment, keys, warranty information, and the customer's receipt
+      change hands under one completed record.
+tension: >
+  Pickup throughput competes with customer understanding. Moving a queue
+  clears the counter; a rushed explanation leaves price, warranty, or
+  deferred-work questions to return after the vehicle has gone.
+failure_modes:
+  - name: Invoice exceeds authorization
+    cost: >
+      The customer disputes the bill at the point of release and every
+      earlier approval becomes harder to defend.
+    signal: >
+      Final line totals or operations lack a matching authorization event.
+  - name: Deferred work left unspoken
+    cost: >
+      The customer assumes the vehicle has no remaining concern and the
+      shop loses the record for later follow-up.
+    signal: >
+      Declined or postponed findings appear on the file while the
+      delivery summary omits them.
+  - name: Warranty expectation unclear
+    cost: >
+      A later failure becomes a conflict over covered part, labor, time,
+      or operating condition.
+    signal: >
+      The receipt contains warranty text the advisor cannot explain.
+maturity:
+  - level: run badly
+    looks_like: >
+      The customer receives a total and keys while the advisor searches
+      the repair order for answers.
+  - level: run well
+    looks_like: >
+      Invoice, authorization, quality release, payment, warranty, and
+      deferred work agree at pickup.
+  - level: run excellently
+    looks_like: >
+      The explanation uses recorded evidence, customer questions update
+      the file, and follow-up work has a clear owner and date.
+competencies:
+  - name: Repair explanation
+    note: >
+      The advisor connects symptom, finding, repair, and test in language
+      the customer can use after leaving.
+  - name: Commercial reconciliation
+    note: >
+      Price changes, credits, deposits, and authorization limits must be
+      settled before they become a counter dispute.
+automation:
+  now: >
+    Invoice assembly, authorization comparison, payment collection,
+    digital receipts, warranty documents, and follow-up reminders.
+  human: >
+    Reading customer understanding, resolving discrepancies, explaining
+    residual risk, and deciding whether release should pause.
+questions:
+  - Does every invoice line have matching authorization and completion evidence?
+  - What deferred work did the customer leave with, and who will follow it?

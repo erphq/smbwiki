@@ -1,0 +1,8 @@
+id: cycle-failure-rate
+name: Cycle failure rate
+kind: metric
+summary: >
+  Activated machine cycles that fault, stop early, or require customer
+  refund or restart.
+unit: percent
+direction: lower

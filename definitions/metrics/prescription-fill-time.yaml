@@ -1,0 +1,8 @@
+id: prescription-fill-time
+name: Prescription fill time
+kind: metric
+summary: >
+  Time from a fillable prescription entering the queue to pharmacist
+  release.
+unit: minutes
+direction: lower

@@ -1,0 +1,100 @@
+id: production-control
+name: Production control
+kind: skill
+department: operations
+summary: >
+  Production control converts a customer order into authorized,
+  sequenced shop work. Revision, material, routing, setup, labor,
+  equipment, due date, quantity, progress, downtime, and actual output
+  remain attached to the production order.
+inputs: [customer-order]
+outputs: [production-order, routing-sheet]
+steps:
+  - name: Verify the order
+    role: production-manager
+    consumes: [customer-order]
+    note: >
+      Item, specification, revision, quantity, due date, delivery,
+      material, quality, and approval state are complete.
+  - name: Plan the routing
+    role: production-manager
+    produces: [production-order, routing-sheet]
+    note: >
+      Operations, work centers, setup, tooling, material, outside work,
+      checks, labor, lot size, and sequence become controlled
+      instructions.
+  - name: Clear readiness
+    role: production-manager
+    consumes: [production-order, routing-sheet]
+    note: >
+      Current drawing, material, tool, program, fixture, capacity,
+      predecessor work, and inspection method are available.
+  - name: Run and report
+    role: machine-operator
+    consumes: [routing-sheet]
+    note: >
+      Setup, start and stop, completed quantity, scrap, rework,
+      downtime, material use, and operation signoff stay current.
+  - name: Close production
+    role: production-manager
+    consumes: [production-order, routing-sheet]
+    note: >
+      Accepted quantity, remaining work, material, outside service,
+      actual cost, records, and shipment readiness are reconciled.
+tension: >
+  Machine and labor utilization compete with due-date flow and
+  readiness. Keeping every resource busy can create excess setup,
+  queues, partial work, and late orders when the constraint lies
+  elsewhere.
+failure_modes:
+  - name: Obsolete revision reaches the shop
+    cost: >
+      Labor and material produce output the customer cannot accept.
+    signal: >
+      Work packet revision differs from the released customer order or
+      current drawing.
+  - name: Work starts through a readiness gap
+    cost: >
+      Setup consumes capacity while staff search for material, tooling,
+      program, instruction, or inspection support.
+    signal: >
+      Released order retains an open critical prerequisite.
+  - name: Progress reported only at completion
+    cost: >
+      Planners discover shortages, scrap, downtime, and schedule loss
+      after recovery time has disappeared.
+    signal: >
+      Active routing has no operation-level quantity or status.
+maturity:
+  - level: run badly
+    looks_like: >
+      Jobs are sequenced by urgency and operator memory, with actuals
+      reconstructed after shipment.
+  - level: run well
+    looks_like: >
+      Order, revision, routing, readiness, release, progress, exception,
+      quantity, and closeout share one production record.
+  - level: run excellently
+    looks_like: >
+      Setup, queue, downtime, scrap, and due-date evidence improves
+      routing, batch size, staffing, maintenance, and quoting.
+competencies:
+  - name: Routing and capacity planning
+    note: >
+      The operator turns a specification into feasible operations under
+      real work-center and material constraints.
+  - name: Shop-floor control
+    note: >
+      Current authority, progress, exceptions, and completed quantity
+      remain visible while work moves.
+automation:
+  now: >
+    Order import, bills and routings, material checks, finite schedules,
+    dispatch lists, work instructions, barcode reporting, downtime,
+    and actual cost.
+  human: >
+    Feasibility, process design, setup, recovery sequence, ambiguous
+    specification, unsafe work, and exception decisions.
+questions:
+  - Which released order is missing one item needed at its next operation?
+  - Which due date is already impossible under current queue and capacity?

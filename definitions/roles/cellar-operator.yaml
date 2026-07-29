@@ -1,0 +1,6 @@
+id: cellar-operator
+name: Cellar operator
+kind: role
+summary: >
+  Runs vessel preparation, fermentation or aging checks, transfers,
+  additions, cleaning, sampling, and lot identification in the cellar.

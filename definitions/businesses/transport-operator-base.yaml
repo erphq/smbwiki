@@ -1,0 +1,59 @@
+id: transport-operator-base
+name: Transport operator (base)
+abstract: true
+revenue_model:
+  - id: transport-charges
+    note: completed movements billed by trip, distance, stop, time, or contract rate
+  - id: accessorial-charges
+    note: waiting, handling, redelivery, storage, and other authorized extra work
+skills:
+  - ref: lead-intake
+    roles: [dispatcher, office-manager]
+    documents: [load-request]
+    metrics: [booking-rate]
+    software: [transportation-management-system]
+  - ref: quoting
+    roles: [owner-operator, dispatcher]
+    documents: [load-request, quote]
+    metrics: [quote-win-rate]
+    software: [transportation-management-system]
+  - ref: transport-execution
+    roles: [dispatcher, driver]
+    documents: [load-request, bill-of-lading, proof-of-delivery]
+    metrics: [on-time-pickup-rate, on-time-delivery-rate]
+    software: [transportation-management-system, delivery-management]
+  - ref: customer-invoicing
+    roles: [office-manager]
+    documents: [proof-of-delivery, customer-invoice]
+    metrics: [days-sales-outstanding]
+    software: [transportation-management-system, accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician, driver]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [facility-management]
+  - ref: staff-scheduling
+    roles: [dispatcher]
+    documents: [shift-schedule]
+    software: [workforce-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: dispatcher
+        reports:
+          - role: driver
+      - role: maintenance-technician
+licenses:
+  us:
+    - ref: motor-carrier-authority
+      requirement: conditional
+      condition: Required for covered for-hire interstate motor-carrier operations; other operations follow different federal or state rules.
+      as_of: "2026-07-29"
+supply_chain:
+  sells_to: [individual-client, commercial-client]

@@ -1,0 +1,6 @@
+id: salon-coordinator
+name: Salon coordinator
+kind: role
+summary: >
+  Manages appointments, arrivals, phones, checkout, and the handoffs
+  that keep stylists and chairs working on time.

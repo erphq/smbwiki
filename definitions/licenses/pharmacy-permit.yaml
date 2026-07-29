@@ -1,0 +1,7 @@
+id: pharmacy-permit
+name: Pharmacy permit
+kind: license
+jurisdiction: US
+summary: >
+  State authorization for a pharmacy premises and responsible
+  pharmacist to dispense prescription drugs.

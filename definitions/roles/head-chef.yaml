@@ -1,0 +1,6 @@
+id: head-chef
+name: Head chef
+kind: role
+summary: >
+  Owns the menu, the kitchen roster, and food cost. The quality bar
+  and the margin both trace to this role.

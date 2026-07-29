@@ -1,0 +1,6 @@
+id: lead-technician
+name: Lead technician
+kind: role
+summary: >
+  Senior tech who runs complex jobs, mentors juniors, and signs off
+  work quality.

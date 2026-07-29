@@ -1,0 +1,6 @@
+id: stock-associate
+name: Stock associate
+kind: role
+summary: >
+  Receives deliveries, verifies quantities, maintains stock locations,
+  replenishes selling space, and records discrepancies.

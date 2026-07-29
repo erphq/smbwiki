@@ -1,0 +1,6 @@
+id: commissioning-record
+name: Commissioning record
+kind: document
+summary: >
+  Installed configuration, startup readings, functional tests, settings,
+  exceptions, correction, and release for operation.

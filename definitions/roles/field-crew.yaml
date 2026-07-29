@@ -1,0 +1,6 @@
+id: field-crew
+name: Field crew
+kind: role
+summary: >
+  Performs project work under the current field package and records
+  production, material use, defects, and changed conditions.

@@ -1,0 +1,32 @@
+id: massage-practice
+name: Massage Practice
+codes:
+  naics: "621399"
+catalog_group: personal-recreation
+extends: personal-services-base
+summary: >
+  A massage practice schedules provider time and a private treatment
+  space around the client's goals, health history, current symptoms,
+  contraindications, consent, draping, positioning, and requested
+  pressure. Intake must be reviewed again when condition changes.
+
+  The provider records the service delivered, client response,
+  modifications, aftercare, referral or stop decision, and follow-up
+  without turning the record into unsupported diagnosis. Appointment
+  length also includes preparation, room reset, documentation, and
+  communication needed before the next client.
+revenue_model:
+  - id: massage-sessions
+    note: therapeutic or wellness massage sold by session length
+  - id: packages-and-memberships
+    note: prepaid or recurring access to eligible appointments
+  - remove: [booked-services, retail-products]
+licenses:
+  us:
+    - ref: massage-therapist-license
+      requirement: conditional
+      condition: Required only where the state or locality regulates the massage services being provided.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [massage-supply-distributor, linen-service]
+  sells_to: [individual-client]

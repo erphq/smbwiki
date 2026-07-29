@@ -1,0 +1,97 @@
+id: thermal-envelope-assessment
+name: Thermal envelope assessment
+kind: skill
+department: operations
+summary: >-
+  Maps conditioned-space boundaries, insulation location, air-control
+  surfaces, transitions, penetrations, and access limits before work starts.
+  Thermal envelope assessment leaves a current work basis, a field record, and
+  acceptance evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - inspection-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before thermal envelope assessment, read the current scope and
+      revisions, then verify complete air-control layer, dry cavities, closed
+      leaks, installed services, approved insulation system, and safe access.
+  - name: Set the field controls
+    note: >-
+      Translate thermal envelope assessment into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During thermal envelope assessment, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept thermal envelope assessment, check the completed work against
+      continuous thermal and air boundary, full depth, correct density,
+      protected clearances, and documented concealed work, then close
+      correction and issue the resulting record.
+tension: >-
+  Thermal envelope assessment has to remain inside its acceptance basis while
+  production moves. Voids, compression, wind washing, and bypasses can survive
+  inspection while degrading comfort and energy use for the life of the
+  assembly.
+failure_modes:
+  - name: Thermal envelope assessment starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      thermal envelope assessment is settled.
+    signal: >-
+      The thermal envelope assessment work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Thermal envelope assessment closes without evidence
+    cost: >-
+      A concealed condition or required result from thermal envelope
+      assessment cannot be verified without opening, repeat work, delay, or a
+      disputed exception.
+    signal: >-
+      Thermal envelope assessment is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Thermal envelope assessment is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Thermal envelope assessment starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Thermal envelope assessment uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Thermal and air-boundary continuity
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of thermal envelope assessment.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for thermal envelope assessment have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Thermal envelope assessment can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting thermal envelope assessment
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop thermal envelope assessment before
+    work begins?
+  - >-
+    Which record proves thermal envelope assessment was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

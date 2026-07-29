@@ -1,0 +1,8 @@
+id: parts-catalog
+name: Parts catalog
+kind: software-category
+summary: >
+  Vehicle-specific part lookup, fitment, supplier availability,
+  ordering, pricing, and returns.
+erpai_category: inventory
+erpai_apps: []

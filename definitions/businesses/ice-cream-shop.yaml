@@ -1,0 +1,28 @@
+id: ice-cream-shop
+name: Ice Cream Shop
+codes:
+  naics: "722515"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  An ice cream shop manages frozen product, toppings, cones, cups, and
+  made-to-order service under strong weather and hour-of-day demand.
+  Temperature, flavor availability, portion control, allergen
+  information, queue speed, and freezer capacity shape the service line.
+
+  Staff move each order from selection through portioning, additions,
+  payment, and handoff in a small space. The operator balances batch or
+  delivered inventory against shelf life and forecast, records sold-out
+  flavors quickly, and keeps cleaning and temperature checks inside the
+  operating day.
+revenue_model:
+  - id: counter-dessert-sales
+    note: frozen desserts and drinks prepared and sold to walk-in customers
+  - id: take-home-products
+    note: packaged pints, cakes, and advance orders
+  - remove: [dine-in, takeout, catering]
+licenses:
+  us:
+    - remove: [liquor-license]
+supply_chain:
+  sells_to: [retail-consumer]

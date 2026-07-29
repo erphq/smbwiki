@@ -1,0 +1,6 @@
+id: restaurant-reservation
+name: Restaurant reservation
+kind: document
+summary: >
+  Service date and time, party identity and size, contact, table needs,
+  notes, confirmation, changes, cancellation, and arrival state.

@@ -1,0 +1,109 @@
+id: siding-contractor
+name: Siding Contractor
+codes:
+  naics: '238170'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A siding contractor covers the exterior wall with weather barrier,
+  flashings, trim, cladding, fasteners, joints, and sealant interfaces. Field
+  dimensions and opening details decide the layout, while the completed
+  surface must drain water and accommodate movement behind a consistent
+  visible elevation.
+
+
+  The crew inherits sheathing defects and depends on roofs, windows, doors,
+  decks, utilities, and penetrations installed by others. Readiness inspection
+  and photo records protect concealed drainage work. Cutting, fastening,
+  clearances, transitions, and final water-shedding checks determine whether
+  the finished wall performs beyond its appearance.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: substrate-readiness
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: weather-barrier-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: siding-layout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: siding-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: exterior-water-shedding-check
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - siding-distributor
+    - sheet-metal-fabricator
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

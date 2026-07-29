@@ -1,0 +1,52 @@
+id: lodging-base
+name: Lodging (base)
+abstract: true
+revenue_model:
+  - id: room-nights
+    note: dated room inventory sold under a rate plan
+  - id: stay-charges
+    note: parking, food, amenities, and other property services posted to a stay
+skills:
+  - ref: reservation-management
+    roles: [front-desk-agent, general-manager]
+    documents: [reservation-request, reservation-record]
+    metrics: [occupancy-rate]
+    software: [property-management-system]
+  - ref: guest-stay
+    roles: [front-desk-agent, general-manager]
+    documents: [reservation-record, room-status, guest-folio]
+    metrics: [average-ticket, occupancy-rate]
+    software: [property-management-system, accounting]
+  - ref: room-turnover
+    roles: [housekeeper, maintenance-technician]
+    documents: [room-status, cleaning-log]
+    metrics: [room-turn-time]
+    software: [property-management-system, facility-management]
+  - ref: facility-cleaning
+    roles: [housekeeper]
+    documents: [cleaning-log]
+    software: [facility-management]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [facility-management]
+  - ref: staff-scheduling
+    roles: [general-manager]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [general-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: front-desk-agent
+          - role: housekeeper
+          - role: maintenance-technician
+supply_chain:
+  sells_to: [individual-client]

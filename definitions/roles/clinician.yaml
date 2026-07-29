@@ -1,0 +1,6 @@
+id: clinician
+name: Clinician
+kind: role
+summary: >
+  Licensed practitioner responsible for assessment, treatment
+  decisions, care delivery, and the clinical record.

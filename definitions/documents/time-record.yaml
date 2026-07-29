@@ -1,0 +1,6 @@
+id: time-record
+name: Time record
+kind: document
+summary: >
+  Work date, person, engagement, activity, duration, and billing or
+  cost treatment recorded close to when the work occurred.

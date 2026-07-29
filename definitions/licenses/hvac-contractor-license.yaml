@@ -1,0 +1,8 @@
+id: hvac-contractor-license
+name: HVAC contractor license
+kind: license
+geo: [us]
+summary: >
+  State contractor licensing for mechanical work; required to pull
+  permits.
+jurisdiction: state

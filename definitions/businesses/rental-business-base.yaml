@@ -1,0 +1,45 @@
+id: rental-business-base
+name: Rental business (base)
+abstract: true
+revenue_model:
+  - id: rental-time
+    note: asset access sold by hour, day, week, month, or contract term
+  - id: delivery-and-service
+    note: transport, setup, consumables, cleaning, and added usage charges
+skills:
+  - ref: lead-intake
+    roles: [rental-agent]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [rental-management]
+  - ref: quoting
+    roles: [rental-agent, owner-operator]
+    documents: [quote]
+    metrics: [quote-win-rate]
+    software: [rental-management]
+  - ref: rental-turnaround
+    roles: [rental-agent, maintenance-technician]
+    documents: [rental-agreement, equipment-condition-report, customer-invoice]
+    metrics: [rental-utilization, damage-rate]
+    software: [rental-management, accounting]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [rental-management, facility-management]
+  - ref: accounts-receivable
+    roles: [rental-agent]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-payable
+    roles: [rental-agent]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: rental-agent
+      - role: maintenance-technician
+supply_chain:
+  sells_to: [individual-client, commercial-client]

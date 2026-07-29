@@ -1,0 +1,90 @@
+id: elevator-repair
+name: Elevator repair
+kind: skill
+department: operations
+summary: >-
+  Controls shutdown and access, verifies replacement compatibility, performs
+  the repair, restores guards and settings, and function-tests affected modes.
+  Elevator repair leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - service-ticket
+outputs:
+  - test-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before elevator repair, read the current scope and revisions, then
+      verify identified unit, maintenance history, code status, safe access,
+      outage coordination, parts, qualified staff, and rescue provisions.
+  - name: Set the field controls
+    note: >-
+      Translate elevator repair into work limits, sequence, responsibilities,
+      hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During elevator repair, the operator records quantities, observations,
+      decisions, and concealed details, and stops when the field condition
+      changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept elevator repair, check the completed work against safe
+      operation, required clearances and protection, corrected defects,
+      recorded tests, current log, and regulatory inspection status, then
+      close correction and issue the resulting record.
+tension: >-
+  Elevator repair has to remain inside its acceptance basis while production
+  moves. An elevator can return to service while an intermittent control,
+  door, braking, or leveling defect remains unresolved.
+failure_modes:
+  - name: Elevator repair starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      elevator repair is settled.
+    signal: >-
+      The elevator repair work package still has an open drawing, access,
+      material, predecessor, or approval dependency when labor is assigned.
+  - name: Elevator repair closes without evidence
+    cost: >-
+      A concealed condition or required result from elevator repair cannot be
+      verified without opening, repeat work, delay, or a disputed exception.
+    signal: >-
+      Elevator repair is released while its required check, location record,
+      test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Elevator repair is driven by crew availability and visible completion;
+      readiness, hold points, and acceptance evidence are resolved afterward.
+  - level: run well
+    looks_like: >-
+      Elevator repair starts from a checked basis, follows a named sequence,
+      stops on changed conditions, and closes against recorded acceptance
+      criteria.
+  - level: run excellently
+    looks_like: >-
+      Elevator repair uses field evidence, production variance, defects, and
+      closeout results to improve the next estimate, work package, and control
+      point.
+competencies:
+  - name: Vertical-transport diagnostics and code testing
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of elevator repair.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for elevator repair have to be captured while the
+      relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Elevator repair can use digital revisions, checklists, hold points, photo
+    capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting elevator repair remain
+    human.
+questions:
+  - Which unresolved condition can stop elevator repair before work begins?
+  - >-
+    Which record proves elevator repair was accepted before it was covered,
+    loaded, energized, occupied, or handed over?

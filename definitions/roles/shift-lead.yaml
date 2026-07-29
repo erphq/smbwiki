@@ -1,0 +1,7 @@
+id: shift-lead
+name: Shift lead
+kind: role
+summary: >
+  Runs one service period, assigns stations, resolves queue problems,
+  and makes sure opening, restocking, cleaning, and closeout work is
+  completed around customer demand.

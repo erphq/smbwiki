@@ -1,0 +1,6 @@
+id: quality-report
+name: Quality report
+kind: document
+summary: >
+  Inspection method, acceptance criteria, observations, result,
+  nonconformance, disposition, and release authority.

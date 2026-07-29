@@ -1,0 +1,49 @@
+id: primary-care-practice
+name: Primary Care Practice
+codes:
+  naics: "621111"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  A primary care practice manages scheduled visits, same-day concerns,
+  preventive work, chronic-condition follow-up, results, referrals, and
+  messages across a continuing patient record. The visit is one point
+  in a longer care plan, so orders and follow-up have to remain visible
+  after the patient leaves.
+
+  The daily schedule combines visit length, clinical urgency, rooming,
+  provider time, documentation, and work that arrives outside an
+  appointment. Results and referral records need an owner and a next
+  action. Billing depends on the clinical note matching the service that
+  was performed and the coverage information held for the patient.
+revenue_model:
+  - id: office-visits
+    note: evaluation and management services delivered in scheduled visits
+  - id: preventive-care
+    note: examinations and screening work delivered on a patient cadence
+  - id: chronic-care
+    note: recurring management and follow-up for ongoing conditions
+  - remove: [patient-services]
+skills:
+  - ref: clinical-care
+    roles: [physician, clinical-assistant]
+    documents: [appointment-record, patient-chart, clinical-note, treatment-plan]
+    software: [electronic-health-record]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+        reports:
+          - role: receptionist
+          - role: billing-specialist
+      - role: physician
+        reports:
+          - role: clinical-assistant
+licenses:
+  us:
+    - ref: physician-license
+      requirement: required
+      condition: Required for physicians providing regulated medical care.
+      as_of: "2026-07-29"
+seo:
+  title: "Primary Care Practice: How the Business Works | smbwiki"

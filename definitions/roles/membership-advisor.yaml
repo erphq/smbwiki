@@ -1,0 +1,6 @@
+id: membership-advisor
+name: Membership advisor
+kind: role
+summary: >
+  Explains plans, converts prospects, activates agreements, and works
+  with members whose use or account status signals a retention risk.

@@ -1,0 +1,27 @@
+id: pet-grooming-business
+name: Pet Grooming Business
+codes:
+  naics: "812910"
+catalog_group: personal-recreation
+extends: personal-services-base
+summary: >
+  A pet grooming business schedules an animal, owner instructions,
+  coat and skin condition, behavior, size, service package, handling
+  time, equipment, and kennel space. Intake records matting, injuries,
+  sensitivities, medications, emergency contact, and the point where
+  grooming should stop for veterinary care.
+
+  The service moves through safe restraint, bathing, drying, brushing,
+  clipping, trimming, cleaning, observation, and owner handoff. Staff
+  record changed scope, behavior, products, incidents, completion
+  estimate, and condition at pickup so price and future appointments
+  reflect the work actually required.
+revenue_model:
+  - id: grooming-services
+    note: bathing, coat work, trimming, and related animal care by appointment
+  - id: added-care-and-products
+    note: authorized special handling, treatments, and retail products
+  - remove: [booked-services, retail-products]
+supply_chain:
+  buys_from: [pet-supply-distributor]
+  sells_to: [individual-client]

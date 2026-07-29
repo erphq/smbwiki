@@ -1,0 +1,6 @@
+id: construction-plan
+name: Construction plan
+kind: document
+summary: >
+  Current drawings, specifications, revisions, details, and design
+  responsibilities that define the work to be built.

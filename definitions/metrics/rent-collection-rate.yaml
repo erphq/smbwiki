@@ -1,0 +1,8 @@
+id: rent-collection-rate
+name: Rent collection rate
+kind: metric
+summary: >
+  Rent and recurring charges collected relative to amounts due for a
+  period.
+unit: percent
+direction: higher

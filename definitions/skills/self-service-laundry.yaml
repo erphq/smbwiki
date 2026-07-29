@@ -1,0 +1,89 @@
+id: self-service-laundry
+name: Self-service laundry
+kind: skill
+department: operations
+summary: >
+  Self-service laundry runs the customer-selected wash or dry cycle after
+  activation, exposes usable status during operation, records completion
+  or fault, and returns the machine to an accurate availability state.
+  Customer loading remains outside staff control, so instructions and
+  fault recovery carry much of the operating discipline.
+inputs: [machine-transaction]
+outputs: [cycle-record]
+steps:
+  - name: Validate the activation
+    consumes: [machine-transaction]
+    note: >
+      Machine, paid program, price, and start response agree before the
+      cycle is treated as active.
+  - name: Run and expose status
+    note: >
+      Program progress, remaining time, door state, and customer action
+      are visible enough to distinguish waiting from fault.
+  - name: Handle interruption
+    note: >
+      Water, drain, heat, power, door, imbalance, and control faults route
+      to a safe stop and a defined customer recovery path.
+  - name: Close the cycle
+    produces: [cycle-record]
+    note: >
+      Completion, duration, readings, fault, refund or move, and machine
+      availability are recorded together.
+tension: >
+  Customer autonomy competes with equipment protection and reliable
+  recovery. Self-service reduces labor; unclear loading limits,
+  instructions, and fault states leave customers to improvise around
+  water, heat, moving equipment, and paid value.
+failure_modes:
+  - name: Completed status masks a failed result
+    cost: >
+      The machine becomes available even though the load remained wet,
+      unwashed, overheated, or interrupted.
+    signal: >
+      Normal completion appears alongside unusual duration, fault, or
+      customer refund activity.
+  - name: Fault leaves paid load trapped
+    cost: >
+      The customer cannot retrieve or finish the load and staff lack a
+      safe documented recovery.
+    signal: >
+      Door or drain faults have no escalation and value-transfer path.
+  - name: Availability state lags the machine
+    cost: >
+      Customers queue for an unusable machine or avoid one that has
+      returned to service.
+    signal: >
+      Floor labels, payment system, and physical state disagree.
+maturity:
+  - level: run badly
+    looks_like: >
+      A paid start is treated as a successful cycle and customers report
+      faults after moving their load.
+  - level: run well
+    looks_like: >
+      Activation, progress, interruption, recovery, completion, and
+      availability share one cycle record.
+  - level: run excellently
+    looks_like: >
+      Operating patterns identify repeat faults early, customer recovery
+      preserves value, and maintenance receives the condition that caused
+      the failure.
+competencies:
+  - name: Cycle-state diagnosis
+    note: >
+      The attendant separates normal waiting, customer loading issues,
+      utility problems, and equipment faults from available machine status.
+  - name: Safe load recovery
+    note: >
+      Water, heat, locked doors, chemical exposure, and heavy wet loads
+      require a controlled response.
+automation:
+  now: >
+    Cycle commands, progress, completion, fault codes, availability,
+    customer alerts, refunds, and maintenance-request creation.
+  human: >
+    Physical safety, trapped-load recovery, misuse assessment, machine
+    inspection, and customer help when paid service fails.
+questions:
+  - Which cycle outcome is being reported as complete while customers seek refunds?
+  - Do the floor, payment system, and machine agree on current availability?

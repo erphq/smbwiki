@@ -1,0 +1,6 @@
+id: maintenance-request
+name: Maintenance request
+kind: document
+summary: >
+  A reported equipment or facility fault with location, symptoms,
+  priority, and operating status.

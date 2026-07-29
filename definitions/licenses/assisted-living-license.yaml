@@ -1,0 +1,7 @@
+id: assisted-living-license
+name: Assisted living facility license
+kind: license
+jurisdiction: US
+summary: >
+  State authorization for a residential facility providing personal
+  care and supervision to residents.

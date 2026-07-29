@@ -1,0 +1,6 @@
+id: inspection-report
+name: Inspection report
+kind: document
+summary: >
+  Recorded test results and observed vehicle condition, often supported
+  by measurements, fault codes, photos, or technician notes.

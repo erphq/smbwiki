@@ -1,0 +1,92 @@
+id: member-sales
+name: Member sales
+kind: skill
+department: sales
+summary: >
+  Member sales turns an inquiry or trial visit into a specific access
+  agreement the prospective member understands. Plan, location,
+  services, recurring charge, term, cancellation route, start date, and
+  activity acknowledgement are settled before activation.
+inputs: [membership-application]
+outputs: [membership-agreement, liability-waiver]
+steps:
+  - name: Establish intended use
+    role: membership-advisor
+    consumes: [membership-application]
+    note: >
+      Location, schedule, facilities, classes, training, and expected
+      frequency determine which plan can serve the prospect.
+  - name: Explain the plan
+    role: membership-advisor
+    note: >
+      Access boundaries, recurring price, additional charges, commitment,
+      renewal, pause, and cancellation are discussed from the actual
+      agreement.
+  - name: Complete the agreement
+    role: membership-advisor
+    produces: [membership-agreement]
+    note: >
+      Selected plan and sales promises appear in the same terms the
+      member signs.
+  - name: Complete activity acknowledgement
+    role: membership-advisor
+    produces: [liability-waiver]
+    note: >
+      The member has time to disclose relevant concerns and ask how rules
+      apply before using the facility.
+tension: >
+  Immediate conversion competes with plan fit and clear terms. Closing a
+  mismatched agreement adds recurring revenue today and creates access,
+  billing, and cancellation conflict later.
+failure_modes:
+  - name: Verbal benefit exceeds the agreement
+    cost: >
+      The member expects a location, service, class, or cancellation term
+      the operating system cannot honor.
+    signal: >
+      Sales notes contain exceptions absent from the signed agreement.
+  - name: Recurring obligation obscured
+    cost: >
+      The first renewal or debit produces a dispute and a preventable
+      cancellation.
+    signal: >
+      Prospects ask about the total commitment only after signing.
+  - name: Plan fit assumed
+    cost: >
+      The member cannot use the facility at the desired place, time, or
+      service level.
+    signal: >
+      Early account complaints concern access boundaries explained during
+      the sale.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff quote promotions from memory, signatures are the finish line,
+      and exceptions surface at the door or first charge.
+  - level: run well
+    looks_like: >
+      Intended use, selected plan, recurring obligation, access, waiver,
+      and cancellation route are confirmed in one sale record.
+  - level: run excellently
+    looks_like: >
+      Early access and billing failures improve sales explanation, plan
+      fit is reviewed, and staff promises remain inside operable terms.
+competencies:
+  - name: Needs discovery
+    note: >
+      The advisor has to understand actual use before describing a plan's
+      value.
+  - name: Terms explanation
+    note: >
+      Recurring price, access, commitment, and exit rules must survive the
+      handoff from conversation to signed document.
+automation:
+  now: >
+    Plan comparison, eligibility rules, promotion calculation, agreement
+    assembly, electronic signature, and required-field checks.
+  human: >
+    Understanding intended use, explaining consequences, recognizing poor
+    fit, and handling a requested exception.
+questions:
+  - Which sales promise most often conflicts with access or billing later?
+  - Can a new member explain the recurring charge and cancellation route?

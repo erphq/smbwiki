@@ -1,0 +1,7 @@
+id: agreement-count
+name: Agreement count
+kind: metric
+summary: >
+  Active maintenance agreements.
+unit: count
+direction: higher

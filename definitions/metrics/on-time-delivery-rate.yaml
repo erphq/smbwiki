@@ -1,0 +1,8 @@
+id: on-time-delivery-rate
+name: On-time delivery rate
+kind: metric
+summary: >
+  Loads delivered inside the consignee's agreed appointment or service
+  window.
+unit: percent
+direction: higher

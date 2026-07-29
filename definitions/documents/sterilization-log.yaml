@@ -1,0 +1,6 @@
+id: sterilization-log
+name: Sterilization log
+kind: document
+summary: >
+  Cycle date, equipment, load, indicators, result, and release record
+  proving reusable instruments completed sterilization.

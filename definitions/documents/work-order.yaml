@@ -1,0 +1,6 @@
+id: work-order
+name: Work order
+kind: document
+summary: >
+  The instruction and record for one job: scope, site, materials,
+  labor, completion notes.

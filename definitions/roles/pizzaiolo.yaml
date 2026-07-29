@@ -1,0 +1,6 @@
+id: pizzaiolo
+name: Pizzaiolo
+kind: role
+summary: >
+  Runs dough production and the oven; the skill position a pizzeria's
+  product quality rests on.

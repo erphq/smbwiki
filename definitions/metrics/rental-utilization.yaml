@@ -1,0 +1,7 @@
+id: rental-utilization
+name: Rental utilization
+kind: metric
+summary: >
+  Available asset time committed to paying rentals.
+unit: percent
+direction: contextual

@@ -1,0 +1,28 @@
+id: painting-contractor
+name: Painting Contractor
+codes:
+  naics: "238320"
+catalog_group: construction-property
+extends: project-services-base
+summary: >
+  A painting contractor prices access, protection, surface preparation,
+  repair, coating system, and finish expectations across a defined set
+  of rooms or elevations. Labor includes masking, moving, scraping,
+  sanding, patching, priming, and
+  cleanup determine the hours behind the promised finish.
+
+  Production moves by completed areas, with color and sheen decisions
+  settled before material is opened. Moisture, adhesion failure, hidden
+  damage, and customer-added areas require a field decision tied to
+  evidence and price. Closeout is a joint inspection under ordinary
+  lighting, followed by punch work and a record of the products used.
+revenue_model:
+  - id: interior-projects
+    note: occupied and vacant interior work priced by scope and preparation
+  - id: exterior-projects
+    note: weather-exposed work planned around access, condition, and coating limits
+  - remove: [quoted-projects]
+supply_chain:
+  sells_to: [homeowner, general-contractor]
+seo:
+  title: "Painting Contractor: How the Business Works | smbwiki"

@@ -1,0 +1,20 @@
+id: bookstore
+name: Bookstore
+codes:
+  naics: "459210"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A bookstore selects titles across subject, audience, format, edition,
+  price, publisher terms, release date, and local demand. Receiving and
+  shelving depend on exact identifiers, while discovery depends on
+  staff knowledge, placement, displays, events, and customer requests.
+
+  Inventory can be active, reserved, special ordered, damaged, or
+  returnable to a supplier. The operator watches sell through, aged
+  stock, margin, preorders, event demand, and shelf capacity, then
+  balances broad selection with the cash and labor required to maintain
+  it.
+supply_chain:
+  buys_from: [book-distributor, publisher]
+  sells_to: [retail-consumer]

@@ -1,0 +1,8 @@
+id: retail-management
+name: Retail management
+kind: software-category
+summary: >
+  Point of sale, item and price records, purchasing, receiving,
+  inventory, returns, promotions, and store reporting.
+erpai_category: commerce
+erpai_apps: []

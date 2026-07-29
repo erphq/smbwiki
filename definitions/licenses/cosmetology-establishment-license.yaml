@@ -1,0 +1,8 @@
+id: cosmetology-establishment-license
+name: Cosmetology establishment license
+kind: license
+geo: [us]
+summary: >
+  Authorization for premises where regulated cosmetology services are
+  offered, commonly tied to sanitation and facility requirements.
+jurisdiction: state or local

@@ -1,0 +1,1019 @@
+# Curated operating specifics for the 124 skills that previously shared
+# name-substitution drafts. scripts/lib/skill-practice.mjs combines each
+# profile with the corresponding skill definition before validation and build.
+aggregate-base-placement:
+  basis: "approved aggregate source, lift limits, moisture range, finished grade, and test frequency"
+  acceptance: "source, thickness, moisture, grade, edge confinement, compaction pattern, and density results"
+  evidence: "delivery records, lift locations, moisture readings, density tests, and corrected-area retests"
+  risk:
+    name: "Base is placed outside its moisture or lift limit"
+    cost: "The layer can bridge, rut, or fail density and force removal before paving."
+    signal: "Loose lift depth or moisture differs from the approved placement and test plan."
+asphalt-placement:
+  basis: "approved mix, paving limits, weather window, truck cycle, prepared base, and joint plan"
+  acceptance: "delivery temperature, lift thickness, joint construction, surface texture, line, and grade"
+  evidence: "load tickets, temperature checks, paving locations, yield, and placement observations"
+  risk:
+    name: "The paving train outruns material or surface readiness"
+    cost: "Stops, cold joints, segregation, and variable thickness reduce pavement life."
+    signal: "Paver speed, truck arrival, mix temperature, or prepared length falls outside the daily plan."
+pavement-compaction:
+  basis: "approved roller train, test strip, mat temperature window, joint sequence, and stable support"
+  acceptance: "density, smoothness, joint confinement, edge condition, and freedom from roller marks"
+  evidence: "roller patterns, temperature observations, density tests, and mapped corrections"
+  risk:
+    name: "Rolling occurs outside the effective temperature window"
+    cost: "Required density may become unreachable or the mat may shove and crack."
+    signal: "The roller reaches a pass at a temperature or delay not proven by the test strip."
+paving-subgrade-preparation:
+  basis: "design elevation, drainage path, material limits, moisture target, proof-roll method, and repair authority"
+  acceptance: "grade, drainage, compaction, stability under proof roll, and closure of every weak area"
+  evidence: "survey checks, proof-roll observations, test results, undercut quantities, and repair locations"
+  risk:
+    name: "A weak area is buried instead of corrected"
+    cost: "The pavement structure inherits differential movement and early settlement."
+    signal: "Deflection, pumping, rutting, or failed density remains when base placement is released."
+sealcoating-and-striping:
+  basis: "approved products, pavement repairs, clean and dry surface, weather window, traffic closure, and marking layout"
+  acceptance: "application rate, cure, uniform coverage, line dimensions, accessibility markings, and safe reopening"
+  evidence: "material quantities, weather readings, area measurements, layout checks, and release time"
+  risk:
+    name: "Traffic returns before coating or markings have cured"
+    cost: "Tracking, pickup, blurred lines, and unsafe traffic control require rework."
+    signal: "The closure plan ends before the product data and field condition support release."
+
+air-sealing:
+  basis: "the mapped pressure boundary, compatible sealants, accessible transitions, penetration list, and concealment sequence"
+  acceptance: "continuous seals at plates, chases, rims, openings, penetrations, and material transitions"
+  evidence: "location-tagged photos, material records, visual checks, and leakage test results where required"
+  risk:
+    name: "A boundary transition is concealed with an open air path"
+    cost: "Energy loss, moisture transport, and comfort complaints remain inaccessible behind finishes."
+    signal: "A wall, ceiling, or insulation area is released without a photo or check of its transitions."
+batt-insulation-installation:
+  basis: "specified material and R-value, full cavity access, completed air sealing, service locations, and clearance rules"
+  acceptance: "full-depth contact, fitted edges, split placement around services, supported faces, and no compression or gaps"
+  evidence: "room and cavity checks, package labels, depth observations, and pre-concealment photos"
+  risk:
+    name: "Batts are compressed or folded around services"
+    cost: "The installed assembly misses its thermal target and creates cold surfaces."
+    signal: "Cavities show voids, rounded corners, doubled material, or insulation pushed behind wiring and pipe."
+blown-insulation-installation:
+  basis: "specified material, target depth and density, calibrated machine, coverage markers, sealed boundaries, and ventilation dams"
+  acceptance: "uniform depth, installed density, bag count, protected access, clear ventilation paths, and complete coverage"
+  evidence: "bag labels, machine settings, area and depth measurements, marker photos, and installed quantity reconciliation"
+  risk:
+    name: "Nominal depth is reached without required density"
+    cost: "Settlement can leave thin areas and reduce the assembly R-value after closeout."
+    signal: "Covered area, bag count, and manufacturer coverage do not reconcile."
+insulation-verification:
+  basis: "the defined thermal boundary, required R-values, clearance rules, inspection access, and all areas awaiting concealment"
+  acceptance: "continuity, depth, density, fit, dams, ventilation paths, clearances, and treatment of access panels"
+  evidence: "area checklist, measured depths, material labels, deficiency closures, and pre-concealment photos"
+  risk:
+    name: "Verification samples miss a systematic gap"
+    cost: "Repeated omissions can be concealed across many rooms or roof areas."
+    signal: "Checks are recorded without locations or without covering transitions, penetrations, and irregular cavities."
+thermal-envelope-assessment:
+  basis: "current plans, field access, conditioned-space intent, climate exposure, existing assemblies, and known moisture conditions"
+  acceptance: "one continuous mapped air and insulation boundary with resolved transitions, penetrations, and access limitations"
+  evidence: "annotated boundary drawings, assembly observations, thermal or leakage findings, and unresolved-condition log"
+  risk:
+    name: "The assessed boundary follows drawings instead of actual field conditions"
+    cost: "Insulation and air sealing can be installed on different planes and leave bypasses."
+    signal: "The boundary map omits a change in ceiling height, shaft, knee wall, soffit, attic, or floor transition."
+
+appraisal-engagement-scoping:
+  basis: "identified client and users, intended use, property and rights, value definition, effective date, assignment conditions, and report form"
+  acceptance: "a signed scope that states the problem, information limits, delivery, fee, and responsibilities without conflicting assumptions"
+  evidence: "engagement terms, revision history, client confirmations, conflict checks, and scope-change approvals"
+  risk:
+    name: "The valuation problem changes after analysis begins"
+    cost: "Research and conclusions may answer the wrong use, property interest, or effective date."
+    signal: "Client instructions or discovered facts differ from the signed engagement without an approved amendment."
+appraisal-reconciliation-and-reporting:
+  basis: "verified subject data, completed applicable approaches, supported adjustments and inputs, assignment conditions, and reporting requirements"
+  acceptance: "a reasoned value conclusion that weighs conflicting indications and discloses assumptions, limits, and excluded approaches"
+  evidence: "approach worksheets, reconciliation notes, review checks, signed certification, and final report version"
+  risk:
+    name: "The final value is averaged without weighing evidence"
+    cost: "The conclusion cannot be defended against differences in relevance, reliability, or market behavior."
+    signal: "Reconciliation states a number but does not explain why one indication deserves more weight."
+comparable-sales-analysis:
+  basis: "defined market area, property characteristics, relevant date, verified transaction sources, and a supported search strategy"
+  acceptance: "competitive sales, verified terms, market-supported adjustments, and a value range consistent with observed buyer behavior"
+  evidence: "search results, verification contacts, comparable grids, adjustment support, maps, and exclusion reasons"
+  risk:
+    name: "Convenient sales replace competitive evidence"
+    cost: "Unsupported selection or adjustment choices bias the indicated value."
+    signal: "Closer or newer transactions are excluded without a recorded market reason."
+income-approach-valuation:
+  basis: "rent roll and lease terms, market rent and vacancy evidence, normalized expenses, forecast period, and investor return data"
+  acceptance: "reconciled income, vacancy, expenses, capitalization or discount inputs, and sensitivity consistent with the property and market"
+  evidence: "lease abstraction, market surveys, operating statement adjustments, rate support, calculations, and sensitivity tests"
+  risk:
+    name: "Income and capitalization assumptions come from different market conditions"
+    cost: "The resulting value embeds inconsistent growth, risk, and expense expectations."
+    signal: "Rent, vacancy, expense, and rate evidence use unmatched dates, property classes, or forecast assumptions."
+property-data-verification:
+  basis: "inspection access, legal description, public records, prior reports, client data, and a list of material characteristics to confirm"
+  acceptance: "resolved physical, legal, use, area, condition, and record discrepancies material to the assignment"
+  evidence: "inspection notes, photographs, measurements, record extracts, source contacts, and discrepancy resolutions"
+  risk:
+    name: "A material characteristic is accepted from one unverified source"
+    cost: "The valuation can rely on the wrong area, use, rights, condition, or improvement description."
+    signal: "Field observation and record data disagree without a documented resolution."
+
+array-installation:
+  basis: "approved array layout, structural attachment details, roof condition, flashing method, material release, access plan, and electrical routing"
+  acceptance: "attachment location and torque, weather seals, rail alignment, module clamps, wire support, bonding, and roof protection"
+  evidence: "layout checks, concealed attachment photos, torque records, serials where required, and installation punch closure"
+  risk:
+    name: "An attachment or wire route is covered before inspection"
+    cost: "Roof leakage, weak anchorage, or damaged conductors may require module removal to verify."
+    signal: "Installed rows advance without location-tagged attachment and cable-management evidence."
+photovoltaic-system-design:
+  basis: "verified site measurements, energy objective, module and inverter data, structural limits, electrical service, code criteria, and utility rules"
+  acceptance: "coordinated array, structural, conductor, protection, shutdown, labeling, and equipment design within stated assumptions"
+  evidence: "design calculations, equipment selections, plan revisions, coordination comments, and approved drawing set"
+  risk:
+    name: "One design discipline changes without rechecking the others"
+    cost: "A layout revision can invalidate structural loading, electrical limits, access, or production assumptions."
+    signal: "Module count, inverter stringing, attachment pattern, or service data differs across current documents."
+solar-commissioning:
+  basis: "completed installation, approved settings, test instruments, inspection status, utility conditions, monitoring access, and safe energization plan"
+  acceptance: "correct polarity, grounding, insulation, torque, inverter settings, shutdown, labels, monitoring, and expected production"
+  evidence: "commissioning checklist, electrical readings, setting records, inspection closures, production test, and owner instruction"
+  risk:
+    name: "The system is energized with an unresolved installation exception"
+    cost: "A hidden polarity, grounding, protection, or configuration error can damage equipment or create a safety hazard."
+    signal: "Startup proceeds while a required test, label, inspection item, or torque check remains open."
+solar-permitting-and-interconnection:
+  basis: "current design, jurisdiction forms, utility tariff and technical requirements, owner authorization, equipment data, and submission calendar"
+  acceptance: "approved permits, resolved corrections, completed inspections, executed interconnection terms, and documented permission to operate"
+  evidence: "submission packages, correction responses, approval notices, inspection results, utility correspondence, and permission-to-operate record"
+  risk:
+    name: "Construction or energization outruns an authority approval"
+    cost: "The project can require redesign, reinspection, delayed revenue, or unauthorized operation."
+    signal: "Field release or startup is scheduled against an assumed approval with no recorded notice."
+solar-site-assessment:
+  basis: "property access, energy history, roof and electrical access, customer objective, available records, and safe survey conditions"
+  acceptance: "verified structure, roof condition, shade, orientation, access, service capacity, equipment locations, and constructability constraints"
+  evidence: "measurements, photographs, shade data, service observations, roof notes, energy records, and open-condition list"
+  risk:
+    name: "The proposal assumes a condition the survey did not verify"
+    cost: "Design, price, production, or schedule can fail when the roof, service, shade, or access condition is discovered later."
+    signal: "A design input is copied from imagery or customer description despite available field access."
+
+below-grade-waterproofing:
+  basis: "approved membrane system, prepared substrate, dry weather window, resolved penetrations, drainage route, protection plan, and backfill sequence"
+  acceptance: "continuous membrane, reinforced transitions, sealed penetrations, terminated edges, drainage continuity, and undamaged protection"
+  evidence: "area checklist, wet-film or material records, concealed-condition photos, repair log, and pre-backfill release"
+  risk:
+    name: "Backfill covers an unverified membrane transition"
+    cost: "A leak can require excavation and disrupt occupied or finished areas."
+    signal: "Protection and backfill advance without documented checks at corners, penetrations, terminations, and repairs."
+joint-sealant-installation:
+  basis: "approved sealant and primer, verified joint geometry and movement, clean dry surfaces, backing material, access, and cure protection"
+  acceptance: "correct joint depth, bond faces, primer use, continuous fill, tooled profile, adhesion, appearance, and protected cure"
+  evidence: "product lots, joint locations, preparation checks, adhesion tests where required, photos, and cure release"
+  risk:
+    name: "Sealant bonds to the back of the joint or contaminated faces"
+    cost: "Movement concentrates stress and causes early adhesive or cohesive failure."
+    signal: "Backing depth, primer, cleaning, or three-sided bond control is missing from the area check."
+moisture-path-diagnosis:
+  basis: "weather and event history, assembly drawings, safe access, calibrated instruments, occupant observations, and permission for selective openings"
+  acceptance: "a supported source and travel path that explains observed damage and separates active entry from retained moisture"
+  evidence: "moisture maps, test conditions, opening photos, readings, assembly notes, hypotheses tested, and remaining uncertainty"
+  risk:
+    name: "Visible damage is mistaken for the moisture source"
+    cost: "Repairs can conceal symptoms while water continues through another path."
+    signal: "The diagnosis names a component without reproducing entry or reconciling the full moisture pattern."
+waterproofing-flood-test:
+  basis: "completed membrane, cured repairs, defined test boundary, protected adjacent spaces, calibrated level reference, duration, and emergency response"
+  acceptance: "stable test level within allowed loss, no leakage below or adjacent, documented penetrations, and successful repair retest"
+  evidence: "start and finish levels, time-stamped observations, water additions, leakage checks, repair locations, and signed release"
+  risk:
+    name: "The test cannot distinguish leakage from evaporation or setup loss"
+    cost: "A failed assembly may pass or sound work may be damaged during unnecessary investigation."
+    signal: "Reference container, baseline level, duration, or monitored adjacent areas are absent."
+waterproofing-surface-preparation:
+  basis: "membrane requirements, substrate condition, moisture limit, repair materials, profile method, access, and protection from new contamination"
+  acceptance: "sound clean substrate, required profile, dry surface, filled voids, resolved cracks and corners, and compatible transitions"
+  evidence: "area condition survey, moisture readings, repair locations, profile checks, cleaning release, and pre-application photos"
+  risk:
+    name: "Membrane is applied over weak or contaminated material"
+    cost: "Bond failure can separate the waterproofing from the structure and open a hidden leakage path."
+    signal: "Dust, laitance, oil, dampness, sharp edges, or unclosed voids remain at application release."
+
+bid-package-management:
+  basis: "current design documents, trade boundaries, alternates, schedule dates, bidder qualifications, issue route, and decision authority"
+  acceptance: "complete packages, acknowledged addenda, explicit exclusions, leveled bids, and resolved scope interfaces"
+  evidence: "bidder list, issue log, addenda acknowledgements, scope matrix, bid tabulation, and award recommendation"
+  risk:
+    name: "A scope interface falls between bid packages"
+    cost: "The omitted work returns as a change, delay, or dispute after award."
+    signal: "Two bidders exclude the same interface or each assumes another trade carries it."
+commercial-project-closeout:
+  basis: "contract closeout requirements, authority inspections, system tests, training plan, punch status, warranties, releases, and turnover dates"
+  acceptance: "closed punch work, approved tests and inspections, complete as-builts and manuals, delivered training, releases, and owner signoff"
+  evidence: "closeout register, deficiency closures, approval records, training attendance, document transmittals, and acceptance certificate"
+  risk:
+    name: "Physical completion is treated as contractual closeout"
+    cost: "Payment, occupancy, warranty response, and owner operations can remain blocked after crews leave."
+    signal: "The completion date approaches while required documents or responsible submitters remain unidentified."
+rfi-control:
+  basis: "a specific conflict, current drawing and specification references, field condition evidence, schedule impact, responsible designer, and response deadline"
+  acceptance: "a clear authorized response incorporated into drawings, submittals, cost, schedule, and affected field work"
+  evidence: "RFI log, marked references, field photos, formal response, distribution record, and change linkage"
+  risk:
+    name: "Field work proceeds on an informal answer"
+    cost: "The installed result may lack design authority and generate rework or an unresolved change."
+    signal: "A verbal or email direction is used without a numbered response tied to current documents."
+subcontractor-buyout:
+  basis: "leveled bid, final scope, alternates, exclusions, schedule duties, manpower plan, insurance, submittals, and closeout obligations"
+  acceptance: "an executed subcontract whose scope, price, dates, interfaces, risk allocation, and deliverables match the project plan"
+  evidence: "scope checklist, negotiation log, bid comparison, qualification record, insurance status, and executed subcontract"
+  risk:
+    name: "The subcontract price closes before scope exclusions"
+    cost: "Unbought work and duplicated allowances surface after award as cost and schedule exposure."
+    signal: "The final scope sheet contains blanks, carried allowances, or assumptions absent from the subcontract."
+submittal-control:
+  basis: "submittal register, specification requirements, responsible preparer, procurement lead time, coordination needs, reviewer route, and required-on-site date"
+  acceptance: "complete coordinated submittals, recorded review status, resolved comments, and release tied to the current design"
+  evidence: "submittal log, transmitted package, review comments, revision chain, approval status, and procurement release"
+  risk:
+    name: "Fabrication starts from an uncoordinated submittal"
+    cost: "Approved product data can still conflict with dimensions, systems, or adjacent trade work."
+    signal: "Procurement is released while coordination comments or a required resubmission remain open."
+
+boundary-field-survey:
+  basis: "record research, coordinate basis, field control, access permissions, monument search plan, adjoining evidence, and required accuracy"
+  acceptance: "redundant observations of monuments, occupation, improvements, and conflicts tied to verified control"
+  evidence: "raw observations, field notes, monument descriptions, photographs, closures, and conflict sketches"
+  risk:
+    name: "Occupation evidence is accepted as the legal boundary"
+    cost: "A fence or use line can displace the surveyed boundary and create a material title conflict."
+    signal: "A corner conclusion relies on possession without reconciling record calls and controlling monuments."
+field-control-establishment:
+  basis: "project datum, coordinate system, benchmark source, stable locations, instrument checks, redundancy plan, and protection requirements"
+  acceptance: "independent measurements that close within tolerance and leave recoverable horizontal and vertical references"
+  evidence: "control descriptions, coordinates, elevations, raw observations, adjustment report, closure, and witness ties"
+  risk:
+    name: "Unverified control propagates through later survey work"
+    cost: "Every layout, boundary, or elevation based on the point may require correction."
+    signal: "A control point is used without independent closure to the stated datum."
+plat-preparation:
+  basis: "adjusted survey data, record descriptions, governing standards, title information, easements, certification form, and client purpose"
+  acceptance: "a coherent plat whose geometry, calls, monuments, encumbrances, notes, scale, and certification agree"
+  evidence: "drafting checks, closure report, record comparison, review comments, revision history, and signed plat"
+  risk:
+    name: "Graphic geometry and written calls disagree"
+    cost: "The plat can misstate the boundary or fail recording and professional review."
+    signal: "Closure, acreage, bearings, distances, or monument labels differ between the drawing and description."
+survey-data-adjustment:
+  basis: "complete raw observations, instrument constants, coordinate basis, required tolerances, field checks, and the chosen adjustment method"
+  acceptance: "identified blunders removed, closures tested, residuals reviewed, adjusted values reproducible, and judgment documented"
+  evidence: "raw and adjusted files, closure calculations, residual report, excluded-observation log, and review approval"
+  risk:
+    name: "Adjustment hides a field blunder"
+    cost: "Mathematically balanced coordinates can preserve a wrong observation and shift the survey result."
+    signal: "One residual dominates or a rejected observation lacks an investigation record."
+survey-record-research:
+  basis: "subject identification, client purpose, search jurisdiction, title documents, adjoining ownership, prior surveys, and known control"
+  acceptance: "a reconciled record chain that exposes gaps, overlaps, senior rights, easements, and field evidence to seek"
+  evidence: "source index, deeds, plats, corner records, easement extracts, comparison sketch, and unresolved-conflict list"
+  risk:
+    name: "A controlling record is missed before fieldwork"
+    cost: "The field search and boundary analysis can follow the wrong evidence hierarchy."
+    signal: "A deed call, adjoining description, or prior monument cannot be traced to its source."
+
+boundary-layout-verification:
+  basis: "survey evidence, owner instruction, permit limits, easements, approved offsets, utility locations, access, and corner preservation plan"
+  acceptance: "a marked fence line that respects verified boundaries, offsets, easements, corners, and buildable clearances"
+  evidence: "layout sketch, survey references, offset measurements, corner photos, owner approvals, and exception marks"
+  risk:
+    name: "Owner preference is mistaken for boundary authority"
+    cost: "Fence construction can encroach, block an easement, or destroy survey evidence."
+    signal: "A layout change is directed in the field without a survey reference or written responsibility."
+fence-closeout:
+  basis: "contract scope, approved layout and finishes, gate requirements, correction list, disturbed-area plan, and owner review date"
+  acceptance: "consistent alignment, secure fasteners, safe edges, correct gaps, working gates, repaired grade, cleanup, and owner signoff"
+  evidence: "closeout walk record, gate tests, location photos, correction closures, care information, and acceptance"
+  risk:
+    name: "Functional gate or safety defects remain after crew demobilization"
+    cost: "The owner inherits insecure access, injury exposure, or repeated service visits."
+    signal: "Closeout records appearance but omits latch, stop, clearance, sharp-edge, and travel checks."
+fence-panel-installation:
+  basis: "approved fence line, set posts, panel or rail system, grade transition plan, expansion rules, fastener schedule, and finish protection"
+  acceptance: "consistent top line, planned grade changes, correct spacing and fastening, protected cuts, movement allowance, and privacy"
+  evidence: "run measurements, panel checks, fastener observations, cut-edge treatment, grade photos, and correction log"
+  risk:
+    name: "Panels are forced through an unresolved grade change"
+    cost: "The run develops uneven gaps, racking, weak fasteners, or an unacceptable top line."
+    signal: "Panel geometry changes in the field without a stepped, racked, or trimmed layout decision."
+fence-post-installation:
+  basis: "verified line and spacing, utility clearance, post schedule, hole or drive criteria, soil condition, support method, bracing, and cure plan"
+  acceptance: "correct location, depth, support, alignment, plumbness, spacing, bracing, and protected cure"
+  evidence: "post layout, utility clearance, hole-depth checks, support quantities, alignment observations, and pre-panel release"
+  risk:
+    name: "A post is set over an unverified utility conflict"
+    cost: "Installation can damage a service or force a weak relocation that breaks the fence layout."
+    signal: "Excavation enters a tolerance zone without exposure or documented clearance."
+gate-installation:
+  basis: "gate size and weight, supporting posts, hinge and latch hardware, clearances, grade, travel path, operator interface, and safety requirements"
+  acceptance: "stable supports, aligned leaf, smooth travel, positive stops, reliable latch, required clearance, and safe operator interaction"
+  evidence: "support and hardware checks, clearance measurements, travel test, latch test, operator coordination, and owner demonstration"
+  risk:
+    name: "Gate load exceeds the support or hardware arrangement"
+    cost: "Sag, binding, failed latching, and uncontrolled movement can appear after turnover."
+    signal: "The leaf cannot hold alignment through repeated full travel before final adjustment."
+
+building-systems-inspection:
+  basis: "inspection agreement, safe access, active utilities, system inventory, operating limits, weather conditions, and client concerns"
+  acceptance: "representative operation and material observations for accessible heating, cooling, plumbing, electrical, appliances, and controls"
+  evidence: "system notes, operating observations, readings where appropriate, defect photos, limitations, and safety referrals"
+  risk:
+    name: "A system is operated beyond a safe inspection limit"
+    cost: "Testing can damage equipment or expose occupants and the inspector to an unsafe condition."
+    signal: "Operation proceeds despite leakage, missing guards, abnormal sound, unsafe access, or unknown control state."
+exterior-inspection:
+  basis: "property access, weather history, site and roof visibility, inspection standard, safety limits, and known drainage concerns"
+  acceptance: "documented grading, drainage, cladding, openings, roof drainage, decks, walks, vegetation, and visible water paths"
+  evidence: "elevation and site photos, drainage observations, defect locations, access limits, and referral recommendations"
+  risk:
+    name: "The inspection records damage without tracing exterior water paths"
+    cost: "The client may repair a symptom while the source continues to affect the building."
+    signal: "A moisture-related defect lacks observations upslope, above, and at adjacent transitions."
+home-inspection-reporting:
+  basis: "complete field notes, system and location tags, inspection standard, material defect criteria, limitations, client details, and delivery terms"
+  acceptance: "a signed report that separates observations, implications, recommended action, limitations, and urgent safety conditions"
+  evidence: "report checklist, linked photographs, defect descriptions, limitation statements, review changes, and delivered version"
+  risk:
+    name: "The report overstates certainty beyond observed conditions"
+    cost: "The client may rely on an unsupported diagnosis or miss the need for specialist evaluation."
+    signal: "A conclusion lacks a location, observed basis, limitation, or appropriate recommendation."
+inspection-agreement-control:
+  basis: "identified client and property, inspection purpose and standard, exclusions, fee, access, utilities, attendance, timing, and delivery method"
+  acceptance: "client agreement to the inspection scope, limits, responsibilities, price, timing, and report terms before fieldwork"
+  evidence: "signed agreement, property details, payment status, access instructions, client communications, and approved changes"
+  risk:
+    name: "Fieldwork starts before the client accepts scope limitations"
+    cost: "Later expectations can exceed the agreed visual inspection and create a preventable dispute."
+    signal: "The inspector is on site while signature, exclusions, access, or report terms remain open."
+structural-interior-inspection:
+  basis: "inspection scope, safe access, visible foundation and framing areas, occupancy conditions, moisture history, and reported movement"
+  acceptance: "location-specific observations of foundation, framing, floors, walls, ceilings, stairs, attic, crawlspace, moisture, and unsafe conditions"
+  evidence: "room and assembly notes, level or moisture observations where used, defect photos, limitations, and referral triggers"
+  risk:
+    name: "Finish symptoms are reported without considering the load path"
+    cost: "Material movement or structural distress can be understated or attributed to the wrong cause."
+    signal: "Cracks, slope, separation, or sticking openings are described without related foundation and framing observations."
+
+cabinet-installation:
+  basis: "approved cabinet layout, verified room dimensions, level reference, service locations, structural backing, finished surfaces, hardware, and protection"
+  acceptance: "level and plumb cases, secure anchorage, aligned joints and fronts, working hardware, service clearances, and protected finishes"
+  evidence: "layout and service checks, anchor observations, level readings, adjustment list, finish photos, and punch closure"
+  risk:
+    name: "Cases are fixed before the room and services are reconciled"
+    cost: "Misalignment, filler changes, appliance conflicts, and damaged finishes require removal or field modification."
+    signal: "The first cabinet is anchored while wall, floor, opening, or service discrepancies remain unresolved."
+door-fitting:
+  basis: "door and frame schedule, verified opening geometry, handing, hardware set, clearance and seal criteria, fire requirements, and finish condition"
+  acceptance: "uniform clearances, free swing, positive latch, aligned hardware, required seals, protected finish, and compliant fire-door operation"
+  evidence: "opening measurements, hardware checks, clearance observations, operation test, label check, and punch closure"
+  risk:
+    name: "Material is removed before the source of binding is identified"
+    cost: "Trimming the leaf can create excessive clearance while frame or hinge misalignment remains."
+    signal: "A fitting correction starts without measuring opening square, hinge position, and required gaps."
+field-measurement-and-scribing:
+  basis: "approved design intent, stable installed conditions, finish thicknesses, datum, reveal requirements, material allowance, and fabrication responsibility"
+  acceptance: "transferred dimensions and scribe lines that fit actual walls, floors, ceilings, and openings while preserving intended reveals"
+  evidence: "dimensioned field sheet, templates, datum references, approval marks, cut list, and fit verification"
+  risk:
+    name: "A field dimension loses its datum or orientation"
+    cost: "Fabricated material can be mirrored, short, or incompatible with the intended reveal."
+    signal: "A measurement or template reaches fabrication without location, face, datum, or installer identification."
+finish-protection:
+  basis: "completed-work inventory, remaining trade sequence, compatible protection materials, access and ventilation needs, inspection route, and removal date"
+  acceptance: "continuous non-damaging protection, maintained access and ventilation, prompt damage records, and residue-free removal"
+  evidence: "protected-area log, product compatibility checks, condition photos, damage notices, maintenance checks, and removal release"
+  risk:
+    name: "Protection material damages the finish it covers"
+    cost: "Adhesive, trapped moisture, abrasion, or staining creates avoidable replacement work."
+    signal: "A covering is installed without compatibility, ventilation, or periodic condition checks."
+interior-trim-installation:
+  basis: "approved profiles and finish, room layout, moisture-conditioned material, backing, opening conditions, reveal standard, and trade sequence"
+  acceptance: "consistent reveals and joints, secure backing and fastening, clean returns, controlled fillers, protected finish, and resolved movement"
+  evidence: "room layout marks, material condition, sample approval, joint and reveal checks, finish photos, and punch closure"
+  risk:
+    name: "Trim layout accumulates error across a room"
+    cost: "Small reveal and joint deviations concentrate at focal corners, openings, or final returns."
+    signal: "Installation proceeds piece by piece without a room-level start, end, and symmetry check."
+
+clearing-and-grubbing:
+  basis: "surveyed clearing limits, protected features, utility information, environmental controls, disposal routes, topsoil plan, and stabilization sequence"
+  acceptance: "complete removal within limits, preserved protected areas, segregated material, stockpiled topsoil, stable access, and erosion control"
+  evidence: "limit markings, prework photos, disposal records, topsoil quantities, protected-feature checks, and stabilized-area log"
+  risk:
+    name: "Clearing crosses a protected or permitted limit"
+    cost: "Irreplaceable vegetation, habitat, property, or utility assets can be damaged before the error is noticed."
+    signal: "Equipment advances where limit markings are absent, conflicting, or not visible to the operator."
+compaction-control:
+  basis: "approved fill material, moisture range, lift thickness, equipment and pass plan, test frequency, location map, and correction authority"
+  acceptance: "placed lifts within material, moisture, thickness, density, elevation, and proof requirements with failed areas corrected"
+  evidence: "fill source records, lift map, moisture observations, density tests, failure locations, corrections, and retests"
+  risk:
+    name: "A failed test is buried without mapped correction"
+    cost: "Settlement and bearing problems become part of the completed earthwork."
+    signal: "The next lift advances while a failed location lacks undercut, rework, or passing retest evidence."
+excavation-control:
+  basis: "surveyed limits and depth, utility clearance, soil information, protective-system plan, spoil and access arrangement, water control, and inspection duty"
+  acceptance: "correct limits and bearing, stable or protected sides, safe access, managed spoil and water, and documented changed conditions"
+  evidence: "excavation permits, daily protective-system checks, depth and bearing observations, water log, soil changes, and release record"
+  risk:
+    name: "Excavation geometry changes without revising protection"
+    cost: "A deeper cut, surcharge, water condition, or soil change can invalidate the planned safe system."
+    signal: "Field depth or edge loading differs from the competent-person inspection record."
+grading-control:
+  basis: "current grading plan, verified benchmarks, cut and fill balance, approved material, drainage sequence, weather plan, and protected finished areas"
+  acceptance: "elevations, slopes, drainage paths, lift quality, tie-ins, stable surfaces, and protection from traffic and rain"
+  evidence: "survey shots, daily quantities, lift and moisture notes, drainage checks, weather impacts, and corrected-area records"
+  risk:
+    name: "Local grade meets elevation but breaks the drainage path"
+    cost: "Water can pond, erode slopes, enter structures, or saturate completed subgrade."
+    signal: "Spot checks pass while flow lines and tie-ins have not been walked as a continuous route."
+utility-locating:
+  basis: "current utility records, valid locate requests, site markings, tolerance zones, planned excavation limits, owner contacts, and exposure method"
+  acceptance: "reconciled records and marks, exposed critical crossings, briefed operators, protected services, and documented unknowns"
+  evidence: "ticket numbers, utility maps, field marks, pothole locations, photographs, conflict log, and operator briefing"
+  risk:
+    name: "A record or paint mark is treated as exact utility depth and position"
+    cost: "Excavation can strike a service, injure people, and interrupt surrounding operations."
+    signal: "Mechanical excavation enters a tolerance zone before the service is safely exposed."
+
+commercial-lease-administration:
+  basis: "executed lease and amendments, tenant and premises data, commencement events, rent schedule, options, notices, insurance, maintenance, use, and recovery clauses"
+  acceptance: "dated obligations, charges, notices, options, evidence requirements, and responsible parties accurately abstracted and calendared"
+  evidence: "lease abstract, amendment chain, critical-date calendar, notice log, insurance records, and obligation status"
+  risk:
+    name: "An amendment is omitted from the operating abstract"
+    cost: "Billing, notice, option, or maintenance decisions can follow superseded lease terms."
+    signal: "The abstract and executed document chain show different dates, areas, rates, or responsibilities."
+common-area-operations:
+  basis: "property standards, tenant hours and needs, service contracts, life-safety access, inspection schedule, budget, known defects, and event calendar"
+  acceptance: "safe clean accessible shared areas, working lighting and services, completed inspections, controlled waste, comfort, and documented repairs"
+  evidence: "inspection rounds, service logs, work orders, incident records, condition photos, tenant notices, and recurring-defect trends"
+  risk:
+    name: "A recurring common-area defect is repeatedly dispatched as a new task"
+    cost: "Tenants experience repeated disruption while the underlying asset or service failure persists."
+    signal: "The same location and symptom appears in multiple closed work orders without root-cause action."
+expense-recovery-reconciliation:
+  basis: "executed lease recoverability rules, tenant area and pool, caps and exclusions, budget billings, actual ledger, occupancy changes, and audit rights"
+  acceptance: "traceable recoverable costs, correct allocation and caps, reconciled estimates, supported tenant statements, and resolved review questions"
+  evidence: "expense ledger, lease rule matrix, allocation workbook, billing history, reconciliation statement, and tenant inquiry log"
+  risk:
+    name: "A property expense is allocated without its lease rule"
+    cost: "Tenants can be overbilled or underbilled and the reconciliation becomes difficult to defend."
+    signal: "A cost pool or adjustment lacks a citation to the governing lease clause."
+property-vendor-control:
+  basis: "approved vendor, defined scope and service level, insurance and compliance status, property access, dispatch authority, pricing, and completion evidence"
+  acceptance: "authorized work completed to scope, safe access closed, deficiencies resolved, invoice matched, and recurring performance recorded"
+  evidence: "vendor file, work authorization, access log, service ticket, completion proof, invoice match, and performance history"
+  risk:
+    name: "A vendor visit closes from an invoice alone"
+    cost: "Incomplete or out-of-scope work can be paid while the property problem remains."
+    signal: "The invoice arrives without site confirmation, service evidence, or exception disposition."
+tenant-improvement-coordination:
+  basis: "lease work letter, landlord criteria, approved design, permit path, contractor requirements, access and shutdown plan, inspection duties, and commencement dependencies"
+  acceptance: "approved construction, protected base building, resolved damage, completed inspections and closeout, restored access, and documented commencement"
+  evidence: "design reviews, access approvals, permit and inspection records, shutdown notices, condition photos, punch closure, and turnover file"
+  risk:
+    name: "Tenant work changes a base-building system without landlord control"
+    cost: "Life safety, capacity, warranty, other tenants, and property operations can be impaired."
+    signal: "A field change affects structure or shared systems without current review and shutdown authorization."
+
+concrete-curing:
+  basis: "mix and placement record, specified curing method and duration, strength or maturity criteria, weather forecast, protection resources, and loading restrictions"
+  acceptance: "continuous moisture and temperature control, required duration or strength, protected surfaces, and authorized form removal or loading"
+  evidence: "curing start time, weather and temperature log, protection checks, test or maturity results, interruption record, and release"
+  risk:
+    name: "Curing protection is removed for access or schedule pressure"
+    cost: "Early drying, freezing, overheating, or loading can permanently reduce durability and strength."
+    signal: "A slab or member loses cover, moisture, heat, or access control before its release criterion."
+concrete-finishing:
+  basis: "approved surface class and sample, placement sequence, screed and finishing equipment, joint plan, weather, bleed-water condition, and curing handoff"
+  acceptance: "required elevation, flatness, texture, edges, joints, appearance, drainage, and finish free of added-water damage"
+  evidence: "finish-area log, timing observations, weather, flatness or elevation checks, defect map, and curing handoff"
+  risk:
+    name: "Finishing starts while bleed water remains"
+    cost: "The surface can dust, craze, delaminate, or lose wear resistance."
+    signal: "Water or sheen is worked into the surface to accelerate final finishing."
+concrete-placement:
+  basis: "approved mix and pour plan, released forms and reinforcement, access and pump route, weather response, test crew, joint locations, and finishing capacity"
+  acceptance: "continuous placement, correct lift and consolidation, controlled joints, sampled concrete, reconciled quantity, and documented exceptions"
+  evidence: "delivery tickets, batch times, tests, placement map, weather, quantity reconciliation, and interruption record"
+  risk:
+    name: "Concrete arrival exceeds placement and finishing capacity"
+    cost: "Delays, cold joints, rejected loads, poor consolidation, and uncontrolled surface timing can result."
+    signal: "Truck queue, discharge time, pump pace, or finishing backlog departs from the pour plan."
+formwork-control:
+  basis: "current structural dimensions, form design, pressure and pour sequence, bracing, ties, embeds and openings, release treatment, access, and stripping criteria"
+  acceptance: "line, grade, dimensions, stability, tight joints, correct openings and embeds, clean release condition, and safe stripping plan"
+  evidence: "prepour form checklist, survey checks, brace and tie inspection, opening measurements, pour observation, and stripping release"
+  risk:
+    name: "Form pressure or geometry exceeds the braced system"
+    cost: "Movement or failure can injure workers and permanently distort the concrete."
+    signal: "Pour rate, lift height, temperature, brace condition, or form alignment differs from the approved basis."
+reinforcement-placement:
+  basis: "current structural drawings and bar schedule, approved material, support and splice details, cover requirements, embed coordination, access, and inspection hold point"
+  acceptance: "correct bar size, spacing, laps, cover, chairs, ties, cleanliness, embeds, and stability through placement"
+  evidence: "material tags, placement checklist, cover measurements, lap checks, prepour photos, inspection, and correction closure"
+  risk:
+    name: "Reinforcement shifts during concrete placement"
+    cost: "Cover, development, spacing, and structural performance can differ from the inspected arrangement."
+    signal: "Bars, mesh, chairs, or embeds move under worker, hose, or concrete load without recheck."
+
+demolition-waste-control:
+  basis: "area-specific removal plan, material classification, regulated-waste rules, chute and cart routes, container capacity, dust controls, haul approvals, and housekeeping standard"
+  acceptance: "segregated contained waste, controlled dust and routes, accurate weights and tickets, cleared work areas, and compliant disposal"
+  evidence: "container log, waste classification, haul tickets, weight records, regulated-material manifests, area checks, and diversion totals"
+  risk:
+    name: "Regulated or reusable material enters the general waste stream"
+    cost: "The project can face exposure, rejected loads, lost diversion credit, and disposal penalties."
+    signal: "A container receives unidentified debris or lacks an assigned material class and destination."
+hazardous-material-coordination:
+  basis: "current surveys and sampling, regulated scope, responsible licensed parties, notifications, containment, worker protection, clearance criteria, and disposal route"
+  acceptance: "authorized disturbance, controlled work area, complete removal or protection, required clearance, compliant transport, and released space"
+  evidence: "survey and sample reports, notifications, contractor credentials, daily controls, manifests, clearance results, and area release"
+  risk:
+    name: "Demolition disturbs suspect material before classification"
+    cost: "Workers, occupants, and adjacent areas can be exposed while the project stops for emergency response."
+    signal: "Material outside the surveyed scope is opened, cut, or broken without stop-work review."
+pre-demolition-engineering-survey:
+  basis: "existing drawings, field access, structural condition, load paths, adjacent buildings, utilities, hazardous-material information, removal scope, and equipment loads"
+  acceptance: "a documented stable removal sequence with identified supports, hazards, separations, utility states, exclusion zones, and responsible review"
+  evidence: "survey report, photographs, structural sketches, utility status, hazard list, sequence assumptions, and engineer directives"
+  risk:
+    name: "A hidden load path is removed out of sequence"
+    cost: "Partial collapse can endanger workers and damage retained or adjacent construction."
+    signal: "Field construction differs from the survey assumption or a member carries an unrecorded connection."
+selective-demolition:
+  basis: "marked removal and retention limits, engineering sequence, isolated utilities, hazardous-material clearance, protection, access, salvage plan, and design-response route"
+  acceptance: "specified material removed without destabilizing or damaging retained work, concealed conditions recorded, and openings left safe"
+  evidence: "area release, limit markings, daily progress, concealed-condition photos, salvage record, damage log, and designer responses"
+  risk:
+    name: "The crew crosses an unclear removal boundary"
+    cost: "Retained structure, finishes, or services can be irreversibly damaged."
+    signal: "Demolition reaches an unmarked interface or concealed assembly without a stop and confirmation."
+utility-isolation:
+  basis: "complete service inventory, owner and utility responsibilities, shutdown approval, downstream users, disconnect method, lockout points, test instruments, and restoration plan"
+  acceptance: "identified sources disconnected or protected, locked and tagged, zero energy verified, affected parties notified, and status maintained"
+  evidence: "isolation plan, approvals, lockout log, test-before-touch readings, photographs, handoff, and restoration authorization"
+  risk:
+    name: "A backfeed or secondary source remains energized"
+    cost: "Workers can contact live energy despite an apparent disconnect."
+    signal: "Zero-energy verification is omitted at the work location or does not cover every source."
+
+design-programming:
+  basis: "identified users and decision makers, project objectives, existing conditions, activity and equipment inventory, area constraints, budget, and approval route"
+  acceptance: "quantified spaces, adjacencies, performance needs, priorities, assumptions, conflicts, and client-approved program"
+  evidence: "interview notes, activity inventory, area schedule, adjacency studies, decision log, revisions, and program approval"
+  risk:
+    name: "A preferred layout substitutes for an approved program"
+    cost: "Design can solve the wrong activities, capacity, or operational relationship."
+    signal: "Space decisions advance while user needs or program priorities remain undocumented."
+finish-specification:
+  basis: "approved design intent, use and maintenance needs, code criteria, substrates and transitions, budget, availability, samples, and procurement lead time"
+  acceptance: "coordinated finish selections with product, color, performance, location, installation, transition, maintenance, and approved sample"
+  evidence: "finish schedule, product data, samples, code and performance checks, substitutions, approvals, and revision history"
+  risk:
+    name: "Aesthetic approval occurs before performance and availability checks"
+    cost: "The selected finish may fail in use, miss schedule, exceed budget, or conflict with adjacent materials."
+    signal: "A sample is approved while substrate, maintenance, lead time, or transition remains unresolved."
+furnishing-procurement-coordination:
+  basis: "approved item list and specifications, quantities, budget, vendor quotes, deposits, lead times, receiving and storage, delivery access, and installation sequence"
+  acceptance: "correct undamaged items delivered, accounted for, installed in approved locations, and closed with warranties and claims"
+  evidence: "purchase log, approvals, vendor acknowledgements, shipment status, receiving reports, damage claims, installation checks, and final inventory"
+  risk:
+    name: "Long-lead items are ordered from an unapproved or stale selection"
+    cost: "Deposits, schedule, storage, and design coordination can be lost when replacement is required."
+    signal: "Purchase release lacks current item approval, quantity, finish, ship date, or delivery destination."
+interior-design-documentation:
+  basis: "approved program and design decisions, measured existing conditions, consultant inputs, code criteria, drawing standards, issue purpose, and revision control"
+  acceptance: "coordinated plans, elevations, ceilings, details, schedules, specifications, dimensions, and consultant references for the stated issue"
+  evidence: "drawing checklist, coordination comments, decision log, redlines, revision history, and issued document set"
+  risk:
+    name: "One drawing view changes without coordinated schedules and details"
+    cost: "Procurement and field teams can act on conflicting dimensions, materials, or system locations."
+    signal: "The same element carries different information across current plans, elevations, schedules, or specifications."
+space-planning:
+  basis: "verified shell dimensions, approved program, user count, furniture and equipment, accessibility and egress criteria, privacy, daylight, systems, and future-change needs"
+  acceptance: "workable circulation, clearances, adjacencies, capacity, accessibility, egress, privacy, furniture fit, and system coordination"
+  evidence: "test-fit plans, dimension checks, area calculations, clearance studies, user reviews, option decisions, and approved layout"
+  risk:
+    name: "A test fit appears complete but fails a required clearance"
+    cost: "Later design can lose capacity or require major rework when accessibility, egress, equipment, or maintenance space is checked."
+    signal: "The plan advances without dimensioned paths, turning areas, door swings, and equipment service zones."
+
+door-operator-installation:
+  basis: "compatible operator and door, sound mounting structure, approved location, power and controls, drive arrangement, travel limits, safety devices, and manual-release requirements"
+  acceptance: "secure aligned mounting, correct drive and wiring, set travel and force, working manual release, coordinated safety devices, and stable repeated operation"
+  evidence: "equipment and compatibility check, mounting observations, wiring record, setting values, cycle test, and commissioning signoff"
+  risk:
+    name: "Operator force masks a poorly balanced or binding door"
+    cost: "Drive components and door hardware can fail while entrapment risk increases."
+    signal: "The operator must use excessive force or cannot move the disconnected door smoothly by hand."
+garage-door-safety-testing:
+  basis: "completed installation or repair, balanced door, approved test method and objects, clear test area, current limits and force settings, and owner controls"
+  acceptance: "responsive photo eyes, edge or force reversal, correct limits, usable manual release, balanced travel, warnings, and owner demonstration"
+  evidence: "device inventory, reversal tests, force and limit settings, manual-release check, cycle count, deficiencies, and owner acknowledgement"
+  risk:
+    name: "A safety device is present but does not stop hazardous motion"
+    cost: "The closing door can strike or trap a person, vehicle, or object."
+    signal: "One test passes visually while interruption, reversal distance, or repeated cycles are not recorded."
+opening-and-headroom-survey:
+  basis: "identified door and operator system, safe access, finished opening reference, structural and surface condition, power location, track options, and required clearances"
+  acceptance: "verified width, height, jambs, header, level, headroom, backroom, sideroom, floor, conflicts, power, and operator location"
+  evidence: "dimensioned survey, photographs, level and condition notes, obstruction map, power data, and unresolved-condition list"
+  risk:
+    name: "Equipment is selected from nominal opening dimensions"
+    cost: "Track, spring, operator, or door sections may not fit the actual structure and clearances."
+    signal: "The order is released without field dimensions for headroom, backroom, sideroom, and floor variation."
+overhead-door-installation:
+  basis: "verified opening and structure, correct door package, approved track and hardware, lifting plan, fastener requirements, floor condition, access, and protection"
+  acceptance: "secure brackets and track, aligned sections and rollers, sealed opening, free travel, correct hardware, protected finishes, and stable support"
+  evidence: "component check, attachment observations, track measurements, section alignment, travel test, seal check, and punch closure"
+  risk:
+    name: "Track is aligned to an opening that is not square or level"
+    cost: "The door can bind, rack, leave gaps, or overload rollers and operator."
+    signal: "Track adjustment reaches its limit while opening geometry remains unreconciled."
+spring-and-cable-balancing:
+  basis: "verified door weight and geometry, correct springs and drums, intact shaft and anchors, cable routing, restraint tools, safe work zone, and winding data"
+  acceptance: "seated cables, secured springs, equal lift, stable intermediate positions, correct travel, protected components, and recorded final turns or tension"
+  evidence: "component identification, spring calculation or chart, winding record, cable seating check, balance test, and final cycle observation"
+  risk:
+    name: "Stored spring energy is adjusted with an incompatible component or method"
+    cost: "Sudden release can cause severe injury and damage the door system."
+    signal: "Spring, drum, cable, door weight, or winding direction differs from the verified setup."
+
+drywall-hanging:
+  basis: "approved board type and thickness, framing and backing release, service and inspection completion, board orientation, joint plan, fastener schedule, and handling access"
+  acceptance: "supported edges, staggered joints, tight but unforced fit, correct fasteners, intact faces, planned openings, and protected boards"
+  evidence: "room release, board labels, layout checks, fastener observations, damage record, and pre-finishing punch"
+  risk:
+    name: "Board covers framing or service work before release"
+    cost: "Hidden defects require destructive opening and delay later finishing."
+    signal: "Hanging begins where required inspection, backing, photos, or service tests remain open."
+drywall-layout:
+  basis: "room dimensions, framing and backing, board size and orientation, finish level, control-joint requirements, openings, access panels, and installation sequence"
+  acceptance: "planned joints away from critical edges, supported seams, staggered courses, coordinated openings, efficient cuts, and recorded room layout"
+  evidence: "room layout marks, board orientation plan, backing checks, control-joint locations, opening dimensions, and layout approval"
+  risk:
+    name: "Joint placement creates an unsupported or crack-prone condition"
+    cost: "Finishing defects and repeated cracking can appear at openings, transitions, or aligned seams."
+    signal: "The first boards are installed without confirming end joints, backing, control joints, and opening corners."
+drywall-punch:
+  basis: "specified finish level and lighting condition, dry completed surfaces, protected adjacent work, room-by-room inspection route, repair materials, and release date"
+  acceptance: "flat consistent surfaces free of ridges, hollows, pinholes, fastener defects, damage, visible repair halos, and incomplete corners"
+  evidence: "location-tagged punch list, representative-light photos, repair assignments, reinspection results, and room release"
+  risk:
+    name: "Repairs are judged under lighting unlike the finished condition"
+    cost: "Defects or repair halos become visible after paint, fixtures, or daylight exposure."
+    signal: "A room is released without inspection under the specified or representative critical light."
+joint-finishing:
+  basis: "specified finish level, compatible compounds and tape, accepted board and fasteners, temperature and humidity, drying time, dust controls, and sample standard"
+  acceptance: "embedded tape, filled fasteners, straight corners, feathered joints, dry coats, controlled sanding, and surface ready for decoration"
+  evidence: "area and coat log, product and batch records, drying conditions, sample approval, defect checks, and release"
+  risk:
+    name: "A new coat traps moisture in the previous coat"
+    cost: "Shrinkage, cracking, bond loss, discoloration, and delayed finish defects can result."
+    signal: "Coating sequence follows schedule time despite damp, soft, or cool joint compound."
+texture-application:
+  basis: "approved sample and pattern, accepted substrate, consistent mix, calibrated equipment, masked adjacent work, environmental limits, break plan, and cure protection"
+  acceptance: "uniform pattern, matched breaks and repairs, clean edges, protected adjacent surfaces, proper cure, and approved appearance"
+  evidence: "sample approval, mix and equipment settings, area sequence, environmental observations, repair locations, and finish acceptance"
+  risk:
+    name: "Pattern changes across batches or work breaks"
+    cost: "Visible variation can require broad recoating instead of a local correction."
+    signal: "Mix, pressure, tip, distance, or application pace changes without comparison to the approved sample."
+
+elevator-code-testing:
+  basis: "applicable test requirement, unit history, approved procedure, test weights and instruments, qualified personnel, outage and access plan, and authority coordination"
+  acceptance: "completed safety and performance tests within criteria, recorded readings, corrected failures, updated unit log, and required authority acceptance"
+  evidence: "test plan, instrument and load records, readings, deficiency list, repairs, retest results, witness signoff, and unit log"
+  risk:
+    name: "A failed test is reset without finding the cause"
+    cost: "The unit can return to service with an intermittent or concealed safety defect."
+    signal: "A passing rerun lacks a repair, adjustment, or documented explanation for the original failure."
+elevator-diagnostics:
+  basis: "verified complaint, safe unit access, fault and callback history, current diagrams, operating state, qualified tools, and controlled test plan"
+  acceptance: "a reproducible symptom, isolated causal evidence, defined repair, checked related functions, and documented uncertainty"
+  evidence: "complaint details, fault history, test sequence, readings, component observations, causal finding, and recommended action"
+  risk:
+    name: "Parts are replaced from a fault code without isolating the cause"
+    cost: "The callback returns while cost, downtime, and passenger disruption increase."
+    signal: "The diagnosis closes with a component name but no test that separates it from wiring, settings, or related devices."
+elevator-maintenance-planning:
+  basis: "unit equipment and age, duty and environment, callback history, code-test results, manufacturer requirements, known wear, access windows, staffing, and parts lead time"
+  acceptance: "unit-specific preventive tasks, frequencies, parts, skills, outage windows, test links, and escalation points aligned to observed risk"
+  evidence: "asset register, maintenance plan, completed-task history, callback trends, wear observations, test results, and deferred-work log"
+  risk:
+    name: "A generic checklist ignores the unit's failure history"
+    cost: "Labor is spent on low-value tasks while recurring door, drive, leveling, or safety problems grow."
+    signal: "The plan repeats unchanged despite callbacks, test failures, wear trends, or modernization constraints."
+elevator-modernization:
+  basis: "surveyed retained equipment, code and performance objectives, engineered design, permits, outage phases, long-lead material, temporary operation plan, and acceptance test route"
+  acceptance: "coordinated installed systems, updated interfaces and records, completed code tests, reliable operation, trained owner staff, and authority release"
+  evidence: "survey, design and permit set, phase plan, material tracking, installation checks, test results, as-builts, training, and acceptance"
+  risk:
+    name: "New equipment is designed around an unverified retained condition"
+    cost: "Field conflicts can extend outage, force redesign, and compromise system performance."
+    signal: "A retained shaft, machine, power, structural, or interface dimension is assumed without a survey."
+elevator-repair:
+  basis: "isolated diagnosis, approved compatible parts, controlled shutdown, safe access and energy control, repair procedure, required settings, and return-to-service tests"
+  acceptance: "correct repair, restored guards and settings, checked affected and related modes, clean work area, reliable cycles, and documented release"
+  evidence: "diagnosis, work authorization, part identification, repair notes, settings, functional tests, callback watch, and service ticket closure"
+  risk:
+    name: "The unit returns to service after only one successful cycle"
+    cost: "An intermittent defect can strand passengers or cause another shutdown."
+    signal: "Release lacks repeated operation under the conditions that produced the original complaint."
+
+exterior-water-shedding-check:
+  basis: "current wall details, completed weather barrier and cladding interfaces, opening and penetration access, known water exposures, inspection sequence, and concealment status"
+  acceptance: "continuous downward and outward drainage through upper transitions, flashings, openings, penetrations, cladding, and base exits"
+  evidence: "elevation checklist, transition photos, opening and penetration checks, drainage-path observations, defects, and closure"
+  risk:
+    name: "A locally correct detail drains behind the next component"
+    cost: "Water can bypass the exterior plane and remain hidden until interior damage appears."
+    signal: "Inspection checks parts individually without tracing a continuous path from exposure to exit."
+siding-installation:
+  basis: "approved product and layout, released substrate and weather barrier, trim and flashing interfaces, fastener schedule, movement rules, cut treatment, access, and protection"
+  acceptance: "correct fastening, spacing, laps, movement clearance, aligned courses, treated cuts, coordinated sealant interfaces, and undamaged finish"
+  evidence: "product and lot records, area layout, fastener observations, movement checks, cut treatment, finish photos, and punch closure"
+  risk:
+    name: "Cladding is fastened too tightly to move"
+    cost: "Thermal or moisture movement can buckle panels, open joints, or damage fasteners."
+    signal: "Installed pieces cannot move as required or fasteners clamp the product against movement."
+siding-layout:
+  basis: "approved elevations, actual wall and opening dimensions, product module, starter and termination details, corner and trim widths, joint rules, and focal-line priorities"
+  acceptance: "resolved courses, panels, joints, reveals, corners, trim, openings, and terminations before production cutting"
+  evidence: "elevation layout, datum marks, module calculations, joint map, opening checks, mockup or dry layout, and approval"
+  risk:
+    name: "Module error accumulates into a focal opening or termination"
+    cost: "The final elevation can show narrow cuts, uneven reveals, or misaligned courses."
+    signal: "Layout begins from one end without checking cumulative dimensions and both termination conditions."
+substrate-readiness:
+  basis: "approved wall details, completed sheathing, opening and penetration coordination, moisture limit, plane tolerance, attachment requirements, repair method, and inspection access"
+  acceptance: "sound attached dry sheathing, acceptable plane, resolved gaps and damage, coordinated openings and penetrations, and released interfaces"
+  evidence: "area checklist, moisture readings, plane checks, attachment observations, repair locations, transition photos, and release"
+  risk:
+    name: "Exterior layers conceal a wet or unstable substrate"
+    cost: "Moisture, movement, and weak attachment can damage the full wall assembly."
+    signal: "Weather barrier or cladding starts while moisture, plane, attachment, or repair checks remain open."
+weather-barrier-installation:
+  basis: "approved barrier system and details, released substrate, weather window, opening sequence, transition and penetration materials, fastening rules, and damage-repair method"
+  acceptance: "continuous shingle-lapped drainage plane, flashed openings, sealed penetrations, integrated transitions, open drainage exits, and repaired damage"
+  evidence: "area and material log, lap and fastening checks, opening and penetration photos, transition records, damage repairs, and pre-cladding release"
+  risk:
+    name: "A reverse lap directs water behind the barrier"
+    cost: "Bulk water can enter the wall even when seams appear sealed from the exterior."
+    signal: "An upper sheet, flashing, or transition terminates behind the component below it."
+
+field-welding-control:
+  basis: "approved welding procedure, qualified welder, identified base material, joint preparation, compatible consumables, environmental protection, sequence, access, and examination plan"
+  acceptance: "prepared and completed welds within procedure, controlled consumables and weather, managed distortion, required examination, and closed repairs"
+  evidence: "procedure and qualification records, weld map, consumable log, environmental observations, examination results, repairs, and acceptance"
+  risk:
+    name: "Field conditions depart from the qualified welding procedure"
+    cost: "The weld can contain hidden defects or altered properties that require removal and repair."
+    signal: "Material, joint, position, preheat, consumable, weather, or process differs from the procedure without authorization."
+hoisting-rigging-steel:
+  basis: "member weight and center of gravity, approved pick and rigging, crane capacity and path, landing and temporary support, communication method, exclusion zone, and weather"
+  acceptance: "controlled lift and travel, stable landing, released rigging, maintained temporary stability, protected members, and recorded exceptions"
+  evidence: "lift plan, rigging inspection, capacity check, prelift briefing, weather, member and landing observations, and lift completion"
+  risk:
+    name: "A member is released before temporary stability is established"
+    cost: "The member or connected frame can move, fall, or initiate progressive instability."
+    signal: "Rigging slackens while required bolts, welds, guys, braces, or bearing checks remain incomplete."
+steel-erection-inspection:
+  basis: "current erection drawings, defined inspection points, stable access, survey control, connection status, decking sequence, damaged-member criteria, and loading restrictions"
+  acceptance: "plumb and aligned frame, completed required connections, stable decking and bracing, resolved damage, and released hold points"
+  evidence: "survey results, connection and bolt status, weld examinations, damage log, brace checks, correction closures, and area release"
+  risk:
+    name: "Following work loads or covers an incomplete connection"
+    cost: "Structural capacity and correction access can be lost before the deficiency is resolved."
+    signal: "Decking, concrete, fireproofing, or loading advances where connection status is unverified."
+steel-erection-planning:
+  basis: "current erection drawings, member delivery sequence, crane configuration and reach, site access, temporary stability design, connection sequence, fall protection, and weather limits"
+  acceptance: "a feasible site sequence linking delivery, picks, landings, connections, bracing, decking, access, and crew protection"
+  evidence: "erection plan, crane study, delivery schedule, stability details, lift sequence, coordination record, and pretask briefing"
+  risk:
+    name: "Shipping and erection sequences diverge"
+    cost: "Members block access, crane time is lost, and the stable planned connection sequence can break down."
+    signal: "The next required member is unavailable or buried while unplanned steel occupies the landing area."
+structural-bolting:
+  basis: "approved bolt assemblies, storage condition, connection drawings, hole alignment, installation method, calibrated tools or verification procedure, access, and sequence"
+  acceptance: "correct assemblies, clean protected condition, aligned holes, complete installation, required snugging or pretension, verification, and traceable repairs"
+  evidence: "bolt lot and storage record, connection map, tool checks, installation observations, verification results, and correction closure"
+  risk:
+    name: "Bolt condition or method invalidates pretension verification"
+    cost: "The connection may not develop its required clamping force despite appearing complete."
+    signal: "Assemblies, lubrication, reuse, storage, tool state, or installation sequence differs from the approved method."
+
+grout-and-seal:
+  basis: "accepted tile and joints, approved grout and sealant, movement-joint locations, clean joint depth, mix and cure requirements, color sample, and protection"
+  acceptance: "full uniform grout joints, clean surfaces, correctly profiled movement sealant, protected cure, specified sealer, and approved appearance"
+  evidence: "product and batch records, area sequence, joint and color checks, movement-joint observations, cure conditions, and finish acceptance"
+  risk:
+    name: "Movement joints are filled with rigid grout"
+    cost: "Normal assembly movement can crack tile, grout, or adjacent transitions."
+    signal: "Specified flexible-joint locations are absent from the grouting layout or area check."
+tile-layout:
+  basis: "approved tile and pattern, actual room dimensions, focal lines, substrate plane and slope, movement joints, elevations, transitions, and cut priorities"
+  acceptance: "balanced cuts, aligned patterns, resolved focal points and penetrations, correct slopes and elevations, and documented movement-joint locations"
+  evidence: "datum and control lines, dry layout, cut calculations, elevation checks, movement-joint map, and layout approval"
+  risk:
+    name: "Cumulative module error reaches a focal edge"
+    cost: "The finished area can end with narrow cuts, broken pattern, or misaligned joints."
+    signal: "Setting begins from one control line without checking both limits and intervening penetrations."
+tile-setting:
+  basis: "approved tile and mortar, released substrate and waterproofing, layout controls, environmental limits, mix instructions, open time, coverage requirement, and movement joints"
+  acceptance: "bonded tile with required coverage, aligned joints, maintained plane and slope, clean edges, protected movement joints, and undisturbed cure"
+  evidence: "material batches, mix times, area sequence, lifted-tile coverage checks, plane and joint observations, and correction log"
+  risk:
+    name: "Tile is placed after mortar open time has expired"
+    cost: "A skinned mortar bed can create hollow or debonded tile despite normal appearance."
+    signal: "Mortar remains spread beyond the tested working area or does not transfer to a lifted tile."
+tile-substrate-preparation:
+  basis: "tile and mortar requirements, measured substrate plane and slope, moisture and cure state, crack and joint locations, contaminants, repair products, and drying time"
+  acceptance: "sound clean cured surface within plane and slope tolerance, repaired voids and cracks, compatible primer, and preserved movement joints"
+  evidence: "area survey, flatness and slope measurements, moisture or cure checks, repair map, cleaning record, and setting release"
+  risk:
+    name: "Tile work bridges an untreated moving crack or joint"
+    cost: "Movement can reflect through the finish and cause repeated cracking or debonding."
+    signal: "A crack or control joint disappears under preparation without a documented treatment detail."
+tile-waterproofing:
+  basis: "approved membrane system, released substrate and slope, drain and penetration details, seam and corner materials, environmental limits, test plan, and protection sequence"
+  acceptance: "continuous membrane at field, seams, corners, drains, penetrations, upturns, and transitions with successful required testing"
+  evidence: "material and batch records, thickness or coverage checks, concealed-detail photos, flood-test results, repairs, and setting release"
+  risk:
+    name: "One penetration interrupts the tested membrane system"
+    cost: "Water can enter the substrate and adjacent spaces after tile conceals the defect."
+    signal: "A drain, fastener, niche, valve, curb, or transition lacks a system-compatible detail and photo."
+
+home-selections-control:
+  basis: "contract allowances and standards, room and assembly list, owner decision authority, sample and substitution route, budget impacts, release dates, and downstream dependencies"
+  acceptance: "approved complete choices tied to location, price, drawings, procurement, schedule, and acknowledged changes"
+  evidence: "selection register, samples, owner approvals, allowance reconciliation, change orders, release dates, and downstream updates"
+  risk:
+    name: "A selection is approved after its procurement or rough-in deadline"
+    cost: "The choice can force redesign, premium freight, rework, or an unapproved substitution."
+    signal: "An open owner decision has a passed release date or a dependent trade already working."
+homeowner-handover:
+  basis: "completed inspections and systems, closed punch work, clean home, operating and care information, keys and access, warranties, open commitments, and buyer appointment"
+  acceptance: "buyer receives a safe complete home, demonstrations, documents, access items, recorded exceptions, service route, and signed acceptance"
+  evidence: "handover checklist, inspection and punch closure, training record, key inventory, warranty package, open-item log, and buyer signoff"
+  risk:
+    name: "The buyer accepts the home without a controlled open-item list"
+    cost: "Unresolved work becomes a disputed warranty claim after occupancy."
+    signal: "Verbal promises remain outside the signed handover and responsible completion schedule."
+lot-due-diligence:
+  basis: "proposed house and price assumptions, title and survey information, access, zoning and setbacks, utilities, drainage and flood data, soils, topography, and authority requirements"
+  acceptance: "a documented buildable area, service strategy, constraint and allowance list, risk decisions, and approved basis for design and pricing"
+  evidence: "record research, site observations, surveys, utility responses, geotechnical information, authority notes, feasibility plan, and risk register"
+  risk:
+    name: "The house is priced before a controlling lot constraint is known"
+    cost: "Access, foundation, utility, drainage, or entitlement work can make the promised design or budget infeasible."
+    signal: "A proposal assumes a buildable footprint or service connection absent from the due-diligence record."
+residential-preconstruction:
+  basis: "executed sales scope, approved plans and selections, lot constraints, permits, estimate and allowances, trade scopes, long-lead purchasing, schedule, and decision deadlines"
+  acceptance: "a permitted costed purchasable and schedulable construction baseline with released documents, commitments, and named open risks"
+  evidence: "baseline drawings, permit status, estimate, buyout log, procurement schedule, trade scopes, decision register, and start authorization"
+  risk:
+    name: "Construction starts from an incomplete baseline"
+    cost: "Unresolved design, price, permit, or procurement decisions become field changes and idle time."
+    signal: "Start authorization is issued while a critical plan, trade, material, or owner decision remains open."
+residential-trade-sequencing:
+  basis: "current schedule, permit inspections, weather and dry-in status, trade scopes, crew commitments, material readiness, area access, and correction work"
+  acceptance: "ready areas handed between trades in dependency order with passed inspections, protected work, resolved constraints, and current completion status"
+  evidence: "look-ahead plan, readiness checks, inspection results, crew commitments, area handoffs, delay reasons, and correction closure"
+  risk:
+    name: "A following trade enters before predecessor work and inspection are complete"
+    cost: "Work becomes concealed, damaged, or blocked and multiple crews lose productive time."
+    signal: "The next crew is dispatched to an area with an open inspection, correction, material, or access dependency."
+
+masonry-cleaning:
+  basis: "identified unit and mortar materials, approved test area, stain or residue type, cleaning product and dilution, weather, protection, dwell time, rinse water, and sequence"
+  acceptance: "residue removed without etching, bleaching, joint erosion, metal staining, runoff damage, or visible test-area mismatch"
+  evidence: "test-area approval, product and dilution record, weather, area sequence, protection checks, finish photos, and acceptance"
+  risk:
+    name: "Cleaning method damages the masonry surface or joints"
+    cost: "Etching, color change, or erosion can be permanent and more visible than the original residue."
+    signal: "Production cleaning starts before the test area has dried and been accepted."
+masonry-flashing:
+  basis: "approved wall and opening details, compatible flashing and accessories, substrate and shelf condition, cavity width, work sequence, and inspection access"
+  acceptance: "continuous flashing with supported slope, sealed laps, end dams, open weeps, clear cavity, terminated edges, and integrated openings"
+  evidence: "wall-area log, material records, lap and end-dam checks, opening and termination photos, cavity checks, and pre-concealment release"
+  risk:
+    name: "Flashing is interrupted or pitched into the wall"
+    cost: "Water can remain in the cavity and reach the interior or corrode concealed components."
+    signal: "A lap, corner, end dam, opening, or termination lacks a continuous path to an open weep."
+masonry-layout:
+  basis: "approved plans and elevations, actual dimensions, unit module, bond, opening and embed locations, control joints, coursing elevations, and interface priorities"
+  acceptance: "coordinated coursing, corners, openings, joints, embeds, elevations, and interfaces without unplanned slivers or broken bond"
+  evidence: "control lines, story poles, module calculations, opening checks, joint map, mockup comparison, and layout approval"
+  risk:
+    name: "Module error accumulates at an opening or control joint"
+    cost: "The wall can require cut units, shifted joints, or incompatible interface dimensions."
+    signal: "Laying begins without checking cumulative coursing and bond across both ends and openings."
+mortar-control:
+  basis: "approved mortar type and materials, batch proportions, mixer and measuring equipment, water limits, mix time, board life, weather controls, and batch identification"
+  acceptance: "consistent compliant batches used within time, protected from weather and contamination, with controlled water and permitted retempering"
+  evidence: "material lots, batch log, proportion and water record, mix times, weather, discard events, and area linkage"
+  risk:
+    name: "Water is added after mortar exceeds its usable life"
+    cost: "Bond, strength, color, and durability can vary across the wall."
+    signal: "A batch remains in use beyond its allowed time or receives unrecorded water."
+unit-masonry-installation:
+  basis: "approved layout and mockup, released foundation and embeds, correct units and mortar, reinforcement and flashing sequence, weather protection, access, and daily-height limits"
+  acceptance: "required bond, line, level, plumb, joint fill, reinforcement, flashing, interfaces, clean faces, and stable protected lifts"
+  evidence: "area and lift log, material and mortar batches, alignment checks, concealed reinforcement and flashing photos, weather, and inspection"
+  risk:
+    name: "Wall height advances before concealed components are checked"
+    cost: "Missing reinforcement, flashing, anchors, or grout access can require dismantling completed masonry."
+    signal: "The next lift covers a hold point without location-tagged evidence or inspection release."
+
+sprinkler-fabrication-coordination:
+  basis: "approved or current design, structural and trade models, ceiling and equipment locations, sleeve and support requirements, listed material, fabrication capacity, release zones, and revision control"
+  acceptance: "coordinated spool information, resolved clashes, correct supports and penetrations, listed material, controlled revisions, and zone-based fabrication release"
+  evidence: "coordination drawings, clash decisions, spool register, material release, revision log, field questions, and fabrication status"
+  risk:
+    name: "Fabrication is released from a superseded coordination model"
+    cost: "Pipe and fittings can arrive incompatible with structure, ceilings, or other trades."
+    signal: "A spool revision differs from the latest approved layout or unresolved clash record."
+sprinkler-hydraulic-design:
+  basis: "occupancy hazard and commodity, design standard, water-supply data, system type, head and obstruction layout, hose allowance, pipe criteria, and authority requirements"
+  acceptance: "supported design area, node and pipe network, demand calculation, available supply and margin, compatible equipment, and approval-ready documentation"
+  evidence: "criteria sheet, water-flow data, calculation file, node map, equipment data, design revisions, and reviewer responses"
+  risk:
+    name: "Water-supply data no longer represents the design condition"
+    cost: "An apparently compliant calculation may lack pressure or flow when the system is needed."
+    signal: "Supply test date, configuration, elevation, or available curve conflicts with current site information."
+sprinkler-pipe-installation:
+  basis: "approved layout and calculations, coordinated openings and supports, listed pipe and fittings, hanger and seismic details, valve and drain access, work sequence, and inspection points"
+  acceptance: "correct mains, branches, drops, heads, valves, drains, gauges, hangers, seismic components, slope, access, and protected openings"
+  evidence: "area installation log, material identification, hanger and seismic checks, valve and head observations, concealed-work photos, and punch closure"
+  risk:
+    name: "Field routing changes without hydraulic and coordination review"
+    cost: "Added fittings, altered pipe, or moved heads can reduce performance or create conflicts."
+    signal: "Installed routing differs from the approved drawing without a recorded design disposition."
+sprinkler-system-survey:
+  basis: "survey scope, safe access, existing drawings, water-supply information, occupancy and commodity, ceiling and structural conditions, system status, and tie-in limits"
+  acceptance: "verified supply, riser and zones, hazards, obstructions, temperature exposure, ceiling and structure, equipment, and constructable tie-in constraints"
+  evidence: "dimensioned field notes, photographs, equipment and valve data, water information, hazard observations, obstruction map, and open-condition list"
+  risk:
+    name: "Existing system data is copied without field verification"
+    cost: "Design and fabrication can rely on missing, abandoned, undersized, or inaccessible components."
+    signal: "A riser, valve, zone, pipe size, or tie-in location lacks a current field observation."
+sprinkler-testing-and-acceptance:
+  basis: "completed system and corrections, approved test procedure, filled and vented piping, calibrated gauges, drainage and discharge plan, alarm coordination, witnesses, and safe access"
+  acceptance: "successful flushing and pressure tests, operating alarms and supervision, correct valves and drains, closed deficiencies, complete records, and authority acceptance"
+  evidence: "flush and pressure records, gauge data, alarm and supervisory tests, valve and drain results, deficiency closures, witness signatures, and acceptance"
+  risk:
+    name: "A failed test is repeated without locating the leak or cause"
+    cost: "The system may pass temporarily while a concealed defect remains."
+    signal: "Retest results improve without a documented repair, adjustment, or changed test condition."
+
+floor-framing:
+  basis: "current structural plans, foundation and bearing release, correct lumber or engineered members, beams and connectors, opening details, service coordination, access, and temporary bracing"
+  acceptance: "correct sill, beams, joists, rim, blocking, openings, connectors, bearing, plane, load path, subfloor attachment, and stability"
+  evidence: "layout and material checks, bearing and connector observations, opening photos, plane measurements, subfloor fastening, and area release"
+  risk:
+    name: "An opening or service cut interrupts the designed load path"
+    cost: "Framing capacity and floor performance can be reduced before the alteration is visible."
+    signal: "A joist, beam, rim, or blocking member is cut or moved without an approved detail."
+roof-framing:
+  basis: "current engineered layout, bearing and wall release, truss or rafter identification, crane and placement sequence, temporary and permanent bracing, openings, connectors, and weather plan"
+  acceptance: "correct member locations and bearing, stable sequence, installed bracing and connectors, aligned roof plane, coordinated openings, sheathing, and load path"
+  evidence: "member and layout checks, delivery condition, bracing observations, connector and opening photos, plane checks, inspection, and release"
+  risk:
+    name: "Temporary bracing is removed before permanent stability is complete"
+    cost: "Roof members can roll, spread, or collapse under wind, worker, or sheathing loads."
+    signal: "The erection sequence advances while required lateral and diagonal restraints remain incomplete."
+rough-opening-control:
+  basis: "current opening schedule and details, finished product dimensions, wall layout, header and backing requirements, sill and flashing needs, tolerances, and trade interfaces"
+  acceptance: "correct size and location, level and plumb sides, square geometry, sound backing and header, sill condition, clearance, and interface readiness"
+  evidence: "opening register, dimension and diagonal checks, level and plumb observations, backing photos, discrepancy decisions, and trade handoff"
+  risk:
+    name: "Finish product is ordered or installed from nominal opening size"
+    cost: "Doors, windows, equipment, or casework may not fit and field correction can damage structure or weather control."
+    signal: "An opening is released without measured width, height, diagonals, sill, and finish allowance."
+wall-framing:
+  basis: "current structural and architectural plans, slab or floor layout, correct plates and studs, header and shear details, anchors and connectors, openings, service access, and bracing plan"
+  acceptance: "correct wall location, plates, studs, headers, openings, shear elements, anchors, blocking, bracing, plumbness, and connected load path"
+  evidence: "layout checks, material and connector observations, opening measurements, shear and anchor photos, plumb checks, inspection, and release"
+  risk:
+    name: "A framed wall is stood before layout and opening conflicts are resolved"
+    cost: "Moving or cutting the wall can disrupt structure, slab anchors, services, and downstream dimensions."
+    signal: "Wall assembly begins with unresolved layout, header, opening, or anchor discrepancies."

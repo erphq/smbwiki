@@ -1,0 +1,6 @@
+id: clinical-assistant
+name: Clinical assistant
+kind: role
+summary: >
+  Prepares rooms and patients, supports the practitioner during care,
+  and completes delegated clinical and documentation work.

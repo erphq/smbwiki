@@ -1,0 +1,30 @@
+id: janitorial-service
+name: Janitorial Service
+codes:
+  naics: "561720"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  A janitorial service sells repeated cleaning coverage for defined
+  spaces, frequencies, tasks, access windows, materials, and inspection
+  standards. Each site needs a current scope and route that fits labor,
+  keys or credentials, supply storage, waste rules, and occupant use.
+
+  The work often happens when the customer is absent, so completion and
+  exception evidence carry the relationship. Missed areas, locked
+  rooms, damage, consumable shortages, unsafe conditions, and added
+  requests need a recorded disposition before the next service cycle.
+revenue_model:
+  - id: recurring-cleaning-contracts
+    note: scheduled site coverage billed under a recurring service scope
+  - id: periodic-project-work
+    note: floor care, deep cleaning, turnover, and other separately priced work
+  - remove: [service-calls, quoted-projects]
+skills:
+  - ref: facility-cleaning
+    roles: [technician, lead-technician]
+    documents: [cleaning-log]
+    software: [field-service-management]
+supply_chain:
+  buys_from: [janitorial-supply-distributor]
+  sells_to: [property-management-company]

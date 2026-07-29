@@ -1,0 +1,7 @@
+id: treatment-acceptance-rate
+name: Treatment acceptance rate
+kind: metric
+summary: >
+  Proposed treatment value or plans that patients approve and schedule.
+unit: percent
+direction: higher

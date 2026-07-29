@@ -1,0 +1,7 @@
+id: revenue-per-machine
+name: Revenue per machine
+kind: metric
+summary: >
+  Collected cycle revenue divided by installed machines for the period.
+unit: currency
+direction: higher

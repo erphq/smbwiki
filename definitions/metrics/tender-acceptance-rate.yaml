@@ -1,0 +1,8 @@
+id: tender-acceptance-rate
+name: Tender acceptance rate
+kind: metric
+summary: >
+  Load tenders offered to qualified carriers that receive a committed
+  acceptance.
+unit: percent
+direction: higher

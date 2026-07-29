@@ -1,0 +1,8 @@
+id: stockout-rate
+name: Stockout rate
+kind: metric
+summary: >
+  Share of requested items unavailable when a customer or order needs
+  them.
+unit: percent
+direction: lower

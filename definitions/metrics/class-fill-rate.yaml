@@ -1,0 +1,7 @@
+id: class-fill-rate
+name: Class fill rate
+kind: metric
+summary: >
+  Available class places reserved by members.
+unit: percent
+direction: higher

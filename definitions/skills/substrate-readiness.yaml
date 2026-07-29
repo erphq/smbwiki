@@ -1,0 +1,97 @@
+id: substrate-readiness
+name: Exterior substrate readiness
+kind: skill
+department: quality
+summary: >-
+  Checks sheathing attachment, plane, moisture, openings, penetrations,
+  interfaces, and repairs before the wall is covered. Exterior substrate
+  readiness leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - quality-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before exterior substrate readiness, read the current scope and
+      revisions, then verify accepted sheathing, dry substrate, complete
+      openings, approved weather barrier, flashing details, material
+      acclimation, and access.
+  - name: Set the field controls
+    note: >-
+      Translate exterior substrate readiness into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During exterior substrate readiness, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept exterior substrate readiness, check the completed work against
+      drainage continuity, fastening, clearances, joint layout, trim
+      integration, appearance, and manufacturer requirements, then close
+      correction and issue the resulting record.
+tension: >-
+  Exterior substrate readiness has to remain inside its acceptance basis while
+  production moves. A finished elevation can look complete while hidden
+  drainage and movement details are already set to fail.
+failure_modes:
+  - name: Exterior substrate readiness starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      exterior substrate readiness is settled.
+    signal: >-
+      The exterior substrate readiness work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Exterior substrate readiness closes without evidence
+    cost: >-
+      A concealed condition or required result from exterior substrate
+      readiness cannot be verified without opening, repeat work, delay, or a
+      disputed exception.
+    signal: >-
+      Exterior substrate readiness is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Exterior substrate readiness is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Exterior substrate readiness starts from a checked basis, follows a
+      named sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Exterior substrate readiness uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Exterior cladding and water-shedding control
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of exterior substrate readiness.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for exterior substrate readiness have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Exterior substrate readiness can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting exterior substrate readiness
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop exterior substrate readiness before
+    work begins?
+  - >-
+    Which record proves exterior substrate readiness was accepted before it
+    was covered, loaded, energized, occupied, or handed over?

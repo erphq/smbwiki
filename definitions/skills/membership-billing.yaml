@@ -1,0 +1,90 @@
+id: membership-billing
+name: Membership billing
+kind: skill
+department: finance
+summary: >
+  Membership billing turns agreement terms into scheduled recurring
+  charges, posts payments, works failed collection, and keeps financial
+  status aligned with access. Plan changes, pauses, credits, and
+  cancellations need effective dates that both systems apply.
+inputs: [membership-agreement]
+outputs: [customer-invoice, payment-record]
+steps:
+  - name: Establish the billing schedule
+    consumes: [membership-agreement]
+    note: >
+      Amount, frequency, start, renewal, tax, discount, payment authority,
+      and end conditions come from the signed terms.
+  - name: Generate the charge
+    produces: [customer-invoice]
+    note: >
+      The account can show what period and plan the charge covers before
+      collection begins.
+  - name: Collect and post
+    produces: [payment-record]
+    note: >
+      Successful payment settles the specific charge and updates the
+      member account once.
+  - name: Work failures and changes
+    note: >
+      Retry, notice, grace, access effect, plan change, pause, credit, and
+      cancellation use owned dates and reasons.
+tension: >
+  Revenue continuity competes with fair account treatment. Automatic
+  retries and access controls protect the recurring model; stale terms or
+  poorly handled exceptions collect money the account no longer owes or
+  block a member who resolved the balance.
+failure_modes:
+  - name: Effective dates disagree
+    cost: >
+      Billing and access apply a plan change, pause, or cancellation in
+      different periods.
+    signal: >
+      The account shows one status while the entry system enforces
+      another.
+  - name: Duplicate recurring charge
+    cost: >
+      The member disputes the account, processor fees increase, and staff
+      perform manual recovery.
+    signal: >
+      Two active schedules cover the same membership and period.
+  - name: Failed payment has no state
+    cost: >
+      Staff improvise retries, notices, and access decisions for similar
+      members.
+    signal: >
+      Accounts move directly from paid to blocked with no visible grace
+      or contact history.
+maturity:
+  - level: run badly
+    looks_like: >
+      Charges run from a spreadsheet and front-desk staff learn account
+      status when a credential fails.
+  - level: run well
+    looks_like: >
+      Agreement terms, invoices, payment events, retries, notices, and
+      access effects share effective dates.
+  - level: run excellently
+    looks_like: >
+      Exceptions are explainable from the account history, duplicate
+      schedules are blocked, and repeated failure causes improve signup
+      and member communication.
+competencies:
+  - name: Recurring-ledger control
+    note: >
+      The operator understands how plan state, billing periods, payment
+      events, credits, and access status interact over time.
+  - name: Account exception judgment
+    note: >
+      A failed payment, disputed charge, plan change, and cancellation
+      need different remedies even when all appear as an unpaid account.
+automation:
+  now: >
+    Schedule generation, recurring invoices, payment collection, retries,
+    notices, grace-state changes, posting, and access synchronization.
+  human: >
+    Disputes, hardship or courtesy decisions, conflicting effective
+    dates, unusual account history, and final cancellation resolution.
+questions:
+  - Which accounts have different billing and access status today?
+  - Can each recurring charge be traced to an active agreement and service period?

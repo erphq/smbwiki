@@ -1,0 +1,6 @@
+id: maintenance-coordinator
+name: Maintenance coordinator
+kind: role
+summary: >
+  Triage maintenance requests, assigns access and responsibility,
+  tracks work orders, and confirms completion with occupants.

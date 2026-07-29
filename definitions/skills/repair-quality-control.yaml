@@ -1,0 +1,90 @@
+id: repair-quality-control
+name: Repair quality control
+kind: skill
+department: quality
+summary: >
+  Repair quality control independently checks that authorized work is
+  complete, the original concern is resolved, and the vehicle leaves in
+  a safe and presentable condition. The check uses the intake concern,
+  findings, and completion evidence specific to the repair.
+inputs: [repair-completion]
+outputs: [quality-check]
+steps:
+  - name: Review the completion
+    role: shop-foreman
+    consumes: [repair-completion]
+    note: >
+      The checker knows what was repaired, what test was run, and what
+      remained outside the approved scope.
+  - name: Inspect the work area
+    role: shop-foreman
+    note: >
+      Fasteners, routing, leaks, covers, warning indicators, and vehicle
+      condition are checked where the work occurred.
+  - name: Verify the concern
+    role: shop-foreman
+    note: >
+      The original condition is rerun when practical using the same
+      operating detail recorded during intake and diagnosis.
+  - name: Release or return
+    role: shop-foreman
+    produces: [quality-check]
+    note: >
+      A failed check returns to the bay with a specific defect; a passed
+      check names the evidence supporting release.
+tension: >
+  Independent scrutiny competes with delivery time. The vehicle may be
+  promised and the bay may need space, but releasing an unchecked repair
+  transfers shop pressure directly to the customer.
+failure_modes:
+  - name: Self-check only
+    cost: >
+      The person familiar with the work overlooks the same assumption or
+      omission made during repair.
+    signal: >
+      Completion and release are recorded by one person with no second
+      review on complex work.
+  - name: Generic checklist
+    cost: >
+      Boxes are marked while the customer's actual concern and repaired
+      system go untested.
+    signal: >
+      The quality record is identical across unrelated repair operations.
+  - name: Failed check becomes a note
+    cost: >
+      A known defect reaches pickup because schedule pressure overrules
+      the release gate.
+    signal: >
+      Open quality observations exist on vehicles marked ready.
+maturity:
+  - level: run badly
+    looks_like: >
+      Vehicle ready means the technician has moved it outside and the
+      advisor discovers remaining issues during delivery.
+  - level: run well
+    looks_like: >
+      A named checker reviews the repaired area and original concern
+      before the vehicle can be marked ready.
+  - level: run excellently
+    looks_like: >
+      Quality failures are coded back to repair and diagnosis, recurring
+      causes change shop procedure, and release evidence is durable.
+competencies:
+  - name: Independent inspection
+    note: >
+      The checker approaches the vehicle from the promised result and
+      original symptom, without inheriting the repairer's assumptions.
+  - name: Release judgment
+    note: >
+      Cosmetic, functional, safety, and documentation findings need
+      different responses before customer delivery.
+automation:
+  now: >
+    Operation-specific checklists, required evidence, warning-code scans,
+    road-test prompts, release gates, and recurrence reporting.
+  human: >
+    Sensory inspection, road or functional testing, workmanship judgment,
+    and the authority to delay delivery.
+questions:
+  - Who independently releases complex or safety-related repairs?
+  - Can each failed quality check be traced to a changed shop practice?

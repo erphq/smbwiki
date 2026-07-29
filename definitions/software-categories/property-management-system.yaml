@@ -1,0 +1,8 @@
+id: property-management-system
+name: Property management system
+kind: software-category
+summary: >
+  Reservations or leases, rentable inventory, guest or tenant ledgers,
+  housekeeping, maintenance, payments, and owner reporting.
+erpai_category: property
+erpai_apps: []

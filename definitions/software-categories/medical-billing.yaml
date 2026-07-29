@@ -1,0 +1,8 @@
+id: medical-billing
+name: Medical billing
+kind: software-category
+summary: >
+  Coverage checks, coding, claim submission, remittance posting,
+  patient statements, and payer follow-up.
+erpai_category: finance
+erpai_apps: []

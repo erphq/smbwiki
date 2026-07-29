@@ -1,0 +1,7 @@
+id: individual-client
+name: Individual client
+kind: market
+summary: >
+  A named person or household entering an appointment, reservation,
+  engagement, membership, lease, or other ongoing service relationship.
+  The client may pay at checkout or be billed under agreed terms.

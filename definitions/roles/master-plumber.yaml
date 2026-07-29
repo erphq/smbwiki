@@ -1,0 +1,7 @@
+id: master-plumber
+name: Master plumber
+kind: role
+summary: >
+  Holds the highest trade responsibility in the shop, supervises
+  regulated plumbing work, reviews estimates, and ensures projects
+  meet code and permit requirements.

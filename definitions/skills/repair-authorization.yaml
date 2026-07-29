@@ -1,0 +1,89 @@
+id: repair-authorization
+name: Repair authorization
+kind: skill
+department: sales
+summary: >
+  Repair authorization records the customer's informed scope and price
+  decision before repair work begins. Approval, decline, method, time,
+  and any limit on added work remain attached to the estimate and repair
+  order.
+inputs: [repair-estimate]
+outputs: [work-authorization]
+steps:
+  - name: Present the choices
+    role: service-advisor
+    consumes: [repair-estimate]
+    note: >
+      The finding, proposed correction, consequence, price, and timing
+      are explained for each decision line.
+  - name: Answer scope questions
+    role: service-advisor
+    note: >
+      The advisor confirms what the selected work will resolve and which
+      recorded concerns will remain.
+  - name: Capture the decision
+    role: service-advisor
+    produces: [work-authorization]
+    note: >
+      Approved and declined lines, total, contact method, and approval
+      time are recorded together.
+  - name: Release the work
+    role: service-advisor
+    note: >
+      The bay and parts desk receive the same authorized scope the
+      customer accepted.
+tension: >
+  Decision speed competes with informed consent. A waiting bay creates
+  pressure to get an answer; unclear approval exposes the customer and
+  shop to a dispute that can exceed the value of the repair.
+failure_modes:
+  - name: Blanket approval
+    cost: >
+      The shop cannot prove which estimate version, price, or optional
+      lines the customer accepted.
+    signal: >
+      The authorization says proceed without listing the approved work.
+  - name: Verbal change left unrecorded
+    cost: >
+      Added work appears on the invoice without durable evidence of the
+      customer's decision.
+    signal: >
+      Repair-order scope exceeds the written authorization.
+  - name: Declined work disappears
+    cost: >
+      Future advisors lose the safety or maintenance recommendation and
+      the customer cannot revisit it later.
+    signal: >
+      Declined estimate lines lose their date and reason.
+maturity:
+  - level: run badly
+    looks_like: >
+      Technicians begin from an estimate while approval lives in a phone
+      call no one else heard.
+  - level: run well
+    looks_like: >
+      Work starts only from recorded approved lines and every added scope
+      creates a new authorization event.
+  - level: run excellently
+    looks_like: >
+      Estimate versions, decisions, declines, and limits are durable, and
+      the bay sees scope changes as soon as the customer makes them.
+competencies:
+  - name: Consent communication
+    note: >
+      The advisor confirms understanding of the work and consequence
+      without using urgency to erase the customer's choice.
+  - name: Scope control
+    note: >
+      The operator keeps the estimate, authorization, repair order, and
+      final invoice aligned as decisions change.
+automation:
+  now: >
+    Digital estimate delivery, line-level approve or decline controls,
+    signatures, timestamps, version history, and bay notifications.
+  human: >
+    Explaining uncertainty, handling affordability choices, and
+    recognizing when new findings require a fresh conversation.
+questions:
+  - Can the shop show exactly what the customer approved and when?
+  - How does the bay learn that authorized scope changed?

@@ -1,0 +1,92 @@
+id: tile-waterproofing
+name: Tile waterproofing
+kind: skill
+department: operations
+summary: >-
+  Installs membranes, seams, corners, penetrations, drains, upturns,
+  transitions, and protection as one continuous tested assembly. Tile
+  waterproofing leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - quality-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before tile waterproofing, read the current scope and revisions, then
+      verify stable and flat substrate, cured work, approved tile and setting
+      system, resolved movement joints, dry layout, and environmental control.
+  - name: Set the field controls
+    note: >-
+      Translate tile waterproofing into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During tile waterproofing, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept tile waterproofing, check the completed work against bond
+      coverage, plane, joint alignment, movement accommodation, drainage,
+      lippage, grout, sealant, and approved appearance, then close correction
+      and issue the resulting record.
+tension: >-
+  Tile waterproofing has to remain inside its acceptance basis while
+  production moves. A visually acceptable surface can conceal poor bond,
+  trapped water, or missing movement capacity.
+failure_modes:
+  - name: Tile waterproofing starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for tile
+      waterproofing is settled.
+    signal: >-
+      The tile waterproofing work package still has an open drawing, access,
+      material, predecessor, or approval dependency when labor is assigned.
+  - name: Tile waterproofing closes without evidence
+    cost: >-
+      A concealed condition or required result from tile waterproofing cannot
+      be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Tile waterproofing is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Tile waterproofing is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Tile waterproofing starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Tile waterproofing uses field evidence, production variance, defects,
+      and closeout results to improve the next estimate, work package, and
+      control point.
+competencies:
+  - name: Tile assembly layout and bond control
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of tile waterproofing.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for tile waterproofing have to be captured while the
+      relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Tile waterproofing can use digital revisions, checklists, hold points,
+    photo capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting tile waterproofing remain
+    human.
+questions:
+  - Which unresolved condition can stop tile waterproofing before work begins?
+  - >-
+    Which record proves tile waterproofing was accepted before it was covered,
+    loaded, energized, occupied, or handed over?

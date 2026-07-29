@@ -1,0 +1,92 @@
+id: utility-monitoring
+name: Utility monitoring
+kind: skill
+department: finance
+summary: >
+  Utility monitoring compares water, sewer, gas, and electricity bills
+  with machine cycles, operating hours, weather or temperature, and known
+  equipment changes. The work separates tariff and billing effects from
+  leaks, failed controls, poor combustion or heating, and inefficient
+  operating practice.
+inputs: [utility-bill, cycle-record]
+outputs: []
+steps:
+  - name: Align the service period
+    consumes: [utility-bill, cycle-record]
+    note: >
+      Meter dates, estimated reads, billing days, demand windows, rates,
+      and cycle totals are placed on the same period.
+  - name: Normalize operating context
+    note: >
+      Open hours, machine mix, program selection, weather, hot-water need,
+      and known outages explain legitimate changes in use.
+  - name: Find the unexplained change
+    note: >
+      Base load, usage per cycle, demand peaks, and time-of-day patterns
+      narrow the likely system or location.
+  - name: Verify on the floor
+    note: >
+      Meter movement, leaks, temperatures, burners, valves, drains,
+      controls, and idle equipment are checked under actual conditions.
+  - name: Track the corrective result
+    note: >
+      The next comparable period confirms whether the repair or operating
+      change moved the expected utility pattern.
+tension: >
+  Utility cost control competes with cycle performance and customer
+  capacity. Lower temperature, shorter operation, or disabled equipment
+  can reduce a bill while producing wet loads, poor cleaning, long waits,
+  or equipment damage.
+failure_modes:
+  - name: Bill total compared without period context
+    cost: >
+      Rate, weather, billing-day, and volume changes are mistaken for an
+      equipment efficiency problem.
+    signal: >
+      Review uses currency total and omits units, dates, rates, and cycle
+      volume.
+  - name: Base load goes unmeasured
+    cost: >
+      Overnight leaks, heaters, ventilation, or controls consume utility
+      while no customer cycle is running.
+    signal: >
+      Usage remains material during known closed or idle periods.
+  - name: Saving degrades the service
+    cost: >
+      Lower utility use creates poor wash, incomplete drying, repeat
+      cycles, refunds, or accelerated equipment wear.
+    signal: >
+      Utility reduction coincides with longer cycles, repeat use, or
+      customer complaints.
+maturity:
+  - level: run badly
+    looks_like: >
+      The owner notices utility cost at bill payment and attributes change
+      to price or busy periods.
+  - level: run well
+    looks_like: >
+      Units, rates, dates, cycle volume, base load, and operating context
+      are compared before a floor investigation.
+  - level: run excellently
+    looks_like: >
+      Meter and cycle patterns localize problems early, corrective work is
+      verified, and savings preserve machine performance.
+competencies:
+  - name: Period normalization
+    note: >
+      The operator separates tariff, calendar, weather, volume, program,
+      and equipment effects before drawing a conclusion.
+  - name: Building-system investigation
+    note: >
+      Bills become actionable only when patterns can be traced to meters,
+      piping, heating, ventilation, controls, and machine behavior.
+automation:
+  now: >
+    Bill import, rate and period normalization, cycle comparisons, base-load
+    alerts, interval charts, anomaly detection, and verification tracking.
+  human: >
+    Floor inspection, operating-context interpretation, repair judgment,
+    and decisions that balance utility use with customer results.
+questions:
+  - What portion of current utility use occurs outside paid machine cycles?
+  - Did the last corrective action improve utility use without changing cycle results?

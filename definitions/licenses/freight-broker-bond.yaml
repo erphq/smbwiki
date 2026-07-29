@@ -1,0 +1,9 @@
+id: freight-broker-bond
+name: Freight broker surety bond
+kind: license
+geo: [us]
+summary: >
+  Financial security filing required with broker authority to protect
+  carriers and shippers when the brokerage fails to meet covered
+  obligations.
+jurisdiction: federal

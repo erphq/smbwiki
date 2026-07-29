@@ -1,0 +1,7 @@
+id: waste-percentage
+name: Waste percentage
+kind: metric
+summary: >
+  Purchased food discarded rather than sold.
+unit: percent
+direction: lower

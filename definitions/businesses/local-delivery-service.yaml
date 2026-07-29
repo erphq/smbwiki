@@ -1,0 +1,24 @@
+id: local-delivery-service
+name: Local Delivery Service
+codes:
+  naics: "492210"
+catalog_group: logistics-production
+extends: transport-operator-base
+summary: >
+  A local delivery service groups pickup and drop work inside a service
+  area under time windows, vehicle capacity, item handling, access,
+  customer contact, and proof requirements. Route value depends on stop
+  density without allowing one failure to consume the rest of the run.
+
+  Dispatch maintains ready state, driver, route, custody, live
+  location, failed contact, parking or building delay, damage, return,
+  and customer communication. Each stop closes with a named recipient or
+  an authorized exception and a clear next custody state.
+revenue_model:
+  - id: scheduled-local-routes
+    note: recurring pickups and deliveries under account rates
+  - id: on-demand-deliveries
+    note: individual movements priced by zone, distance, time, or urgency
+  - remove: [transport-charges, accessorial-charges]
+supply_chain:
+  sells_to: [individual-client, commercial-client]

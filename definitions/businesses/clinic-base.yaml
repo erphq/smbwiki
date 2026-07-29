@@ -1,0 +1,56 @@
+id: clinic-base
+name: Clinic (base)
+abstract: true
+revenue_model:
+  - id: patient-services
+    note: visits and procedures billed to patients or third-party payers
+  - id: preventive-care
+    note: scheduled recurring care that keeps the appointment book full
+skills:
+  - ref: appointment-scheduling
+    roles: [receptionist]
+    documents: [appointment-request, appointment-record]
+    metrics: [appointment-no-show-rate]
+    software: [practice-management]
+  - ref: coverage-verification
+    roles: [receptionist, billing-specialist]
+    documents: [patient-registration, insurance-verification]
+    software: [practice-management, medical-billing]
+  - ref: patient-intake
+    roles: [receptionist, clinical-assistant]
+    documents: [appointment-record, patient-registration, patient-chart]
+    software: [practice-management, electronic-health-record]
+  - ref: clinical-care
+    roles: [clinician, clinical-assistant]
+    documents: [appointment-record, patient-chart, clinical-note, treatment-plan]
+    software: [electronic-health-record]
+  - ref: claims-billing
+    roles: [billing-specialist]
+    documents: [clinical-note, insurance-verification, insurance-claim, patient-statement]
+    metrics: [clean-claim-rate, days-sales-outstanding]
+    software: [medical-billing, accounting]
+  - ref: patient-recall
+    roles: [receptionist]
+    documents: [patient-chart, recall-list]
+    metrics: [recall-reappointment-rate]
+    software: [practice-management]
+  - ref: staff-scheduling
+    roles: [office-manager]
+    documents: [shift-schedule]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [office-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+        reports:
+          - role: receptionist
+          - role: billing-specialist
+      - role: clinician
+        reports:
+          - role: clinical-assistant
+supply_chain:
+  sells_to: [patient, payer]

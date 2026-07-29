@@ -1,0 +1,6 @@
+id: dishwasher
+name: Dishwasher
+kind: role
+summary: >
+  Keeps the dish pit and kitchen sanitation running; the least visible
+  dependency in every service.

@@ -1,0 +1,91 @@
+id: beverage-service
+name: Beverage service
+kind: skill
+department: operations
+summary: >
+  Beverage service turns an order into the correct measured drink,
+  records it on the right tab or payment, and releases it to the right
+  guest. The station has to keep recipes, stock, ice, glassware, tools,
+  cleanliness, and guest state under control while orders continue.
+inputs: [order-ticket, recipe-card]
+outputs: []
+steps:
+  - name: Confirm order and service
+    role: bartender
+    consumes: [order-ticket, recipe-card]
+    note: >
+      Guest, age-check state, drink, modifiers, tab, payment route, and
+      any reason to pause service are settled before production.
+  - name: Build the drink
+    role: bartender
+    note: >
+      Product, measure, recipe, glass, temperature, garnish, and station
+      sequence stay consistent with the recorded order.
+  - name: Record and hand off
+    role: bartender
+    note: >
+      The drink reaches the intended guest while the item, price, tab,
+      and server or bar position remain traceable.
+  - name: Reset the station
+    role: bartender
+    note: >
+      Used tools and glassware leave the work area, stock and ice gaps
+      surface, spills are controlled, and the station is ready for the
+      next order.
+tension: >
+  Service speed competes with measured production and guest control.
+  A fast bar keeps the room moving; missed identification, loose tabs,
+  inconsistent measures, and poor service judgment create losses and
+  risk that outlast the queue.
+failure_modes:
+  - name: Drink and tab separate
+    cost: >
+      Product leaves the bar without a recoverable charge or reaches the
+      wrong guest.
+    signal: >
+      Completed drinks wait without a clear guest, server, seat, or tab.
+  - name: Measures drift under volume
+    cost: >
+      Product cost, recipe consistency, and the guest experience vary by
+      bartender and demand level.
+    signal: >
+      The station stops using the agreed measure or build sequence during
+      the busiest period.
+  - name: Service judgment has no escalation
+    cost: >
+      A guest concern becomes a safety, staff, payment, or security
+      incident without a named decision owner.
+    signal: >
+      Staff continue debating service while no manager owns the call.
+maturity:
+  - level: run badly
+    looks_like: >
+      Bartenders remember orders and tabs, pour by feel, and restock only
+      after a station runs out.
+  - level: run well
+    looks_like: >
+      Order, recipe, measure, tab, guest handoff, station reset, and
+      escalation remain controlled through the service period.
+  - level: run excellently
+    looks_like: >
+      Demand and stock signals rebalance stations early, recurring errors
+      change setup, and closeout reconciles service with product movement.
+competencies:
+  - name: Station command
+    note: >
+      The bartender sequences production, guest contact, payment, stock,
+      cleaning, and communication inside one constrained work area.
+  - name: Service judgment
+    note: >
+      Guest state, house policy, staff safety, and escalation require a
+      timely human decision with clear support from management.
+automation:
+  now: >
+    Order routing, recipe display, measured dispensing, tab control,
+    payment, stock decrement, low-stock prompts, and closing reports.
+  human: >
+    Guest identification, drink production, service judgment, conflict
+    handling, station recovery, and accountability for the handoff.
+questions:
+  - Which open tab or completed drink has lost a clear owner?
+  - What station condition is most likely to slow or stop service next?

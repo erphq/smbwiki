@@ -1,0 +1,6 @@
+id: collection-log
+name: Collection log
+kind: document
+summary: >
+  Counted cash or coin, electronic settlement totals, machine counters,
+  date range, and reconciliation differences.

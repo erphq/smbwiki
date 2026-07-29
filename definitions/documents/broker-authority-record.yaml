@@ -1,0 +1,7 @@
+id: broker-authority-record
+name: Broker authority record
+kind: document
+geo: [us]
+summary: >
+  Current federal registration status connecting the brokerage's
+  authority, required filings, and identifying number.

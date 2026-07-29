@@ -1,0 +1,8 @@
+id: comeback-rate
+name: Comeback rate
+kind: metric
+summary: >
+  Completed repairs that return for correction of the same concern or
+  workmanship within the shop's review window.
+unit: percent
+direction: lower

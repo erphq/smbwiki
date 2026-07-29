@@ -1,0 +1,102 @@
+id: maintenance-coordination
+name: Maintenance coordination
+kind: skill
+department: maintenance
+summary: >
+  Maintenance coordination turns an occupant or facility condition
+  into a triaged, authorized, accessed, completed, and verified work
+  record. Priority, responsibility, communication, cost, and evidence
+  remain attached to the request.
+inputs: [maintenance-request]
+outputs: [work-order, job-photos]
+steps:
+  - name: Triage the condition
+    role: maintenance-coordinator
+    consumes: [maintenance-request]
+    note: >
+      Location, symptom, safety, active damage, affected occupants,
+      access, urgency, and immediate containment are established.
+  - name: Assign responsibility
+    role: property-manager
+    note: >
+      Owner, tenant, warranty, vendor, staff, or insurer responsibility
+      is identified with a spending and approval path.
+  - name: Release the work
+    role: maintenance-coordinator
+    produces: [work-order]
+    note: >
+      Current scope, priority, contact, access, authorization, required
+      trade, and communication instructions reach the assigned party.
+  - name: Track execution
+    role: maintenance-coordinator
+    consumes: [work-order]
+    note: >
+      Appointment, arrival, diagnosis, parts, changed scope, delay,
+      occupant updates, and cost remain current.
+  - name: Verify and close
+    role: property-manager
+    produces: [job-photos]
+    note: >
+      Condition, completed work, cleanup, occupant confirmation, invoice,
+      warranty, and recurring-cause action are reviewed.
+tension: >
+  Rapid response competes with correct priority, responsibility, and
+  scope. Dispatching immediately can contain harm; uncontrolled
+  dispatch produces duplicate visits, denied invoices, access failures,
+  and repairs that do not solve the reported condition.
+failure_modes:
+  - name: Emergency signal waits in a normal queue
+    cost: >
+      Active damage, safety exposure, or loss of essential service
+      expands before qualified action begins.
+    signal: >
+      Request describes active water, electrical, security, fire, or
+      habitability risk without an immediate escalation.
+  - name: Vendor arrives without access or authority
+    cost: >
+      Callout expense and occupant disruption produce no completed
+      repair.
+    signal: >
+      Work order lacks contact, access method, spending limit, or
+      responsible payer.
+  - name: Completion means vendor departure
+    cost: >
+      Symptoms recur while invoice and closed status hide the failed
+      outcome.
+    signal: >
+      Request closes without condition evidence or occupant
+      confirmation.
+maturity:
+  - level: run badly
+    looks_like: >
+      Requests arrive through calls and messages, and staff chase
+      vendors for status after occupants call again.
+  - level: run well
+    looks_like: >
+      Triage, responsibility, work order, access, execution,
+      communication, cost, and verification share one request.
+  - level: run excellently
+    looks_like: >
+      Failure and cost evidence improves preventive work, vendor
+      selection, asset planning, and emergency readiness.
+competencies:
+  - name: Condition triage
+    note: >
+      The operator distinguishes emergency containment, urgent service,
+      routine work, planned improvement, and unsupported request.
+  - name: Multi-party coordination
+    note: >
+      Occupant, owner, staff, vendor, warranty, and insurer receive the
+      right decisions and evidence.
+automation:
+  now: >
+    Intake, priority rules, work orders, vendor assignment,
+    appointments, access notes, status messages, cost approval, photos,
+    and recurring-issue reports.
+  human: >
+    Safety judgment, responsibility disputes, diagnosis, access
+    exceptions, changed scope, quality verification, and capital
+    decisions.
+questions:
+  - Which open request can cause more damage while it waits?
+  - Which completed work order lacks evidence that the reported condition is resolved?

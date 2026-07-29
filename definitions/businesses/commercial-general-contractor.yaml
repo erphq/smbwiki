@@ -1,0 +1,119 @@
+id: commercial-general-contractor
+name: Commercial General Contractor
+codes:
+  naics: '236220'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A commercial general contractor holds the contract that joins an owner's
+  design, permits, subcontractors, schedule, cost, safety, quality, and
+  turnover. Work is bought in trade packages, then managed through RFIs,
+  submittals, coordination, inspections, changes, pay applications, and daily
+  site decisions.
+
+
+  The contractor rarely performs every trade, but remains responsible for how
+  the pieces meet. Missing scope and late information become field delay or
+  rework unless contract boundaries and technical decisions are controlled.
+  Closeout is a second production sequence involving tests, training, records,
+  releases, punch work, and owner acceptance.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: bid-package-management
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - material-takeoff
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+      - takeoff-estimating
+  - ref: subcontractor-buyout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - subcontract
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: rfi-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - request-for-information
+      - change-order
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+      - change-order-cycle-time
+    software:
+      - construction-management
+  - ref: submittal-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - submittal
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+      - submittal-cycle-time
+    software:
+      - construction-management
+  - ref: commercial-project-closeout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - closeout-package
+    metrics:
+      - rework-rate
+      - on-time-completion
+      - punch-list-age
+      - inspection-pass-rate
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - specialty-subcontractor
+    - building-material-distributor
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

@@ -1,0 +1,8 @@
+id: appointment-no-show-rate
+name: Appointment no-show rate
+kind: metric
+summary: >
+  Reserved appointments that pass without the customer arriving or
+  canceling in time for the slot to be resold.
+unit: percent
+direction: lower

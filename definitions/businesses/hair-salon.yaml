@@ -1,0 +1,84 @@
+id: hair-salon
+name: Hair Salon
+codes:
+  naics: "812112"
+catalog_group: personal-recreation
+summary: >
+  A hair salon schedules time on stylists and service stations. The
+  consultation records the requested result, hair condition, service
+  history, timing, price, and any formula needed for repeat work.
+  Service, checkout, product use, and rebooking update the client record.
+
+  Employment, commission, and chair-rental arrangements can assign
+  booking, payment, product, and client responsibilities differently.
+  The operating record needs to make those boundaries clear. Formula
+  history, appointment ownership, stock readiness, and schedule changes
+  help the salon preserve service continuity across visits.
+revenue_model:
+  - id: commissioned-services
+    note: the salon books and collects for services, then pays the
+      stylist a commission
+  - id: chair-rental
+    note: independent stylists pay for use of a chair and shared space
+  - id: retail-products
+    note: take-home hair care sold during consultation and checkout
+skills:
+  - ref: appointment-scheduling
+    roles: [salon-coordinator, stylist]
+    documents: [appointment-request, appointment-record]
+    metrics: [appointment-no-show-rate, chair-utilization]
+    software: [salon-management]
+  - ref: client-consultation
+    roles: [stylist]
+    documents: [appointment-record, client-profile, formula-card]
+    software: [salon-management]
+  - ref: hair-service
+    roles: [stylist, salon-assistant]
+    documents: [appointment-record, formula-card, service-ticket]
+    metrics: [service-ticket-time]
+    software: [salon-management]
+  - ref: client-checkout
+    roles: [salon-coordinator, stylist]
+    documents: [service-ticket, customer-invoice, payment-record]
+    metrics: [average-ticket, rebooking-rate]
+    software: [salon-management, accounting]
+  - ref: purchasing
+    roles: [salon-owner, salon-coordinator]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management]
+  - ref: staff-scheduling
+    roles: [salon-owner]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [salon-owner]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: salon-owner
+    reports:
+      - role: salon-coordinator
+      - role: stylist
+        reports:
+          - role: salon-assistant
+licenses:
+  us:
+    - ref: cosmetology-establishment-license
+      requirement: commonly-applicable
+      condition: Commonly required for premises offering regulated cosmetology services; the exact facility approval varies by jurisdiction.
+      as_of: "2026-07-29"
+    - ref: cosmetologist-license
+      requirement: required
+      condition: Required for individuals performing services regulated under the applicable state cosmetology program.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [beauty-supply-distributor]
+  sells_to: [individual-client]
+products:
+  - salon-styling-station
+  - salon-backwash-unit
+  - hooded-hair-dryer
+  - hair-dryer
+seo:
+  title: "Hair Salon: How the Business Works | smbwiki"

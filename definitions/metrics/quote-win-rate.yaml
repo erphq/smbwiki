@@ -1,0 +1,7 @@
+id: quote-win-rate
+name: Quote win rate
+kind: metric
+summary: >
+  Quotes delivered that the customer accepts.
+unit: percent
+direction: higher

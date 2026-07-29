@@ -1,0 +1,9 @@
+id: plumber-license
+name: Plumber license
+kind: license
+geo: [us]
+summary: >
+  Individual trade credential that authorizes plumbing work at a
+  defined level of supervision and responsibility. Journeyman and
+  master classifications vary by jurisdiction.
+jurisdiction: state or local

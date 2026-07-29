@@ -1,0 +1,8 @@
+id: gross-margin-percentage
+name: Gross margin percentage
+kind: metric
+summary: >
+  Sales left after the directly attributable cost of merchandise or
+  service delivery.
+unit: percent
+direction: higher

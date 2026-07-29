@@ -1,0 +1,97 @@
+id: income-approach-valuation
+name: Income approach valuation
+kind: skill
+department: operations
+summary: >-
+  Builds market rent and vacancy, normalizes expenses, derives income, selects
+  capitalization or discount inputs, and tests the value indication. Income
+  approach valuation leaves a current work basis, a field record, and
+  acceptance evidence that another operator can trace.
+inputs:
+  - engagement-letter
+outputs:
+  - appraisal-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before income approach valuation, read the current scope and revisions,
+      then verify identified client and intended use, property rights,
+      effective date, assignment conditions, access, market data, and
+      competent appraiser.
+  - name: Set the field controls
+    note: >-
+      Translate income approach valuation into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During income approach valuation, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept income approach valuation, check the completed work against
+      credible supported analyses, disclosed scope and assumptions, reconciled
+      value opinion, compliant report, and signed delivery, then close
+      correction and issue the resulting record.
+tension: >-
+  Income approach valuation has to remain inside its acceptance basis while
+  production moves. Weak property or market verification can make a polished
+  value conclusion unsupported.
+failure_modes:
+  - name: Income approach valuation starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for income
+      approach valuation is settled.
+    signal: >-
+      The income approach valuation work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Income approach valuation closes without evidence
+    cost: >-
+      A concealed condition or required result from income approach valuation
+      cannot be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Income approach valuation is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Income approach valuation is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Income approach valuation starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Income approach valuation uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Real property valuation and evidence reconciliation
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of income approach valuation.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for income approach valuation have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Income approach valuation can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting income approach valuation
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop income approach valuation before work
+    begins?
+  - >-
+    Which record proves income approach valuation was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

@@ -1,0 +1,7 @@
+id: child-care-license
+name: Child care center license
+kind: license
+jurisdiction: US
+summary: >
+  State or local facility authorization covering capacity, staffing,
+  safety, background checks, and program operation.

@@ -1,0 +1,6 @@
+id: pharmacist
+name: Pharmacist
+kind: role
+summary: >
+  Validates prescriptions, performs the professional check, counsels
+  patients, and owns dispensing and controlled-substance compliance.

@@ -1,0 +1,7 @@
+id: delivery-time
+name: Delivery time
+kind: metric
+summary: >
+  Minutes from order placed to handed to the customer.
+unit: minutes
+direction: lower

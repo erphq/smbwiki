@@ -1,0 +1,62 @@
+id: bed-and-breakfast-inn
+name: Bed-and-Breakfast Inn
+codes:
+  naics: "721191"
+catalog_group: food-lodging
+extends: lodging-base
+summary: >
+  A bed-and-breakfast inn operates a small number of individually
+  constrained rooms alongside breakfast and host-led guest service.
+  Room attributes, shared spaces, quiet hours, arrival windows, dietary
+  needs, parking, and property rules shape each reservation.
+
+  Limited inventory makes one maintenance hold, late cancellation, or
+  room mismatch material. The operator coordinates housekeeping,
+  breakfast counts, access, guest communication, payment, local
+  requirements, and owner occupancy without a large department structure
+  to absorb missed handoffs.
+revenue_model:
+  - id: room-and-breakfast
+    note: room nights sold with the property's included breakfast service
+  - id: small-property-extras
+    note: approved packages and added guest services
+  - remove: [room-nights, stay-charges]
+skills:
+  - ref: reservation-management
+    roles: [front-desk-agent, owner-operator]
+    documents: [reservation-request, reservation-record]
+    metrics: [occupancy-rate]
+    software: [property-management-system]
+  - ref: guest-stay
+    roles: [front-desk-agent, owner-operator]
+    documents: [reservation-record, room-status, guest-folio]
+    metrics: [average-ticket, occupancy-rate]
+    software: [property-management-system, accounting]
+  - ref: room-turnover
+    roles: [housekeeper, owner-operator]
+    documents: [room-status, cleaning-log]
+    metrics: [room-turn-time]
+    software: [property-management-system, facility-management]
+  - ref: equipment-maintenance
+    roles: [owner-operator]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [facility-management]
+  - ref: staff-scheduling
+    roles: [owner-operator]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [owner-operator]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: front-desk-agent
+      - role: housekeeper
+      - role: line-cook
+supply_chain:
+  buys_from: [food-distributor, hospitality-supply-distributor]
+  sells_to: [individual-client]

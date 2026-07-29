@@ -1,0 +1,7 @@
+id: claims-rate
+name: Claims rate
+kind: metric
+summary: >
+  Completed loads that produce a formal cargo or service claim.
+unit: percent
+direction: lower

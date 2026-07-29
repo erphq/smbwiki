@@ -1,0 +1,100 @@
+id: specimen-processing
+name: Specimen processing
+kind: skill
+department: operations
+summary: >
+  Specimen processing carries an authorized test from patient and
+  specimen identity through acceptance, preparation, analysis, quality
+  control, result review, critical notification, and release. Custody
+  and validity remain visible at every step.
+inputs: [specimen-order]
+outputs: [lab-result]
+steps:
+  - name: Accept the order and specimen
+    role: laboratory-technologist
+    consumes: [specimen-order]
+    note: >
+      Patient identifiers, test, specimen type, collection time,
+      container, volume, condition, transport, and priority meet
+      acceptance rules.
+  - name: Prepare and route
+    role: laboratory-technologist
+    note: >
+      Accession, labeling, separation, aliquot, storage, worklist, and
+      custody preserve identity and specimen stability.
+  - name: Run test and controls
+    role: laboratory-technologist
+    note: >
+      Validated method, instrument status, calibration, controls,
+      reagent, maintenance, and operator requirements are satisfied.
+  - name: Review the result
+    role: laboratory-technologist
+    note: >
+      Control acceptance, flags, plausibility, repeat criteria,
+      comparison, interference, units, and reference information are
+      evaluated.
+  - name: Release and notify
+    role: laboratory-technologist
+    produces: [lab-result]
+    note: >
+      Verified result, release authority, time, recipient, critical
+      notification, and retained-specimen action are recorded.
+tension: >
+  Turnaround competes with specimen validity and analytical control.
+  A fast result has no clinical value when identity, custody, condition,
+  controls, method, or review cannot support it.
+failure_modes:
+  - name: Specimen accepted through a rejection condition
+    cost: >
+      A result is reported from the wrong container, time, identity,
+      condition, volume, or transport history.
+    signal: >
+      Acceptance exception is free text without an authorized decision.
+  - name: Failed control is treated as instrument noise
+    cost: >
+      Patient results release from an analytical run that did not
+      demonstrate valid performance.
+    signal: >
+      Results leave the hold while the related control remains outside
+      acceptance.
+  - name: Critical result lacks closed communication
+    cost: >
+      A time-sensitive finding sits in the record without reaching a
+      qualified recipient.
+    signal: >
+      Notification logs an outbound attempt without recipient readback
+      or escalation.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff move tubes and results through separate benches, and
+      missing identity or control evidence is reconstructed later.
+  - level: run well
+    looks_like: >
+      Order, specimen, custody, method, controls, result, review,
+      notification, and release share one accession.
+  - level: run excellently
+    looks_like: >
+      Rejection, delay, control, repeat, correction, and notification
+      evidence improves collection, routing, methods, capacity, and
+      clinical communication.
+competencies:
+  - name: Specimen validity
+    note: >
+      The technologist knows how identity, collection, container,
+      transport, preparation, and storage affect the result.
+  - name: Analytical review
+    note: >
+      The reviewer interprets controls, flags, interference, method
+      limits, and results that require repeat or escalation.
+automation:
+  now: >
+    Orders, accession labels, instrument interfaces, worklists,
+    controls, autoverification rules, holds, critical alerts, and report
+    delivery.
+  human: >
+    Specimen exceptions, method limits, unusual results, control
+    investigation, result correction, and critical communication.
+questions:
+  - Which specimen in process has an unresolved acceptance exception?
+  - Which released result cannot be traced to an accepted analytical run?

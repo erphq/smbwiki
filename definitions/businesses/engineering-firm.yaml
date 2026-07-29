@@ -1,0 +1,26 @@
+id: engineering-firm
+name: Engineering Firm
+codes:
+  naics: "541330"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  An engineering firm converts a defined technical question into
+  calculations, models, drawings, specifications, tests, or advice
+  supported by the available data and applicable criteria. Scope
+  establishes discipline, design basis, interfaces, deliverables, and
+  professional responsibility.
+
+  Inputs and conditions change as other designers, owners, contractors,
+  and authorities work. The firm controls assumptions, revisions,
+  checks, interdisciplinary coordination, technical decisions, issued
+  documents, field information, and deviations so released work can be
+  traced to evidence and review.
+licenses:
+  us:
+    - ref: professional-engineer-license
+      requirement: required
+      condition: Required for the professional engineer taking responsibility for regulated engineering services.
+      as_of: "2026-07-29"
+supply_chain:
+  sells_to: [homeowner, general-contractor]

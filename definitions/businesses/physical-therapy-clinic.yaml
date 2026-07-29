@@ -1,0 +1,48 @@
+id: physical-therapy-clinic
+name: Physical Therapy Clinic
+codes:
+  naics: "621340"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  A physical therapy clinic turns an evaluation into a measurable plan
+  of care delivered across repeated visits. The record connects current
+  function, goals, interventions, response, home work, attendance, and
+  the decision to progress, revise, discharge, or refer.
+
+  Therapist time and treatment space are scheduled around visit type,
+  supervision needs, and the work each patient can perform safely.
+  Missed visits interrupt the plan and consume capacity. Coverage
+  authorization, visit limits, documentation, and patient balances have
+  to stay aligned with the clinical schedule.
+revenue_model:
+  - id: evaluations
+    note: assessment and creation or revision of the plan of care
+  - id: treatment-visits
+    note: scheduled therapeutic work delivered against documented goals
+  - id: direct-pay-services
+    note: patient-paid evaluation or treatment outside third-party billing
+  - remove: [patient-services, preventive-care]
+skills:
+  - ref: clinical-care
+    roles: [physical-therapist, clinical-assistant]
+    documents: [appointment-record, patient-chart, clinical-note, treatment-plan]
+    software: [electronic-health-record, practice-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+        reports:
+          - role: receptionist
+          - role: billing-specialist
+      - role: physical-therapist
+        reports:
+          - role: clinical-assistant
+licenses:
+  us:
+    - ref: physical-therapist-license
+      requirement: required
+      condition: Required for the physical therapist providing regulated therapy services.
+      as_of: "2026-07-29"
+seo:
+  title: "Physical Therapy Clinic: How the Business Works | smbwiki"

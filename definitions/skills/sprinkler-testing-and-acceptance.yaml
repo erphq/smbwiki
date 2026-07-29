@@ -1,0 +1,98 @@
+id: sprinkler-testing-and-acceptance
+name: Sprinkler testing and acceptance
+kind: skill
+department: quality
+summary: >-
+  Flushes and pressure-tests piping, operates alarms and supervision, checks
+  valves and drains, corrects deficiencies, and assembles acceptance records.
+  Sprinkler testing and acceptance leaves a current work basis, a field
+  record, and acceptance evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - test-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before sprinkler testing and acceptance, read the current scope and
+      revisions, then verify verified hazard and occupancy, approved hydraulic
+      basis, coordinated drawings, listed material, fabrication release,
+      access, and outage plan.
+  - name: Set the field controls
+    note: >-
+      Translate sprinkler testing and acceptance into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During sprinkler testing and acceptance, the operator records
+      quantities, observations, decisions, and concealed details, and stops
+      when the field condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept sprinkler testing and acceptance, check the completed work
+      against approved coverage, support and clearances, clean piping,
+      hydrostatic result, alarm and supervisory operation, inspection, and
+      owner records, then close correction and issue the resulting record.
+tension: >-
+  Sprinkler testing and acceptance has to remain inside its acceptance basis
+  while production moves. A small coordination or obstruction error can leave
+  a protected area outside the approved discharge pattern.
+failure_modes:
+  - name: Sprinkler testing and acceptance starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      sprinkler testing and acceptance is settled.
+    signal: >-
+      The sprinkler testing and acceptance work package still has an open
+      drawing, access, material, predecessor, or approval dependency when
+      labor is assigned.
+  - name: Sprinkler testing and acceptance closes without evidence
+    cost: >-
+      A concealed condition or required result from sprinkler testing and
+      acceptance cannot be verified without opening, repeat work, delay, or a
+      disputed exception.
+    signal: >-
+      Sprinkler testing and acceptance is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Sprinkler testing and acceptance is driven by crew availability and
+      visible completion; readiness, hold points, and acceptance evidence are
+      resolved afterward.
+  - level: run well
+    looks_like: >-
+      Sprinkler testing and acceptance starts from a checked basis, follows a
+      named sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Sprinkler testing and acceptance uses field evidence, production
+      variance, defects, and closeout results to improve the next estimate,
+      work package, and control point.
+competencies:
+  - name: Water-based fire protection systems
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of sprinkler testing and acceptance.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for sprinkler testing and acceptance have to be
+      captured while the relevant condition can still be observed and
+      corrected.
+automation:
+  now: >-
+    Sprinkler testing and acceptance can use digital revisions, checklists,
+    hold points, photo capture, test fields, correction assignment, and
+    closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting sprinkler testing and
+    acceptance remain human.
+questions:
+  - >-
+    Which unresolved condition can stop sprinkler testing and acceptance
+    before work begins?
+  - >-
+    Which record proves sprinkler testing and acceptance was accepted before
+    it was covered, loaded, energized, occupied, or handed over?

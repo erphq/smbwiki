@@ -1,0 +1,96 @@
+id: room-turnover
+name: Room turnover
+kind: skill
+department: maintenance
+summary: >
+  Room turnover converts a departed room into inspected inventory ready
+  for the next guest. Occupancy, cleaning, linen, amenities, damage,
+  lost property, maintenance, inspection, and release state remain
+  explicit.
+inputs: [room-status]
+outputs: [room-status, cleaning-log]
+steps:
+  - name: Release the departed room
+    role: front-desk-agent
+    consumes: [room-status]
+    note: >
+      Departure is confirmed and late checkout, guest property,
+      payment hold, or access restriction is recorded before entry.
+  - name: Inspect the starting condition
+    role: housekeeper
+    consumes: [room-status]
+    note: >
+      Damage, maintenance, lost property, unusual cleaning, missing
+      items, and safety conditions are recorded before they disappear.
+  - name: Turn the room
+    role: housekeeper
+    note: >
+      Cleaning, linen, bed, bathroom, waste, amenities, surfaces, and
+      presentation follow the room standard and known guest needs.
+  - name: Close exceptions
+    role: maintenance-technician
+    consumes: [room-status]
+    note: >
+      A defect receives a work decision, with the room held when the
+      remaining condition prevents sale or safe occupancy.
+  - name: Inspect and release
+    role: housekeeper
+    produces: [room-status, cleaning-log]
+    note: >
+      The room identity, completion, inspection, exceptions, and ready
+      time are recorded before front desk availability changes.
+tension: >
+  Early room availability competes with cleanliness, condition, and
+  truthful status. Releasing quickly can support arrivals; releasing
+  before inspection transfers hidden work and defects to the guest.
+failure_modes:
+  - name: Room marked ready from task completion
+    cost: >
+      Missing inspection allows cleanliness, setup, damage, or
+      maintenance defects to reach the next guest.
+    signal: >
+      Ready time and cleaner completion are always identical.
+  - name: Maintenance defect has no room hold
+    cost: >
+      Front desk assigns inventory that cannot meet the stay promise.
+    signal: >
+      Open maintenance request exists while room status remains
+      available.
+  - name: Starting condition is not recorded
+    cost: >
+      Damage, lost property, and unusual cleaning cannot be attributed
+      or resolved reliably.
+    signal: >
+      Exceptions appear only after the room has been stripped or reset.
+maturity:
+  - level: run badly
+    looks_like: >
+      Front desk asks whether a room is done and updates availability
+      from verbal answers.
+  - level: run well
+    looks_like: >
+      Departure, starting condition, cleaning, exception, inspection,
+      and release update one room state.
+  - level: run excellently
+    looks_like: >
+      Turn evidence improves staffing, standards, maintenance planning,
+      linen supply, and arrival promises by room and stay pattern.
+competencies:
+  - name: Condition observation
+    note: >
+      Staff notice and distinguish cleaning, damage, maintenance,
+      safety, and lost-property conditions.
+  - name: Inventory release control
+    note: >
+      The operator protects the meaning of ready even when arrivals
+      pressure the queue.
+automation:
+  now: >
+    Departure queues, mobile assignments, room status, checklists,
+    maintenance routing, inspection, lost-property records, and alerts.
+  human: >
+    Visual and sensory inspection, ambiguous damage, sanitation,
+    presentation, guest property, and release judgment.
+questions:
+  - Which room is marked available while an unresolved defect remains?
+  - Where does ready mean task complete instead of inspected and saleable?

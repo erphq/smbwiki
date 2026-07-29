@@ -1,0 +1,27 @@
+id: travel-agency
+name: Travel Agency
+codes:
+  naics: "561510"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A travel agency converts traveler identity, destination, dates,
+  budget, purpose, preferences, accessibility, loyalty, documentation,
+  and risk tolerance into compatible reservations. Supplier rules,
+  availability, fare conditions, connections, and entry requirements can
+  change while the itinerary is being assembled.
+
+  A completed booking remains active through payment deadlines, ticket
+  issue, supplier confirmation, schedule change, cancellation,
+  disruption, refund, credit, and traveler communication. The agency
+  keeps each component's terms, confirmation, custody, commission, and
+  responsible support route attached to the same trip.
+revenue_model:
+  - id: booking-commissions
+    note: supplier compensation on eligible completed travel sales
+  - id: planning-and-service-fees
+    note: client charges for research, booking, change, and support work
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+supply_chain:
+  buys_from: [travel-supplier]
+  sells_to: [individual-client, commercial-client]

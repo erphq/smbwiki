@@ -1,0 +1,96 @@
+id: lead-intake
+name: Lead intake
+kind: skill
+department: sales
+summary: >
+  Lead intake receives a call, message, referral, or form request and
+  creates a job request that dispatch, quoting, or another owner can act
+  on. Customer, site, problem, urgency, service fit, contact route, and
+  access constraints are captured while the requester is available.
+inputs: []
+outputs: [job-request]
+steps:
+  - name: Establish contact
+    role: office-manager
+    note: >
+      Name, callback route, site, and permission to leave messages are
+      secured before a long description can be interrupted.
+  - name: Capture the reported condition
+    role: office-manager
+    note: >
+      The customer's words, affected system, onset, current operating
+      state, prior work, and any immediate hazard remain distinguishable.
+  - name: Decide route and priority
+    role: office-manager
+    note: >
+      Service area, work type, urgency, licensing, account or agreement
+      status, and need for a quote determine the next owner.
+  - name: Create the job request
+    role: office-manager
+    produces: [job-request]
+    note: >
+      Scope known so far, contact, location, access, priority, and promises
+      are written for the person who will act.
+  - name: Confirm the next step
+    role: office-manager
+    note: >
+      The customer receives the reference, expected contact or visit, and
+      instructions for any condition that should trigger escalation.
+tension: >
+  Response speed competes with useful qualification. A fast answer keeps
+  the requester engaged; a thin job request pushes missing site, hazard,
+  scope, or contact detail into dispatch and the field.
+failure_modes:
+  - name: Hazard enters the normal queue
+    cost: >
+      A condition involving gas, water, electricity, heat, pressure, or
+      property damage waits under a routine response promise.
+    signal: >
+      Urgent keywords appear in the description while priority remains
+      default.
+  - name: Promise exceeds known capacity
+    cost: >
+      The customer plans around a visit or response the operating board
+      cannot support.
+    signal: >
+      Intake gives an arrival commitment before dispatch confirms service
+      area, skill, and schedule.
+  - name: Duplicate request fragments the history
+    cost: >
+      Separate staff respond to the same issue and site information or
+      promises diverge.
+    signal: >
+      Matching address and concern appear under more than one open request.
+maturity:
+  - level: run badly
+    looks_like: >
+      Messages, forms, and calls live in separate inboxes and technicians
+      call customers to rediscover the problem.
+  - level: run well
+    looks_like: >
+      Every contact becomes one routed request with site, concern,
+      priority, access, contact, and confirmed next step.
+  - level: run excellently
+    looks_like: >
+      Intake defects are traced from dispatch and field outcomes, routing
+      rules are explicit, and missed contacts remain in an owned queue.
+competencies:
+  - name: Remote triage
+    note: >
+      The operator recognizes urgency and service fit from an incomplete
+      description without attempting a field diagnosis.
+  - name: Structured listening
+    note: >
+      Customer language, site facts, hazards, and promises have to reach
+      the job request without losing their source.
+automation:
+  now: >
+    Omnichannel capture, duplicate detection, address and service-area
+    checks, account lookup, routing prompts, confirmations, and follow-up
+    queues.
+  human: >
+    Hazard recognition, distressed callers, ambiguous scope, service-fit
+    judgment, and deciding what promise is safe to make.
+questions:
+  - Which open contact has no owner or confirmed next step?
+  - Can dispatch act from the job request without calling intake for missing facts?

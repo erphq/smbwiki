@@ -1,0 +1,6 @@
+id: aging-report
+name: Aging report
+kind: document
+summary: >
+  Receivables bucketed by how overdue they are; the collections
+  worklist.

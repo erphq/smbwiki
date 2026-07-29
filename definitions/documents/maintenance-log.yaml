@@ -1,0 +1,6 @@
+id: maintenance-log
+name: Maintenance log
+kind: document
+summary: >
+  Inspection, preventive service, fault, repair, parts, downtime, and
+  return-to-service history for an asset.

@@ -1,0 +1,8 @@
+id: service-ticket-time
+name: Service ticket time
+kind: metric
+summary: >
+  Elapsed time from the scheduled start of a personal service to the
+  service ticket reaching checkout.
+unit: minutes
+direction: lower

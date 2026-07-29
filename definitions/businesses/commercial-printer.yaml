@@ -1,0 +1,20 @@
+id: commercial-printer
+name: Commercial Printer
+codes:
+  naics: "323111"
+catalog_group: logistics-production
+extends: production-shop-base
+summary: >
+  A commercial printer converts an approved file and production
+  specification into imposed, proofed, printed, finished, packed, and
+  delivered quantity. Size, stock, ink, color, coating, bindery,
+  personalization, mailing, and due date define the job.
+
+  A visually correct design can still fail in production through missing
+  fonts, low resolution, bleed, color, pagination, stock, or finishing
+  assumptions. The printer controls preflight, proof approval, revision,
+  material, setup, waste, run quantity, finishing counts, packaging,
+  shipping, and retained samples.
+supply_chain:
+  buys_from: [paper-distributor, ink-supplier]
+  sells_to: [commercial-client, graphic-design-studio]

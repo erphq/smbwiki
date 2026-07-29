@@ -1,0 +1,8 @@
+id: electronic-health-record
+name: Electronic health record
+kind: software-category
+summary: >
+  The clinical system of record for histories, findings, notes,
+  treatment plans, images, and care correspondence.
+erpai_category: operations
+erpai_apps: []

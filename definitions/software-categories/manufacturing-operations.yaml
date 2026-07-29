@@ -1,0 +1,8 @@
+id: manufacturing-operations
+name: Manufacturing operations
+kind: software-category
+summary: >
+  Customer orders, production orders, material, routings, schedules,
+  shop-floor reporting, quality, cost, and shipment.
+erpai_category: manufacturing
+erpai_apps: []

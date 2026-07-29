@@ -1,0 +1,100 @@
+id: guest-stay
+name: Guest stay
+kind: skill
+department: operations
+summary: >
+  Guest stay carries a confirmed reservation through room assignment,
+  arrival, access, occupied service, charges, issue resolution,
+  departure, and folio settlement. Guest identity, room state, promises,
+  custody, and money remain connected.
+inputs: [reservation-record, room-status]
+outputs: [guest-folio, room-status]
+steps:
+  - name: Prepare the arrival
+    role: front-desk-agent
+    consumes: [reservation-record, room-status]
+    note: >
+      Reservation, room readiness, requests, payment guarantee,
+      messages, accessibility, occupancy, and arrival timing are checked.
+  - name: Register and assign
+    role: front-desk-agent
+    produces: [guest-folio]
+    note: >
+      Guest identity, terms, room, access, deposit, payment authority,
+      contacts, and property information are completed before keys.
+  - name: Maintain the occupied stay
+    role: front-desk-agent
+    consumes: [guest-folio]
+    note: >
+      Charges, payments, messages, service requests, room changes,
+      incidents, privacy, and recovery decisions update the guest record.
+  - name: Settle departure
+    role: front-desk-agent
+    consumes: [guest-folio]
+    note: >
+      Departure, charges, credits, payment, invoice, key or access,
+      luggage, transport, and unresolved issues are closed.
+  - name: Release the room
+    role: front-desk-agent
+    produces: [room-status]
+    note: >
+      Occupied status ends with departure time and known cleaning,
+      damage, maintenance, and lost-property information.
+tension: >
+  Smooth hospitality competes with identity, room, payment, privacy,
+  and recovery controls. A flexible response helps a guest; undocumented
+  room changes, credits, access, and promises leave later staff unable
+  to continue the stay safely or fairly.
+failure_modes:
+  - name: Room assigned before ready state
+    cost: >
+      Guest receives an unclean, occupied, held, damaged, or incomplete
+      room.
+    signal: >
+      Key issue precedes inspected room availability.
+  - name: Service recovery remains verbal
+    cost: >
+      Another shift repeats the failure or disputes the promised credit,
+      move, amenity, or follow-up.
+    signal: >
+      Guest issue has conversation notes without owner, action, and
+      closure.
+  - name: Folio exception reaches departure
+    cost: >
+      Checkout becomes a dispute under time pressure and charges remain
+      uncollectible.
+    signal: >
+      Unassigned or unapproved folio item remains open overnight.
+maturity:
+  - level: run badly
+    looks_like: >
+      Front desk relies on shift memory for room changes, guest issues,
+      payments, and promises.
+  - level: run well
+    looks_like: >
+      Reservation, identity, ready room, access, folio, service issue,
+      recovery, settlement, and departure share one stay record.
+  - level: run excellently
+    looks_like: >
+      Arrival, issue, room, charge, and recovery evidence improves
+      staffing, room assignment, standards, rate plans, and prevention.
+competencies:
+  - name: Live stay control
+    note: >
+      The agent keeps guest, room, access, money, request, and shift
+      handoff aligned while conditions change.
+  - name: Service recovery
+    note: >
+      Staff hear the failure, protect immediate needs, choose authorized
+      recovery, and preserve a useful record.
+automation:
+  now: >
+    Arrival lists, room assignment, digital registration, key control,
+    folios, payments, messaging, service requests, shift notes, and
+    checkout.
+  human: >
+    Identity exceptions, hospitality, privacy, room judgment, conflict,
+    accessibility, safety, recovery, and disputed charges.
+questions:
+  - Which arriving guest has no inspected room capable of meeting the recorded promise?
+  - Which active guest issue will be invisible to the next shift?

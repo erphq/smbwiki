@@ -1,0 +1,6 @@
+id: repair-order
+name: Repair order
+kind: document
+summary: >
+  The vehicle, customer concerns, assigned work, time, parts, findings,
+  approvals, and completion record for one shop visit.

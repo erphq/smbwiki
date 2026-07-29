@@ -1,0 +1,6 @@
+id: appointment-request
+name: Appointment request
+kind: document
+summary: >
+  A customer's requested service, preferred time, and contact details
+  before capacity has been reserved.

@@ -1,0 +1,97 @@
+id: demolition-waste-control
+name: Demolition waste control
+kind: skill
+department: compliance
+summary: >-
+  Plans chutes, carts, containers, dust control, segregation, weight,
+  regulated material, hauling tickets, and housekeeping by work area.
+  Demolition waste control leaves a current work basis, a field record, and
+  acceptance evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - daily-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before demolition waste control, read the current scope and revisions,
+      then verify completed engineering survey, utility shutdown,
+      hazardous-material disposition, exclusion zones, removal sequence, and
+      disposal routes.
+  - name: Set the field controls
+    note: >-
+      Translate demolition waste control into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During demolition waste control, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept demolition waste control, check the completed work against
+      specified removals, stable remaining structure, protected services and
+      finishes, segregated waste, clean limits, and documented changed
+      conditions, then close correction and issue the resulting record.
+tension: >-
+  Demolition waste control has to remain inside its acceptance basis while
+  production moves. Unknown loads, materials, utilities, and hidden
+  connections make an unplanned removal sequence dangerous and destructive.
+failure_modes:
+  - name: Demolition waste control starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      demolition waste control is settled.
+    signal: >-
+      The demolition waste control work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Demolition waste control closes without evidence
+    cost: >-
+      A concealed condition or required result from demolition waste control
+      cannot be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Demolition waste control is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Demolition waste control is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Demolition waste control starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Demolition waste control uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Demolition sequence and existing-condition judgment
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of demolition waste control.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for demolition waste control have to be captured while
+      the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Demolition waste control can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting demolition waste control
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop demolition waste control before work
+    begins?
+  - >-
+    Which record proves demolition waste control was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

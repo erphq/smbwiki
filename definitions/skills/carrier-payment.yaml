@@ -1,0 +1,91 @@
+id: carrier-payment
+name: Carrier payment
+kind: skill
+department: finance
+summary: >
+  Carrier payment matches the carrier invoice and delivery proof to the
+  rate confirmation, approved accessorials, payment setup, and agreed
+  terms. Exceptions are resolved with the carrier before a payment record
+  closes the brokerage's payable obligation.
+inputs: [proof-of-delivery, carrier-invoice]
+outputs: [payment-record]
+steps:
+  - name: Validate invoice and proof
+    role: billing-specialist
+    consumes: [proof-of-delivery, carrier-invoice]
+    note: >
+      Carrier identity, load, invoice number, delivery, proof quality,
+      amount, and payment instructions align with the approved record.
+  - name: Match the commitment
+    role: billing-specialist
+    note: >
+      Line haul, fuel, stops, detention, layover, handling, advances, and
+      deductions trace to the rate confirmation and later approvals.
+  - name: Resolve exceptions
+    role: billing-specialist
+    note: >
+      Missing proof, disputed charge, claim hold, duplicate invoice, and
+      bank change receive separate owners and communication.
+  - name: Release and record payment
+    role: billing-specialist
+    produces: [payment-record]
+    note: >
+      Payee, method, amount, date, invoices settled, deductions, and
+      remittance remain linked to the load.
+tension: >
+  Payment control competes with carrier terms and capacity relationships.
+  Strong validation protects cash and fraud exposure; unexplained holds or
+  slow exception work push reliable carriers toward other brokers.
+failure_modes:
+  - name: Payment identity differs from approved carrier
+    cost: >
+      Funds leave for a changed or fraudulent account and the actual
+      carrier remains unpaid.
+    signal: >
+      Invoice remittance or bank instruction conflicts with onboarding
+      records and lacks independent re-verification.
+  - name: Accessorial dispute becomes silent deduction
+    cost: >
+      The carrier receives less than expected with no evidence or decision
+      path, damaging the relationship and inviting collection.
+    signal: >
+      Payment amount differs from invoice while exception notes are blank.
+  - name: Claim hold spreads beyond exposure
+    cost: >
+      Undisputed freight charges remain unpaid while a separate damage or
+      shortage question is investigated.
+    signal: >
+      The whole invoice is blocked with no amount, authority, or review
+      date attached to the hold.
+maturity:
+  - level: run badly
+    looks_like: >
+      Carrier invoices are paid from email and differences are handled
+      when a collector calls.
+  - level: run well
+    looks_like: >
+      Approved identity, invoice, proof, rate, accessorials, exceptions,
+      terms, and remittance support each payment.
+  - level: run excellently
+    looks_like: >
+      Bank changes receive independent control, repeated exceptions change
+      execution, and carriers can see a clear payable status and reason.
+competencies:
+  - name: Load-level payable matching
+    note: >
+      The biller distinguishes contracted freight, approved extras,
+      advances, claims, deductions, duplicates, and payment identity.
+  - name: Carrier exception communication
+    note: >
+      A clear amount, reason, evidence need, owner, and date keep a payable
+      issue from becoming relationship damage.
+automation:
+  now: >
+    Invoice capture, duplicate checks, proof matching, rate comparison,
+    accessorial workflow, bank-change alerts, payment files, and remittance.
+  human: >
+    Fraud review, disputed charges, claim holds, deductions, relationship
+    escalation, and approval of an unusual payee or method.
+questions:
+  - Which carrier payment is held without a specific amount, reason, and owner?
+  - Has every bank change been verified through an independent trusted route?

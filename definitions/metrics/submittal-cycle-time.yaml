@@ -1,0 +1,8 @@
+id: submittal-cycle-time
+name: Submittal cycle time
+kind: metric
+summary: >
+  Elapsed time from required submittal identification to an actionable
+  review disposition.
+unit: days
+direction: lower

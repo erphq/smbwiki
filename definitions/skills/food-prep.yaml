@@ -1,0 +1,91 @@
+id: food-prep
+name: Food preparation
+kind: skill
+department: operations
+summary: >
+  Food preparation converts a demand plan into ready components before
+  service. Staff batch, portion, cool, label, store, and stage product
+  from a prep list so the line can assemble tickets within the food's
+  usable time and safe holding conditions.
+inputs: [prep-list]
+outputs: []
+steps:
+  - name: Read the production need
+    consumes: [prep-list]
+    note: >
+      On-hand usable product is checked before the listed quantity
+      becomes a new batch.
+  - name: Sequence the work
+    note: >
+      Cooling time, equipment conflicts, allergen handling, and station
+      opening determine the order of preparation.
+  - name: Produce and portion
+    note: >
+      Recipe yield and portion size are checked while correction is still
+      possible.
+  - name: Label and hold
+    note: >
+      Product identity, production time, discard or use-by point, and
+      storage condition travel with the container.
+  - name: Hand off to service
+    note: >
+      Each station confirms usable quantity and flags the item most likely
+      to run short.
+tension: >
+  Service readiness competes with freshness and waste. Larger early
+  batches reduce line interruptions; product prepared beyond likely use
+  loses quality or expires in storage.
+failure_modes:
+  - name: Prep list ignores usable stock
+    cost: >
+      Staff produce a full new batch while an earlier safe batch remains,
+      increasing waste and storage pressure.
+    signal: >
+      Prep quantities are started before station and storage counts are
+      confirmed.
+  - name: Cooling or holding path missing
+    cost: >
+      Finished food spends too long in an unsafe or quality-damaging
+      condition.
+    signal: >
+      A batch leaves production without a designated container, label,
+      and storage location.
+  - name: Yield drift
+    cost: >
+      The listed batch produces fewer saleable portions and the line runs
+      out earlier than the plan predicts.
+    signal: >
+      Actual portions are rarely compared with recipe yield.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff prep familiar amounts from memory and discover shortages
+      during the rush.
+  - level: run well
+    looks_like: >
+      The prep list reflects on-hand product, each batch has yield and
+      holding control, and stations confirm the handoff.
+  - level: run excellently
+    looks_like: >
+      Actual use and waste improve future quantities, bottleneck
+      equipment shapes sequencing, and replenishment triggers are known
+      before service.
+competencies:
+  - name: Production sequencing
+    note: >
+      Shared equipment, cooling, proofing, allergen separation, and
+      station deadlines make preparation order operationally significant.
+  - name: Yield control
+    note: >
+      The operator can see when handling, trimming, cooking loss, or
+      portioning changes the usable output.
+automation:
+  now: >
+    Prep-list calculation, recipe scaling, labels, timers, cooling logs,
+    yield capture, and station completion status.
+  human: >
+    Product condition, sensory judgment, safe handling, equipment
+    adaptation, and deciding whether a batch remains usable.
+questions:
+  - Which prepared item is most likely to run out during the next service?
+  - Are actual yield and waste changing tomorrow's prep quantity?

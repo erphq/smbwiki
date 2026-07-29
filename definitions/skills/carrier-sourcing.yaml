@@ -1,0 +1,93 @@
+id: carrier-sourcing
+name: Carrier sourcing
+kind: skill
+department: supply
+summary: >
+  Carrier sourcing finds current qualified capacity for a specific load,
+  validates carrier fit at assignment time, negotiates the buy rate and
+  operating conditions, and records the commitment in a rate
+  confirmation.
+inputs: [load-tender, approved-carrier-record]
+outputs: [rate-confirmation]
+steps:
+  - name: Expose the tender accurately
+    role: carrier-sales-representative
+    consumes: [load-tender]
+    note: >
+      Lane, timing, freight, equipment, facility, tracking, and accessorial
+      conditions are shared before a carrier price is treated as usable.
+  - name: Recheck carrier fit
+    role: carrier-sales-representative
+    consumes: [approved-carrier-record]
+    note: >
+      Current approval, identity, equipment, driver and truck, geography,
+      insurance, and restrictions are checked for this load.
+  - name: Negotiate the commitment
+    role: carrier-sales-representative
+    note: >
+      Buy rate, included service, accessorial rules, payment terms,
+      tracking, dispatch contact, and cancellation exposure are settled.
+  - name: Issue and confirm
+    role: carrier-sales-representative
+    produces: [rate-confirmation]
+    note: >
+      The authorized carrier contact accepts the same version operations
+      will use for pickup.
+tension: >
+  Buy cost and booking speed compete with carrier fit and execution
+  reliability. Waiting can lose remaining capacity; accepting the first
+  low rate can place the load with a carrier whose equipment, intent, or
+  operating plan cannot keep the tender.
+failure_modes:
+  - name: Approved company and dispatched truck differ
+    cost: >
+      Freight is tendered under one identity while an unknown party
+      arrives or controls the movement.
+    signal: >
+      Driver, truck, phone, email, or pickup caller conflicts with the
+      approved carrier record.
+  - name: Rate accepted before conditions
+    cost: >
+      Tracking, appointment, equipment, accessorial, or handling conflict
+      appears after carrier commitment.
+    signal: >
+      Negotiation records a buy rate and omits tender acknowledgement.
+  - name: Coverage pressure weakens recheck
+    cost: >
+      An expired, restricted, or suspicious carrier is assigned because
+      pickup time is near.
+    signal: >
+      Compliance exceptions cluster on same-day or recovery loads.
+maturity:
+  - level: run badly
+    looks_like: >
+      The lowest caller receives the load and identity or equipment is
+      confirmed during dispatch.
+  - level: run well
+    looks_like: >
+      Complete tender, current approval, carrier fit, negotiated terms,
+      authorized acceptance, and dispatch contact support each booking.
+  - level: run excellently
+    looks_like: >
+      Lane relationships improve response quality, carrier performance
+      shapes future selection, and recovery pressure never removes identity
+      controls.
+competencies:
+  - name: Capacity qualification
+    note: >
+      The representative distinguishes a quoted truck from a verified
+      carrier, driver, equipment, operating plan, and ability to perform.
+  - name: Buy negotiation
+    note: >
+      Rate, service conditions, accessorials, payment, and relationship
+      value have to reach one durable commitment.
+automation:
+  now: >
+    Carrier matching, outreach, approval checks, lane history, rate
+    comparison, contact verification, confirmation templates, and acceptance.
+  human: >
+    Carrier conversation, identity anomalies, operating-plan assessment,
+    negotiation, relationship judgment, and recovery decisions.
+questions:
+  - What proves the arriving truck is controlled by the approved carrier?
+  - Which tender condition remains unacknowledged in the carrier commitment?

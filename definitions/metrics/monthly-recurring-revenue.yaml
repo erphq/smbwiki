@@ -1,0 +1,8 @@
+id: monthly-recurring-revenue
+name: Monthly recurring revenue
+kind: metric
+summary: >
+  Contracted membership revenue expected from active recurring
+  agreements in a month.
+unit: currency
+direction: higher

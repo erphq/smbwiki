@@ -1,0 +1,8 @@
+id: care-management
+name: Care management
+kind: software-category
+summary: >
+  Admissions, care plans, schedules, service records, medications,
+  incidents, staffing, compliance, and billing.
+erpai_category: healthcare
+erpai_apps: []

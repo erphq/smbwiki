@@ -1,0 +1,8 @@
+id: vehicle-gross-profit
+name: Vehicle gross profit
+kind: metric
+summary: >
+  Vehicle sale price less acquisition, reconditioning, and directly
+  assigned transaction cost.
+unit: currency per vehicle
+direction: higher

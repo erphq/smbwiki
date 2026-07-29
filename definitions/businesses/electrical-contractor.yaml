@@ -1,0 +1,37 @@
+id: electrical-contractor
+name: Electrical Contractor
+codes:
+  naics: "238210"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  An electrical contractor handles fault calls, planned upgrades, and
+  installation work. Service work begins with a symptom and becomes a
+  diagnosis under live-system constraints. Project work begins with
+  drawings or a site survey and becomes a sequence of rough-in,
+  inspection, trim, testing, and energization.
+
+  The schedule depends on qualified labor, access, shutdown windows,
+  equipment lead times, permit state, and work by other trades. The
+  office has to keep those conditions visible before committing a crew.
+  Field closeout needs circuit identification, readings, inspection
+  state, and the changes made to the installed system.
+revenue_model:
+  - id: service-calls
+    note: troubleshooting and repair work dispatched from reported faults
+  - id: quoted-projects
+    note: upgrades and installation work sold from surveyed scope
+skills:
+  - ref: install-project
+    roles: [lead-technician, technician]
+    documents: [quote, permit, work-order, job-photos]
+    metrics: [install-gross-margin]
+    software: [field-service-management]
+  - ref: permits-inspections
+    roles: [office-manager]
+    documents: [permit]
+    software: [field-service-management]
+supply_chain:
+  sells_to: [homeowner, general-contractor]
+seo:
+  title: "Electrical Contractor: How the Business Works | smbwiki"

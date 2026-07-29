@@ -1,0 +1,81 @@
+id: dispatch
+name: Dispatch
+kind: skill
+department: operations
+summary: >
+  Assigning booked jobs to techs and sequencing routes through the
+  day. The dispatcher trades revenue per truck against promise times
+  and skill match on every assignment.
+inputs: [job-request]
+outputs: [work-order]
+steps:
+  - name: Build the board
+    role: dispatcher
+    consumes: [job-request]
+    note: >
+      The day's calls ranked by urgency, agreement status, and geography.
+  - name: Match tech to job
+    role: dispatcher
+    note: >
+      Skills and licenses first, drive time second, revenue third.
+  - name: Cut the work order
+    role: dispatcher
+    produces: [work-order]
+    note: >
+      Scope, site history, and parts likely needed, so the truck arrives ready.
+  - name: Reshuffle live
+    role: dispatcher
+    note: >
+      The morning plan is obsolete by ten. The skill is reshuffling without breaking a promise window.
+tension: >
+  Revenue per truck against promise integrity. Packing the board
+  maximizes today's billing; every broken promise window spends
+  tomorrow's. The dispatcher is the person who prices that trade all
+  day, one assignment at a time.
+failure_modes:
+  - name: Skill mismatch
+    cost: A callback, a burned slot, and a customer who watched a
+      technician struggle.
+    signal: Callbacks clustering on one technician or one job type.
+  - name: Geography thrash
+    cost: Windshield time quietly eats a job per truck per day.
+    signal: Miles per completed job creeping up month over month.
+  - name: Overpromising the board
+    cost: Missed windows, and the missed ones are always the
+      customers who took time off work to be home.
+    signal: Same-day reshuffles that touch already-promised slots.
+maturity:
+  - level: run badly
+    looks_like: Whoever answers the phone assigns the job. The board
+      is a group text, and nobody can say where a truck is.
+  - level: run well
+    looks_like: One person owns the board. Calls are ranked by
+      urgency, agreement status, and geography, and job status is
+      live.
+  - level: run excellently
+    looks_like: Promise windows are quoted from real drive times,
+      agreement priority is enforced by the system with memory as a
+      backup, and the dispatcher is measured on jobs per truck and
+      windows kept, together.
+competencies:
+  - name: Triage judgment
+    note: Hearing the difference between "no cooling" as discomfort
+      and "no cooling" as an infant, an elderly parent, or a server
+      room.
+  - name: The tech-skill map
+    note: Knowing without looking which technician has the license,
+      the temperament, and the history for this address.
+  - name: Geographic memory
+    note: The dispatcher who knows the traffic pattern beats the one
+      with the map open.
+automation:
+  now: Route optimization, live status, and assignment suggestions.
+    Software is genuinely good at the geometry.
+  human: Bumping a bigger ticket for an agreement customer and
+    splitting a two-tech job. These exceptions price the brand over
+    time, and the algorithm lacks that context.
+questions:
+  - Who owns the board when the dispatcher is out?
+  - What is allowed to break a promise window, and who approves it?
+  - Which technician takes the 2am call, and is that a system or a
+    habit?

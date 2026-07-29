@@ -1,0 +1,8 @@
+id: laundromat-management
+name: Laundromat management
+kind: software-category
+summary: >
+  Machine status, cycle sales, remote starts, pricing, refunds, faults,
+  collections, loyalty, and location reporting.
+erpai_category: operations
+erpai_apps: []

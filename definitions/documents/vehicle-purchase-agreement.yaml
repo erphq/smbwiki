@@ -1,0 +1,6 @@
+id: vehicle-purchase-agreement
+name: Vehicle purchase agreement
+kind: document
+summary: >
+  Buyer, vehicle, agreed price, trade, taxes, fees, products, funding,
+  signatures, and delivery conditions for one sale.

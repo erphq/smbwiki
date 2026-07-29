@@ -1,0 +1,39 @@
+id: butcher-shop
+name: Butcher Shop
+codes:
+  naics: "445240"
+catalog_group: food-lodging
+extends: retail-store-base
+summary: >
+  A butcher shop receives refrigerated product by supplier, lot,
+  species, cut, weight, and condition, then breaks, trims, portions,
+  grinds, packages, labels, displays, and sells it under temperature and
+  sanitation controls. Yield connects purchase cost to each saleable cut.
+
+  Inventory changes form as it moves. The operator tracks receiving
+  weight, production yield,
+  trim, waste, sell-by state, special orders, and display availability
+  while separating species, allergens, raw work, and ready-to-eat items.
+revenue_model:
+  - id: fresh-meat-sales
+    note: cut, packaged, and service-counter products sold by weight or unit
+  - id: prepared-and-special-orders
+    note: value-added products and customer-requested cuts
+  - remove: [merchandise-sales, special-orders]
+skills:
+  - ref: food-prep
+    roles: [butcher, stock-associate]
+    documents: [prep-list]
+    metrics: [waste-percentage]
+    software: [inventory-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: butcher
+          - role: stock-associate
+supply_chain:
+  buys_from: [meat-processor, food-distributor]
+  sells_to: [retail-consumer]

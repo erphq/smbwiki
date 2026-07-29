@@ -1,0 +1,97 @@
+id: event-production-planning
+name: Event production planning
+kind: skill
+department: operations
+summary: >
+  Event production planning turns an accepted event quote into the
+  production and service records used by kitchen, loading, delivery,
+  setup, and event staff. Guest count, menu, quantities, timing,
+  equipment, venue conditions, labor, and customer decisions stay under
+  one current event version.
+inputs: [quote]
+outputs: [order-ticket, prep-list]
+steps:
+  - name: Confirm the event version
+    role: general-manager
+    consumes: [quote]
+    note: >
+      Date, service window, venue, guest count, menu, dietary needs,
+      service style, rentals, staffing, payment, and change cutoff match
+      the accepted scope.
+  - name: Build production quantities
+    role: head-chef
+    produces: [prep-list]
+    note: >
+      Portions, yield, batch size, holding, packaging, reserve quantity,
+      and production timing become a kitchen plan with named owners.
+  - name: Build the service order
+    role: general-manager
+    produces: [order-ticket]
+    note: >
+      Items, quantities, labels, destination, setup, service sequence,
+      contacts, and promised times become the event's release record.
+  - name: Confirm venue and load
+    role: general-manager
+    note: >
+      Access, parking, power, water, preparation space, loading route,
+      tables, equipment, waste, restrictions, and recovery options are
+      checked before packing.
+  - name: Release and brief
+    role: general-manager
+    note: >
+      Kitchen, driver, service lead, and customer hold the same current
+      version, while late changes have one approval and communication route.
+tension: >
+  Early production certainty competes with late event changes. Kitchen,
+  rentals, purchasing, and labor need committed quantities; guest count
+  and customer decisions often continue moving close to the service date.
+failure_modes:
+  - name: Departments work from different versions
+    cost: >
+      Food, labor, equipment, delivery, or setup reflects an earlier
+      guest count or service decision.
+    signal: >
+      Kitchen and event leads cite different quantities or revision dates.
+  - name: Venue assumption reaches arrival
+    cost: >
+      The team cannot unload, power, heat, hold, stage, or serve as planned.
+    signal: >
+      A venue-dependent requirement has no confirmed contact or field.
+  - name: Load list follows memory
+    cost: >
+      A small missing item interrupts service at a site with few recovery
+      options.
+    signal: >
+      Equipment and service supplies are packed without a checked event list.
+maturity:
+  - level: run badly
+    looks_like: >
+      The quote is forwarded to the kitchen and the event lead rebuilds
+      quantities, equipment, and timing from messages.
+  - level: run well
+    looks_like: >
+      Current scope, production quantities, service order, venue facts,
+      load list, staffing, and changes share one event version.
+  - level: run excellently
+    looks_like: >
+      Recurring venue and menu evidence improves quantities, labor plans,
+      packing standards, change cutoffs, and future quotes.
+competencies:
+  - name: Event translation
+    note: >
+      A customer promise has to become precise production, transport,
+      setup, service, and cleanup work for several teams.
+  - name: Contingency planning
+    note: >
+      Venue limits and travel reduce recovery options, so the event lead
+      must identify critical failures before departure.
+automation:
+  now: >
+    Event versions, quantity calculations, production sheets, timelines,
+    staffing plans, load lists, change notices, and team briefings.
+  human: >
+    Menu and quantity judgment, venue interpretation, customer changes,
+    service sequence, contingency decisions, and live event leadership.
+questions:
+  - Which upcoming event still has two plausible versions of the truth?
+  - What missing venue fact can still change production, loading, or service?

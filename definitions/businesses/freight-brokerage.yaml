@@ -1,0 +1,115 @@
+id: freight-brokerage
+name: Freight Brokerage
+codes:
+  naics: "488510"
+catalog_group: logistics-production
+summary: >
+  A freight brokerage accepts a shipper's load request, builds a service
+  and price, tenders the load to an approved carrier, tracks execution,
+  collects delivery evidence, invoices the customer, and pays the
+  carrier. The carrier holds physical custody while the brokerage
+  controls the commercial record and communication.
+
+  Gross margin is the difference between the customer charge and the
+  carrier cost after accessorial and claim effects. Carrier identity,
+  authority, insurance, dispatch contact, equipment, and payment details
+  need verification before pickup information is released. Cash timing
+  also matters because carrier terms and customer terms can settle on
+  different dates.
+revenue_model:
+  - id: margin-per-load
+    note: shipper charge less purchased carrier cost and load-specific
+      accessorials
+  - id: contract-lanes
+    note: repeated capacity arranged against agreed shipper rates and
+      service expectations
+  - id: managed-transportation
+    note: broader coordination and reporting fees across a shipper's
+      load book
+skills:
+  - ref: shipper-sales
+    roles: [shipper-sales-representative, freight-broker]
+    documents: [load-request]
+    metrics: [quote-to-book-rate]
+    software: [customer-relationship-management, transportation-management-system]
+  - ref: freight-quoting
+    roles: [freight-broker]
+    documents: [load-request, quote]
+    metrics: [quote-to-book-rate, gross-margin-per-load]
+    software: [transportation-management-system]
+  - ref: load-planning
+    roles: [freight-broker]
+    documents: [quote, load-tender]
+    software: [transportation-management-system]
+  - ref: carrier-onboarding
+    roles: [carrier-compliance-specialist]
+    documents: [carrier-packet, approved-carrier-record]
+    metrics: [carrier-approval-time]
+    software: [carrier-monitoring]
+  - ref: carrier-sourcing
+    roles: [carrier-sales-representative, freight-broker]
+    documents: [load-tender, approved-carrier-record, rate-confirmation]
+    metrics: [tender-acceptance-rate, gross-margin-per-load]
+    software: [transportation-management-system, carrier-monitoring]
+  - ref: load-execution
+    roles: [tracking-coordinator, freight-broker]
+    documents: [rate-confirmation, bill-of-lading, proof-of-delivery]
+    metrics: [on-time-pickup-rate, on-time-delivery-rate, loads-per-broker-day]
+    software: [transportation-management-system]
+  - ref: customer-invoicing
+    roles: [billing-specialist]
+    documents: [proof-of-delivery, customer-invoice]
+    metrics: [days-sales-outstanding]
+    software: [transportation-management-system, accounting]
+  - ref: carrier-payment
+    roles: [billing-specialist]
+    documents: [proof-of-delivery, carrier-invoice, payment-record]
+    metrics: [carrier-days-to-pay]
+    software: [transportation-management-system, accounting]
+  - ref: accounts-receivable
+    roles: [billing-specialist]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: freight-claims
+    roles: [claims-coordinator, freight-broker]
+    documents: [bill-of-lading, proof-of-delivery, freight-claim]
+    metrics: [claims-rate]
+    software: [transportation-management-system]
+org:
+  - role: owner-operator
+    reports:
+      - role: shipper-sales-representative
+      - role: freight-broker
+        reports:
+          - role: carrier-sales-representative
+          - role: tracking-coordinator
+      - role: carrier-compliance-specialist
+      - role: billing-specialist
+      - role: claims-coordinator
+licenses:
+  us:
+    - ref: freight-broker-authority
+      requirement: required
+      condition: Required for arranging covered interstate freight transportation for compensation.
+      as_of: "2026-07-29"
+    - ref: freight-broker-bond
+      requirement: required
+      condition: Required financial-security filing for the modeled federally authorized brokerage.
+      as_of: "2026-07-29"
+geo:
+  us:
+    skills:
+      - ref: broker-authority-compliance
+        roles: [carrier-compliance-specialist]
+        documents:
+          - financial-security-filing
+          - process-agent-designation
+          - broker-authority-record
+        software: [carrier-monitoring]
+supply_chain:
+  buys_from: [motor-carrier]
+  sells_to: [shipper]
+products: []
+seo:
+  title: "Freight Brokerage: How the Business Works | smbwiki"

@@ -1,0 +1,6 @@
+id: client-profile
+name: Client profile
+kind: document
+summary: >
+  Service history, preferences, sensitivities, and notes that help a
+  personal-service provider reproduce and improve a prior result.

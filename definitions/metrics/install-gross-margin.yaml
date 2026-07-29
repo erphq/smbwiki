@@ -1,0 +1,7 @@
+id: install-gross-margin
+name: Install gross margin
+kind: metric
+summary: >
+  Gross margin on install projects after equipment and labor.
+unit: percent
+direction: higher

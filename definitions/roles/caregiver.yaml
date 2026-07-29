@@ -1,0 +1,6 @@
+id: caregiver
+name: Caregiver
+kind: role
+summary: >
+  Delivers scheduled daily care, records observations and completed
+  tasks, and escalates changes or incidents.

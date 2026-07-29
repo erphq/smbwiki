@@ -1,0 +1,8 @@
+id: retail-consumer
+name: Retail consumer
+kind: market
+aliases: [consumer]
+summary: >
+  Individual end buyers purchasing goods or immediate services for
+  personal or household use. Payment normally settles at sale or
+  checkout rather than through a trade receivable.

@@ -1,0 +1,101 @@
+id: retail-replenishment
+name: Retail replenishment
+kind: skill
+department: supply
+summary: >
+  Retail replenishment converts purchase commitments and physical
+  deliveries into accurate, saleable stock. Item identity, quantity,
+  cost, condition, location, and availability move together from the
+  receiving door to the selling position.
+inputs: [purchase-order, inventory-receipt]
+outputs: [stock-record]
+steps:
+  - name: Match the delivery
+    role: stock-associate
+    consumes: [purchase-order, inventory-receipt]
+    note: >
+      Supplier, shipment, item, quantity, condition, and unexpected
+      substitutions are checked before inventory is accepted.
+  - name: Record received stock
+    role: stock-associate
+    produces: [stock-record]
+    note: >
+      Accepted quantity, cost, status, and initial location enter the
+      stock record while discrepancies remain visible.
+  - name: Prepare merchandise
+    role: stock-associate
+    consumes: [stock-record]
+    note: >
+      Pricing, labeling, security, assembly, shelf life, and handling
+      requirements are completed before an item is saleable.
+  - name: Replenish the selling position
+    role: stock-associate
+    consumes: [stock-record]
+    note: >
+      Available units move to the location where customers can buy
+      them, with reserve stock left identifiable.
+  - name: Resolve variance
+    role: retail-manager
+    consumes: [stock-record]
+    note: >
+      Damaged, missing, misplaced, expired, or incorrectly costed stock
+      receives an owner and disposition.
+tension: >
+  Product availability competes with inventory control. Speeding goods
+  onto the floor protects sales; weak receiving and location records
+  create false availability, unexplained shrink, and unreliable margin.
+failure_modes:
+  - name: Delivery posted before verification
+    cost: >
+      The system pays for or promises stock that was short, damaged, or
+      never received.
+    signal: >
+      Receiver closes a shipment while unmatched lines or condition
+      exceptions remain.
+  - name: Stock exists without a usable location
+    cost: >
+      Cash is tied in merchandise that staff cannot find when a
+      customer asks for it.
+    signal: >
+      Positive on-hand balance repeatedly produces an empty selling
+      position.
+  - name: Availability ignores preparation
+    cost: >
+      Unpriced, unsecured, unassembled, expired, or uninspected goods
+      appear saleable.
+    signal: >
+      Received quantity becomes available before required preparation
+      is complete.
+maturity:
+  - level: run badly
+    looks_like: >
+      Deliveries are put away from memory and stock records are
+      corrected after customers expose errors.
+  - level: run well
+    looks_like: >
+      Receiving, preparation, location, replenishment, and variance
+      control share one item record.
+  - level: run excellently
+    looks_like: >
+      Replenishment priorities follow observed demand, lead time, shelf
+      capacity, and recurring variance by item and supplier.
+competencies:
+  - name: Item and location control
+    note: >
+      The operator keeps physical identity, system identity, and
+      movement location aligned.
+  - name: Receiving judgment
+    note: >
+      Staff distinguish acceptable supply from a discrepancy that needs
+      supplier, accounting, or safety action.
+automation:
+  now: >
+    Purchase-order matching, barcode receiving, label printing,
+    location suggestions, replenishment tasks, counts, and variance
+    alerts.
+  human: >
+    Condition judgment, safe handling, visual merchandising, ambiguous
+    identity, supplier disputes, and disposition of unusable goods.
+questions:
+  - Which positive stock balance cannot be found in its recorded location?
+  - Which receiving discrepancy is still included in available inventory?

@@ -1,0 +1,44 @@
+id: medical-laboratory
+name: Medical Laboratory
+codes:
+  naics: "621511"
+catalog_group: health-care
+extends: professional-services-base
+summary: >
+  A medical laboratory receives test orders and specimens whose value
+  depends on patient identity, collection, container, time, transport,
+  stability, method, and custody. Accessioning turns those facts into a
+  controlled worklist before analytical processing begins.
+
+  Instruments can produce results quickly while acceptance, controls,
+  review, reruns, critical values, and corrected reports still require
+  professional control. The laboratory schedules benches and couriers
+  around specimen stability and promised turnaround, then preserves the
+  trace from order through released result.
+revenue_model:
+  - id: diagnostic-testing
+    note: ordered laboratory tests billed to clients, patients, or payers
+  - id: contracted-laboratory-services
+    note: recurring testing and logistics provided under an account agreement
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+skills:
+  - ref: specimen-processing
+    roles: [laboratory-technologist, principal]
+    documents: [specimen-order, lab-result]
+    metrics: [specimen-turnaround-time]
+    software: [laboratory-information-system]
+  - remove: [client-engagement, professional-service-delivery]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: laboratory-technologist
+licenses:
+  us:
+    - ref: clia-certificate
+      requirement: required
+      condition: Required for a facility performing covered testing on human specimens.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [laboratory-supply-distributor]
+  sells_to: [patient, payer, commercial-client]

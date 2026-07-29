@@ -1,0 +1,26 @@
+id: architectural-firm
+name: Architectural Firm
+codes:
+  naics: "541310"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  An architectural firm turns owner needs, site, code, budget, schedule,
+  existing conditions, consultants, and approvals into coordinated
+  design documents. Each phase fixes decisions at increasing detail
+  while preserving assumptions, alternatives, and unresolved constraints.
+
+  Issued drawings and specifications become instructions used by many
+  parties, so revision and responsibility control matter. The firm
+  manages consultant inputs, authority comments, cost changes, submittal
+  questions, site observations, and owner decisions without confusing
+  design intent with construction responsibility.
+licenses:
+  us:
+    - ref: architect-license
+      requirement: required
+      condition: Required for the licensed architect taking responsibility for regulated architectural services.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [engineering-firm]
+  sells_to: [homeowner, general-contractor]

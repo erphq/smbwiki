@@ -1,0 +1,7 @@
+id: dough-yield
+name: Dough yield
+kind: metric
+summary: >
+  Usable dough balls per batch against plan.
+unit: count
+direction: higher

@@ -1,0 +1,8 @@
+id: epa-608
+name: EPA Section 608 certification
+kind: license
+geo: [us]
+summary: >
+  Federal certification to handle refrigerants; per-technician, no
+  expiry.
+jurisdiction: federal

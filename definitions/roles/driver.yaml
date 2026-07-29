@@ -1,0 +1,6 @@
+id: driver
+name: Driver
+kind: role
+summary: >
+  Delivers orders on routes set by dispatch; the customer-facing last
+  step of every delivery order.

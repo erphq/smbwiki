@@ -1,0 +1,8 @@
+id: motor-carrier-authority
+name: Motor carrier operating authority
+kind: license
+jurisdiction: US
+summary: >
+  Federal operating authority required for covered for-hire interstate
+  motor-carrier operations, together with the applicable registration
+  and insurance filings.

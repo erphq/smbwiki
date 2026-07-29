@@ -1,0 +1,99 @@
+id: care-plan-delivery
+name: Care plan delivery
+kind: skill
+department: operations
+summary: >
+  Care plan delivery converts assessed needs into scheduled, observed,
+  and recorded support. Identity, task, time, precaution, medication,
+  response, missed service, change in condition, incident, and
+  escalation remain attached to the person.
+inputs: [care-plan]
+outputs: [medication-record, incident-report]
+steps:
+  - name: Review the current plan
+    role: caregiver
+    consumes: [care-plan]
+    note: >
+      Person, scheduled support, preferences, precautions, changes,
+      medications, equipment, and escalation instructions are current.
+  - name: Confirm condition and consent
+    role: caregiver
+    note: >
+      Identity, immediate condition, willingness, environment, and any
+      reason to delay, modify, or escalate are checked.
+  - name: Deliver scheduled care
+    role: caregiver
+    note: >
+      Assistance, observation, hygiene, mobility, nutrition, medication
+      support, activity, and safety tasks follow the authorized plan.
+  - name: Record response and medication
+    role: caregiver
+    produces: [medication-record]
+    note: >
+      Completed, refused, omitted, changed, and observed care is
+      recorded at the time and linked to responsible staff.
+  - name: Escalate a change or incident
+    role: care-director
+    produces: [incident-report]
+    note: >
+      Immediate protection, clinical contact, family or authority
+      notice, evidence, follow-up, and plan review are assigned.
+tension: >
+  Consistent scheduled support competes with a person's changing
+  condition and choices. Rigid completion can ignore harm or refusal;
+  informal adaptation can bypass authorization, continuity, and
+  evidence.
+failure_modes:
+  - name: Staff work from an obsolete plan
+    cost: >
+      Current precautions, medications, mobility, diet, behavior, or
+      escalation needs are missed.
+    signal: >
+      Shift record references a plan version superseded by a recent
+      assessment or order.
+  - name: Missed care is recorded as completed
+    cost: >
+      A person lacks support while the next shift and supervisor see no
+      open need.
+    signal: >
+      Repeated identical completion times or records entered in bulk
+      after the shift.
+  - name: Change in condition remains a note
+    cost: >
+      Deterioration repeats without clinical or plan action.
+    signal: >
+      Similar observation appears across shifts without an identified
+      escalation result.
+maturity:
+  - level: run badly
+    looks_like: >
+      Care depends on familiar staff and handover conversation, with
+      records completed after the shift.
+  - level: run well
+    looks_like: >
+      Plan, assignment, current condition, delivered care, medication,
+      observation, exception, and escalation share one person record.
+  - level: run excellently
+    looks_like: >
+      Missed service, incident, response, and outcome evidence improves
+      plan design, staffing, supervision, training, and prevention.
+competencies:
+  - name: Observation and escalation
+    note: >
+      Staff recognize meaningful change and take the authorized action
+      without diagnosing beyond their role.
+  - name: Respectful care execution
+    note: >
+      The caregiver combines safe technique with consent, dignity,
+      preference, and accurate recording.
+automation:
+  now: >
+    Plans, assignments, point-of-care prompts, medication schedules,
+    completion records, missed-task alerts, incident workflow, and
+    supervisory review.
+  human: >
+    Condition observation, consent, touch, communication, adaptation,
+    emergency response, safeguarding, and clinical escalation.
+questions:
+  - Which scheduled care was missed without a resolved follow-up?
+  - Which repeated observation has not changed the plan or reached a qualified reviewer?

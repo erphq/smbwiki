@@ -1,0 +1,6 @@
+id: finance-manager
+name: Finance manager
+kind: role
+summary: >
+  Completes credit, funding, protection-product, title, tax, and
+  contract records for a vehicle sale.

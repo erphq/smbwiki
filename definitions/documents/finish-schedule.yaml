@@ -1,0 +1,6 @@
+id: finish-schedule
+name: Finish schedule
+kind: document
+summary: >
+  Room-by-room finish selections, product references, colors, patterns,
+  transition details, quantities, approvals, and procurement status.

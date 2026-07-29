@@ -1,0 +1,101 @@
+id: lease-administration
+name: Lease administration
+kind: skill
+department: sales
+summary: >
+  Lease administration carries a vacant unit through application,
+  screening, offer, signature, deposit, move-in, recurring charges,
+  notices, renewal, and move-out. The current occupancy right and
+  financial ledger stay tied to the same unit and parties.
+inputs: [lease-application]
+outputs: [lease, tenant-ledger]
+steps:
+  - name: Qualify the application
+    role: property-manager
+    consumes: [lease-application]
+    note: >
+      Unit, applicants, consent, screening criteria, supporting
+      information, fair-housing controls, and decision authority are
+      complete.
+  - name: Establish the offer
+    role: property-manager
+    note: >
+      Premises, term, rent, deposit, utilities, occupants, concessions,
+      rules, and required disclosures form one proposed tenancy.
+  - name: Execute the lease
+    role: property-manager
+    produces: [lease]
+    note: >
+      Required parties sign the current terms and satisfy funds,
+      insurance, identity, and move-in conditions before possession.
+  - name: Open the tenant account
+    role: property-manager
+    consumes: [lease]
+    produces: [tenant-ledger]
+    note: >
+      Recurring charges, deposit treatment, credits, due dates, payment
+      methods, notices, and balance start from the executed lease.
+  - name: Maintain the tenancy
+    role: property-manager
+    consumes: [lease, tenant-ledger]
+    note: >
+      Payments, notices, changes, renewals, access, violations, move-out,
+      and deposit disposition preserve their authority and dates.
+tension: >
+  Occupancy competes with disciplined qualification and record control.
+  Filling a unit protects revenue; inconsistent screening, incomplete
+  terms, or early possession creates collection, compliance, and
+  turnover disputes.
+failure_modes:
+  - name: Possession precedes completed conditions
+    cost: >
+      The property gives access before signatures, funds, insurance, or
+      required records are enforceable.
+    signal: >
+      Key or access release lacks a completed move-in gate.
+  - name: Ledger differs from the lease
+    cost: >
+      Charges, credits, deposits, and due dates cannot be defended or
+      collected consistently.
+    signal: >
+      Manual recurring charge has no matching lease term or amendment.
+  - name: Notice lacks delivery evidence
+    cost: >
+      Renewal, access, cure, collection, and termination actions lose
+      their timing or legal support.
+    signal: >
+      Property file records notice text without method and delivery
+      date.
+maturity:
+  - level: run badly
+    looks_like: >
+      Lease, payments, messages, and notices live in separate files and
+      staff reconstruct tenancy state when a dispute appears.
+  - level: run well
+    looks_like: >
+      Application, decision, lease, possession, ledger, notices,
+      renewal, and move-out share one unit and tenant record.
+  - level: run excellently
+    looks_like: >
+      Leasing evidence improves pricing, qualification, concessions,
+      renewal timing, collections, and turnover planning.
+competencies:
+  - name: Tenancy record control
+    note: >
+      The operator keeps occupancy authority, financial terms, notices,
+      and current parties aligned.
+  - name: Fair and consistent decision practice
+    note: >
+      Staff apply approved criteria and escalation without ad hoc
+      treatment of applicants or tenants.
+automation:
+  now: >
+    Listings, applications, screening workflow, templates, signatures,
+    deposits, recurring charges, payments, notices, renewals, and
+    move-out tasks.
+  human: >
+    Criteria governance, accommodation, disputed facts, legal notices,
+    negotiation, exceptions, and possession decisions.
+questions:
+  - Which occupied unit lacks one completed condition required before possession?
+  - Which tenant-ledger charge cannot be traced to a lease term or signed change?

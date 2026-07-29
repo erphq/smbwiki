@@ -1,0 +1,8 @@
+id: freight-broker-authority
+name: Freight broker operating authority
+kind: license
+geo: [us]
+summary: >
+  Federal authority required to arrange regulated interstate freight
+  transportation for compensation.
+jurisdiction: federal

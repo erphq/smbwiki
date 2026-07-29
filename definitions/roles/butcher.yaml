@@ -1,0 +1,6 @@
+id: butcher
+name: Butcher
+kind: role
+summary: >
+  Breaks, trims, portions, grinds, packages, and labels meat while
+  controlling yield, temperature, sanitation, and product identity.

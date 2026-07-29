@@ -1,0 +1,6 @@
+id: customer-invoice
+name: Customer invoice
+kind: document
+summary: >
+  A bill issued to a customer for delivered goods or completed work:
+  line items, taxes, terms. The start of the receivables clock.

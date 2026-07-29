@@ -1,0 +1,6 @@
+id: guest-folio
+name: Guest folio
+kind: document
+summary: >
+  Room, tax, deposit, payment, credit, and incidental charges attached
+  to a guest stay.

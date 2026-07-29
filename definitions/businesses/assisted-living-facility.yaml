@@ -1,0 +1,27 @@
+id: assisted-living-facility
+name: Assisted Living Facility
+codes:
+  naics: "623312"
+catalog_group: health-care
+extends: care-facility-base
+summary: >
+  An assisted living facility combines housing, meals, supervision,
+  personal care, medication support, activities, and emergency response
+  under a resident agreement and individual service plan. Admission
+  checks whether needs can be met within the facility's license and
+  staffing.
+
+  Condition and support needs change after move-in. Each shift records
+  delivered care, observations, medication assistance, meals, mobility,
+  participation, refusals, incidents, family communication, and clinical
+  escalation. Staffing and room occupancy must preserve coverage across
+  days, nights, absences, and emergencies.
+licenses:
+  us:
+    - ref: assisted-living-license
+      requirement: required
+      condition: Required for the facility under the licensing program of its operating state or locality.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [food-distributor, medical-supply-distributor]
+  sells_to: [resident, payer]

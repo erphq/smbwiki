@@ -1,0 +1,33 @@
+id: home-health-agency
+name: Home Health Agency
+codes:
+  naics: "621610"
+catalog_group: health-care
+extends: care-facility-base
+summary: >
+  A home health agency converts an authorized plan of care into skilled
+  visits delivered across many private homes. Patient eligibility,
+  orders, discipline, frequency, geography, staff qualification,
+  supplies, home conditions, and payer requirements determine which
+  visit can be assigned.
+
+  The agency has limited direct control over the care environment, so
+  each visit records identity, condition, service, medication or device
+  observations, teaching, response, missed work, and escalation.
+  Scheduling must react to hospital discharge, changed orders, refusal,
+  unsafe access, and staff availability without losing required coverage.
+revenue_model:
+  - id: covered-home-health-episodes
+    note: authorized skilled nursing and therapy delivered under a care period
+  - id: private-duty-visits
+    note: eligible services billed by visit or hour
+  - remove: [care-services, accommodation-and-programs]
+licenses:
+  us:
+    - ref: home-health-agency-license
+      requirement: required
+      condition: Required for the modeled agency under applicable state licensing and federal certification rules.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [medical-supply-distributor]
+  sells_to: [patient, payer]

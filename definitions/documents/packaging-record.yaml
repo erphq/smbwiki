@@ -1,0 +1,6 @@
+id: packaging-record
+name: Packaging record
+kind: document
+summary: >
+  Source lot, package format, line setup, material lots, code checks,
+  start and finish quantities, losses, holds, and finished stock.

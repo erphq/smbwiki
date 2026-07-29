@@ -1,0 +1,6 @@
+id: warehouse-associate
+name: Warehouse associate
+kind: role
+summary: >
+  Receives, locates, counts, picks, packs, and stages inventory under
+  the identifiers and handling rules on the warehouse record.

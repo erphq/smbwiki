@@ -1,0 +1,27 @@
+id: moving-company
+name: Moving Company
+codes:
+  naics: "484210"
+catalog_group: construction-property
+extends: transport-operator-base
+summary: >
+  A moving company converts an origin, destination, inventory, access,
+  service level, dates, and customer responsibilities into labor,
+  vehicle, equipment, packing, and price. Stairs, elevators, parking,
+  long carries, fragile items, disassembly, storage, and building rules
+  change the work at each end.
+
+  Custody begins as goods are identified, protected, loaded, and
+  counted. The crew controls condition, placement, inventory exceptions,
+  added services, waiting, and customer decisions through delivery.
+  Closeout links signed delivery, damage notation, claims instructions,
+  payment, equipment, and final vehicle condition.
+revenue_model:
+  - id: household-moves
+    note: vehicle and labor sold by time, distance, weight, or agreed estimate
+  - id: packing-and-storage
+    note: materials, packing labor, and interim custody charged separately
+  - remove: [transport-charges, accessorial-charges]
+supply_chain:
+  buys_from: [moving-supply-distributor]
+  sells_to: [individual-client, commercial-client]

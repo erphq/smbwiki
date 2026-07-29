@@ -1,0 +1,8 @@
+id: professional-services-automation
+name: Professional services automation
+kind: software-category
+summary: >
+  Client engagements, staffing, time and expense, work in progress,
+  delivery, billing, and engagement economics.
+erpai_category: professional-services
+erpai_apps: []

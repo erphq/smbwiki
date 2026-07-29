@@ -1,0 +1,8 @@
+id: first-pass-yield
+name: First-pass yield
+kind: metric
+summary: >
+  Production units accepted without rework, repair, or repeat
+  processing.
+unit: percent
+direction: higher

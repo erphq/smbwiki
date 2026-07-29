@@ -1,0 +1,25 @@
+id: locksmith
+name: Locksmith
+codes:
+  naics: "561622"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  A locksmith receives a lock, key, access, or security problem and
+  must establish location, urgency, authority, identity, hardware, and
+  safe entry before work begins. The technician carries mobile stock
+  and tools while protecting information that could grant access later.
+
+  Completion may mean entry, rekeying, repair, replacement, master-key
+  changes, or access-device programming. The work order records
+  authorization, affected openings, key or credential custody, installed
+  hardware, tests, and every item handed to the customer.
+revenue_model:
+  - id: emergency-service
+    note: urgent entry and security work priced by callout and labor
+  - id: scheduled-lock-work
+    note: rekey, repair, replacement, and access projects booked ahead
+  - remove: [service-calls, quoted-projects]
+supply_chain:
+  buys_from: [security-hardware-distributor]
+  sells_to: [homeowner, property-management-company]

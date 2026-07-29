@@ -1,0 +1,6 @@
+id: housekeeper
+name: Housekeeper
+kind: role
+summary: >
+  Turns occupied space into inspected available inventory and records
+  maintenance, damage, and lost-property exceptions.

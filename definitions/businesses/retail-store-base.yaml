@@ -1,0 +1,45 @@
+id: retail-store-base
+name: Retail store (base)
+abstract: true
+revenue_model:
+  - id: merchandise-sales
+    note: stocked goods sold at retail prices through the store
+  - id: special-orders
+    note: customer-requested goods sourced against a committed order
+skills:
+  - ref: retail-replenishment
+    roles: [retail-manager, stock-associate]
+    documents: [purchase-order, inventory-receipt, stock-record]
+    metrics: [inventory-turnover, stockout-rate]
+    software: [retail-management, inventory-management]
+  - ref: retail-sale
+    roles: [sales-associate, retail-manager]
+    documents: [stock-record, sales-receipt, return-record]
+    metrics: [average-ticket, gross-margin-percentage]
+    software: [retail-management]
+  - ref: purchasing
+    roles: [retail-manager]
+    documents: [purchase-order, supplier-invoice]
+    software: [retail-management, inventory-management]
+  - ref: payment-reconciliation
+    roles: [retail-manager]
+    documents: [sales-receipt, payment-record]
+    software: [retail-management, accounting]
+  - ref: staff-scheduling
+    roles: [retail-manager]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [retail-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+supply_chain:
+  sells_to: [retail-consumer]

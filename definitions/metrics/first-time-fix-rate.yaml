@@ -1,0 +1,7 @@
+id: first-time-fix-rate
+name: First-time fix rate
+kind: metric
+summary: >
+  Service calls resolved in a single visit.
+unit: percent
+direction: higher

@@ -1,0 +1,45 @@
+id: limited-service-restaurant
+name: Limited-Service Restaurant
+codes:
+  naics: "722513"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A limited-service restaurant takes payment before or near the point
+  of production. Counter, kiosk, phone, and online orders enter the same
+  set of stations, so the order queue has to reflect current production
+  capacity and honest pickup timing.
+
+  The operating day is prepared before demand arrives. Ingredients,
+  portions, packaging, equipment, and station assignments are set for
+  the expected mix. During service, ticket state and handoff identity
+  matter as much as cooking because a completed order can still fail at
+  assembly, packaging, or pickup.
+revenue_model:
+  - id: counter-orders
+    note: orders placed and paid at the service counter
+  - id: digital-orders
+    note: prepaid pickup and delivery demand entering the production queue
+  - remove: [dine-in, takeout, catering]
+skills:
+  - ref: order-taking
+    roles: [counter-staff, shift-lead]
+    documents: [order-ticket]
+    metrics: [order-accuracy, average-ticket]
+    software: [restaurant-pos, online-ordering]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: shift-lead
+            reports:
+              - role: counter-staff
+      - role: head-chef
+        reports:
+          - role: line-cook
+licenses:
+  us:
+    - remove: [liquor-license]
+seo:
+  title: "Limited-Service Restaurant: How the Business Works | smbwiki"

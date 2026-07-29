@@ -1,0 +1,26 @@
+id: day-spa
+name: Day Spa
+codes:
+  naics: "812199"
+catalog_group: personal-recreation
+extends: personal-services-base
+summary: >
+  A day spa coordinates treatment rooms, providers, service durations,
+  products, linens, sanitation, intake, and recovery time across a mixed
+  appointment book. Each service has its own contraindications,
+  preparation, consent, technique limits, and aftercare.
+
+  Packages and consecutive services create dependencies between rooms
+  and providers. A late start, room reset, product shortage, or changed
+  client condition can affect several appointments. The operating record
+  keeps service sequence, products, observations, retail, gratuity,
+  rebooking, and any adverse response tied to the client.
+revenue_model:
+  - id: spa-services
+    note: massage, skin, body, and related treatments sold by appointment
+  - id: packages-and-retail
+    note: bundled visits, memberships, and take-home products
+  - remove: [booked-services, retail-products]
+supply_chain:
+  buys_from: [spa-supply-distributor, linen-service]
+  sells_to: [individual-client]

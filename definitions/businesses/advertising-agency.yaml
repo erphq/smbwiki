@@ -1,0 +1,26 @@
+id: advertising-agency
+name: Advertising Agency
+codes:
+  naics: "541810"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  An advertising agency converts a client's business objective,
+  audience, offer, evidence, budget, channels, timing, and approval
+  structure into creative and media work. The brief distinguishes the
+  decision to change from the assets and placements used to influence it.
+
+  Delivery runs through research, concept, production, review,
+  compliance, trafficking, launch, monitoring, and reporting. Versions,
+  claims, usage rights, media specifications, spend authority, client
+  approvals, and live placements stay connected so the agency can
+  explain what ran, where, when, and under whose decision.
+revenue_model:
+  - id: campaign-and-retainer-fees
+    note: strategy, creative, production, and account service
+  - id: media-and-production-management
+    note: authorized compensation tied to placement or outside production
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+supply_chain:
+  buys_from: [media-owner, production-vendor]
+  sells_to: [commercial-client]

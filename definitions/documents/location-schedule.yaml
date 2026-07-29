@@ -1,0 +1,7 @@
+id: location-schedule
+name: Location schedule
+kind: document
+summary: >
+  Dated record of where a mobile business will operate, when service
+  begins and ends, who confirmed access, and which site conditions the
+  operating team must prepare for.

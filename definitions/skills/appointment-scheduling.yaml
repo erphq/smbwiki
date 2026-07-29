@@ -1,0 +1,86 @@
+id: appointment-scheduling
+name: Appointment scheduling
+kind: skill
+department: sales
+summary: >
+  Appointment scheduling converts a service request into reserved
+  capacity. The record connects the customer, work, expected duration,
+  assigned professional, and physical resource so everyone arrives
+  prepared for the same commitment.
+inputs: [appointment-request]
+outputs: [appointment-record]
+steps:
+  - name: Clarify the request
+    consumes: [appointment-request]
+    note: >
+      Service scope and special requirements determine how much time and
+      which qualified person can be offered.
+  - name: Find usable capacity
+    note: >
+      The scheduler checks the professional and any room, chair, bay, or
+      equipment the appointment will occupy.
+  - name: Reserve the appointment
+    produces: [appointment-record]
+    note: >
+      Duration, preparation, price assumptions, and cancellation terms
+      are visible in the same record.
+  - name: Confirm changes
+    note: >
+      A moved or cancelled appointment releases every reserved resource
+      and reaches the customer and assigned staff.
+tension: >
+  Calendar utilization competes with access and schedule reliability.
+  Packing appointments tightly reduces idle capacity; weak duration
+  estimates and no recovery space cause later customers to wait.
+failure_modes:
+  - name: Wrong service duration
+    cost: >
+      The professional runs late or leaves unusable time that cannot be
+      sold on short notice.
+    signal: >
+      The same service is repeatedly extended or shortened on the day.
+  - name: Resource double booking
+    cost: >
+      Two customers arrive for one professional, room, chair, or bay.
+    signal: >
+      Resource calendars are maintained separately from the appointment
+      book.
+  - name: Change propagation fails
+    cost: >
+      Staff prepare for cancelled work or the customer arrives at the
+      old time.
+    signal: >
+      Reschedules lack a confirmation event for both customer and staff.
+maturity:
+  - level: run badly
+    looks_like: >
+      Names and times are recorded without service duration or resource
+      requirements, and conflicts are found at arrival.
+  - level: run well
+    looks_like: >
+      Each appointment reserves the required person and physical
+      capacity with a confirmed scope and duration.
+  - level: run excellently
+    looks_like: >
+      Actual service times improve future booking rules, cancellations
+      release capacity promptly, and fragile parts of the day are visible
+      before they fail.
+competencies:
+  - name: Service scoping
+    note: >
+      The scheduler can ask enough about the requested work to reserve
+      realistic time without performing the service itself.
+  - name: Calendar judgment
+    note: >
+      A technically open slot may create a gap, overtime risk, or an
+      impossible transition for the assigned professional.
+automation:
+  now: >
+    Availability search, resource conflict checks, confirmations,
+    reminders, waitlists, and online rescheduling.
+  human: >
+    Ambiguous service scoping, priority decisions, and recovery when a
+    late appointment changes the promises already made.
+questions:
+  - Which appointment types most often run beyond their reserved time?
+  - Does a cancellation release every person and resource it held?

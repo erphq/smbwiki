@@ -1,0 +1,6 @@
+id: recall-list
+name: Recall list
+kind: document
+summary: >
+  Patients due or overdue for recurring care, prioritized for outreach
+  and rebooking.

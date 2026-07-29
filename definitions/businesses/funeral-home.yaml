@@ -1,0 +1,62 @@
+id: funeral-home
+name: Funeral Home
+codes:
+  naics: "812210"
+catalog_group: personal-recreation
+extends: professional-services-base
+summary: >
+  A funeral home receives a death call and coordinates authorization,
+  transfer, identity, custody, preparation, disposition, ceremony,
+  permits, notices, merchandise, transport, cemetery or crematory, and
+  payment while a family is making time-sensitive decisions.
+
+  The case record makes chain of custody and decision authority durable
+  through each handoff. It connects the deceased, authorized representative,
+  selected services, disclosures, vital information, personal effects,
+  third parties, schedule, permits, preparation, final disposition, and
+  every promise made to the family.
+revenue_model:
+  - id: funeral-service-arrangements
+    note: professional, facility, ceremony, transfer, and disposition coordination
+  - id: merchandise-and-cash-advances
+    note: selected goods and third-party charges handled within the case
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+skills:
+  - ref: lead-intake
+    roles: [client-coordinator, funeral-director]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [customer-relationship-management]
+  - ref: client-engagement
+    roles: [funeral-director, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, professional-services-automation]
+  - ref: professional-service-delivery
+    roles: [funeral-director, client-coordinator]
+    documents: [engagement-letter, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [professional-services-automation]
+  - ref: staff-scheduling
+    roles: [owner-operator]
+    documents: [shift-schedule]
+    metrics: [utilization-rate]
+    software: [professional-services-automation]
+org:
+  - role: owner-operator
+    reports:
+      - role: funeral-director
+      - role: client-coordinator
+licenses:
+  us:
+    - ref: funeral-establishment-license
+      requirement: required
+      condition: Required for premises conducting regulated funeral-service and custody activities.
+      as_of: "2026-07-29"
+    - ref: funeral-director-license
+      requirement: required
+      condition: Required for the funeral director responsible for regulated arrangements and disposition work.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [funeral-merchandise-supplier]
+  sells_to: [individual-client]

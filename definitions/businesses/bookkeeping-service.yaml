@@ -1,0 +1,25 @@
+id: bookkeeping-service
+name: Bookkeeping Service
+codes:
+  naics: "541219"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A bookkeeping service turns source transactions into a current,
+  reconciled ledger under a defined chart, cutoff, evidence standard,
+  and division of client responsibilities. Bank, card, sales, payroll,
+  purchasing, debt, and owner activity arrive on different schedules.
+
+  The recurring close identifies missing documents, duplicate or
+  personal activity, unmatched balances, aged items, unusual entries,
+  and client decisions before reports are delivered. The operator
+  preserves which adjustments were supported, approved, reversed, or
+  carried forward.
+revenue_model:
+  - id: recurring-bookkeeping
+    note: monthly transaction processing, reconciliation, and close work
+  - id: cleanup-and-setup
+    note: bounded ledger correction, conversion, and process setup
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+supply_chain:
+  sells_to: [commercial-client]

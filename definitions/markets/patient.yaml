@@ -1,0 +1,7 @@
+id: patient
+name: Patient
+kind: market
+summary: >
+  A person receiving clinical, diagnostic, therapeutic, or dispensing
+  services. The patient receives the service even when another party is
+  responsible for some or all payment.

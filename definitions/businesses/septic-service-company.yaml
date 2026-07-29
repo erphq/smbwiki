@@ -1,0 +1,27 @@
+id: septic-service-company
+name: Septic Service Company
+codes:
+  naics: "562991"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  A septic service company receives a routine pumping request or a
+  wastewater failure and establishes site access, system layout,
+  occupancy, symptoms, tank condition, disposal capacity, and immediate
+  exposure. Dispatch must match the vehicle, hose reach, load capacity,
+  and approved receiving facility.
+
+  The field record follows uncovered components, levels, pumping,
+  observed defects, filters, flow, restoration, volume removed, and
+  disposal evidence. A service visit can reveal repair work, but the
+  technician needs to separate observation from diagnosis and obtain
+  authority before changing the system.
+revenue_model:
+  - id: pumping-and-disposal
+    note: tank service priced by visit, volume, access, and disposal
+  - id: inspection-and-repair
+    note: system evaluation and separately approved corrective work
+  - remove: [service-calls, quoted-projects]
+supply_chain:
+  buys_from: [wastewater-disposal-facility]
+  sells_to: [homeowner, property-management-company]

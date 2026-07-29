@@ -1,0 +1,19 @@
+id: pet-store
+name: Pet Store
+codes:
+  naics: "459910"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A pet store carries food, litter, habitat supplies, equipment, and
+  care products across species, life stage, size, compatibility, shelf
+  life, and recurring customer use. Advice must stay inside product
+  knowledge and direct health concerns to qualified veterinary care.
+
+  Receiving and replenishment protect lot, expiry, damaged packaging,
+  temperature, recalls, and safe display. When live animals are sold,
+  the store also controls source, health observation, enclosure, feeding,
+  compatibility, custody, required records, and the condition of handoff.
+supply_chain:
+  buys_from: [pet-supply-distributor]
+  sells_to: [retail-consumer]

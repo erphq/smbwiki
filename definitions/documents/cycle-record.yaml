@@ -1,0 +1,6 @@
+id: cycle-record
+name: Cycle record
+kind: document
+summary: >
+  Machine program, start, completion, operating readings, and any fault
+  associated with a paid cycle.

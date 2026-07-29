@@ -1,0 +1,7 @@
+id: maintenance-response-time
+name: Maintenance response time
+kind: metric
+summary: >
+  Time from a maintenance request to first qualified action.
+unit: hours
+direction: lower

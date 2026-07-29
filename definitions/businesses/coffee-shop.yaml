@@ -1,0 +1,78 @@
+id: coffee-shop
+name: Coffee Shop
+codes:
+  naics: "722515"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A coffee shop prepares drinks and food through a small set of shared
+  stations while demand changes by time of day. Menu, recipes, prep,
+  stock, equipment readiness, staffing, order capture, production,
+  handoff, and payment all meet at the bar.
+
+  Counter and mobile orders use the same production capacity. Ticket
+  sequence needs to reflect promised pickup, drink condition, station
+  load, and the customer waiting in the room. Opening work establishes
+  ingredients and stations; closing reconciles stock, waste, cleaning,
+  equipment issues, and the next order.
+revenue_model:
+  - id: counter-sales
+    note: drinks and prepared food ordered at the register, the core
+      flow through the bar
+  - id: mobile-orders
+    note: prepaid pickup orders routed into the production queue
+  - id: retail-coffee
+    note: whole beans and brewing supplies sold from the shelf
+  - remove: [dine-in, takeout, catering]
+skills:
+  - ref: menu-planning
+    roles: [owner-operator, shift-lead]
+    documents: [menu, recipe-card]
+    metrics: [food-cost-percentage]
+    software: [restaurant-pos]
+  - ref: drink-production
+    roles: [barista, shift-lead]
+    documents: [order-ticket, recipe-card]
+    metrics: [drink-remake-rate, ticket-time]
+    software: [kitchen-display-system]
+  - ref: order-taking
+    roles: [barista]
+    documents: [order-ticket]
+    metrics: [order-accuracy, average-ticket]
+    software: [restaurant-pos, online-ordering]
+  - ref: food-inventory
+    roles: [shift-lead]
+    documents: [purchase-order, supplier-invoice]
+    metrics: [food-cost-percentage, waste-percentage]
+    software: [inventory-management]
+  - ref: staff-scheduling
+    roles: [general-manager, shift-lead]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [general-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+  - remove: [food-prep]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: shift-lead
+            reports:
+              - role: barista
+licenses:
+  us:
+    - remove: [liquor-license]
+supply_chain:
+  buys_from: [coffee-roaster, food-distributor]
+  sells_to: [retail-consumer]
+products:
+  - commercial-espresso-machine
+  - espresso-grinder
+  - commercial-batch-brewer
+  - coffee-urn
+seo:
+  title: "Coffee Shop: How the Business Works | smbwiki"

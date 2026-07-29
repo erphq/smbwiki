@@ -1,0 +1,6 @@
+id: resident
+name: Resident
+kind: market
+summary: >
+  A person receiving ongoing accommodation, care, supervision, or
+  support under a resident agreement and individual service plan.

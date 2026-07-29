@@ -1,0 +1,7 @@
+id: equipment-uptime
+name: Equipment uptime
+kind: metric
+summary: >
+  Scheduled operating time that equipment is available for safe use.
+unit: percent
+direction: higher

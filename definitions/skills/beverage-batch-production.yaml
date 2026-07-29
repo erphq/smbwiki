@@ -1,0 +1,99 @@
+id: beverage-batch-production
+name: Beverage batch production
+kind: skill
+department: operations
+summary: >
+  Beverage batch production carries identified ingredients and liquid
+  through preparation, fermentation or aging, transfers, conditioning,
+  and packaging while vessel state, quantity, time, and lot identity
+  remain attached to one batch record.
+inputs: []
+outputs: [batch-record, packaging-record]
+steps:
+  - name: Release the batch plan
+    role: beverage-production-lead
+    produces: [batch-record]
+    note: >
+      Formula, ingredients, source lots, target quantity, vessels,
+      timing, checks, packaging destination, and responsible operators
+      are settled before material is committed.
+  - name: Prepare equipment and materials
+    role: cellar-operator
+    note: >
+      Vessel status, cleaning, utilities, ingredients, transfer paths,
+      instruments, and downstream capacity are ready and identifiable.
+  - name: Run and record the batch
+    role: cellar-operator
+    consumes: [batch-record]
+    note: >
+      Quantities, temperatures, times, additions, observations,
+      transfers, losses, and exceptions are recorded where they occur.
+  - name: Condition and clear packaging
+    role: beverage-production-lead
+    consumes: [batch-record]
+    note: >
+      The lot has completed required cellar time and checks, and its
+      packaging format, materials, labels, line, and quantity are ready.
+  - name: Package and reconcile
+    role: packaging-operator
+    consumes: [batch-record]
+    produces: [packaging-record]
+    note: >
+      Source volume, packaged quantity, material use, codes, rejects,
+      retained liquid, losses, and finished inventory reconcile.
+tension: >
+  Vessel and packaging utilization compete with product readiness.
+  Moving a lot to free capacity can shorten required time, hide an
+  exception, or place unstable product into finished inventory.
+failure_modes:
+  - name: Batch identity breaks at a transfer
+    cost: >
+      Liquid, results, additions, and later packages can no longer be
+      traced to the same authorized lot.
+    signal: >
+      A vessel or hose movement is recorded without source and
+      destination identities.
+  - name: Packaging starts before readiness
+    cost: >
+      Product, labels, containers, labor, and line time are committed
+      to a lot that cannot be released as packed.
+    signal: >
+      Packaging is scheduled while a required batch check remains open.
+  - name: Yield loss has no location
+    cost: >
+      The operator cannot distinguish expected process loss from a
+      transfer, measurement, leak, reject, or recording problem.
+    signal: >
+      Batch and packaging quantities differ without a recorded event.
+maturity:
+  - level: run badly
+    looks_like: >
+      Vessel boards and operator memory carry batch state, while
+      quantities and additions are reconstructed after packaging.
+  - level: run well
+    looks_like: >
+      Batch identity, vessel, time, checks, transfers, packaging, yield,
+      and exceptions share one current production history.
+  - level: run excellently
+    looks_like: >
+      Capacity and yield evidence improves scheduling, transfer design,
+      cleaning, packaging readiness, and future batch plans.
+competencies:
+  - name: Batch and vessel control
+    note: >
+      The operator preserves identity and required time while liquid
+      moves through shared vessels and transfer paths.
+  - name: Packaging reconciliation
+    note: >
+      Source volume, package count, material use, rejects, and retained
+      product must close to an explainable result.
+automation:
+  now: >
+    Batch scheduling, material and vessel status, electronic records,
+    readings, transfer prompts, packaging counts, genealogy, and yield.
+  human: >
+    Sensory observation, sanitation release, exception judgment,
+    transfer execution, packaging setup, and recovery decisions.
+questions:
+  - Which active batch has an unrecorded change of vessel, quantity, or state?
+  - Which packaging run is waiting on evidence that the source lot is ready?

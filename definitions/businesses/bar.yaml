@@ -1,0 +1,48 @@
+id: bar
+name: Bar
+codes:
+  naics: "722410"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A bar manages beverage service, age checks, tabs, payment, and a room
+  whose demand changes through the night. The menu is built from
+  measured pours, packaged drinks, garnishes, ice, glassware, and
+  recipes that have to remain available at each service position.
+
+  Opening work establishes cash, stock, stations, cleanliness, and
+  staffing. During service, order sequence, guest state, tab ownership,
+  spills, breakage, and product movement need visible control. Closing
+  reconciles open tabs and payment with stock movement, waste, cleaning,
+  and the next order.
+revenue_model:
+  - id: beverage-sales
+    note: drinks sold by the serving under on-premise service
+  - id: private-events
+    note: reserved space and beverage service sold for a defined event
+  - remove: [dine-in, takeout, catering]
+skills:
+  - ref: beverage-service
+    roles: [bartender, shift-lead]
+    documents: [order-ticket, recipe-card]
+    metrics: [ticket-time, average-ticket]
+    software: [restaurant-pos]
+  - ref: order-taking
+    roles: [server, bartender]
+    documents: [order-ticket]
+    metrics: [order-accuracy, average-ticket]
+    software: [restaurant-pos]
+  - remove: [food-prep, menu-planning, food-inventory]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: shift-lead
+            reports:
+              - role: bartender
+              - role: server
+supply_chain:
+  sells_to: [retail-consumer]
+seo:
+  title: "Bar: How the Business Works | smbwiki"

@@ -1,0 +1,91 @@
+id: hair-service
+name: Hair service
+kind: skill
+department: operations
+summary: >
+  Hair service executes the agreed cut, color, texture, treatment, or
+  styling plan at the chair. The stylist protects the client, controls
+  product and timing, adapts to what the hair reveals, and records what
+  was delivered for checkout and future service.
+inputs: [appointment-record, formula-card]
+outputs: [service-ticket]
+steps:
+  - name: Confirm plan and readiness
+    role: stylist
+    consumes: [appointment-record, formula-card]
+    note: >
+      Service, timing, protection, products, tools, and any assistant
+      handoff are ready before the technical work starts.
+  - name: Execute the technical sequence
+    role: stylist
+    note: >
+      Sectioning, application, cutting, tension, heat, processing, and
+      checks follow the agreed plan and current condition.
+  - name: Control changes
+    role: stylist
+    note: >
+      Unexpected lift, porosity, reaction, density, or timing is discussed
+      when it changes result, scope, price, or future condition.
+  - name: Finish and record
+    role: stylist
+    produces: [service-ticket]
+    note: >
+      Delivered services, products, formula changes, result, home care,
+      and follow-up recommendation reach checkout together.
+tension: >
+  Chair utilization competes with careful execution and adaptation.
+  Finishing inside the appointment protects the day; forcing a technical
+  sequence to fit the clock can damage condition or lower the result.
+failure_modes:
+  - name: Assistant handoff loses the formula
+    cost: >
+      Product, section, saturation, timing, or rinse changes between the
+      stylist's plan and delegated work.
+    signal: >
+      The assistant receives verbal direction with no visible formula or
+      stage ownership.
+  - name: Processing runs without an owner
+    cost: >
+      A client exceeds the intended development time while the stylist
+      starts another service.
+    signal: >
+      Timers exist without a named person responsible for the check.
+  - name: Delivered work differs from the ticket
+    cost: >
+      Checkout charges and the future profile reflect the booked service
+      while the actual technical work goes unrecorded.
+    signal: >
+      Formula or service changes appear in conversation and disappear
+      before checkout.
+maturity:
+  - level: run badly
+    looks_like: >
+      The appointment name drives the chair, formula changes stay in
+      memory, and timing pressure becomes the client's problem.
+  - level: run well
+    looks_like: >
+      Plan, delegated stages, timers, adaptations, delivered service, and
+      home-care instruction are controlled and recorded.
+  - level: run excellently
+    looks_like: >
+      Actual service time improves booking, repeat adjustments improve the
+      formula, and chair handoffs preserve technical ownership.
+competencies:
+  - name: Technical execution
+    note: >
+      Hand control, sectioning, product placement, timing, heat, and
+      finishing have to respond to the individual client's hair.
+  - name: Live adaptation
+    note: >
+      The stylist recognizes when the hair is departing from the plan and
+      changes the sequence without losing consent or record accuracy.
+automation:
+  now: >
+    Formula display, product quantities, timers, service-stage tracking,
+    assistant tasks, ticket updates, and photo comparison.
+  human: >
+    Cutting and chemical execution, tactile and visual assessment,
+    aesthetic choices, client comfort, and technical adaptation.
+questions:
+  - Who owns every active timer and delegated technical stage?
+  - Did the service ticket capture each change from the consultation plan?

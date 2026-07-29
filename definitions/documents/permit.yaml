@@ -1,0 +1,6 @@
+id: permit
+name: Permit
+kind: document
+summary: >
+  Municipal authorization for regulated work, closed out by
+  inspection.

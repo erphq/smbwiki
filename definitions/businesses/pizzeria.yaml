@@ -1,0 +1,74 @@
+id: pizzeria
+name: Pizzeria
+codes:
+  naics: "722513"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A pizzeria receives counter, phone, and online orders, produces pizzas
+  through dough, topping, baking, cutting, packaging, and handoff, and
+  may dispatch completed orders for delivery. Each ticket needs a
+  customer, channel, items, modifiers, payment state, and promised time.
+
+  Dough follows a production and fermentation schedule that begins
+  before the service period. Ingredient prep, oven capacity, staff,
+  packaging, driver availability, and the active ticket queue determine
+  what the shop can promise. Order state has to remain visible from
+  acceptance through pickup or delivery.
+revenue_model:
+  - id: delivery
+    note: app and phone orders delivered by staff or third-party
+      couriers
+  - id: takeout
+    note: counter, phone, and app orders collected by the customer
+  - id: dine-in
+    note: counter or table service for customers eating on site
+  - remove: [catering]
+skills:
+  - ref: food-prep
+    roles: [pizzaiolo, line-cook]
+    documents: [prep-list]
+    metrics: [ticket-time]
+    software: [kitchen-display-system]
+  - ref: food-inventory
+    roles: [pizzaiolo, owner-operator]
+    documents: [purchase-order, supplier-invoice]
+    metrics: [food-cost-percentage, waste-percentage]
+    software: [inventory-management]
+  - ref: accounts-payable
+    roles: [owner-operator]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+  - ref: dough-production
+    roles: [pizzaiolo]
+    documents: [prep-list]
+    metrics: [dough-yield]
+    software: [kitchen-display-system]
+  - ref: delivery-dispatch
+    roles: [driver, owner-operator]
+    documents: [delivery-ticket]
+    metrics: [delivery-time]
+    software: [delivery-management]
+  - ref: order-taking
+    roles: [counter-staff]
+    documents: [order-ticket]
+    metrics: [order-accuracy]
+    software: [restaurant-pos, online-ordering]
+  - remove: [menu-planning, staff-scheduling]
+org:
+  - role: owner-operator
+    reports:
+      - role: pizzaiolo
+        reports:
+          - role: line-cook
+      - role: counter-staff
+      - role: driver
+licenses:
+  us:
+    - remove: [liquor-license]
+supply_chain:
+  buys_from: [food-distributor]
+  sells_to: [retail-consumer]
+products: [conveyor-pizza-oven, commercial-dough-mixer]
+seo:
+  title: "Pizzeria: How the Business Works | smbwiki"

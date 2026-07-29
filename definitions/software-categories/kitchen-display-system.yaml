@@ -1,0 +1,7 @@
+id: kitchen-display-system
+name: Kitchen display system
+kind: software-category
+summary: >
+  Routes fired tickets to kitchen stations and tracks ticket times.
+erpai_category: operations
+erpai_apps: []

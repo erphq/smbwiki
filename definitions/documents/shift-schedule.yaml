@@ -1,0 +1,6 @@
+id: shift-schedule
+name: Shift schedule
+kind: document
+summary: >
+  Who works when; the labor cost commitment made ahead of actual
+  demand.

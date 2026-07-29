@@ -1,0 +1,6 @@
+id: packaging-operator
+name: Packaging operator
+kind: role
+summary: >
+  Prepares containers and packaging equipment, runs the fill and pack,
+  verifies codes and quantities, and records finished inventory.

@@ -1,0 +1,86 @@
+id: patient-intake
+name: Patient intake
+kind: skill
+department: operations
+summary: >
+  Patient intake prepares a scheduled person and their record for care.
+  Identity, contact details, current concerns, history, medications,
+  consent, and payer information are confirmed before the clinical team
+  relies on the chart.
+inputs: [appointment-record, patient-registration]
+outputs: [patient-chart]
+steps:
+  - name: Match person to appointment
+    consumes: [appointment-record, patient-registration]
+    note: >
+      Identity and visit purpose are confirmed before information is
+      added to a clinical record.
+  - name: Update current facts
+    note: >
+      Changes in symptoms, history, medications, allergies, contact, and
+      payer details are collected for this visit.
+  - name: Complete required consent
+    note: >
+      Missing signatures and acknowledgements are resolved while the
+      patient can ask what they cover.
+  - name: Prepare the chart
+    produces: [patient-chart]
+    note: >
+      The clinical team sees the current concern and any safety or
+      communication issue before beginning care.
+tension: >
+  Room and chair utilization compete with record reliability. Moving a
+  patient through intake quickly protects the schedule; stale identity,
+  history, or consent creates risk that follows the entire visit.
+failure_modes:
+  - name: Wrong-record update
+    cost: >
+      One patient's information or treatment is attached to another
+      person's chart.
+    signal: >
+      Staff search by name alone or open multiple similar records during
+      intake.
+  - name: History carried forward without confirmation
+    cost: >
+      The clinician acts on medications, allergies, conditions, or
+      contact details that have changed.
+    signal: >
+      Required history fields show an old review date for today's visit.
+  - name: Clinical concern buried
+    cost: >
+      The clinician enters the room without the reason for the visit or a
+      newly reported safety issue.
+    signal: >
+      Free-text intake notes exist while the visit summary remains blank.
+maturity:
+  - level: run badly
+    looks_like: >
+      Forms are collected as paperwork and the clinical team discovers
+      missing or conflicting information in the room.
+  - level: run well
+    looks_like: >
+      Identity, current facts, consent, and visit purpose are confirmed
+      against one chart before care begins.
+  - level: run excellently
+    looks_like: >
+      Intake exceptions reach the right clinical or billing owner early,
+      and changes remain attributable to the person who confirmed them.
+competencies:
+  - name: Identity discipline
+    note: >
+      Similar names, family contact details, and returning records require
+      a consistent match procedure.
+  - name: Sensitive interviewing
+    note: >
+      Patients disclose useful history when questions are clear, private,
+      and connected to the care being prepared.
+automation:
+  now: >
+    Digital forms, demographic comparison, eligibility prompts, consent
+    capture, required-field checks, and chart preparation.
+  human: >
+    Resolving identity conflicts, recognizing an urgent clinical concern,
+    supporting accessibility, and answering consent questions.
+questions:
+  - Which facts in the chart were reconfirmed for this visit?
+  - What intake exception can still delay or change today's care?

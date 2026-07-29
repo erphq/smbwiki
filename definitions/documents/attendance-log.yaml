@@ -1,0 +1,6 @@
+id: attendance-log
+name: Attendance log
+kind: document
+summary: >
+  Time-stamped member entries that show facility use and support access
+  review, staffing, and retention work.

@@ -1,0 +1,94 @@
+id: guest-recovery
+name: Guest recovery
+kind: skill
+department: operations
+summary: >
+  Guest recovery identifies a service failure while context is still
+  available, protects the guest, corrects what can be corrected,
+  records the response, and turns repeated causes into operating
+  changes.
+inputs: [order-ticket, guest-check]
+outputs: [guest-issue-record]
+steps:
+  - name: Receive and stabilize
+    role: server
+    consumes: [order-ticket, guest-check]
+    note: >
+      The immediate food, allergy, safety, timing, conduct, payment, or
+      comfort risk is understood before staff argue cause or policy.
+  - name: Establish the service facts
+    role: general-manager
+    note: >
+      Guest, table, order, timing, people, product, promise, and current
+      impact are confirmed with the least repeated explanation.
+  - name: Choose and deliver the response
+    role: general-manager
+    note: >
+      Remake, replacement, move, explanation, adjustment, refund,
+      follow-up, or escalation receives one owner and honest timing.
+  - name: Confirm the outcome
+    role: server
+    note: >
+      The guest knows what happened next, any payment change is visible,
+      and an unresolved concern has a named follow-up route.
+  - name: Record and learn
+    role: general-manager
+    produces: [guest-issue-record]
+    note: >
+      Concern, context, response, cost, outcome, owner, and recurring
+      cause are complete enough to change the operation.
+tension: >
+  Immediate generosity competes with consistent authority and useful
+  evidence. A scripted or defensive response loses the guest; an
+  undocumented concession hides the failure and invites recurrence.
+failure_modes:
+  - name: Guest repeats the story at every handoff
+    cost: >
+      Frustration grows while the team loses time and appears not to own
+      the problem.
+    signal: >
+      Server, manager, kitchen, and cashier each ask for the full account.
+  - name: Adjustment replaces correction
+    cost: >
+      The charge changes but unsafe, incorrect, or delayed service
+      continues.
+    signal: >
+      A comp is entered without a recorded operational response.
+  - name: Promise has no owner
+    cost: >
+      The guest leaves with a follow-up expectation that no person or
+      deadline carries.
+    signal: >
+      Issue notes say contact later without a responsible role and time.
+maturity:
+  - level: run badly
+    looks_like: >
+      Recovery depends on the manager present and concessions disappear
+      into payment adjustments.
+  - level: run well
+    looks_like: >
+      Risk, facts, response, authority, guest outcome, payment effect,
+      follow-up, and issue record stay connected.
+  - level: run excellently
+    looks_like: >
+      Recurring issues change menu design, training, staffing, pacing,
+      equipment, permissions, and supplier controls.
+competencies:
+  - name: De-escalation and ownership
+    note: >
+      Staff listen without defensiveness, protect immediate needs, and
+      keep one accountable route through resolution.
+  - name: Cause-oriented follow-through
+    note: >
+      The operator separates a fair guest response from the corrective
+      work required to prevent recurrence.
+automation:
+  now: >
+    Issue capture, order and payment context, response permissions,
+    follow-up tasks, recurring-cause grouping, and closure reminders.
+  human: >
+    Listening, safety judgment, apology, proportional remedy, conflict
+    resolution, and deciding what the operating evidence means.
+questions:
+  - Which open guest promise has no named owner or response time?
+  - Which repeated issue continues to receive compensation without preventive action?

@@ -1,0 +1,6 @@
+id: front-desk-agent
+name: Front desk agent
+kind: role
+summary: >
+  Maintains reservations and guest accounts, assigns ready rooms,
+  handles arrival and departure, and routes stay issues.

@@ -1,0 +1,6 @@
+id: machine-transaction
+name: Machine transaction
+kind: document
+summary: >
+  Payment amount, time, machine, location, and selected program for one
+  self-service equipment activation.

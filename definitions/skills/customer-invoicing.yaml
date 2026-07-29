@@ -1,0 +1,90 @@
+id: customer-invoicing
+name: Customer invoicing
+kind: skill
+department: finance
+summary: >
+  Customer invoicing turns a delivered load and its proof into a shipper
+  bill that agrees with the sell rate, approved accessorials, customer
+  references, document rules, portal route, and payment terms.
+inputs: [proof-of-delivery]
+outputs: [customer-invoice]
+steps:
+  - name: Validate delivery proof
+    role: billing-specialist
+    consumes: [proof-of-delivery]
+    note: >
+      Signature, date, location, count, condition, exception notation, and
+      image quality meet the customer's billing requirement.
+  - name: Reconcile charges
+    role: billing-specialist
+    note: >
+      Line haul, fuel, stops, detention, layover, handling, and other
+      accessorials trace to the accepted sell terms and approval evidence.
+  - name: Apply customer routing
+    role: billing-specialist
+    note: >
+      Purchase order, load reference, cost center, attachment, invoice
+      format, portal, recipient, and terms follow the account setup.
+  - name: Issue the invoice
+    role: billing-specialist
+    produces: [customer-invoice]
+    note: >
+      Submission and acceptance evidence start the aging clock from a bill
+      the customer can process.
+tension: >
+  Billing speed competes with first-pass acceptance. Every day after
+  delivery delays cash; an invoice missing proof, approval, reference, or
+  routing restarts the customer's payable process.
+failure_modes:
+  - name: Clean proof assumed
+    cost: >
+      An exception noted at delivery reaches the customer as an ordinary
+      invoice and claim or charge handling begins late.
+    signal: >
+      Proof is attached without reviewing handwritten or electronic
+      exception fields.
+  - name: Accessorial lacks approval
+    cost: >
+      The customer short-pays or rejects a charge the brokerage may already
+      owe the carrier.
+    signal: >
+      Invoice includes an extra charge with no customer authorization or
+      governing term.
+  - name: Portal acceptance unconfirmed
+    cost: >
+      The brokerage marks the invoice sent while the customer's system
+      never entered it into payable workflow.
+    signal: >
+      Submission has no receipt, status, or rejection queue.
+maturity:
+  - level: run badly
+    looks_like: >
+      Billing attaches the available delivery image and emails an invoice
+      to the last known contact.
+  - level: run well
+    looks_like: >
+      Proof, exceptions, rates, approvals, references, portal, recipient,
+      terms, submission, and acceptance are checked together.
+  - level: run excellently
+    looks_like: >
+      Customer rejection causes improve account setup and execution, and
+      every delivered load becomes billable through a visible exception queue.
+competencies:
+  - name: Freight-charge reconciliation
+    note: >
+      The biller connects sell terms, delivery events, approvals, and
+      documents without blending carrier cost into customer entitlement.
+  - name: Customer payable fluency
+    note: >
+      Each shipper's references, attachments, portal, recipient, and
+      acceptance states determine when an invoice truly enters the queue.
+automation:
+  now: >
+    Proof-quality checks, rate import, accessorial matching, reference
+    validation, invoice creation, portal routing, and rejection queues.
+  human: >
+    Delivery exceptions, disputed accessorials, unclear approvals,
+    customer-specific requirements, and short-pay resolution.
+questions:
+  - Which delivered load still lacks one item required for customer acceptance?
+  - What accessorial on the current invoice cannot be traced to approval?

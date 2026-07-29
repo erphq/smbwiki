@@ -1,0 +1,7 @@
+id: estimate-approval-rate
+name: Estimate approval rate
+kind: metric
+summary: >
+  Proposed repair value or estimate lines that customers authorize.
+unit: percent
+direction: higher

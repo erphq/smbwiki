@@ -1,0 +1,7 @@
+id: inventory-turnover
+name: Inventory turnover
+kind: metric
+summary: >
+  Annualized cost of goods sold relative to average inventory held.
+unit: times per year
+direction: contextual

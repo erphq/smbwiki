@@ -1,0 +1,86 @@
+id: staff-scheduling
+name: Staff scheduling
+kind: skill
+department: people
+summary: >
+  Staff scheduling commits qualified labor to expected demand before
+  the work arrives. The schedule must cover opening, service, closeout,
+  and legally required breaks while accounting for appointments,
+  operating hours, and known absences.
+inputs: []
+outputs: [shift-schedule]
+steps:
+  - name: Set the demand shape
+    note: >
+      Appointments, operating hours, and recurring rushes establish when
+      coverage is needed.
+  - name: Set minimum qualified coverage
+    note: >
+      Each period needs the roles and licenses required to perform and
+      supervise the work offered.
+  - name: Assign and publish
+    produces: [shift-schedule]
+    note: >
+      A shift becomes covered when the assigned person has seen and
+      accepted it.
+  - name: Control changes
+    note: >
+      Swaps, absences, overtime, and early releases update the same
+      schedule used by the floor.
+tension: >
+  Coverage competes with labor cost. Thin staffing creates queues and
+  unsafe shortcuts when demand arrives; excess staffing consumes margin
+  during hours that cannot be recovered.
+failure_modes:
+  - name: Headcount without qualification
+    cost: >
+      The location is staffed but cannot deliver, supervise, or legally
+      sign off the work on the book.
+    signal: >
+      A shift depends on one licensed or specially trained person with
+      no overlap.
+  - name: Schedule published too late
+    cost: >
+      Reliable staff lose the ability to plan and last-minute absences
+      become harder to cover.
+    signal: >
+      Availability conflicts appear after assignments are posted.
+  - name: Informal changes
+    cost: >
+      Payroll, managers, and workers hold different versions of who is
+      expected.
+    signal: >
+      Shift swaps live in messages while the active schedule remains
+      unchanged.
+maturity:
+  - level: run badly
+    looks_like: >
+      Last week's schedule is copied forward and the manager fills gaps
+      by calling people on the day.
+  - level: run well
+    looks_like: >
+      Demand and qualification requirements shape the roster, changes
+      are confirmed, and actual attendance returns to the schedule.
+  - level: run excellently
+    looks_like: >
+      The manager can see future coverage risk, labor commitment, and
+      fragile single-person dependencies before publishing.
+competencies:
+  - name: Demand reading
+    note: >
+      The scheduler separates recurring demand shape from recent noise
+      and one-time events.
+  - name: Capability mapping
+    note: >
+      Availability alone leaves opening, supervision, specialized work,
+      and safe closeout capability unclear.
+automation:
+  now: >
+    Availability collection, rule checks, template shifts, conflict
+    detection, notifications, and labor forecasts.
+  human: >
+    Choosing where experienced coverage matters most and handling the
+    fairness consequences of unpopular shifts or reduced hours.
+questions:
+  - Which upcoming shift has no qualified backup?
+  - Are schedule changes reflected before payroll and opening checks use them?

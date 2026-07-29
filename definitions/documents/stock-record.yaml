@@ -1,0 +1,6 @@
+id: stock-record
+name: Stock record
+kind: document
+summary: >
+  Item, location, quantity, status, cost, and last movement used to
+  reconcile physical merchandise with available inventory.

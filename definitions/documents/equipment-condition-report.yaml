@@ -1,0 +1,6 @@
+id: equipment-condition-report
+name: Equipment condition report
+kind: document
+summary: >
+  Identity, meter, fuel or charge, accessories, cleanliness, damage,
+  and operating state recorded at rental handoff and return.

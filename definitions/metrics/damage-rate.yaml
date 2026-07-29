@@ -1,0 +1,8 @@
+id: damage-rate
+name: Damage rate
+kind: metric
+summary: >
+  Share of rental returns requiring damage assessment or unplanned
+  repair.
+unit: percent
+direction: lower

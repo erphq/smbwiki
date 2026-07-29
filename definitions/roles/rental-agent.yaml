@@ -1,0 +1,6 @@
+id: rental-agent
+name: Rental agent
+kind: role
+summary: >
+  Reserves an asset, verifies terms and condition at handoff, records
+  return state, and closes added time, fuel, cleaning, or damage.

@@ -1,0 +1,27 @@
+id: law-firm
+name: Law Firm
+codes:
+  naics: "541110"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A law firm accepts a client and matter after identity, conflict,
+  authority, objective, facts, deadline, jurisdiction, scope, fee, and
+  representation terms are established. Each matter separates client
+  instruction from counsel's professional duties and court or agency
+  requirements.
+
+  Delivery may include advice, negotiation, drafting, filing, discovery,
+  hearing, closing, or continuing representation. The matter record
+  preserves evidence, privilege, deadlines, versions, service, trust and
+  billing activity, client decisions, and the lawyer responsible for
+  each released action.
+licenses:
+  us:
+    - ref: attorney-license
+      requirement: required
+      condition: Required for attorneys providing regulated legal services in the applicable jurisdiction.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [legal-support-service]
+  sells_to: [individual-client, commercial-client]

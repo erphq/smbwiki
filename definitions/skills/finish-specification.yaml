@@ -1,0 +1,94 @@
+id: finish-specification
+name: Finish specification
+kind: skill
+department: operations
+summary: >-
+  Selects and schedules materials for use, code, maintenance, availability,
+  budget, substrate, transition, appearance, and approved sample. Finish
+  specification leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - client-brief
+outputs:
+  - finish-schedule
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before finish specification, read the current scope and revisions, then
+      verify approved program, measured existing conditions, consultant
+      criteria, budget, schedule, code basis, and client decision structure.
+  - name: Set the field controls
+    note: >-
+      Translate finish specification into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During finish specification, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept finish specification, check the completed work against
+      coordinated safe spaces, approved selections, complete documents,
+      released procurement, installed intent, and resolved deficiencies, then
+      close correction and issue the resulting record.
+tension: >-
+  Finish specification has to remain inside its acceptance basis while
+  production moves. A late spatial or finish decision can affect building
+  systems, price, lead time, and installed work at once.
+failure_modes:
+  - name: Finish specification starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for finish
+      specification is settled.
+    signal: >-
+      The finish specification work package still has an open drawing, access,
+      material, predecessor, or approval dependency when labor is assigned.
+  - name: Finish specification closes without evidence
+    cost: >-
+      A concealed condition or required result from finish specification
+      cannot be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Finish specification is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Finish specification is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Finish specification starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Finish specification uses field evidence, production variance, defects,
+      and closeout results to improve the next estimate, work package, and
+      control point.
+competencies:
+  - name: Interior space and material coordination
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of finish specification.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for finish specification have to be captured while the
+      relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Finish specification can use digital revisions, checklists, hold points,
+    photo capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting finish specification remain
+    human.
+questions:
+  - >-
+    Which unresolved condition can stop finish specification before work
+    begins?
+  - >-
+    Which record proves finish specification was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

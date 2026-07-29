@@ -1,0 +1,7 @@
+id: bay-utilization
+name: Bay utilization
+kind: metric
+summary: >
+  Available service-bay time occupied by productive vehicle work.
+unit: percent
+direction: higher

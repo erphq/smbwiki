@@ -1,0 +1,8 @@
+id: warehouse-management
+name: Warehouse management
+kind: software-category
+summary: >
+  Receiving, item identity, storage locations, inventory control,
+  picking, packing, staging, and shipment confirmation.
+erpai_category: supply-chain
+erpai_apps: []

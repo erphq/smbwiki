@@ -1,0 +1,8 @@
+id: material-waste-rate
+name: Material waste rate
+kind: metric
+summary: >
+  Purchased project material lost to excess cuts, damage, spoilage, or
+  unplanned disposal.
+unit: percent
+direction: lower

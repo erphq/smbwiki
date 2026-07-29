@@ -1,0 +1,97 @@
+id: aggregate-base-placement
+name: Aggregate base placement
+kind: skill
+department: operations
+summary: >-
+  Controls source, lift thickness, moisture, spreading, grade, edge
+  confinement, compaction pattern, and density testing. Aggregate base
+  placement leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - site-plan
+outputs:
+  - test-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before aggregate base placement, read the current scope and revisions,
+      then verify approved limits and drainage, removed failed material,
+      stable subgrade, confirmed section, available mix, weather window, and
+      traffic control.
+  - name: Set the field controls
+    note: >-
+      Translate aggregate base placement into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During aggregate base placement, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept aggregate base placement, check the completed work against
+      specified thickness, density, grade, smoothness, drainage, joint
+      quality, edge support, markings, and opening strength, then close
+      correction and issue the resulting record.
+tension: >-
+  Aggregate base placement has to remain inside its acceptance basis while
+  production moves. Surface appearance can hide weak subgrade, thin base, poor
+  compaction, or trapped drainage that shortens pavement life.
+failure_modes:
+  - name: Aggregate base placement starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      aggregate base placement is settled.
+    signal: >-
+      The aggregate base placement work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Aggregate base placement closes without evidence
+    cost: >-
+      A concealed condition or required result from aggregate base placement
+      cannot be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Aggregate base placement is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Aggregate base placement is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Aggregate base placement starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Aggregate base placement uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Small-site pavement production
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of aggregate base placement.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for aggregate base placement have to be captured while
+      the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Aggregate base placement can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting aggregate base placement
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop aggregate base placement before work
+    begins?
+  - >-
+    Which record proves aggregate base placement was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

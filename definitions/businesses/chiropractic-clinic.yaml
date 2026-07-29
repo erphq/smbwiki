@@ -1,0 +1,49 @@
+id: chiropractic-clinic
+name: Chiropractic Clinic
+codes:
+  naics: "621310"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  A chiropractic clinic receives a complaint, evaluates function and
+  history, sets a care plan, and tracks the patient's response across a
+  series of visits. Each visit needs to connect current findings and
+  treatment with the stated goal and any reason to change or end the
+  plan.
+
+  The appointment book contains initial evaluations, planned follow-up,
+  re-evaluations, and acute requests. Front-desk work has to distinguish
+  those visit types because they require different time and records.
+  Billing and patient balances follow the completed note, coverage
+  state, and agreed payment route.
+revenue_model:
+  - id: initial-evaluations
+    note: history, examination, and the first care decision
+  - id: treatment-visits
+    note: scheduled care delivered and documented against a plan
+  - id: re-evaluations
+    note: formal progress review and decision on continued care
+  - remove: [patient-services, preventive-care]
+skills:
+  - ref: clinical-care
+    roles: [chiropractor, clinical-assistant]
+    documents: [appointment-record, patient-chart, clinical-note, treatment-plan]
+    software: [electronic-health-record, practice-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+        reports:
+          - role: receptionist
+          - role: billing-specialist
+      - role: chiropractor
+        reports:
+          - role: clinical-assistant
+licenses:
+  us:
+    - ref: chiropractor-license
+      requirement: required
+      condition: Required for the chiropractor providing regulated clinical care.
+      as_of: "2026-07-29"
+seo:
+  title: "Chiropractic Clinic: How the Business Works | smbwiki"

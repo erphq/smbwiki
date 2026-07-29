@@ -1,0 +1,20 @@
+id: management-consulting-firm
+name: Management Consulting Firm
+codes:
+  naics: "541611"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A management consulting firm accepts a business question with a
+  decision owner, desired outcome, evidence base, organizational scope,
+  timing, and constraints. The engagement separates diagnosis,
+  recommendation, implementation support, and the decisions that remain
+  with management.
+
+  Delivery combines interviews, operating data, financial information,
+  observation, analysis, workshops, and iteration. The firm preserves
+  source limits, assumptions, stakeholder disagreements, client
+  decisions, versioned recommendations, assigned actions, and evidence
+  of whether the intervention changed the operating result.
+supply_chain:
+  sells_to: [commercial-client]

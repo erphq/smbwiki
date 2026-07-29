@@ -1,0 +1,109 @@
+id: site-preparation-contractor
+name: Site Preparation Contractor
+codes:
+  naics: '238910'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A site preparation contractor clears land, locates utilities, excavates,
+  grades, manages water, places fill, compacts soil, and establishes access
+  for the work that follows. Survey control, geotechnical direction, erosion
+  measures, haul routes, equipment, weather, and disposal decisions move
+  together.
+
+
+  Earthwork exposes conditions that drawings can only estimate. Unsuitable
+  soil, buried structures, groundwater, rock, and unrecorded services require
+  fast evidence and direction before crews keep moving material. Quantity
+  records, test locations, trucking tickets, and daily grade checks connect
+  field production to change control and payment.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: utility-locating
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: clearing-and-grubbing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: excavation-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: grading-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: compaction-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - site-plan
+      - daily-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - aggregate-supplier
+    - equipment-rental-company
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

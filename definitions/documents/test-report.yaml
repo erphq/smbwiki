@@ -1,0 +1,6 @@
+id: test-report
+name: Test report
+kind: document
+summary: >
+  Test standard, instrument, setup, readings, acceptance threshold, result,
+  exception, corrective action, and approving party.

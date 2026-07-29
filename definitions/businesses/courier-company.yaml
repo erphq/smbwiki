@@ -1,0 +1,25 @@
+id: courier-company
+name: Courier Company
+codes:
+  naics: "492110"
+catalog_group: logistics-production
+extends: transport-operator-base
+summary: >
+  A courier company sells time-sensitive custody for documents, parcels,
+  specimens, parts, or other bounded items. Pickup readiness, exact
+  address, contact, package identity, handling, deadline, route, service
+  level, and recipient authority determine dispatch.
+
+  Many jobs are small enough to disappear operationally if scanning and
+  custody are weak. The record follows acceptance, courier, pickup,
+  location, transfers, attempted delivery, recipient, signature, return,
+  damage, and exception communication to support billing and customer
+  proof.
+revenue_model:
+  - id: priority-courier-jobs
+    note: time-defined pickup and delivery priced by zone, distance, or service level
+  - id: contracted-routes
+    note: repeated scheduled movements under an account agreement
+  - remove: [transport-charges, accessorial-charges]
+supply_chain:
+  sells_to: [individual-client, commercial-client]

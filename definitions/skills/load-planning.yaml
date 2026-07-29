@@ -1,0 +1,93 @@
+id: load-planning
+name: Load planning
+kind: skill
+department: operations
+summary: >
+  Load planning converts an accepted freight quote into the complete
+  operating specification used to source and execute the movement. It
+  reconciles commercial assumptions with pickup, delivery, commodity,
+  equipment, handling, facility, contact, and document requirements.
+inputs: [quote]
+outputs: [load-tender]
+steps:
+  - name: Reconcile accepted terms
+    role: freight-broker
+    consumes: [quote]
+    note: >
+      Rate, service, equipment, dates, accessorial rules, and assumptions
+      are matched to the shipper's actual order.
+  - name: Build pickup and delivery
+    role: freight-broker
+    note: >
+      Addresses, appointments, time zones, contacts, reference numbers,
+      check-in, loading, unloading, and facility restrictions are explicit.
+  - name: Specify freight and equipment
+    role: freight-broker
+    note: >
+      Commodity, count, weight, dimensions, packaging, temperature,
+      securement, hazardous or sensitive handling, and equipment detail
+      are confirmed with their source.
+  - name: Publish the tender
+    role: freight-broker
+    produces: [load-tender]
+    note: >
+      Carrier-facing instructions, required documents, tracking cadence,
+      exception contacts, and commercial rules use one controlled version.
+tension: >
+  Tender speed competes with operating completeness. Releasing freight
+  quickly gives sourcing more time; every missing appointment, dimension,
+  reference, or handling condition weakens the carrier commitment later.
+failure_modes:
+  - name: Quote assumption survives a changed load
+    cost: >
+      The tender requires different equipment, timing, service, or cost
+      from the accepted commercial offer.
+    signal: >
+      Shipper order facts differ from quote facts without a recorded
+      reprice or approval.
+  - name: Appointment exists only with one party
+    cost: >
+      Carrier arrival is refused or delayed while broker and shipper
+      believed the time was confirmed.
+    signal: >
+      The tender lists a time and omits confirmation source, reference,
+      time zone, or facility contact.
+  - name: Freight description is insufficient
+    cost: >
+      The assigned equipment, permits, securement, or handling cannot
+      safely or legally carry the load.
+    signal: >
+      Commodity and weight are present while dimensions, packaging, or
+      special conditions remain unknown.
+maturity:
+  - level: run badly
+    looks_like: >
+      The broker forwards a customer email and sourcing asks for missing
+      facts while speaking with carriers.
+  - level: run well
+    looks_like: >
+      Accepted terms, facility details, freight, equipment, contacts,
+      documents, tracking, and exception routes form one tender.
+  - level: run excellently
+    looks_like: >
+      Tender defects feed shipper setup and sales, recurring facility
+      rules are reusable, and material changes force commercial review.
+competencies:
+  - name: Movement specification
+    note: >
+      The planner turns commercial freight language into exact instructions
+      a carrier can price, accept, and execute.
+  - name: Assumption control
+    note: >
+      Differences between the quoted movement and actual order have to be
+      recognized before tender release.
+automation:
+  now: >
+    Order import, address and time-zone checks, facility profiles, required
+    fields, equipment rules, document templates, and version control.
+  human: >
+    Ambiguous shipper data, unusual cargo, facility confirmation,
+    commercial-impact judgment, and exception planning.
+questions:
+  - What tender fact still lacks shipper confirmation?
+  - Can a carrier execute pickup and delivery using this tender alone?

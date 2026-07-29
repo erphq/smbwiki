@@ -1,0 +1,89 @@
+id: drink-production
+name: Drink production
+kind: skill
+department: operations
+summary: >
+  Drink production turns an order ticket and recipe into a finished
+  beverage at the correct handoff. The bar sequences extraction,
+  heating or chilling, mixing, finishing, and labeling while shared
+  equipment and perishable ingredients keep moving.
+inputs: [order-ticket, recipe-card]
+outputs: []
+steps:
+  - name: Read and mark the build
+    role: barista
+    consumes: [order-ticket, recipe-card]
+    note: >
+      Size, base, temperature, milk, modifiers, and handoff identity are
+      visible before the first irreversible step.
+  - name: Sequence shared work
+    role: barista
+    note: >
+      Grinder, espresso machine, blender, steam, cold bar, and finishing
+      tasks are ordered while preserving progress on the waiting tickets.
+  - name: Build to recipe
+    role: barista
+    note: >
+      Dose, yield, ingredient amount, temperature, and presentation stay
+      consistent across bar positions.
+  - name: Check and hand off
+    role: barista
+    note: >
+      Ticket, cup mark, beverage, and customer or pickup identity agree
+      before the drink leaves the bar.
+tension: >
+  Ticket speed competes with drink integrity. Parallel work reduces
+  waiting; poor sequencing lets shots die, milk separate, cold drinks
+  melt, or modifiers cross between tickets.
+failure_modes:
+  - name: Ticket identity breaks
+    cost: >
+      A correct drink reaches the wrong customer or a remake begins while
+      the original sits at handoff.
+    signal: >
+      Cups move between positions without a persistent name or order
+      reference.
+  - name: Shared equipment becomes the hidden queue
+    cost: >
+      Bar staff appear busy across tickets while all completions wait on
+      one machine or preparation step.
+    signal: >
+      Work in progress accumulates in front of the same equipment.
+  - name: Recipe correction happens at handoff
+    cost: >
+      Product, time, and customer confidence are lost after the entire
+      build is complete.
+    signal: >
+      Size, milk, temperature, or modifier errors dominate remakes.
+maturity:
+  - level: run badly
+    looks_like: >
+      Each barista works a whole ticket from memory and cups change hands
+      without clear ownership.
+  - level: run well
+    looks_like: >
+      Tickets stay identifiable, recipes and station setup are stable,
+      and shared equipment is sequenced deliberately.
+  - level: run excellently
+    looks_like: >
+      Remake reasons change training and layout, equipment drift surfaces
+      early, and the bar can absorb mixed channels without losing handoff.
+competencies:
+  - name: Parallel sequencing
+    note: >
+      The barista times work with different extraction, heating, chilling,
+      and finishing windows across several active tickets.
+  - name: Sensory calibration
+    note: >
+      Appearance, sound, texture, temperature, and taste reveal equipment
+      or ingredient drift before a customer reports it.
+automation:
+  now: >
+    Ticket routing, recipe display, timers, equipment settings, cup
+    labels, order status, and remake categorization.
+  human: >
+    Sensory judgment, physical coordination, queue recovery, equipment
+    adjustment, and customer handoff.
+questions:
+  - Where does work in progress accumulate during the busiest service period?
+  - Which remake reason should change the station or ticket setup?

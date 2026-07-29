@@ -1,0 +1,91 @@
+id: instrument-sterilization
+name: Instrument sterilization
+kind: skill
+department: quality
+summary: >
+  Instrument sterilization moves reusable items from contaminated return
+  through cleaning, inspection, packaging, a validated sterilization
+  cycle, and protected storage. Release depends on the cycle record and
+  required indicators, with every load traceable after use.
+inputs: [instrument-log]
+outputs: [sterilization-log]
+steps:
+  - name: Receive and contain
+    consumes: [instrument-log]
+    note: >
+      Used instruments enter a designated dirty flow with the load
+      identity preserved.
+  - name: Clean and inspect
+    note: >
+      Soil, damage, corrosion, and incomplete sets are found before
+      packaging can hide them.
+  - name: Package and load
+    note: >
+      Package method, load density, and instrument position follow the
+      validated equipment procedure.
+  - name: Run and review the cycle
+    note: >
+      Mechanical readings and required chemical or biological indicators
+      are reviewed before release.
+  - name: Release and store
+    produces: [sterilization-log]
+    note: >
+      A failed or wet load stays segregated while a passed load receives
+      traceable release status.
+tension: >
+  Instrument turnaround competes with validated release. A tight clinical
+  schedule needs sets back quickly; shortening drying, review, or
+  segregation exposes patients and makes the cycle record unreliable.
+failure_modes:
+  - name: Dirty and clean flow cross
+    cost: >
+      Processed instruments or work surfaces are recontaminated before
+      use.
+    signal: >
+      Transport paths, sinks, or staging areas allow clean packs to meet
+      incoming instruments.
+  - name: Failed indicator overlooked
+    cost: >
+      A load without validated sterilization becomes available for
+      patient care.
+    signal: >
+      Packs are stored before indicator review and release are recorded.
+  - name: Load cannot be traced
+    cost: >
+      A later equipment or indicator failure cannot identify the affected
+      instruments and patients.
+    signal: >
+      The log records a cycle while omitting load or pack identity.
+maturity:
+  - level: run badly
+    looks_like: >
+      Instruments move by visual cleanliness and the sterilizer printout
+      is treated as proof of release.
+  - level: run well
+    looks_like: >
+      Dirty flow, cleaning, inspection, packaging, cycle evidence,
+      release, and storage are controlled and logged.
+  - level: run excellently
+    looks_like: >
+      Every pack is traceable to a released cycle, failures trigger
+      quarantine and review, and equipment trends surface before a lost
+      load disrupts care.
+competencies:
+  - name: Processing discipline
+    note: >
+      Reliable sterilization depends on consistent handling before and
+      after the equipment cycle.
+  - name: Release judgment
+    note: >
+      The operator must recognize wet packs, failed indicators, damaged
+      packaging, and cycle deviations that block use.
+automation:
+  now: >
+    Cycle capture, load labels, indicator prompts, maintenance alerts,
+    quarantine status, and instrument-to-cycle traceability.
+  human: >
+    Cleaning inspection, package assessment, load arrangement, indicator
+    interpretation, and the decision to withhold a set.
+questions:
+  - Can every instrument pack in use be traced to a released cycle?
+  - What prevents a failed or wet load from reaching clinical storage?

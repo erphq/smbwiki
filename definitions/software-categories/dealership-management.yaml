@@ -1,0 +1,8 @@
+id: dealership-management
+name: Dealership management
+kind: software-category
+summary: >
+  Vehicle inventory, leads, deals, finance, title, service, parts,
+  accounting, and manufacturer or auction transactions.
+erpai_category: automotive
+erpai_apps: []

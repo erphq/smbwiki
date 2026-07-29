@@ -1,0 +1,6 @@
+id: class-roster
+name: Class roster
+kind: document
+summary: >
+  Scheduled session, instructor, capacity, enrolled members, waitlist,
+  and attendance.

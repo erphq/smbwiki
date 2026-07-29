@@ -1,0 +1,96 @@
+id: field-job-execution
+name: Field job execution
+kind: skill
+department: operations
+summary: >
+  Field job execution carries an assigned work order into a customer
+  site, controls hazards and property, confirms the condition, performs
+  the authorized work, verifies the result, and returns usable evidence
+  to the office.
+inputs: [work-order]
+outputs: [job-photos]
+steps:
+  - name: Accept the site and scope
+    role: technician
+    consumes: [work-order]
+    note: >
+      Contact, access, reported condition, authorized work, site history,
+      and known hazards are reviewed with the person responsible on site.
+  - name: Control hazards and property
+    role: technician
+    note: >
+      Isolation, protection, test area, tools, materials, and occupant
+      impact are settled before opening the system or structure.
+  - name: Confirm and perform the work
+    role: technician
+    note: >
+      Findings support the action, scope changes stop for authorization,
+      and required procedure and code remain part of completion.
+  - name: Test the result
+    role: technician
+    note: >
+      Function, safety, leaks, settings, controls, cleanup, and the
+      original condition are checked under a realistic operating state.
+  - name: Document and hand off
+    role: technician
+    produces: [job-photos]
+    note: >
+      Before condition, completed work, test evidence, materials, customer
+      instruction, and remaining issue return on the work order.
+tension: >
+  Jobs completed per day compete with safe, durable, and documented work.
+  A fast departure creates capacity only when isolation, authorization,
+  testing, cleanup, and customer handoff remain complete.
+failure_modes:
+  - name: Site condition expands scope silently
+    cost: >
+      The technician performs unpriced work or leaves a required adjacent
+      problem unexplained.
+    signal: >
+      Completion notes describe a condition absent from the work order and
+      any change authorization.
+  - name: Operating test omitted
+    cost: >
+      The repair or installation appears complete at rest and fails when
+      load, flow, heat, pressure, drainage, or controls are used.
+    signal: >
+      Completion evidence shows installed work with no operating readings
+      or result.
+  - name: Site protection fails
+    cost: >
+      Property damage, contamination, water, debris, or unsafe access
+      becomes a second job and customer dispute.
+    signal: >
+      Work begins before protection and isolation are recorded.
+maturity:
+  - level: run badly
+    looks_like: >
+      The technician receives an address and problem, then reports done
+      through a short note from the truck.
+  - level: run well
+    looks_like: >
+      Site acceptance, hazard control, scope, change approval, execution,
+      test evidence, cleanup, and handoff remain on the work order.
+  - level: run excellently
+    looks_like: >
+      Field findings improve intake and quoting, repeat defects change
+      procedure, and the office can close the job from technician evidence.
+competencies:
+  - name: Site control
+    note: >
+      The technician has to protect occupants, property, utilities, and
+      the work area while creating access to the system.
+  - name: Technical verification
+    note: >
+      Workmanship becomes a completed result only after the system is
+      tested under the condition the customer will use.
+automation:
+  now: >
+    Work-order delivery, navigation, checklists, procedure lookup, parts
+    and time capture, photos, readings, signatures, and completion status.
+  human: >
+    Hazard control, physical diagnosis and work, site adaptation,
+    workmanship, customer communication, and release judgment.
+questions:
+  - What operating evidence proves the latest completed job resolved its condition?
+  - Which field finding should change intake, quoting, or truck preparation?

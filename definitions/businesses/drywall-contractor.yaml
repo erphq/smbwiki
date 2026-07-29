@@ -1,0 +1,108 @@
+id: drywall-contractor
+name: Drywall Contractor
+codes:
+  naics: '238310'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A drywall contractor lays out, hangs, tapes, finishes, textures, and repairs
+  gypsum board after framing and rough building systems are ready. Board type,
+  backing, access panels, control joints, edge support, and finish level have
+  to be settled before high-volume hanging hides the supporting work.
+
+
+  Finishing is a drying and surface-control process as much as a labor
+  sequence. Temperature, humidity, coat thickness, sanding, lighting, and
+  protection affect the result. Defects often become visible only after paint,
+  so the contractor inspects representative light conditions and closes punch
+  work before the finish crew leaves.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: drywall-layout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: drywall-hanging
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: joint-finishing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: texture-application
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: drywall-punch
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - drywall-distributor
+    - scaffold-provider
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

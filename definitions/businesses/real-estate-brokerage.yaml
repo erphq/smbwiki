@@ -1,0 +1,31 @@
+id: real-estate-brokerage
+name: Real Estate Brokerage
+codes:
+  naics: "531210"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A real estate brokerage accepts a seller, buyer, landlord, or tenant
+  under a representation agreement and controls listing, search,
+  showing, offer, disclosure, negotiation, contingency, deposit, and
+  closing information. Property and party identity anchor every record.
+
+  Agents work in the market while the broker supervises licensing,
+  advertising, documents, deadlines, conflicts, funds, and retained
+  records. A transaction can remain active through inspection, finance,
+  title, appraisal, repair, and possession changes that each require a
+  documented decision.
+revenue_model:
+  - id: transaction-commissions
+    note: compensation earned when represented property transactions close
+  - id: brokerage-services
+    note: authorized leasing, referral, or management-related fees
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+licenses:
+  us:
+    - ref: real-estate-broker-license
+      requirement: required
+      condition: Required for the broker conducting and supervising regulated brokerage activity.
+      as_of: "2026-07-29"
+supply_chain:
+  sells_to: [individual-client, commercial-client]

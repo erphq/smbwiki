@@ -1,0 +1,48 @@
+id: personal-services-base
+name: Personal services (base)
+abstract: true
+revenue_model:
+  - id: booked-services
+    note: provider time and a defined personal service sold by appointment
+  - id: retail-products
+    note: related take-home products sold during consultation or checkout
+skills:
+  - ref: appointment-scheduling
+    roles: [client-coordinator, service-provider]
+    documents: [appointment-request, appointment-record]
+    metrics: [appointment-no-show-rate, service-utilization]
+    software: [appointment-business-management]
+  - ref: client-consultation
+    roles: [service-provider]
+    documents: [appointment-record, client-profile]
+    software: [appointment-business-management]
+  - ref: personal-service-delivery
+    roles: [service-provider]
+    documents: [appointment-record, client-profile, service-ticket]
+    metrics: [service-ticket-time]
+    software: [appointment-business-management]
+  - ref: client-checkout
+    roles: [client-coordinator, service-provider]
+    documents: [service-ticket, customer-invoice, payment-record]
+    metrics: [average-ticket, rebooking-rate]
+    software: [appointment-business-management, accounting]
+  - ref: purchasing
+    roles: [owner-operator, client-coordinator]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management]
+  - ref: staff-scheduling
+    roles: [owner-operator]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [owner-operator]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: client-coordinator
+      - role: service-provider
+supply_chain:
+  sells_to: [individual-client]

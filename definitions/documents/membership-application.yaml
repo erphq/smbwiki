@@ -1,0 +1,6 @@
+id: membership-application
+name: Membership application
+kind: document
+summary: >
+  Prospective member details and the plan, location, or services they
+  want before an agreement is activated.

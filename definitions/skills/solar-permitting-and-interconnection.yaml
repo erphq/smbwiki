@@ -1,0 +1,101 @@
+id: solar-permitting-and-interconnection
+name: Solar permitting and interconnection
+kind: skill
+department: compliance
+summary: >-
+  Prepares jurisdiction and utility packages, answers corrections, tracks
+  approvals, coordinates inspections, and controls permission-to-operate
+  dependencies. Solar permitting and interconnection leaves a current work
+  basis, a field record, and acceptance evidence that another operator can
+  trace.
+inputs:
+  - site-plan
+outputs:
+  - commissioning-record
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before solar permitting and interconnection, read the current scope and
+      revisions, then verify verified roof or ground condition, energy use and
+      shading data, approved electrical design, permit, utility route,
+      equipment, and fall protection.
+  - name: Set the field controls
+    note: >-
+      Translate solar permitting and interconnection into work limits,
+      sequence, responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During solar permitting and interconnection, the operator records
+      quantities, observations, decisions, and concealed details, and stops
+      when the field condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept solar permitting and interconnection, check the completed work
+      against structural and electrical compliance, flashed attachments,
+      labeled circuits, tested shutdown, documented production, inspection,
+      and utility permission, then close correction and issue the resulting
+      record.
+tension: >-
+  Solar permitting and interconnection has to remain inside its acceptance
+  basis while production moves. Design, roof, electrical, permit, and utility
+  decisions converge at installation, and one mismatch can delay permission to
+  operate.
+failure_modes:
+  - name: Solar permitting and interconnection starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for solar
+      permitting and interconnection is settled.
+    signal: >-
+      The solar permitting and interconnection work package still has an open
+      drawing, access, material, predecessor, or approval dependency when
+      labor is assigned.
+  - name: Solar permitting and interconnection closes without evidence
+    cost: >-
+      A concealed condition or required result from solar permitting and
+      interconnection cannot be verified without opening, repeat work, delay,
+      or a disputed exception.
+    signal: >-
+      Solar permitting and interconnection is released while its required
+      check, location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Solar permitting and interconnection is driven by crew availability and
+      visible completion; readiness, hold points, and acceptance evidence are
+      resolved afterward.
+  - level: run well
+    looks_like: >-
+      Solar permitting and interconnection starts from a checked basis,
+      follows a named sequence, stops on changed conditions, and closes
+      against recorded acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Solar permitting and interconnection uses field evidence, production
+      variance, defects, and closeout results to improve the next estimate,
+      work package, and control point.
+competencies:
+  - name: Photovoltaic design and commissioning
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of solar permitting and interconnection.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for solar permitting and interconnection have to be
+      captured while the relevant condition can still be observed and
+      corrected.
+automation:
+  now: >-
+    Solar permitting and interconnection can use digital revisions,
+    checklists, hold points, photo capture, test fields, correction
+    assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting solar permitting and
+    interconnection remain human.
+questions:
+  - >-
+    Which unresolved condition can stop solar permitting and interconnection
+    before work begins?
+  - >-
+    Which record proves solar permitting and interconnection was accepted
+    before it was covered, loaded, energized, occupied, or handed over?

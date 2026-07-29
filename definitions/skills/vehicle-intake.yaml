@@ -1,0 +1,92 @@
+id: vehicle-intake
+name: Vehicle intake
+kind: skill
+department: operations
+summary: >
+  Vehicle intake establishes the condition and customer instruction
+  that the shop will work from. The service advisor turns the driver's
+  description into testable concerns, records the vehicle and contact
+  details, and opens the repair order used by the bay and front desk.
+inputs: [appointment-record]
+outputs: [repair-order]
+steps:
+  - name: Confirm vehicle and authority
+    role: service-advisor
+    consumes: [appointment-record]
+    note: >
+      Plate, mileage, keys, contact route, and the person allowed to
+      approve work belong on the visit before the vehicle moves.
+  - name: Write the concerns
+    role: service-advisor
+    note: >
+      The driver's own description preserves when, where, and under what
+      conditions the symptom appears.
+  - name: Record arrival condition
+    role: service-advisor
+    note: >
+      Fuel level, warning lights, visible damage, and items left in the
+      vehicle settle avoidable disputes at pickup.
+  - name: Open the repair order
+    role: service-advisor
+    produces: [repair-order]
+    note: >
+      Each concern gets a separate line so diagnosis and authorization
+      can close it separately.
+tension: >
+  Counter speed competes with a usable baseline. A rushed handoff gets
+  the vehicle out of the lane; missing symptom detail or arrival damage
+  follows the car through every later decision.
+failure_modes:
+  - name: Concern rewritten as a diagnosis
+    cost: >
+      The technician tests an assumption and may miss the condition the
+      driver reported.
+    signal: >
+      The repair order names a failed part and omits the original
+      symptom.
+  - name: Approval contact unclear
+    cost: >
+      The bay waits while the shop searches for someone authorized to
+      make a price or scope decision.
+    signal: >
+      The repair order has a phone number but no preferred route or
+      approval authority.
+  - name: Arrival condition omitted
+    cost: >
+      Existing damage or a warning light becomes a dispute when the
+      vehicle is returned.
+    signal: >
+      The walkaround section is blank on vehicles already in a bay.
+maturity:
+  - level: run badly
+    looks_like: >
+      Keys and a phone number are handed to a technician, and the
+      customer later repeats the complaint to whoever calls.
+  - level: run well
+    looks_like: >
+      Every concern, contact instruction, mileage reading, and visible
+      condition is recorded before the vehicle enters production.
+  - level: run excellently
+    looks_like: >
+      Intake language supports a reproducible test, prior history is
+      surfaced, and every downstream status call refers to the same
+      concern line.
+competencies:
+  - name: Symptom interviewing
+    note: >
+      Drivers describe experiences; the advisor has to capture operating
+      conditions without turning the conversation into a technical guess.
+  - name: Condition observation
+    note: >
+      A consistent walkaround finds the details most likely to cause a
+      disagreement later.
+automation:
+  now: >
+    Appointment lookup, vehicle identification, digital walkarounds,
+    history retrieval, contact preferences, and repair-order creation.
+  human: >
+    Listening for the actual symptom, recognizing safety implications,
+    and deciding what must be documented in front of the customer.
+questions:
+  - Can a technician reproduce each concern from the intake wording alone?
+  - Who can approve added work, and how should that person be reached?

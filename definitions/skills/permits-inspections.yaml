@@ -1,0 +1,81 @@
+id: permits-inspections
+name: Permits and inspections
+kind: skill
+department: compliance
+summary: >
+  Filing permits before regulated work and scheduling the inspections
+  that close them out. Open permits block final payment and accumulate
+  as compliance debt.
+inputs: []
+outputs: [permit]
+steps:
+  - name: File before work starts
+    role: office-manager
+    produces: [permit]
+    note: >
+      The permit clock starts before the crew does.
+  - name: Track what's open
+    role: office-manager
+    note: >
+      Open permits are compliance debt, and they surface at the worst time: resale.
+  - name: Schedule the inspection
+    role: office-manager
+    note: >
+      An inspector kept waiting is a failed inspection with extra steps.
+tension: >
+  Speed against exposure. The crew wants to start and the permit
+  clock is slower than the sales cycle, so the temptation is to work
+  ahead of the paperwork. Doing that converts schedule risk into
+  legal risk, and legal risk survives the job: the schedule slip is
+  forgotten in a month, the unpermitted water heater is still
+  unpermitted at resale.
+failure_modes:
+  - name: Unpermitted work discovered
+    cost: Stop-work order, fines, and opening finished walls for
+      inspection. At resale, open-permit and no-permit findings kill
+      closings at the title search.
+    signal: Jobs closing in the books with the permit column blank.
+  - name: Failed inspection
+    cost: A return trip, a re-inspection fee, and a crew pulled off
+      another job to fix punch items.
+    signal: Inspections scheduled before the punch list is finished.
+  - name: Permit expiry
+    cost: Re-filing under current code, which can mean redoing work
+      that was compliant when it was done.
+    signal: Open permits older than the jurisdiction's expiry window.
+maturity:
+  - level: run badly
+    looks_like: Permits get pulled when an inspector asks. Tracking
+      lives in one person's head, and the answer to "what's open"
+      takes a day.
+  - level: run well
+    looks_like: Filed at job kickoff, tracked on a list someone
+      reviews weekly, inspections booked together with the punch
+      list.
+  - level: run excellently
+    looks_like: Permit status is a field on every job record, a final
+      invoice cannot be issued while its permit is open, and expiry
+      dates raise alarms nobody has to remember to check.
+competencies:
+  - name: Jurisdiction fluency
+    note: Every city has its own forms, fees, portal quirks, and
+      inspector habits. Knowing them is the difference between a
+      three-day permit and a three-week one.
+  - name: Code literacy at scoping
+    note: Knowing what triggers a permit during quoting, before the
+      inspector reaches the driveway.
+  - name: Inspector relationship
+    note: A shop known for clean work gets questions at inspection.
+      A shop known for shortcuts gets failures.
+automation:
+  now: Status tracking, expiry alarms, and filing itself in
+    e-permit jurisdictions. Pulling the permit column onto the job
+    record is a software problem, solved.
+  human: The walkthrough with the inspector, and the judgment call
+    on whether an edge-case job triggers a permit. The cost of
+    guessing wrong is asymmetric, so the guess belongs to a person
+    who can defend it.
+questions:
+  - How many permits are open right now, and how old is the oldest?
+  - Can a final invoice go out while the job's permit is still open?
+  - When an inspector fails a job, does anyone record why?

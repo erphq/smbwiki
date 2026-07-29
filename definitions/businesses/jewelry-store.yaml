@@ -1,0 +1,25 @@
+id: jewelry-store
+name: Jewelry Store
+codes:
+  naics: "458310"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A jewelry store controls small, high-value inventory by item identity,
+  material, stone, weight, hallmark, certificate, condition, location,
+  ownership, and price. Customer work may include selection, sizing,
+  engraving, repair intake, appraisal, trade, or a custom order.
+
+  Custody changes at the counter, safe, bench, outside specialist, and
+  customer handoff. Each transfer needs identity and condition evidence.
+  Discounts, deposits, memo goods, repairs, special orders, warranties,
+  and returns remain tied to the exact item and its custody record.
+revenue_model:
+  - id: jewelry-sales
+    note: stocked and memo merchandise sold by identified item
+  - id: repair-and-custom-work
+    note: sizing, repair, engraving, appraisal, and configured orders
+  - remove: [merchandise-sales, special-orders]
+supply_chain:
+  buys_from: [jewelry-wholesaler, jewelry-repair-specialist]
+  sells_to: [retail-consumer]

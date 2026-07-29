@@ -1,0 +1,69 @@
+id: veterinary-clinic
+name: Veterinary Clinic
+codes:
+  naics: "541940"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  A veterinary clinic coordinates an animal patient, an owner who
+  authorizes and pays, and a clinical team that observes the condition
+  while the owner reports history. Examination, diagnostics,
+  estimate, consent, treatment, medication, discharge instruction, and
+  follow-up need one case record.
+
+  The schedule mixes preventive visits, illness, procedures, urgent
+  requests, laboratory work, and messages about patients already seen.
+  Clinical urgency can change while the waiting room is active. The
+  owner needs a clear estimate and decision point before added work, and
+  the team needs a named owner for every result and follow-up task.
+revenue_model:
+  - id: examinations
+    note: preventive, illness, and follow-up visits
+  - id: diagnostics-and-procedures
+    note: tests, imaging, treatment, surgery, and monitoring
+  - id: medications-and-products
+    note: prescribed products dispensed as part of care
+  - remove: [patient-services, preventive-care]
+skills:
+  - ref: patient-intake
+    roles: [receptionist, veterinary-technician]
+    documents: [appointment-record, patient-registration, patient-chart]
+    software: [practice-management, electronic-health-record]
+  - ref: clinical-care
+    roles: [veterinarian, veterinary-technician]
+    documents: [appointment-record, patient-chart, clinical-note, treatment-plan]
+    software: [electronic-health-record, practice-management]
+  - ref: purchasing
+    roles: [office-manager, veterinary-technician]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management]
+  - ref: invoicing
+    roles: [receptionist, office-manager]
+    documents: [customer-invoice]
+    metrics: [average-ticket]
+    software: [accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - remove: [coverage-verification, claims-billing]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+        reports:
+          - role: receptionist
+      - role: veterinarian
+        reports:
+          - role: veterinary-technician
+licenses:
+  us:
+    - ref: veterinarian-license
+      requirement: required
+      condition: Required for veterinarians providing regulated veterinary medicine.
+      as_of: "2026-07-29"
+supply_chain:
+  sells_to: [individual-client]
+seo:
+  title: "Veterinary Clinic: How the Business Works | smbwiki"

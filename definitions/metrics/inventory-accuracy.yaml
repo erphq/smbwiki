@@ -1,0 +1,8 @@
+id: inventory-accuracy
+name: Inventory accuracy
+kind: metric
+summary: >
+  Share of counted item-location balances that match the system
+  record.
+unit: percent
+direction: higher

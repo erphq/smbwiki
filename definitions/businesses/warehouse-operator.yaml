@@ -1,0 +1,19 @@
+id: warehouse-operator
+name: Warehouse Operator
+codes:
+  naics: "493110"
+catalog_group: logistics-production
+extends: warehouse-base
+summary: >
+  A warehouse operator accepts custody of customer inventory under
+  defined receiving, storage, handling, count, lot or serial, condition,
+  security, and order rules. The account agreement determines which
+  movements and exceptions require customer approval.
+
+  Daily flow competes for doors, staging, locations, labor, equipment,
+  and carrier cutoffs. Receiving, putaway, replenishment, allocation,
+  picking, packing, loading, cycle counts, holds, damage, and proof of
+  handoff update the same item-location and order records.
+supply_chain:
+  buys_from: [material-handling-equipment-provider]
+  sells_to: [shipper]

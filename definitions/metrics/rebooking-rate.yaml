@@ -1,0 +1,7 @@
+id: rebooking-rate
+name: Rebooking rate
+kind: metric
+summary: >
+  Completed clients who reserve their next appointment before leaving.
+unit: percent
+direction: higher

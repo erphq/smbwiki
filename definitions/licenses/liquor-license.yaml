@@ -1,0 +1,8 @@
+id: liquor-license
+name: Liquor license
+kind: license
+geo: [us]
+summary: >
+  Authorization to sell alcohol; quota-limited and often the most
+  valuable intangible a restaurant holds.
+jurisdiction: state

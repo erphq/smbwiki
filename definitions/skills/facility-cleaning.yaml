@@ -1,0 +1,86 @@
+id: facility-cleaning
+name: Facility cleaning
+kind: skill
+department: maintenance
+summary: >
+  Facility cleaning inspects and restores customer areas, work surfaces,
+  floors, restrooms, carts, waste points, lint paths, and spill zones on
+  a recorded route. The log records both completed work and conditions
+  that require maintenance, closure, or additional attention.
+inputs: []
+outputs: [cleaning-log]
+steps:
+  - name: Inspect the route
+    note: >
+      Customer flow, spills, lint, waste, restroom condition, carts,
+      folding areas, and blocked access set the immediate sequence.
+  - name: Control the area
+    note: >
+      Wet floors, chemicals, sharp objects, bodily fluids, heat, and
+      equipment-adjacent work are isolated before cleaning starts.
+  - name: Clean and restore
+    note: >
+      Method, product, contact time, removal, drying, and replacement of
+      supplies match the surface and condition.
+  - name: Record and escalate
+    produces: [cleaning-log]
+    note: >
+      Time, area, condition, completed work, remaining defect, and owner
+      make the route useful beyond a checked box.
+tension: >
+  Continuous customer access competes with safe and complete cleaning.
+  Keeping every area open preserves convenience; some spills, lint
+  buildup, restroom conditions, and chemical work require temporary
+  control of the space.
+failure_modes:
+  - name: Visible pass misses hidden accumulation
+    cost: >
+      Lint, residue, drain buildup, or waste creates odor, fire, pest,
+      slip, or equipment risk behind a clean-looking floor.
+    signal: >
+      Logs repeat customer-facing tasks and omit equipment edges, vents,
+      drains, and waste points.
+  - name: Wet area released early
+    cost: >
+      A customer slips or tracks chemical and soil into the rest of the
+      facility.
+    signal: >
+      Area control is removed before dry condition is checked.
+  - name: Maintenance defect logged as cleaning
+    cost: >
+      A leak, broken surface, ventilation issue, or failing fixture
+      persists across repeated routes.
+    signal: >
+      The same cleaning exception appears without a maintenance owner.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff clean what looks dirty between customer requests and the log
+      proves only that someone initialed a time.
+  - level: run well
+    looks_like: >
+      A risk-based route covers visible and hidden areas, controls hazards,
+      and sends defects to a named owner.
+  - level: run excellently
+    looks_like: >
+      Traffic and soil patterns shape frequency, repeated exceptions
+      change maintenance or layout, and area release is explicit.
+competencies:
+  - name: Condition recognition
+    note: >
+      The attendant distinguishes removable soil from a leak, damage,
+      ventilation, pest, or equipment condition requiring another skill.
+  - name: Safe area control
+    note: >
+      Customer movement has to be redirected clearly while the cleaning
+      method creates temporary slip or exposure risk.
+automation:
+  now: >
+    Route schedules, task prompts, timestamps, area status, supply
+    reminders, photo evidence, and maintenance escalation.
+  human: >
+    Soil and hazard assessment, physical cleaning, product choice,
+    customer-area control, and release judgment.
+questions:
+  - Which repeated cleaning exception needs a maintenance response?
+  - What customer area is open before safe dry condition is confirmed?

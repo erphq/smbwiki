@@ -1,0 +1,77 @@
+id: plumbing-contractor
+name: Plumbing Contractor
+codes:
+  naics: "238220"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  A plumbing contractor handles urgent faults, scheduled repairs,
+  replacements, and installation projects. Intake records the affected
+  fixture or system, current water or drainage condition, access,
+  property risk, prior work, and any immediate isolation already taken.
+
+  Dispatch matches urgency with technician qualification, travel, tools,
+  and likely parts. Larger work moves through site survey, quote,
+  material readiness, permit, installation, inspection, and closeout.
+  Diagnosis, authorization, job photographs, test results, and customer
+  instruction return on the work order.
+revenue_model:
+  - id: service-calls
+    note: diagnosis and repair billed from a dispatched visit
+  - id: quoted-projects
+    note: repipes, fixture packages, sewer work, and replacements
+      estimated and scheduled ahead
+  - id: emergency-callouts
+    note: urgent after-hours response sold against protected capacity
+skills:
+  - ref: quoting
+    roles: [master-plumber]
+    documents: [quote]
+    metrics: [quote-win-rate]
+    software: [field-service-management]
+  - ref: field-job-execution
+    roles: [plumber, apprentice-plumber]
+    documents: [work-order, job-photos]
+    metrics: [first-time-fix-rate, callback-rate]
+    software: [field-service-management]
+  - ref: install-project
+    roles: [master-plumber, plumber, apprentice-plumber]
+    documents: [quote, permit, work-order]
+    metrics: [install-gross-margin]
+    software: [field-service-management]
+  - ref: permits-inspections
+    roles: [master-plumber, office-manager]
+    documents: [permit]
+    software: [field-service-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: dispatcher
+      - role: master-plumber
+        reports:
+          - role: plumber
+            reports:
+              - role: apprentice-plumber
+licenses:
+  us:
+    - ref: plumbing-contractor-license
+      requirement: conditional
+      condition: Required only where the state or locality licenses the business or qualifying party for the covered plumbing work.
+      as_of: "2026-07-29"
+    - ref: plumber-license
+      requirement: conditional
+      condition: Required for individuals performing or supervising plumbing work at levels regulated by the operating jurisdiction.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [plumbing-supply-house]
+  sells_to: [homeowner, property-management-company, general-contractor]
+products:
+  - electric-water-heater
+  - tankless-water-heater
+  - toilet
+  - kitchen-faucet
+  - sump-pump
+  - sewer-jetting-truck
+seo:
+  title: "Plumbing Contractor: How the Business Works | smbwiki"

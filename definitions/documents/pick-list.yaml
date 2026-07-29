@@ -1,0 +1,6 @@
+id: pick-list
+name: Pick list
+kind: document
+summary: >
+  Released order lines, source locations, quantities, handling rules,
+  and staging destination for warehouse fulfillment.

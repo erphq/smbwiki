@@ -1,0 +1,6 @@
+id: patient-registration
+name: Patient registration
+kind: document
+summary: >
+  Patient identity, contact, consent, history, and payer details
+  collected or confirmed before care.

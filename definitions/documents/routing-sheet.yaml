@@ -1,0 +1,6 @@
+id: routing-sheet
+name: Routing sheet
+kind: document
+summary: >
+  Ordered work centers, instructions, setup, checks, quantities,
+  completions, and exceptions for a production order.

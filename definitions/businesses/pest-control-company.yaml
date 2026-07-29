@@ -1,0 +1,33 @@
+id: pest-control-company
+name: Pest Control Company
+codes:
+  naics: "561710"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  A pest control company turns an inspection into a treatment plan and
+  a return schedule. The technician needs the pest evidence, structure,
+  conducive conditions, prior treatment, occupant concerns, and access
+  limits before selecting and applying a control method.
+
+  Recurring agreements fill routes with inspection and preventive work.
+  Route planning has to preserve the visit cadence and leave enough time
+  for active infestations, documentation, and customer instruction.
+  Callbacks reveal a missed source, incomplete preparation, access
+  failure, or treatment that needs another stage.
+revenue_model:
+  - id: initial-service
+    note: inspection and first treatment sold for a defined pest condition
+  - id: recurring-protection
+    note: scheduled inspection and preventive service under an agreement
+  - remove: [quoted-projects]
+skills:
+  - ref: maintenance-agreements
+    roles: [office-manager, technician]
+    documents: [service-agreement]
+    metrics: [agreement-count, agreement-renewal-rate]
+    software: [field-service-management]
+supply_chain:
+  sells_to: [homeowner]
+seo:
+  title: "Pest Control Company: How the Business Works | smbwiki"

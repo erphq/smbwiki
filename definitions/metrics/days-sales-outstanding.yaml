@@ -1,0 +1,7 @@
+id: days-sales-outstanding
+name: Days sales outstanding
+kind: metric
+summary: >
+  Average days from invoice to payment.
+unit: days
+direction: lower

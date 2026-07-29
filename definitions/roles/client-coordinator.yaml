@@ -1,0 +1,6 @@
+id: client-coordinator
+name: Client coordinator
+kind: role
+summary: >
+  Maintains the client record, schedules work, gathers missing inputs,
+  and keeps approvals and delivery dates visible.

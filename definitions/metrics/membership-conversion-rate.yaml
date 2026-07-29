@@ -1,0 +1,7 @@
+id: membership-conversion-rate
+name: Membership conversion rate
+kind: metric
+summary: >
+  Qualified facility visitors or inquiries that activate a membership.
+unit: percent
+direction: higher

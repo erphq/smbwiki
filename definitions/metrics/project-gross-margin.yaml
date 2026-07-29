@@ -1,0 +1,8 @@
+id: project-gross-margin
+name: Project gross margin
+kind: metric
+summary: >
+  Revenue left after the direct labor, material, equipment, and
+  subcontract cost assigned to a completed project.
+unit: percent
+direction: higher

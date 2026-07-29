@@ -1,0 +1,6 @@
+id: clinical-note
+name: Clinical note
+kind: document
+summary: >
+  The signed account of care delivered at a visit, including findings,
+  procedures, materials, and follow-up instructions.

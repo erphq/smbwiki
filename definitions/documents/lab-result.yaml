@@ -1,0 +1,6 @@
+id: lab-result
+name: Laboratory result
+kind: document
+summary: >
+  Test, method, value or finding, reference information, flags,
+  verification, release time, and required notification.

@@ -1,0 +1,98 @@
+id: load-execution
+name: Load execution
+kind: skill
+department: operations
+summary: >
+  Load execution carries a confirmed carrier commitment through dispatch,
+  pickup, in-transit tracking, exception management, delivery, and
+  document closeout. The brokerage maintains a current shared record
+  while the freight is in another company's physical custody.
+inputs: [rate-confirmation]
+outputs: [bill-of-lading, proof-of-delivery]
+steps:
+  - name: Verify dispatch readiness
+    role: tracking-coordinator
+    consumes: [rate-confirmation]
+    note: >
+      Driver, truck, carrier contact, empty status, travel plan, pickup
+      appointment, references, and tracking method are confirmed through
+      trusted routes.
+  - name: Confirm pickup
+    role: tracking-coordinator
+    produces: [bill-of-lading]
+    note: >
+      Arrival, loaded count and condition, bill of lading, seal or
+      securement, departure, and any shipper exception enter the load record.
+  - name: Track milestones and risk
+    role: tracking-coordinator
+    note: >
+      Location, available hours, appointment feasibility, equipment
+      condition, and driver contact are updated at the cadence the load needs.
+  - name: Control exceptions
+    role: freight-broker
+    note: >
+      Delay, breakdown, temperature, damage, shortage, refusal, or contact
+      loss receives an owner, customer update, evidence, and recovery decision.
+  - name: Confirm delivery and close
+    role: tracking-coordinator
+    produces: [proof-of-delivery]
+    note: >
+      Delivery time, receiver, signed proof, count, condition, exception,
+      final charges, and document quality are reviewed before handoff to billing.
+tension: >
+  Loads per operator compete with early exception detection and customer
+  communication. Low-touch tracking supports volume when the plan holds;
+  stale milestones hide recoverable delays until the appointment or
+  customer promise has already failed.
+failure_modes:
+  - name: Carrier identity changes after booking
+    cost: >
+      An unverified driver, truck, or contact gains control of pickup
+      information or freight.
+    signal: >
+      Dispatch details arrive from a route absent from the rate
+      confirmation and approved record.
+  - name: Check call records status without feasibility
+    cost: >
+      The load appears moving while available time, distance, hours, or
+      appointment constraints already make service failure likely.
+    signal: >
+      Updates record location and omit projected arrival or remaining risk.
+  - name: Delivery proof hides exception
+    cost: >
+      Billing closes while shortage, damage, refusal, or late service
+      evidence is lost.
+    signal: >
+      Proof of delivery has notation that never creates an owned exception.
+maturity:
+  - level: run badly
+    looks_like: >
+      The broker asks for location after the customer calls and documents
+      are collected when billing needs them.
+  - level: run well
+    looks_like: >
+      Trusted dispatch, pickup evidence, feasible milestones, owned
+      exceptions, customer updates, and reviewed delivery proof share one load.
+  - level: run excellently
+    looks_like: >
+      Risk determines tracking cadence, likely failures surface before
+      promises break, and execution outcomes change carrier and facility data.
+competencies:
+  - name: Movement feasibility
+    note: >
+      The operator combines location, distance, hours, appointments,
+      weather, equipment, and facility behavior into a current service view.
+  - name: Exception command
+    note: >
+      Evidence, options, cost authority, carrier action, and customer
+      communication must move together while the freight is still recoverable.
+automation:
+  now: >
+    Location tracking, geofences, milestone prompts, projected arrival,
+    document capture, exception alerts, and customer status messages.
+  human: >
+    Identity changes, driver and facility communication, recovery design,
+    cost decisions, sensitive customer updates, and custody disputes.
+questions:
+  - Which active load is least likely to keep its next appointment?
+  - What open delivery exception still lacks evidence or an owner?

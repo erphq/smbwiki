@@ -1,0 +1,8 @@
+id: construction-management
+name: Construction management
+kind: software-category
+summary: >
+  Drawings, RFIs, submittals, contracts, schedule, daily reports, changes,
+  cost control, inspections, punch work, and closeout.
+erpai_category: operations
+erpai_apps: []

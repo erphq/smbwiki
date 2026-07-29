@@ -1,0 +1,88 @@
+id: class-scheduling
+name: Class scheduling
+kind: skill
+department: people
+summary: >
+  Class scheduling commits instructor time and physical capacity to a
+  recurring or one-time session, publishes the offer, and manages
+  enrollment through attendance. Format, skill level, room, equipment,
+  safe capacity, substitutions, and cancellation rules belong to the
+  same session record.
+inputs: []
+outputs: [class-roster, shift-schedule]
+steps:
+  - name: Define the session
+    note: >
+      Audience, format, duration, safe capacity, room, equipment, and
+      instructor qualification are set before a time is offered.
+  - name: Allocate instructor and room
+    produces: [shift-schedule]
+    note: >
+      Travel, setup, cleanup, and adjacent sessions are included in the
+      commitment.
+  - name: Publish and enroll
+    produces: [class-roster]
+    note: >
+      Members see current eligibility, capacity, waitlist, cancellation,
+      and arrival requirements.
+  - name: Control the live roster
+    note: >
+      Cancellations, waitlist releases, walk-ins, instructor changes, and
+      attendance update the session while members can still respond.
+tension: >
+  Member access competes with reliable instructor and room utilization.
+  A generous schedule offers choice; lightly supported sessions,
+  unmanaged waitlists, or frequent cancellations make the timetable
+  difficult for members and staff to trust.
+failure_modes:
+  - name: Published class lacks qualified cover
+    cost: >
+      The session is cancelled late or delivered outside its intended
+      skill and safety requirements.
+    signal: >
+      One instructor owns a recurring session with no approved substitute.
+  - name: Waitlist release arrives too late
+    cost: >
+      Capacity goes unused while willing members lacked enough time to
+      attend.
+    signal: >
+      Open spots appear near start time with uncontacted waitlisted members.
+  - name: Room turnover omitted
+    cost: >
+      Sessions overlap through setup, cleanup, equipment reset, or member
+      exit.
+    signal: >
+      Consecutive classes share a room with no transition allowance.
+maturity:
+  - level: run badly
+    looks_like: >
+      The timetable repeats until an instructor or room conflict forces a
+      visible cancellation.
+  - level: run well
+    looks_like: >
+      Session definition, qualified cover, room, roster, waitlist,
+      changes, and attendance are managed together.
+  - level: run excellently
+    looks_like: >
+      Actual attendance and cancellation behavior shape the timetable,
+      release rules fill capacity, and fragile sessions surface ahead of
+      publication.
+competencies:
+  - name: Program design
+    note: >
+      Demand, progression, instructor skill, safe capacity, and facility
+      constraints have to become a timetable members can use.
+  - name: Live capacity control
+    note: >
+      The operator moves waitlists and substitutions quickly while
+      preserving eligibility and member notice.
+automation:
+  now: >
+    Recurring schedules, conflict checks, enrollment, waitlists,
+    notifications, instructor substitution, and attendance capture.
+  human: >
+    Program judgment, instructor quality, safe-capacity decisions, late
+    recovery, and member communication after a material change.
+questions:
+  - Which published class depends on one instructor with no approved cover?
+  - How much class capacity is lost after late cancellations?

@@ -1,0 +1,6 @@
+id: reservation-record
+name: Reservation record
+kind: document
+summary: >
+  Confirmed dates, guest, room type, rate, deposit, policies, requests,
+  source, and change history for one stay.

@@ -1,0 +1,14 @@
+{
+  "name": "smbwiki",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:graph": "node scripts/build-graph.mjs",
+    "check:catalog": "node scripts/check-catalog.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "check:site": "node scripts/check-site.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

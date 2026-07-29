@@ -1,0 +1,88 @@
+id: quoting
+name: Quoting
+kind: skill
+department: sales
+summary: >
+  Quoting converts a qualified request and site requirements into a
+  priced scope with assumptions, exclusions, schedule, payment terms,
+  and acceptance conditions. Specialized measurements and calculations
+  can support the quote while the shared skill keeps the commercial
+  promise complete.
+inputs: [job-request]
+outputs: [quote]
+steps:
+  - name: Define the requested outcome
+    consumes: [job-request]
+    note: >
+      Site condition, existing system, access, constraints, responsibility,
+      and acceptance criteria are confirmed before price is built.
+  - name: Build the scope and cost
+    note: >
+      Labor, material, equipment, permits, outside work, disposal,
+      uncertainty, and schedule exposure are included under the job owner.
+  - name: Check assumptions and choices
+    note: >
+      Alternatives have distinct outcomes and every exclusion or
+      customer-supplied dependency is visible.
+  - name: Issue the quote
+    produces: [quote]
+    note: >
+      Price, scope, tax, payment, validity, schedule basis, warranty, and
+      acceptance route travel in one versioned offer.
+tension: >
+  Quote speed competes with scope and margin certainty. A quick offer
+  keeps the customer's decision moving; missing site or supply exposure
+  becomes an unpriced obligation after acceptance.
+failure_modes:
+  - name: Existing condition becomes an assumption
+    cost: >
+      The crew discovers access, capacity, code, damage, or compatibility
+      that changes the required work.
+    signal: >
+      A site-dependent quote has no recorded survey, measurement, or
+      assumption.
+  - name: Exclusion is implied
+    cost: >
+      Customer and contractor assign the same permit, repair, disposal, or
+      restoration work to each other.
+    signal: >
+      The quote omits a known adjacent task and never names who owns it.
+  - name: Supplier promise stays unconfirmed
+    cost: >
+      The accepted price or schedule depends on material that changes
+      cost, availability, or specification.
+    signal: >
+      A major quoted item has no current source, lead time, or validity
+      date.
+maturity:
+  - level: run badly
+    looks_like: >
+      Price comes from a similar prior job and exclusions are explained
+      after acceptance.
+  - level: run well
+    looks_like: >
+      Site facts, scope, cost, assumptions, exclusions, schedule, terms,
+      and acceptance use one controlled quote version.
+  - level: run excellently
+    looks_like: >
+      Actual labor, material, changes, and margin correct future scopes,
+      while recurring uncertainty becomes an explicit allowance or survey.
+competencies:
+  - name: Scope definition
+    note: >
+      The estimator identifies the boundary between the promised result,
+      existing condition, customer responsibility, and likely change.
+  - name: Cost and risk judgment
+    note: >
+      Known quantities and uncertain exposure require different treatment
+      inside a price the business can honor.
+automation:
+  now: >
+    Templates, price books, supplier cost lookup, tax and margin
+    calculation, versioning, digital presentation, and acceptance capture.
+  human: >
+    Site interpretation, technical design, uncertainty pricing,
+    alternatives, exclusions, and the conversation that confirms scope.
+questions:
+  - What site assumption can most change the current quote after acceptance?
+  - Can the crew tell exactly where quoted scope ends?

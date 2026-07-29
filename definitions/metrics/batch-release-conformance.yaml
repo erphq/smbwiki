@@ -1,0 +1,8 @@
+id: batch-release-conformance
+name: Batch release conformance
+kind: metric
+summary: >
+  Share of batches meeting release requirements without rework,
+  blending correction, relabeling, or other disposition.
+unit: percent
+direction: higher

@@ -1,0 +1,109 @@
+id: masonry-contractor
+name: Masonry Contractor
+codes:
+  naics: '238140'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A masonry contractor builds brick, block, or stone assemblies from layout,
+  mortar, reinforcement, anchors, flashing, units, access, and weather
+  protection. Each lift combines structure, drainage, movement joints,
+  openings, and a visible finish that has to remain consistent across crews
+  and material batches.
+
+
+  Coursing decisions affect every elevation and interface. The foreperson
+  controls corners, leads, daily height, joint tooling, cavity cleanliness,
+  flashing, and protection while coordinating embeds and adjacent trades.
+  Cleaning and punch work can permanently alter color or joints, so the
+  approved sample remains the acceptance reference through closeout.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: masonry-layout
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: mortar-control
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: unit-masonry-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: masonry-flashing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: masonry-cleaning
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - quality-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - masonry-material-distributor
+    - scaffold-provider
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

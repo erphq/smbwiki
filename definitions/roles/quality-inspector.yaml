@@ -1,0 +1,6 @@
+id: quality-inspector
+name: Quality inspector
+kind: role
+summary: >
+  Verifies material and finished work against the specified acceptance
+  criteria and controls nonconforming output.

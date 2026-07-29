@@ -1,0 +1,97 @@
+id: auto-repair-shop
+name: Auto Repair Shop
+codes:
+  naics: "811111"
+catalog_group: retail-vehicles
+summary: >
+  An auto repair shop receives a vehicle with a reported condition or
+  maintenance request, records its state, diagnoses the work, presents
+  an estimate, captures authorization, performs the repair, checks the
+  result, and closes payment. The repair order carries that sequence
+  across the front counter, technician, parts desk, and customer.
+
+  Capacity is limited by bays, technician skill, parts, test equipment,
+  and customer decisions. A vehicle can occupy working space while the
+  shop waits for authorization or supply. Symptoms, test evidence,
+  approved scope, parts, labor, quality checks, and customer updates
+  need to remain attached to the same repair.
+revenue_model:
+  - id: diagnostic-work
+    note: paid testing and inspection that defines the repair scope
+  - id: repair-labor
+    note: technician time sold from approved estimates
+  - id: parts-margin
+    note: components sourced, warranted, and resold as part of a repair
+  - id: maintenance-services
+    note: recurring vehicle care scheduled by mileage or time
+skills:
+  - ref: appointment-scheduling
+    roles: [service-advisor]
+    documents: [appointment-request, appointment-record]
+    software: [auto-repair-management]
+  - ref: vehicle-intake
+    roles: [service-advisor]
+    documents: [appointment-record, repair-order]
+    software: [auto-repair-management]
+  - ref: vehicle-diagnosis
+    roles: [automotive-technician, shop-foreman]
+    documents: [repair-order, inspection-report]
+    metrics: [technician-efficiency]
+    software: [auto-repair-management]
+  - ref: repair-estimating
+    roles: [service-advisor, parts-manager]
+    documents: [inspection-report, repair-estimate]
+    metrics: [estimate-approval-rate]
+    software: [auto-repair-management, parts-catalog]
+  - ref: repair-authorization
+    roles: [service-advisor]
+    documents: [repair-estimate, work-authorization]
+    metrics: [estimate-approval-rate]
+    software: [auto-repair-management]
+  - ref: parts-procurement
+    roles: [parts-manager]
+    documents: [work-authorization, purchase-order, supplier-invoice]
+    software: [parts-catalog, inventory-management]
+  - ref: repair-execution
+    roles: [automotive-technician, shop-foreman]
+    documents: [repair-order, work-authorization, repair-completion]
+    metrics: [bay-utilization, technician-efficiency]
+    software: [auto-repair-management]
+  - ref: repair-quality-control
+    roles: [shop-foreman, automotive-technician]
+    documents: [repair-completion, quality-check]
+    metrics: [comeback-rate]
+    software: [auto-repair-management]
+  - ref: repair-checkout
+    roles: [service-advisor]
+    documents: [quality-check, customer-invoice, payment-record]
+    metrics: [average-ticket]
+    software: [auto-repair-management, accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: service-advisor
+      - role: shop-foreman
+        reports:
+          - role: automotive-technician
+      - role: parts-manager
+licenses:
+  us:
+    - ref: auto-repair-registration
+      requirement: conditional
+      condition: Required only in states or localities that register motor-vehicle repair businesses.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [auto-parts-distributor, tire-distributor]
+  sells_to: [individual-client, commercial-client, fleet-operator]
+products:
+  - portable-car-lift
+  - obd-scan-tool
+  - tire-changer
+  - wheel-balancer
+  - wheel-alignment-machine
+  - brake-lathe
+  - engine-hoist
+  - air-compressor
+seo:
+  title: "Auto Repair Shop: How the Business Works | smbwiki"

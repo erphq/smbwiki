@@ -1,0 +1,8 @@
+id: pharmacy-management
+name: Pharmacy management
+kind: software-category
+summary: >
+  Prescription intake, patient and prescriber records, claims, stock,
+  filling, pharmacist checks, pickup, and regulatory records.
+erpai_category: healthcare
+erpai_apps: []

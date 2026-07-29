@@ -1,0 +1,8 @@
+id: cosmetologist-license
+name: Cosmetologist license
+kind: license
+geo: [us]
+summary: >
+  Individual professional authorization for defined hair, skin, and
+  beauty services after required training and examination.
+jurisdiction: state

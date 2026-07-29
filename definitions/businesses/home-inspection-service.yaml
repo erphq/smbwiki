@@ -1,0 +1,102 @@
+id: home-inspection-service
+name: Home Inspection Service
+codes:
+  naics: '541350'
+catalog_group: construction-property
+extends: professional-services-base
+summary: >-
+  A home inspection service examines accessible site, structure, envelope,
+  roof, interior, plumbing, electrical, heating, cooling, appliances, and
+  safety conditions for a client. The engagement defines the standard,
+  exclusions, access, utilities, occupancy, timing, and report so the limits
+  are clear before fieldwork.
+
+
+  The inspector samples and observes without dismantling the building. Defects
+  need precise location, evidence, significance, and an appropriate
+  recommendation, while inaccessible areas and unsafe tests are stated as
+  limitations. Report quality depends on disciplined field notes and
+  photographs as much as building knowledge.
+skills:
+  - ref: client-engagement
+    roles: [principal, home-inspector, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, professional-services-automation]
+  - ref: professional-service-delivery
+    roles: [home-inspector, principal, client-coordinator]
+    documents: [engagement-letter, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [professional-services-automation]
+  - ref: inspection-agreement-control
+    roles:
+      - home-inspector
+      - principal
+    documents:
+      - client-brief
+      - inspection-report
+    metrics:
+      - report-turnaround-time
+    software:
+      - professional-services-automation
+  - ref: exterior-inspection
+    roles:
+      - home-inspector
+      - principal
+    documents:
+      - client-brief
+      - inspection-report
+    metrics:
+      - report-turnaround-time
+    software:
+      - professional-services-automation
+  - ref: structural-interior-inspection
+    roles:
+      - home-inspector
+      - principal
+    documents:
+      - client-brief
+      - inspection-report
+    metrics:
+      - report-turnaround-time
+    software:
+      - professional-services-automation
+  - ref: building-systems-inspection
+    roles:
+      - home-inspector
+      - principal
+    documents:
+      - client-brief
+      - inspection-report
+    metrics:
+      - report-turnaround-time
+    software:
+      - professional-services-automation
+  - ref: home-inspection-reporting
+    roles:
+      - home-inspector
+      - principal
+    documents:
+      - client-brief
+      - inspection-report
+    metrics:
+      - report-turnaround-time
+    software:
+      - professional-services-automation
+supply_chain:
+  buys_from: []
+  sells_to:
+    - individual-client
+    - commercial-client
+    - property-owner
+licenses:
+  us:
+    - ref: home-inspector-license
+      requirement: conditional
+      condition: Required only in states that license home inspectors or the covered inspection activity.
+      as_of: "2026-07-29"
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: home-inspector

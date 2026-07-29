@@ -1,0 +1,6 @@
+id: utility-bill
+name: Utility bill
+kind: document
+summary: >
+  Metered usage, demand, fees, taxes, service period, and amount due for
+  water, sewer, gas, or electricity.

@@ -1,0 +1,7 @@
+id: service-utilization
+name: Service utilization
+kind: metric
+summary: >
+  Bookable provider time occupied by delivered customer services.
+unit: percent
+direction: contextual

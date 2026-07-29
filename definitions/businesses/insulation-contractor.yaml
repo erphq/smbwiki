@@ -1,0 +1,109 @@
+id: insulation-contractor
+name: Insulation Contractor
+codes:
+  naics: '238310'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  An insulation contractor establishes the thermal and air boundary using
+  sealing, batts, blown fiber, foam, or other specified systems. The work fits
+  around framing, wiring, piping, ducts, ventilation, combustion clearances,
+  and irregular transitions that can create hidden bypasses or compressed
+  insulation.
+
+
+  Most defects disappear when walls and ceilings close. The crew therefore
+  maps the boundary, verifies substrate and air sealing, controls installed
+  depth or density, and records concealed conditions by location. Production
+  planning also manages machine settings, bag count, weather, ventilation
+  paths, access, and inspection timing.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: thermal-envelope-assessment
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - inspection-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: air-sealing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - inspection-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: batt-insulation-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - inspection-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: blown-insulation-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - inspection-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: insulation-verification
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - inspection-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - insulation-distributor
+    - building-material-distributor
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

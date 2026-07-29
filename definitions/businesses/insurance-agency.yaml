@@ -1,0 +1,32 @@
+id: insurance-agency
+name: Insurance Agency
+codes:
+  naics: "524210"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  An insurance agency gathers the people, property, activity, limits,
+  loss history, existing coverage, and risk changes needed to seek
+  quotes from authorized carriers. The proposal must keep coverage,
+  exclusions, conditions, premium, term, and client selection together.
+
+  Binding starts a continuing service record. Policy documents,
+  endorsements, evidence requests, payments, renewals, audits,
+  cancellations, and claims notices arrive on different timelines.
+  The agency records what the carrier controls, what the client decided,
+  and which requested change is actually effective.
+revenue_model:
+  - id: policy-commissions
+    note: carrier compensation on placed and renewed policies
+  - id: authorized-service-fees
+    note: permitted fees for defined placement or service work
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+licenses:
+  us:
+    - ref: insurance-producer-license
+      requirement: required
+      condition: Required for individuals or agencies selling, soliciting, or negotiating the covered insurance lines.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [insurance-carrier]
+  sells_to: [individual-client, commercial-client]

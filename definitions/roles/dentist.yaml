@@ -1,0 +1,6 @@
+id: dentist
+name: Dentist
+kind: role
+summary: >
+  Diagnoses oral conditions, sets treatment plans, performs clinical
+  procedures, and holds responsibility for the patient's dental care.

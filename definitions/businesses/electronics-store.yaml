@@ -1,0 +1,20 @@
+id: electronics-store
+name: Electronics Store
+codes:
+  naics: "449210"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  An electronics store manages high-value items by exact model, serial
+  number, specification, compatibility, warranty, release date, and
+  accessory need. Advice has to connect the customer's use and existing
+  equipment to a product that can be installed and supported.
+
+  Shrink, fraud, rapid price changes, open-box condition, returns, data
+  privacy, and warranty routing shape transaction control. Receiving,
+  secure storage, demonstration stock, sale, serial capture, setup,
+  trade-in, return disposition, and customer handoff update the same
+  unit record.
+supply_chain:
+  buys_from: [electronics-distributor]
+  sells_to: [retail-consumer]

@@ -1,0 +1,6 @@
+id: medication-record
+name: Medication record
+kind: document
+summary: >
+  Ordered medication, schedule, administration or assistance, omission,
+  response, and staff identity.

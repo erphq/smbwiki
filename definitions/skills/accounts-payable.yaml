@@ -1,0 +1,86 @@
+id: accounts-payable
+name: Accounts payable
+kind: skill
+department: finance
+summary: >
+  Accounts payable controls supplier bills from receipt through
+  approval and payment. The work establishes that the charge belongs
+  to the business, matches what was ordered, and is paid on the agreed
+  date.
+inputs: [supplier-invoice, purchase-order]
+outputs: [payment-record]
+steps:
+  - name: Register the bill
+    consumes: [supplier-invoice]
+    note: >
+      The due date and supplier identity need to be captured before the
+      invoice leaves the inbox.
+  - name: Match the commitment
+    consumes: [purchase-order]
+    note: >
+      Quantity, price, and job or department ownership are checked
+      against the approved order.
+  - name: Resolve exceptions
+    note: >
+      A disputed line stays visible with one owner and a next action.
+  - name: Release and record payment
+    produces: [payment-record]
+    note: >
+      The record links the payment to the invoices it settled.
+tension: >
+  Cash retention competes with supplier reliability. Holding money
+  until the due date protects working capital, while missed terms can
+  delay the next urgent order or remove negotiated credit.
+failure_modes:
+  - name: Duplicate payment
+    cost: >
+      Cash leaves twice and recovery depends on the supplier finding or
+      accepting the error.
+    signal: >
+      The same supplier, amount, and invoice number appear more than
+      once in the payment queue.
+  - name: Approval without evidence
+    cost: >
+      The business pays for an incorrect quantity, price, or expense
+      owner.
+    signal: >
+      Bills are approved without a matching order or a named approver.
+  - name: Missed due date
+    cost: >
+      The account loses terms, discounts, or access to time-sensitive
+      supply.
+    signal: >
+      Due invoices remain unassigned inside the next payment window.
+maturity:
+  - level: run badly
+    looks_like: >
+      Invoices sit in email until a supplier calls, and payment history
+      has to be reconstructed from the bank account.
+  - level: run well
+    looks_like: >
+      Every bill has a due date, approver, order reference, and payment
+      status visible in one queue.
+  - level: run excellently
+    looks_like: >
+      Exceptions are resolved before the payment run, cash requirements
+      are known ahead of time, and supplier statements reconcile without
+      a search.
+competencies:
+  - name: Document matching
+    note: >
+      Small differences in unit, quantity, freight, and tax are where
+      expensive duplicate or incorrect charges hide.
+  - name: Payment judgment
+    note: >
+      The operator knows which supplier terms protect cash and which
+      relationships protect operations.
+automation:
+  now: >
+    Invoice capture, duplicate detection, due-date queues, approval
+    routing, and payment-file preparation.
+  human: >
+    Ownership disputes, damaged or missing goods, and decisions about
+    paying a critical supplier outside the normal run.
+questions:
+  - Which invoices due in the next payment run still lack approval?
+  - Can every payment be traced to an invoice and an authorized order?

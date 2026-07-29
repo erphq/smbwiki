@@ -1,0 +1,43 @@
+id: outpatient-surgery-center
+name: Outpatient Surgery Center
+codes:
+  naics: "621493"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  An outpatient surgery center coordinates a scheduled procedure across
+  patient selection, surgeon, anesthesia, consent, preoperative testing,
+  equipment, implants, sterile supply, room time, recovery, escort, and
+  transfer capability. Readiness must be cleared before the procedure
+  uses scarce room and clinical capacity.
+
+  The case record follows identity, site, procedure, medications,
+  counts, devices, specimens, findings, recovery criteria, discharge,
+  and follow-up. Infection prevention, emergency response, medication
+  custody, equipment maintenance, and sterilization records support
+  each day beyond the individual chart.
+revenue_model:
+  - id: facility-procedure-fees
+    note: surgical facility resources billed for eligible outpatient cases
+  - id: supplies-and-implants
+    note: allowed procedure-specific materials and devices
+  - remove: [patient-services, preventive-care]
+skills:
+  - ref: instrument-sterilization
+    roles: [clinical-assistant]
+    documents: [instrument-log, sterilization-log]
+    metrics: [cycle-failure-rate]
+    software: [practice-management]
+licenses:
+  us:
+    - ref: ambulatory-surgery-center-certification
+      requirement: required
+      condition: Required for the modeled facility under applicable facility approval and coverage rules.
+      as_of: "2026-07-29"
+    - ref: physician-license
+      requirement: required
+      condition: Required for physicians performing regulated medical and surgical care.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [surgical-supply-distributor]
+  sells_to: [patient, payer]

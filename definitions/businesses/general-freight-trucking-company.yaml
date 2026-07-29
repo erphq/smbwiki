@@ -1,0 +1,26 @@
+id: general-freight-trucking-company
+name: General Freight Trucking Company
+codes:
+  naics: "484121"
+catalog_group: logistics-production
+extends: transport-operator-base
+summary: >
+  A general freight trucking company commits tractors, trailers,
+  drivers, hours, lanes, and appointment capacity to customer loads.
+  Dispatch checks commodity, weight, equipment, route, facility,
+  pickup, delivery, fuel, and repositioning before a trip is released.
+
+  The carrier holds physical custody from pickup through delivery.
+  Driver qualification, equipment inspection, bill of lading,
+  securement, location, hours, delay, fuel, tolls, damage, proof of
+  delivery, maintenance, and payroll evidence all affect the final
+  service and trip margin.
+revenue_model:
+  - id: linehaul-and-contract-freight
+    note: loaded movement sold by lane, distance, trip, or contract rate
+  - id: accessorial-and-special-work
+    note: detention, stop, handling, storage, and authorized extra service
+  - remove: [transport-charges, accessorial-charges]
+supply_chain:
+  buys_from: [truck-dealer, fuel-provider]
+  sells_to: [shipper, freight-brokerage]

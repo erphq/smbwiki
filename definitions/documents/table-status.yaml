@@ -1,0 +1,6 @@
+id: table-status
+name: Table status
+kind: document
+summary: >
+  Current table availability, party assignment, seating time, service
+  stage, expected release, and reset readiness.

@@ -1,0 +1,21 @@
+id: graphic-design-studio
+name: Graphic Design Studio
+codes:
+  naics: "541430"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A graphic design studio converts a communication need, audience,
+  message, content, format, brand system, production method, and
+  approval structure into controlled visual deliverables. The brief
+  establishes which problem the work must solve and which inputs the
+  client must supply.
+
+  Concepts become versions across different dimensions, resolutions,
+  color spaces, materials, and channels. The studio manages feedback,
+  content changes, fonts, images, usage rights, accessibility,
+  production specifications, proofs, source files, release approval, and
+  the difference between a final design and a production-ready file.
+supply_chain:
+  buys_from: [commercial-printer, stock-asset-provider]
+  sells_to: [individual-client, commercial-client]

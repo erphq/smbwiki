@@ -1,0 +1,6 @@
+id: physical-therapist
+name: Physical therapist
+kind: role
+summary: >
+  Evaluates function, sets a treatment plan, directs therapeutic work,
+  measures progress, and decides when the plan should change.

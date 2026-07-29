@@ -1,0 +1,6 @@
+id: incident-report
+name: Incident report
+kind: document
+summary: >
+  Time, people, observations, immediate response, notifications,
+  evidence, follow-up, and review for an unexpected event.

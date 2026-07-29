@@ -1,0 +1,101 @@
+id: transport-execution
+name: Transport execution
+kind: skill
+department: operations
+summary: >
+  Transport execution turns an accepted movement into a dispatched
+  vehicle, controlled custody, completed stops, delivery evidence, and
+  billable work. Driver, equipment, cargo, route, hours, appointments,
+  exceptions, and documents remain on one trip record.
+inputs: [load-request]
+outputs: [bill-of-lading, proof-of-delivery]
+steps:
+  - name: Plan the trip
+    role: dispatcher
+    consumes: [load-request]
+    note: >
+      Stops, cargo, equipment, handling, appointments, route, distance,
+      hours, access, cost, and customer promise are checked together.
+  - name: Release driver and vehicle
+    role: dispatcher
+    note: >
+      Qualified driver, serviceable equipment, instructions, documents,
+      contacts, tracking, and exception authority are confirmed.
+  - name: Take custody
+    role: driver
+    produces: [bill-of-lading]
+    note: >
+      Arrival, count, condition, securement, bill of lading, seal,
+      exception, and departure time establish physical custody.
+  - name: Control the movement
+    role: driver
+    note: >
+      Location, available hours, vehicle condition, delay, customer
+      contact, route change, and recovery action stay current.
+  - name: Deliver and close
+    role: driver
+    produces: [proof-of-delivery]
+    note: >
+      Recipient, time, count, condition, signature, refusal, returns,
+      final mileage, documents, and vehicle status are reconciled.
+tension: >
+  Vehicle utilization competes with legal, safe, and reliable movement.
+  Dense schedules protect revenue; plans that ignore hours, loading,
+  traffic, access, service, and recovery time create late work and
+  unsafe pressure on drivers.
+failure_modes:
+  - name: Dispatch plan is infeasible at release
+    cost: >
+      The driver begins a trip that cannot meet appointments within
+      available hours and realistic stop time.
+    signal: >
+      Planned arrival has no remaining allowance for loading, traffic,
+      access, breaks, or known delay.
+  - name: Cargo exception is accepted silently
+    cost: >
+      Shortage, damage, count, temperature, or packaging responsibility
+      becomes a dispute at delivery.
+    signal: >
+      Pickup document contains a notation absent from the trip
+      exception record.
+  - name: Delivery closes without usable proof
+    cost: >
+      Customer billing, claims, and custody defense wait on missing or
+      unreadable evidence.
+    signal: >
+      Completed trip lacks recipient, time, condition, and document
+      review.
+maturity:
+  - level: run badly
+    looks_like: >
+      Dispatch calls drivers for status and reconstructs mileage,
+      documents, delays, and exceptions after the trip.
+  - level: run well
+    looks_like: >
+      Plan, driver, vehicle, custody, milestones, hours, exception,
+      delivery proof, and closeout share one trip record.
+  - level: run excellently
+    looks_like: >
+      Actual stop, route, delay, service, fuel, maintenance, and failure
+      evidence improves pricing, dispatch, fleet, and customer promises.
+competencies:
+  - name: Movement feasibility
+    note: >
+      The operator combines equipment, cargo, hours, route, appointment,
+      access, weather, and stop work into a credible plan.
+  - name: Custody and exception control
+    note: >
+      Drivers and dispatch preserve evidence and recovery options while
+      the goods are still in their control.
+automation:
+  now: >
+    Route planning, driver and vehicle assignment, electronic logs,
+    navigation, tracking, geofences, documents, exception alerts, proof
+    of delivery, and mileage.
+  human: >
+    Safe operation, equipment inspection, cargo condition, road and
+    site judgment, customer contact, recovery, refusal, and emergency
+    decisions.
+questions:
+  - Which dispatched trip cannot meet its next commitment under current hours and conditions?
+  - Which completed delivery still lacks evidence sufficient for billing and custody?

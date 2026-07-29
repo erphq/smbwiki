@@ -1,0 +1,6 @@
+id: retail-manager
+name: Retail manager
+kind: role
+summary: >
+  Owns store readiness, staffing, stock decisions, cash control, and
+  resolution of customer and supplier exceptions.

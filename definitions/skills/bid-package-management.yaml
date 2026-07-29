@@ -1,0 +1,95 @@
+id: bid-package-management
+name: Bid package management
+kind: skill
+department: supply
+summary: >-
+  Divides the design into complete trade packages, exposes scope interfaces,
+  issues addenda, and brings comparable bids back on the same basis. Bid
+  package management leaves a current work basis, a field record, and
+  acceptance evidence that another operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - closeout-package
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before bid package management, read the current scope and revisions,
+      then verify issued bid documents, coordinated trade boundaries,
+      contractual dates, review routes, and owner decisions.
+  - name: Set the field controls
+    note: >-
+      Translate bid package management into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During bid package management, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept bid package management, check the completed work against
+      contract documents, authority approvals, designer review, tested
+      systems, and owner turnover criteria, then close correction and issue
+      the resulting record.
+tension: >-
+  Bid package management has to remain inside its acceptance basis while
+  production moves. An unresolved scope boundary or late technical decision
+  can move cost and time into field rework.
+failure_modes:
+  - name: Bid package management starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for bid
+      package management is settled.
+    signal: >-
+      The bid package management work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Bid package management closes without evidence
+    cost: >-
+      A concealed condition or required result from bid package management
+      cannot be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Bid package management is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Bid package management is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Bid package management starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Bid package management uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Commercial project controls
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of bid package management.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for bid package management have to be captured while
+      the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Bid package management can use digital revisions, checklists, hold points,
+    photo capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting bid package management
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop bid package management before work
+    begins?
+  - >-
+    Which record proves bid package management was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

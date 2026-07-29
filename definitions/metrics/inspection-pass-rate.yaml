@@ -1,0 +1,8 @@
+id: inspection-pass-rate
+name: Inspection pass rate
+kind: metric
+summary: >
+  Share of scheduled inspections accepted without a failed item or required
+  reinspection.
+unit: percent
+direction: higher

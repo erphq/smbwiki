@@ -1,0 +1,96 @@
+id: production-quality-control
+name: Production quality control
+kind: skill
+department: quality
+summary: >
+  Production quality control establishes how work is checked, records
+  observed results, contains nonconforming output, authorizes
+  disposition, and releases accepted quantity. Specification,
+  measurement, traceability, and decision authority stay connected.
+inputs: [production-order, routing-sheet]
+outputs: [quality-report]
+steps:
+  - name: Establish the inspection
+    role: quality-inspector
+    consumes: [production-order, routing-sheet]
+    note: >
+      Current revision, characteristics, method, equipment, sampling,
+      tolerance, records, and release authority are confirmed.
+  - name: Verify starting control
+    role: quality-inspector
+    note: >
+      Material identity, measurement equipment, setup result, first
+      article, and required approvals are acceptable before the run
+      proceeds.
+  - name: Inspect production
+    role: machine-operator
+    consumes: [routing-sheet]
+    note: >
+      Required in-process checks, observations, quantities, tool
+      changes, and process exceptions are recorded where they occur.
+  - name: Control nonconformance
+    role: quality-inspector
+    note: >
+      Suspect quantity is identified and held while rework, repair,
+      use-as-is, scrap, or supplier action receives authority.
+  - name: Release accepted output
+    role: quality-inspector
+    produces: [quality-report]
+    note: >
+      Results, accepted quantity, traceability, deviations, disposition,
+      signoff, and required customer evidence are complete.
+tension: >
+  Production flow competes with independent evidence of conformance.
+  Excess inspection consumes capacity; weak inspection allows hidden
+  defects, mixed status, and unsupported release.
+failure_modes:
+  - name: Inspection uses an obsolete requirement
+    cost: >
+      Accepted records support the wrong revision, tolerance, method, or
+      customer condition.
+    signal: >
+      Inspection plan revision differs from the production order.
+  - name: Suspect quantity is not physically controlled
+    cost: >
+      Nonconforming units mix with accepted output and can ship.
+    signal: >
+      System hold exists without identified container or location.
+  - name: Measurement result lacks traceability
+    cost: >
+      The shop cannot show which lot, unit, instrument, method, or
+      operator supports release.
+    signal: >
+      Quality report stores pass without observed values or identity.
+maturity:
+  - level: run badly
+    looks_like: >
+      Quality is checked at the end, and operators sort defects when
+      the customer or final inspector finds them.
+  - level: run well
+    looks_like: >
+      Requirement, first article, in-process check, containment,
+      disposition, traceability, and release share one record.
+  - level: run excellently
+    looks_like: >
+      Defect and process evidence changes methods, tooling, suppliers,
+      maintenance, training, and design review before recurrence.
+competencies:
+  - name: Measurement and interpretation
+    note: >
+      The inspector selects a valid method and understands the
+      uncertainty and limits of the observed result.
+  - name: Nonconformance control
+    note: >
+      Staff protect identity and custody while the authorized technical
+      and commercial disposition is made.
+automation:
+  now: >
+    Inspection plans, instrument status, data capture, statistical
+    alerts, holds, nonconformance routing, certificates, and release
+    status.
+  human: >
+    Method suitability, ambiguous specification, visual acceptance,
+    root cause, disposition authority, and customer deviation decisions.
+questions:
+  - Which accepted quantity cannot be traced to the required checks?
+  - Which suspect material is not physically separated from saleable output?

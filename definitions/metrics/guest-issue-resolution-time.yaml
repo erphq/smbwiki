@@ -1,0 +1,8 @@
+id: guest-issue-resolution-time
+name: Guest issue resolution time
+kind: metric
+summary: >
+  Minutes from a recorded guest concern until the restaurant completes
+  the promised response or follow-up.
+unit: minutes
+direction: lower

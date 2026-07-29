@@ -1,0 +1,102 @@
+id: vehicle-sales
+name: Vehicle sales
+kind: skill
+department: sales
+summary: >
+  Vehicle sales carries an identified unit from acquisition and
+  reconditioning state through buyer qualification, demonstration,
+  deal agreement, funding, title, delivery, and final accounting. The
+  promised vehicle and completed documents remain the same transaction.
+inputs: [client-profile, stock-record]
+outputs: [vehicle-purchase-agreement, sales-receipt]
+steps:
+  - name: Match buyer and vehicle
+    role: vehicle-salesperson
+    consumes: [client-profile, stock-record]
+    note: >
+      Intended use, budget, timing, trade, required features, unit
+      availability, condition, and known ownership facts are confirmed.
+  - name: Present and demonstrate
+    role: vehicle-salesperson
+    note: >
+      Identified vehicle, equipment, condition, history, warranty,
+      inspection, test drive, and unanswered questions are recorded.
+  - name: Agree the deal
+    role: vehicle-salesperson
+    produces: [vehicle-purchase-agreement]
+    note: >
+      Vehicle, price, trade, taxes, fees, products, credits, deposit,
+      delivery conditions, and signatures form one buyer decision.
+  - name: Complete funding and title
+    role: finance-manager
+    consumes: [vehicle-purchase-agreement]
+    note: >
+      Identity, credit, lender terms, contract, payoff, title, tax,
+      registration, insurance, and funding conditions are completed.
+  - name: Deliver and close
+    role: vehicle-salesperson
+    consumes: [vehicle-purchase-agreement]
+    produces: [sales-receipt]
+    note: >
+      Final vehicle condition, accessories, keys, documents, payment,
+      customer acceptance, inventory relief, and deal accounting close.
+tension: >
+  Deal speed competes with unit identity, disclosure, funding, title,
+  and complete delivery. A verbal commitment can reserve the buyer;
+  incomplete facts create unwind risk, delayed cash, and disputes after
+  the vehicle leaves.
+failure_modes:
+  - name: Deal follows the wrong unit state
+    cost: >
+      Price and promise ignore actual condition, reconditioning, title,
+      installed equipment, or availability.
+    signal: >
+      Vehicle identification or inventory status changes after terms
+      are quoted.
+  - name: Funding condition appears after delivery
+    cost: >
+      The dealer releases the vehicle without final cash authority and
+      may have to restructure or recover the deal.
+    signal: >
+      Delivery checklist remains open on lender approval, identity,
+      insurance, contract, or stipulation.
+  - name: Final accounting omits a commitment
+    cost: >
+      Due bill, accessory, trade payoff, repair, tax, or fee remains
+      unowned after gross profit is reported.
+    signal: >
+      Customer promise exists outside the signed deal jacket.
+maturity:
+  - level: run badly
+    looks_like: >
+      Sales, finance, service, title, and accounting each maintain a
+      partial deal and reconcile it after delivery.
+  - level: run well
+    looks_like: >
+      Unit, buyer, demonstration, agreement, trade, funding, title,
+      commitments, delivery, and accounting share one deal jacket.
+  - level: run excellently
+    looks_like: >
+      Lead, inventory-age, reconditioning, funding, unwind, and gross
+      evidence improves acquisition, pricing, staffing, lender use, and
+      delivery control.
+competencies:
+  - name: Unit and deal control
+    note: >
+      The operator keeps the physical vehicle, represented condition,
+      commercial terms, documents, and ownership transfer aligned.
+  - name: Buyer communication
+    note: >
+      Staff explain price, condition, products, financing, trade, and
+      delivery commitments accurately.
+automation:
+  now: >
+    Inventory feeds, lead records, desking, credit applications,
+    contracts, title tasks, lender status, delivery checklists, and deal
+    accounting.
+  human: >
+    Vehicle condition, demonstration, negotiation, disclosure,
+    suitability, exception handling, identity, and release authority.
+questions:
+  - Which promised vehicle is not ready under the condition represented to the buyer?
+  - Which delivered deal still depends on an unfunded or unverified condition?

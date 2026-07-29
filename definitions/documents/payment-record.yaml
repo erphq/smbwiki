@@ -1,0 +1,5 @@
+id: payment-record
+name: Payment record
+kind: document
+summary: >
+  Proof a payment happened: amount, method, date, what it settles.

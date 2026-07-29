@@ -1,0 +1,27 @@
+id: towing-company
+name: Towing Company
+codes:
+  naics: "488410"
+catalog_group: construction-property
+extends: transport-operator-base
+summary: >
+  A towing company receives a disabled, damaged, impounded, or relocated
+  vehicle request and establishes authority, exact location, road
+  exposure, vehicle condition, driveline, clearance, destination, and
+  payment path. Dispatch matches the recovery method and truck to the
+  scene.
+
+  The operator records preexisting condition, hookup, securement,
+  custody, keys, personal property, mileage, storage, release authority,
+  and destination handoff. Traffic risk and damaged equipment can change
+  the plan immediately, so scene communication and stop authority remain
+  with the operator.
+revenue_model:
+  - id: towing-and-recovery
+    note: dispatch, hookup, transport, winching, and scene work
+  - id: storage-and-release
+    note: vehicle custody billed until authorized release
+  - remove: [transport-charges, accessorial-charges]
+supply_chain:
+  buys_from: [towing-equipment-distributor]
+  sells_to: [individual-client, commercial-client, auto-repair-shop]

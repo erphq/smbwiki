@@ -1,0 +1,8 @@
+id: design-documentation
+name: Design documentation
+kind: software-category
+summary: >
+  Plans, models, details, specifications, schedules, revisions, markups,
+  coordination, and issue control for design work.
+erpai_category: operations
+erpai_apps: []

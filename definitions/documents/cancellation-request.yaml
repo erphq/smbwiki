@@ -1,0 +1,6 @@
+id: cancellation-request
+name: Cancellation request
+kind: document
+summary: >
+  A member's dated instruction to end or pause an agreement, including
+  stated reason and requested effective date.

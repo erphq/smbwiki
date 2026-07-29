@@ -1,0 +1,6 @@
+id: patient-statement
+name: Patient statement
+kind: document
+summary: >
+  The patient's account of charges, payer adjustments, payments, and
+  remaining responsibility.

@@ -1,0 +1,109 @@
+id: finish-carpentry-contractor
+name: Finish Carpentry Contractor
+codes:
+  naics: '238350'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A finish carpentry contractor installs doors, trim, cabinets, panels,
+  hardware, and other fitted woodwork after the building has accumulated
+  framing, drywall, floor, and ceiling tolerances. Field measurement,
+  scribing, reveals, joints, backing, moisture condition, and finish
+  protection define the work.
+
+
+  The result is judged at close range and has to operate as well as align.
+  Material arrives finished or nearly finished, so damage and bad cuts are
+  costly. The crew sequences room access, resolves out-of-square conditions,
+  controls fillers and transitions, and protects completed work while other
+  trades finish around it.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: field-measurement-and-scribing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: interior-trim-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: cabinet-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: door-fitting
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: finish-protection
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - punch-list
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - millwork-fabricator
+    - hardware-distributor
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

@@ -1,0 +1,6 @@
+id: warehouse-manager
+name: Warehouse manager
+kind: role
+summary: >
+  Controls receiving, storage locations, labor, order release,
+  inventory accuracy, and shipping cutoffs.

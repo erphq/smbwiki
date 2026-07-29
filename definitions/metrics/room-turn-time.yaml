@@ -1,0 +1,8 @@
+id: room-turn-time
+name: Room turn time
+kind: metric
+summary: >
+  Time from guest departure until the room is inspected and available
+  for the next arrival.
+unit: minutes
+direction: lower

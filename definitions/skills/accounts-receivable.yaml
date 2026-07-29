@@ -1,0 +1,88 @@
+id: accounts-receivable
+name: Accounts receivable
+kind: skill
+department: finance
+summary: >
+  Accounts receivable keeps issued customer invoices tied to payments,
+  disputes, and collection work. The aging report is the operating
+  queue; it should explain every open balance without a search through
+  email or bank activity.
+inputs: [customer-invoice]
+outputs: [payment-record, aging-report]
+steps:
+  - name: Open the balance
+    consumes: [customer-invoice]
+    produces: [aging-report]
+    note: >
+      The invoice date, terms, contact, and evidence of delivery belong
+      on the account when the balance is created.
+  - name: Post receipts
+    produces: [payment-record]
+    note: >
+      Unapplied cash makes a paying customer look delinquent.
+  - name: Separate disputes from silence
+    note: >
+      A pricing or completion dispute needs an operational owner;
+      silence needs collection follow-up.
+  - name: Work the aging queue
+    note: >
+      Each overdue balance carries the last contact, customer promise,
+      and next action.
+tension: >
+  Collection speed competes with the time required to resolve a real
+  service or billing dispute. Pressing a disputed balance damages the
+  relationship; leaving an undisputed balance alone turns completed
+  work into customer financing.
+failure_modes:
+  - name: Unapplied payment
+    cost: >
+      Collection effort reaches a customer who has already paid and the
+      ledger remains overstated.
+    signal: >
+      Bank receipts have no invoice allocation at the end of the day.
+  - name: Ownerless dispute
+    cost: >
+      The invoice ages while operations and finance each wait for the
+      other to respond.
+    signal: >
+      A disputed balance has no named resolver or promised response
+      date.
+  - name: Stale collection promise
+    cost: >
+      The business plans cash around a date the customer no longer
+      intends to meet.
+    signal: >
+      A promised payment date passes without a receipt or follow-up.
+maturity:
+  - level: run badly
+    looks_like: >
+      The bank balance is treated as the receivables ledger and overdue
+      customers are found when cash gets tight.
+  - level: run well
+    looks_like: >
+      Payments are posted daily, disputes have owners, and every overdue
+      account has a current next action.
+  - level: run excellently
+    looks_like: >
+      Billing defects are traced back to their source, cash forecasts use
+      current customer promises, and old balances never disappear inside
+      a total.
+competencies:
+  - name: Ledger discipline
+    note: >
+      Collection decisions are only as good as the invoice, payment, and
+      credit allocations underneath the aging report.
+  - name: Firm customer communication
+    note: >
+      The operator can ask for a date and amount while recognizing when
+      the customer has raised a valid operational problem.
+automation:
+  now: >
+    Aging calculation, payment matching, reminders, account statements,
+    and follow-up queues.
+  human: >
+    Dispute resolution, payment-plan judgment, and calls where future
+    business is weighed against an overdue balance.
+questions:
+  - Which open balance has gone longest without a customer contact?
+  - How much of the aging report reflects an active dispute?

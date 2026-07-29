@@ -1,0 +1,8 @@
+id: machine-uptime
+name: Machine uptime
+kind: metric
+summary: >
+  Scheduled operating time that revenue-producing machines are
+  available and able to complete cycles.
+unit: percent
+direction: higher

@@ -1,0 +1,100 @@
+id: medication-dispensing
+name: Medication dispensing
+kind: skill
+department: operations
+summary: >
+  Medication dispensing converts an authorized prescription into the
+  correct labeled product for the correct patient. Prescriber,
+  medication, dose, directions, clinical checks, claim, stock, product
+  identity, pharmacist release, counseling, and pickup remain linked.
+inputs: [prescription]
+outputs: [dispensing-record]
+steps:
+  - name: Validate the prescription
+    role: pharmacy-technician
+    consumes: [prescription]
+    note: >
+      Patient, prescriber, date, drug, strength, directions, quantity,
+      refills, authentication, and missing information are checked.
+  - name: Resolve clinical and payment exceptions
+    role: pharmacist
+    consumes: [prescription]
+    note: >
+      Allergy, interaction, duplication, dose, timing, substitution,
+      coverage, prior authorization, and prescriber questions are
+      resolved under professional authority.
+  - name: Prepare the fill
+    role: pharmacy-technician
+    note: >
+      Product and lot, quantity, calculation, label, container, warning,
+      claim, stock movement, and supporting records are assembled.
+  - name: Perform the pharmacist check
+    role: pharmacist
+    note: >
+      Prescription, patient, product, strength, quantity, label,
+      directions, image or contents, and resolved exceptions are
+      independently verified.
+  - name: Release to the patient
+    role: pharmacist
+    produces: [dispensing-record]
+    note: >
+      Identity, payment, counseling, questions, pickup or delivery,
+      signature, and final custody complete the dispensing record.
+tension: >
+  Queue speed competes with clinical and identity control. Delays can
+  interrupt therapy; bypassed validation, preparation, or pharmacist
+  checks can produce direct patient harm.
+failure_modes:
+  - name: Data entry changes the prescription
+    cost: >
+      Later preparation and checks follow a medication, strength,
+      quantity, patient, or direction that was never authorized.
+    signal: >
+      Frequent manual edits lack a source image or documented prescriber
+      clarification.
+  - name: Exception is worked around without resolution
+    cost: >
+      Clinical, coverage, refill, or product questions reappear at
+      pickup or reach the patient.
+    signal: >
+      Hold is removed without a pharmacist or prescriber decision.
+  - name: Handoff identity is weak
+    cost: >
+      Correct medication reaches the wrong patient or unauthorized
+      recipient.
+    signal: >
+      Pickup closes without the required identity and custody evidence.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff push items through a queue and rely on the final pharmacist
+      glance to catch upstream errors.
+  - level: run well
+    looks_like: >
+      Prescription, exception, claim, stock, preparation, independent
+      check, counseling, and custody share one dispensing record.
+  - level: run excellently
+    looks_like: >
+      Near-miss, delay, clarification, inventory, and pickup evidence
+      improves staffing, workflow, product control, and patient support.
+competencies:
+  - name: Medication and prescription judgment
+    note: >
+      The pharmacist evaluates clinical appropriateness, legal validity,
+      substitution, and information that requires prescriber contact.
+  - name: Independent product verification
+    note: >
+      The final check compares source authority with patient, prepared
+      product, label, and handoff.
+automation:
+  now: >
+    Prescription intake, interaction screening, claims, inventory,
+    label and image capture, fill queues, verification prompts, pickup,
+    and controlled-record reporting.
+  human: >
+    Clinical judgment, ambiguous orders, prescriber consultation,
+    professional verification, counseling, safeguarding, and refusal to
+    dispense.
+questions:
+  - Which prescription is waiting on an exception with no named resolver?
+  - Where can one person's data entry error pass through every later check?

@@ -1,0 +1,8 @@
+id: laboratory-information-system
+name: Laboratory information system
+kind: software-category
+summary: >
+  Test orders, specimen identity and custody, instrument worklists,
+  quality controls, result review, and reporting.
+erpai_category: healthcare
+erpai_apps: []

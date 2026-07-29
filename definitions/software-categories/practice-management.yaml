@@ -1,0 +1,8 @@
+id: practice-management
+name: Practice management
+kind: software-category
+summary: >
+  Appointment scheduling, registration, eligibility, treatment plans,
+  patient communication, and front-office work for a clinic.
+erpai_category: operations
+erpai_apps: []

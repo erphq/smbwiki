@@ -1,0 +1,35 @@
+id: retail-bakery
+name: Retail Bakery
+codes:
+  naics: "311811"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A retail bakery converts forecast and customer orders into mixes,
+  fermentation or rest, shaping, proofing, baking, cooling, finishing,
+  display, and pickup windows. Recipes, batch yields, oven capacity,
+  labor, shelf life, and packaging determine what can be promised.
+
+  Most production happens before demand is known exactly. The operator
+  uses prior sales, preorders, weather, holidays, and remaining stock to
+  adjust later batches while ingredients and oven time are still
+  movable. Sold-out, aged, damaged, and wasted product must leave
+  available inventory promptly.
+revenue_model:
+  - id: counter-sales
+    note: finished baked goods sold from same-day display
+  - id: advance-orders
+    note: decorated, packaged, or larger orders produced for a promised pickup
+  - remove: [dine-in, takeout, catering]
+skills:
+  - ref: dough-production
+    roles: [head-chef, line-cook]
+    documents: [recipe-card, prep-list]
+    metrics: [dough-yield, waste-percentage]
+    software: [kitchen-display-system]
+licenses:
+  us:
+    - remove: [liquor-license]
+supply_chain:
+  buys_from: [food-distributor, packaging-distributor]
+  sells_to: [retail-consumer]

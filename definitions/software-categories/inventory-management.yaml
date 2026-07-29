@@ -1,0 +1,7 @@
+id: inventory-management
+name: Inventory management
+kind: software-category
+summary: >
+  Stock levels, reorder points, receiving, and shrink tracking.
+erpai_category: inventory
+erpai_apps: []

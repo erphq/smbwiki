@@ -1,0 +1,94 @@
+id: freight-claims
+name: Freight claims
+kind: skill
+department: finance
+summary: >
+  Freight claims preserves and organizes evidence of loss, damage,
+  shortage, or service failure, provides required notice, identifies the
+  contractual and custody path, states the claimed value, and follows the
+  matter through acceptance, denial, settlement, or other closure.
+inputs: [bill-of-lading, proof-of-delivery]
+outputs: [freight-claim]
+steps:
+  - name: Preserve the exception record
+    role: claims-coordinator
+    consumes: [bill-of-lading, proof-of-delivery]
+    note: >
+      Pickup condition, seals, counts, delivery notation, photos,
+      temperature or handling data, packaging, and communication are
+      secured while evidence is available.
+  - name: Establish notice and custody
+    role: claims-coordinator
+    note: >
+      Parties, contract, cargo owner, carrier, dates, transfer points, and
+      required notice routes determine who must act next.
+  - name: Quantify and file
+    role: claims-coordinator
+    produces: [freight-claim]
+    note: >
+      Items, quantity, value basis, salvage, mitigation, requested remedy,
+      evidence, and filing date form one claim package.
+  - name: Work the resolution
+    role: claims-coordinator
+    note: >
+      Acknowledgement, information requests, investigation, reserve,
+      customer communication, carrier response, settlement, and closure
+      retain owners and dates.
+tension: >
+  Fast freight and account closure compete with preserving evidence and
+  rights after an exception. Operational teams want to move the next load;
+  lost notation, product condition, notice, or custody detail cannot be
+  recreated when the claim is challenged.
+failure_modes:
+  - name: Delivery exception lacks notation
+    cost: >
+      The receiving record appears clean while later photos or counts claim
+      damage or shortage.
+    signal: >
+      Customer reports a problem after signing proof with no exception.
+  - name: Mitigation and salvage unmanaged
+    cost: >
+      Recoverable value deteriorates and claimed loss increases without a
+      documented reason.
+    signal: >
+      Damaged freight has no location, preservation instruction, decision
+      owner, or disposition.
+  - name: Claim waits on an undefined document
+    cost: >
+      Filing or response time passes while every party assumes another
+      person is collecting the evidence.
+    signal: >
+      Open claim status says pending documents and omits item, owner, and
+      due date.
+maturity:
+  - level: run badly
+    looks_like: >
+      Claims begin from customer email after delivery and the coordinator
+      searches load messages for evidence.
+  - level: run well
+    looks_like: >
+      Exception notation, evidence, notice, custody, value, mitigation,
+      filing, communication, and resolution share one claim record.
+  - level: run excellently
+    looks_like: >
+      Claim causes change carrier, shipper, packaging, facility, and
+      execution controls, while exposure and recovery remain visible by load.
+competencies:
+  - name: Evidence reconstruction
+    note: >
+      The coordinator builds a time and custody record from documents,
+      images, condition data, communication, and party statements.
+  - name: Commercial claims judgment
+    note: >
+      Liability, contract, value, mitigation, relationship, and recovery
+      options have to be managed together without inventing certainty.
+automation:
+  now: >
+    Exception intake, document collection, notice templates, claim
+    packages, deadlines, reserves, status queues, and communication history.
+  human: >
+    Evidence quality, liability interpretation, mitigation, negotiation,
+    customer and carrier communication, and settlement authority.
+questions:
+  - What evidence needed for the oldest open claim is still at risk of disappearing?
+  - Which claim cause should change how the next similar load is handled?

@@ -1,0 +1,8 @@
+id: appointment-business-management
+name: Appointment business management
+kind: software-category
+summary: >
+  Client records, appointment inventory, service tickets, provider
+  calendars, checkout, rebooking, and commissions.
+erpai_category: services
+erpai_apps: []

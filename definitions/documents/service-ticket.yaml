@@ -1,0 +1,6 @@
+id: service-ticket
+name: Service ticket
+kind: document
+summary: >
+  Completed personal services, assigned provider, products used, and
+  charges ready for checkout.

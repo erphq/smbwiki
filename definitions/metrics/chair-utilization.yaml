@@ -1,0 +1,8 @@
+id: chair-utilization
+name: Chair utilization
+kind: metric
+summary: >
+  Available chair time occupied by scheduled, revenue-producing
+  service.
+unit: percent
+direction: higher

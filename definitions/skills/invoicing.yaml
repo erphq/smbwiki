@@ -1,0 +1,92 @@
+id: invoicing
+name: Invoicing
+kind: skill
+department: finance
+summary: >
+  Invoicing turns completed field work into a customer bill that agrees
+  with authorized scope, labor, material, tax, payment terms, deposits,
+  and credits. Completion evidence and commercial terms are reconciled
+  before the receivables clock begins.
+inputs: [work-order]
+outputs: [customer-invoice]
+steps:
+  - name: Confirm billable completion
+    role: office-manager
+    consumes: [work-order]
+    note: >
+      Completed and incomplete scope, change approvals, materials, time,
+      permit or inspection state, and customer sign-off are reviewed.
+  - name: Build the invoice
+    role: office-manager
+    note: >
+      Lines, quantities, rates, tax, deposits, credits, retainage, and
+      terms follow the governing quote or service agreement.
+  - name: Resolve differences
+    role: office-manager
+    note: >
+      Missing authorization, unclear technician notes, and price changes
+      return to an owner before the customer receives the bill.
+  - name: Issue and route
+    role: office-manager
+    produces: [customer-invoice]
+    note: >
+      The invoice reaches the customer's required contact and system with
+      supporting reference, due date, and payment route.
+tension: >
+  Billing speed competes with invoice accuracy. Delay turns completed
+  work into financed work; an unsupported or misrouted invoice creates a
+  dispute that delays payment longer.
+failure_modes:
+  - name: Work order closes before evidence
+    cost: >
+      The office bills from scheduled scope while field changes, material,
+      or incomplete work remain unknown.
+    signal: >
+      Completed status appears before technician notes and test evidence.
+  - name: Change reaches invoice without approval
+    cost: >
+      A legitimate field need becomes a customer dispute because the
+      commercial decision was skipped.
+    signal: >
+      Invoice lines exceed the quote or work order authorization.
+  - name: Invoice reaches the wrong route
+    cost: >
+      The customer's approval or payable workflow never starts while the
+      contractor believes the bill was delivered.
+    signal: >
+      Sent invoices lack portal acceptance, named recipient, or delivery
+      confirmation required by the account.
+maturity:
+  - level: run badly
+    looks_like: >
+      The office asks technicians what to bill and issues totals from
+      incomplete work orders at the end of the week.
+  - level: run well
+    looks_like: >
+      Completion, authorization, lines, tax, terms, evidence, recipient,
+      and delivery status are reconciled promptly.
+  - level: run excellently
+    looks_like: >
+      Billing exceptions identify upstream process defects, required
+      customer routes are known by account, and completed jobs cannot age
+      unbilled.
+competencies:
+  - name: Commercial reconciliation
+    note: >
+      The biller connects field evidence to quote, authorization,
+      agreement, material, tax, payment, and account requirements.
+  - name: Exception ownership
+    note: >
+      An unclear line needs the person who can resolve it while field
+      context and customer memory are current.
+automation:
+  now: >
+    Work-order conversion, contract pricing, tax, deposits and credits,
+    required evidence, delivery routing, payment links, and unbilled-work
+    queues.
+  human: >
+    Ambiguous completion, change reconciliation, account-specific
+    requirements, credits, and customer explanation.
+questions:
+  - Which completed job still lacks one fact required to invoice?
+  - Can every invoice line be traced to authorized and completed work?

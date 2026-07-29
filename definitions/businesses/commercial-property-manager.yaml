@@ -1,0 +1,88 @@
+id: commercial-property-manager
+name: Commercial Property Manager
+codes:
+  naics: '531312'
+catalog_group: construction-property
+extends: property-operations-base
+summary: >-
+  A commercial property manager administers leases, rent and recoveries,
+  vendors, common areas, building services, tenant requests, compliance dates,
+  improvements, budgets, and owner reporting. Each tenancy carries its own
+  use, access, insurance, maintenance, option, notice, and expense-allocation
+  rules.
+
+
+  Physical operations and lease accounting meet in daily decisions. A repair
+  may belong to the owner, a tenant, a service contract, an insurance claim,
+  or a capital plan. The manager preserves authority and evidence while
+  keeping occupied premises safe and usable, then reconciles costs to budgets
+  and lease provisions.
+skills:
+  - ref: commercial-lease-administration
+    roles:
+      - property-manager
+      - maintenance-coordinator
+    documents:
+      - lease
+      - property-operating-statement
+    metrics:
+      - operating-expense-variance
+      - rent-collection-rate
+    software:
+      - property-management-system
+  - ref: property-vendor-control
+    roles:
+      - property-manager
+      - maintenance-coordinator
+    documents:
+      - lease
+      - property-operating-statement
+    metrics:
+      - operating-expense-variance
+      - rent-collection-rate
+    software:
+      - property-management-system
+  - ref: common-area-operations
+    roles:
+      - property-manager
+      - maintenance-coordinator
+    documents:
+      - lease
+      - property-operating-statement
+    metrics:
+      - operating-expense-variance
+      - rent-collection-rate
+    software:
+      - property-management-system
+  - ref: expense-recovery-reconciliation
+    roles:
+      - property-manager
+      - maintenance-coordinator
+    documents:
+      - lease
+      - property-operating-statement
+    metrics:
+      - operating-expense-variance
+      - rent-collection-rate
+    software:
+      - property-management-system
+  - ref: tenant-improvement-coordination
+    roles:
+      - property-manager
+      - maintenance-coordinator
+    documents:
+      - lease
+      - property-operating-statement
+    metrics:
+      - operating-expense-variance
+      - rent-collection-rate
+    software:
+      - property-management-system
+supply_chain:
+  buys_from:
+    - maintenance-contractor
+    - janitorial-service
+    - security-system-installer
+  sells_to:
+    - commercial-tenant
+    - property-owner

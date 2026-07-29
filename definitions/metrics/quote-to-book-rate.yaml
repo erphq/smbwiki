@@ -1,0 +1,7 @@
+id: quote-to-book-rate
+name: Quote-to-book rate
+kind: metric
+summary: >
+  Priced shipper opportunities that become booked loads.
+unit: percent
+direction: higher

@@ -1,0 +1,6 @@
+id: submittal
+name: Submittal
+kind: document
+summary: >
+  Product data, shop drawing, sample, calculation, or certificate reviewed
+  against the design before procurement or installation.

@@ -1,0 +1,94 @@
+id: exterior-inspection
+name: Exterior inspection
+kind: skill
+department: operations
+summary: >-
+  Observes site drainage, grading, cladding, openings, roof drainage, decks,
+  walks, vegetation, and visible water paths around the building. Exterior
+  inspection leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - client-brief
+outputs:
+  - inspection-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before exterior inspection, read the current scope and revisions, then
+      verify signed scope, identified property, agreed access, known occupancy
+      and utilities, required disclosures, tools, and weather conditions.
+  - name: Set the field controls
+    note: >-
+      Translate exterior inspection into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During exterior inspection, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept exterior inspection, check the completed work against complete
+      accessible-system observations, stated limitations, clear defect
+      evidence, risk significance, and timely client report, then close
+      correction and issue the resulting record.
+tension: >-
+  Exterior inspection has to remain inside its acceptance basis while
+  production moves. A missed area, vague limitation, or unsupported conclusion
+  can distort a buyer's understanding of the property.
+failure_modes:
+  - name: Exterior inspection starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      exterior inspection is settled.
+    signal: >-
+      The exterior inspection work package still has an open drawing, access,
+      material, predecessor, or approval dependency when labor is assigned.
+  - name: Exterior inspection closes without evidence
+    cost: >-
+      A concealed condition or required result from exterior inspection cannot
+      be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Exterior inspection is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Exterior inspection is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Exterior inspection starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Exterior inspection uses field evidence, production variance, defects,
+      and closeout results to improve the next estimate, work package, and
+      control point.
+competencies:
+  - name: Building condition observation and reporting
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of exterior inspection.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for exterior inspection have to be captured while the
+      relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Exterior inspection can use digital revisions, checklists, hold points,
+    photo capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting exterior inspection remain
+    human.
+questions:
+  - >-
+    Which unresolved condition can stop exterior inspection before work
+    begins?
+  - >-
+    Which record proves exterior inspection was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

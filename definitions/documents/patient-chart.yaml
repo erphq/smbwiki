@@ -1,0 +1,6 @@
+id: patient-chart
+name: Patient chart
+kind: document
+summary: >
+  The longitudinal clinical record containing history, findings,
+  treatment, images, medications, and correspondence.

@@ -1,0 +1,97 @@
+id: boundary-layout-verification
+name: Boundary layout verification
+kind: skill
+department: operations
+summary: >-
+  Separates owner direction from survey evidence, establishes approved
+  offsets, checks corners and easements, and marks a buildable fence line.
+  Boundary layout verification leaves a current work basis, a field record,
+  and acceptance evidence that another operator can trace.
+inputs:
+  - site-plan
+outputs:
+  - quality-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before boundary layout verification, read the current scope and
+      revisions, then verify verified boundary or approved alignment, located
+      utilities, selected system, known grade, gate geometry, material, and
+      access.
+  - name: Set the field controls
+    note: >-
+      Translate boundary layout verification into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During boundary layout verification, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept boundary layout verification, check the completed work against
+      line, grade, post embedment, spacing, fastening, gate operation, finish
+      condition, security, and restored site, then close correction and issue
+      the resulting record.
+tension: >-
+  Boundary layout verification has to remain inside its acceptance basis while
+  production moves. A fence can be straight and complete while occupying the
+  wrong line or leaving gates and grades unusable.
+failure_modes:
+  - name: Boundary layout verification starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      boundary layout verification is settled.
+    signal: >-
+      The boundary layout verification work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Boundary layout verification closes without evidence
+    cost: >-
+      A concealed condition or required result from boundary layout
+      verification cannot be verified without opening, repeat work, delay, or
+      a disputed exception.
+    signal: >-
+      Boundary layout verification is released while its required check,
+      location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Boundary layout verification is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Boundary layout verification starts from a checked basis, follows a
+      named sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Boundary layout verification uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Fence layout and field fit
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of boundary layout verification.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for boundary layout verification have to be captured
+      while the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Boundary layout verification can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting boundary layout verification
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop boundary layout verification before
+    work begins?
+  - >-
+    Which record proves boundary layout verification was accepted before it
+    was covered, loaded, energized, occupied, or handed over?

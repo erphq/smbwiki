@@ -1,0 +1,88 @@
+id: coverage-verification
+name: Coverage verification
+kind: skill
+department: finance
+summary: >
+  Coverage verification records what a payer reports about eligibility,
+  benefits, limits, exclusions, and expected patient responsibility for
+  planned care. It is dated evidence for scheduling and billing
+  decisions; final adjudication can still apply different information.
+inputs: [patient-registration]
+outputs: [insurance-verification]
+steps:
+  - name: Confirm payer identity
+    consumes: [patient-registration]
+    note: >
+      Member, plan, provider, and patient relationship details have to
+      match the payer's record before benefits are interpreted.
+  - name: Check active coverage
+    note: >
+      Effective dates, network status, and the service category are
+      checked for the intended date of care.
+  - name: Record benefit detail
+    note: >
+      Deductible, remaining benefit, copay, coinsurance, exclusions,
+      frequency limits, and authorization requirements are kept with the
+      source and time of inquiry.
+  - name: Publish the verification
+    produces: [insurance-verification]
+    note: >
+      Assumptions and unresolved items are visible to the person
+      presenting cost or preparing the claim.
+tension: >
+  Scheduling speed competes with financial clarity. Holding every visit
+  for exhaustive payer research blocks care; weak verification moves an
+  avoidable surprise to the patient or billing queue.
+failure_modes:
+  - name: Wrong benefit category
+    cost: >
+      Staff quote responsibility from a benefit outside the planned
+      service category.
+    signal: >
+      The verification records general eligibility without service-level
+      benefit detail.
+  - name: Stale verification
+    cost: >
+      Coverage, network status, or remaining benefit changes before the
+      date of care.
+    signal: >
+      The verification date falls outside the clinic's refresh rule for
+      the scheduled service.
+  - name: Authorization requirement missed
+    cost: >
+      A completed service reaches claim review without the payer approval
+      required for payment.
+    signal: >
+      Planned care has a verification result but no authorization status.
+maturity:
+  - level: run badly
+    looks_like: >
+      An insurance card is copied and coverage questions are answered
+      after the payer rejects or reduces the claim.
+  - level: run well
+    looks_like: >
+      Dated service-level benefits, network status, and authorization
+      requirements are visible before care.
+  - level: run excellently
+    looks_like: >
+      Verification rules reflect service risk, unresolved items have
+      owners, and claim outcomes correct recurring interpretation errors.
+competencies:
+  - name: Benefit interpretation
+    note: >
+      Payer language has to be mapped to the planned service, provider,
+      date, and sequence of care.
+  - name: Assumption communication
+    note: >
+      The operator can explain what was confirmed, what remains
+      conditional, and what the patient may owe.
+automation:
+  now: >
+    Electronic eligibility queries, benefit extraction, network checks,
+    refresh queues, and authorization prompts.
+  human: >
+    Ambiguous benefit language, conflicting payer responses, service
+    mapping, and financial conversations with the patient.
+questions:
+  - What source and date support the expected patient responsibility?
+  - Which scheduled services still have an unresolved authorization requirement?

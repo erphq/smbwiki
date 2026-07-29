@@ -1,0 +1,97 @@
+id: beverage-quality-release
+name: Beverage quality release
+kind: skill
+department: quality
+summary: >
+  Beverage quality release connects an identified sample to its batch,
+  specification, laboratory and sensory results, exceptions, and
+  disposition before bulk or packaged product becomes available for
+  sale.
+inputs: [batch-record, lab-result]
+outputs: [beverage-release-record]
+steps:
+  - name: Establish release requirements
+    role: beverage-quality-technician
+    consumes: [batch-record]
+    note: >
+      Product, lot, stage, required tests, sensory checks, label or
+      package conditions, limits, and decision authority are current.
+  - name: Protect sample identity
+    role: beverage-quality-technician
+    note: >
+      Sample point, vessel or package, lot, time, condition, and handler
+      stay attached through testing and review.
+  - name: Review the evidence
+    role: beverage-quality-technician
+    consumes: [lab-result]
+    note: >
+      Required results, trends, sensory observations, packaging checks,
+      and open process exceptions are complete and internally consistent.
+  - name: Resolve exceptions
+    role: beverage-production-lead
+    note: >
+      Hold, additional time, retest, blend, treatment, rework, relabel,
+      downgrade, or disposal receives named authority and preserves lot
+      identity.
+  - name: Release the quantity
+    role: beverage-production-lead
+    produces: [beverage-release-record]
+    note: >
+      Decision, evidence, released quantity, remaining hold, date, and
+      responsible signoff are recorded before availability changes.
+tension: >
+  Sales and packaging commitments compete with independent release
+  evidence. Early availability protects service and shipment plans;
+  weak release control turns an unresolved batch condition into a
+  customer, compliance, or recall problem.
+failure_modes:
+  - name: Result loses sample identity
+    cost: >
+      A passing value cannot support release of the intended vessel,
+      lot, or package run.
+    signal: >
+      Laboratory result omits sample point, batch, or collection time.
+  - name: Product becomes available before release
+    cost: >
+      Orders, transfers, or shipments consume quantity that is still
+      under test or exception review.
+    signal: >
+      Inventory status is saleable while a required result remains open.
+  - name: Exception changes the product without a new check
+    cost: >
+      Treatment, blending, time, or relabeling invalidates the evidence
+      used for the original decision.
+    signal: >
+      Disposition is complete but no post-action sample or review exists.
+maturity:
+  - level: run badly
+    looks_like: >
+      Release follows schedule and informal tasting, with laboratory
+      results stored separately from inventory status.
+  - level: run well
+    looks_like: >
+      Sample, batch, requirements, results, exceptions, disposition,
+      quantity, and release authority share one record.
+  - level: run excellently
+    looks_like: >
+      Release exceptions change process limits, sampling, cellar plans,
+      supplier controls, packaging checks, and product decisions.
+competencies:
+  - name: Evidence interpretation
+    note: >
+      The reviewer understands method limits, trends, sensory evidence,
+      and when a result cannot support the intended decision.
+  - name: Lot disposition
+    note: >
+      Quantity and identity remain controlled while technical,
+      regulatory, and commercial consequences are resolved.
+automation:
+  now: >
+    Sample scheduling, instrument import, specification checks, holds,
+    exception routing, signatures, and inventory-status integration.
+  human: >
+    Sensory judgment, method suitability, exception disposition,
+    authority to release, and decisions under conflicting evidence.
+questions:
+  - Which saleable lot lacks one required result or release signoff?
+  - Which exception changed the product after its supporting sample was taken?

@@ -1,0 +1,95 @@
+id: restaurant-payment-closeout
+name: Restaurant payment closeout
+kind: skill
+department: finance
+summary: >
+  Restaurant payment closeout turns served items and authorized
+  adjustments into a settled guest check, then reconciles cash, card,
+  mobile, gift, discount, void, comp, and gratuity activity for the
+  shift.
+inputs: [order-ticket, guest-check]
+outputs: [payment-record, shift-closeout]
+steps:
+  - name: Complete the guest check
+    role: server
+    consumes: [order-ticket, guest-check]
+    note: >
+      Table, seats, items, modifiers, added rounds, discounts, voids,
+      comps, taxes, and gratuity treatment agree with service delivered.
+  - name: Present and settle
+    role: server
+    produces: [payment-record]
+    note: >
+      Split, transfer, tender, tip, change, receipt, and remaining
+      balance are recorded once against the current check.
+  - name: Control exceptions
+    role: general-manager
+    note: >
+      Reopen, void, comp, discount, refund, walkout, charge dispute, and
+      cash exception retain reason and authority.
+  - name: Reconcile the shift
+    role: general-manager
+    note: >
+      Closed checks match tender totals, processor batches, cash,
+      adjustments, tips, and checks still open at cutoff.
+  - name: Sign the closeout
+    role: general-manager
+    produces: [shift-closeout]
+    note: >
+      Variances, unresolved checks, deposits, custody, follow-up, and
+      manager approval remain attached to the service period.
+tension: >
+  Fast table release competes with accurate settlement and custody.
+  Closing quickly protects the next seating; rushed edits, splits, and
+  handoffs make the shift impossible to reconcile later.
+failure_modes:
+  - name: Check changes bypass authorization
+    cost: >
+      Revenue, inventory, taxes, server accountability, and guest trust
+      no longer agree.
+    signal: >
+      Voids, comps, and discounts lack a reason or approving manager.
+  - name: Tender settles outside the check
+    cost: >
+      Payment exists without a reliable link to the table, items, or
+      remaining balance.
+    signal: >
+      Processor transactions require manual matching to closed checks.
+  - name: Open checks cross the cutoff silently
+    cost: >
+      Shift revenue and cash appear short while responsibility moves to
+      another team.
+    signal: >
+      Closeout total excludes active checks without naming them.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff close tables for speed and the manager reconstructs tenders,
+      adjustments, and cash after service.
+  - level: run well
+    looks_like: >
+      Order, guest check, authorized adjustments, tender, settlement,
+      tips, cash, open items, and signoff reconcile by shift.
+  - level: run excellently
+    looks_like: >
+      Exception patterns improve permissions, training, checkout flow,
+      payment setup, staffing, and guest communication.
+competencies:
+  - name: Check and tender reconciliation
+    note: >
+      The closer traces items, adjustments, payments, tips, cash, and
+      processor timing through one service cutoff.
+  - name: Exception control
+    note: >
+      Guest recovery remains possible while discounts, voids, refunds,
+      and reopenings keep explicit authority and reason.
+automation:
+  now: >
+    Check totals, split tender, payment capture, permissions, processor
+    batches, cash expectation, tip allocation, and variance alerts.
+  human: >
+    Dispute resolution, cash custody, exception authority, walkouts,
+    ambiguous handoffs, and final closeout responsibility.
+questions:
+  - Which closed check cannot be matched to its recorded tender and settlement?
+  - Which adjustment lacks a reason and responsible authority?

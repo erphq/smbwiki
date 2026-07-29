@@ -1,0 +1,32 @@
+id: security-system-installer
+name: Security System Installer
+codes:
+  naics: "561621"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  A security system installer converts risk, protected areas, users,
+  response expectations, connectivity, power, and building conditions
+  into a device and monitoring design. Equipment identity, placement,
+  credentials, notification paths, and customer authority have to agree.
+
+  Installation closes after wiring, sensors, cameras, panels,
+  network paths, batteries, user permissions, alarm routing, tests, and
+  training are complete. Service work protects credential history and
+  distinguishes device failure, communication failure, user error, and
+  a real event.
+revenue_model:
+  - id: system-installations
+    note: equipment, programming, and field installation sold as a project
+  - id: monitoring-and-service
+    note: recurring monitoring, inspection, and maintenance charges
+  - remove: [service-calls, quoted-projects]
+skills:
+  - ref: install-project
+    roles: [lead-technician, technician]
+    documents: [quote, work-order, job-photos]
+    metrics: [install-gross-margin]
+    software: [field-service-management]
+supply_chain:
+  buys_from: [security-equipment-distributor]
+  sells_to: [homeowner, property-management-company]

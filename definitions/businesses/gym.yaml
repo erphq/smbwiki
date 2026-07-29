@@ -1,0 +1,90 @@
+id: gym
+name: Gym
+codes:
+  naics: "713940"
+catalog_group: personal-recreation
+summary: >
+  A gym sells recurring access to training space, equipment, classes,
+  and staff support. Member sales, onboarding, waivers, access
+  credentials, recurring billing, class schedules, cancellations, and
+  retention activity need one current membership state.
+
+  Usable capacity changes by hour, room, class, and equipment type.
+  Staff schedules, cleaning, inspections, maintenance, and repair keep
+  that capacity available. Failed payment, cancellation, access, and
+  attendance records have to agree so the member and front desk receive
+  the same answer.
+revenue_model:
+  - id: recurring-memberships
+    note: monthly or annual access billed until cancellation
+  - id: personal-training
+    note: coached sessions sold separately or in packages
+  - id: group-classes
+    note: classes included in a tier or sold as add-on access
+  - id: day-passes
+    note: short access for nonmembers
+skills:
+  - ref: member-sales
+    roles: [membership-advisor]
+    documents: [membership-application, membership-agreement, liability-waiver]
+    metrics: [membership-conversion-rate]
+    software: [membership-management]
+  - ref: member-onboarding
+    roles: [membership-advisor, front-desk-attendant]
+    documents: [membership-agreement, liability-waiver, access-credential]
+    software: [membership-management, access-control-system]
+  - ref: membership-billing
+    roles: [general-manager]
+    documents: [membership-agreement, customer-invoice, payment-record]
+    metrics: [monthly-recurring-revenue, revenue-per-member]
+    software: [membership-management, accounting]
+  - ref: facility-access
+    roles: [front-desk-attendant]
+    documents: [access-credential, attendance-log]
+    metrics: [active-member-rate]
+    software: [access-control-system, membership-management]
+  - ref: class-scheduling
+    roles: [general-manager, fitness-trainer]
+    documents: [class-roster, shift-schedule]
+    metrics: [class-fill-rate]
+    software: [membership-management, workforce-management]
+  - ref: equipment-maintenance
+    roles: [maintenance-technician, general-manager]
+    documents: [maintenance-request, maintenance-log]
+    metrics: [equipment-uptime]
+    software: [facility-management]
+  - ref: member-retention
+    roles: [general-manager, membership-advisor]
+    documents: [attendance-log, cancellation-request, cancellation-record]
+    metrics: [member-churn-rate]
+    software: [membership-management]
+  - ref: staff-scheduling
+    roles: [general-manager]
+    documents: [shift-schedule]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [general-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: membership-advisor
+          - role: front-desk-attendant
+          - role: fitness-trainer
+          - role: maintenance-technician
+supply_chain:
+  buys_from: [fitness-equipment-distributor, commercial-landlord]
+  sells_to: [individual-client]
+products:
+  - treadmill
+  - elliptical-trainer
+  - rowing-machine
+  - exercise-bike
+  - power-rack
+  - adjustable-weight-bench
+  - adjustable-dumbbell
+seo:
+  title: "Gym: How the Business Works | smbwiki"

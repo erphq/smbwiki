@@ -1,0 +1,6 @@
+id: inventory-receipt
+name: Inventory receipt
+kind: document
+summary: >
+  Supplier, shipment, item, lot or serial identity, quantity,
+  condition, location, and receiving exception.

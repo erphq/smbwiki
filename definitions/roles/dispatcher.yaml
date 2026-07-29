@@ -1,0 +1,6 @@
+id: dispatcher
+name: Dispatcher
+kind: role
+summary: >
+  Assigns jobs to techs and manages the day's board; the revenue-per-
+  truck decision maker.

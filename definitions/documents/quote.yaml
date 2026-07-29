@@ -1,0 +1,6 @@
+id: quote
+name: Quote
+kind: document
+summary: >
+  A priced offer for defined work; becomes the contract and the margin
+  baseline once accepted.

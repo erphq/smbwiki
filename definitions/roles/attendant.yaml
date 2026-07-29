@@ -1,0 +1,7 @@
+id: attendant
+name: Attendant
+kind: role
+summary: >
+  Keeps a self-service location clean and usable, helps customers,
+  reports machine faults, and may reconcile or stock payment and
+  vending systems.

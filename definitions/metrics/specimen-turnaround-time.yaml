@@ -1,0 +1,8 @@
+id: specimen-turnaround-time
+name: Specimen turnaround time
+kind: metric
+summary: >
+  Time from laboratory receipt of a valid specimen to release of the
+  result.
+unit: hours
+direction: lower

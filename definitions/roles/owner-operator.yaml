@@ -1,0 +1,7 @@
+id: owner-operator
+name: Owner-operator
+kind: role
+summary: >
+  The founder who both runs the business and works in it. Holds
+  pricing, hiring, and cash decisions; the business's ceiling is how
+  much of their job they can hand off.

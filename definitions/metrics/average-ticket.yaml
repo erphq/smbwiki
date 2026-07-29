@@ -1,0 +1,7 @@
+id: average-ticket
+name: Average ticket
+kind: metric
+summary: >
+  Mean revenue per completed job or order.
+unit: currency
+direction: higher

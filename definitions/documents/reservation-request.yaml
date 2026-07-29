@@ -1,0 +1,6 @@
+id: reservation-request
+name: Reservation request
+kind: document
+summary: >
+  Requested stay dates, party, room needs, rate context, guarantees,
+  and contact details before inventory is committed.

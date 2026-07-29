@@ -1,0 +1,75 @@
+id: hvac-contractor
+name: HVAC Contractor
+codes:
+  naics: "238220"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  An HVAC contractor runs service calls, replacement or installation
+  projects, and recurring maintenance agreements. Intake and dispatch
+  route demand work to technicians. Installation work moves through
+  survey, calculation, quote, supply, permit, crew scheduling,
+  commissioning, inspection, and handoff.
+
+  Available capacity depends on technician qualification, truck stock,
+  equipment supply, travel, customer access, and seasonal demand.
+  Agreement visits and urgent calls draw from the same calendar, while
+  installation projects require a separate readiness view. Diagnostic
+  evidence, readings, scope changes, startup results, and inspection
+  state return from the field on the job record.
+revenue_model:
+  - id: service-calls
+    note: repair work, dispatched against truck capacity; margin is in
+      diagnosis speed and first-time fix
+  - id: install-projects
+    note: replacements and new construction; equipment cost flows
+      through, labor and close rate carry the margin
+  - id: maintenance-agreements
+    note: seasonal tune-ups sold as priority-access plans; the
+      seasonality damper and the service-to-install lead funnel
+  - remove: [quoted-projects]
+skills:
+  - ref: quoting
+    roles: [comfort-advisor]
+    documents: [quote, load-calculation]
+    metrics: [quote-win-rate]
+    software: [field-service-management]
+  - ref: maintenance-agreements
+    roles: [office-manager, technician]
+    documents: [service-agreement]
+    metrics: [agreement-count, agreement-renewal-rate]
+    software: [field-service-management]
+  - ref: install-project
+    roles: [lead-technician, technician]
+    documents: [work-order, permit, load-calculation]
+    metrics: [install-gross-margin]
+    software: [field-service-management]
+  - ref: permits-inspections
+    roles: [office-manager]
+    documents: [permit]
+    software: [field-service-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: dispatcher
+      - role: comfort-advisor
+      - role: lead-technician
+        reports:
+          - role: technician
+licenses:
+  us:
+    - ref: hvac-contractor-license
+      requirement: conditional
+      condition: Required only where the state or locality licenses the covered mechanical contracting work.
+      as_of: "2026-07-29"
+    - ref: epa-608
+      requirement: conditional
+      condition: Required for technicians who maintain, service, repair, or dispose of equipment in ways covered by federal refrigerant rules.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [hvac-distributor]
+  sells_to: [homeowner, property-management-company, general-contractor]
+products: [gas-furnace, heat-pump, mini-split-heat-pump, air-conditioner]
+seo:
+  title: "HVAC Contractor: How the Business Works | smbwiki"

@@ -1,0 +1,6 @@
+id: production-order
+name: Production order
+kind: document
+summary: >
+  The authorized item, revision, quantity, routing, material,
+  operations, due date, and traceability requirements for a run.

@@ -1,0 +1,6 @@
+id: technician
+name: Technician
+kind: role
+summary: >
+  Licensed field worker who diagnoses and executes jobs at customer
+  sites.

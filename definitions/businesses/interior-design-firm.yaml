@@ -1,0 +1,104 @@
+id: interior-design-firm
+name: Interior Design Firm
+codes:
+  naics: '541410'
+catalog_group: construction-property
+extends: professional-services-base
+summary: >-
+  An interior design firm converts occupant needs, measured space, codes,
+  circulation, building systems, furniture, materials, budget, and schedule
+  into a coordinated interior. Programming and space planning precede
+  selections, drawings, specifications, procurement, installation, and
+  correction of site conflicts.
+
+
+  Design decisions have linked effects. A finish can change substrate, lead
+  time, maintenance, fire performance, lighting, price, and installation
+  sequence. The firm records approvals and revisions, coordinates consultants
+  and vendors, reviews field conditions, and manages samples and substitutions
+  so the installed result retains the accepted design intent.
+skills:
+  - ref: client-engagement
+    roles: [principal, interior-designer, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, professional-services-automation]
+  - ref: professional-service-delivery
+    roles: [interior-designer, principal, client-coordinator]
+    documents: [engagement-letter, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [professional-services-automation]
+  - ref: design-programming
+    roles:
+      - interior-designer
+      - principal
+    documents:
+      - client-brief
+      - design-program
+      - finish-schedule
+    metrics:
+      - on-time-completion
+      - engagement-gross-margin
+    software:
+      - design-documentation
+  - ref: space-planning
+    roles:
+      - interior-designer
+      - principal
+    documents:
+      - client-brief
+      - finish-schedule
+    metrics:
+      - on-time-completion
+      - engagement-gross-margin
+    software:
+      - design-documentation
+  - ref: finish-specification
+    roles:
+      - interior-designer
+      - principal
+    documents:
+      - client-brief
+      - finish-schedule
+    metrics:
+      - on-time-completion
+      - engagement-gross-margin
+    software:
+      - design-documentation
+  - ref: interior-design-documentation
+    roles:
+      - interior-designer
+      - principal
+    documents:
+      - client-brief
+      - finish-schedule
+    metrics:
+      - on-time-completion
+      - engagement-gross-margin
+    software:
+      - design-documentation
+  - ref: furnishing-procurement-coordination
+    roles:
+      - interior-designer
+      - principal
+    documents:
+      - client-brief
+      - finish-schedule
+    metrics:
+      - on-time-completion
+      - engagement-gross-margin
+    software:
+      - design-documentation
+supply_chain:
+  buys_from:
+    - furniture-manufacturer
+    - finish-material-distributor
+  sells_to:
+    - individual-client
+    - commercial-client
+    - property-owner
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: interior-designer

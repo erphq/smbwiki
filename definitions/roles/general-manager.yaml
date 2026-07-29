@@ -1,0 +1,6 @@
+id: general-manager
+name: General manager
+kind: role
+summary: >
+  Runs day-to-day operations: staffing, scheduling, supplier
+  relationships, and the P&L between the owner and the floor.

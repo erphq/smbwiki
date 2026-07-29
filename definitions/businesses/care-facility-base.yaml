@@ -1,0 +1,49 @@
+id: care-facility-base
+name: Care facility (base)
+abstract: true
+revenue_model:
+  - id: care-services
+    note: scheduled support and supervision billed by visit, day, or recurring term
+  - id: accommodation-and-programs
+    note: space, meals, activities, and related services included in the care arrangement
+skills:
+  - ref: client-engagement
+    roles: [care-director, office-manager]
+    documents: [client-brief, engagement-letter]
+    software: [care-management]
+  - ref: care-plan-delivery
+    roles: [care-director, caregiver]
+    documents: [care-plan, medication-record, incident-report]
+    metrics: [incident-rate]
+    software: [care-management]
+  - ref: staff-scheduling
+    roles: [care-director]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management, care-management]
+  - ref: purchasing
+    roles: [office-manager]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management]
+  - ref: invoicing
+    roles: [office-manager]
+    documents: [customer-invoice]
+    software: [care-management, accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-payable
+    roles: [office-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: care-director
+        reports:
+          - role: caregiver
+supply_chain:
+  sells_to: [resident, payer]

@@ -1,0 +1,32 @@
+id: mental-health-practice
+name: Mental Health Practice
+codes:
+  naics: "621330"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  A mental health practice schedules assessment and therapy while
+  protecting a clinical record with unusually sensitive narrative,
+  consent, communication, and disclosure rules. Presenting need,
+  history, risk, goals, treatment approach, progress, and care
+  coordination remain connected across visits.
+
+  Appointment capacity is shaped by clinician licensure, specialty,
+  continuity, session length, payer rules, and urgent risk. The
+  practice needs a current route for missed visits, crisis statements,
+  mandated action, outside records, refill or referral requests, and
+  messages that require action before the next scheduled session.
+revenue_model:
+  - id: therapy-sessions
+    note: assessment, individual, family, or group visits billed per session
+  - id: contracted-care
+    note: payer or organization arrangements for covered clinical services
+  - remove: [patient-services, preventive-care]
+licenses:
+  us:
+    - ref: mental-health-professional-license
+      requirement: required
+      condition: Required for the licensed professional providing the regulated mental-health service.
+      as_of: "2026-07-29"
+supply_chain:
+  sells_to: [patient, payer]

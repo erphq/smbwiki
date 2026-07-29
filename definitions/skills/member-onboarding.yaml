@@ -1,0 +1,91 @@
+id: member-onboarding
+name: Member onboarding
+kind: skill
+department: sales
+summary: >
+  Member onboarding converts signed membership terms into a usable
+  account and access credential. The member leaves knowing where and
+  when the credential works, how to use the facility, where charges
+  appear, and how to get help.
+inputs: [membership-agreement, liability-waiver]
+outputs: [access-credential]
+steps:
+  - name: Verify activation documents
+    role: membership-advisor
+    consumes: [membership-agreement, liability-waiver]
+    note: >
+      Plan, start date, required acknowledgements, identity, and account
+      contact details are complete before access is issued.
+  - name: Configure the account
+    role: membership-advisor
+    note: >
+      Location, hours, services, billing state, and any age or supervision
+      rule become system permissions.
+  - name: Issue and test access
+    role: front-desk-attendant
+    produces: [access-credential]
+    note: >
+      The member uses the credential at the real entry point while staff
+      can still correct the setup.
+  - name: Orient the member
+    role: front-desk-attendant
+    note: >
+      Entry, storage, equipment, cleaning, class, guest, safety, and help
+      procedures are shown in the context where they apply.
+tension: >
+  Fast activation competes with usable and safe setup. A credential can
+  be issued in moments; unresolved permissions or unclear facility rules
+  turn the first visit into an exception at the front desk.
+failure_modes:
+  - name: Credential and plan disagree
+    cost: >
+      A paying member is blocked from included access or admitted beyond
+      the signed plan.
+    signal: >
+      Front-desk overrides cluster among newly activated accounts.
+  - name: Billing state absent from activation
+    cost: >
+      Access begins under an account with incomplete payment authority or
+      an incorrect charge date.
+    signal: >
+      New accounts enter the first billing run with missing method or
+      start date.
+  - name: Orientation becomes a handout
+    cost: >
+      The member uses equipment, entry, guests, or classes incorrectly
+      and staff correct the issue after it affects others.
+    signal: >
+      Early service questions concern procedures covered only in written
+      material.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff hand over a credential and the member discovers permissions,
+      charges, and facility rules through later failures.
+  - level: run well
+    looks_like: >
+      Signed terms drive account permissions, access is tested, and the
+      member receives a practical facility orientation.
+  - level: run excellently
+    looks_like: >
+      Activation exceptions feed back to sales and system rules, and the
+      first visit confirms account, access, and assistance paths together.
+competencies:
+  - name: System translation
+    note: >
+      Signed language has to become the correct access, billing, and
+      service configuration across connected systems.
+  - name: Practical orientation
+    note: >
+      The operator can show the few rules and routes that prevent the
+      member's first avoidable failure.
+automation:
+  now: >
+    Document checks, account creation, permission mapping, credential
+    issuance, welcome messages, and incomplete-onboarding queues.
+  human: >
+    Identity resolution, requested exceptions, accessibility support,
+    facility walkthrough, and confirmation that the member can use access.
+questions:
+  - What new-member exception appears most often at the front desk?
+  - Does the credential grant exactly the access described in the agreement?

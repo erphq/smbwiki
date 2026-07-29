@@ -1,0 +1,25 @@
+id: convenience-store
+name: Convenience Store
+codes:
+  naics: "445131"
+catalog_group: food-lodging
+extends: retail-store-base
+summary: >
+  A convenience store carries many fast-moving items in little selling
+  space and often operates long hours. Deliveries, shelf capacity,
+  cold equipment, age-restricted products, prepared food, fuel or
+  service counters, cash, and security all compete for staff attention.
+
+  Availability depends on frequent receiving and replenishment with
+  limited reserve stock. The manager watches stockouts, spoilage, shrink,
+  price changes, cash differences, equipment alarms, and shift handoff
+  while keeping checkout moving through short customer visits.
+revenue_model:
+  - id: convenience-merchandise
+    note: packaged food, drinks, household items, and other immediate-need goods
+  - id: prepared-food-and-services
+    note: foodservice, lottery, bill payment, or location-specific services
+  - remove: [merchandise-sales, special-orders]
+supply_chain:
+  buys_from: [grocery-wholesaler, beverage-distributor]
+  sells_to: [retail-consumer]

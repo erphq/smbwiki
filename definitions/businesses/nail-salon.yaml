@@ -1,0 +1,37 @@
+id: nail-salon
+name: Nail Salon
+codes:
+  naics: "812113"
+catalog_group: personal-recreation
+extends: personal-services-base
+summary: >
+  A nail salon schedules technicians, stations, tools, products, and
+  service durations against the client's requested result and current
+  nail or skin condition. Consultation establishes service, color,
+  length, removal work, price, time, and any condition that requires
+  modification or refusal.
+
+  Safe operation depends on cleaning, disinfection, product control,
+  ventilation, and a clear boundary around skin breaks or suspected
+  infection. The salon tracks ticket time, station turnover, rebooking,
+  retail and service stock, technician schedules, and the products used
+  when a client reports a later reaction.
+revenue_model:
+  - id: nail-services
+    note: manicure, pedicure, enhancement, removal, and related appointments
+  - id: enhancements-and-retail
+    note: added design work and take-home products
+  - remove: [booked-services, retail-products]
+licenses:
+  us:
+    - ref: cosmetology-establishment-license
+      requirement: commonly-applicable
+      condition: Commonly required for premises offering regulated nail or cosmetology services; facility rules vary by jurisdiction.
+      as_of: "2026-07-29"
+    - ref: nail-technician-license
+      requirement: required
+      condition: Required for individuals performing nail services regulated by the applicable state program.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [beauty-supply-distributor]
+  sells_to: [individual-client]

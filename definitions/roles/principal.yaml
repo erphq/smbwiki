@@ -1,0 +1,6 @@
+id: principal
+name: Principal
+kind: role
+summary: >
+  Owns client acceptance, scope, technical accountability, staffing,
+  commercial terms, and release of completed professional work.

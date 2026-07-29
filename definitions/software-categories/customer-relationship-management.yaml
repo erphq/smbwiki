@@ -1,0 +1,8 @@
+id: customer-relationship-management
+name: Customer relationship management
+kind: software-category
+summary: >
+  Prospects, contacts, opportunities, activity, pipeline, and account
+  history for customer-facing sales work.
+erpai_category: sales
+erpai_apps: []

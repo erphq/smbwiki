@@ -1,0 +1,6 @@
+id: counter-staff
+name: Counter staff
+kind: role
+summary: >
+  Takes walk-in and phone orders, handles payment, and manages pickup
+  handoff.

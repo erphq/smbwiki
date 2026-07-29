@@ -1,0 +1,6 @@
+id: daily-report
+name: Daily report
+kind: document
+summary: >
+  Dated record of labor, equipment, deliveries, visitors, work areas,
+  weather, constraints, inspections, incidents, and production.

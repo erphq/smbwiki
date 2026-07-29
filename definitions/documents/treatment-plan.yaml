@@ -1,0 +1,6 @@
+id: treatment-plan
+name: Treatment plan
+kind: document
+summary: >
+  Proposed clinical work organized by need, sequence, timing, and
+  expected financial responsibility.

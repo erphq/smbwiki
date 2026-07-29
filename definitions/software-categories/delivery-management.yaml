@@ -1,0 +1,9 @@
+id: delivery-management
+name: Delivery management
+kind: software-category
+summary: >
+  Order-to-driver assignment, route sequencing, and live delivery
+  tracking. Sits downstream of the POS and upstream of nothing; its
+  one job is keeping quoted promise-times honest.
+erpai_category: logistics
+erpai_apps: []   # resolved in phase 2 against the app registry

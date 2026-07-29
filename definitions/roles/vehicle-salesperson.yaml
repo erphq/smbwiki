@@ -1,0 +1,6 @@
+id: vehicle-salesperson
+name: Vehicle salesperson
+kind: role
+summary: >
+  Qualifies the buyer, presents available vehicles, records the agreed
+  deal, and keeps customer commitments attached to the selected unit.

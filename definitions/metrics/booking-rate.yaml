@@ -1,0 +1,7 @@
+id: booking-rate
+name: Booking rate
+kind: metric
+summary: >
+  Qualified inbound leads that become booked jobs.
+unit: percent
+direction: higher

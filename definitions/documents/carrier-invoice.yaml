@@ -1,0 +1,6 @@
+id: carrier-invoice
+name: Carrier invoice
+kind: document
+summary: >
+  Carrier bill to the brokerage for line-haul and approved accessorial
+  charges tied to a delivered load.

@@ -1,0 +1,8 @@
+id: auto-repair-management
+name: Auto repair management
+kind: software-category
+summary: >
+  Appointments, repair orders, inspections, estimates, digital
+  approvals, technician workflow, invoicing, and vehicle history.
+erpai_category: operations
+erpai_apps: []

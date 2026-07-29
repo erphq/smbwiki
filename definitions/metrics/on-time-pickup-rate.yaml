@@ -1,0 +1,8 @@
+id: on-time-pickup-rate
+name: On-time pickup rate
+kind: metric
+summary: >
+  Loads picked up inside the shipper's agreed appointment or service
+  window.
+unit: percent
+direction: higher

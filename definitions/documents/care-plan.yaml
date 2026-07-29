@@ -1,0 +1,6 @@
+id: care-plan
+name: Care plan
+kind: document
+summary: >
+  Assessed needs, goals, scheduled support, precautions, responsible
+  staff, escalation instructions, and review dates for one person.

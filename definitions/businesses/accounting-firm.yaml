@@ -1,0 +1,25 @@
+id: accounting-firm
+name: Accounting Firm
+codes:
+  naics: "541211"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  An accounting firm accepts responsibility for defined financial
+  statements, assurance, accounting, or advisory work using client
+  records whose completeness and control environment must be evaluated.
+  Engagement scope determines evidence, independence, review, and report.
+
+  Work follows reporting periods and external deadlines. The firm
+  manages client requests, confirmations, reconciliations, sampling,
+  adjustments, review notes, representations, versions, and unresolved
+  matters while preserving who prepared, reviewed, approved, and
+  released each conclusion.
+licenses:
+  us:
+    - ref: cpa-license
+      requirement: conditional
+      condition: Required when the firm performs regulated attest work or uses the CPA designation under state law.
+      as_of: "2026-07-29"
+supply_chain:
+  sells_to: [individual-client, commercial-client]

@@ -1,0 +1,26 @@
+id: residential-property-manager
+name: Residential Property Manager
+codes:
+  naics: "531311"
+catalog_group: construction-property
+extends: property-operations-base
+summary: >
+  A residential property manager operates rental homes or units for an
+  owner under delegated authority. Listing, applications, screening,
+  leases, deposits, rent, notices, maintenance, vendors, inspections,
+  renewals, and move-out records stay separated by property and tenancy.
+
+  The manager sits between asset owner and occupant. Spending limits,
+  legal duties, habitability, access, communication, reserve cash, and
+  owner objectives can point in different directions. Each exception
+  needs a timely decision and evidence that explains whose authority and
+  funds supported it.
+revenue_model:
+  - id: recurring-management-fees
+    note: monthly fee tied to collected rent or units under management
+  - id: leasing-and-project-fees
+    note: placement, renewal, inspection, or managed improvement charges
+  - remove: [management-fees, leasing-fees]
+supply_chain:
+  buys_from: [maintenance-contractor]
+  sells_to: [homeowner]

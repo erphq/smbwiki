@@ -1,0 +1,8 @@
+id: operating-expense-variance
+name: Operating expense variance
+kind: metric
+summary: >
+  Difference between property operating expense and the approved budget
+  for the same period and accounting basis.
+unit: currency
+direction: lower

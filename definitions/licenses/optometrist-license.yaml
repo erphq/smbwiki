@@ -1,0 +1,8 @@
+id: optometrist-license
+name: Optometrist license
+kind: license
+geo: [us]
+summary: >
+  State professional authorization to practice optometry within the
+  scope and renewal requirements of the licensing board.
+jurisdiction: state

@@ -1,0 +1,115 @@
+id: fire-sprinkler-contractor
+name: Fire Sprinkler Contractor
+codes:
+  naics: '238220'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A fire sprinkler contractor surveys hazards and water supply, designs or
+  coordinates a listed system, releases fabrication, installs piping and
+  devices, tests performance, and manages authority acceptance. Ceiling,
+  structure, storage, other trades, outages, and occupancy changes affect
+  coverage and routing.
+
+
+  The system is inspected as life-safety work, while much of its coordination
+  occurs before pipe reaches the site. Hydraulic criteria, approved drawings,
+  hanger and seismic details, obstructions, valve supervision, flushing,
+  pressure tests, and alarm interfaces all need traceable records. Service
+  work also protects occupied operations during impairments.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: sprinkler-system-survey
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: sprinkler-hydraulic-design
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: sprinkler-fabrication-coordination
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: sprinkler-pipe-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: sprinkler-testing-and-acceptance
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - construction-plan
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - fire-protection-equipment-distributor
+    - pipe-fabricator
+  sells_to:
+    - homeowner
+    - general-contractor
+licenses:
+  us:
+    - ref: fire-sprinkler-contractor-license
+      requirement: conditional
+      condition: Required only where the state or locality licenses the covered design, installation, testing, or service work.
+      as_of: "2026-07-29"
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

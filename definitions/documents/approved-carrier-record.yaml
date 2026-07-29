@@ -1,0 +1,6 @@
+id: approved-carrier-record
+name: Approved carrier record
+kind: document
+summary: >
+  Verified carrier identity and operating status, with approval date,
+  limits, monitoring state, and payment setup.

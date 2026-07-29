@@ -1,0 +1,8 @@
+id: project-operations
+name: Project operations
+kind: software-category
+summary: >
+  Estimating, field packages, project schedules, daily production,
+  changes, job cost, and closeout for work performed at customer sites.
+erpai_category: operations
+erpai_apps: []

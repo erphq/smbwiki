@@ -1,0 +1,47 @@
+id: tire-dealer
+name: Tire Dealer
+codes:
+  naics: "441340"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A tire dealer matches vehicle, size, load and speed rating, use,
+  axle position, tread need, climate, wheel condition, sensor system,
+  inventory, and customer budget. Each tire carries brand, model, size,
+  date code, condition, location, and warranty state.
+
+  Sales often include mounting, balancing, rotation, repair, alignment,
+  disposal, and inspection. The work order preserves selected units,
+  vehicle condition, measurements, authorized service, torque, sensor
+  actions, road test, removed-tire custody, and the evidence needed for
+  warranty or comeback review.
+revenue_model:
+  - id: tire-and-wheel-sales
+    note: stocked and ordered tire or wheel merchandise
+  - id: installation-and-service
+    note: mounting, balancing, repair, rotation, alignment, and disposal
+  - remove: [merchandise-sales, special-orders]
+skills:
+  - ref: repair-execution
+    roles: [automotive-technician, service-advisor]
+    documents: [repair-order, work-authorization, repair-completion]
+    metrics: [technician-efficiency]
+    software: [auto-repair-management]
+  - ref: repair-quality-control
+    roles: [service-advisor, automotive-technician]
+    documents: [repair-completion, quality-check]
+    metrics: [comeback-rate]
+    software: [auto-repair-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+      - role: service-advisor
+        reports:
+          - role: automotive-technician
+supply_chain:
+  buys_from: [tire-distributor]
+  sells_to: [retail-consumer, commercial-client, auto-repair-shop]

@@ -1,0 +1,7 @@
+id: occupancy-rate
+name: Occupancy rate
+kind: metric
+summary: >
+  Available room nights or rentable units occupied during a period.
+unit: percent
+direction: contextual

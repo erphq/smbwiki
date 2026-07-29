@@ -1,0 +1,6 @@
+id: bill-of-lading
+name: Bill of lading
+kind: document
+summary: >
+  Shipment receipt and carriage record identifying the parties,
+  freight, quantity, origin, destination, and handling terms at pickup.

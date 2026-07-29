@@ -1,0 +1,109 @@
+id: waterproofing-contractor
+name: Waterproofing Contractor
+codes:
+  naics: '238390'
+catalog_group: construction-property
+extends: project-services-base
+summary: >-
+  A waterproofing contractor diagnoses moisture paths and installs membranes,
+  coatings, drainage layers, sealants, flashings, and protection at roofs,
+  walls, decks, joints, or below-grade assemblies. The visible leak may be far
+  from its source, so investigation precedes product selection and repair
+  scope.
+
+
+  Performance depends on substrate condition, compatible transitions,
+  specified thickness, termination, drainage, cure, and protection from
+  following work. Many details become inaccessible after backfill or finish.
+  The contractor records concealed work and uses adhesion, spray, or flood
+  testing where the assembly requires direct proof.
+skills:
+  - ref: project-delivery
+    roles: [project-manager, site-superintendent, trade-foreperson]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: moisture-path-diagnosis
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - inspection-report
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: waterproofing-surface-preparation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - inspection-report
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: below-grade-waterproofing
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - inspection-report
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: joint-sealant-installation
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - inspection-report
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+  - ref: waterproofing-flood-test
+    roles:
+      - project-manager
+      - trade-foreperson
+      - installer
+    documents:
+      - inspection-report
+      - test-report
+    metrics:
+      - rework-rate
+      - on-time-completion
+    software:
+      - construction-management
+supply_chain:
+  buys_from:
+    - waterproofing-material-distributor
+    - drainage-product-supplier
+  sells_to:
+    - homeowner
+    - general-contractor
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: project-manager
+        reports:
+          - role: site-superintendent
+            reports:
+              - role: trade-foreperson
+                reports:
+                  - role: installer

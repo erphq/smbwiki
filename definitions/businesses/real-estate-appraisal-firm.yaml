@@ -1,0 +1,108 @@
+id: real-estate-appraisal-firm
+name: Real Estate Appraisal Firm
+codes:
+  naics: '531320'
+catalog_group: construction-property
+extends: professional-services-base
+summary: >-
+  A real estate appraisal firm accepts an assignment, defines the property
+  interest and value question, inspects and verifies the asset, researches the
+  market, develops applicable valuation approaches, reconciles the evidence,
+  and issues a signed opinion. Intended use, effective date, scope,
+  assumptions, and credential determine the work.
+
+
+  Comparable sales and income data require verification and judgment before
+  they become valuation evidence. Property records can conflict with observed
+  condition or legal rights. The appraiser documents sources, adjustments,
+  exclusions, and reconciliation so a reviewer can follow how the final
+  opinion arose from the assignment and its supporting evidence.
+skills:
+  - ref: client-engagement
+    roles: [principal, real-estate-appraiser, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, professional-services-automation]
+  - ref: professional-service-delivery
+    roles: [real-estate-appraiser, principal, client-coordinator]
+    documents: [engagement-letter, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [professional-services-automation]
+  - ref: appraisal-engagement-scoping
+    roles:
+      - real-estate-appraiser
+      - principal
+    documents:
+      - engagement-letter
+      - appraisal-report
+    metrics:
+      - report-turnaround-time
+      - engagement-gross-margin
+    software:
+      - appraisal-management
+  - ref: property-data-verification
+    roles:
+      - real-estate-appraiser
+      - principal
+    documents:
+      - engagement-letter
+      - appraisal-report
+    metrics:
+      - report-turnaround-time
+      - engagement-gross-margin
+    software:
+      - appraisal-management
+  - ref: comparable-sales-analysis
+    roles:
+      - real-estate-appraiser
+      - principal
+    documents:
+      - engagement-letter
+      - appraisal-report
+    metrics:
+      - report-turnaround-time
+      - engagement-gross-margin
+    software:
+      - appraisal-management
+  - ref: income-approach-valuation
+    roles:
+      - real-estate-appraiser
+      - principal
+    documents:
+      - engagement-letter
+      - appraisal-report
+    metrics:
+      - report-turnaround-time
+      - engagement-gross-margin
+    software:
+      - appraisal-management
+  - ref: appraisal-reconciliation-and-reporting
+    roles:
+      - real-estate-appraiser
+      - principal
+    documents:
+      - engagement-letter
+      - appraisal-report
+    metrics:
+      - report-turnaround-time
+      - engagement-gross-margin
+    software:
+      - appraisal-management
+supply_chain:
+  buys_from:
+    - real-estate-brokerage
+  sells_to:
+    - individual-client
+    - commercial-client
+    - property-owner
+licenses:
+  us:
+    - ref: real-property-appraiser-credential
+      requirement: required
+      condition: Required for the appraiser signing work within the regulated scope of the applicable credential.
+      as_of: "2026-07-29"
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: real-estate-appraiser

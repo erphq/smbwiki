@@ -1,0 +1,6 @@
+id: deliverable
+name: Deliverable
+kind: document
+summary: >
+  The reviewed work product released to the client under an
+  engagement, with its version and approval state.

@@ -1,0 +1,7 @@
+id: callback-rate
+name: Callback rate
+kind: metric
+summary: >
+  Completed jobs that generate a return visit for the same issue.
+unit: percent
+direction: lower

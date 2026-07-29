@@ -1,0 +1,6 @@
+id: repair-estimate
+name: Repair estimate
+kind: document
+summary: >
+  Proposed labor, parts, fees, taxes, and optional work priced from the
+  inspection findings.

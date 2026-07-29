@@ -1,0 +1,8 @@
+id: reservation-no-show-rate
+name: Reservation no-show rate
+kind: metric
+summary: >
+  Confirmed restaurant reservations whose parties do not arrive or
+  cancel within the operating cutoff.
+unit: percent
+direction: lower

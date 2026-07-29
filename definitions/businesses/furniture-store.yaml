@@ -1,0 +1,26 @@
+id: furniture-store
+name: Furniture Store
+codes:
+  naics: "449110"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A furniture store sells floor samples, stocked units, and configured
+  special orders whose dimensions, finish, fabric, lead time, access,
+  assembly, and delivery conditions must fit the customer's space.
+  Deposit and order records preserve the exact selected configuration.
+
+  Physical inventory occupies costly space and can be display stock,
+  saleable stock, committed stock, damaged stock, or a customer order
+  waiting on delivery. Receiving inspection, warehouse location,
+  delivery scheduling, room access, condition evidence, and service
+  claims determine whether the sale closes cleanly.
+revenue_model:
+  - id: stocked-and-floor-sales
+    note: finished furniture sold from available store or warehouse inventory
+  - id: configured-orders-and-delivery
+    note: customer selections sourced with transport and setup services
+  - remove: [merchandise-sales, special-orders]
+supply_chain:
+  buys_from: [furniture-manufacturer, furniture-wholesaler]
+  sells_to: [retail-consumer]

@@ -1,0 +1,8 @@
+id: production-plan-attainment
+name: Production plan attainment
+kind: metric
+summary: >
+  Share of planned daily or weekly installed quantity completed and
+  accepted in the scheduled work area.
+unit: percent
+direction: higher

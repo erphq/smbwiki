@@ -1,0 +1,95 @@
+id: repair-execution
+name: Repair execution
+kind: skill
+department: operations
+summary: >
+  Repair execution performs the authorized mechanical, electrical, or
+  body-related operation under the repair order. The technician protects
+  the vehicle, follows the required procedure, records installed parts
+  and test results, and returns completed scope for an independent check.
+inputs: [repair-order, work-authorization]
+outputs: [repair-completion]
+steps:
+  - name: Confirm the authorized lines
+    role: automotive-technician
+    consumes: [repair-order, work-authorization]
+    note: >
+      The technician starts from the current approved scope and stops
+      when a new finding changes it.
+  - name: Prepare vehicle and parts
+    role: automotive-technician
+    note: >
+      Protection, tooling, service information, parts, and one-time-use
+      items are ready before disassembly.
+  - name: Perform the repair
+    role: automotive-technician
+    note: >
+      Procedure, torque, adjustment, fluid, routing, and cleanliness
+      requirements are treated as part of the operation.
+  - name: Test the work
+    role: automotive-technician
+    note: >
+      The repaired system is checked under the conditions relevant to
+      the original finding before handoff.
+  - name: Record completion
+    role: automotive-technician
+    produces: [repair-completion]
+    note: >
+      Work performed, parts installed, measurements, and unresolved
+      observations are written for quality control.
+tension: >
+  Bay throughput competes with procedural completeness. Moving quickly
+  creates capacity only when protection, assembly, adjustment, and
+  testing remain intact; a rushed omission returns as rework.
+failure_modes:
+  - name: Scope drift
+    cost: >
+      Unapproved work reaches the invoice or an important new finding is
+      buried inside the original operation.
+    signal: >
+      Technician notes describe work or parts outside the authorization.
+  - name: Assembly detail omitted
+    cost: >
+      A leak, noise, loose connection, damaged trim, or warning appears
+      after release.
+    signal: >
+      Completion notes lack required torque, fluid, adjustment, or test
+      readings for the operation.
+  - name: Vehicle waits inside active work
+    cost: >
+      A bay remains occupied while the repair is waiting on
+      parts, approval, information, or specialist help.
+    signal: >
+      No work event or explicit hold reason appears for the current shift.
+maturity:
+  - level: run badly
+    looks_like: >
+      The technician works from memory, reports completion verbally, and
+      the first full test happens after the customer leaves.
+  - level: run well
+    looks_like: >
+      Current scope, procedure, parts, test results, and completion notes
+      travel together on the repair order.
+  - level: run excellently
+    looks_like: >
+      Holds surface immediately, repeat defects lead to procedure changes,
+      and quality control receives documented test evidence.
+competencies:
+  - name: Procedure execution
+    note: >
+      Reliable repair depends on the less visible preparation, protection,
+      assembly, and verification details surrounding the main operation.
+  - name: Stop-work judgment
+    note: >
+      The technician must recognize when a new condition exceeds the
+      diagnosis or authorization and return the decision upstream.
+automation:
+  now: >
+    Procedure delivery, labor-time capture, parts association, inspection
+    prompts, torque or measurement capture, and hold notifications.
+  human: >
+    Physical execution, adaptation to actual condition, workmanship
+    judgment, and responsibility for stopping when the scope changes.
+questions:
+  - What evidence shows the repaired system was tested before handoff?
+  - Which current vehicles are waiting inside a repair step, and why?

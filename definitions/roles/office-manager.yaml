@@ -1,0 +1,6 @@
+id: office-manager
+name: Office manager
+kind: role
+summary: >
+  Runs the back office of a trades business: intake, invoicing,
+  receivables, permits, and supplier paperwork.

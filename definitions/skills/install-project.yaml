@@ -1,0 +1,92 @@
+id: install-project
+name: Install project
+kind: skill
+department: operations
+summary: >
+  Install project control carries an accepted quote through permits,
+  material readiness, crew and site scheduling, field execution,
+  commissioning, inspection, and customer handoff. Project commitments
+  stay visible outside the same-day service board.
+inputs: [quote, permit]
+outputs: [work-order]
+steps:
+  - name: Establish the project baseline
+    consumes: [quote]
+    note: >
+      Accepted scope, exclusions, design information, payment milestones,
+      customer responsibilities, and change route define the starting plan.
+  - name: Clear permits and supply
+    consumes: [permit]
+    note: >
+      Permit status, required inspection, major material, special tools,
+      outside services, and delivery access are confirmed before the date.
+  - name: Commit site and crew
+    note: >
+      Customer preparation, shutdown, crew qualifications, sequence,
+      duration, protection, and contingency are agreed on the schedule.
+  - name: Release the work order
+    produces: [work-order]
+    note: >
+      Field staff receive current scope, design, permit, material, site,
+      change authority, inspection, and commissioning requirements.
+  - name: Control closeout
+    note: >
+      Commissioning results, inspection, punch work, customer instruction,
+      warranty, remaining payment, and final documents have owners.
+tension: >
+  Date certainty competes with project readiness. Customers and crews need
+  a committed installation date; booking before permit, material, site,
+  and qualified labor are ready turns every dependency into field delay.
+failure_modes:
+  - name: Date sold before critical supply
+    cost: >
+      Crew and customer prepare for work while major material or outside
+      service remains unconfirmed.
+    signal: >
+      The schedule is committed with open critical-path purchase or
+      delivery status.
+  - name: Field change bypasses commercial control
+    cost: >
+      The project absorbs added labor or material and the customer meets
+      the cost only at final billing.
+    signal: >
+      Work-order notes show changed scope without a dated decision owner.
+  - name: Commissioning becomes a checkbox
+    cost: >
+      Installed equipment or systems enter use with settings, readings, or
+      controls outside the intended design.
+    signal: >
+      Closeout shows startup complete while required operating results are
+      blank.
+maturity:
+  - level: run badly
+    looks_like: >
+      The install date organizes the project and missing permits, material,
+      access, or design are solved by the crew on site.
+  - level: run well
+    looks_like: >
+      Baseline, readiness, crew, work order, changes, commissioning,
+      inspection, and handoff move through explicit gates.
+  - level: run excellently
+    looks_like: >
+      Critical-path status controls date commitment, field deviations
+      update future plans, and closeout evidence supports service and warranty.
+competencies:
+  - name: Dependency control
+    note: >
+      Permit, material, outside service, customer access, qualified labor,
+      inspection, and payment form one project path.
+  - name: Commissioning judgment
+    note: >
+      Physical completion has to be translated into measured performance
+      and a system the customer can operate.
+automation:
+  now: >
+    Project templates, dependency status, material and permit tracking,
+    crew schedules, work-order packages, change logs, and closeout checklists.
+  human: >
+    Site sequencing, readiness judgment, field changes, customer
+    coordination, commissioning, and responsibility for final handoff.
+questions:
+  - What unconfirmed dependency can still move the committed install date?
+  - Which closeout item currently blocks inspection, payment, or customer use?

@@ -1,0 +1,8 @@
+id: order-cycle-time
+name: Order cycle time
+kind: metric
+summary: >
+  Time from a releasable customer order to completed shipment or
+  handoff.
+unit: hours
+direction: lower

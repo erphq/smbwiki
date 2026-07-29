@@ -1,0 +1,6 @@
+id: punch-list
+name: Punch list
+kind: document
+summary: >
+  Location-specific incomplete or defective work, responsible party,
+  required correction, verification, and closure status.

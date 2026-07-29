@@ -1,0 +1,6 @@
+id: load-request
+name: Load request
+kind: document
+summary: >
+  Shipper need with origin, destination, dates, commodity, weight,
+  equipment, handling, and service constraints.

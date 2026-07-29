@@ -1,0 +1,88 @@
+id: menu-planning
+name: Menu planning
+kind: skill
+department: operations
+summary: >
+  Menu planning decides which items and modifiers the operation will
+  offer, how they are priced, and whether the team can execute them
+  through normal purchasing, preparation, service, and equipment
+  capacity. A published item becomes an operating commitment.
+inputs: [recipe-card]
+outputs: [menu]
+steps:
+  - name: Review the item economics
+    consumes: [recipe-card]
+    note: >
+      Portion cost, expected waste, packaging, and labor burden are
+      understood before a selling price is chosen.
+  - name: Test the operating fit
+    note: >
+      The item is run through prep, storage, station space, equipment,
+      ticket flow, and service handoff.
+  - name: Set price and boundaries
+    note: >
+      Size, included sides, modifiers, availability, and channel rules
+      prevent the order from becoming a new recipe at the counter.
+  - name: Publish the menu
+    produces: [menu]
+    note: >
+      Kitchen references, ordering channels, supplier needs, and staff
+      training change under one effective date.
+tension: >
+  Customer choice competes with repeatable execution. More items can
+  capture more preferences; every addition occupies ingredients, prep
+  time, station attention, and training capacity during service.
+failure_modes:
+  - name: Ingredient cost hides operating cost
+    cost: >
+      An item appears profitable while extra prep, waste, packaging, or
+      slow service consumes the margin.
+    signal: >
+      The recipe is costed while labor and station impact remain
+      unreviewed.
+  - name: Channel menus drift
+    cost: >
+      Staff receive orders for prices, modifiers, or items the current
+      operation cannot fulfill as displayed.
+    signal: >
+      Counter, delivery, and online menus carry different effective
+      versions.
+  - name: Item exceeds station capacity
+    cost: >
+      One popular order slows unrelated tickets and destabilizes the
+      service period.
+    signal: >
+      The item repeatedly creates a queue at one appliance or work
+      position.
+maturity:
+  - level: run badly
+    looks_like: >
+      New items are added from supplier price and owner preference, then
+      the kitchen discovers the prep and service burden.
+  - level: run well
+    looks_like: >
+      Recipe, cost, price, modifiers, equipment, prep, and channel
+      publication are reviewed together.
+  - level: run excellently
+    looks_like: >
+      Item performance includes waste and service impact, menu changes
+      have controlled effective dates, and weak items are removed cleanly.
+competencies:
+  - name: Item economics
+    note: >
+      The operator sees portion, yield, waste, packaging, channel fee,
+      and labor as parts of one item result.
+  - name: Service-system judgment
+    note: >
+      A good product can still be a poor menu item when it overloads the
+      equipment or handoff used by the rest of the menu.
+automation:
+  now: >
+    Recipe costing, price comparisons, item performance reports, menu
+    versioning, channel publishing, and modifier validation.
+  human: >
+    Taste, product judgment, operational testing, brand fit, and deciding
+    which customer choices deserve permanent complexity.
+questions:
+  - Which menu item creates the most disruption outside its own station?
+  - Do all ordering channels show the same current price and availability?

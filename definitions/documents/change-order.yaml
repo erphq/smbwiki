@@ -1,0 +1,6 @@
+id: change-order
+name: Change order
+kind: document
+summary: >
+  Approved change to scope, price, time, design information, or
+  responsibility, tied to the controlling contract and revision.

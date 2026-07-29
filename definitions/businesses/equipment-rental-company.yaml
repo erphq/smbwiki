@@ -1,0 +1,20 @@
+id: equipment-rental-company
+name: Equipment Rental Company
+codes:
+  naics: "532412"
+catalog_group: logistics-production
+extends: rental-business-base
+summary: >
+  An equipment rental company matches customer work, site, capacity,
+  attachment, transport, dates, operator qualification, and safety needs
+  to a specific available asset. Reservation state must reflect whether
+  the unit is truly ready after prior return and maintenance.
+
+  At handoff and return, identity, hours, fuel, accessories, condition,
+  cleaning, damage, service, and custody determine the charge and next
+  availability. Fleet economics depend on utilization, rate, delivery,
+  downtime, repair cost, loss, residual value, and keeping unsupported
+  promises off the calendar.
+supply_chain:
+  buys_from: [equipment-dealer]
+  sells_to: [individual-client, commercial-client, general-contractor]

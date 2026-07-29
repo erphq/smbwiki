@@ -1,0 +1,7 @@
+id: agreement-renewal-rate
+name: Agreement renewal rate
+kind: metric
+summary: >
+  Agreements renewed at term end.
+unit: percent
+direction: higher

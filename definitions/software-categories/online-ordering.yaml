@@ -1,0 +1,8 @@
+id: online-ordering
+name: Online ordering
+kind: software-category
+summary: >
+  Direct web/app ordering that lands in the same fulfillment queue as
+  the counter.
+erpai_category: sales
+erpai_apps: []

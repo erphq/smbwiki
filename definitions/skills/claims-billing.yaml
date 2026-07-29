@@ -1,0 +1,92 @@
+id: claims-billing
+name: Claims billing
+kind: skill
+department: finance
+summary: >
+  Claims billing converts signed clinical care into a payer claim and a
+  patient account. Provider, patient, service, code, charge, coverage,
+  and supporting documentation must describe the same event before the
+  claim is submitted.
+inputs: [clinical-note, insurance-verification]
+outputs: [insurance-claim, patient-statement]
+steps:
+  - name: Confirm the source record
+    role: billing-specialist
+    consumes: [clinical-note, insurance-verification]
+    note: >
+      The signed note, service date, provider, coverage, and authorization
+      status establish what can be billed.
+  - name: Build and check the claim
+    role: billing-specialist
+    note: >
+      Codes and charges follow documented care and required payer fields
+      are complete before submission.
+  - name: Submit and track
+    role: billing-specialist
+    produces: [insurance-claim]
+    note: >
+      Acceptance, rejection, requests for information, and adjudication
+      remain tied to the original claim.
+  - name: Establish patient responsibility
+    role: billing-specialist
+    produces: [patient-statement]
+    note: >
+      Payer adjustments, prior payments, and remaining charges are
+      explained on the account the patient receives.
+tension: >
+  Claim speed competes with source accuracy. Delayed submission delays
+  cash; sending a claim before the note, coverage, and required fields
+  agree creates rejection work and an unreliable patient balance.
+failure_modes:
+  - name: Charge exceeds documentation
+    cost: >
+      The claim requires correction, repayment, or defense because the
+      signed note lacks support for the billed service.
+    signal: >
+      Claim lines are created from the schedule or treatment plan before
+      the clinical note is signed.
+  - name: Rejection sits outside a queue
+    cost: >
+      Filing time is lost while the balance appears submitted and no one
+      works the payer response.
+    signal: >
+      Rejected claims have no owner, reason category, or next action.
+  - name: Patient balance posted too early
+    cost: >
+      The patient receives a statement that ignores pending payer action
+      or an expected adjustment.
+    signal: >
+      Patient responsibility appears before the related claim reaches a
+      defined adjudication state.
+maturity:
+  - level: run badly
+    looks_like: >
+      Claims are assembled from appointments, payer responses live in
+      portals, and patient calls reveal account errors.
+  - level: run well
+    looks_like: >
+      Signed documentation supports every claim line and payer responses
+      move through owned work queues.
+  - level: run excellently
+    looks_like: >
+      Rejection causes reach intake, verification, and clinical
+      documentation owners, reducing repeated defects at their source.
+competencies:
+  - name: Documentation and code alignment
+    note: >
+      The biller must see when a code, modifier, charge, and signed record
+      describe different versions of the visit.
+  - name: Payer follow-through
+    note: >
+      Submission begins the work; payment depends on interpreting and
+      resolving each response within its deadline.
+automation:
+  now: >
+    Claim assembly, required-field checks, electronic submission,
+    response posting, rejection routing, and statement calculation.
+  human: >
+    Ambiguous documentation, payer correspondence, appeal judgment,
+    unusual coordination, and patient account explanation.
+questions:
+  - Which claims are waiting on documentation or a payer response today?
+  - What repeated rejection reason should be fixed upstream this week?

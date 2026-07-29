@@ -1,0 +1,8 @@
+id: rental-management
+name: Rental management
+kind: software-category
+summary: >
+  Asset availability, reservations, agreements, rates, dispatch,
+  condition, maintenance, returns, and rental billing.
+erpai_category: rental
+erpai_apps: []

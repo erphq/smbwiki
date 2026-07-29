@@ -1,0 +1,32 @@
+id: urgent-care-clinic
+name: Urgent Care Clinic
+codes:
+  naics: "621498"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  An urgent care clinic accepts unscheduled demand and must establish
+  identity, complaint, acuity, infection risk, coverage, queue position,
+  and whether the patient belongs in a higher level of care. Rooms,
+  clinicians, tests, imaging, procedures, and discharge work form the
+  live capacity.
+
+  Clinical priority sets the sequence alongside arrival time. Isolation,
+  test turnaround, room cleaning, transfer, and documentation affect flow
+  while the waiting room continues to fill. Every result and follow-up
+  instruction needs an owner before the patient leaves.
+revenue_model:
+  - id: walk-in-visits
+    note: evaluation and treatment of time-sensitive outpatient conditions
+  - id: tests-and-procedures
+    note: diagnostics and bounded procedures performed during the visit
+  - remove: [patient-services, preventive-care]
+licenses:
+  us:
+    - ref: physician-license
+      requirement: required
+      condition: Required for physicians providing regulated medical care.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [medical-supply-distributor]
+  sells_to: [patient, payer]

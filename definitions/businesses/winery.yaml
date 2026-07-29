@@ -1,0 +1,55 @@
+id: winery
+name: Winery
+codes:
+  naics: "312130"
+catalog_group: food-lodging
+extends: beverage-production-base
+summary: >
+  A winery carries grapes, juice, or wine through crush, fermentation,
+  transfer, aging, blending, treatment, testing, bottling, storage, and
+  release. Vintage, source, lot, vessel, volume, additions, losses, and
+  laboratory results maintain product identity over a long cycle.
+
+  Sales may occur through wholesale, tasting room, club allocation, and
+  direct shipment. Inventory has to separate bulk wine, bottled stock,
+  committed club or distributor quantity, samples, and tax-paid
+  movement. Label approval, state shipping rules, custody, and customer
+  eligibility affect how a finished bottle can leave the premises.
+revenue_model:
+  - id: wholesale-wine
+    note: bottled cases sold through distributors and trade accounts
+  - id: direct-and-club-sales
+    note: tasting-room, allocation, club, and permitted shipment revenue
+  - remove: [wholesale-beverages, direct-beverage-sales]
+skills:
+  - ref: retail-sale
+    roles: [sales-associate, retail-manager]
+    documents: [stock-record, sales-receipt, return-record]
+    metrics: [average-ticket, gross-margin-percentage]
+    software: [retail-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: beverage-production-lead
+        reports:
+          - role: cellar-operator
+          - role: packaging-operator
+          - role: beverage-quality-technician
+          - role: maintenance-technician
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+licenses:
+  us:
+    - ref: winery-permit
+      requirement: required
+      condition: Required before federally regulated bonded-winery production begins.
+      as_of: "2026-07-29"
+    - ref: liquor-license
+      requirement: conditional
+      condition: Required for tasting-room, shipment, or other direct alcohol sales covered by state or local rules.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [vineyard, packaging-distributor]
+  sells_to: [retail-consumer, commercial-client, beverage-distributor]

@@ -1,0 +1,92 @@
+id: client-checkout
+name: Client checkout
+kind: skill
+department: finance
+summary: >
+  Client checkout turns the completed service ticket into an accurate
+  invoice and payment, explains product and home-care recommendations,
+  records retail items, and handles rebooking while the service history
+  is current.
+inputs: [service-ticket]
+outputs: [customer-invoice, payment-record]
+steps:
+  - name: Review the completed ticket
+    role: salon-coordinator
+    consumes: [service-ticket]
+    note: >
+      Delivered services, add-ons, products used, retail items, deposit,
+      discount, and provider attribution are settled before totaling.
+  - name: Present and issue the invoice
+    role: salon-coordinator
+    produces: [customer-invoice]
+    note: >
+      The client sees the final service and retail lines with any change
+      from the original appointment explained.
+  - name: Collect and record payment
+    role: salon-coordinator
+    produces: [payment-record]
+    note: >
+      Tender, gratuity, gift balance, package credit, and change reconcile
+      to the invoice once.
+  - name: Close the service relationship
+    role: stylist
+    note: >
+      Home care, product use, timing for the next service, and any
+      correction concern have a clear route after the client leaves.
+tension: >
+  Fast chair and counter release compete with accurate closeout and
+  continuity. A hurried total frees the next appointment; missed ticket
+  changes or vague follow-up create disputes and weaken the next visit.
+failure_modes:
+  - name: Ticket changes reach checkout verbally
+    cost: >
+      The coordinator charges from incomplete information and the client
+      hears a price change without a durable service record.
+    signal: >
+      Staff edit invoice lines while asking the stylist what was done.
+  - name: Retail sale loses product guidance
+    cost: >
+      The client buys an item without knowing frequency, amount, or fit
+      with the service result.
+    signal: >
+      Retail lines appear with no recommendation in the service ticket.
+  - name: Correction concern becomes a future surprise
+    cost: >
+      A client leaves uncertain about the result and contacts the salon
+      after the team has lost the service context.
+    signal: >
+      Checkout notes mention dissatisfaction with no owner or response
+      date.
+maturity:
+  - level: run badly
+    looks_like: >
+      The register reconstructs the service from the appointment and the
+      stylist's memory while another client waits.
+  - level: run well
+    looks_like: >
+      Ticket, invoice, payment, retail guidance, provider credit, and
+      follow-up agree before the client leaves.
+  - level: run excellently
+    looks_like: >
+      Checkout exceptions correct booking and service records, correction
+      concerns receive immediate ownership, and rebooking uses the actual
+      service interval.
+competencies:
+  - name: Service reconciliation
+    note: >
+      The coordinator connects what was booked, performed, discounted,
+      sold, paid, and attributed without asking the client to resolve gaps.
+  - name: Continuity handoff
+    note: >
+      Home care and rebooking have to reflect the technical work and the
+      client's response at the end of the visit.
+automation:
+  now: >
+    Ticket-to-invoice conversion, package and gift balances, payment,
+    gratuity, receipts, product records, and rebooking prompts.
+  human: >
+    Explaining changes, resolving a charge, recognizing dissatisfaction,
+    product guidance, and choosing the next appropriate service timing.
+questions:
+  - Which invoice line required verbal reconstruction from the stylist?
+  - Does every correction concern leave checkout with an owner and response time?

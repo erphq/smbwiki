@@ -1,0 +1,39 @@
+id: child-care-center
+name: Child Care Center
+codes:
+  naics: "624410"
+catalog_group: health-care
+extends: care-facility-base
+summary: >
+  A child care center accepts custody for defined children during
+  scheduled hours under age, room, ratio, qualification, health,
+  authorization, and facility limits. Enrollment records connect
+  guardians, pickup authority, emergency contacts, allergies,
+  medication, routines, and payment.
+
+  Daily operation tracks arrival, attendance, room assignment, meals,
+  rest, learning activity, toileting, behavior, health changes,
+  incidents, guardian communication, and authorized departure. Staffing
+  has to preserve ratios through breaks, absences, mixed ages, early
+  arrivals, late pickups, and emergencies.
+revenue_model:
+  - id: recurring-enrollment
+    note: reserved care capacity billed by week, month, or program term
+  - id: added-care-and-programs
+    note: eligible extended hours, meals, transport, or special programs
+  - remove: [care-services, accommodation-and-programs]
+skills:
+  - ref: class-scheduling
+    roles: [care-director, caregiver]
+    documents: [class-roster, attendance-log]
+    metrics: [class-fill-rate]
+    software: [care-management]
+licenses:
+  us:
+    - ref: child-care-license
+      requirement: required
+      condition: Required for the center under the child-care licensing program of its operating jurisdiction.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [food-distributor, education-supply-distributor]
+  sells_to: [individual-client, payer]

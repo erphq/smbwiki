@@ -1,0 +1,8 @@
+id: carrier-monitoring
+name: Carrier monitoring
+kind: software-category
+summary: >
+  Carrier identity, authority, insurance, safety, fraud signals,
+  approval, and continuing compliance checks.
+erpai_category: logistics
+erpai_apps: []

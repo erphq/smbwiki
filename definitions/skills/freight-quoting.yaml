@@ -1,0 +1,92 @@
+id: freight-quoting
+name: Freight quoting
+kind: skill
+department: sales
+summary: >
+  Freight quoting turns a load request into a sell rate the brokerage can
+  cover under current market and operating conditions. Buy cost,
+  equipment, timing, facility behavior, commodity risk, accessorial rules,
+  service work, credit, and desired margin support the offer.
+inputs: [load-request]
+outputs: [quote]
+steps:
+  - name: Validate the movement
+    role: freight-broker
+    consumes: [load-request]
+    note: >
+      Locations, dates, appointments, commodity, weight, equipment,
+      handling, contacts, and special requirements are complete enough to
+      expose carrier cost.
+  - name: Read current capacity
+    role: freight-broker
+    note: >
+      Recent buys, available carriers, season, day, imbalance, lead time,
+      and facility reputation inform the expected purchase range.
+  - name: Price risk and accessorials
+    role: freight-broker
+    note: >
+      Line haul, expected extras, tracking work, credit exposure, claims
+      risk, and recovery difficulty are considered before margin.
+  - name: Issue the quote
+    role: freight-broker
+    produces: [quote]
+    note: >
+      Rate, validity, equipment, service, accessorial rules, assumptions,
+      and acceptance route travel together.
+tension: >
+  Win probability competes with coverability and margin. A lower sell
+  rate improves the customer's immediate choice; a rate below credible
+  carrier cost or risk leaves the load uncovered or the brokerage paying
+  to move it.
+failure_modes:
+  - name: Stale buy assumption
+    cost: >
+      The shipper accepts a rate the current carrier market cannot support.
+    signal: >
+      The quote uses old lane history despite changed date, lead time,
+      equipment, or market condition.
+  - name: Accessorial exposure omitted
+    cost: >
+      Detention, layover, stop, handling, storage, or re-delivery becomes
+      an unpriced dispute.
+    signal: >
+      Facility and service constraints appear in the request while the
+      quote has no governing accessorial terms.
+  - name: Ambiguous quote acceptance
+    cost: >
+      The shipper tenders freight under a rate, date, or service assumption
+      different from the broker's offer.
+    signal: >
+      Accepted quotes lack a version, validity period, or load reference.
+maturity:
+  - level: run badly
+    looks_like: >
+      A lane average becomes the sell rate and carrier cost is discovered
+      after the shipper tenders the load.
+  - level: run well
+    looks_like: >
+      Complete load facts, current capacity, accessorial exposure, credit,
+      margin, validity, and acceptance support each quote.
+  - level: run excellently
+    looks_like: >
+      Actual buy and exception cost improve future pricing, volatile lanes
+      receive shorter validity, and reasons for lost quotes remain usable.
+competencies:
+  - name: Market reading
+    note: >
+      The broker interprets lane balance, calendar, lead time, equipment,
+      facility, and recent carrier behavior for this movement.
+  - name: Risk pricing
+    note: >
+      Service work, claim exposure, credit, and uncertain accessorials have
+      to enter the decision before the margin is declared.
+automation:
+  now: >
+    Lane histories, market feeds, routing distance, fuel inputs, rate
+    models, margin calculation, quote versioning, and validity controls.
+  human: >
+    Market interpretation, unusual freight, facility risk, customer
+    strategy, carrier conversations, and final commitment.
+questions:
+  - What changed since the buy assumption behind this quote was observed?
+  - Which likely accessorial has no agreed customer treatment?

@@ -1,0 +1,6 @@
+id: maintenance-technician
+name: Maintenance technician
+kind: role
+summary: >
+  Inspects, services, repairs, and documents equipment and facility
+  assets before returning them to safe operation.

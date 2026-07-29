@@ -1,0 +1,8 @@
+id: vacancy-rate
+name: Vacancy rate
+kind: metric
+summary: >
+  Rentable units unoccupied and unavailable to earned rent during a
+  period.
+unit: percent
+direction: lower

@@ -1,0 +1,6 @@
+id: freight-broker
+name: Freight broker
+kind: role
+summary: >
+  Owns the commercial and operating result of a load from quote through
+  carrier purchase, execution, exception handling, and margin review.

@@ -1,0 +1,6 @@
+id: prescription
+name: Prescription
+kind: document
+summary: >
+  Prescriber, patient, medication, strength, directions, quantity,
+  refills, date, and authentication.

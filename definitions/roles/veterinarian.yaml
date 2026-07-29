@@ -1,0 +1,6 @@
+id: veterinarian
+name: Veterinarian
+kind: role
+summary: >
+  Examines animal patients, owns diagnostic and treatment decisions,
+  performs procedures, and communicates the care plan to the owner.

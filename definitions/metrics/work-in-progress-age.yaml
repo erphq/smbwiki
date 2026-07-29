@@ -1,0 +1,8 @@
+id: work-in-progress-age
+name: Work-in-progress age
+kind: metric
+summary: >
+  Time since performed client work was last delivered or converted
+  into an invoice.
+unit: days
+direction: lower

@@ -1,0 +1,6 @@
+id: repair-completion
+name: Repair completion
+kind: document
+summary: >
+  Technician record of authorized work performed, parts installed,
+  tests completed, and items ready for final inspection.

@@ -1,0 +1,93 @@
+id: service-location-planning
+name: Service location planning
+kind: skill
+department: sales
+summary: >
+  Service location planning selects and confirms where a mobile
+  operation will trade. Expected demand, fees, travel, access, parking,
+  permissions, utilities, service hours, weather exposure, nearby
+  competition, and the operating setup become a location schedule the
+  team and customers can rely on.
+inputs: []
+outputs: [location-schedule]
+steps:
+  - name: Evaluate the opportunity
+    role: owner-operator
+    note: >
+      Audience, event or host, expected service window, sales history,
+      fees, travel, and competing use of the same date are reviewed.
+  - name: Confirm operating conditions
+    role: owner-operator
+    note: >
+      Permission, parking position, arrival route, power, water, waste,
+      restrooms, security, weather plan, and site contact are verified.
+  - name: Commit the location
+    role: owner-operator
+    produces: [location-schedule]
+    note: >
+      Address, map point, date, service hours, arrival time, contact,
+      fees, site duties, and cancellation route enter the operating calendar.
+  - name: Publish and brief
+    role: owner-operator
+    note: >
+      Customers receive the correct location and hours while staff use
+      the same record for prep, loading, travel, and setup.
+  - name: Record the outcome
+    role: owner-operator
+    note: >
+      Sales, service time, waste, fees, access issues, host performance,
+      weather, and repeat decision update the location history.
+tension: >
+  Demand opportunity competes with operating fit. A promising crowd can
+  still produce a poor service day when travel, fees, access, utilities,
+  setup time, weather, or site rules consume the available window.
+failure_modes:
+  - name: Verbal permission becomes the booking
+    cost: >
+      The operator arrives without an accepted position, service window,
+      utility arrangement, or responsible site contact.
+    signal: >
+      The calendar has a location and lacks written operating conditions.
+  - name: Public details drift from the calendar
+    cost: >
+      Customers travel to an old location or arrive outside service hours.
+    signal: >
+      Published address or time differs across channels.
+  - name: Revenue is reviewed without site cost
+    cost: >
+      A busy location is repeated even though fees, travel, setup, waste,
+      or short service time consume the return.
+    signal: >
+      Location history records sales and omits the cost of serving there.
+maturity:
+  - level: run badly
+    looks_like: >
+      Locations live in messages, customers receive late updates, and the
+      team discovers access and utilities on arrival.
+  - level: run well
+    looks_like: >
+      Opportunity, conditions, confirmation, publication, team brief,
+      and outcome share one dated location record.
+  - level: run excellently
+    looks_like: >
+      Location history changes booking choices, service hours, prep,
+      staffing, menu availability, and host terms.
+competencies:
+  - name: Site feasibility
+    note: >
+      The operator combines customer opportunity with the physical and
+      commercial conditions needed to trade.
+  - name: Public coordination
+    note: >
+      Site, team, and customer information must change together when a
+      location or service window moves.
+automation:
+  now: >
+    Calendars, host records, maps, condition checklists, public location
+    updates, route planning, weather alerts, and outcome history.
+  human: >
+    Opportunity judgment, host negotiation, site inspection, weather
+    decisions, operating tradeoffs, and cancellation authority.
+questions:
+  - Which booked location still lacks one condition required to operate?
+  - Which repeated location produces activity without enough usable service time?

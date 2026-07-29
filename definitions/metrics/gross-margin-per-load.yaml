@@ -1,0 +1,7 @@
+id: gross-margin-per-load
+name: Gross margin per load
+kind: metric
+summary: >
+  Shipper revenue less carrier cost and load-specific direct charges.
+unit: currency
+direction: higher

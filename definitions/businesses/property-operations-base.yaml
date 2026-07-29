@@ -1,0 +1,40 @@
+id: property-operations-base
+name: Property operations (base)
+abstract: true
+revenue_model:
+  - id: management-fees
+    note: recurring fee for leasing, collection, maintenance, and reporting
+  - id: leasing-fees
+    note: fee earned when a new tenancy is placed
+skills:
+  - ref: lease-administration
+    roles: [property-manager]
+    documents: [lease-application, lease, tenant-ledger]
+    metrics: [vacancy-rate, rent-collection-rate]
+    software: [property-management-system]
+  - ref: maintenance-coordination
+    roles: [maintenance-coordinator, property-manager]
+    documents: [maintenance-request, work-order, job-photos]
+    metrics: [maintenance-response-time]
+    software: [property-management-system, facility-management]
+  - ref: accounts-receivable
+    roles: [property-manager]
+    documents: [tenant-ledger, payment-record]
+    metrics: [rent-collection-rate]
+    software: [property-management-system, accounting]
+  - ref: accounts-payable
+    roles: [property-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [property-management-system, accounting]
+  - ref: payment-reconciliation
+    roles: [property-manager]
+    documents: [tenant-ledger, payment-record]
+    software: [property-management-system, accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: property-manager
+        reports:
+          - role: maintenance-coordinator
+supply_chain:
+  sells_to: [homeowner]

@@ -1,0 +1,6 @@
+id: service-advisor
+name: Service advisor
+kind: role
+summary: >
+  Owns the customer-facing repair order from intake through estimate,
+  authorization, status updates, explanation, and checkout.

@@ -1,0 +1,49 @@
+id: project-services-base
+name: Project services (base)
+abstract: true
+revenue_model:
+  - id: quoted-projects
+    note: site work sold as an accepted scope and price
+skills:
+  - ref: lead-intake
+    roles: [office-manager, estimator]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [customer-relationship-management]
+  - ref: quoting
+    roles: [estimator, owner-operator]
+    documents: [job-request, quote]
+    metrics: [quote-win-rate]
+    software: [project-operations]
+  - ref: purchasing
+    roles: [office-manager, estimator]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management]
+  - ref: project-delivery
+    roles: [estimator, crew-lead, field-crew]
+    documents: [quote, work-order, job-photos]
+    metrics: [project-gross-margin, schedule-variance]
+    software: [project-operations]
+  - ref: invoicing
+    roles: [office-manager]
+    documents: [customer-invoice]
+    software: [accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: accounts-payable
+    roles: [office-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: crew-lead
+        reports:
+          - role: field-crew
+supply_chain:
+  sells_to: [homeowner]

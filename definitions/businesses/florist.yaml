@@ -1,0 +1,39 @@
+id: florist
+name: Florist
+codes:
+  naics: "459310"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A florist buys perishable stems and plants, conditions them, and turns
+  customer occasion, message, color, style, budget, timing, and delivery
+  details into a finished arrangement. Substitutions must preserve the
+  authorized design and value when exact product is unavailable.
+
+  Inventory loses value with time and changes form during production.
+  The operator coordinates advance orders, walk-in sales, event work,
+  cooler stock, recipes, labor, packaging, routes, recipient contact,
+  failed delivery, and waste while preserving the sender's promise.
+revenue_model:
+  - id: arrangements-and-retail
+    note: designed arrangements, plants, and related merchandise
+  - id: events-and-delivery
+    note: scheduled production, installation, and recipient delivery
+  - remove: [merchandise-sales, special-orders]
+skills:
+  - ref: delivery-dispatch
+    roles: [retail-manager, driver]
+    documents: [order-ticket, delivery-ticket]
+    metrics: [delivery-time]
+    software: [delivery-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+          - role: driver
+supply_chain:
+  buys_from: [flower-wholesaler]
+  sells_to: [retail-consumer]

@@ -1,0 +1,52 @@
+id: pharmacy
+name: Pharmacy
+codes:
+  naics: "456110"
+catalog_group: health-care
+extends: retail-store-base
+summary: >
+  A pharmacy receives prescriptions, patient and prescriber information,
+  insurance responses, clinical alerts, and product stock into one fill
+  queue. A valid order can still wait on clarification, prior
+  authorization, refill timing, unavailable stock, or a pharmacist
+  decision.
+
+  The pharmacist completes the transaction by verifying the
+  prescription, prepared product, label, and patient. Pickup or delivery
+  records identity, counseling, custody, and unresolved concerns while
+  inventory and controlled records update from the same dispensing event.
+revenue_model:
+  - id: prescription-dispensing
+    note: medication and professional dispensing revenue under patient or payer terms
+  - id: front-store-sales
+    note: nonprescription health and convenience merchandise
+  - remove: [merchandise-sales, special-orders]
+skills:
+  - ref: medication-dispensing
+    roles: [pharmacist, pharmacy-technician]
+    documents: [prescription, dispensing-record]
+    metrics: [prescription-fill-time]
+    software: [pharmacy-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: pharmacist
+        reports:
+          - role: pharmacy-technician
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+licenses:
+  us:
+    - ref: pharmacy-permit
+      requirement: required
+      condition: Required for the pharmacy premises and responsible-pharmacist arrangement.
+      as_of: "2026-07-29"
+    - ref: pharmacist-license
+      requirement: required
+      condition: Required for pharmacists practicing and performing the final dispensing check.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [pharmaceutical-wholesaler]
+  sells_to: [patient, payer, retail-consumer]

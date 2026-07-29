@@ -1,0 +1,26 @@
+id: appliance-repair-service
+name: Appliance Repair Service
+codes:
+  naics: "811412"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  An appliance repair service schedules a technician against a symptom,
+  appliance identity, location, access, warranty state, and likely
+  parts. Model and serial information determine service data, component
+  compatibility, recall status, and whether supply can support the visit.
+
+  Diagnosis separates the failed component from power, plumbing,
+  ventilation, installation, and user conditions. Authorization,
+  ordered parts, return visits, test results, and customer instruction
+  remain on one work order with a named next action for the occupied
+  home and disassembled appliance.
+revenue_model:
+  - id: diagnostic-calls
+    note: travel and diagnosis charged before or within approved repair work
+  - id: parts-and-labor
+    note: authorized component replacement and repair labor
+  - remove: [service-calls, quoted-projects]
+supply_chain:
+  buys_from: [appliance-parts-distributor]
+  sells_to: [homeowner, property-management-company]

@@ -1,0 +1,7 @@
+id: order-accuracy
+name: Order accuracy
+kind: metric
+summary: >
+  Orders delivered exactly as placed.
+unit: percent
+direction: higher

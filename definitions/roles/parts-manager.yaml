@@ -1,0 +1,6 @@
+id: parts-manager
+name: Parts manager
+kind: role
+summary: >
+  Identifies, sources, receives, returns, and job-costs the components
+  needed for approved repairs.

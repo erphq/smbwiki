@@ -1,0 +1,7 @@
+id: food-handler-permit
+name: Food handler permit
+kind: license
+geo: [us]
+summary: >
+  Per-employee food safety certification.
+jurisdiction: state

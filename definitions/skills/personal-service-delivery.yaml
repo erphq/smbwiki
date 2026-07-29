@@ -1,0 +1,94 @@
+id: personal-service-delivery
+name: Personal service delivery
+kind: skill
+department: operations
+summary: >
+  Personal service delivery carries an appointment through condition
+  check, consent, preparation, service, aftercare, and record update.
+  The provider keeps the requested result, safety limits, products,
+  timing, and follow-up attached to the client.
+inputs: [appointment-record, client-profile]
+outputs: [service-ticket]
+steps:
+  - name: Confirm the appointment
+    role: service-provider
+    consumes: [appointment-record, client-profile]
+    note: >
+      Client identity, requested service, available time, prior record,
+      current condition, and known restrictions are reviewed.
+  - name: Agree the service
+    role: service-provider
+    note: >
+      Result, method, limits, price, timing, consent, and any reason to
+      defer or modify the service are made clear.
+  - name: Prepare the station and client
+    role: service-provider
+    note: >
+      Tools, products, sanitation, protection, positioning, and comfort
+      are ready before the service begins.
+  - name: Deliver and observe
+    role: service-provider
+    note: >
+      The provider follows the agreed method while monitoring condition,
+      comfort, result, timing, and reasons to stop.
+  - name: Record and hand off
+    role: service-provider
+    produces: [service-ticket]
+    note: >
+      Service, products, observations, aftercare, price, and suggested
+      follow-up update the ticket and client record.
+tension: >
+  A requested result competes with condition, time, safety, and honest
+  service limits. Agreeing too quickly can produce injury, poor results,
+  schedule spill, and a repeat visit with no reliable history.
+failure_modes:
+  - name: Prior condition is assumed
+    cost: >
+      The provider applies a service to changed health, skin, hair,
+      nail, muscle, or behavior conditions.
+    signal: >
+      Repeat clients receive no current condition check before work.
+  - name: Service grows without a new decision
+    cost: >
+      Time and price exceed the appointment while later clients absorb
+      the delay.
+    signal: >
+      Added work appears on checkout without a recorded agreement.
+  - name: Record omits what affects the next visit
+    cost: >
+      Another provider repeats products, methods, or intensity without
+      knowing the prior response.
+    signal: >
+      Ticket records only a service code and payment.
+maturity:
+  - level: run badly
+    looks_like: >
+      Provider memory carries consent, method, products, condition, and
+      follow-up between visits.
+  - level: run well
+    looks_like: >
+      Appointment, current condition, agreed service, delivery,
+      aftercare, and ticket update one client record.
+  - level: run excellently
+    looks_like: >
+      Service evidence improves booking duration, preparation,
+      provider assignment, product readiness, and follow-up.
+competencies:
+  - name: Condition and safety assessment
+    note: >
+      The provider recognizes when to modify, defer, stop, or refer a
+      requested service.
+  - name: Service execution
+    note: >
+      Technique, pacing, sanitation, observation, and client
+      communication stay controlled through delivery.
+automation:
+  now: >
+    Intake prompts, consent, service history, station checklists,
+    timing, tickets, aftercare messages, and rebooking reminders.
+  human: >
+    Condition assessment, technique, touch, aesthetic judgment,
+    behavior handling, comfort, consent, and stop decisions.
+questions:
+  - Which service scheduled today lacks the time or preparation its record indicates?
+  - What information from a completed service would another provider need at the next visit?

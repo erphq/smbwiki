@@ -1,0 +1,6 @@
+id: freight-claim
+name: Freight claim
+kind: document
+summary: >
+  Formal record of shipment loss, damage, shortage, or service failure
+  with value, evidence, responsible parties, and resolution status.

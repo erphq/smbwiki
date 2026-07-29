@@ -1,0 +1,7 @@
+id: barista
+name: Barista
+kind: role
+summary: >
+  Takes orders, prepares drinks, maintains the bar, and hands the
+  finished order to the customer. The role sits at both ends of the
+  ticket, so it owns accuracy as well as drink execution.

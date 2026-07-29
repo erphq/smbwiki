@@ -1,0 +1,7 @@
+id: loads-per-broker-day
+name: Loads per broker-day
+kind: metric
+summary: >
+  Active or completed loads managed per broker working day.
+unit: count
+direction: higher

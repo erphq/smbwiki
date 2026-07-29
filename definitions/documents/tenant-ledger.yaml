@@ -1,0 +1,6 @@
+id: tenant-ledger
+name: Tenant ledger
+kind: document
+summary: >
+  Charges, receipts, credits, deposits, adjustments, and balance for
+  one tenancy.

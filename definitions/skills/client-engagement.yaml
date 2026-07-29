@@ -1,0 +1,96 @@
+id: client-engagement
+name: Client engagement
+kind: skill
+department: sales
+summary: >
+  Client engagement turns an inquiry into an authorized professional
+  assignment. The firm determines fit, conflict, problem, scope,
+  responsibilities, fee basis, inputs, review path, and change
+  authority before work is released.
+inputs: [client-brief]
+outputs: [engagement-letter]
+steps:
+  - name: Qualify the client and matter
+    role: principal
+    consumes: [client-brief]
+    note: >
+      Identity, need, deadline, decision owner, service fit, conflicts,
+      risk, and ability to support the work are checked.
+  - name: Define the assignment
+    role: professional
+    consumes: [client-brief]
+    note: >
+      Questions to answer, deliverables, assumptions, exclusions,
+      required inputs, reviewers, and completion conditions are made
+      explicit.
+  - name: Build the commercial terms
+    role: principal
+    note: >
+      Fee method, estimate or budget, billing timing, expenses, payment
+      terms, and scope-change treatment are set against the work.
+  - name: Secure authorization
+    role: client-coordinator
+    produces: [engagement-letter]
+    note: >
+      The client and firm approve the current engagement and provide
+      the information, deposit, or access required to begin.
+tension: >
+  Responsiveness competes with disciplined acceptance. Starting early
+  can protect a deadline; starting before identity, scope, authority,
+  inputs, and economics are clear creates unrecoverable work and
+  professional risk.
+failure_modes:
+  - name: Work begins from an informal request
+    cost: >
+      The firm consumes capacity before scope, price, responsibility,
+      and decision authority are agreed.
+    signal: >
+      Time appears on a client record without a current engagement.
+  - name: Scope describes activity instead of result
+    cost: >
+      Client and team cannot tell what completion means or whether new
+      requests change the fee.
+    signal: >
+      Engagement language lists hours or tasks without named
+      deliverables and exclusions.
+  - name: Required input has no owner
+    cost: >
+      Staff wait, improvise, or redo work while the deadline remains
+      unchanged.
+    signal: >
+      An input needed for the first work stage lacks a provider and due
+      date.
+maturity:
+  - level: run badly
+    looks_like: >
+      A promising conversation becomes work, and commercial terms are
+      reconstructed when billing begins.
+  - level: run well
+    looks_like: >
+      Qualification, scope, inputs, responsibilities, fee, and
+      authorization form one controlled engagement.
+  - level: run excellently
+    looks_like: >
+      Acceptance evidence improves scoping ranges, client selection,
+      capacity promises, and the pricing of recurring risk.
+competencies:
+  - name: Scope design
+    note: >
+      The operator converts a broad need into a bounded answer,
+      deliverable, evidence set, and decision path.
+  - name: Acceptance judgment
+    note: >
+      The principal recognizes conflicts, unsupported deadlines,
+      unclear authority, and risk outside the firm's competence.
+automation:
+  now: >
+    Intake forms, identity and conflict searches, proposal templates,
+    approvals, electronic signatures, deposits, and missing-input
+    reminders.
+  human: >
+    Fit, professional judgment, conflict interpretation, scope,
+    negotiation, risk acceptance, and the decision to represent the
+    client.
+questions:
+  - Which active work lacks a current authorized scope?
+  - What promised deadline depends on a client input with no owner or due date?

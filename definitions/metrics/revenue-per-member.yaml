@@ -1,0 +1,8 @@
+id: revenue-per-member
+name: Revenue per member
+kind: metric
+summary: >
+  Membership and add-on revenue divided by active members for the
+  period.
+unit: currency
+direction: higher

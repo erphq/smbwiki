@@ -1,0 +1,90 @@
+id: utility-locating
+name: Utility locating
+kind: skill
+department: compliance
+summary: >-
+  Coordinates records and locate requests, marks known services, reconciles
+  conflicts, potholes critical crossings, and briefs operators on tolerance
+  zones. Utility locating leaves a current work basis, a field record, and
+  acceptance evidence that another operator can trace.
+inputs:
+  - site-plan
+outputs:
+  - daily-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before utility locating, read the current scope and revisions, then
+      verify survey control, utility information, permits, erosion controls,
+      equipment access, haul route, soil direction, and weather plan.
+  - name: Set the field controls
+    note: >-
+      Translate utility locating into work limits, sequence, responsibilities,
+      hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During utility locating, the operator records quantities, observations,
+      decisions, and concealed details, and stops when the field condition
+      changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept utility locating, check the completed work against specified
+      limits, safe slopes and support, approved grades, drainage, compaction,
+      stabilized access, and recorded quantities, then close correction and
+      issue the resulting record.
+tension: >-
+  Utility locating has to remain inside its acceptance basis while production
+  moves. Unverified utilities, unsuitable soils, water, or lost control can
+  turn planned earthwork into damage and repeated handling.
+failure_modes:
+  - name: Utility locating starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      utility locating is settled.
+    signal: >-
+      The utility locating work package still has an open drawing, access,
+      material, predecessor, or approval dependency when labor is assigned.
+  - name: Utility locating closes without evidence
+    cost: >-
+      A concealed condition or required result from utility locating cannot be
+      verified without opening, repeat work, delay, or a disputed exception.
+    signal: >-
+      Utility locating is released while its required check, location record,
+      test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Utility locating is driven by crew availability and visible completion;
+      readiness, hold points, and acceptance evidence are resolved afterward.
+  - level: run well
+    looks_like: >-
+      Utility locating starts from a checked basis, follows a named sequence,
+      stops on changed conditions, and closes against recorded acceptance
+      criteria.
+  - level: run excellently
+    looks_like: >-
+      Utility locating uses field evidence, production variance, defects, and
+      closeout results to improve the next estimate, work package, and control
+      point.
+competencies:
+  - name: Earthwork control and site logistics
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of utility locating.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for utility locating have to be captured while the
+      relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Utility locating can use digital revisions, checklists, hold points, photo
+    capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting utility locating remain
+    human.
+questions:
+  - Which unresolved condition can stop utility locating before work begins?
+  - >-
+    Which record proves utility locating was accepted before it was covered,
+    loaded, energized, occupied, or handed over?

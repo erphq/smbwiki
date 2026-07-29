@@ -1,0 +1,8 @@
+id: table-turn-time
+name: Table turn time
+kind: metric
+summary: >
+  Minutes from seating a party until the table is ready for the next
+  party.
+unit: minutes
+direction: lower

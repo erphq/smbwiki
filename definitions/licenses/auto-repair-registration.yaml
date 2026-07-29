@@ -1,0 +1,9 @@
+id: auto-repair-registration
+name: Auto repair business registration
+kind: license
+geo: [us]
+summary: >
+  Business authorization required in some jurisdictions for shops that
+  diagnose or repair vehicles, often with estimate, record, and consumer
+  disclosure rules.
+jurisdiction: state or local

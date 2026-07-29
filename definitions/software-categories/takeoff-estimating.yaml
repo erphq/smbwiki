@@ -1,0 +1,8 @@
+id: takeoff-estimating
+name: Takeoff and estimating
+kind: software-category
+summary: >
+  Drawing measurement, assemblies, production factors, vendor pricing,
+  bid comparison, estimate revision, and scope presentation.
+erpai_category: operations
+erpai_apps: []

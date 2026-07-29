@@ -1,0 +1,6 @@
+id: rate-confirmation
+name: Rate confirmation
+kind: document
+summary: >
+  Brokerage and carrier agreement for one load, including route, times,
+  equipment, line-haul rate, accessorial rules, and instructions.

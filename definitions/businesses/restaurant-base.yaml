@@ -1,0 +1,66 @@
+id: restaurant-base
+name: Restaurant (base)
+abstract: true
+revenue_model:
+  - id: dine-in
+    note: table service, the core covers-per-night economics
+  - id: takeout
+    note: phone and walk-in orders
+  - id: catering
+    note: event orders, quoted per job
+skills:
+  - ref: menu-planning
+    roles: [head-chef]
+    documents: [menu, recipe-card]
+    metrics: [food-cost-percentage]
+    software: [restaurant-pos]
+  - ref: food-prep
+    roles: [line-cook, head-chef]
+    documents: [prep-list]
+    metrics: [ticket-time]
+    software: [kitchen-display-system]
+  - ref: order-taking
+    roles: [server]
+    documents: [order-ticket]
+    software: [restaurant-pos]
+  - ref: food-inventory
+    roles: [head-chef]
+    documents: [purchase-order, supplier-invoice]
+    metrics: [food-cost-percentage, waste-percentage]
+    software: [inventory-management]
+  - ref: staff-scheduling
+    roles: [general-manager]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [general-manager]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: general-manager
+        reports:
+          - role: server
+      - role: head-chef
+        reports:
+          - role: line-cook
+          - role: dishwasher
+licenses:
+  us:
+    - ref: food-service-license
+      requirement: commonly-applicable
+      condition: Commonly required by the state or local health authority for a food establishment.
+      as_of: "2026-07-29"
+    - ref: food-handler-permit
+      requirement: commonly-applicable
+      condition: Commonly required for covered food employees; the credential and training rules vary by jurisdiction.
+      as_of: "2026-07-29"
+    - ref: liquor-license
+      requirement: conditional
+      condition: Required only when the business sells or serves alcoholic beverages under state or local rules.
+      as_of: "2026-07-29"
+supply_chain:
+  buys_from: [food-distributor, restaurant-equipment-dealer]
+  sells_to: [retail-consumer]

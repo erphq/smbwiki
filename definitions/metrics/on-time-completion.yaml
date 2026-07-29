@@ -1,0 +1,7 @@
+id: on-time-completion
+name: On-time completion
+kind: metric
+summary: >
+  Production orders completed by their committed finish date.
+unit: percent
+direction: higher

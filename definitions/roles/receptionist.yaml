@@ -1,0 +1,6 @@
+id: receptionist
+name: Receptionist
+kind: role
+summary: >
+  Answers requests, manages the appointment book, confirms customer
+  information, and directs arrivals into the next operating step.

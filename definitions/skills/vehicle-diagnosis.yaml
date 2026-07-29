@@ -1,0 +1,92 @@
+id: vehicle-diagnosis
+name: Vehicle diagnosis
+kind: skill
+department: operations
+summary: >
+  Vehicle diagnosis converts a recorded concern into supported findings.
+  The technician reproduces the condition where possible, tests the
+  relevant system, separates causes from symptoms, and leaves evidence
+  another technician or advisor can review.
+inputs: [repair-order]
+outputs: [inspection-report]
+steps:
+  - name: Read and reproduce
+    role: automotive-technician
+    consumes: [repair-order]
+    note: >
+      A test under the reported conditions comes before parts are
+      removed or codes are cleared.
+  - name: Establish the baseline
+    role: automotive-technician
+    note: >
+      Relevant measurements, fault codes, fluid condition, and visible
+      evidence are captured in their original state.
+  - name: Isolate the cause
+    role: automotive-technician
+    note: >
+      Testing narrows the failure until measured evidence supports the
+      proposed repair.
+  - name: Record findings
+    role: automotive-technician
+    produces: [inspection-report]
+    note: >
+      Confirmed faults, related risks, and tests that passed remain
+      distinguishable in the report.
+tension: >
+  Diagnostic depth competes with time and customer appetite for testing
+  cost. Stopping early risks selling the wrong repair; continuing
+  without a decision point can consume bay time the customer never
+  intended to buy.
+failure_modes:
+  - name: Code treated as cause
+    cost: >
+      A component is replaced while the wiring, leak, operating
+      condition, or upstream fault remains.
+    signal: >
+      The finding repeats a fault-code description without a confirming
+      test.
+  - name: Symptom cannot be reproduced
+    cost: >
+      The shop either returns an unresolved vehicle or spends open-ended
+      time searching under the wrong conditions.
+    signal: >
+      The inspection report lacks the temperature, speed, load, or timing
+      described at intake.
+  - name: Evidence lost during testing
+    cost: >
+      Clearing codes or changing the vehicle removes the baseline needed
+      to justify the finding.
+    signal: >
+      Pre-test readings and freeze-frame or condition notes are absent.
+maturity:
+  - level: run badly
+    looks_like: >
+      The first plausible part is quoted from the symptom or fault code
+      and failed repairs return as new work.
+  - level: run well
+    looks_like: >
+      Each recommended repair has a reproduced concern, a test result,
+      and a finding written for review.
+  - level: run excellently
+    looks_like: >
+      Diagnostic paths are repeatable, uncertain findings are labeled,
+      and later quality checks can rerun the same condition.
+competencies:
+  - name: Systems reasoning
+    note: >
+      The technician traces how power, control, pressure, heat, motion,
+      and communication interact before naming a failed component.
+  - name: Evidence discipline
+    note: >
+      Measurements and conditions must survive translation from the bay
+      to the estimate and later customer explanation.
+automation:
+  now: >
+    Scan data capture, service-information lookup, test-plan prompts,
+    measurement storage, and pattern comparison against prior repairs.
+  human: >
+    Choosing the next discriminating test, judging intermittent evidence,
+    and taking responsibility for the causal finding.
+questions:
+  - What test result supports each part or operation being recommended?
+  - Can quality control reproduce the original concern from this report?

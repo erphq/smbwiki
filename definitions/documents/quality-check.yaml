@@ -1,0 +1,6 @@
+id: quality-check
+name: Quality check
+kind: document
+summary: >
+  Final verification that the approved work is complete, the original
+  concern is addressed, and the asset can be released.

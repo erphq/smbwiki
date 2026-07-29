@@ -1,0 +1,26 @@
+id: grocery-store
+name: Grocery Store
+codes:
+  naics: "445110"
+catalog_group: retail-vehicles
+extends: retail-store-base
+summary: >
+  A grocery store receives thousands of items with different shelf
+  lives, temperatures, handling rules, case sizes, prices, and demand
+  patterns. Receiving, reserve storage, shelf replenishment, service
+  departments, checkout, and waste all change available inventory.
+
+  The manager watches stockouts, freshness, temperature, shrink,
+  substitutions, labor, promotions, and cash while customers shop the
+  same stock. A useful item record distinguishes what is on hand, what
+  is saleable, where it is, when it expires, and what has already been
+  committed to an order.
+revenue_model:
+  - id: grocery-merchandise
+    note: food, household, and general merchandise sold from store inventory
+  - id: prepared-and-service-departments
+    note: location-specific fresh, prepared, and counter production
+  - remove: [merchandise-sales, special-orders]
+supply_chain:
+  buys_from: [grocery-wholesaler, food-distributor]
+  sells_to: [retail-consumer]

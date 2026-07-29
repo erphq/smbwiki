@@ -1,0 +1,6 @@
+id: bartender
+name: Bartender
+kind: role
+summary: >
+  Controls beverage production, guest service, tabs, stock movement,
+  station readiness, and service decisions at the bar.

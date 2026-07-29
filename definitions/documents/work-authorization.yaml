@@ -1,0 +1,6 @@
+id: work-authorization
+name: Work authorization
+kind: document
+summary: >
+  The customer's recorded approval for defined repair work and price,
+  including the date, method, and any declined items.

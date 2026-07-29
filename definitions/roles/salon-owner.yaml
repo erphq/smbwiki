@@ -1,0 +1,6 @@
+id: salon-owner
+name: Salon owner
+kind: role
+summary: >
+  Controls the premises, operating model, licenses, inventory, and
+  economics of commissioned staff or rented chairs.

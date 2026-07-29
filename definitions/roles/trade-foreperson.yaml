@@ -1,0 +1,6 @@
+id: trade-foreperson
+name: Trade foreperson
+kind: role
+summary: >
+  Converts the current drawings and work package into crew assignments,
+  production sequence, material use, field checks, and daily records.

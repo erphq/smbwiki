@@ -1,0 +1,26 @@
+id: pool-service-company
+name: Pool Service Company
+codes:
+  naics: "561790"
+catalog_group: construction-property
+extends: field-services-base
+summary: >
+  A pool service company runs recurring routes across water systems
+  that change with weather, use, debris, chemicals, equipment, and
+  customer behavior. Each visit follows the site's volume, surface,
+  filtration, sanitation method, access, and stored chemical condition.
+
+  The service record connects observed water, tests, chemical additions,
+  cleaning, equipment operation, leaks, and customer instructions.
+  Unsafe chemistry, failed circulation, or active water loss needs an
+  owned response outside the normal route before the next scheduled
+  visit.
+revenue_model:
+  - id: recurring-pool-care
+    note: scheduled testing, treatment, cleaning, and equipment observation
+  - id: repairs-and-startups
+    note: separately authorized equipment repair and seasonal work
+  - remove: [service-calls, quoted-projects]
+supply_chain:
+  buys_from: [pool-supply-distributor]
+  sells_to: [homeowner, property-management-company]

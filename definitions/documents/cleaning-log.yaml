@@ -1,0 +1,6 @@
+id: cleaning-log
+name: Cleaning log
+kind: document
+summary: >
+  Area, task, time, condition, exception, and person responsible for a
+  completed cleaning inspection.

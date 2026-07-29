@@ -1,0 +1,8 @@
+id: membership-management
+name: Membership management
+kind: software-category
+summary: >
+  Plans, agreements, recurring billing, visits, classes, communication,
+  freezes, cancellations, and member account state.
+erpai_category: operations
+erpai_apps: []

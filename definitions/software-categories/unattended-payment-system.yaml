@@ -1,0 +1,8 @@
+id: unattended-payment-system
+name: Unattended payment system
+kind: software-category
+summary: >
+  Coin, stored-value card, bank card, or mobile payment acceptance tied
+  to a specific self-service machine activation.
+erpai_category: sales
+erpai_apps: []

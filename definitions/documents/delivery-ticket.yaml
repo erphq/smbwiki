@@ -1,0 +1,5 @@
+id: delivery-ticket
+name: Delivery ticket
+kind: document
+summary: >
+  A dispatched delivery order: address, items, driver, promise time.

@@ -1,0 +1,25 @@
+id: employment-agency
+name: Employment Agency
+codes:
+  naics: "561311"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  An employment agency accepts a search with role, outcomes, location,
+  compensation, timing, requirements, interviewer authority, and fee
+  terms, then builds and evaluates a candidate pipeline. Client criteria
+  and candidate consent control what information can be represented.
+
+  Sourcing, screening, interviews, feedback, references, offer,
+  acceptance, start, replacement terms, and fee eligibility remain on
+  one search record. The agency must separate verified fact, candidate
+  statement, recruiter assessment, and client decision while protecting
+  confidential employment information.
+revenue_model:
+  - id: placement-fees
+    note: contingent or retained compensation tied to a completed hire
+  - id: search-and-recruiting-services
+    note: authorized sourcing, screening, and project recruitment work
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+supply_chain:
+  sells_to: [commercial-client]

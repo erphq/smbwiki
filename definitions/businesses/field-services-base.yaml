@@ -1,0 +1,53 @@
+id: field-services-base
+name: Field services (base)
+abstract: true
+revenue_model:
+  - id: service-calls
+    note: demand work, dispatched same-day or next-day
+  - id: quoted-projects
+    note: larger jobs estimated and scheduled ahead
+skills:
+  - ref: lead-intake
+    roles: [office-manager]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [field-service-management]
+  - ref: quoting
+    roles: [owner-operator]
+    documents: [quote]
+    metrics: [quote-win-rate]
+    software: [field-service-management]
+  - ref: dispatch
+    roles: [dispatcher]
+    documents: [work-order]
+    metrics: [jobs-per-tech-day]
+    software: [field-service-management]
+  - ref: field-job-execution
+    roles: [technician]
+    documents: [work-order, job-photos]
+    metrics: [first-time-fix-rate, callback-rate]
+    software: [field-service-management]
+  - ref: purchasing
+    roles: [office-manager]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management]
+  - ref: invoicing
+    roles: [office-manager]
+    documents: [customer-invoice]
+    metrics: [average-ticket]
+    software: [accounting]
+  - ref: accounts-receivable
+    roles: [office-manager]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: dispatcher
+      - role: lead-technician
+        reports:
+          - role: technician
+supply_chain:
+  sells_to: [homeowner]

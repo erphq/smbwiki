@@ -1,0 +1,6 @@
+id: cancellation-record
+name: Cancellation record
+kind: document
+summary: >
+  Processed membership end date, final billing state, access change,
+  reason, and confirmation.

@@ -1,0 +1,85 @@
+id: purchasing
+name: Purchasing
+kind: skill
+department: supply
+summary: >
+  Purchasing converts an approved need into a supplier commitment,
+  follows the promised delivery, and records what arrived and what was
+  billed. Orders may replenish routine stock or reserve specific
+  material for a job, appointment, or production period.
+inputs: [purchase-order]
+outputs: [supplier-invoice]
+steps:
+  - name: Validate the need
+    consumes: [purchase-order]
+    note: >
+      Quantity, required date, destination, and expense owner are settled
+      before the supplier receives the order.
+  - name: Place and confirm
+    note: >
+      The supplier's acknowledgement is checked for substitutions,
+      backorders, price changes, and freight.
+  - name: Track the promise
+    note: >
+      A late item is raised while the schedule can still move.
+  - name: Receive and record
+    produces: [supplier-invoice]
+    note: >
+      The invoice is attached to the order with shortages, damage, and
+      returns still visible.
+tension: >
+  Availability competes with cash and storage. Buying ahead protects
+  the operating schedule; excess or wrong inventory traps cash and
+  makes the next count less trustworthy.
+failure_modes:
+  - name: Unconfirmed lead time
+    cost: >
+      Labor, customer appointments, or production are scheduled around
+      material that the supplier never promised.
+    signal: >
+      An open order has no acknowledged ship or pickup date.
+  - name: Cost detached from use
+    cost: >
+      A job or department appears profitable because its material landed
+      in a general expense account.
+    signal: >
+      Received items lack a job, location, or stock destination.
+  - name: Silent substitution
+    cost: >
+      The delivered item conflicts with the approved work or changes the
+      result promised to the customer.
+    signal: >
+      The supplier acknowledgement differs from the order without an
+      approval note.
+maturity:
+  - level: run badly
+    looks_like: >
+      Orders are placed from memory, shortages are discovered when work
+      starts, and invoices are the first record of what was bought.
+  - level: run well
+    looks_like: >
+      Every order has an owner, required date, supplier confirmation,
+      destination, and receiving result.
+  - level: run excellently
+    looks_like: >
+      Demand, lead time, and open orders are visible together, and late
+      or changed supply reaches the schedule before it reaches the floor.
+competencies:
+  - name: Specification accuracy
+    note: >
+      The buyer can distinguish interchangeable supply from an item whose
+      fit, formulation, grade, or approval matters.
+  - name: Supplier follow-through
+    note: >
+      A purchase order is only useful when the acknowledgement and later
+      delivery are checked against it.
+automation:
+  now: >
+    Reorder suggestions, approval routing, order transmission, delivery
+    reminders, and invoice matching.
+  human: >
+    Substitution approval, shortage allocation, supplier escalation, and
+    deciding when schedule risk justifies a higher cost.
+questions:
+  - Which open order can currently delay committed work?
+  - Can each received item be traced to its job, location, or stock level?

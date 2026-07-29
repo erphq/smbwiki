@@ -1,0 +1,91 @@
+id: maintenance-agreements
+name: Maintenance agreements
+kind: skill
+department: maintenance
+summary: >
+  Maintenance agreements define and deliver recurring service obligations
+  for installed systems or equipment. Visit scope, frequency, covered
+  assets, priority terms, exclusions, price, renewal, and customer duties
+  become future work the operating calendar must reserve.
+inputs: []
+outputs: [service-agreement]
+steps:
+  - name: Define the service promise
+    note: >
+      Covered assets, visit work, frequency, access, priority, exclusions,
+      price, renewal, and cancellation are matched to real service capacity.
+  - name: Present the agreement
+    note: >
+      The customer can separate included maintenance from repairs,
+      emergency response, material, and code or upgrade work.
+  - name: Activate the obligation
+    produces: [service-agreement]
+    note: >
+      Asset list, start, renewal, billing, visit cadence, contact, and
+      priority state enter the system that will create future work.
+  - name: Deliver and record visits
+    note: >
+      Completed service, findings, declined recommendations, asset change,
+      and next due date update the agreement record.
+  - name: Review renewal
+    note: >
+      Scope, asset count, price, visit completion, and open issues are
+      reviewed before a new term begins.
+tension: >
+  Recurring revenue competes with future service capacity and promise
+  integrity. Each agreement smooths demand and strengthens the customer
+  relationship; every included visit and priority term consumes a future
+  slot that must be protected.
+failure_modes:
+  - name: Agreement sold beyond capacity
+    cost: >
+      Included visits and priority access crowd the calendar or arrive
+      later than the customer was promised.
+    signal: >
+      Due agreement work grows while available recurring-service slots
+      remain unchanged.
+  - name: Covered assets drift
+    cost: >
+      Staff service equipment absent from the price or overlook equipment
+      the customer expects to be included.
+    signal: >
+      Field notes and agreement asset list describe different systems.
+  - name: Renewal hides missed obligation
+    cost: >
+      The customer pays for another term while prior included visits or
+      unresolved findings remain open.
+    signal: >
+      Renewal becomes eligible before visit completion is reconciled.
+maturity:
+  - level: run badly
+    looks_like: >
+      Agreements are sold as discounts and staff search for customers to
+      schedule when the season slows.
+  - level: run well
+    looks_like: >
+      Scope, assets, due dates, priority, completed visits, findings,
+      billing, and renewal share one agreement record.
+  - level: run excellently
+    looks_like: >
+      Agreement count is planned against calendar capacity, field outcomes
+      update covered assets, and renewal addresses every missed promise.
+competencies:
+  - name: Promise design
+    note: >
+      The operator turns maintenance value into specific obligations the
+      schedule, technician, and customer can all recognize.
+  - name: Capacity stewardship
+    note: >
+      Recurring work needs protected future capacity through both quiet
+      periods and seasonal demand peaks.
+automation:
+  now: >
+    Agreement templates, asset registers, recurring billing, due-date
+    generation, scheduling campaigns, priority flags, and renewal queues.
+  human: >
+    Scope and asset judgment, capacity planning, field findings,
+    exceptions, pricing changes, and renewal conversations after a missed
+    obligation.
+questions:
+  - How many included visits are currently due without a protected slot?
+  - Does each renewal account for completed visits and the current asset list?

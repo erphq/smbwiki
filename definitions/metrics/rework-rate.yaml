@@ -1,0 +1,8 @@
+id: rework-rate
+name: Rework rate
+kind: metric
+summary: >
+  Share of completed work that requires removal, repair, or repeat labor
+  before acceptance.
+unit: percent
+direction: lower

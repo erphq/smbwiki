@@ -1,0 +1,6 @@
+id: service-agreement
+name: Service agreement
+kind: document
+summary: >
+  A recurring maintenance contract: visits per year, priority terms,
+  renewal date.

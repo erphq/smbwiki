@@ -1,0 +1,33 @@
+id: pet-boarding-business
+name: Pet Boarding Business
+codes:
+  naics: "812910"
+catalog_group: personal-recreation
+extends: personal-services-base
+summary: >
+  A pet boarding business commits dated enclosure and care capacity
+  against animal identity, health and vaccine records, feeding,
+  medication, behavior, compatibility, emergency authority, belongings,
+  arrival, and pickup. Capacity depends on suitable space, staff, and
+  the count of empty kennels.
+
+  During the stay, staff record food, water, medication, elimination,
+  exercise, behavior, cleaning, contact, and changes in condition.
+  Missed care, escape risk, injury, illness, owner delay, and veterinary
+  escalation need an immediate owner and a record that survives shift
+  changes.
+revenue_model:
+  - id: boarding-nights
+    note: dated animal accommodation and defined daily care
+  - id: added-care-and-activity
+    note: medication, play, grooming, transport, and other authorized services
+  - remove: [booked-services, retail-products]
+skills:
+  - ref: care-plan-delivery
+    roles: [service-provider, owner-operator]
+    documents: [care-plan, medication-record, incident-report]
+    metrics: [incident-rate]
+    software: [care-management]
+supply_chain:
+  buys_from: [pet-supply-distributor]
+  sells_to: [individual-client]

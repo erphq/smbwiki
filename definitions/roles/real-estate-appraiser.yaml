@@ -1,0 +1,6 @@
+id: real-estate-appraiser
+name: Real estate appraiser
+kind: role
+summary: >
+  Defines the appraisal problem, verifies property and market evidence,
+  develops applicable valuation approaches, and signs the final opinion.

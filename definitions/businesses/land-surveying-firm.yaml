@@ -1,0 +1,113 @@
+id: land-surveying-firm
+name: Land Surveying Firm
+codes:
+  naics: '541370'
+catalog_group: construction-property
+extends: professional-services-base
+summary: >-
+  A land surveying firm researches deeds and plats, establishes control,
+  measures monuments and improvements, reduces observations, resolves boundary
+  evidence, and issues signed plats or descriptions. The assignment purpose,
+  property rights, coordinate basis, adjoining records, access, terrain, and
+  required certification define the field plan.
+
+
+  Measurements do not decide a boundary by themselves. The surveyor weighs
+  record calls, found evidence, occupation, senior rights, closure, and
+  applicable law, then documents professional judgment. Redundant
+  observations, field notes, adjustment records, drafting checks, and
+  signature control make the result traceable after crews leave.
+skills:
+  - ref: client-engagement
+    roles: [principal, land-surveyor, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, professional-services-automation]
+  - ref: professional-service-delivery
+    roles: [land-surveyor, principal, client-coordinator]
+    documents: [engagement-letter, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [professional-services-automation]
+  - ref: survey-record-research
+    roles:
+      - land-surveyor
+      - principal
+    documents:
+      - site-plan
+      - survey-plat
+    metrics:
+      - survey-closure-error
+      - report-turnaround-time
+    software:
+      - surveying-mapping
+  - ref: field-control-establishment
+    roles:
+      - land-surveyor
+      - principal
+    documents:
+      - site-plan
+      - survey-plat
+    metrics:
+      - survey-closure-error
+      - report-turnaround-time
+    software:
+      - surveying-mapping
+  - ref: boundary-field-survey
+    roles:
+      - land-surveyor
+      - survey-technician
+      - principal
+    documents:
+      - site-plan
+      - survey-field-notes
+      - survey-plat
+    metrics:
+      - survey-closure-error
+      - report-turnaround-time
+    software:
+      - surveying-mapping
+  - ref: survey-data-adjustment
+    roles:
+      - land-surveyor
+      - principal
+    documents:
+      - site-plan
+      - survey-plat
+    metrics:
+      - survey-closure-error
+      - report-turnaround-time
+    software:
+      - surveying-mapping
+  - ref: plat-preparation
+    roles:
+      - land-surveyor
+      - principal
+    documents:
+      - site-plan
+      - survey-plat
+    metrics:
+      - survey-closure-error
+      - report-turnaround-time
+    software:
+      - surveying-mapping
+supply_chain:
+  buys_from:
+    - engineering-firm
+    - real-estate-brokerage
+  sells_to:
+    - individual-client
+    - commercial-client
+    - property-owner
+licenses:
+  us:
+    - ref: professional-land-surveyor-license
+      requirement: required
+      condition: Required for the surveyor taking responsibility for regulated boundary work and signed instruments.
+      as_of: "2026-07-29"
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: land-surveyor
+        reports:
+          - role: survey-technician

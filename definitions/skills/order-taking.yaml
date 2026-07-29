@@ -1,0 +1,84 @@
+id: order-taking
+name: Order taking
+kind: skill
+department: sales
+summary: >
+  Order taking converts a customer's request into an unambiguous ticket
+  the production team can fulfill. Item, size, quantity, modifier,
+  allergy or handling note, service channel, destination, price, and
+  promised timing are settled before the ticket enters the queue.
+inputs: []
+outputs: [order-ticket]
+steps:
+  - name: Establish the service context
+    note: >
+      Counter, table, pickup, and delivery orders require different
+      identity, location, payment, and timing details.
+  - name: Capture items and modifiers
+    note: >
+      Each choice maps to a current menu item the production station can
+      read without interpretation.
+  - name: Check constraints and promise
+    note: >
+      Availability, allergy handling, production load, and delivery area
+      are checked before a time is quoted.
+  - name: Confirm and release the ticket
+    produces: [order-ticket]
+    note: >
+      The customer and production queue receive the same items, total,
+      channel, name or location, and promise.
+tension: >
+  Queue speed competes with order certainty. Short counter time keeps
+  demand moving; an unclear modifier, destination, or promise creates
+  rework after production has already spent time and product.
+failure_modes:
+  - name: Free text replaces a defined modifier
+    cost: >
+      The station interprets an instruction inconsistently or stops to
+      ask what it means.
+    signal: >
+      Similar customer requests appear under several ticket phrasings.
+  - name: Promise ignores production load
+    cost: >
+      The customer receives a time the current queue cannot keep.
+    signal: >
+      Quoted times remain fixed while open-ticket volume changes.
+  - name: Channel identity missing
+    cost: >
+      A completed order waits at the wrong handoff or is given to the
+      wrong customer or driver.
+    signal: >
+      Tickets lack table, pickup name, order number, or delivery
+      destination.
+maturity:
+  - level: run badly
+    looks_like: >
+      Staff memorize spoken changes and the kitchen discovers missing
+      information after starting the order.
+  - level: run well
+    looks_like: >
+      Every channel creates the same clear ticket vocabulary with current
+      price, availability, handoff, and promise.
+  - level: run excellently
+    looks_like: >
+      Repeated corrections change menu and modifier design, promise times
+      follow live capacity, and handoff identity stays intact.
+competencies:
+  - name: Clarifying communication
+    note: >
+      The order taker confirms intent quickly when menu language and the
+      customer's words differ.
+  - name: Queue awareness
+    note: >
+      A promise depends on current production and handoff conditions.
+      Normal-service charts provide only a starting point.
+automation:
+  now: >
+    Menu validation, modifier rules, availability, pricing, channel
+    routing, order confirmation, and promise-time suggestions.
+  human: >
+    Ambiguous requests, allergy conversations, customer recovery, and
+    decisions when capacity or menu rules conflict with the request.
+questions:
+  - Which ticket corrections recur often enough to change the menu setup?
+  - Does the customer confirmation exactly match the production ticket?

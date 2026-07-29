@@ -1,0 +1,8 @@
+id: recall-reappointment-rate
+name: Recall reappointment rate
+kind: metric
+summary: >
+  Patients due for recurring care who book the next appointment after
+  recall outreach.
+unit: percent
+direction: higher

@@ -1,0 +1,98 @@
+id: reservation-management
+name: Reservation management
+kind: skill
+department: sales
+summary: >
+  Reservation management commits dated room inventory under a defined
+  rate and set of stay conditions. Availability, party needs, payment
+  guarantee, changes, cancellations, and arrival preparation remain on
+  one reservation.
+inputs: [reservation-request]
+outputs: [reservation-record]
+steps:
+  - name: Read the stay request
+    role: front-desk-agent
+    consumes: [reservation-request]
+    note: >
+      Dates, party, room needs, accessibility, purpose, preferences,
+      flexibility, contact details, and booking source are confirmed.
+  - name: Select available inventory
+    role: front-desk-agent
+    note: >
+      A room type and rate are chosen against physical availability,
+      restrictions, minimum stays, maintenance holds, and known group
+      commitments.
+  - name: Establish the terms
+    role: front-desk-agent
+    note: >
+      Price, taxes, deposit or guarantee, cancellation, arrival,
+      departure, occupancy, and special-request status are explained.
+  - name: Commit the reservation
+    role: front-desk-agent
+    produces: [reservation-record]
+    note: >
+      Inventory is reduced only when guest identity, dates, room type,
+      rate, terms, source, and confirmation are stored together.
+  - name: Maintain the arrival record
+    role: front-desk-agent
+    consumes: [reservation-record]
+    note: >
+      Changes, payments, messages, requests, estimated arrival, and
+      cancellation state update the current reservation.
+tension: >
+  Selling available rooms competes with protecting arrival promises.
+  Loose controls may raise bookings today; oversold room types,
+  uncollectible guarantees, and unrecorded requests move the conflict
+  to the front desk.
+failure_modes:
+  - name: Inventory committed outside the system
+    cost: >
+      Two guests can receive a promise against the same remaining room.
+    signal: >
+      Confirmation exists in email or a channel portal without a
+      matching reservation record.
+  - name: Special request treated as a guarantee
+    cost: >
+      Staff face an arrival promise the property did not reserve the
+      capacity or room attributes to meet.
+    signal: >
+      Free-text request has no status, owner, or inventory consequence.
+  - name: Rate and policy separate
+    cost: >
+      Cancellation, deposit, tax, and included-service disputes appear
+      after the guest has acted on the quoted price.
+    signal: >
+      Reservation stores a total without its rate plan and terms.
+maturity:
+  - level: run badly
+    looks_like: >
+      Reservations are accepted from several channels and reconciled
+      when availability conflicts appear.
+  - level: run well
+    looks_like: >
+      Request, availability, rate, terms, guarantee, confirmation, and
+      changes share one inventory record.
+  - level: run excellently
+    looks_like: >
+      Booking pace, cancellation, source, stay pattern, and room
+      constraints inform rate and inventory decisions.
+competencies:
+  - name: Dated inventory control
+    note: >
+      The operator understands how one stay occupies a room across
+      several nights and room states.
+  - name: Terms communication
+    note: >
+      Staff distinguish guaranteed commitments, recorded preferences,
+      and conditions the guest must meet.
+automation:
+  now: >
+    Availability, channel synchronization, rate rules, confirmations,
+    guarantees, payments, modifications, cancellation, and arrival
+    lists.
+  human: >
+    Ambiguous needs, accessibility interpretation, exceptions,
+    overbooking resolution, group commitments, and guest communication.
+questions:
+  - Which confirmed arrival depends on a room attribute not reserved in inventory?
+  - Which booking source can change availability without updating the property record?

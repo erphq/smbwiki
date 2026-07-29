@@ -1,0 +1,6 @@
+id: load-calculation
+name: Load calculation
+kind: document
+summary: >
+  The sizing analysis (Manual J or equivalent) that determines what
+  equipment a building needs; the engineering basis of an HVAC quote.

@@ -1,0 +1,8 @@
+id: surveying-mapping
+name: Surveying and mapping
+kind: software-category
+summary: >
+  Field data collection, control adjustment, coordinate processing,
+  terrain modeling, drafting, legal descriptions, and plat production.
+erpai_category: operations
+erpai_apps: []

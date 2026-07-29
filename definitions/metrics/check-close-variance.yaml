@@ -1,0 +1,8 @@
+id: check-close-variance
+name: Check close variance
+kind: metric
+summary: >
+  Difference between closed guest checks and the tender and settlement
+  totals that should support them.
+unit: currency
+direction: lower

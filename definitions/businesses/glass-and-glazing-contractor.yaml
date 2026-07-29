@@ -1,0 +1,26 @@
+id: glass-and-glazing-contractor
+name: Glass and Glazing Contractor
+codes:
+  naics: "238150"
+catalog_group: construction-property
+extends: project-services-base
+summary: >
+  A glass and glazing contractor converts verified openings,
+  performance requirements, hardware, finish, safety treatment, and
+  interface details into fabricated units and an installation plan.
+  Field dimensions and approved product data control what can be ordered.
+
+  Breakage exposure and building enclosure make handling and sequence
+  central. Access, lifting, temporary protection, adjacent work,
+  sealants, water management, and inspection conditions must be ready
+  before installation. Closeout preserves glass identity, tests,
+  warranties, and evidence of concealed perimeter work.
+revenue_model:
+  - id: fabricated-installations
+    note: measured glass, framing, hardware, and field installation
+  - id: repair-and-replacement
+    note: broken or failed glazing units replaced under a bounded scope
+  - remove: [quoted-projects]
+supply_chain:
+  buys_from: [glass-fabricator]
+  sells_to: [homeowner, general-contractor]

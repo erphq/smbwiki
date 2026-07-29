@@ -1,0 +1,97 @@
+id: sealcoating-and-striping
+name: Sealcoating and striping
+kind: skill
+department: operations
+summary: >-
+  Repairs cracks, cleans and dries pavement, controls material rate and cure,
+  lays out markings, and protects the closed area until release. Sealcoating
+  and striping leaves a current work basis, a field record, and acceptance
+  evidence that another operator can trace.
+inputs:
+  - site-plan
+outputs:
+  - test-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before sealcoating and striping, read the current scope and revisions,
+      then verify approved limits and drainage, removed failed material,
+      stable subgrade, confirmed section, available mix, weather window, and
+      traffic control.
+  - name: Set the field controls
+    note: >-
+      Translate sealcoating and striping into work limits, sequence,
+      responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During sealcoating and striping, the operator records quantities,
+      observations, decisions, and concealed details, and stops when the field
+      condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept sealcoating and striping, check the completed work against
+      specified thickness, density, grade, smoothness, drainage, joint
+      quality, edge support, markings, and opening strength, then close
+      correction and issue the resulting record.
+tension: >-
+  Sealcoating and striping has to remain inside its acceptance basis while
+  production moves. Surface appearance can hide weak subgrade, thin base, poor
+  compaction, or trapped drainage that shortens pavement life.
+failure_modes:
+  - name: Sealcoating and striping starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      sealcoating and striping is settled.
+    signal: >-
+      The sealcoating and striping work package still has an open drawing,
+      access, material, predecessor, or approval dependency when labor is
+      assigned.
+  - name: Sealcoating and striping closes without evidence
+    cost: >-
+      A concealed condition or required result from sealcoating and striping
+      cannot be verified without opening, repeat work, delay, or a disputed
+      exception.
+    signal: >-
+      Sealcoating and striping is released while its required check, location
+      record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Sealcoating and striping is driven by crew availability and visible
+      completion; readiness, hold points, and acceptance evidence are resolved
+      afterward.
+  - level: run well
+    looks_like: >-
+      Sealcoating and striping starts from a checked basis, follows a named
+      sequence, stops on changed conditions, and closes against recorded
+      acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Sealcoating and striping uses field evidence, production variance,
+      defects, and closeout results to improve the next estimate, work
+      package, and control point.
+competencies:
+  - name: Small-site pavement production
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of sealcoating and striping.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for sealcoating and striping have to be captured while
+      the relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Sealcoating and striping can use digital revisions, checklists, hold
+    points, photo capture, test fields, correction assignment, and closeout
+    status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting sealcoating and striping
+    remain human.
+questions:
+  - >-
+    Which unresolved condition can stop sealcoating and striping before work
+    begins?
+  - >-
+    Which record proves sealcoating and striping was accepted before it was
+    covered, loaded, energized, occupied, or handed over?

@@ -1,0 +1,7 @@
+id: supplier-invoice
+name: Supplier invoice
+kind: document
+summary: >
+  A bill received from a supplier against a purchase order. The input
+  to accounts payable and the document three-way matching checks
+  against PO and receipt.

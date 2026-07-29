@@ -1,0 +1,7 @@
+id: member-churn-rate
+name: Member churn rate
+kind: metric
+summary: >
+  Active recurring memberships that end during the period.
+unit: percent
+direction: lower

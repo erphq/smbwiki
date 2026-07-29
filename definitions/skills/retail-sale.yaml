@@ -1,0 +1,97 @@
+id: retail-sale
+name: Retail sale
+kind: skill
+department: sales
+summary: >
+  Retail sale turns a customer's selection into a priced, paid, and
+  traceable transfer of merchandise. Availability, item identity,
+  discounts, tax, tender, return rights, and inventory movement are
+  fixed in the transaction record.
+inputs: [stock-record]
+outputs: [sales-receipt, return-record]
+steps:
+  - name: Confirm the merchandise
+    role: sales-associate
+    consumes: [stock-record]
+    note: >
+      Item, variant, condition, available quantity, and any promised
+      accessories or service are confirmed with the customer.
+  - name: Establish the price
+    role: sales-associate
+    note: >
+      Current price, approved discount, promotion, tax treatment, and
+      return terms are applied to the identified merchandise.
+  - name: Complete tender
+    role: sales-associate
+    produces: [sales-receipt]
+    note: >
+      Payment approval and change are completed before the merchandise
+      is released, and the receipt records the exact transaction.
+  - name: Transfer the goods
+    role: sales-associate
+    note: >
+      Quantity, serial or warranty details, packaging, pickup or
+      delivery responsibility, and customer handoff are closed.
+  - name: Record a reversal
+    role: retail-manager
+    consumes: [sales-receipt]
+    produces: [return-record]
+    note: >
+      A return or exchange links to the original sale and records
+      condition, disposition, and the authorized financial result.
+tension: >
+  A fast checkout competes with control over price, identity, payment,
+  and release. Friction loses customers; shortcuts create shrink,
+  charge disputes, tax errors, and returns that cannot be traced.
+failure_modes:
+  - name: Sold item differs from scanned item
+    cost: >
+      Inventory, margin, warranty, and customer records all describe
+      the wrong merchandise.
+    signal: >
+      Frequent manual item overrides or unexplained variant-level
+      stock differences.
+  - name: Discount lacks authority
+    cost: >
+      Margin disappears without a reason that purchasing or management
+      can evaluate.
+    signal: >
+      Open-price or manual-discount transactions cluster by operator.
+  - name: Return loses its disposition
+    cost: >
+      Refunded goods enter saleable stock despite damage, missing parts,
+      or fraud risk.
+    signal: >
+      Return record closes without a condition and destination.
+maturity:
+  - level: run badly
+    looks_like: >
+      Price and return decisions depend on who is at the counter, and
+      stock is corrected later.
+  - level: run well
+    looks_like: >
+      Sale, payment, inventory movement, receipt, and return authority
+      share one transaction.
+  - level: run excellently
+    looks_like: >
+      Transaction and return evidence improves assortment, pricing,
+      fraud controls, staffing, and supplier decisions.
+competencies:
+  - name: Transaction control
+    note: >
+      The operator closes merchandise, money, and inventory movement in
+      one auditable event.
+  - name: Customer decision support
+    note: >
+      Staff explain relevant fit, availability, total price, and return
+      conditions without inventing promises.
+automation:
+  now: >
+    Scanning, price lookup, promotion and tax calculation, tender,
+    receipts, inventory decrement, returns, and exception reporting.
+  human: >
+    Product interpretation, condition judgment, customer communication,
+    unusual discounts, suspected fraud, and disputed handoff.
+questions:
+  - Which transaction type changes inventory without an identified reason?
+  - Which returned items are waiting for a saleable, repair, or disposal decision?

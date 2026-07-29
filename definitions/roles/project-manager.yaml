@@ -1,0 +1,6 @@
+id: project-manager
+name: Project manager
+kind: role
+summary: >
+  Controls scope, contract, schedule, procurement, changes, billing, and
+  closeout across the office, field, customer, designer, and subcontractors.

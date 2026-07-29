@@ -1,0 +1,8 @@
+id: salon-management
+name: Salon management
+kind: software-category
+summary: >
+  Appointment book, client history, service tickets, checkout,
+  rebooking, commission, and chair-rental administration for salons.
+erpai_category: operations
+erpai_apps: []

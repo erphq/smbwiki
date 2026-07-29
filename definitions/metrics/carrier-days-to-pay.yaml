@@ -1,0 +1,7 @@
+id: carrier-days-to-pay
+name: Carrier days to pay
+kind: metric
+summary: >
+  Days from complete carrier paperwork to released payment.
+unit: days
+direction: lower

@@ -1,0 +1,8 @@
+id: food-service-license
+name: Food service license
+kind: license
+geo: [us]
+summary: >
+  Health-department authorization to operate a food establishment;
+  renewed on inspection.
+jurisdiction: local

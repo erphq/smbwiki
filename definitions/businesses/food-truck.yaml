@@ -1,0 +1,69 @@
+id: food-truck
+name: Food Truck
+codes:
+  naics: "722330"
+catalog_group: food-lodging
+extends: restaurant-base
+summary: >
+  A food truck combines a production kitchen with a daily location and
+  service window. Menu, prep, loading, travel, parking, power, water,
+  fuel, storage, waste, and weather have to be settled before the first
+  order.
+
+  The service line is constrained by the equipment and people inside
+  the vehicle. Orders need to match station capacity, and sold-out items
+  have to leave the menu promptly. Closeout includes safe food storage,
+  waste handling, cleaning, restocking, cash or payment reconciliation,
+  and the plan for the next location.
+revenue_model:
+  - id: street-service
+    note: counter orders sold during a published location and service window
+  - id: booked-events
+    note: attendance at private or organized events under agreed terms
+  - remove: [dine-in, takeout, catering]
+skills:
+  - ref: menu-planning
+    roles: [owner-operator, line-cook]
+    documents: [menu, recipe-card]
+    metrics: [food-cost-percentage]
+    software: [restaurant-pos]
+  - ref: food-prep
+    roles: [line-cook, owner-operator]
+    documents: [prep-list]
+    metrics: [ticket-time]
+    software: [kitchen-display-system]
+  - ref: food-inventory
+    roles: [owner-operator, line-cook]
+    documents: [purchase-order, supplier-invoice]
+    metrics: [food-cost-percentage, waste-percentage]
+    software: [inventory-management]
+  - ref: staff-scheduling
+    roles: [owner-operator]
+    documents: [shift-schedule]
+    metrics: [labor-cost-percentage]
+    software: [workforce-management]
+  - ref: accounts-payable
+    roles: [owner-operator]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+  - ref: service-location-planning
+    roles: [owner-operator]
+    documents: [location-schedule]
+    software: [customer-relationship-management]
+  - ref: order-taking
+    roles: [counter-staff, line-cook]
+    documents: [order-ticket]
+    metrics: [order-accuracy, average-ticket]
+    software: [restaurant-pos, online-ordering]
+org:
+  - role: owner-operator
+    reports:
+      - role: line-cook
+      - role: counter-staff
+licenses:
+  us:
+    - remove: [liquor-license]
+supply_chain:
+  sells_to: [retail-consumer]
+seo:
+  title: "Food Truck: How the Business Works | smbwiki"

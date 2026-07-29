@@ -1,0 +1,6 @@
+id: appointment-record
+name: Appointment record
+kind: document
+summary: >
+  Reserved time tied to a customer, service, duration, assigned staff,
+  and location or chair.

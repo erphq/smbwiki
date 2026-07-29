@@ -1,0 +1,6 @@
+id: chiropractor
+name: Chiropractor
+kind: role
+summary: >
+  Evaluates neuromusculoskeletal complaints, owns the care plan,
+  delivers treatment within scope, and records response over time.

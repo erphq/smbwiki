@@ -1,0 +1,8 @@
+id: utility-cost-per-cycle
+name: Utility cost per cycle
+kind: metric
+summary: >
+  Water, sewer, gas, and electricity cost allocated across completed
+  machine cycles.
+unit: currency
+direction: lower

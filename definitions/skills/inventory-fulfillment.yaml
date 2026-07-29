@@ -1,0 +1,102 @@
+id: inventory-fulfillment
+name: Inventory fulfillment
+kind: skill
+department: supply
+summary: >
+  Inventory fulfillment receives identified goods into controlled
+  locations and releases the correct quantity to an authorized order.
+  Custody, lot or serial identity, count, condition, location, pick,
+  packing, and handoff remain traceable.
+inputs: [inventory-receipt, customer-order]
+outputs: [stock-record, pick-list, delivery-ticket]
+steps:
+  - name: Receive and identify
+    role: warehouse-associate
+    consumes: [inventory-receipt]
+    produces: [stock-record]
+    note: >
+      Shipment, item, quantity, condition, lot or serial, handling
+      status, and discrepancy are recorded before putaway.
+  - name: Put away inventory
+    role: warehouse-associate
+    consumes: [stock-record]
+    note: >
+      Goods move to an allowed location under capacity, compatibility,
+      rotation, security, and retrieval rules.
+  - name: Release the order
+    role: warehouse-manager
+    consumes: [customer-order, stock-record]
+    produces: [pick-list]
+    note: >
+      Valid order lines, available stock, allocation, priority, carrier
+      cutoff, and handling instructions become executable work.
+  - name: Pick and verify
+    role: warehouse-associate
+    consumes: [pick-list]
+    note: >
+      Source location, item identity, quantity, condition, and lot or
+      serial are confirmed as goods move to staging.
+  - name: Pack and hand off
+    role: warehouse-associate
+    consumes: [pick-list]
+    produces: [delivery-ticket]
+    note: >
+      Contents, packaging, labels, documents, carrier or customer
+      custody, and inventory movement close together.
+tension: >
+  Throughput competes with custody and inventory accuracy. Moving more
+  orders protects cutoffs; identity, count, location, and verification
+  shortcuts create short shipments, lost stock, and expensive search.
+failure_modes:
+  - name: Unidentified goods enter a location
+    cost: >
+      Physical inventory exists without a reliable item, owner, status,
+      or usable balance.
+    signal: >
+      Receiving area contains product awaiting labels or system
+      receipt after putaway has begun.
+  - name: Pick substitutes without authority
+    cost: >
+      Customer receives a different item, lot, condition, or quantity
+      from the order.
+    signal: >
+      Picker edits an order line to match found stock.
+  - name: Handoff closes before custody
+    cost: >
+      Inventory leaves available balance without evidence of carrier or
+      customer receipt.
+    signal: >
+      Shipment confirmation time precedes physical staging or pickup.
+maturity:
+  - level: run badly
+    looks_like: >
+      Experienced staff know where stock is and resolve missing items
+      while orders wait.
+  - level: run well
+    looks_like: >
+      Receipt, identity, location, order release, pick, verification,
+      packing, and handoff update one inventory record.
+  - level: run excellently
+    looks_like: >
+      Movement and exception evidence improves slotting, labor, cycle
+      counts, cutoff promises, packaging, and supplier performance.
+competencies:
+  - name: Inventory custody
+    note: >
+      The operator protects identity, quantity, owner, status, and
+      location through every physical movement.
+  - name: Flow control
+    note: >
+      Work is released against real capacity, priorities, stock, and
+      handoff cutoffs.
+automation:
+  now: >
+    Barcode receiving, location rules, allocation, wave release,
+    directed picking, packing checks, labels, shipment confirmation,
+    and cycle-count tasks.
+  human: >
+    Condition, ambiguous identity, damaged supply, unusual handling,
+    layout, congestion, unsafe work, and disputed custody.
+questions:
+  - Which inventory balance has no confirmed physical location?
+  - Which released order cannot meet its handoff cutoff with current stock and labor?

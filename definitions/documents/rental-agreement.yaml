@@ -1,0 +1,6 @@
+id: rental-agreement
+name: Rental agreement
+kind: document
+summary: >
+  Customer, asset, term, rate, permitted use, responsibility, deposit,
+  and return conditions for a rental.

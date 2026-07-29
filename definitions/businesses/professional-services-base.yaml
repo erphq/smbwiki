@@ -1,0 +1,51 @@
+id: professional-services-base
+name: Professional services (base)
+abstract: true
+revenue_model:
+  - id: fixed-fee-engagements
+    note: defined assignments sold for an agreed fee
+  - id: time-based-work
+    note: authorized professional time billed under agreed rates
+  - id: recurring-advisory
+    note: continuing access or repeated work sold under a service agreement
+skills:
+  - ref: lead-intake
+    roles: [client-coordinator, principal]
+    documents: [job-request]
+    metrics: [booking-rate]
+    software: [customer-relationship-management]
+  - ref: client-engagement
+    roles: [principal, professional, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, professional-services-automation]
+  - ref: professional-service-delivery
+    roles: [professional, principal, client-coordinator]
+    documents: [engagement-letter, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [professional-services-automation]
+  - ref: invoicing
+    roles: [client-coordinator]
+    documents: [customer-invoice]
+    software: [professional-services-automation, accounting]
+  - ref: accounts-receivable
+    roles: [client-coordinator]
+    documents: [customer-invoice, payment-record]
+    metrics: [days-sales-outstanding]
+    software: [accounting]
+  - ref: staff-scheduling
+    roles: [principal]
+    documents: [shift-schedule]
+    metrics: [utilization-rate]
+    software: [professional-services-automation]
+  - ref: accounts-payable
+    roles: [client-coordinator]
+    documents: [supplier-invoice, payment-record]
+    software: [accounting]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: professional
+supply_chain:
+  sells_to: [individual-client, commercial-client]

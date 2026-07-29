@@ -1,0 +1,8 @@
+id: engagement-gross-margin
+name: Engagement gross margin
+kind: metric
+summary: >
+  Engagement revenue left after assigned professional labor and direct
+  outside cost.
+unit: percent
+direction: higher

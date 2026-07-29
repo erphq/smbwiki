@@ -1,0 +1,6 @@
+id: order-ticket
+name: Order ticket
+kind: document
+summary: >
+  A captured customer order routed to fulfillment; the atomic unit of
+  restaurant throughput.

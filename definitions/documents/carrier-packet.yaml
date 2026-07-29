@@ -1,0 +1,6 @@
+id: carrier-packet
+name: Carrier packet
+kind: document
+summary: >
+  Carrier identity, authority, insurance, tax, banking, safety, contact,
+  and agreement records submitted for approval.

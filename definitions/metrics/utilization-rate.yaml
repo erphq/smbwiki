@@ -1,0 +1,7 @@
+id: utilization-rate
+name: Utilization rate
+kind: metric
+summary: >
+  Available professional capacity recorded to client engagements.
+unit: percent
+direction: contextual

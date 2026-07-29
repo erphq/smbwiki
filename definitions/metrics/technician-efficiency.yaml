@@ -1,0 +1,8 @@
+id: technician-efficiency
+name: Technician efficiency
+kind: metric
+summary: >
+  Sold or standard labor time completed relative to technician clock
+  time on repair work.
+unit: percent
+direction: higher

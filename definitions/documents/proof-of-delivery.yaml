@@ -1,0 +1,6 @@
+id: proof-of-delivery
+name: Proof of delivery
+kind: document
+summary: >
+  Signed delivery record showing when and where freight arrived,
+  receiver acknowledgement, and any shortage, damage, or exception.

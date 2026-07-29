@@ -1,0 +1,6 @@
+id: recipe-card
+name: Recipe card
+kind: document
+summary: >
+  Per-item spec: ingredients, quantities, method, plate. The
+  consistency and costing source of truth.

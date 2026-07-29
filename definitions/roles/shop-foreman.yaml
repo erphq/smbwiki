@@ -1,0 +1,6 @@
+id: shop-foreman
+name: Shop foreman
+kind: role
+summary: >
+  Directs technical work across bays, supports difficult diagnosis,
+  balances technician assignments, and owns final repair quality.

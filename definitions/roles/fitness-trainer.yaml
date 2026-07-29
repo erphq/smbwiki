@@ -1,0 +1,6 @@
+id: fitness-trainer
+name: Fitness trainer
+kind: role
+summary: >
+  Delivers individual or group instruction, manages session capacity,
+  and records completion against the member's booked service.

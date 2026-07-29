@@ -1,0 +1,6 @@
+id: sales-receipt
+name: Sales receipt
+kind: document
+summary: >
+  Items, quantities, prices, discounts, taxes, tender, and transaction
+  time for a completed retail sale.

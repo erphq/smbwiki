@@ -1,0 +1,8 @@
+id: clia-certificate
+name: CLIA certificate
+kind: license
+jurisdiction: US
+summary: >
+  Federal certification for a facility performing laboratory testing
+  on human specimens for health assessment, diagnosis, prevention, or
+  treatment.

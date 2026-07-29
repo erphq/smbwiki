@@ -1,0 +1,8 @@
+id: schedule-variance
+name: Schedule variance
+kind: metric
+summary: >
+  Difference between the planned and actual completion date for a
+  project.
+unit: days
+direction: lower

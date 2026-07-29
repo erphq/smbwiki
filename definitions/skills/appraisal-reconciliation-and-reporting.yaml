@@ -1,0 +1,99 @@
+id: appraisal-reconciliation-and-reporting
+name: Appraisal reconciliation and reporting
+kind: skill
+department: operations
+summary: >-
+  Weighs applicable approaches, resolves conflicting evidence, states the
+  value opinion, discloses assumptions and limits, and signs the report.
+  Appraisal reconciliation and reporting leaves a current work basis, a field
+  record, and acceptance evidence that another operator can trace.
+inputs:
+  - engagement-letter
+outputs:
+  - appraisal-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before appraisal reconciliation and reporting, read the current scope
+      and revisions, then verify identified client and intended use, property
+      rights, effective date, assignment conditions, access, market data, and
+      competent appraiser.
+  - name: Set the field controls
+    note: >-
+      Translate appraisal reconciliation and reporting into work limits,
+      sequence, responsibilities, hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During appraisal reconciliation and reporting, the operator records
+      quantities, observations, decisions, and concealed details, and stops
+      when the field condition changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept appraisal reconciliation and reporting, check the completed
+      work against credible supported analyses, disclosed scope and
+      assumptions, reconciled value opinion, compliant report, and signed
+      delivery, then close correction and issue the resulting record.
+tension: >-
+  Appraisal reconciliation and reporting has to remain inside its acceptance
+  basis while production moves. Weak property or market verification can make
+  a polished value conclusion unsupported.
+failure_modes:
+  - name: Appraisal reconciliation and reporting starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      appraisal reconciliation and reporting is settled.
+    signal: >-
+      The appraisal reconciliation and reporting work package still has an
+      open drawing, access, material, predecessor, or approval dependency when
+      labor is assigned.
+  - name: Appraisal reconciliation and reporting closes without evidence
+    cost: >-
+      A concealed condition or required result from appraisal reconciliation
+      and reporting cannot be verified without opening, repeat work, delay, or
+      a disputed exception.
+    signal: >-
+      Appraisal reconciliation and reporting is released while its required
+      check, location record, test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Appraisal reconciliation and reporting is driven by crew availability
+      and visible completion; readiness, hold points, and acceptance evidence
+      are resolved afterward.
+  - level: run well
+    looks_like: >-
+      Appraisal reconciliation and reporting starts from a checked basis,
+      follows a named sequence, stops on changed conditions, and closes
+      against recorded acceptance criteria.
+  - level: run excellently
+    looks_like: >-
+      Appraisal reconciliation and reporting uses field evidence, production
+      variance, defects, and closeout results to improve the next estimate,
+      work package, and control point.
+competencies:
+  - name: Real property valuation and evidence reconciliation
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of appraisal reconciliation and
+      reporting.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for appraisal reconciliation and reporting have to be
+      captured while the relevant condition can still be observed and
+      corrected.
+automation:
+  now: >-
+    Appraisal reconciliation and reporting can use digital revisions,
+    checklists, hold points, photo capture, test fields, correction
+    assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting appraisal reconciliation and
+    reporting remain human.
+questions:
+  - >-
+    Which unresolved condition can stop appraisal reconciliation and reporting
+    before work begins?
+  - >-
+    Which record proves appraisal reconciliation and reporting was accepted
+    before it was covered, loaded, energized, occupied, or handed over?

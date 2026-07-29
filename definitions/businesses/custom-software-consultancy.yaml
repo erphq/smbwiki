@@ -1,0 +1,27 @@
+id: custom-software-consultancy
+name: Custom Software Consultancy
+codes:
+  naics: "541511"
+catalog_group: professional-financial
+extends: professional-services-base
+summary: >
+  A custom software consultancy turns a business problem into an
+  authorized sequence of discovery, design, implementation, testing,
+  deployment, and support. Scope needs to identify users, workflows,
+  data, integrations, environments, security, acceptance, and who can
+  change priorities.
+
+  Working software creates new information during delivery. Estimates,
+  technical constraints, feedback, defects, data quality, and
+  operational readiness can alter the plan. The consultancy preserves
+  decisions, versions, access, test evidence, releases, documentation,
+  client approvals, and the boundary of ongoing support.
+revenue_model:
+  - id: software-delivery-projects
+    note: authorized product and integration work billed by phase, milestone, or time
+  - id: support-and-evolution
+    note: recurring maintenance, operations, and improvement capacity
+  - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
+supply_chain:
+  buys_from: [cloud-service-provider]
+  sells_to: [commercial-client]

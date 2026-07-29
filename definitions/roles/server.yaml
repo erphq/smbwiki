@@ -1,0 +1,6 @@
+id: server
+name: Server
+kind: role
+summary: >
+  Takes orders, runs food, and owns the table experience; the
+  interface between the floor and the kitchen.

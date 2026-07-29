@@ -1,0 +1,88 @@
+id: framing-layout
+name: Framing layout
+kind: skill
+department: operations
+summary: >-
+  Transfers grid, wall, opening, bearing, elevation, and component locations
+  from the plans to verified control on the structure. Framing layout leaves a
+  current work basis, a field record, and acceptance evidence that another
+  operator can trace.
+inputs:
+  - construction-plan
+outputs:
+  - quality-report
+steps:
+  - name: Confirm the work basis
+    note: >-
+      Before framing layout, read the current scope and revisions, then verify
+      current dimensions, control lines, lumber or component package,
+      connectors, openings, bearing points, and correction of supporting work.
+  - name: Set the field controls
+    note: >-
+      Translate framing layout into work limits, sequence, responsibilities,
+      hold points, and records the crew can use.
+  - name: Perform and record the work
+    note: >-
+      During framing layout, the operator records quantities, observations,
+      decisions, and concealed details, and stops when the field condition
+      changes the planned method.
+  - name: Verify acceptance
+    note: >-
+      To accept framing layout, check the completed work against specified
+      layout, bearing, fastening, bracing, openings, plane, and inspection
+      readiness, then close correction and issue the resulting record.
+tension: >-
+  Framing layout has to remain inside its acceptance basis while production
+  moves. Small layout errors repeat through floors, walls, roofs, windows,
+  cabinets, and finishes.
+failure_modes:
+  - name: Framing layout starts before readiness
+    cost: >-
+      The crew commits labor and material before a condition needed for
+      framing layout is settled.
+    signal: >-
+      The framing layout work package still has an open drawing, access,
+      material, predecessor, or approval dependency when labor is assigned.
+  - name: Framing layout closes without evidence
+    cost: >-
+      A concealed condition or required result from framing layout cannot be
+      verified without opening, repeat work, delay, or a disputed exception.
+    signal: >-
+      Framing layout is released while its required check, location record,
+      test result, or correction status remains blank.
+maturity:
+  - level: run badly
+    looks_like: >-
+      Framing layout is driven by crew availability and visible completion;
+      readiness, hold points, and acceptance evidence are resolved afterward.
+  - level: run well
+    looks_like: >-
+      Framing layout starts from a checked basis, follows a named sequence,
+      stops on changed conditions, and closes against recorded acceptance
+      criteria.
+  - level: run excellently
+    looks_like: >-
+      Framing layout uses field evidence, production variance, defects, and
+      closeout results to improve the next estimate, work package, and control
+      point.
+competencies:
+  - name: Wood framing layout and load-path judgment
+    note: >-
+      The operator has to recognize which field conditions change the planned
+      method, sequence, or acceptance of framing layout.
+  - name: Evidence control
+    note: >-
+      Acceptance checks for framing layout have to be captured while the
+      relevant condition can still be observed and corrected.
+automation:
+  now: >-
+    Framing layout can use digital revisions, checklists, hold points, photo
+    capture, test fields, correction assignment, and closeout status.
+  human: >-
+    Field interpretation, safe sequence, changed-condition response,
+    workmanship, and responsibility for accepting framing layout remain human.
+questions:
+  - Which datum or cumulative dimension is still unverified before layout begins?
+  - >-
+    Do the layout record and opening checks reconcile structure, bearing,
+    shear lines, dimensions, and downstream trade access?

@@ -1,0 +1,8 @@
+id: transportation-management-system
+name: Transportation management system
+kind: software-category
+summary: >
+  Load requests, quotes, tenders, carrier purchase, tracking,
+  documents, exceptions, billing, payables, and margin by shipment.
+erpai_category: logistics
+erpai_apps: []

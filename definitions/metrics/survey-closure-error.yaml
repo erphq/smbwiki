@@ -1,0 +1,8 @@
+id: survey-closure-error
+name: Survey closure error
+kind: metric
+summary: >
+  Difference revealed when a survey measurement loop or boundary traverse
+  is mathematically closed.
+unit: distance
+direction: lower

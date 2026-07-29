@@ -1,0 +1,51 @@
+id: optometry-practice
+name: Optometry Practice
+codes:
+  naics: "621320"
+catalog_group: health-care
+extends: clinic-base
+summary: >
+  An optometry practice combines eye examinations with corrective
+  product orders and follow-up. The clinical record carries visual
+  acuity, refraction, eye-health findings, prescription, imaging,
+  discussion, and the reason for referral or return.
+
+  Eyewear and contact-lens work adds a second fulfillment path after the
+  exam. Frame or lens selection, measurements, coverage, patient
+  payment, lab order, receipt, quality check, fitting, and remake state
+  need to stay attached to the prescription and patient.
+revenue_model:
+  - id: eye-examinations
+    note: scheduled vision and eye-health evaluation
+  - id: corrective-products
+    note: frames, lenses, and contact lenses ordered from a prescription
+  - id: medical-eye-care
+    note: evaluation and follow-up for conditions managed in the practice
+  - remove: [patient-services, preventive-care]
+skills:
+  - ref: clinical-care
+    roles: [optometrist, clinical-assistant]
+    documents: [appointment-record, patient-chart, clinical-note, treatment-plan]
+    software: [electronic-health-record, practice-management]
+  - ref: purchasing
+    roles: [office-manager, clinical-assistant]
+    documents: [purchase-order, supplier-invoice]
+    software: [inventory-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+        reports:
+          - role: receptionist
+          - role: billing-specialist
+      - role: optometrist
+        reports:
+          - role: clinical-assistant
+licenses:
+  us:
+    - ref: optometrist-license
+      requirement: required
+      condition: Required for the optometrist providing regulated clinical services.
+      as_of: "2026-07-29"
+seo:
+  title: "Optometry Practice: How the Business Works | smbwiki"
