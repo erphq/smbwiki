@@ -89,3 +89,55 @@ automation:
 questions:
   - What limitation or maintenance requirement did the client agree to?
   - Could another stylist understand the placement and processing from the formula card?
+article:
+  what: >
+    The client consultation process happens in the chair before any
+    product is mixed. It takes the appointment record and the client
+    profile, adds what the stylist sees and feels today, and produces an
+    agreed service plan and a formula card another stylist could
+    execute. It starts when the client sits down and ends when result,
+    limits, price, and maintenance are agreed and the formula is
+    written. The stylist owns it in a hair salon or barber shop; the
+    technician owns the equivalent in a nail salon.
+  why: >
+    It protects the hair and the relationship at once. A reference photo
+    treated as the specification ignores the starting condition and
+    chemical history, and both parties leave imagining different
+    results. A blank history next to visibly processed hair means the
+    planned service can react unpredictably and cause avoidable damage.
+    A formula card with shades and ratios but no placement, timing, or
+    root and length treatment means the next visit repeats products and
+    produces a different result, and the client experiences that as
+    inconsistency.
+  how: >
+    The stylist reconfirms the booked work with the appointment record
+    and client profile open: the client describes the desired change
+    while prior services, sensitivities, home care, and known formula
+    history are reviewed. Current condition is assessed by hand and eye,
+    with hair and scalp condition, existing color, length, density,
+    texture, and integrity setting the safe technical range. The service
+    plan is agreed, covering result, limitations, maintenance, service
+    sequence, timing, and price assumptions, before any preparation
+    begins. The formula is then recorded on the formula card with
+    product, shade, ratio, placement, processing, and adaptation
+    specific enough to be reviewed at the next visit.
+  controls:
+    - name: Chemical history confirmed against visible hair
+      note: >
+        Where processed hair is visible and the profile history is
+        blank, the stylist records what the client reports before
+        choosing a process.
+    - name: Limitation and maintenance noted with the plan
+      note: >
+        The agreed plan records at least one limitation and the
+        maintenance the client accepted, alongside any reference
+        image.
+    - name: Price assumption stated before preparation
+      note: >
+        Service sequence and the price it implies are confirmed with
+        the client before product is mixed or timing starts.
+    - name: Formula card complete for another stylist
+      note: >
+        Placement, sectioning, processing time, and root versus
+        length treatment are written so a different stylist could
+        reproduce the result.

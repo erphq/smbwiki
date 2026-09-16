@@ -48,3 +48,71 @@ org:
           - role: dishwasher
 seo:
   title: "Full-Service Restaurant: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A full-service restaurant sells covers: a table, a server, and a
+    kitchen release timed to the room. The week is purchasing and prep
+    before service, a reservation book turned into a seating plan,
+    servers turning table decisions into timed tickets, the kitchen
+    releasing courses while the room changes, and a closeout that
+    reconciles guest checks, tips, and cash each shift. Restaurant
+    reservations and seating, order taking, and restaurant payment
+    closeout are the load-bearing skills, with food prep setting ticket
+    time and guest recovery deciding whether a bad course costs a table
+    or a review. The tension is between table turn time and the guest's
+    sense of being rushed, and the manager watches demand, kitchen load,
+    staffing, and availability at the same time.
+  starting: >
+    Day one needs a food service license from the state or local health
+    authority after a plan review and inspection of the kitchen, a food
+    handler permit or manager certification for staff, and a liquor
+    license if the restaurant serves alcohol, which in many places is
+    the slowest and most expensive approval and may be limited by
+    quota. Business registration, sales tax registration, employer
+    registration, a certificate of occupancy, fire and grease-trap
+    inspections, and a music license for the dining room complete the
+    set, with variations by city. The minimum team is an
+    owner-operator, a general manager, a head chef, a line cook, a
+    server, a host, and a dishwasher, and in a small room the owner is
+    the general manager. The first records are the menu, recipe cards,
+    the prep list, the reservation book, the table status board, the
+    order ticket, the guest check, the shift closeout, purchase orders,
+    and the shift schedule. The skills that must work from opening
+    night are menu planning, food prep, order taking, restaurant
+    reservations and seating, restaurant payment closeout, and staff
+    scheduling.
+  economics: >
+    Revenue is dine-in, the covers-per-night core, and takeout from
+    phone and walk-in orders. Menu prices are set against recipe cost
+    and the check a neighborhood will bear, with beverages and alcohol
+    carrying higher margin than food. Prime cost, food cost percentage
+    plus labor cost percentage, is the number the trade watches,
+    because after rent and the rest there is little left; waste
+    percentage and check close variance show where product and cash
+    leak. Table turn time and average ticket set revenue per seat,
+    reservation no-show rate wastes covers, and ticket time and guest
+    issue resolution time decide whether guests return. The business is
+    labor-intensive and rent-exposed with a large build-out sunk before
+    the first cover, so margins are thin and judged after occupancy
+    cost, debt service, and a reserve for kitchen equipment.
+  benchmarks:
+    - scope: Pre-tax income as a share of sales, full-service restaurants
+      value: 2.8 percent of sales, median (2024 data)
+      note: Median income before taxes reported by full-service operators in the National Restaurant Association's 2025 Restaurant Operations Data Abstract, based on financial and operating data from more than 900 restaurants nationwide; limited-service respondents reported a 4.0 percent median.
+      source: https://www.prnewswire.com/news-releases/new-resource-from-national-restaurant-association-provides-insights-into-operational-realities-302534068.html
+      source_name: "National Restaurant Association, 2025 Restaurant Operations Data Abstract release via PR Newswire (August 2025)"
+    - scope: Labor cost as a share of sales, full-service restaurants
+      value: 36.5 percent of sales, median (2024 data)
+      note: Salaries, wages, and benefits among full-service respondents to the 2025 Restaurant Operations Data Abstract (more than 900 operators); full-service operators reporting a pre-tax profit had a median of 34.2 percent and those reporting a loss 42.9 percent. Limited-service median was 31.7 percent.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/elevated-labor-costs-had-a-significant-impact-on-restaurant-profitability-in-2024/
+      source_name: "National Restaurant Association, Elevated labor costs had a significant impact on restaurant profitability in 2024 (October 2025)"
+    - scope: Food and non-alcohol beverage cost as a share of sales, full-service restaurants
+      value: 32.0 percent of sales, median (2024 data)
+      note: Full-service respondents to the 2025 Restaurant Operations Data Abstract; limited-service median was 32.4 percent. The association notes the full-service ratio ran a little below the roughly 34 percent average of the previous three editions, attributed to streamlined menus and more off-premises sales.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/restaurant-operators-kept-food-cost-ratios-in-check-in-2024/
+      source_name: "National Restaurant Association, Restaurant operators kept food cost ratios in check in 2024 (2025)"
+    - scope: Receipts per establishment and payroll share, full-service restaurants
+      value: "$1.47 million receipts per establishment; payroll 34.4 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 722511 (full-service restaurants) in the 2022 Economic Census, establishments with payroll; sales of $372.8 billion across 254,201 establishments, annual payroll of $128.3 billion, 5,146,760 employees (about twenty per establishment).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector72/EC2272BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Accommodation and Food Services: Summary Statistics for the U.S., States, and Selected Geographies, EC2272BASIC (2022)"

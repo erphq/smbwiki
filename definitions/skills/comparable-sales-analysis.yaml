@@ -95,3 +95,57 @@ questions:
   - >-
     Which record proves comparable sales analysis was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The comparable sales analysis process is how an appraiser turns
+    market evidence into a supported value opinion: searching the
+    relevant market, verifying each transaction, selecting the sales
+    that truly compete with the subject, analyzing the differences,
+    supporting each adjustment, and reconciling to an indicated value.
+    It starts when the engagement letter fixes the client, intended use,
+    property rights, and effective date, and ends when the analysis is
+    reviewed and signed into the appraisal report. A real estate
+    appraisal firm owns it through the appraiser of record, with a
+    reviewer where the firm requires one.
+  why: >
+    It protects the credibility of the value opinion and the appraiser's
+    license behind it. A sale used without verification can carry a
+    concession or a non-market condition that moves the indicated value.
+    An adjustment without support reads as opinion, and a reviewer,
+    lender, or court will treat it that way. A polished report on weak
+    verification is the most expensive kind of wrong, because the error
+    is discovered after someone has relied on it.
+  how: >
+    The appraiser confirms the work basis by reading the current scope
+    and any revisions and verifying the identified client and intended
+    use, property rights, effective date, assignment conditions, access,
+    market data, and that a competent appraiser holds the assignment.
+    The field controls set the search parameters, selection criteria,
+    verification sources, hold points such as the reviewer's check, and
+    the records the workfile will keep. During the analysis the
+    appraiser records the sales searched and rejected, verification
+    calls, observed differences, adjustment support, decisions, and any
+    condition that changes the approach. Acceptance checks the work
+    against credible supported analyses, disclosed scope and
+    assumptions, a reconciled value opinion, a compliant report, and
+    signed delivery, and corrections close before the appraisal report
+    is issued.
+  controls:
+    - name: Transaction verification recorded per sale
+      note: >
+        Each comparable carries the source, the party contacted, the
+        date, and any condition of sale discovered during
+        verification.
+    - name: Selection rationale in the workfile
+      note: >
+        Sales considered and rejected are listed with the reason, so
+        the chosen set can be defended when the report is
+        questioned.
+    - name: Adjustment support cited
+      note: >
+        Every adjustment references the paired data, market study,
+        or analysis that supports its direction and size.
+    - name: Reconciliation reviewed before signature
+      note: >
+        The reviewer or a second appraiser checks the reconciliation
+        and the disclosed assumptions before the report is signed.

@@ -96,3 +96,54 @@ questions:
   - >-
     Which record proves furnishing procurement coordination was accepted
     before it was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The furnishing procurement coordination process carries an approved
+    furniture, fixture, and equipment list from quote to final placement:
+    quotes against the approved items, client deposits, purchase orders
+    with lead times, receiving and inspection at the warehouse, storage,
+    delivery access at the site, installation, damage claims, and the
+    placement walkthrough. It starts when the client has approved the
+    items and the budget and ends when everything is placed, deficiencies
+    are resolved, and the finish schedule reflects what was installed. The
+    project designer or a dedicated procurement coordinator owns it at an
+    interior design firm.
+  why: >
+    Furnishings arrive from dozens of vendors on different lead times,
+    pass through a receiving warehouse, and have to enter a building that
+    may still be under construction. When coordination is weak, a deposit
+    is paid for an item the client never approved, a sofa arrives before
+    the floor is finished, a damaged piece is discovered at installation
+    with the claim window closed, and the client sees the design for the
+    first time with gaps in it. The process protects the client's money,
+    the vendor claim rights, the installation date, and the design intent
+    as installed.
+  how: >
+    The coordinator reads the current scope and revisions and confirms the
+    approved program, existing conditions, consultant criteria, budget,
+    schedule, code basis, and the client's decision structure before any
+    quote is requested. The controls are then set: the tracking record by
+    item, quote and deposit approval steps, purchase order and lead time
+    tracking, receiving inspection and storage arrangements, delivery
+    access and the site readiness each item depends on, installation
+    sequence, and the damage claim procedure with each vendor's window. As
+    items move, the coordinator records quotes, approvals, deposits, order
+    dates, promised and actual receipt, inspection results, storage
+    location, and any damage or substitution with its claim or approval,
+    and stops when site readiness, a lead time, or a damaged item changes
+    the installation plan. At acceptance the designer checks that spaces
+    are coordinated, selections match approvals, documents are complete,
+    procurement is released, the installed result matches intent, and
+    deficiencies are resolved, then issues the finish schedule as
+    installed.
+  controls:
+    - name: Approval before deposit
+      note: No deposit or purchase order is placed on an item without the client's recorded approval of the item, price, and lead time.
+    - name: Item tracking record
+      note: Every item carries quote, approval, order date, promised date, receipt, inspection, storage location, and installation status in one record.
+    - name: Receiving inspection within the claim window
+      note: Each delivery is opened and inspected at the warehouse, and damage is photographed and claimed inside the vendor's window.
+    - name: Site readiness gate before delivery
+      note: Floors, paint, and access are confirmed ready and recorded before an item is scheduled to leave storage for the site.
+    - name: Placement walkthrough with deficiency list
+      note: The installed result is walked against the plan with the client, and every deficiency has an owner and a resolution date.

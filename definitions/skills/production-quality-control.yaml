@@ -94,3 +94,52 @@ automation:
 questions:
   - Which accepted quantity cannot be traced to the required checks?
   - Which suspect material is not physically separated from saleable output?
+article:
+  what: >
+    The production quality control process sets how a job's output will
+    be checked before the run starts, records what was actually measured
+    as it runs, physically holds anything suspect, gets an authorized
+    decision on what happens to it, and releases only the accepted
+    quantity with the evidence to support it. It starts from the
+    production order and the routing sheet and ends with a quality
+    report that ties results, traceability, deviations, disposition, and
+    signoff to the shipped units. A quality inspector owns it in a
+    machine shop, a commercial printer, or a sign shop, with machine
+    operators recording in-process checks.
+  why: >
+    It protects the customer from receiving parts, prints, or signs that
+    do not meet the specification, and the shop from a release it cannot
+    defend. Inspection against an obsolete revision accepts the wrong
+    part with a clean record. A hold that exists in the system but not
+    on the floor lets nonconforming units mix with good ones and ship. A
+    quality report that says pass without observed values, instrument,
+    and operator cannot show what supports the release when the customer
+    asks. Excess inspection consumes capacity; the process is where the
+    right amount is decided.
+  how: >
+    The inspector establishes the inspection from the production order
+    and the routing sheet: current revision, characteristics to check,
+    method, equipment, sampling, tolerance, records, and who can
+    release. Starting control is verified before the run proceeds:
+    material identity, measurement equipment status, setup result, first
+    article, and required approvals. During production the machine
+    operator records the required in-process checks, observations,
+    quantities, tool changes, and process exceptions where they occur on
+    the routing sheet. When something is suspect, the inspector
+    identifies the quantity, holds it in a marked container or location,
+    and routes it for an authorized disposition of rework, repair,
+    use-as-is, scrap, or supplier action. Accepted output is released
+    with a quality report carrying results, accepted quantity,
+    traceability, deviations, disposition, signoff, and any customer
+    evidence.
+  controls:
+    - name: Inspection plan revision equals order revision
+      note: The plan's revision is checked against the production order before first article, and a difference stops the setup until resolved.
+    - name: First article before the run
+      note: A first article is measured, recorded with values, and signed before production quantity is authorized at the work center.
+    - name: Observed values on every check
+      note: Each recorded check carries the measured value, instrument identity, operator, and time, and a pass mark without values is rejected.
+    - name: Physical hold with identified location
+      note: Suspect material is tagged and placed in a named container or area, and the system hold references that location.
+    - name: Disposition by named authority
+      note: Rework, repair, use-as-is, scrap, and supplier action are approved by a person with that authority, and the signoff is on the quality report.

@@ -26,3 +26,59 @@ supply_chain:
   sells_to: [homeowner, general-contractor]
 seo:
   title: "Painting Contractor: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A painting contractor sells crew days against a job list, so the
+    week is an estimator looking at surfaces and a crew lead moving a
+    crew through rooms or elevations. The office manager and estimator
+    take the lead, the estimator prices access, protection, preparation,
+    repair, coating system, and finish, the crew lead runs production by
+    completed area, and the office manager invoices on completion and
+    chases payment. Quoting, project delivery, and purchasing are
+    load-bearing, because the material has to be on site in the right
+    color and sheen before the crew arrives. The tension is between the
+    quoted hours and the hours the surface actually needs: hidden
+    damage, adhesion failure, moisture, and customer-added areas each
+    need a field decision, evidence, and a price before the crew
+    continues.
+  starting: >
+    Painting is licensed as a contractor trade in some states and only
+    registered in others, so the first check is whether the state or
+    city requires a contractor license, a registration, or a bond for
+    the job sizes the company will take; federal lead-safe certification
+    is required for work that disturbs paint in older housing, and it
+    applies to the firm and to the person supervising. The general layer
+    is business registration, employer registration once the first crew
+    member is hired, sales tax registration where the state taxes the
+    materials or the service, and general liability and workers
+    compensation cover that most general contractors and property owners
+    will ask to see. Equipment is modest (ladders, sprayers, drop
+    cloths, a van), so the capital decision is small. The minimum team
+    is an owner-operator who estimates, a crew lead, and field crew,
+    with the office manager role held by the owner at first. The first
+    records are the job request, the quote, the work order, job photos
+    before and after, the purchase order and supplier invoice, and the
+    customer invoice. Lead intake, quoting, purchasing, project
+    delivery, and invoicing have to work from the first job.
+  economics: >
+    Revenue is interior projects priced by scope and preparation and
+    exterior projects planned around access, condition, and coating
+    limits. The price is a quote: labor hours by surface and preparation
+    level plus material at a markup, and the gross margin on the job is
+    that quote less the hours and material actually consumed. Labor is
+    most of the cost, so project gross margin depends on the estimator's
+    hours being right and the crew lead holding production to them;
+    schedule variance is the early warning, since a crew running behind
+    is eating margin every day. Quote win rate and booking rate decide
+    whether the crew has work next week, and days sales outstanding
+    matters most on general contractor jobs, where retainage and slow
+    pay can hold a month of labor. The business is capital-light and
+    labor-heavy, exterior work is seasonal in most climates, so interior
+    work has to fill the winter, and margins are decided in the estimate
+    and the first day of preparation more than at the end.
+  benchmarks:
+    - scope: Mean annual wage, painters employed by painting and wall covering contractors
+      value: "$50,860 (May 2023)"
+      note: "Painters, construction and maintenance, in NAICS 238320, 136,660 employed or 66.07 percent of the industry's 206,830 jobs; mean hourly wage $24.45."
+      source: https://www.bls.gov/oes/2023/may/naics5_238320.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 238320 Painting and Wall Covering Contractors (May 2023)

@@ -37,3 +37,55 @@ automation:
 questions:
   - Which contrary evidence could overturn the current diagnosis?
   - Who made the decision, what action was accepted, and how will its outcome be checked?
+article:
+  what: >
+    The consulting diagnosis and decision process takes a defined
+    business question from the client brief and a bounded set of
+    evidence, and returns a supported diagnosis, evaluated alternatives,
+    a decision that management owns, and follow-up actions with named
+    owners and an outcome check. It starts when the decision is framed
+    with its owner and ends when the consulting decision record and
+    deliverable are issued. A management consulting firm owns it through
+    the engagement lead, but the decision itself belongs to the client's
+    management.
+  why: >
+    It protects the client from acting on a plausible story. A
+    recommendation that outruns its evidence commits money and attention
+    to a cause that was never tested, and the operating problem stays.
+    Interviews turned directly into conclusions skip the contrary
+    evidence that would have changed them. A presentation approved in a
+    meeting is mistaken for operating change, and nobody is assigned to
+    make it happen or to check whether it worked. The decision record
+    exists so the firm and the client can trace what was known, what was
+    chosen, and why.
+  how: >
+    The engagement lead frames the decision from the client brief,
+    confirming the decision owner, desired outcome, operating scope,
+    constraints, evidence limits, timing, and success measure before
+    analysis starts. The team then tests the diagnosis and the choices,
+    reconciling interviews, operating data, financial evidence,
+    observations, disagreements, causes, and alternatives, and looking
+    specifically for evidence that would overturn the current diagnosis.
+    In the final step the evidence and its uncertainty are presented,
+    management's choice is captured, actions are assigned to owners with
+    dates, and outcome verification is scheduled. The consulting
+    decision record and the deliverable carry that chain from question
+    to measure.
+  controls:
+    - name: Decision owner and success measure named at framing
+      note: >
+        The record shows who will decide and what outcome will count
+        as success before evidence is gathered.
+    - name: Source trace on every premise
+      note: >
+        Each claim in the diagnosis links to its source, and the
+        contrary evidence considered is recorded with it.
+    - name: Alternatives evaluated in writing
+      note: >
+        At least one alternative to the recommended course is
+        documented with its tradeoffs before the decision meeting.
+    - name: Decision and action log
+      note: >
+        Management's choice, the action owners, their dates, and the
+        scheduled outcome check are captured in the consulting
+        decision record.

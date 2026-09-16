@@ -89,3 +89,44 @@ automation:
 questions:
   - Does every invoice line have matching authorization and completion evidence?
   - What deferred work did the customer leave with, and who will follow it?
+article:
+  what: >
+    The repair checkout process is the handover at the counter after the
+    repair is done. It begins when the quality check has passed and ends
+    when the customer has paid, received the keys, the invoice, and the
+    warranty information, and has heard what was found, what was fixed,
+    what was tested, and what remains open. In an auto repair shop it is
+    owned by the service advisor, who is the last person able to resolve
+    a scope or price difference before the vehicle leaves the lot.
+  why: >
+    Pickup is where every earlier gap surfaces at once. An invoice line
+    with no matching authorization becomes a dispute at the counter, with
+    the customer's keys as leverage. A deferred safety item mentioned in
+    the file and omitted from the conversation leaves the customer
+    believing the vehicle has no remaining concern. Warranty text the
+    advisor cannot explain turns a later failure into an argument over
+    what was covered. The process reconciles the record before the
+    customer sees the total and leaves the counter with nothing
+    unexplained.
+  how: >
+    The service advisor confirms release by checking that the quality
+    check passed and that any remaining limitation is ready to explain.
+    The advisor reconciles the customer invoice so authorized lines,
+    installed parts, labor, tax, deposits, and credits agree with the
+    work authorization and the repair completion before the customer
+    sees the total. The advisor then explains the result: what caused
+    the concern, what changed, what was tested, and which recommendations
+    remain open, with the deferred items named. Finally the advisor
+    collects payment, records it on the payment record, and hands over
+    keys, receipt, and warranty information under one completed record.
+  controls:
+    - name: Quality release confirmed before the customer is called
+      note: The vehicle is offered for pickup only after the quality check is recorded as passed by the named checker.
+    - name: Invoice matched to authorization line by line
+      note: Every invoice line maps to an approved authorization line and a completion entry before the total is presented.
+    - name: Deferred work read out and written down
+      note: Declined or postponed findings are named in the handover conversation and listed on the receipt with a follow-up owner.
+    - name: Warranty terms explained at the counter
+      note: The advisor states the covered part, labor, time, and conditions in plain terms and the receipt carries the same terms.
+    - name: Payment record linked to the invoice
+      note: Each payment is recorded against the invoice it settled so the day's cash and card totals reconcile.

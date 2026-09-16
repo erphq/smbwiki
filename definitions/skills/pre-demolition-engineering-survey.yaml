@@ -97,3 +97,52 @@ questions:
   - >-
     Which record proves pre-demolition engineering survey was accepted before
     it was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The pre-demolition engineering survey process is the examination a
+    demolition contractor makes of a structure before anything is
+    removed: how it was built, what condition it is in, where its loads
+    travel, what adjacent property and public space are exposed, which
+    utilities serve it, what hazardous materials it contains, and in
+    what sequence it can be taken down safely. It starts from the
+    construction plan and site records and ends with a written survey
+    that fixes the removal sequence, and with daily reports during
+    demolition that record whether the survey held or the conditions
+    that changed it. The competent person or the project manager owns
+    it.
+  why: >
+    It protects the crew, the neighbors, and the remaining structure
+    from what cannot be seen from the sidewalk. Unknown loads, hidden
+    connections, live utilities, and undisclosed asbestos or lead make
+    an unplanned removal sequence dangerous, and a wall that was
+    carrying more than the drawing showed comes down on the wrong side.
+    The survey is also the record the regulator asks for after an
+    incident, and the basis for the disposal route, so a survey done
+    from memory is the difference between a defensible job and a
+    stop-work order.
+  how: >
+    The project manager confirms the work basis: the current scope and
+    revisions, the completed engineering survey, utility shutdown
+    confirmations, hazardous-material disposition, exclusion zones, the
+    removal sequence, and disposal routes. Field controls turn the
+    survey into work limits the crew can use: which elements come down
+    in what order, what stays to support what, where exclusion zones and
+    protected services are, hold points before each structural stage,
+    and the daily report format. During demolition the crew records
+    quantities removed, observations, decisions, and concealed
+    conditions found, and stops when the structure or its contents
+    differ from the survey. Acceptance checks specified removals, a
+    stable remaining structure, protected services and finishes,
+    segregated waste, clean limits, and documented changed conditions,
+    corrections are closed, and the daily report is issued.
+  controls:
+    - name: Survey signed before the first removal
+      note: The engineering survey names its author, date, and the drawings and site records used, and demolition cannot start without it on site.
+    - name: Utility shutdown confirmed in writing
+      note: Each utility serving the structure has a written disconnection or isolation confirmation on file before the exclusion zone is set.
+    - name: Hazardous-material disposition on record
+      note: The abatement clearance or the survey finding of no hazardous material is attached to the survey before any removal begins.
+    - name: Hold point before each structural stage
+      note: The competent person inspects the remaining structure and adjacent exposure against the sequence before the next stage is released.
+    - name: Changed condition recorded the same day
+      note: A hidden load path, connection, or material found during work is written on that day's report with the revised sequence.

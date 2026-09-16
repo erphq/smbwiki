@@ -110,3 +110,51 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A poured concrete contractor works toward a placement window. The
+    estimator and project manager sell a scope from the construction
+    plan, then the crew under a trade foreperson builds forms, sets
+    reinforcement and embeds, and calls for inspection before a truck is
+    ordered. On pour day the site superintendent manages truck spacing,
+    pump access, consolidation, and finishing time, and curing
+    protection has to be in place before the crew leaves. Formwork
+    control and reinforcement placement are the load-bearing skills,
+    because a missed embed or thin cover cannot be corrected cheaply
+    after hardening and shows up later in the test report or as rework.
+    The tension is between weather, ready-mix delivery, and crew
+    availability all having to line up on the same morning.
+  starting: >
+    Starting a concrete contractor takes forming equipment, hand and
+    power finishing tools, a truck and trailer, and supply accounts with
+    a ready-mix producer and a reinforcing steel supplier, since concrete
+    is bought per load and delivered to a schedule the contractor
+    controls. Paperwork is the business registration, sales tax
+    registration where applicable, employer registration as soon as a
+    crew is hired, and in most states a contractor license for
+    structural or concrete work above a value threshold; foundation
+    permits are pulled by the general contractor or by the concrete
+    contractor depending on the job. General liability and workers
+    compensation coverage are required before the first crew day. The
+    minimum roles are an owner-operator who estimates, a trade
+    foreperson who runs placement, and installers, with the office
+    manager handling purchasing and invoicing. The first records are the
+    quote, the construction plan, the work order, job photos, and the
+    test report, and the skills that must exist from the first pour are
+    quoting, formwork control, reinforcement placement, concrete
+    placement, finishing, and curing.
+  economics: >
+    Revenue is placed concrete volume with forming, reinforcement,
+    pumping, finishing, curing, testing, mobilization, and protection
+    priced as parts of an accepted scope. Ready-mix and steel are
+    pass-through costs quoted per yard and per ton, so gross margin
+    lives in the labor hours per yard placed and in avoiding rework:
+    a cold joint, a blown form, or a failed cylinder test can consume
+    the margin of several jobs. The metrics that decide profit are
+    project gross margin, rework rate, on-time completion, and schedule
+    variance, with quote win rate and booking rate showing whether the
+    estimator is pricing to the market and days sales outstanding
+    showing how long general contractors hold payment. The trade is
+    labor and equipment intensive with short placement windows, which
+    means idle crews on rain days and standby trucks are the hidden
+    costs, and weather scheduling matters as much as pricing.

@@ -95,3 +95,51 @@ questions:
   - >-
     Which record proves blown insulation installation was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The blown insulation installation process is how an insulation
+    contractor blows loose-fill fiberglass or cellulose into attics and
+    enclosed cavities to an even installed depth and density. It starts
+    when air sealing is done, the construction plan sets the R-value,
+    and the attic or cavity is dry, accessible, and free of open leaks,
+    and it ends when coverage markers show the depth, the bag count
+    matches the coverage chart, and an inspection report records the
+    result before the space is closed. The insulation foreman owns it;
+    the machine operator and hose operator work to his settings.
+  why: >
+    Loose-fill settles, drifts, and thins where the hose does not reach,
+    and the result looks uniform from the hatch. Too few bags for the
+    area means the rated R-value was never installed. Insulation blown
+    over a recessed light without clearance, into a soffit vent, or
+    across an unprotected access path creates a fire, ventilation, or
+    safety problem that a homeowner finds later. Without the process,
+    the crew runs the machine until the truck is empty, the energy
+    inspector has no markers or bag count to check, and the contractor
+    has no evidence to answer a comfort complaint.
+  how: >
+    The foreman reads the current construction plan and revisions and
+    confirms that the air-control layer is complete, cavities are dry,
+    leaks are closed, services are installed, the insulation system is
+    approved, and access is safe. He then sets the field controls:
+    coverage markers at the required depth, machine settings for the
+    material, bag count from the manufacturer's chart for the area and
+    R-value, the blowing pattern, the access path and walkway, and drift
+    protection at eaves, hatches, and clearances. During installation
+    the crew records bags used, areas completed, and any location that
+    could not reach depth, and stops when a wet cavity, an unprotected
+    fixture, or a missing baffle changes the method. At acceptance the
+    foreman checks the thermal and air boundary for continuity, full
+    depth at the markers, correct density, and protected clearances,
+    photographs the concealed work, closes corrections, and issues the
+    inspection report.
+  controls:
+    - name: Bag count from the coverage chart
+      note: The required bags for the area and R-value are calculated before starting and reconciled against bags used at the end.
+    - name: Depth markers placed and photographed
+      note: Markers at the specified depth are installed across the area and photographed after blowing to show coverage.
+    - name: Clearance and baffle check before blowing
+      note: Recessed lights, flues, vents, and eave baffles are protected and confirmed before the machine starts.
+    - name: Density spot check
+      note: Installed density is checked at the agreed points for the material, and low areas are reblown before the space is closed.
+    - name: Inspection report with card at the hatch
+      note: The report and the attic card showing R-value, depth, and bag count are completed before the crew leaves.

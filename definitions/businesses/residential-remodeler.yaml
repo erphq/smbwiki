@@ -30,3 +30,70 @@ skills:
 supply_chain:
   buys_from: [building-material-distributor, specialty-subcontractor]
   sells_to: [homeowner]
+article:
+  operating_model: >
+    A residential remodeler sells a changing project in an occupied
+    home. The estimator and owner-operator convert a design and
+    selections into a quote with allowances and exclusions, the office
+    manager pulls the permit, and the crew lead runs demolition,
+    rough-in by specialty subcontractors, inspections, finishes, and
+    punch work while the family lives around it. Quoting and project
+    delivery are the load-bearing skills, with permits and inspections
+    setting the sequence. The tension is that demolition reveals
+    concealed conditions after price and schedule are committed, so the
+    daily job is linking the field condition to a decision, a cost, a
+    revised sequence, and a customer approval before the wall is closed
+    again.
+  starting: >
+    Most states require a contractor license or a home improvement
+    contractor registration to sell remodeling to homeowners, and
+    federal renovator certification is required to disturb painted
+    surfaces in housing built before the lead paint ban; local building
+    permits are pulled per project. Alongside these sit the business
+    registration, sales tax registration where materials or labor are
+    taxable, employer registration for the first crew, and general
+    liability and workers compensation coverage that subcontractors
+    will also be asked to prove. Capital items are a truck, tools, and
+    site protection, since most trade work is bought from specialty
+    subcontractors and materials from a building material distributor.
+    The minimum roles are an owner-operator, an estimator, a crew lead,
+    and field crew, with an office manager handling permits,
+    purchasing, and invoicing. The first records are the job request,
+    the quote, the permit, the work order, job photos, the purchase
+    order, the supplier invoice, and the customer invoice, and the
+    skills that must exist from the first job are lead intake, quoting,
+    permits and inspections, purchasing, project delivery, and
+    invoicing on a progress schedule.
+  economics: >
+    Revenue is remodeling projects sold under a fixed price or a cost
+    plus agreement, and design and preconstruction work sold before
+    construction to fund the planning, investigation, and selections
+    that make the fixed price honest. Gross margin is what remains after
+    materials, subcontractors, and direct labor, and it is decided by
+    estimating accuracy, change order discipline on concealed
+    conditions, and how much allowance overrun the customer accepts. The
+    metrics that decide profit are project gross margin, schedule
+    variance, quote win rate, booking rate from inquiry to signed
+    design agreement, and days sales outstanding on progress billing.
+    Net margin is thin relative to gross because the owner's own
+    compensation, sales, and administration come out of the middle,
+    which is why industry studies separate the two. The work is labor
+    coordinated and capital light, so cash flow depends on deposits and
+    progress payments arriving ahead of subcontractor and supplier
+    bills.
+  benchmarks:
+    - scope: Gross profit margin, residential remodelers
+      value: 29.9 percent average (fiscal 2024)
+      note: NAHB Remodelers' Cost of Doing Business Study, 2026 edition, survey of NAHB Remodelers members; cost of sales (labor, materials, trade contractors) averaged 70.1 percent of revenue, and the 2021 average was a record low of 24.9 percent. Sample size is not stated in the post.
+      source: https://www.nahb.org/blog/2026/04/home-remodeling-profit-margin
+      source_name: NAHB, Home Remodeling Profit Margin Jumps on Demand and Business Practices (April 2026, fiscal 2024 data)
+    - scope: Net profit margin, residential remodelers
+      value: 6.3 percent average (fiscal 2024)
+      note: Same NAHB study; operating expenses including indirect construction costs, finance, sales and marketing, general and administrative, and owner compensation averaged 23.6 percent of revenue. The post calls it the highest net margin since 1996, up from 3 percent in 2011; average respondent revenue was $2.7 million.
+      source: https://eyeonhousing.org/2026/04/remodelers-saw-profit-margin-gains-in-2024/
+      source_name: NAHB Eye On Housing, Remodelers Saw Profit Margin Gains in 2024 (April 2026)
+    - scope: Establishments, employment, and average pay, NAICS 236118 residential remodelers
+      value: "126,785 establishments, 455,708 employees, average annual pay $62,228 (2024 annual averages)"
+      note: BLS Quarterly Census of Employment and Wages, private ownership, US total, 2024 annual averages; employment excludes owners and subcontracted trade labor, which is most of the labor on a remodel.
+      source: https://data.bls.gov/cew/data/api/2024/a/area/US000.csv
+      source_name: Bureau of Labor Statistics, Quarterly Census of Employment and Wages, 2024 annual averages

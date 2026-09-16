@@ -111,3 +111,60 @@ org:
       - role: land-surveyor
         reports:
           - role: survey-technician
+article:
+  operating_model: >
+    A land surveying firm alternates between the record room, the field,
+    and the drafting desk. The week starts with survey record research on
+    deeds and plats, moves to field control establishment and the boundary
+    field survey by the land surveyor and survey technician, then to
+    survey data adjustment and plat preparation before the licensed
+    surveyor signs. Boundary field survey, survey data adjustment, and
+    plat preparation are the load-bearing skills, with record research
+    deciding whether the field crew measures the right monuments at all.
+    The tension sits between the promised turnaround and the professional
+    judgment a boundary needs: the client wants a plat by closing day, and
+    the surveyor cannot sign until the evidence, closure, and adjoining
+    records agree.
+  starting: >
+    The definition binds a professional land surveyor license for the
+    surveyor who takes responsibility for regulated boundary work and
+    signs plats and descriptions; in most states that license is issued by
+    the engineering and surveying board after examination and experience,
+    and a firm may also need a certificate of authorization to offer
+    surveying under a business name. Add the business registration,
+    professional liability insurance, and employer registration when the
+    first technician is hired. The minimum team is a principal who holds
+    the license, a land surveyor or survey technician for the field, and a
+    client coordinator for intake, engagement letters, invoicing, and
+    receivables. The first records to set up are the client brief, the
+    engagement letter, survey field notes, the site plan, the survey plat,
+    and the time record, and the skills that must work from the first job
+    are survey record research, field control establishment, boundary
+    field survey, and plat preparation. Capital is instrument-heavy: a
+    total station or satellite positioning receiver, data collectors, a
+    field vehicle, and surveying and mapping software.
+  economics: >
+    Revenue is fixed-fee engagements for defined surveys, time-based work
+    for research and stakeout billed at agreed rates, and recurring
+    advisory arrangements with engineering firms, brokerages, and
+    developers who order repeatedly. Fees are set from expected research
+    hours, field crew days, and drafting time, so engagement gross margin
+    depends on the estimate holding when the monuments are hard to find.
+    Utilization rate of the surveyor and crew, report turnaround time, and
+    survey closure error decide profit: a closure that fails means a
+    return trip the fee did not include, and a slow turnaround delays
+    closings and the invoices behind them. Quote win rate and work-in-
+    progress age matter because surveys are often billed at delivery. The
+    business is moderately capital-intensive in instruments and vehicles
+    and heavily dependent on licensed time, which is the scarce resource.
+  benchmarks:
+    - scope: Employees per establishment, surveying and mapping services (NAICS 541370)
+      value: 8.0 paid employees per establishment
+      note: 58,087 paid employees in the week of March 12, 2023 across 7,288 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, surveying and mapping services (NAICS 541370)
+      value: 74,108 dollars per employee (2023)
+      note: Annual payroll of 4,304,723 thousand dollars divided by 58,087 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

@@ -87,3 +87,47 @@ questions:
   - >-
     Which record proves siding layout was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The siding layout process resolves an elevation on paper and on the
+    wall before any panel is cut, fixing course heights, panel and joint
+    locations, reveals, starter and corner positions, trim, and
+    terminations at openings and rooflines. It starts once the
+    sheathing, weather barrier, and flashing have been accepted and the
+    material has acclimated, and it ends when the layout is marked,
+    checked, and recorded in a quality report that the installation crew
+    will build from. A siding contractor owns it, typically through the
+    crew lead or the estimator who also orders the material.
+  why: >
+    It protects the elevation from the errors that cannot be fixed after
+    installation starts, a sliver course at a window head or eave, and
+    joints that stack or land where they cannot be flashed. It also
+    protects the material budget, because a layout that resolves panel
+    lengths and joint positions before cutting decides how much waste
+    the job produces. On a house with many openings, an unresolved
+    layout turns into field improvisation that shows in every reveal.
+  how: >
+    The crew lead reads the current scope and revisions, then confirms
+    accepted sheathing, a dry substrate, complete openings, the approved
+    weather barrier, flashing details, material acclimation, and access.
+    The layout is then set as work limits and a sequence the crew can
+    use, with a story pole or laser reference, course heights, joint and
+    panel positions, starter, corner, and trim locations, and hold
+    points where the layout is checked against openings before cutting
+    begins. During the work the lead records the layout decisions, any
+    deviation forced by an out-of-square opening or an uneven grade, and
+    the reference marks that will be hidden once cladding goes on,
+    stopping when a field condition changes the plan. At acceptance the
+    lead checks the layout against drainage continuity, fastening zones,
+    clearances, joint layout, trim integration, appearance, and
+    manufacturer requirements, closes corrections, and issues the
+    quality report.
+  controls:
+    - name: Story pole or reference line checked against openings
+      note: Course heights are verified at every window head and sill and at the eave before marks are transferred to the wall.
+    - name: Joint plan recorded per elevation
+      note: Panel and butt joint locations are drawn and photographed so the installation crew does not stack joints or land them on a flashing.
+    - name: Material takeoff reconciled to the layout
+      note: Panel lengths and counts are recalculated from the resolved layout before the cut list is released to the crew.
+    - name: Layout marks photographed before covering
+      note: Reference lines and starter positions are recorded so a later dispute can be checked against the intended layout.

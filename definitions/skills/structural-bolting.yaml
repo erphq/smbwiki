@@ -91,3 +91,53 @@ questions:
   - >-
     Which record proves structural bolting was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The structural bolting process controls every bolted connection on
+    an erected frame from the condition of the bolt assemblies to the
+    record of their verification, covering assembly storage and lot
+    identity, hole alignment, the installation method, the sequence for
+    snugging and then pretensioning, verification of the result, and
+    traceable correction of anything that fails. It starts when a
+    connection is fit up per the approved drawings and ends when the
+    bolt record is accepted into the quality report. A structural steel
+    erector owns it through the bolting crew lead, with the special
+    inspector verifying where the specification requires.
+  why: >
+    It protects the load path the engineer designed. A slip-critical
+    connection left snug tight, a bolt pretensioned before the plies
+    were brought together, an assembly with rusted threads that cannot
+    reach tension, or a tension-control bolt whose spline snapped early
+    each looks finished from the outside. The frame then carries load
+    through connections that will slip or loosen, and no one can tell
+    which ones without testing every bolt. The bolt record is what lets
+    the inspector release the connection instead of ordering that
+    testing.
+  how: >
+    The crew lead reads the current scope and revisions, then confirms
+    approved erection drawings, stable access, the crane plan, the piece
+    sequence, connection information including bolt type and required
+    tension, anchor condition, and the concrete strength notice before
+    bolting begins. The work is set out with work limits by connection
+    group, the snugging and pretensioning sequence, responsibilities,
+    hold points where verification happens before the next group, and
+    the bolt record the crew and inspector share. During the work the
+    crew checks assembly condition and lot, aligns holes without
+    damaging them, installs by the specified method, snugs in sequence,
+    pretensions in sequence, records lot, method, sequence, and
+    verification result per connection, and stops when a hole misaligns
+    beyond limits or an assembly fails. At acceptance the connections
+    are checked against erection tolerances, connection completion, weld
+    and bolt records, decking stability, and the required inspection
+    release, corrections are closed, and the quality report is issued.
+  controls:
+    - name: Assembly lot and condition check
+      note: Bolt assemblies are stored protected, tracked by lot, and checked for lubrication and thread condition before installation.
+    - name: Pre-installation verification each shift
+      note: The installation method is verified on a tension calibrator each shift for each lot and diameter, and the result is recorded.
+    - name: Snug and pretension sequence recorded per connection
+      note: Each connection records that plies were brought together, the snugging pass, the pretensioning pass, and the order used.
+    - name: Failed assembly replaced and logged
+      note: A bolt that fails verification is replaced with a new assembly, never retightened, and the replacement is on the record.
+    - name: Inspector verification reconciled
+      note: The special inspector's verification for each connection group is matched to the erector's bolt record before the group is released.

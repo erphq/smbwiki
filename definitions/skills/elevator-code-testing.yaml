@@ -93,3 +93,47 @@ questions:
   - >-
     Which record proves elevator code testing was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The elevator code testing process is the scheduled or witnessed test
+    that proves a unit's safety and performance functions still work: the
+    mechanic plans the required test for that unit, confirms the load
+    weights and instruments, runs the safety and performance checks, records
+    results, corrects what fails, and updates the unit log. It starts from a
+    service ticket tied to a test due date or an inspector's request and
+    ends with a test report on file and the unit's inspection status
+    current. An elevator service contractor's route mechanic or adjuster
+    owns it under the service supervisor.
+  why: >
+    The test is the only time the safeties, governor, brake, and buffers are
+    exercised on purpose. If the process is skipped or done from memory, the
+    unit runs on the assumption that those parts still work, and the first
+    real test is an overspeed event with passengers aboard. A test run
+    without the right load or instruments produces a report that cannot be
+    defended to the inspector or in a claim. A result that is never written
+    into the unit log means the next mechanic repeats the work or, worse,
+    assumes it was done.
+  how: >
+    The mechanic reads the service ticket and the unit's scope, then
+    confirms the identified unit, its maintenance history, the applicable
+    code and test category, safe access, the outage window agreed with the
+    building, test weights and instruments, qualified staff, and rescue
+    provisions. Field controls set the test sequence, the hold points where
+    the unit must be locked out or loaded, who witnesses each step, and
+    where each result is written. During the test the mechanic records
+    readings, observations, and any deviation, and stops when the unit's
+    condition differs from the history. Acceptance checks safe operation,
+    clearances and protection, corrected defects, recorded tests, the
+    current log, and the regulatory inspection status, and the test report
+    is issued.
+  controls:
+    - name: Test load and instruments verified
+      note: Rated load weights and calibrated instruments are confirmed against the test requirement before the unit is taken out of service.
+    - name: Lockout and rescue provisions in place
+      note: The outage is coordinated with the building and the rescue plan is confirmed before any safety device is tripped.
+    - name: Every result recorded with the reading
+      note: Each test carries a measured value or a pass and fail result on the test report, never a checkmark alone.
+    - name: Failed items corrected before return to service
+      note: A failed safety or performance test keeps the unit out of service until the correction is made and retested.
+    - name: Unit log and inspection status updated
+      note: The unit log and the jurisdiction's inspection record are updated the same day so the next due date is correct.

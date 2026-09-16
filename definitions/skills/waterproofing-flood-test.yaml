@@ -95,3 +95,51 @@ questions:
   - >-
     Which record proves waterproofing flood test was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The waterproofing flood test process is how a waterproofing contractor
+    proves a membrane holds water before it is covered: the test boundary and
+    duration are defined, adjacent areas and the space below are protected,
+    the starting water level is recorded, loss and leakage are monitored
+    through the test period, and the assembly is released only after any
+    repair and retest. It starts when the installed membrane and its
+    transitions have cured and been inspected and ends with a test report that
+    either releases the assembly to the next trade or records the leak, the
+    repair, and the retest. The foreman owns the test and the project manager
+    signs the release.
+  why: >
+    Flooding a deck, a planter, a shower, or a below-grade slab is the last
+    chance to find a leak while the fix is a patch instead of a demolition. A
+    test run for too short a time, over the wrong boundary, or with no
+    starting level recorded proves nothing and gives the general contractor a
+    false release. A leak found without protection below damages finished work
+    the contractor then pays for. Because treating the visible leak without
+    tracing pressure, path, termination, and drainage can push water into a
+    new concealed route, the test report has to record where the water went
+    and what was repaired.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions and verifying that the moisture source or design condition is
+    identified, the substrate is sound, the system is compatible, transitions
+    are prepared, the drainage route is known, and access is safe. Field
+    controls are set for the test: the boundary, the water depth and duration,
+    protection of adjacent areas and the space below, who monitors and at what
+    intervals, the plug and drain plan, and the test report format. During the
+    test the operator records starting level, time, readings at each interval,
+    weather, any observed leakage with location, and the drain-down, and stops
+    the test when leakage appears or a condition changes the planned method.
+    Acceptance checks continuous specified thickness, bonded transitions,
+    sealed penetrations, protected terminations, drainage, cure, and the
+    required water test result, corrections and retests are closed, and the
+    test report is issued.
+  controls:
+    - name: Boundary and duration agreed before filling
+      note: The test area, depth, and duration are written on the test report and agreed with the general contractor before the drains are plugged.
+    - name: Starting level and interval readings recorded
+      note: The starting water level, time, and each interval reading are recorded so loss can be separated from evaporation and leakage.
+    - name: Space below inspected during the test
+      note: The area under the tested assembly is inspected at each interval and at the end, and the inspection is recorded whether or not water is found.
+    - name: Cure confirmed before testing
+      note: The membrane cure time is recorded and has elapsed, and the inspection report on the installed assembly is on file, before the test begins.
+    - name: Repair and retest closed before release
+      note: Any leak is located, repaired, and retested over the same boundary, and the release is signed only on a passing retest.

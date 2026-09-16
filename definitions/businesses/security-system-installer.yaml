@@ -30,3 +30,55 @@ skills:
 supply_chain:
   buys_from: [security-equipment-distributor]
   sells_to: [homeowner, property-management-company]
+article:
+  operating_model: >
+    A security system installer runs two businesses on one truck. The
+    office manager takes the inquiry, the owner-operator quotes a design
+    from the protected areas, users, and connectivity, and the lead
+    technician and technician install panels, sensors, cameras, and
+    network paths, program credentials and alarm routing, test every
+    device, and train the customer before the work order is closed with
+    photos. The dispatcher then fills the week with service calls for
+    the monitored base, where the technician has to separate device
+    failure, communication failure, user error, and a real event.
+    Install project and field job execution are the load-bearing
+    skills. The tension is that the install sells the monitoring
+    contract, so a rushed or undocumented install turns into callbacks
+    and false alarms that cost the recurring account.
+  starting: >
+    Most states license alarm or security system companies and require
+    each technician to be registered with a background check, and
+    several treat wiring as low voltage contractor work with its own
+    license, so licensing has to be in place before the first quote is
+    signed. Around that sit the business registration, sales tax
+    registration since equipment is resold, employer registration for
+    technicians, general liability coverage, and a contract with a
+    monitoring center that will receive signals and dispatch response.
+    Capital items are a truck, tools and testers, a stock of panels,
+    sensors, and cameras from the security equipment distributor, and
+    the field service software that holds the customer's device list
+    and credentials. The minimum team is an owner-operator who quotes
+    and designs, a lead technician, and a technician, with the office
+    manager and dispatcher roles combined at first. The first records
+    are the job request, the quote, the work order with job photos, the
+    purchase order, and the customer invoice, and the skills that must
+    exist from the first install are lead intake, quoting, install
+    project, field job execution, and invoicing, plus a disciplined
+    record of who holds which credential on each system.
+  economics: >
+    Revenue is system installations sold as a project covering
+    equipment, programming, and field labor, and monitoring and service
+    sold as a recurring monthly charge for monitoring, inspection, and
+    maintenance. Installs are often priced at a thin margin to win the
+    recurring contract, so install gross margin and the recurring base
+    have to be read together, and the recurring base is what the
+    business is valued on when it is sold. Gross margin on installs
+    depends on equipment cost from the distributor, technician hours
+    per system, and callback rate, while margin on monitoring depends
+    on the central station fee per account and on attrition. The
+    metrics that decide profit are install gross margin, jobs per
+    technician day, first-time fix rate, callback rate, average ticket
+    on service, and days sales outstanding on the install balance. The
+    business is labor intensive with modest capital, and cash is
+    consumed up front on every subsidized install and recovered over
+    the contract term.

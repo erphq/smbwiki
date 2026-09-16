@@ -95,3 +95,56 @@ questions:
   - >-
     Which record proves demolition waste control was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The demolition waste control process plans and records how debris
+    leaves each work area: chutes and carts, containers and their
+    placement, dust control, segregation by material, weight, regulated
+    material handling, hauling tickets, and housekeeping at the limits.
+    It starts when the engineering survey, utility shutdown, and
+    hazardous-material disposition are confirmed and ends when the area
+    is accepted clean with its hauling record in the daily report. A
+    demolition contractor owns it through the foreman, with the
+    superintendent accepting each area.
+  why: >
+    It protects the people on site, the structure that stays, and the
+    contractor's disposal costs and permits. Regulated material mixed
+    into general debris contaminates the whole container and the fine
+    follows. An overloaded chute or a container placed on an unchecked
+    floor is a collapse. Debris hauled without tickets cannot be shown
+    to have gone to a permitted facility. A work area left uncleared
+    hides the next hazard and slows the crew that follows.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions on the construction plan and verifying the completed
+    engineering survey, utility shutdown, hazardous-material
+    disposition, exclusion zones, removal sequence, and disposal routes.
+    Field controls set the chute and container plan by area, segregation
+    rules, dust control, weight limits, hold points at regulated
+    material, and the records the crew keeps. During the work the
+    operator records quantities removed, container loads, hauling
+    tickets, observations, decisions, and concealed conditions, and
+    stops when a hidden connection or unexpected material changes the
+    planned sequence. Acceptance checks the area against specified
+    removals, stable remaining structure, protected services and
+    finishes, segregated waste, clean limits, and documented changed
+    conditions, and the daily report is issued after correction closes.
+  controls:
+    - name: Hazardous-material clearance before removal
+      note: >
+        Each area shows the survey result and abatement disposition
+        on the record before demolition waste is generated in it.
+    - name: Container placement and load limits checked
+      note: >
+        Container and chute locations are approved for floor
+        capacity and access, and loads are kept within the stated
+        limits.
+    - name: Segregation verified at the container
+      note: >
+        Material streams are inspected at loading, and a
+        contaminated container is logged and rerouted before it
+        leaves the site.
+    - name: Hauling ticket reconciled to the daily report
+      note: >
+        Every load leaving site has a ticket with facility and
+        weight matched to the daily report quantities.

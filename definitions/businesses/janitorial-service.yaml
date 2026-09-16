@@ -28,3 +28,72 @@ skills:
 supply_chain:
   buys_from: [janitorial-supply-distributor]
   sells_to: [property-management-company]
+article:
+  operating_model: >
+    A janitorial service runs on routes. Each site has a scope, a
+    frequency, an access window, and a supply closet; the dispatcher
+    builds nightly routes from those, the lead technician and technicians
+    clean while the customer is away, and the cleaning log is the only
+    evidence the work happened. Facility cleaning and field job execution
+    are the load-bearing skills, and dispatch is the third, because a
+    missed site or an unlocked door discovered in the morning costs more
+    goodwill than a slow clean. The tension sits between labor hours,
+    which are almost the whole cost, and the inspection standard the
+    contract promises: thin the crew and callbacks rise, staff generously
+    and the contract loses money.
+  starting: >
+    The definition binds no trade license; what a new operator needs is
+    the business registration, employer registration before the first
+    technician is hired, general liability insurance and a janitorial bond
+    that commercial landlords commonly require, and sales tax registration
+    in the states that tax cleaning services. Many property managers also
+    require workers compensation certificates before granting keys or
+    credentials. The minimum team is an owner-operator who sells and
+    quotes, a lead technician, and one or two technicians, with the
+    dispatcher and office manager roles held by the owner until the route
+    count justifies them. The first records to set up are the quote, the
+    work order per site, the cleaning log, the purchase order for
+    supplies, and the customer invoice, and the skills that must work from
+    the first contract are quoting, dispatch, field job execution,
+    facility cleaning, and invoicing. Capital is modest: vehicles, floor
+    machines, vacuums, and a supply stock.
+  economics: >
+    Revenue is recurring cleaning contracts billed on a monthly scope,
+    plus periodic project work such as floor care, deep cleaning, and
+    turnover priced separately. Contracts are priced from estimated labor
+    hours per visit times frequency, so the quote is a labor budget and
+    every visit that overruns it eats margin directly. Field labor is by
+    far the largest cost, which is why jobs per tech day, first-time fix
+    rate, and callback rate decide profit: a route that finishes its sites
+    without return visits is profitable, one that needs re-cleans is not.
+    Quote win rate and days sales outstanding govern growth and cash,
+    since commercial accounts pay on terms. Because the business is labor-
+    intensive and low in fixed capital, margins compress under wage
+    pressure and turnover, and project work is what lifts them above the
+    recurring baseline.
+  benchmarks:
+    - scope: Gross margin, building service contractors
+      value: 64 percent of respondents reported 20 percent or less; the most common band was 11 to 15 percent (21.9 percent of respondents)
+      note: 2017 ISSA/BSCAI Building Service Contractor Benchmarking Study, 64 qualified questionnaires from ISSA and BSCAI member firms, survey open March 23 to May 5, 2017, most recently completed fiscal year; 58 percent of respondents had annual revenue of five million US dollars or more, so the sample skews to larger contractors.
+      source: https://www.bscai.org/Portals/0/Photos/Contractor%20Connections/2017-issa-bscai-bsc-benchmarking-study-report-final.pdf?ver=2017-10-25-115245-990
+      source_name: ISSA and BSCAI, 2017 Building Service Contractor Benchmarking Study (2016 fiscal data)
+    - scope: Field labor cost as a share of revenue, building service contractors
+      value: 51 to 70 percent for 61 percent of respondents; 23 percent reported 50 percent or less
+      note: Hourly field employees only; same 2017 ISSA/BSCAI survey of 64 member firms; 31.3 percent answered 51 to 60 percent and 29.7 percent answered 61 to 70 percent.
+      source: https://www.bscai.org/Portals/0/Photos/Contractor%20Connections/2017-issa-bscai-bsc-benchmarking-study-report-final.pdf?ver=2017-10-25-115245-990
+      source_name: ISSA and BSCAI, 2017 Building Service Contractor Benchmarking Study (2016 fiscal data)
+    - scope: Annual employee turnover, building service contractors
+      value: 50 percent or more, reported by 40.6 percent of respondents
+      note: Same 2017 ISSA/BSCAI survey of 64 member firms; 20.3 percent reported turnover under 10 percent.
+      source: https://www.bscai.org/Portals/0/Photos/Contractor%20Connections/2017-issa-bscai-bsc-benchmarking-study-report-final.pdf?ver=2017-10-25-115245-990
+      source_name: ISSA and BSCAI, 2017 Building Service Contractor Benchmarking Study (2016 fiscal data)
+    - scope: Employees per establishment, janitorial services (NAICS 561720)
+      value: 16.1 paid employees per establishment
+      note: 1,088,193 paid employees in the week of March 12, 2023 across 67,799 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, janitorial services (NAICS 561720)
+      value: 30,089 dollars per employee (2023)
+      note: Annual payroll of 32,742,664 thousand dollars divided by 1,088,193 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

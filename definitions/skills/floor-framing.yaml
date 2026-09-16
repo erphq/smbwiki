@@ -86,3 +86,49 @@ questions:
   - >-
     Which record proves floor framing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The floor framing process builds the platform everything above it
+    stands on: sill on the foundation, beams and posts, joists at the
+    specified spacing, blocking, rim, framed openings for stairs and
+    chases, the connectors that tie it together, and the subfloor. It
+    starts when the foundation is accepted and the lumber or component
+    package and connectors are on site, and it ends when the floor is
+    checked for bearing, plane, fastening, and openings and the inspection
+    release is recorded in the quality report. The framing foreman owns it
+    for a framing contractor, with the lead carpenter running the crew.
+  why: >
+    Every wall, roof, window, cabinet, and finish floor inherits what the
+    floor frame does. A joist bearing short on a beam, a missing hanger, a
+    rim out of plane, or an opening framed to the wrong side of a line
+    shows up as a bouncy floor, a cracked tile, a door that will not
+    close, or an inspection failure after the walls are up, when the fix
+    means opening finished work. The process protects the load path the
+    engineer designed, the plane the finishes need, and the inspection
+    that lets the next floor proceed.
+  how: >
+    The foreman reads the current scope and revisions and confirms the
+    dimensions, control lines, lumber or component package, connectors,
+    opening locations, bearing points, and correction of the supporting
+    work before the crew starts. The field controls are then set: layout
+    responsibility, the sequence of sill, beams, joists, blocking, rim,
+    openings, and subfloor, the hold points for bearing and connector
+    checks before subfloor covers them, and the record the crew keeps.
+    During framing the crew records material used, any bearing or hanger
+    condition that differed from the plan, and concealed details such as
+    blocking and connectors before the subfloor goes down, and stops when
+    a foundation dimension or a component does not match the drawing. At
+    acceptance the foreman checks layout, bearing, fastening, bracing,
+    openings, and plane against the plan, closes correction, and issues
+    the quality report ready for inspection.
+  controls:
+    - name: Bearing and connector check before subfloor
+      note: Joist bearing length, hangers, and hold-downs are checked and photographed at a hold point before the subfloor conceals them.
+    - name: Layout verified against control lines
+      note: Sill and beam placement is checked to the survey control and foundation dimensions, and any foundation error is recorded before framing adapts to it.
+    - name: Component package reconciled to the plan
+      note: Engineered joists, beams, and connectors received on site are checked against the layout and the engineer's schedule before installation.
+    - name: Plane and level record
+      note: Rim and joist tops are checked for plane and the reading recorded, so a subfloor or wall problem later has a known starting condition.
+    - name: Quality report issued for inspection
+      note: The completed frame, its checks, and any correction are recorded in the quality report before the inspection is called and the next floor proceeds.

@@ -37,3 +37,52 @@ automation:
 questions:
   - Which content, rights, or production condition is still unresolved?
   - What exact proof version did the authorized approver accept?
+article:
+  what: >
+    The creative proof and release process controls the last stretch of
+    a design job: from the approved brief through the content, the
+    visual version, rights, format, and production proof, to release-
+    ready source files that production can use without a question. It
+    starts when the inputs to the proof are frozen and ends when
+    approval is recorded against one version and the packaged files are
+    released. A graphic design studio owns it through the studio manager
+    or production lead, with the client or account lead as the
+    authorized approver.
+  why: >
+    It protects the studio from producing the wrong version. Feedback
+    that arrives across email, chat, and calls while files are
+    identified by filename and memory means approval attaches to
+    something other than what goes to print or publish. Incorrect
+    content, an unlicensed image, or a font missing from the package
+    reaches production and becomes waste, delay, or reputational harm
+    for the client. One proof record that binds content, design, checks,
+    rights, and approval is the only defense.
+  how: >
+    The production lead freezes the proof inputs first, confirming
+    audience, message, content, brand rules, rights, format, channel,
+    production method, and the named approvers from the client brief.
+    The represented version is then checked: content, hierarchy,
+    imagery, accessibility, dimensions, resolution, color, fonts, and
+    production notes are reviewed against the frozen inputs. Approval is
+    recorded against that one version, the required formats are
+    exported, source assets are packaged, and superseded versions are
+    locked so they cannot be used. The approved creative proof and the
+    deliverable leave together with the version identifier that the
+    approval named.
+  controls:
+    - name: Version identifier on the proof and the approval
+      note: >
+        Every proof carries a version identifier, and the approval
+        names it, with any remaining changes listed against it.
+    - name: Rights register per asset
+      note: >
+        Each image, font, and licensed element in the version has
+        its license and usage terms recorded before approval.
+    - name: Technical checklist on the represented version
+      note: >
+        Dimensions, resolution, color mode, fonts, and accessibility
+        are checked and signed on the proof record.
+    - name: Superseded versions locked at release
+      note: >
+        Earlier versions are archived and blocked from export once
+        the approved package is released to production.

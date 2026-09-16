@@ -110,3 +110,47 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A solar installation contractor sells a system that cannot earn
+    until the utility says so. The week splits between site assessment
+    and design for the pipeline, array and electrical installation for
+    sold jobs, and permitting, interconnection paperwork, inspection,
+    and commissioning for installed jobs waiting on permission to
+    operate. Solar permitting and interconnection and solar
+    commissioning are the load-bearing skills; roof and electrical work
+    is the visible part, but the schedule is controlled by permit
+    corrections, utility documents, labels, and inspection dates. The
+    tension is cash: material is bought and crews are paid at
+    installation while final payment often waits for commissioning.
+  starting: >
+    Starting a solar contractor requires an electrical contractor
+    license in most states, or a licensed electrician on staff, plus the
+    business registration, employer registration, general liability
+    coverage, and registration with the local permitting authority and
+    the electric utility's interconnection portal; sales tax
+    registration applies where equipment sales are taxable, and
+    incentive programs each have their own contractor enrollment. The
+    minimum team is an owner-operator, an estimator who does site
+    assessment and design, and a trade foreperson with installers, with
+    an office manager running purchasing, invoicing, and receivables.
+    The first records are the site plan, the commissioning record, the
+    job request and quote, work orders, and job photos of attachments,
+    wiring, and torque. Solar site assessment, photovoltaic system
+    design, quoting, and array installation must work from the first
+    sale, and a supplier account with a solar equipment distributor must
+    be open before it.
+  economics: >
+    Revenue is quoted projects plus installed system value with design,
+    permitting, interconnection, monitoring, storage, maintenance, and
+    incentive-administration scope. Pricing is per system against an
+    estimate of modules, inverters, racking, electrical work, and permit
+    effort, so gross margin depends on equipment purchasing, crew days
+    per installation, and how many jobs need a second visit for
+    inspection corrections. Project gross margin, schedule variance, and
+    on-time completion decide profit, and rework rate captures the
+    failed inspections that consume crew days without revenue. Quote win
+    rate and booking rate measure the sales funnel, which is expensive
+    in this trade. Days sales outstanding is the metric to watch most
+    closely, because the gap between installation and permission to
+    operate is where working capital is tied up.

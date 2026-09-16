@@ -90,3 +90,54 @@ questions:
   - >-
     Which record proves compaction control was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The compaction control process governs how fill is placed and
+    proven: material and moisture checked before each lift, lift
+    thickness and equipment passes held to the plan, density tests
+    coordinated with the testing agency, failures mapped, and corrected
+    areas retested before the next lift goes on. It starts when fill
+    placement is released on the site plan and ends when the lifts are
+    accepted and recorded in the daily report. A site preparation
+    contractor owns it through the foreman, with the superintendent
+    accepting the work.
+  why: >
+    It protects the structure or pavement that will sit on the fill. A
+    lift placed too thick or too wet passes visually and settles later,
+    after the slab or road is on top of it, when the fix means removal.
+    A failed test with no mapped location gets buried by the next lift.
+    Missing test records leave the contractor unable to prove acceptance
+    when a settlement claim arrives. Rework on fill means handling the
+    same material twice.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions on the site plan and verifying survey control, utility
+    information, permits, erosion controls, equipment access, haul
+    route, soil direction, and the weather plan. The field controls
+    translate that into lift limits, sequence, crew responsibilities,
+    hold points at each lift for testing, and the records the crew
+    keeps. During placement the operator records lift quantities,
+    moisture observations, pass counts, test results, decisions, and
+    concealed details in the daily report, and stops when the material
+    or weather changes the planned method. Acceptance checks the
+    completed work against specified limits, safe slopes and support,
+    approved grades, drainage, compaction, stabilized access, and
+    recorded quantities, and correction is closed before the daily
+    report is issued.
+  controls:
+    - name: Material and moisture check before each lift
+      note: >
+        Source, classification, and moisture condition are confirmed
+        and recorded before fill is spread on the previous lift.
+    - name: Lift thickness and pass count logged
+      note: >
+        Each lift's thickness and the equipment passes applied are
+        recorded by location in the daily report.
+    - name: Test hold point before the next lift
+      note: >
+        No lift is covered until the density test for it is passed
+        and recorded, or the failure is mapped for correction.
+    - name: Failure map with retest record
+      note: >
+        Each failed test location is mapped, corrected, and
+        retested, with both results kept together on the record.

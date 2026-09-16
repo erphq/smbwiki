@@ -110,3 +110,60 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A single-family home builder runs a chain of small subcontractors
+    across one exposed asset from lot review to handover. The week is a
+    sequence check: the site superintendent walks each house against the
+    construction plan and the trade sequence, the project manager
+    releases selections and change orders before they become field
+    problems, and the estimator prices the next lot while lender draws
+    are requested on the current ones. Residential trade sequencing and
+    home selections control are the load-bearing skills. The tension is
+    that margin is set at contract while material prices, weather, and
+    inspection outcomes arrive later, so every undocumented change is
+    margin given away.
+  starting: >
+    A home builder starts with a lot, a plan, and a financing path. The
+    day-one paperwork is the business registration, employer
+    registration once the first superintendent is hired, a residential
+    builder or general contractor license in most states, general
+    liability and builder's risk coverage, and permit accounts with the
+    municipality. Lot due diligence and residential preconstruction are
+    the skills that must work before the first contract is signed,
+    because the sale price is fixed against them. The minimum team is an
+    owner-operator who estimates, a project manager or site
+    superintendent who runs the field, and an office manager who handles
+    draws, invoices, and supplier payments; trade forepersons and
+    installers come from subcontractors. The first records are the job
+    request and quote, the construction plan with its selections
+    schedule, work orders, job photos of concealed work, and a closeout
+    package template. Capital goes into land carry, deposits on
+    long-lead material, and the cash gap between trade payments and
+    lender draws.
+  economics: >
+    Revenue is the contracted home value adjusted through lot terms,
+    buyer selections, allowances, options, change orders, and closing
+    credits, plus separately quoted projects. The pricing basis is a
+    fixed contract against an estimate, so gross margin is decided by
+    estimating accuracy, purchasing discipline on lumber and long-lead
+    items, and whether selections and changes are captured and billed.
+    The metrics that decide profit are project gross margin, schedule
+    variance, and rework rate: a house that slips loses margin to
+    carrying cost and remobilized trades, and concealed defects found at
+    inspection cost more than the original work. Quote win rate and
+    booking rate feed the pipeline, and days sales outstanding matters
+    at the draw and closing stage. Land and material make the business
+    capital-heavy, and warranty exposure after handover is a cost that
+    arrives after the revenue was recognized.
+  benchmarks:
+    - scope: "Gross profit margin, single-family builders"
+      value: "20.7 percent of revenue, fiscal year 2023"
+      note: "Average across responding single-family builders in the NAHB Builders' Cost of Doing Business Study, 2025 edition; cost of sales averaged 79.3 percent of revenue and operating expenses 12.0 percent, on average total revenue of about 11.3 million dollars. Highest gross margin recorded by the survey since 2006."
+      source: https://eyeonhousing.org/2025/03/builders-profit-margins-improved-in-2023/
+      source_name: "NAHB Eye On Housing, Builders' Profit Margins Improved in 2023 (Cost of Doing Business Study, FY2023)"
+    - scope: "Net profit margin, single-family builders"
+      value: "8.7 percent of revenue, fiscal year 2023"
+      note: "Average net profit margin for responding single-family builders, NAHB Builders' Cost of Doing Business Study, 2025 edition; the highest in the survey's recent history, above the 7.7 percent of 2006. Sample size is not stated in the summary post."
+      source: https://eyeonhousing.org/2025/03/builders-profit-margins-improved-in-2023/
+      source_name: "NAHB Eye On Housing, Builders' Profit Margins Improved in 2023 (Cost of Doing Business Study, FY2023)"

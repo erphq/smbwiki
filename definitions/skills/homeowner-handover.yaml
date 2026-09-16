@@ -89,3 +89,50 @@ questions:
   - >-
     Which record proves homeowner handover was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The homeowner handover process closes a new home with its buyer: final
+    inspection, punch work, an orientation walk that shows the owner how
+    the systems operate, keys and access codes, warranty documents, finish
+    care instructions, a list of any commitments still open with dates,
+    and the buyer's final acceptance. It starts when the home has passed
+    its final inspection and the punch list is being closed and ends when
+    the buyer has signed acceptance and the closeout package is complete.
+    The superintendent owns the walk and the punch work, and the builder's
+    closing coordinator owns the package.
+  why: >
+    Handover is the last impression and the start of the warranty period.
+    A buyer who takes possession with punch items undone, no idea how the
+    HVAC filter or the water shutoff works, and no written list of what
+    the builder still owes them calls the warranty line for everything
+    and tells their friends. An open commitment with no date turns into a
+    dispute, and a missing warranty document turns into the builder
+    covering a manufacturer's defect. The process protects the buyer's
+    move-in, the warranty cost, and the referral the builder's next sale
+    depends on.
+  how: >
+    The superintendent reads the current scope and revisions and confirms
+    the approved plans, lot controls, selections, permits, trade scopes,
+    and any long-lead item still outstanding before scheduling the walk.
+    The handover controls are then set: the pre-walk inspection, the punch
+    list and its closure deadline, the orientation checklist by system,
+    the key and code register, the warranty and finish care documents, the
+    open commitments list, and the acceptance signature. During the walk
+    the superintendent records each punch item with owner and date, the
+    systems demonstrated, keys and codes issued, documents given, and any
+    concern the buyer raises, and stops the acceptance if a safety or
+    occupancy item is open. At acceptance the superintendent checks the
+    home against the approved plan, inspection record, owner selections,
+    and turnover requirements, closes correction, and the closing
+    coordinator issues the closeout package with the signed acceptance.
+  controls:
+    - name: Punch list closed or dated
+      note: Every punch item is either closed with a photo or carries an owner and a date on the open commitments list the buyer signs.
+    - name: Orientation checklist signed by system
+      note: Each system demonstrated, from shutoffs to filters to appliances, is ticked and the buyer initials the checklist.
+    - name: Key and code register
+      note: Every key, remote, and access code issued is recorded with the buyer's signature and the builder's retained copies are noted.
+    - name: Warranty documents in the package
+      note: Manufacturer warranties, the builder's warranty, and finish care instructions are listed and included before acceptance is signed.
+    - name: Acceptance signature with open items visible
+      note: The buyer signs acceptance on a form that lists every open commitment and its date, so nothing is owed by memory.

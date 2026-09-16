@@ -60,3 +60,72 @@ licenses:
 supply_chain:
   buys_from: [funeral-merchandise-supplier]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A funeral home answers a death call at any hour and then runs a
+    case against a calendar the family sets. The week is first calls,
+    transfers, arrangement conferences, preparation, permits and vital
+    records, notices, ceremonies, transport to the cemetery or
+    crematory, and the billing of merchandise and cash advances paid to
+    third parties. Client engagement and professional service delivery
+    are the load-bearing skills, with lead intake deciding whether the
+    call becomes a case, because a licensed funeral director must keep
+    chain of custody, decision authority, and every promise on one
+    record through each handoff. The tension is between the family's
+    time pressure and the disclosures, authorizations, and
+    identification steps that cannot be skipped, and staff scheduling
+    has to cover a demand that arrives unannounced.
+  starting: >
+    A funeral home needs a funeral establishment license for the
+    premises, which follows an inspection of preparation and viewing
+    facilities, and a funeral director license for the person
+    responsible for arrangements and disposition; most states also
+    require an embalmer license where preparation is done on site, and
+    the federal funeral rule requires a general price list and an
+    itemized statement from the first arrangement. Business
+    registration, sales tax registration for merchandise in most
+    states, employer registration, transport vehicle registration, and
+    a preneed trust or insurance arrangement where prearranged funerals
+    are sold complete the set. Accounts with a funeral merchandise
+    supplier and working relationships with cemeteries, crematories,
+    and the vital records office are day-one needs. The minimum team is
+    an owner-operator who is often the licensed director, a funeral
+    director, and a client coordinator, with on-call transfer staff.
+    The first records are the job request from the first call, the
+    client brief, the engagement letter that is the signed statement of
+    goods and services, the deliverable case file, the time record, and
+    the customer invoice, and the skills that must work from the first
+    call are lead intake, client engagement, professional service
+    delivery, invoicing, and staff scheduling.
+  economics: >
+    Revenue is funeral service arrangements, the professional, facility,
+    ceremony, transfer, and disposition coordination, and merchandise
+    and cash advances, the selected goods and third-party charges
+    handled within the case. Pricing follows the general price list,
+    with a basic services fee that every case pays and itemized charges
+    the family selects. Gross margin depends on case mix: a burial with
+    viewing carries far more service and merchandise revenue than a
+    direct cremation, and the shift toward cremation lowers the average
+    case value while fixed costs stay. Engagement gross margin,
+    utilization rate of licensed staff, booking rate, and quote win rate
+    decide profit, with days sales outstanding and work-in-progress age
+    tracking cases that wait on insurance assignments or estates. The
+    business is capital-heavy in the building, preparation room, and
+    vehicles, and those costs are spread over a case count that the
+    community, and the cremation rate, largely fix.
+  benchmarks:
+    - scope: Median cost of a funeral with viewing and burial, US
+      value: "$8,300 (2023); $9,995 with a vault"
+      note: "National median from the NFDA 2023 Member General Price List Study, 809 responding member funeral homes. Includes the basic services fee, transfer, embalming and preparation, a metal casket, facilities and staff for viewing and ceremony, hearse, service vehicle, and printed package; excludes cemetery interment, monument, and cash advances. The median for a funeral with viewing and cremation was $6,280. Up from $7,848 and $5,810 in 2021. Figures as republished from the NFDA release by Connecting Directors."
+      source: https://connectingdirectors.com/67189-nfda-2023-gpl-study
+      source_name: "Connecting Directors, 2023 NFDA General Price List Study Shows Inflation Increasing Faster than the Cost of a Funeral (December 2023)"
+    - scope: US cremation rate and funeral home count
+      value: "63.4 percent cremation, 31.6 percent burial (2025 projection); 15,401 funeral homes"
+      note: "Projected 2025 rates from the NFDA 2025 Cremation and Burial Report, with cremation projected to reach 82.3 percent by 2045; NFDA also reports 15,401 US funeral homes, about 75 percent family or privately owned, employing 105,300 people and generating $16.3 billion in revenue."
+      source: https://www.nfda.org/news/statistics
+      source_name: "National Funeral Directors Association, Statistics (2025)"
+    - scope: Receipts per establishment and payroll share, funeral homes and funeral services
+      value: "$1.15 million receipts per establishment; payroll 25.4 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 812210 (funeral homes and funeral services) in the 2022 Economic Census, establishments with payroll; receipts of $17.8 billion across 15,482 establishments owned by 10,801 firms, annual payroll of $4.5 billion, 111,605 employees (about seven per establishment).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector81/EC2281BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Other Services: Summary Statistics for the U.S., States, and Selected Geographies, EC2281BASIC (2022)"

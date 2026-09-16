@@ -92,3 +92,50 @@ questions:
   - >-
     Which record proves siding installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The siding installation process puts the cladding on a building over
+    an accepted weather barrier and flashing, with the fasteners,
+    spacing, movement clearances, laps, field cuts, sealant interfaces,
+    and surface protection the manufacturer and the construction plan
+    call for. It begins when the sheathing, substrate, openings, weather
+    barrier, and flashing details have been accepted and the material
+    has acclimated, and it ends when the finished elevation has been
+    checked and a quality report issued. A siding contractor owns it,
+    usually through a crew lead reporting to the owner or a project
+    manager.
+  why: >
+    It protects the wall behind the cladding. An elevation can look
+    finished and correct while a reversed lap, a missing kickout, a
+    fastener driven too tight, or a butt joint without clearance is
+    already set to let water in or buckle the panel through the first
+    summer. Those failures show up years later as rot in the sheathing
+    and a warranty dispute, and by then the evidence is behind the
+    siding. The quality report is what lets the contractor prove the
+    wall was built to the detail.
+  how: >
+    The crew lead reads the current scope and revisions, then confirms
+    accepted sheathing, a dry substrate, complete openings, the approved
+    weather barrier, flashing details, material acclimation, and access
+    before the crew is assigned. Those requirements become work limits,
+    an installation sequence, named responsibilities, hold points where
+    drainage details are checked before they are covered, and the
+    checklist and photo record the crew uses. As the crew installs, they
+    record quantities, observations, decisions, and details that will be
+    concealed, and they stop when a field condition changes the planned
+    method, such as an out-of-plane wall or a substitute fastener. At
+    the end the crew lead checks the elevation against drainage
+    continuity, fastening, clearances, joint layout, trim integration,
+    appearance, and manufacturer requirements, closes any correction,
+    and issues the quality report.
+  controls:
+    - name: Substrate and barrier acceptance before installation
+      note: The weather barrier and flashing are inspected and photographed at every opening and penetration before the first course goes on.
+    - name: Fastener and clearance check per elevation
+      note: Fastener type, spacing, drive depth, and movement clearances at joints and trim are verified against the manufacturer's instructions on a per-elevation checklist.
+    - name: Photo record of concealed details
+      note: Kickouts, head flashing, and sealant interfaces are photographed before they are covered by cladding or trim.
+    - name: Stop on changed conditions
+      note: A wet substrate, a missing flashing, or a substituted material stops the elevation until the crew lead records the decision.
+    - name: Quality report tied to the elevation
+      note: The report lists each elevation, its checks, corrections, and acceptance so a warranty question can be answered from the record.

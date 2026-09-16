@@ -93,3 +93,51 @@ questions:
   - >-
     Which record proves home selections control was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The home selections control process tracks every choice a buyer makes
+    on a single-family home, room by room and assembly by assembly:
+    cabinets, countertops, flooring, tile, fixtures, paint, hardware, and
+    options, each against its allowance, with substitutions, approvals,
+    and the date by which the choice has to be released so drawings and
+    procurement can move. It starts when the plans, lot, permits, and
+    trade scopes are approved and ends when every selection is released,
+    installed as approved, and documented in the closeout package. The
+    selections coordinator owns it for the builder, with the
+    superintendent checking installed work against the record.
+  why: >
+    Selections are where a production schedule goes wrong. A countertop
+    chosen after the cabinets are ordered changes the cabinet run, a tile
+    picked past its release date holds the tile setter and every trade
+    after, and an allowance overrun nobody signed becomes a dispute at
+    closing. A missed dependency can idle several trades and move the
+    completion date the buyer was promised. The process protects the
+    schedule, the buyer's budget and expectations, and the builder's
+    margin on change orders.
+  how: >
+    The coordinator reads the current scope and revisions and confirms the
+    approved plans, lot controls, initial selections, permits, trade
+    scopes, and long-lead dates before opening the selections schedule
+    with the buyer. The controls are then set: the selections list by room
+    and assembly, the allowance for each, the release date each selection
+    must meet for its trade, the approval step for substitutions and
+    overruns, and the record that carries each choice to drawings and
+    procurement. As selections are made, the coordinator records the
+    choice, the allowance comparison, the buyer's signature, any
+    substitution with its reason, and the release to purchasing, and stops
+    the release when a choice conflicts with a plan, a code requirement,
+    or an installed condition. At acceptance the superintendent checks
+    installed work against the approved plan, inspection record, owner
+    selections, and turnover requirements, closes correction, and the
+    selections record goes into the closeout package.
+  controls:
+    - name: Release date per selection
+      note: Each selection carries the date it must be released to meet its trade's order lead time, and the list is reviewed against those dates weekly.
+    - name: Buyer signature on every selection
+      note: No selection is released to purchasing without the buyer's signed approval of the item and the allowance difference.
+    - name: Substitution logged and re-approved
+      note: A changed selection carries the reason, the new price, the buyer's signature, and notice to the affected trades.
+    - name: Drawing and procurement update on release
+      note: Each released selection is checked into the drawings and the purchase order so the field and the supplier build to the same choice.
+    - name: Installed check against the record
+      note: The superintendent walks installed selections against the signed record before the closeout package is assembled.

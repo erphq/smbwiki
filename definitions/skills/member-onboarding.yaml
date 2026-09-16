@@ -89,3 +89,45 @@ automation:
 questions:
   - What new-member exception appears most often at the front desk?
   - Does the credential grant exactly the access described in the agreement?
+article:
+  what: >
+    The member onboarding process is how a gym turns a signed
+    membership agreement and liability waiver into an account that
+    bills correctly and a credential that opens the door. It begins
+    when the documents are signed and ends when the new member has used
+    the credential at the real entry point, been shown the facility,
+    and knows where charges appear and how to get help. The membership
+    advisor owns document verification and account configuration; the
+    front desk attendant issues and tests access and runs the
+    orientation.
+  why: >
+    It protects the member's first visit and the gym's billing run. A
+    credential that disagrees with the signed plan blocks a paying
+    member or admits them beyond what they bought; an account activated
+    without a payment method or start date enters the first billing run
+    broken; an orientation reduced to a handout means the member learns
+    the equipment, guest, and class rules by breaking them. Front desk
+    overrides clustering among new accounts are the visible symptom.
+  how: >
+    The membership advisor verifies the activation documents,
+    confirming plan, start date, required acknowledgements, identity,
+    and account contact details are complete on the membership
+    agreement and liability waiver before any access is issued. The
+    account is configured so that location, hours, services, billing
+    state, and any age or supervision rule become system permissions
+    that match the signed plan. The front desk attendant issues the
+    access credential and has the member use it at the real entry point
+    while staff can still correct the setup. The attendant then orients
+    the member in place: entry, storage, equipment, cleaning, classes,
+    guests, safety, and where to get help, shown where each applies.
+  controls:
+    - name: Document completeness before activation
+      note: Plan, start date, acknowledgements, identity, and contact are checked complete on the signed agreement and waiver before the account is created.
+    - name: Permissions matched to the signed plan
+      note: Location, hours, and services on the account are compared to the agreement so the credential grants exactly what was sold.
+    - name: Billing state confirmed at activation
+      note: Payment method and first charge date are recorded and verified before the credential is issued.
+    - name: Live access test at the entry point
+      note: The member's credential is tested at the actual gate or reader with staff present, and any failure is corrected on the spot.
+    - name: Orientation checklist signed
+      note: The attendant records that each orientation item was shown in place, and the incomplete-onboarding queue holds any account missing it.

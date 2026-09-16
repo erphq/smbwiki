@@ -84,3 +84,45 @@ automation:
 questions:
   - Which repeated cleaning exception needs a maintenance response?
   - What customer area is open before safe dry condition is confirmed?
+article:
+  what: >
+    The facility cleaning process is a recorded route through customer
+    areas, work surfaces, floors, restrooms, carts, waste points, lint
+    paths, and spill zones: the attendant inspects the route to set the
+    sequence, controls each area before wet or chemical work, cleans and
+    restores it to standard, and logs what was done and what was found that
+    cleaning cannot fix. A laundromat runs it hourly on the floor, a hotel
+    runs it on public areas between housekeeping rounds, and a janitorial
+    service runs it as the contracted scope; the attendant on shift owns the
+    route and the manager owns the log.
+  why: >
+    A facility can look clean and still be unsafe. Lint behind dryers is a
+    fire load, a slow drain is a slip and odor source, and a wet floor
+    released early puts a customer on the ground. A route that only covers
+    what customers see leaves those conditions to accumulate. The log is
+    what separates a checked box from evidence: it shows the area, the time,
+    the condition found, and who owns the defect that cleaning could not
+    remove, so a leak gets a maintenance owner instead of a mop every hour.
+  how: >
+    The attendant walks the route first, noting customer flow, spills, lint,
+    waste, restroom condition, carts, folding areas, and blocked access, and
+    sets the order of work from what is most urgent. Before cleaning an area
+    the attendant controls it: signage or barriers for wet floors, chemical
+    handling, isolation of sharp objects, bodily fluids, heat, and
+    equipment-adjacent work. Cleaning follows the method for the surface,
+    with the right product, contact time, removal, drying, and replacement
+    of supplies. The attendant records time, area, condition found, work
+    completed, and any remaining defect on the cleaning log, and escalates
+    conditions that need maintenance, closure, or another skill to a named
+    owner.
+  controls:
+    - name: Route covers hidden points
+      note: The route list includes equipment edges, vents, drains, lint paths, and waste points, and each is checked off with the visible areas.
+    - name: Area controlled before wet work
+      note: Signage or barriers are in place before mopping or chemical use, and the log records when the area was released dry.
+    - name: Log entry with condition and owner
+      note: Each area entry records the condition found and, where a defect remains, the person responsible for fixing it.
+    - name: Repeated exception escalated to maintenance
+      note: The same exception appearing on consecutive logs is routed to maintenance with a request number.
+    - name: Supervisor spot-check against the log
+      note: The manager walks a sample of logged areas each week and records whether the log matches what was found.

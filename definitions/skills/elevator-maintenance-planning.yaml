@@ -95,3 +95,45 @@ questions:
   - >-
     Which record proves elevator maintenance planning was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The elevator maintenance planning process builds the preventive work for
+    a specific unit from what is known about it: equipment type and age,
+    traffic, callback history, code test results, known wear items, the
+    building's access windows, and parts lead time. It starts when a unit
+    joins a route or its history changes and ends with a unit-specific task
+    list, interval, and parts plan recorded against the unit. An elevator
+    service contractor's service supervisor or route mechanic owns it, and
+    the plan becomes the basis for each service ticket on the route.
+  why: >
+    A generic checklist applied to every unit leaves high-traffic doors
+    under-serviced and low-traffic machines over-serviced. Callbacks then
+    cluster on the units the plan ignored, and a code test fails on a wear
+    item that a planned task would have caught. Parts with long lead times
+    are ordered after the failure instead of before it, so the outage
+    stretches. A unit whose plan is not tied to its history cannot show an
+    inspector or the building owner that maintenance was adequate.
+  how: >
+    The planner reads the unit's scope and confirms the identified unit, its
+    maintenance and callback history, code status and test dates, safe
+    access, the building's outage constraints, parts availability, qualified
+    staff, and rescue provisions. Field controls translate that into a task
+    list by interval, the sequence a mechanic follows on site, the hold
+    points where a reading decides the next task, and the records each visit
+    must leave. As the plan is built the planner records the evidence behind
+    each interval and stops when the unit's actual condition contradicts the
+    history. Acceptance checks that the plan supports safe operation,
+    required protection, correction of known defects, recorded tests, a
+    current log, and the inspection calendar, and the plan is issued to the
+    route.
+  controls:
+    - name: Plan traced to unit history
+      note: Every task interval on the plan cites the callback, test, or wear evidence that set it, so a change can be argued from the record.
+    - name: Code test dates on the calendar
+      note: Required test dates and their preparation tasks are in the plan so the test is never a surprise to the route.
+    - name: Long-lead parts identified
+      note: Wear items with long lead times are listed with an order trigger so replacement happens before failure.
+    - name: Access windows confirmed with the building
+      note: The plan records the agreed outage windows so route tickets are scheduled inside them and the building is not surprised.
+    - name: Plan reviewed after each callback
+      note: A callback on a planned unit triggers a review of the plan and a recorded decision to change or keep it.

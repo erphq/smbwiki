@@ -89,3 +89,46 @@ automation:
 questions:
   - Can every instrument pack in use be traced to a released cycle?
   - What prevents a failed or wet load from reaching clinical storage?
+article:
+  what: >
+    The instrument sterilization process is the controlled loop a dental
+    clinic or an outpatient surgery center runs on every reusable
+    instrument, from the moment a used set returns from a treatment
+    room, through cleaning, inspection, packaging, a validated
+    sterilizer cycle, indicator review, and release into protected
+    storage. It begins with the instrument log that identifies the
+    returning set and ends with a sterilization log entry that lets any
+    pack in use be traced to the cycle that released it. The
+    sterilization technician or a designated assistant runs it under
+    the clinical lead.
+  why: >
+    It protects patients from infection carried on instruments that
+    looked clean, and it protects the practice from the recall that
+    follows a sterilizer failure nobody can scope. Where the process is
+    weak, dirty and clean flows cross in a shared sink or corridor, a
+    failed indicator is overlooked because the printout said the cycle
+    ran, and packs reach storage with no load identity, so a later
+    equipment fault cannot say which patients were exposed.
+  how: >
+    Used instruments enter a designated dirty flow with the set identity
+    from the instrument log preserved. The technician cleans and
+    inspects each item for soil, damage, corrosion, and incomplete sets
+    before packaging can hide those defects. Sets are packaged and
+    arranged in the load according to the validated equipment procedure
+    for package method, density, and position. The cycle runs, and the
+    technician reviews mechanical readings along with the required
+    chemical or biological indicators before anything is released. A
+    failed or wet load stays segregated; a passed load receives
+    traceable release status in the sterilization log and moves to
+    protected storage, where the log ties every pack to its cycle.
+  controls:
+    - name: Physical separation of dirty and clean
+      note: Receiving, cleaning, packaging, and storage areas and their transport paths are laid out so processed packs never meet incoming instruments.
+    - name: Inspection before packaging
+      note: Each instrument is checked for residual soil, damage, and set completeness under adequate light before it can be wrapped and loaded.
+    - name: Indicator review recorded before release
+      note: Mechanical readings and required chemical or biological indicator results are recorded and reviewed by name before any pack leaves the sterilizer area.
+    - name: Quarantine for failed or wet loads
+      note: A load with a failed indicator, cycle deviation, or wet packs is segregated and logged, and nothing from it reaches clinical storage.
+    - name: Pack-to-cycle traceability
+      note: Every pack label carries the cycle and load identity so the sterilization log can name the affected instruments and patients after a failure.

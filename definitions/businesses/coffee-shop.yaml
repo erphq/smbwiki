@@ -78,3 +78,67 @@ products:
   - coffee-urn
 seo:
   title: "Coffee Shop: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A coffee shop week is shaped by the morning rush. Opening staff set
+    up the espresso machine, grinders, and batch brewers, pull the
+    day's milk and food, and check that the bar can run at full speed
+    before the first ticket. Baristas take counter orders and the same
+    bar absorbs prepaid mobile orders, so the shift lead sequences
+    tickets by promised pickup time and station load while the customer
+    standing in the room watches. The load-bearing skills are drink
+    production, order taking, and food inventory, and staff scheduling
+    is what makes the first two possible at the hours demand actually
+    arrives. The tension is between speed and remakes: pushing tickets
+    faster raises the remake rate and wastes milk and beans, while
+    slowing down loses the customer with a train to catch. Closing
+    reconciles stock, waste, cleaning, equipment faults, and the next
+    order to the roaster and the food distributor.
+  starting: >
+    Starting a coffee shop is a lease and equipment decision first. The
+    site needs water and drainage at the bar, enough electrical
+    capacity for the espresso machine and brewers, ventilation if food
+    is heated, and a layout that lets a queue form without blocking the
+    pickup shelf. Day-one paperwork is the business registration, sales
+    tax registration, a food service license from the state or local
+    health authority with the inspection that precedes it, a food
+    handler permit for each covered employee, a certificate of
+    occupancy, and an employer registration once the first barista is
+    hired; some cities add a sign permit and a sidewalk seating permit.
+    A liquor license is outside this model. The minimum team is an
+    owner-operator who also works as general manager, a shift lead, and
+    enough baristas to cover open to close with a second person on the
+    bar during the rush. The first records are the menu, a recipe card
+    for every drink, the order ticket, the shift schedule, the purchase
+    order and supplier invoice for beans and food, and the payment
+    record, running on a point of sale, an online ordering channel
+    feeding a kitchen display, and an inventory system. Menu planning,
+    drink production, order taking, food inventory, and staff
+    scheduling must work from the first open.
+  economics: >
+    Revenue is counter sales of drinks and prepared food, mobile orders
+    routed into the same queue, and retail coffee sold from the shelf.
+    Drinks are priced per cup by size and customization, and the
+    ingredient cost of a drink is low compared to its price, so gross
+    margin on the cup is wide; food and retail beans carry thinner
+    margins and more waste risk. What decides profit is volume through
+    a fixed bar with fixed labor: average ticket, ticket time, and
+    order accuracy set how much revenue each rush produces, while labor
+    cost percentage, food cost percentage, and waste percentage set how
+    much of it survives. Drink remake rate is the hidden cost, since
+    every remake spends milk, beans, and bar time and delays the
+    tickets behind it. The business is labor-intensive with a moderate
+    equipment base, so a shop that cannot fill its afternoons pays
+    rush-level rent and payroll for off-peak revenue, and margins are
+    judged after equipment depreciation and lease escalation.
+  benchmarks:
+    - scope: Company-operated shop contribution margin, drive-through coffee chain
+      value: 27.8 percent of company-operated shop revenue, third quarter 2025
+      note: "Dutch Bros company-operated shops segment gross profit before depreciation and amortization, as a share of company-operated shop revenue; includes 180 basis points of pre-opening costs. A large multi-unit operator, so a single independent shop will differ."
+      source: https://www.sec.gov/Archives/edgar/data/1866581/000186658125000226/a2025-q3_ex991.htm
+      source_name: Dutch Bros Inc., Third Quarter 2025 Financial Results, Form 8-K Exhibit 99.1 (quarter ended September 30, 2025)
+    - scope: North America segment operating margin, large coffeehouse chain
+      value: 11.5 percent, fiscal 2025 (19.8 percent in fiscal 2024)
+      note: "Starbucks North America segment operating income as a share of segment revenue for the fiscal year ended September 28, 2025; includes company-operated and licensed stores and restructuring charges from store closures. A reference for a mature chain with its own overhead, so an independent shop's margin is judged differently."
+      source: https://investor.starbucks.com/news/financial-releases/news-details/2025/Starbucks-Reports-Q4-and-Full-Fiscal-Year-2025-Results/default.aspx
+      source_name: Starbucks Corporation, Q4 and Full Fiscal Year 2025 Results (fiscal year ended September 28, 2025)

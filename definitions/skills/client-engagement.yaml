@@ -94,3 +94,61 @@ automation:
 questions:
   - Which active work lacks a current authorized scope?
   - What promised deadline depends on a client input with no owner or due date?
+article:
+  what: >
+    The client engagement process converts an inquiry and a client brief
+    into an authorized assignment with a signed engagement letter. It
+    runs from the first qualification of the client and matter through
+    scope definition, commercial terms, and the client's authorization,
+    and it ends when the firm holds the information, deposit, or access
+    it needs to begin. A law firm, an accounting firm, or an engineering
+    firm runs it with a principal deciding acceptance, a professional
+    defining the assignment, and a client coordinator securing the
+    signature.
+  why: >
+    It protects the firm's capacity and its professional exposure. Work
+    that starts from a friendly conversation consumes hours before
+    anyone has agreed what completion looks like or what it costs, and
+    those hours are hard to bill later. Scope written as activities
+    instead of results leaves the client and the team unable to tell
+    whether a new request changes the fee. A required input with no
+    named provider and due date means staff wait or improvise against a
+    deadline that has not moved. A missed conflict check can end the
+    engagement after the work is done.
+  how: >
+    The principal qualifies the client and matter from the client brief,
+    checking identity, need, deadline, decision owner, service fit,
+    conflicts, risk, and the client's ability to support the work. The
+    professional then defines the assignment, making the questions to
+    answer, deliverables, assumptions, exclusions, required inputs,
+    reviewers, and completion conditions explicit. The principal builds
+    the commercial terms: fee method, estimate or budget, billing
+    timing, expenses, payment terms, and scope-change treatment set
+    against that defined work. The client coordinator secures
+    authorization, and the engagement letter records the client's and
+    the firm's approval together with the information, deposit, or
+    access required to start.
+  controls:
+    - name: Conflict and identity search recorded before scope
+      note: >
+        The search result and the principal's acceptance decision
+        are filed on the matter before any professional time is
+        recorded.
+    - name: Deliverables and exclusions named in the letter
+      note: >
+        The engagement letter lists what will be delivered and what
+        is out of scope, and a request outside it triggers the
+        change treatment.
+    - name: Input register with owner and date
+      note: >
+        Each input the client must provide has a named provider and
+        due date, and the promised deadline is conditional on them.
+    - name: No time without a current engagement
+      note: >
+        Time recorded on a client with no authorized engagement
+        letter is flagged the same week and resolved by the
+        principal.
+    - name: Deposit or access confirmed before release
+      note: >
+        Work is released to the team only when the letter is signed
+        and the deposit or access it requires has arrived.

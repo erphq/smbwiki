@@ -87,3 +87,49 @@ questions:
   - >-
     Which record proves formwork control was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The formwork control process sets and braces the forms that give a
+    footing, wall, slab edge, or column its line, grade, dimensions, and
+    openings, holds them against the pressure of wet concrete, and strips
+    them in a sequence the cured concrete can carry. It starts when the
+    surveyed layout and excavation are accepted and the reinforcement,
+    embeds, and mix information are known, and it ends when the placed and
+    cured concrete is checked against the specified geometry and the
+    concrete test results are on the test report. The concrete foreman
+    owns it for a poured concrete contractor.
+  why: >
+    Concrete fixes its location and every concealed detail at the moment
+    it is placed. A form that moves under pressure, an embed that shifts,
+    a blockout in the wrong place, or a form stripped before the concrete
+    can hold itself becomes demolition, structural repair, or a permanent
+    offset every trade above has to absorb. The process protects the
+    engineer's geometry and cover, the crew standing next to a form under
+    load, and the test record that proves the pour meets strength before
+    the next load goes on it.
+  how: >
+    The foreman reads the current scope and revisions and confirms
+    surveyed layout, excavation acceptance, form dimensions, embeds,
+    reinforcement, mix information, access, and weather controls before
+    forms are set. The field controls are then set: form and brace design
+    for the pour rate and height, the sequence of setting, checking,
+    placing, and stripping, hold points for a pre-pour check of line,
+    grade, dimensions, openings, embeds, and cover, the release agent and
+    stripping condition, and the record the crew keeps by pour. During
+    setting and placement the crew records form dimensions, embed
+    locations, reinforcement condition, mix tickets, placement times, and
+    any point where ground, weather, or a delivery changed the plan. At
+    acceptance the foreman checks geometry, cover, placement record,
+    finish, and curing against the plan, waits for the required concrete
+    test results, closes correction, and issues the test report.
+  controls:
+    - name: Pre-pour hold point
+      note: Line, grade, dimensions, openings, embeds, reinforcement, and cover are checked and signed before concrete is ordered, since nothing can be moved after placement.
+    - name: Form pressure and brace check
+      note: Bracing is checked against the planned pour rate and height, and the pour rate is held to what the form was built for.
+    - name: Embed and blockout record
+      note: Every embed and opening is located and photographed in the form before placement so a covered item can be found without coring.
+    - name: Stripping only on recorded strength
+      note: Forms and shores are stripped only after the concrete test results or the specified time confirm the concrete can carry itself.
+    - name: Test report closes the pour
+      note: Mix tickets, placement times, cylinder results, and the geometry check are recorded together on the test report before the next load is applied.

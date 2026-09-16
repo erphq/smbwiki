@@ -92,3 +92,49 @@ automation:
 questions:
   - Which open cancellation request still lacks a confirmed end date?
   - What recurring service failure appears in recent cancellation reasons?
+article:
+  what: >
+    The member retention process is how a gym notices a member whose use
+    has dropped or whose experience has broken, fixes what can be fixed
+    inside the agreement, and takes a cancellation request through to a
+    confirmed end date when the member has decided to leave. It starts
+    from the attendance log and the service desk, and it ends with either
+    a resolved issue or a cancellation record that billing, access, and
+    the member all agree on. A membership advisor owns it in a gym; in a
+    small studio the owner does it between classes.
+  why: >
+    It protects two things that are easy to confuse: the recurring
+    revenue of a member who could have been kept, and the reputation of
+    the business with a member who has made up their mind. A gym that
+    reads low attendance as permission to call pushes generic offers at
+    people who are injured, travelling, or simply private. A gym that
+    leaves a cancellation request pending keeps charging and keeps the
+    door open past the date the member expected, and that dispute costs
+    more than the lost dues. Between those sits the failure where a
+    discount is accepted and the broken shower, the failed key fob, or
+    the cancelled class is never fixed.
+  how: >
+    The membership advisor reviews the attendance log against service
+    context: a visit drop paired with an open equipment complaint, a
+    failed access event, or a billing note is a risk worth a contact,
+    while a visit drop alone is not. Where a specific access, billing,
+    class, equipment, or facility problem is found, the advisor owns it
+    through closure and confirms with the member that it is fixed. When
+    a cancellation request arrives, the advisor records the request
+    date, the requested end, the governing agreement terms, the stated
+    reason, and how the member wants confirmation, once. The advisor
+    then completes the exit: billing end, access end, final amount, any
+    refund or credit, and the written confirmation all carry the same
+    effective date, and the cancellation record is filed against the
+    account.
+  controls:
+    - name: Contact rule before outreach
+      note: A member is contacted about low use only when the attendance log is paired with a service event, access failure, or account note that gives the call a reason.
+    - name: Service issue has a named owner
+      note: Every access, billing, class, equipment, or facility complaint raised in a retention contact is logged with one owner and stays open until the member confirms it is fixed.
+    - name: Cancellation request logged on receipt
+      note: Request date, requested end date, agreement terms, and reason are recorded the day the request arrives, so the pending queue shows age and owner.
+    - name: One effective date across systems
+      note: Billing end, access end, final charge, and the member's confirmation are checked against each other before the cancellation record is closed.
+    - name: Reasons reviewed for patterns
+      note: Cancellation reasons are read together on a regular cycle so a repeated facility or class failure reaches operations instead of staying in individual notes.

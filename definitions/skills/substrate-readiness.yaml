@@ -95,3 +95,47 @@ questions:
   - >-
     Which record proves exterior substrate readiness was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The exterior substrate readiness process is the check a siding contractor
+    runs on a wall before any cladding covers it: sheathing attachment, plane,
+    moisture content, openings, penetrations, interfaces with other trades,
+    and repairs are inspected against the construction plan and the result is
+    written down. It is triggered when a framed and sheathed elevation is
+    offered to the siding crew and ends with a quality report that either
+    releases the wall for weather barrier and siding or lists the corrections
+    that come first. The foreman or quality lead owns it in a siding
+    contractor, and the owner signs off on small crews.
+  why: >
+    Once siding goes on, the sheathing cannot be seen again without removing
+    finished work. Loose or overdriven fasteners, a wall out of plane, wet
+    sheathing, an unfinished window opening, or a penetration with no flashing
+    detail all disappear behind the cladding and reappear as wavy siding,
+    trapped moisture, rot, and callbacks the contractor pays for years later.
+    The readiness check is also the record that another trade, a supplier, or
+    the general contractor left a condition behind, which decides who pays for
+    the repair.
+  how: >
+    The foreman starts from the current construction plan and its revisions
+    and walks the elevation to confirm that sheathing is accepted, the
+    substrate is dry, openings are complete, the weather barrier and flashing
+    details are approved, siding material has acclimated, and access is safe.
+    The findings are turned into field controls: which walls are released,
+    which are held, who repairs what, and the hold points where the crew stops
+    for a look. During the walk the operator records fastener condition, plane
+    deviations, moisture readings, and every concealed detail with photos, and
+    stops when a condition changes the planned method. Acceptance checks
+    drainage continuity, fastening, clearances, joint layout, trim
+    integration, appearance, and manufacturer requirements, corrections are
+    closed, and the quality report is issued before the wall is covered.
+  controls:
+    - name: Walk against the current revision
+      note: The elevation is checked against the latest construction plan revision, and an open drawing or approval dependency holds the wall instead of releasing it.
+    - name: Moisture reading recorded per wall
+      note: Sheathing moisture is measured and written on the record for each elevation before release, so a wet wall is never covered on a visual judgment.
+    - name: Photo record of concealed conditions
+      note: Fastening, repairs, penetrations, and flashing details are photographed with location before the weather barrier goes on, so a later dispute can be settled without opening the wall.
+    - name: Correction closed before coverage
+      note: Every defect found on the walk has an owner and is marked corrected on the record before the crew is allowed to cover that wall.
+    - name: Quality report issued at release
+      note: The wall is released to the siding crew only with a signed quality report that names the elevation, the date, and the person who accepted it.

@@ -35,3 +35,54 @@ summary: >
 supply_chain:
   buys_from: [auto-parts-distributor]
   sells_to: [retail-consumer, auto-repair-shop]
+article:
+  operating_model: >
+    An auto parts store sells the right part for a specific vehicle, and
+    most of the work is in the word right. A counter transaction starts
+    with year, make, model, and engine, runs through the parts catalog,
+    and ends with a receipt that records the vehicle, the part, any core
+    deposit, and the warranty terms. The week is counter traffic plus
+    the replenishment cycle: the retail-manager reviews stock records,
+    places purchase orders with the distributor, and receives
+    deliveries, while stock associates put away and parts specialists
+    handle the lookups and the commercial calls from repair shops.
+    Vehicle fitment parts sale and retail replenishment are the
+    load-bearing skills. The tension is breadth against cash: a store
+    that stocks enough applications to say yes at the counter ties up
+    cash in slow parts, and a store that does not sends the customer to
+    the chain down the road.
+  starting: >
+    Day one needs the business registration, a sales tax permit because
+    every sale is taxable retail, and an employer registration once the
+    first associate is hired; a store that sells refrigerant, batteries,
+    or oil may face state or local rules on those items, and core and
+    battery deposit rules vary by state. The stocking decision is the
+    real start-up work: a distributor account with delivery terms, a
+    parts catalog subscription for fitment lookup, and an opening
+    inventory chosen against the local vehicle population. The minimum
+    team is an owner-operator or retail-manager, one parts specialist
+    who can work the catalog and take commercial orders, and a stock
+    associate for receiving and put-away. The first records are the
+    purchase order and inventory receipt for opening stock, the stock
+    record by part number, the vehicle fitment record attached to each
+    sale, and the return record that separates warranty, core, and
+    change-of-mind returns before anything goes back on the shelf.
+    Retail sale, vehicle fitment parts sale, retail replenishment,
+    purchasing, and payment reconciliation must work from the first
+    open.
+  economics: >
+    Revenue is parts, core, and warranty sales, plus general merchandise
+    and special orders. Pricing is a markup over distributor cost, with
+    a lower markup for commercial accounts that buy in volume and a core
+    charge that is refunded when the old part comes back. Gross margin
+    percentage is decided by the mix: fast-moving maintenance items
+    carry thin margin, hard parts carry more, and the commercial share
+    of sales pulls the blended margin down while raising volume.
+    Inventory turnover and stockout rate are the metrics that decide
+    profit, because the store's cash is on the shelf and every stockout
+    at the counter is a lost ticket. Average ticket rises with add-on
+    items and tools; labor cost percentage is held down by keeping the
+    counter staffed to traffic. The business is inventory-capital
+    intensive, and margin depends on distributor terms, return
+    privileges on slow stock, and how tightly warranty and core returns
+    are controlled before they reenter saleable inventory.

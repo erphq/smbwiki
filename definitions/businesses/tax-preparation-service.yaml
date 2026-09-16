@@ -22,3 +22,54 @@ revenue_model:
   - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
 supply_chain:
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A tax preparation service is a queue business with a hard calendar.
+    The week in season is intake, missing-document chasing, preparation,
+    review, client questions, signature, filing, and payment or refund
+    instruction, run by a principal, professionals, and a client
+    coordinator who owns the queue state. Client engagement and
+    professional service delivery are the load-bearing skills; the
+    coordinator's tracking of what each return is waiting on is what
+    keeps professionals working on complete files instead of stalled
+    ones. The tension is that seasonal volume arrives faster than staff
+    can be trained, so off-season planning, notice response, and
+    amendment work are used to keep professionals employed and clients
+    engaged.
+  starting: >
+    A tax preparer opens with the business registration and, for paid
+    preparers, a federal preparer tax identification number and
+    electronic filing enrollment, plus employer registration once the
+    first professional is hired; some states add their own preparer
+    registration or bonding, and credentialed preparers carry their
+    license conditions. The minimum roles are a principal who signs and
+    reviews, one professional, and a client coordinator, and in a small
+    office the principal fills two of those. The first records are the
+    engagement letter, the client brief with its intake checklist, the
+    job request that tracks a return from lead to filing, time records,
+    and the customer invoice. Client engagement, professional service
+    delivery, invoicing, and staff scheduling must work before the first
+    season, and the software for return preparation, document
+    collection, and secure delivery has to be chosen and tested before
+    clients arrive.
+  economics: >
+    Revenue is return preparation, priced per return by form and
+    schedule complexity or by a minimum fee plus adjustments, and
+    planning and response work sold separately for projections, notices,
+    amendments, and advisory. Gross margin is decided by preparer hours
+    per return and by how much of the season's labor is spent on
+    complete files; a return touched several times because information
+    arrived late costs more than one done in a single pass. The metrics
+    that decide profit are utilization rate, engagement gross margin,
+    and work-in-progress age, with booking rate and quote win rate
+    measuring whether the office is filling its capacity. Days sales
+    outstanding is short when fees are collected at filing and long when
+    they are not. The business is labor-intensive with little capital,
+    which makes seasonal staffing and pricing per return the whole
+    margin story.
+  benchmarks:
+    - scope: "Average fee, base Form 1040 with Schedules 1 to 3, by preparer credential"
+      value: "280 dollars for CPAs, 228 dollars for enrolled agents, about 185 dollars for non-credentialed preparers (2025)"
+      note: "National Association of Tax Professionals 2025 fee study as reported by Accounting Today; the same study puts the average set hourly rate at 182 dollars and the average minimum fee for a business return at 634 dollars. Respondent count not stated in the article."
+      source: https://www.accountingtoday.com/news/what-do-tax-preparers-charge
+      source_name: "Accounting Today, What do tax preparers charge? (NATP 2025 fee study)"

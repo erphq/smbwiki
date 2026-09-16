@@ -86,3 +86,47 @@ automation:
 questions:
   - Which ingredient variance remains unexplained after the last count?
   - What stock will expire before the current demand plan can use it?
+article:
+  what: >
+    The food inventory process is the loop that keeps perishable
+    ingredients in stock and in date: a physical count by walk-in,
+    freezer, dry store, and line, a comparison against what the next
+    production period needs and what will expire first, a purchase order
+    placed early enough for the supplier's lead time, and a receipt that
+    checks the delivery and rotates it behind older stock. It runs on a
+    fixed cadence, daily for a pizzeria or food truck and weekly for a
+    retail bakery's dry goods, and it belongs to the kitchen manager or
+    the owner, with whoever receives the delivery closing the loop.
+  why: >
+    Food is the largest cost a restaurant, caterer, or coffee shop
+    controls, and it spoils. Without a count and a rotation rule, staff
+    order from the visual gap on the shelf, new cases go in front of old
+    ones, usable product expires behind them, and the invoice is paid for
+    a short or warm delivery nobody recorded. The process protects cash
+    tied up in stock, the margin lost to waste, and the service that stops
+    when an ingredient runs out mid-shift.
+  how: >
+    The kitchen manager counts each storage area in turn, including open
+    containers, partial cases, prepared product, and anything found in the
+    wrong location, on a count sheet in the same units the recipes use.
+    The count is then compared with recent receipts on supplier invoices,
+    expected demand for the coming period, supplier lead time, and what
+    will expire before it can be used, and that comparison sets the order
+    quantity per item. The purchase order states unit, pack size,
+    substitution rule, required date, and destination for each line so
+    the supplier and the receiver read the same thing. On delivery the
+    receiver checks quantity, temperature, condition, and dates against
+    the order and the supplier invoice, records any difference before the
+    invoice is posted, and stores the new stock behind the older usable
+    stock.
+  controls:
+    - name: Count sheet in recipe units
+      note: Count, order, and invoice units are converted on the sheet so case, weight, and portion never get compared as if they were the same.
+    - name: Expiry check before ordering
+      note: Items that will expire before the demand plan can use them are flagged on the count and the order quantity is reduced.
+    - name: Purchase order with pack size and substitution rule
+      note: Every order line carries pack size, required date, and whether a substitute is acceptable, so a wrong delivery is the supplier's problem.
+    - name: Receiving check before invoice posting
+      note: Quantity, temperature, and condition are recorded at the door and any shortage or rejection is noted on the invoice before it is approved.
+    - name: Rotation walk on the count
+      note: The count includes a check that older dated stock sits in front, and mixed dates without a rotation order are corrected on the spot.

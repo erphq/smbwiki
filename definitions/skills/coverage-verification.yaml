@@ -86,3 +86,54 @@ automation:
 questions:
   - What source and date support the expected patient responsibility?
   - Which scheduled services still have an unresolved authorization requirement?
+article:
+  what: >
+    The coverage verification process records, before care is delivered,
+    what the payer says about a patient's eligibility, benefits, limits,
+    exclusions, authorization needs, and expected responsibility for the
+    planned service. It starts from the patient registration and ends
+    when a dated insurance verification is published to the people who
+    quote cost and prepare the claim. In a primary care practice, a
+    dental clinic, or a physical therapy clinic it belongs to the front
+    desk or a verification specialist, with the billing lead setting the
+    refresh rules.
+  why: >
+    It protects the patient from a surprise balance and the clinic from
+    an unpaid claim. Quoting from general eligibility instead of the
+    service-level benefit puts the wrong number in front of the patient.
+    A verification done weeks ahead can be stale by the date of care
+    when coverage or network status has changed. A service that needed
+    prior authorization reaches claim review without it, and the payer
+    denies work already delivered. Each failure moves cost onto the
+    patient or into the billing queue.
+  how: >
+    The operator confirms payer identity from the patient registration,
+    matching member, plan, provider, and patient relationship details to
+    the payer's record before any benefit is interpreted. Active
+    coverage is checked for the intended date of care: effective dates,
+    network status, and the service category. Benefit detail is recorded
+    next, with deductible, remaining benefit, copay, coinsurance,
+    exclusions, frequency limits, and authorization requirements kept
+    alongside the source and time of the inquiry. The insurance
+    verification is then published with its assumptions and unresolved
+    items visible to whoever presents cost to the patient or prepares
+    the claim.
+  controls:
+    - name: Service-level benefit required
+      note: >
+        The verification records the benefit for the planned service
+        category, and a general eligibility result alone does not
+        close the task.
+    - name: Source and timestamp on every entry
+      note: >
+        Each benefit detail carries the payer source, the reference
+        or call record, and the date and time of the inquiry.
+    - name: Refresh rule by service
+      note: >
+        Verifications older than the clinic's refresh window for
+        that service are re-run before the date of care.
+    - name: Authorization status on planned care
+      note: >
+        Every scheduled service with an authorization requirement
+        shows its authorization status and an owner before the
+        visit.

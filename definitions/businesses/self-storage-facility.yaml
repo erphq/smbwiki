@@ -29,3 +29,65 @@ skills:
     software: [access-control-system, property-management-system]
 supply_chain:
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A self-storage facility rents identified units under a rental
+    agreement and controls who can reach them. The property manager
+    lists available units, takes reservations and applications, signs
+    the lease, issues the access credential, posts recurring charges to
+    the tenant ledger, chases delinquency through the notice sequence,
+    inspects and overlocks units, and handles move-out and abandoned
+    property. The maintenance coordinator keeps gates, doors, lighting,
+    cameras, and climate systems working through outside contractors.
+    Lease administration and facility access are the load-bearing
+    skills, because the tenancy record is what authorizes the gate. The
+    tension is between filling units, which pushes toward discounted
+    street rates, and raising in-place rents on existing tenants
+    without driving move-outs.
+  starting: >
+    A facility begins as a real estate project: land or an existing
+    building zoned for storage, a building permit, and construction or
+    conversion of units with gates, cameras, lighting, and access
+    control, which is why the capital comes first and operations come
+    later. Paperwork is the business registration, sales tax
+    registration for locks, boxes, and merchandise, employer
+    registration once a manager is hired, and property and liability
+    coverage. The rental agreement has to follow the state self-storage
+    lien statute, which sets the notice and sale process for delinquent
+    units, and offering tenant protection plans or insurance may
+    require a limited lines license in many states. The minimum team is
+    one property manager, with the maintenance coordinator role held by
+    the manager or the owner-operator and repairs bought from
+    contractors. The first records are the lease application, the
+    lease, the access credential, the tenant ledger, the maintenance
+    request, and the payment record, inside a property management
+    system tied to the access control system, and the skills that must
+    exist before the first move-in are lease administration, facility
+    access, accounts receivable, and payment reconciliation.
+  economics: >
+    Revenue is unit rent, a recurring charge per identified unit set by
+    size, climate control, and access, plus protection plans and
+    merchandise sold at move-in. The pricing basis is rent per occupied
+    square foot, which moves with the street rate offered to new
+    tenants and the increases applied to existing ones. Operating cost
+    is low relative to rent because a facility runs with one or two
+    staff, so the operating margin before debt is high once occupancy
+    is reached, and the real cost is the land, building, and interest
+    incurred to get there. The metrics that decide profit are vacancy
+    rate, rent collection rate, and maintenance response time on gates
+    and doors, since a failed gate is a facility-wide access failure.
+    New facilities carry a lease-up period during which rent covers
+    only part of debt service, and public operators report margins on
+    stabilized properties, which is the number a new entrant should
+    read as a ceiling.
+  benchmarks:
+    - scope: Same-store direct net operating income margin, Public Storage
+      value: 78.2 percent (full year 2025), 78.4 percent (fourth quarter 2025)
+      note: Public Storage Same Store Facilities, 2,565 stabilized facilities with 175.3 million net rentable square feet; direct NOI is revenue less direct operating costs and excludes indirect costs such as supervisory payroll and corporate overhead, as well as depreciation and interest. Weighted average square foot occupancy was 92.0 percent and realized annual rent per occupied square foot was $22.54 for 2025.
+      source: https://investors.publicstorage.com/news-events/press-releases/news-details/2026/Public-Storage-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx
+      source_name: Public Storage, Fourth Quarter and Full Year 2025 Results press release (February 2026)
+    - scope: Establishments, employment, and average pay, NAICS 531130 lessors of miniwarehouses and self-storage units
+      value: "18,747 establishments, 60,422 employees, average annual pay $54,156 (2024 annual averages)"
+      note: BLS Quarterly Census of Employment and Wages, private ownership, US total, 2024 annual averages; roughly three employees per establishment on average, consistent with a one or two person site staff.
+      source: https://data.bls.gov/cew/data/api/2024/a/area/US000.csv
+      source_name: Bureau of Labor Statistics, Quarterly Census of Employment and Wages, 2024 annual averages

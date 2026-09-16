@@ -98,3 +98,51 @@ questions:
   - >-
     Which record proves photovoltaic array installation was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The photovoltaic array installation process is how a solar
+    installation contractor puts a designed system onto a roof or ground
+    mount and brings it to the point where the utility can grant
+    permission to operate. It starts when the site plan, electrical
+    design, permit, and equipment are in hand and the roof or ground
+    condition has been verified, and it ends when the array is mounted,
+    wired, labeled, tested, inspected, and recorded on a commissioning
+    record. The installation crew lead owns the field work; the licensed
+    electrician owns the electrical acceptance.
+  why: >
+    The array sits where four decisions meet: the structural attachment,
+    the roof's weather seal, the electrical design, and the utility's
+    requirements. A missed flashing leaks for years under modules that
+    hide it. An attachment that misses the rafter fails in wind. Wiring
+    routed against the design fails inspection and delays permission to
+    operate, which delays the customer's savings and the contractor's
+    final payment. Without the process, concealed work is closed without
+    a record, and the next person on the roof, whether an inspector or a
+    repair crew, cannot tell what was done.
+  how: >
+    The crew lead reads the current site plan and revisions and confirms
+    the roof or ground condition, the energy use and shading data, the
+    approved electrical design, the permit, the utility route, that
+    equipment is on site, and that fall protection is in place. The work
+    is then broken into field controls: attachment layout, flashing
+    method, rail or mounting sequence, wire management, module setting
+    order, roof protection, and hold points before anything is
+    concealed. During installation the crew records attachment
+    locations, torque, flashing, conduit routes, and string layout, and
+    stops when a rafter, roof condition, or shading differs from the
+    plan. At acceptance the licensed electrician and crew lead check
+    structural and electrical compliance, flashed attachments, labeled
+    circuits, rapid shutdown, and measured production, pass the
+    inspection, obtain utility permission, and close the commissioning
+    record.
+  controls:
+    - name: Attachment layout verified to structure
+      note: Each attachment location is confirmed on a rafter or the designed structural member before it is drilled.
+    - name: Flashing photographed before rails
+      note: Every roof penetration is flashed and photographed before rails or modules cover it.
+    - name: Wiring checked against the electrical design
+      note: String layout, conductor sizing, grounding, and labeling are compared to the approved design before energizing.
+    - name: Rapid shutdown and production tested
+      note: Shutdown function and measured output are tested and recorded before inspection is requested.
+    - name: Commissioning record closed with utility permission
+      note: Inspection result, permission to operate, and as-built changes are filed before the job is closed.

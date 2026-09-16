@@ -94,3 +94,52 @@ questions:
   - >-
     Which record proves field welding control was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The field welding control process governs every weld made on the
+    erected frame: the welding procedure it follows, the qualification of
+    the welder making it, the joint preparation, the consumables and their
+    storage, the shelter from wind and moisture, the sequence across the
+    connection, and the examination that releases it. It starts when a
+    connection is ready for welding under an approved erection drawing
+    and ends when the weld and bolt records are complete and the inspector
+    has released the connection in the quality report. The erection
+    foreman owns it for a structural steel erector, with a welding
+    inspector holding the release.
+  why: >
+    A field weld is a structural connection made in wind, cold, and
+    awkward position by one person, and its soundness cannot be seen
+    afterward without cutting or nondestructive testing. When procedure,
+    qualification, and consumable control are loose, the frame carries
+    welds that may be undersized, cracked, or made with wet electrodes,
+    and the erector inherits the cost of testing, gouging, and rewelding
+    under a stopped schedule. The process protects the crew working under
+    the connection, the engineer's connection design, and the inspection
+    release that lets decking and the next lift proceed.
+  how: >
+    Before welding begins the foreman reads the current scope and
+    revisions, then confirms the approved erection drawings, stable
+    access, crane plan, piece sequence, connection information, anchor
+    condition, and concrete strength notice are all in hand. The field
+    controls are then set: the welding procedure specification and
+    qualified welder for each joint, consumable storage and oven rules,
+    weather protection, the weld sequence across each connection, hold
+    points for fit-up and for inspection, and the record the crew keeps
+    by connection. During the work the welder and foreman record joint
+    preparation, consumables, preheat, passes, and any fit-up condition
+    the drawing did not anticipate, and stop when access, weather, or gap
+    changes the planned method. At acceptance the inspector checks
+    erection tolerances, connection completion, weld and bolt records,
+    and decking stability, and issues the quality report that releases
+    the connection.
+  controls:
+    - name: Procedure and welder qualification on record
+      note: Each joint names the welding procedure and the qualified welder, and no weld starts without both entered in the connection record.
+    - name: Consumable control log
+      note: Electrode and wire lots, oven times, and exposure limits are logged so a wet or expired consumable never reaches a structural joint.
+    - name: Fit-up hold point
+      note: Root opening, bevel, and alignment are checked and recorded before the first pass, since they cannot be corrected once the weld is in.
+    - name: Inspection release before covering
+      note: Visual and any required nondestructive examination are complete and recorded before decking, fireproofing, or the next lift covers the connection.
+    - name: Weather stop rule
+      note: Wind, rain, and temperature limits are stated in the controls, and welding stops and restarts only on the foreman's recorded decision.

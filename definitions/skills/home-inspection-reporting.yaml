@@ -95,3 +95,51 @@ questions:
   - >-
     Which record proves home inspection reporting was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The home inspection reporting process is how a home inspection service
+    turns a site visit into the signed report the buyer will rely on:
+    observations organized by system and location, photographs attached
+    as evidence, limitations stated where a system could not be accessed
+    or tested, significance distinguished so a safety defect reads
+    differently from a cosmetic note, and delivery of the signed report
+    inside the buyer's contingency window. It starts when the scope is
+    signed and access is agreed and ends when the report is issued and
+    any client question is answered. The inspector who performed the
+    inspection owns the report, with the firm owner reviewing before
+    issue.
+  why: >
+    The buyer relies on this document for a major purchase, and a lender,
+    an agent, and sometimes a court will read it later. A missed area, a
+    limitation left vague, a photo with no location, or a conclusion the
+    evidence does not support distorts the buyer's understanding of the
+    property and exposes the inspector to a claim. The process protects
+    the buyer's decision, the inspector's license and insurance, and the
+    firm's referral relationships.
+  how: >
+    The inspector reads the current scope and revisions on the client
+    brief and confirms the signed scope, identified property, agreed
+    access, known occupancy and utilities, required disclosures, tools,
+    and weather conditions before the visit. The reporting controls are
+    then set: the system-by-system order of inspection and reporting, the
+    photo and location convention, the limitation wording for inaccessible
+    or untested items, the significance categories, and the review and
+    delivery deadline. During the inspection the inspector records each
+    observation with system, location, photo, and condition as it is
+    seen, and notes any area that could not be accessed or any changed
+    condition such as an occupied room or a shut-off utility that limited
+    the inspection. At acceptance the firm owner checks that
+    accessible-system observations are complete, limitations are stated,
+    defect evidence is clear, significance is assigned, and the report is
+    timely, closes correction, and issues the signed inspection report.
+  controls:
+    - name: Every system accounted for
+      note: The report covers each system in the signed scope with an observation or a stated limitation, and a blank section blocks issue.
+    - name: Photo tied to location
+      note: Each defect photo carries the system and location so the buyer and a contractor can find it without the inspector.
+    - name: Limitation stated with reason
+      note: Anything not inspected names why, such as access, occupancy, or utility, and the wording comes from the firm's standard.
+    - name: Significance assigned per finding
+      note: Each finding carries a significance category so a safety defect is distinguished from a maintenance note.
+    - name: Review and signature before delivery
+      note: A second inspector or the owner reviews the report against the checklist and the inspector signs it before it goes to the client.

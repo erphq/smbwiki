@@ -34,3 +34,53 @@ summary: >
 supply_chain:
   buys_from: [apparel-brand, apparel-wholesaler]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A boutique week runs on deliveries and the sales floor. Shipments
+    from apparel brands and wholesalers arrive against purchase orders
+    placed a season ahead, the stock associate receives them into stock
+    records by style, size, and color, and the retail manager decides
+    what goes on the floor and what stays in the back. Sales associates
+    and style advisors sell fit and coordination, hold garments, write
+    up alterations, and process returns. The load-bearing skills are
+    purchasing, retail replenishment, and boutique fit and alteration,
+    because the assortment was bought before the customer arrived and
+    the floor can only sell what the buy allowed. The tension is
+    between a narrow, coherent collection and the size gaps that appear
+    as soon as the best variants sell; the owner reads sell-through and
+    aged stock weekly to decide reorders, markdowns, and transfers.
+  starting: >
+    A clothing boutique begins with the buy, so the first commitments
+    are purchase orders with brands or wholesalers placed months before
+    the doors open, and the lease on a space whose foot traffic matches
+    the price point. Day-one paperwork is the business registration, a
+    seller's permit or sales tax registration since apparel is taxable
+    in most states, an employer registration once the first associate
+    is hired, and a local business license or certificate of occupancy
+    depending on the city; a resale certificate is needed to buy
+    wholesale without paying tax. There is no trade license specific to
+    the business. The minimum team is an owner acting as buyer and
+    retail manager plus a sales associate, with a stock associate and a
+    style advisor added as volume grows and an alterations arrangement,
+    in house or contracted, from the start. The first records are the
+    purchase order, the inventory receipt, the stock record by variant,
+    the sales receipt, the return record, and the fitting and
+    alteration record, kept in a retail management system with
+    inventory tracking. Purchasing, retail sale, retail replenishment,
+    and payment reconciliation must work from the first open.
+  economics: >
+    Revenue is apparel margin and alterations: the difference between
+    wholesale cost and the ticket price on garments and accessories,
+    plus alteration, styling, reservation, and special order charges.
+    Pricing is keystone or higher on the initial markup, and the
+    realized margin is what remains after markdowns clear the variants
+    that did not sell at full price. Gross margin percentage and
+    inventory turnover decide the business together, because a high
+    initial markup means little if half the season leaves at clearance,
+    and slow turns tie cash up in aged stock that blocks the next buy.
+    Average ticket rises with coordination selling and alterations,
+    stockout rate in core sizes measures lost sales the customer never
+    reports, and labor cost percentage is the main controllable expense
+    after rent. Capital intensity sits in inventory: the buy is paid
+    before it sells, so open-to-buy discipline is what keeps the store
+    solvent between seasons.

@@ -24,3 +24,50 @@ revenue_model:
 supply_chain:
   buys_from: [pool-supply-distributor]
   sells_to: [homeowner, property-management-company]
+article:
+  operating_model: >
+    A pool service company runs on the route. The dispatcher builds
+    each day from the recurring schedule, and the technician moves pool
+    to pool testing water, adding chemicals, brushing and vacuuming,
+    emptying baskets, checking the pump, filter, and heater, and closing
+    the work order with photos before driving to the next stop. Dispatch
+    and field job execution carry the week, because jobs per technician
+    day is set by route density and first-time fix keeps a stop from
+    turning into a callback. The tension is between the route and the
+    exceptions: green water, a dead pump, or a visible leak needs an
+    owned response before the next scheduled visit, and any repair is
+    separately quoted and approved, so the technician has to separate
+    what was observed from what should be done.
+  starting: >
+    Day one needs a truck, a test kit, a safe way to carry and store
+    chemicals, and an account with a pool supply distributor. The
+    paperwork is the business registration, sales tax registration
+    where chemicals and parts are resold, and employer registration once
+    the first technician is hired. Some states license pool servicing or
+    treat equipment repair as licensed contractor work above a value
+    threshold, so check before quoting repairs, and carry general
+    liability and vehicle coverage from the first route. The minimum
+    team is an owner-operator who quotes and often runs a route, and one
+    technician; the office manager and dispatcher roles can sit with one
+    person until the route count justifies more. The first records are
+    the job request, the quote, the work order with job photos, the
+    customer invoice, and the payment record, and the skills that must
+    work from the first week are lead intake, quoting, dispatch, field
+    job execution, and invoicing, because a missed or unlogged visit is
+    invisible until the customer calls.
+  economics: >
+    Revenue is recurring pool care sold as a monthly fee per pool set by
+    size, features, and visit frequency, plus repairs and seasonal
+    startups and closings sold as separately authorized work. Gross
+    margin on the route is the chemical cost per visit and the labor
+    minutes per stop, so route density decides more than price does: a
+    tight neighborhood route completes far more stops per day than a
+    scattered one from the same truck. The metrics that decide profit
+    are jobs per technician day, first-time fix rate, callback rate, and
+    average ticket on repair work, with quote win rate showing whether
+    observed equipment problems convert into approved repairs and days
+    sales outstanding showing whether monthly billing is actually
+    collected. The business is labor intensive and capital light, since
+    the main asset is a truck, which keeps entry cheap and margins
+    dependent on technician productivity and customer retention through
+    the off season.

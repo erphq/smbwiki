@@ -94,3 +94,46 @@ automation:
 questions:
   - Which open contact has no owner or confirmed next step?
   - Can dispatch act from the job request without calling intake for missing facts?
+article:
+  what: >
+    The lead intake process is the first conversation a service
+    business has with someone who needs work done, turned into a job
+    request another owner can act on. It starts with a call, message,
+    form, or referral and ends when the requester has a reference and a
+    confirmed next step, and dispatch, the estimator, or the account
+    owner has a request with customer, site, problem, urgency, service
+    fit, contact route, and access constraints filled in. A plumbing
+    contractor, a locksmith, a law firm, and a moving company all run
+    it, and the office manager or whoever answers the phone owns it.
+  why: >
+    It protects the promise the business makes in the first minute. A
+    hazard that enters the normal queue, a visit promised before
+    dispatch has checked capacity, or a second request opened for the
+    same address all start from a thin intake. When it is missing,
+    technicians call customers back to rediscover the problem, messages
+    sit in separate inboxes with no owner, and the customer plans
+    around a response the schedule cannot deliver.
+  how: >
+    The office manager establishes contact first, securing name,
+    callback route, site, and permission to leave messages before a
+    long description can be interrupted. The reported condition is
+    captured in the customer's words, with affected system, onset,
+    current operating state, prior work, and any immediate hazard kept
+    distinct. The route and priority are then decided from service
+    area, work type, urgency, licensing, account or agreement status,
+    and whether a quote is needed. The job request is created with
+    scope known so far, contact, location, access, priority, and any
+    promises written for the person who will act. The requester
+    receives the reference, the expected contact or visit, and
+    instructions for any condition that should trigger escalation.
+  controls:
+    - name: Hazard screen on every contact
+      note: Gas, water, electrical, heat, pressure, and property damage keywords raise the priority and route the request immediately, never to the default queue.
+    - name: Duplicate check by address and concern
+      note: Before a new request is created, open requests at the same site with a matching concern are found and merged.
+    - name: Promise limited to confirmed capacity
+      note: Intake gives an arrival or response commitment only after dispatch or the schedule confirms area, skill, and availability.
+    - name: Contact route recorded before description
+      note: Name, callback number, and message permission are captured first so an interrupted call can still be returned.
+    - name: Missed-contact queue owned
+      note: Unanswered calls, forms, and messages sit in a queue with an owner and a follow-up time until the requester is reached.

@@ -25,3 +25,54 @@ licenses:
 supply_chain:
   buys_from: [food-distributor, medical-supply-distributor]
   sells_to: [resident, payer]
+article:
+  operating_model: >
+    An assisted living facility runs around the clock, so the week is
+    really a rota of shifts. Caregivers deliver what each resident's
+    service plan says: meals, personal care, medication assistance,
+    mobility help, activities, and an observation record every shift.
+    The care-director keeps the plans current as needs change after
+    move-in, handles clinical escalation and family communication, and
+    reviews every incident report. The office-manager bills residents
+    and payers and keeps supply orders and staffing paperwork moving.
+    Care plan delivery and staff scheduling are the load-bearing skills,
+    because the license fixes the ratio of staff to residents and the
+    rota has to hold that ratio through nights, absences, and
+    emergencies. The tension is admission: every prospective resident is
+    revenue, but a resident whose needs exceed what the license and
+    staffing can meet exposes the facility to citations and harm.
+  starting: >
+    The facility cannot admit a resident until it holds the assisted
+    living license of its operating state or locality, which typically
+    follows a building inspection, fire and life safety approval, a
+    background-checked administrator, and a filed staffing plan; most
+    states also require caregiver training and medication assistance
+    certification before staff work unsupervised. Alongside the license
+    sit the business registration, an employer registration, in most
+    states a food service permit for the kitchen, and liability
+    insurance the state will ask about. The minimum team is a
+    care-director who is qualified to run the building, enough
+    caregivers to cover every shift at ratio with relief, and an
+    office-manager for billing and purchasing. The first records are the
+    resident agreement and client brief for each admission, the
+    individual care plan, the medication record, the incident report
+    file, and the shift schedule. Client engagement, care plan delivery,
+    staff scheduling, purchasing from food and medical supply
+    distributors, and invoicing must all work before the first resident
+    moves in, because the state surveyor will read those records first.
+  economics: >
+    Revenue is care services, priced by level of care under the resident
+    agreement, and accommodation and programs, priced as a monthly room
+    and board charge with added fees for programs and extras. Occupancy
+    fills the building; the level-of-care assessment prices each room.
+    Payment comes from residents privately and from payers such as
+    long-term care insurance or a state waiver, and each payer pays on
+    its own terms, which is why days sales outstanding matters. Labor is
+    the dominant cost, so labor cost percentage decides profit: overtime
+    to hold ratio through call-outs, agency staff to fill vacancies, and
+    turnover that keeps new caregivers in training all land there.
+    Incident rate is the other deciding metric, because incidents drive
+    citations, liability, and family departures. The building is capital
+    intensive whether owned or leased, and the fixed cost of an empty
+    room is carried whether or not a resident is in it, so margin is
+    judged after rent or debt service on a full building.

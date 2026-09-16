@@ -37,3 +37,45 @@ automation:
 questions:
   - Which revision, material, datum, tool, or tolerance remains unproven?
   - What setup and first-piece evidence authorizes this exact production run?
+article:
+  what: >
+    The machining process planning process is how a machine shop turns
+    a customer order and a part definition into a machining route,
+    setup, program, and inspection plan that a machinist can run and an
+    inspector can accept. It starts when the current revision,
+    material, quantity, tolerances, and due date are in hand and ends
+    when a first piece has been proven and the production order is
+    released with a controlled setup sheet. The process planner or lead
+    machinist owns it, with the shop owner or production manager
+    releasing the run.
+  why: >
+    It protects the whole lot. When production begins from an unproven
+    setup, a wrong revision, an unverified datum, or a fixture that
+    cannot hold the part, the material, capacity, tooling, and due date
+    can all be lost at once. When setup knowledge lives with one
+    machinist, inspection discovers route errors after quantity is
+    produced, and no one can say which program and offsets made the
+    parts.
+  how: >
+    The planner confirms the part and material basis: revision, model,
+    drawing, material and stock, quantity, tolerances, finishes,
+    certificates, and any approved deviations. The route and setup are
+    then planned: operation sequence, machine, fixture, datum, tools,
+    program, offsets, in-process checks, and outside operations such as
+    plating or heat treatment. The setup is proven by running a first
+    piece against the setup sheet, recording measured results, and
+    authorizing production only when it passes; every subsequent change
+    to program, offset, tool, or fixture is recorded and controlled on
+    the production order so the released run and the parts it makes can
+    be traced to one proven setup.
+  controls:
+    - name: Revision match at every step
+      note: The drawing, model, program, and setup sheet all carry the same revision, and a mismatch stops the job before setup begins.
+    - name: Material certificate verified
+      note: The stock's certificate is checked against the specified material and recorded on the production order before cutting.
+    - name: First-piece inspection recorded
+      note: Measured first-piece results are recorded against each tolerance and signed before quantity production is authorized.
+    - name: Datum and fixture defined on the setup sheet
+      note: The setup sheet names the datum scheme, fixture, and workholding so any machinist can reproduce the proven setup.
+    - name: Change control after release
+      note: Any change to program, offset, tool, or fixture during the run is logged with who made it and a re-verified part.

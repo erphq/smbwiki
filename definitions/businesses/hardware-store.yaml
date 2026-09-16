@@ -24,3 +24,58 @@ revenue_model:
 supply_chain:
   buys_from: [hardware-wholesaler]
   sells_to: [retail-consumer, general-contractor]
+article:
+  operating_model: >
+    A hardware store sells the right part and the advice that goes with
+    it. The week runs on the floor and the receiving dock: sales
+    associates translate a described repair into fasteners, fittings,
+    tools, and quantities, cut keys and glass, mix paint, and thread
+    pipe; the stock associate receives wholesaler deliveries and returns
+    every item to its bin; the retail manager places the weekly order,
+    prices, and handles contractor accounts and special orders. Retail
+    sale and retail replenishment are the load-bearing skills, and
+    purchasing decides whether the store has depth in the categories its
+    neighborhood asks for. The tension is between breadth and accuracy:
+    tens of thousands of low-value items share bins and get miscounted,
+    returned without packaging, or sold by the piece from a bulk box, so
+    the stock record drifts and the reorder is wrong unless counts are
+    cycled continuously. Contractor customers want the item now and an
+    invoice later, which pulls the store into credit.
+  starting: >
+    Day-one paperwork is business registration, sales tax registration
+    with resale exemption handling for contractor customers, employer
+    registration, and a certificate of occupancy; selling propane,
+    pesticides, or ammunition adds separate permits in most states, and
+    key cutting or paint disposal may have local rules. Capital is
+    fixtures and bins for a very deep assortment, a point of sale with
+    bin-level inventory and special order tracking, a key machine, paint
+    tinting system, and pipe and glass cutting equipment, and an opening
+    order from a hardware wholesaler or cooperative that usually sets
+    the assortment and the credit terms. The minimum team is a retail
+    manager who buys and works the floor, one sales associate with trade
+    knowledge, and a stock associate for receiving and bin maintenance.
+    The first records are the purchase order, the inventory receipt, the
+    stock record by bin, the sales receipt, the return record, and a
+    special order log that ties the customer deposit to the item. Retail
+    replenishment, retail sale, purchasing, and payment reconciliation
+    must work from the first open, with cycle counting started in the
+    first week.
+  economics: >
+    Revenue is hardware and supply sales from stock plus special orders
+    and services: sourced items, cutting, key duplication, small
+    repairs, and rental where offered. Pricing is per item against
+    wholesaler cost with high category margins on small parts and thin
+    margins on commodity goods that big-box competitors price
+    aggressively. Gross margin percentage is high relative to other
+    retail because customers pay for availability and advice, but the
+    store earns it on very small transactions, so average ticket and
+    transaction count together set the top line. The metrics that decide
+    profit are gross margin percentage, inventory turnover, and stockout
+    rate, because the assortment is what brings customers and dead
+    inventory is where the cash goes. Labor cost percentage matters
+    because knowledgeable associates are the product and are paid
+    whether the store is busy or not. Services carry almost pure margin
+    and bring the customer through the door. The business is
+    inventory-intensive: capital sits on the shelf for months, and
+    profit depends on buying depth where the store turns and cutting it
+    where it does not.

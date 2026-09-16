@@ -25,3 +25,62 @@ revenue_model:
 supply_chain:
   buys_from: [pet-supply-distributor]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A pet grooming business sells groomer time by appointment, so the
+    week is a schedule of animals against groomers, tables, tubs,
+    dryers, and kennel space for animals waiting before and after. The
+    client coordinator books, checks in, and checks out, the service
+    provider does the intake, the bath, dry, brush, clip, trim, and
+    cleaning, and records changed scope, behavior, products, and
+    incidents on the ticket, and the owner-operator handles purchasing
+    and the staff schedule. Appointment scheduling, client consultation,
+    and personal service delivery are load-bearing. The tension is
+    between the estimate at booking and the animal on the table:
+    matting, skin condition, size, and behavior change the time and the
+    price, and the groomer has to stop for veterinary care when the
+    intake note says so, so the schedule needs slack that the revenue
+    plan wants to sell.
+  starting: >
+    Grooming itself is unlicensed in most states, so the day-one
+    paperwork is the general layer: business registration, sales tax
+    registration because retail products and, in some states, the
+    service are taxable, employer registration for the first hire, and
+    any local animal facility or kennel permit that the city attaches to
+    a premises that holds animals during the day; zoning for animal
+    services and noise is the usual first obstacle. Grooming tables,
+    tubs, dryers, clippers, and kennels are the capital items, modest
+    enough that many groomers start mobile or from a single room.
+    Liability cover that includes animal injury is expected, and a
+    veterinary relationship for emergencies exists before the first
+    appointment. The minimum team is an owner-operator who grooms, a
+    client coordinator who can be the owner at first, and additional
+    service providers as the book fills. The first records are the
+    appointment record, the client profile with coat, skin, behavior,
+    sensitivities, medications, emergency contact, and the stop point
+    for veterinary care, the service ticket, the purchase order, and the
+    supplier invoice. Appointment scheduling, client consultation,
+    personal service delivery, and client checkout must work from the
+    first groom.
+  economics: >
+    Revenue is grooming services (bath, coat work, trimming) priced by
+    size, coat, and package, plus added care and products such as
+    special handling, treatments, and retail. Groomer time is the cost
+    and the capacity, so revenue per groomer day is the number the owner
+    watches: average ticket times animals finished, less the labor cost
+    of that groomer. The labor cost percentage decides margin, since
+    groomers are paid by commission or hourly and the difference between
+    a full day and a half day is almost pure profit. Service ticket time
+    sets how many animals a groomer can finish, service utilization
+    measures how much of the paid day is booked, the appointment no-show
+    rate is the leak, and the rebooking rate at checkout is what turns a
+    first visit into a monthly one. The business is capital-light and
+    labor-heavy, product cost is small, and margins improve with
+    rebooking cadence and add-on capture more than with the base price
+    of a bath.
+  benchmarks:
+    - scope: Mean hourly wage, animal caretakers in other personal services
+      value: "$15.94 per hour, $33,150 per year (May 2023)"
+      note: "Animal caretakers (the occupation that includes groomers) in NAICS 8129 Other Personal Services, 134,120 employed or 33.37 percent of the industry's 401,980 jobs. The industry group covers pet care services broadly, so the figure is a labor cost basis, not a grooming-only wage."
+      source: https://www.bls.gov/oes/2023/may/naics4_812900.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 8129 Other Personal Services (May 2023)

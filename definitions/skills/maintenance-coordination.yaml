@@ -100,3 +100,48 @@ automation:
 questions:
   - Which open request can cause more damage while it waits?
   - Which completed work order lacks evidence that the reported condition is resolved?
+article:
+  what: >
+    The maintenance coordination process is how a residential or
+    commercial property manager, or a self-storage facility, turns an
+    occupant's or a building's reported condition into a repair that is
+    triaged, authorized, accessed, completed, and verified. It begins
+    with a maintenance request and ends with a closed work order, job
+    photos showing the resolved condition, and a record of who paid and
+    why. The maintenance coordinator runs triage, release, and
+    tracking; the property manager owns responsibility decisions and
+    final verification.
+  why: >
+    It protects the building, the occupants, and the owner's money. An
+    emergency that waits in the normal queue expands into water damage
+    or a habitability claim; a vendor who arrives without access or
+    spending authority produces a callout invoice and no repair; a
+    request closed when the vendor leaves lets the symptom recur behind
+    an invoice that says done. Without a record of responsibility,
+    owner, tenant, warranty, and insurer disputes about who pays happen
+    after the money is spent.
+  how: >
+    The maintenance coordinator triages the condition from the request:
+    location, symptom, safety, active damage, affected occupants,
+    access, urgency, and immediate containment. The property manager
+    assigns responsibility among owner, tenant, warranty, vendor,
+    staff, or insurer, with a spending limit and approval path. The
+    coordinator releases the work order with current scope, priority,
+    contact, access, authorization, required trade, and communication
+    instructions to the assigned party. Execution is tracked through
+    appointment, arrival, diagnosis, parts, changed scope, delay,
+    occupant updates, and cost. The property manager verifies and
+    closes: condition, completed work, cleanup, occupant confirmation,
+    invoice, warranty, and any recurring-cause action are reviewed, and
+    the job photos are attached.
+  controls:
+    - name: Emergency escalation rule
+      note: Requests describing active water, electrical, security, fire, or habitability risk bypass the queue and reach a responder immediately, with the time recorded.
+    - name: Work order complete before dispatch
+      note: No vendor is sent without contact, access method, spending limit, and responsible payer on the work order.
+    - name: Responsibility decision recorded
+      note: The party who pays and the reason are written on the request before cost is incurred, so invoices are settled without dispute.
+    - name: Closure requires condition evidence
+      note: A work order closes only with after photos and occupant or staff confirmation that the reported condition is resolved.
+    - name: Invoice matched to authorized scope
+      note: Vendor invoices are compared to the work order scope and spending limit, and changed scope needs a dated approval.

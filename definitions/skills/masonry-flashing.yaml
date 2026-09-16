@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves masonry flashing and drainage was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The masonry flashing and drainage process is how a masonry
+    contractor installs the water management that a cavity wall
+    depends on before the wall covers it: through-wall flashing at
+    shelf angles, lintels, sills, and the base of the wall, end dams at
+    terminations, laps sealed in the right direction, weeps at the
+    right spacing, a clear cavity behind the veneer, and terminations
+    that shed water out. It begins from the construction plan and ends
+    with a quality report that shows the concealed work was installed
+    as detailed. The masonry foreman owns it.
+  why: >
+    It protects the building from water that will get into the cavity
+    no matter how good the brickwork is. Flashing that stops short of
+    the face, has no end dam, laps the wrong way, or sits behind a
+    cavity full of mortar droppings sends water into the sheathing and
+    the interior, and the damage appears years later behind finishes
+    with no way to reach the cause without removing the veneer. Because
+    the work is concealed within hours, the only proof it was done is
+    the record made before the next course.
+  how: >
+    The foreman reads the current scope and revisions, then verifies
+    the approved sample, sound support, control lines, unit and mortar
+    supply, weather protection, embeds, and interface details before
+    flashing begins. The details become field controls: the flashing
+    material and locations, lap direction and sealing, end dam
+    fabrication, weep type and spacing, cavity drainage material,
+    termination at the face, hold points before each flashing location
+    is covered, and the records to keep. As the crew installs, they
+    record quantities, observations, decisions, and each concealed
+    detail with photographs, and stop when a field condition changes
+    the planned method. At acceptance the foreman checks line, level,
+    plumb, bond, joint profile, reinforcement, flashing, drainage,
+    cleaning, and specified appearance, closes corrections, and issues
+    the quality report.
+  controls:
+    - name: Hold point at every flashing location
+      note: No course is laid over a flashing until the foreman has checked laps, end dams, and termination and recorded the location.
+    - name: Photo record before concealment
+      note: Each flashing run, end dam, and weep line is photographed with the location marked so the quality report can show the concealed work.
+    - name: Weep spacing and clear cavity verified
+      note: Weeps are counted against the specified spacing and the cavity is checked clear of droppings before the wall continues.
+    - name: Flashing material matches the detail
+      note: The material, lap length, and sealant used are checked against the construction plan detail and recorded.
+    - name: Termination at the face confirmed
+      note: Flashing is confirmed to extend to or beyond the wall face with a drip edge as detailed, never cut short behind the veneer.

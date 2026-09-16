@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves tile substrate preparation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The tile substrate preparation process is what a tile contractor does to a
+    floor or wall before it will hold tile: flatness and slope are measured,
+    cracks and voids are repaired, contaminants such as paint, curing
+    compound, and old adhesive are removed, primer is applied where the
+    setting system requires it, and cure of the substrate and any patching is
+    verified. It starts when the space is turned over to the tile contractor
+    and ends with a quality report that accepts the substrate for layout and
+    setting. The lead setter or a preparation crew owns it, and the estimator
+    is involved when the substrate condition changes the price.
+  why: >
+    Tile does not fix a substrate; it inherits it. A floor out of flatness
+    tolerance produces lippage that no setter can hide. An unrepaired crack
+    telegraphs through the tile, a contaminated slab breaks bond, an uncured
+    patch shrinks under the mortar, and a shower floor with the wrong slope
+    holds water at the far corner. Every one of these appears after the tile
+    is set, when correction means removal. The preparation record is also the
+    evidence that the contractor found and reported a substrate condition
+    instead of setting over it.
+  how: >
+    The lead setter confirms the work basis from the current scope and
+    revisions and verifies which conditions the substrate has to meet:
+    stability and flatness, cured work, compatibility with the approved tile
+    and setting system, resolved movement joints, the planned dry layout, and
+    environmental control in the space. Field controls are then set: the
+    flatness and slope tolerances for the tile size, the repair materials and
+    their cure times, the sequence of areas, who measures and who repairs, and
+    the hold point before priming. During preparation the operator records
+    measurements, repairs, contaminants removed, primer applied, moisture and
+    cure results, and any concealed condition found, and stops when the
+    substrate differs from the plan. Acceptance checks that the substrate will
+    support bond coverage, plane, joint alignment, movement accommodation,
+    drainage, and lippage limits, corrections are closed, and the quality
+    report releases the substrate to layout.
+  controls:
+    - name: Flatness and slope measured and recorded
+      note: Straightedge and slope readings are taken across each area and written on the record before any repair, so the required correction is known.
+    - name: Substrate condition reported before work
+      note: Cracks, voids, contamination, and moisture found during preparation are reported to the general contractor or customer with photos before repair changes the evidence.
+    - name: Repair material and cure logged
+      note: Every patch, leveler, or crack treatment is recorded with product, area, date, and the cure time before setting is allowed.
+    - name: Primer and compatibility confirmed
+      note: The primer and the setting system are confirmed compatible with the substrate on the record before priming, and the primed areas are listed.
+    - name: Substrate accepted before layout
+      note: The prepared substrate is inspected against the tolerances and released on the quality report before the layout crew snaps a line.

@@ -90,3 +90,47 @@ automation:
 questions:
   - What changed since the buy assumption behind this quote was observed?
   - Which likely accessorial has no agreed customer treatment?
+article:
+  what: >
+    The freight quoting process turns a shipper's load request into a sell
+    rate the brokerage can cover with a real carrier at a margin it can
+    keep. It starts when a load request arrives with enough detail to
+    expose carrier cost and ends when a versioned quote with rate,
+    validity, equipment, service, accessorial rules, and assumptions is
+    issued and the acceptance route is clear. The freight broker on the
+    account owns it; a pricing desk supports lane data in a larger
+    brokerage, while in a small one the same broker reads the market and
+    commits.
+  why: >
+    A quote is a promise to cover. A sell rate built on last month's lane
+    average is accepted by the shipper and then discovered to be below
+    what any carrier will take on the day, and the brokerage either fails
+    the load or pays to move it. Accessorials left out of the quote turn
+    detention, layover, and re-delivery into unpriced disputes after the
+    fact. The process protects margin, coverability, and the shipper's
+    trust that a quoted rate means a truck will show up.
+  how: >
+    The broker validates the movement first: locations, dates,
+    appointments, commodity, weight, equipment, handling, contacts, and
+    special requirements are checked for completeness against the load
+    request so the cost side can be seen. The broker then reads current
+    capacity: recent buys on the lane, carriers available, season and day
+    of week, lane imbalance, lead time, and the reputation of the
+    facilities set the expected purchase range. Risk and accessorials are
+    priced next: line haul, likely extras, tracking work, credit exposure
+    on the shipper, claims risk on the commodity, and recovery difficulty
+    are added before margin is declared. The quote is then issued with
+    rate, validity period, equipment, service level, accessorial rules,
+    assumptions, and the route by which the shipper accepts it, and the
+    version is recorded against the load reference.
+  controls:
+    - name: Load request completeness check
+      note: A quote is built only after locations, dates, equipment, commodity, and facility details are complete enough to expose carrier cost.
+    - name: Buy assumption dated
+      note: The carrier cost basis behind each quote records its source and date, so a stale lane history is visible before the rate goes out.
+    - name: Accessorial terms on every quote
+      note: Detention, layover, stops, handling, and re-delivery treatment are stated on the quote whenever the request shows a facility or service constraint.
+    - name: Quote version and validity
+      note: Each quote carries a version, a validity period, and the load reference, and acceptance is recorded against that version.
+    - name: Actual buy compared to quote
+      note: The carrier cost paid on covered loads is compared with the quoted buy assumption so pricing on the lane improves.

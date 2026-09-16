@@ -96,3 +96,50 @@ automation:
 questions:
   - Which active load is least likely to keep its next appointment?
   - What open delivery exception still lacks evidence or an owner?
+article:
+  what: >
+    The load execution process is how a freight brokerage stays in
+    control of a shipment it does not physically carry, from the rate
+    confirmation with a carrier, through dispatch verification, pickup,
+    in-transit tracking, exception handling, delivery, and document
+    closeout. It begins when the carrier commitment is confirmed and
+    ends when a signed proof of delivery has been reviewed and handed
+    to billing with the bill of lading and any exception resolved. The
+    tracking coordinator runs the load day to day; the freight broker
+    owns exceptions and cost decisions.
+  why: >
+    It protects the customer's freight and the brokerage's promise
+    while both are in another company's truck. Weak execution lets an
+    unverified driver or dispatcher take control of pickup details,
+    records a location without asking whether the appointment is still
+    feasible, and closes billing on a proof of delivery whose notation
+    hides a shortage or damage claim. Each of those becomes a service
+    failure the customer hears about from the receiver first, or a
+    claim the brokerage cannot defend.
+  how: >
+    The tracking coordinator verifies dispatch readiness from the rate
+    confirmation: driver, truck, carrier contact, empty status, travel
+    plan, pickup appointment, references, and tracking method, all
+    confirmed through routes the approved record recognizes. At pickup,
+    arrival, loaded count and condition, the bill of lading, seal or
+    securement, departure, and any shipper exception enter the load
+    record. In transit the coordinator updates location, available
+    hours, appointment feasibility, equipment condition, and driver
+    contact at the cadence the load needs. When delay, breakdown,
+    temperature, damage, shortage, refusal, or contact loss appears,
+    the freight broker takes it as an exception with an owner, a
+    customer update, evidence, and a recovery decision. At delivery,
+    time, receiver, signed proof, count, condition, exception, final
+    charges, and document quality are reviewed before the proof of
+    delivery goes to billing.
+  controls:
+    - name: Dispatch identity verified through the approved route
+      note: Driver, truck, and contact details are accepted only from the carrier contact on the rate confirmation and are checked against carrier records.
+    - name: Feasibility recorded with every check call
+      note: Each tracking update records projected arrival against the appointment and remaining hours, so a load that cannot make it is visible early.
+    - name: Exception opened on any notation
+      note: Any shipper or receiver notation, temperature alarm, or contact loss creates an owned exception with evidence before the load can close.
+    - name: Proof of delivery reviewed before billing
+      note: Receiver, time, count, condition, and signature are checked against the bill of lading and the exception log before the document goes to billing.
+    - name: Customer update on every risk change
+      note: The customer is told when arrival risk or an exception changes, with the update time recorded in the load record.

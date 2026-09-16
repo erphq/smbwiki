@@ -25,3 +25,60 @@ revenue_model:
 supply_chain:
   buys_from: [moving-supply-distributor]
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A moving company sells crew days and truck days against a booked
+    calendar, so the week is built by the dispatcher: which crew, which
+    vehicle, which job, in what order, with how much drive time between
+    them. The office manager and dispatcher take the lead, the owner or
+    dispatcher quotes it from the inventory and access details, and the
+    driver and crew execute the move under a bill of lading and close it
+    on a signed proof of delivery. Lead intake, quoting, and transport
+    execution are the skills that carry the week, and equipment
+    maintenance keeps the trucks available for the dates already sold.
+    The tension is between the estimate and the reality at the door:
+    stairs, a long carry, an elevator reservation, or items left off the
+    inventory change the hours, and the crew has to record the exception
+    and get the customer's decision before the truck is loaded.
+  starting: >
+    A moving company starts with the vehicle, the authority to operate
+    it, and the insurance behind both. Interstate household moves need
+    federal motor carrier authority for household goods, a federal
+    carrier number, and cargo and liability coverage on file; in most
+    states, movers working only inside the state need a separate state
+    permit, and some cities license local movers as well. The general
+    layer is the business registration, an employer registration when
+    the first crew is hired, and sales tax registration where packing
+    materials or storage are taxable. Drivers need the license class
+    that matches the truck. The minimum roles are an owner-operator who
+    quotes, a dispatcher who is often the same person at first, a
+    driver, and crew for the day, with the office manager and
+    maintenance technician roles filled by the owner or by an outside
+    shop until volume justifies the hire. The first records are the
+    load request, the quote, the bill of lading, the proof of delivery,
+    the customer invoice, and the maintenance log, and lead intake,
+    quoting, transport execution, and customer invoicing must work from
+    the first move.
+  economics: >
+    Revenue is household moves sold by time, distance, weight, or an
+    agreed estimate, plus packing and storage charged separately for
+    materials, packing labor, and interim custody. Local moves are
+    usually priced by the hour for a crew and truck; long-distance moves
+    by weight and distance or as a binding estimate. Gross margin is
+    labor and fuel against the price of the job, so crew hours actually
+    worked against hours quoted is the number that decides whether a
+    move made money. The metrics that decide profit are the quote win
+    rate and booking rate, which decide how full the calendar is,
+    on-time pickup and delivery rates, which drive reviews and claims,
+    days sales outstanding on commercial and storage accounts, and
+    equipment uptime, because a truck down on a booked day is a
+    cancelled job or a rented replacement. The business is
+    capital-moderate in trucks and labor-heavy on the day; packing and
+    storage carry better margins than the move itself, and seasonality
+    means the summer has to fund the winter.
+  benchmarks:
+    - scope: Direct economic activity, US moving and storage industry
+      value: "$32.2 billion, supporting 186,382 direct jobs and $12.8 billion in wages (2021)"
+      note: Economic impact study prepared by John Dunham and Associates for the ATA Moving and Storage Conference, published December 2021; total activity including indirect and induced effects was $92.2 billion. Industry-wide totals, no per-company figure.
+      source: https://www.trucking.org/news-insights/new-report-outlines-economic-impact-moving-and-storage-industry
+      source_name: American Trucking Associations, New Report Outlines Economic Impact of Moving and Storage Industry (2021)

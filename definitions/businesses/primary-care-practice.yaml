@@ -47,3 +47,50 @@ licenses:
       as_of: "2026-07-29"
 seo:
   title: "Primary Care Practice: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A primary care practice runs on the schedule and the patient chart.
+    The receptionist books visits and verifies coverage with the billing
+    specialist, the clinical assistant rooms the patient and updates the
+    chart, and the physician sees the patient, documents the clinical
+    note, and sets the treatment plan with orders and follow-up. Work
+    arrives outside the appointment as results, referrals, messages, and
+    refills, and each needs an owner and a next action. Clinical care
+    and claims billing are the load-bearing skills, because the claim
+    can only be paid when the note matches the service performed and the
+    coverage held for the patient. The tension is between visit length
+    and the same-day demand that has to fit into a fixed provider day.
+  starting: >
+    Day one requires a licensed physician, since the state physician
+    license is the credential the practice is built on, plus the
+    registrations every business needs: business registration, employer
+    registration, and any state clinic or facility registration that
+    applies. Before the first claim can be paid, the practice needs
+    provider identifiers and enrollment with each insurer and with the
+    federal programs it intends to bill, controlled-substance
+    registrations where the physician prescribes them, a laboratory
+    waiver if point-of-care tests are run in the office, and
+    professional liability coverage. The minimum team is the physician,
+    a clinical assistant, a receptionist who schedules and verifies
+    coverage, and a billing specialist, with the office manager handling
+    staff scheduling and accounts payable. The first records are the
+    patient registration, insurance verification, appointment record,
+    patient chart, clinical note, insurance claim, and recall list, all
+    inside an electronic health record. The skills that must work from
+    the first open are appointment scheduling, coverage verification,
+    patient intake, clinical care, and claims billing.
+  economics: >
+    Revenue is office visits, preventive care, and chronic care, each
+    billed as coded services against payer fee schedules the practice
+    has accepted, so the price of a visit is largely set by the
+    insurers and the federal programs, and the practice controls volume,
+    coding accuracy, and collection. Gross margin is what remains after
+    physician and staff compensation, which makes the practice labor
+    intensive and puts the pressure on visits per provider day and on
+    keeping the schedule full. The metrics that decide profit are
+    appointment no-show rate, clean claim rate, days sales outstanding,
+    and recall reappointment rate, because an empty slot cannot be
+    resold, a rejected claim delays cash by weeks, and preventive and
+    chronic visits only recur if patients are recalled. Capital needs
+    are modest beyond the record system and exam rooms, so the margin
+    question is almost entirely staffing ratio and billing discipline.

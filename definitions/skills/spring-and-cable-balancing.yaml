@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves spring and cable balancing was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The spring and cable balancing process sets an overhead door so it
+    hangs balanced through its full travel. The torsion or extension
+    springs and drums are confirmed against the door weight, restraints
+    are installed, the springs are wound or tensioned under control, the
+    cables are seated, and the door is balanced and tested before the
+    operator is allowed to run it. It starts from a work order with the
+    opening, door, and spring design verified, and ends with a
+    commissioning record. A garage door contractor owns it through the
+    technician on the job.
+  why: >
+    It protects the technician first, then the owner. A torsion spring
+    stores enough energy to break an arm or send a winding bar across
+    the garage, and a cable that slips a drum under load drops the door
+    on that side. An unbalanced door that runs under power hides its
+    condition behind the operator's motor until the opener fails, the
+    reversal test fails, or the door falls on a car or a child. The
+    commissioning record is also the contractor's defense when a door is
+    later modified by someone else.
+  how: >
+    The technician reads the work order and any revisions, then confirms
+    the verified opening and structure, the selected door and operator,
+    electrical provision, hardware, the spring design for the door
+    weight, access, and site protection before starting. The job is set
+    out as a safe sequence with restraints, tools, hold points before
+    winding and before power, and the record the technician fills in.
+    During the work the technician confirms spring and drum selection
+    against the door, installs restraints, winds or tensions the
+    springs, seats the cables, and records turns, measurements, and any
+    deviation, stopping when the door weight, track condition, or
+    hardware differs from the work order. At acceptance the technician
+    checks secure attachment, balanced travel, correct clearances,
+    functional controls, entrapment protection, manual release, seals,
+    and owner instruction, closes corrections, and issues the
+    commissioning record.
+  controls:
+    - name: Spring selection verified against measured door weight
+      note: The door is weighed or its weight confirmed from the manufacturer before springs are wound, and the match is recorded.
+    - name: Restraints and hold point before winding
+      note: Winding bars, cable restraints, and a clear zone are in place and checked before any tension is applied to a spring.
+    - name: Balance test with the operator disconnected
+      note: The door is tested by hand at several positions through its travel and the result recorded before the operator is connected.
+    - name: Entrapment and reversal test recorded
+      note: The operator's reversal and any photo-eye function are tested and recorded on the commissioning record before handover.
+    - name: Owner instruction acknowledged
+      note: The owner receives and acknowledges the manual release and safety instruction, and the acknowledgment is on the record.

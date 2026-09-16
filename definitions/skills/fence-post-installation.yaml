@@ -94,3 +94,45 @@ questions:
   - >-
     Which record proves fence post installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The fence post installation process sets the posts that everything else
+    depends on: the crew marks spacing along the approved line, digs or
+    drives to the required depth and hole dimensions, aligns each post plumb
+    and to the string, sets it in concrete or by driving, braces it,
+    protects it during cure, and keeps every hole clear of located
+    utilities. It starts once the line and utility locates are confirmed and
+    ends with a cured, accepted run of posts recorded on the quality report.
+    A fence contractor's crew lead owns it.
+  why: >
+    Every fence defect that cannot be fixed later starts at the posts. A
+    post set off the boundary puts the whole fence on the neighbor's land. A
+    post set shallow heaves in the first frost, and a gate post set without
+    extra depth and bracing sags under the gate's weight within a season. A
+    utility strike during digging stops the job and can injure the crew.
+    Once the concrete cures, correcting any of these means pulling the post
+    and starting over, so the process puts the checks before the pour.
+  how: >
+    The lead reads the site plan and revisions and confirms the verified
+    boundary or approved alignment, located utilities, the selected system,
+    known grade, gate geometry, material, and access. Field controls set the
+    string line, post spacing marks, hole depth and diameter by post type,
+    the setting method, the bracing and cure period, the exclusion around
+    utility marks, and the hold point where posts are checked before
+    concrete is placed. During setting the crew records each post's
+    location, depth, and alignment, notes any rock, water, or utility found
+    in a hole, and stops when the ground or the line differs from the plan.
+    Acceptance checks line, grade, embedment, spacing, and gate post
+    geometry, and the run is recorded on the quality report before panels
+    are hung.
+  controls:
+    - name: Utility locates walked before digging
+      note: The lead walks the locate marks against the post layout and hand digs any hole inside the marked tolerance zone.
+    - name: Depth and alignment checked before concrete
+      note: Each post's depth, plumb, and position on the string are checked and recorded before the hole is filled.
+    - name: Gate posts set to the gate specification
+      note: Gate posts get the depth, footing size, and bracing the gate geometry requires, and the check is recorded separately.
+    - name: Cure period held before loading
+      note: The date and time posts were set are recorded, and no panel or gate is hung until the cure period has passed.
+    - name: Changed ground recorded per hole
+      note: Rock, water, fill, or buried material found in a hole is recorded with the post number and the decision made.

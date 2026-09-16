@@ -79,3 +79,47 @@ questions:
   - How many permits are open right now, and how old is the oldest?
   - Can a final invoice go out while the job's permit is still open?
   - When an inspector fails a job, does anyone record why?
+article:
+  what: >
+    The permits and inspections process is how a trade contractor files
+    for the permit a job requires before the crew starts, keeps every
+    open permit visible until its final inspection passes, and books
+    inspections so the inspector arrives when the work is ready. It
+    starts when a quoted job is identified as permit-triggering and ends
+    when the jurisdiction records the permit as closed and the final
+    invoice can go out. The office manager owns it for an electrical,
+    plumbing, or HVAC contractor and for a residential remodeler; the
+    crew lead owns the walkthrough with the inspector.
+  why: >
+    It protects the business from legal exposure that outlives the job.
+    Working ahead of the permit turns a schedule problem into a
+    stop-work order, fines, and finished walls opened for inspection,
+    and an unpermitted water heater is still unpermitted when the house
+    sells. Open permits are compliance debt: they block final payment,
+    they expire and have to be refiled under current code, and they
+    surface at resale when the title search finds them. A failed
+    inspection costs a return trip, a re-inspection fee, and a crew
+    pulled off another job.
+  how: >
+    When a job is scoped, the office manager decides whether it triggers
+    a permit in that jurisdiction and files at kickoff, so the permit is
+    issued before the crew is scheduled. Every issued permit goes on the
+    open-permit list with its job, jurisdiction, issue date, expiry, and
+    the inspections it needs, and the office manager reviews the list
+    weekly. When the crew lead reports the punch list complete for a
+    stage, the office manager books the inspection, and the crew lead
+    walks the inspector through. A pass is recorded against the permit;
+    a fail is recorded with the reason and a rebook date. When the final
+    inspection passes, the permit is closed on the job record and the
+    final invoice is released.
+  controls:
+    - name: Permit decision at scoping
+      note: Every quote records whether the work triggers a permit and who decided, and an edge case goes to a named person who can defend the call.
+    - name: Filed before scheduling
+      note: A crew cannot be scheduled on permit-triggering work until the permit number is on the job record where the dispatcher can see it.
+    - name: Open-permit list reviewed weekly
+      note: The list shows age, expiry date, and next inspection for every open permit, and the oldest entries are reviewed first each week.
+    - name: Inspection booked after the punch list
+      note: An inspection is scheduled only when the crew lead has signed the stage punch list complete, so the inspector never waits on the crew.
+    - name: Final invoice held on open permit
+      note: The billing system blocks the final invoice while the job's permit shows open, and a failed inspection is recorded with its reason.

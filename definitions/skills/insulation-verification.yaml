@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves insulation verification was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The insulation verification process is an insulation contractor's
+    last look at a thermal and air boundary before drywall or sheathing
+    conceals it. It confirms that the boundary is continuous, that depth
+    and density meet the specified values, that clearances around
+    flues, recessed lights, and vents are kept, that dams and baffles
+    hold material where it belongs, that ventilation paths are open,
+    that access hatches are treated, and that photographs record all of
+    it. It starts from the construction plan and ends with an
+    inspection report the general contractor, the energy rater, and the
+    code inspector can rely on. The crew lead or the quality lead owns
+    it.
+  why: >
+    It protects performance that cannot be seen again for the life of
+    the building. Voids, compressed batts, wind washing at eaves, and
+    bypasses around chases pass a visual glance and then degrade
+    comfort and energy use in every season that follows. A missed
+    clearance is a fire hazard. Without a recorded verification, the
+    contractor cannot show the rater or the builder what was installed,
+    and a later comfort complaint or a failed blower door test becomes
+    an argument about work that is buried.
+  how: >
+    The crew lead reads the current scope and revisions from the
+    construction plan, then verifies that the air-control layer is
+    complete, cavities are dry, known leaks are closed, services are
+    installed, the insulation system is the approved one, and access is
+    safe. The plan is translated into field controls: limits of the
+    work, sequence by area, responsibilities, hold points before any
+    area is closed, and the records to be kept. During the work the
+    installer records quantities, observations, decisions, and every
+    concealed detail, and stops when a field condition changes the
+    planned method. At acceptance the lead checks for a continuous
+    thermal and air boundary, full depth, correct density, protected
+    clearances, and documented concealed work, then closes corrections
+    and issues the inspection report.
+  controls:
+    - name: Hold point before concealment
+      note: No area is released to drywall or sheathing until the verification for that area is recorded and any correction is closed.
+    - name: Depth and density measured in place
+      note: Depth is probed and density checked in each cavity type against the specified values, with the readings written in the report.
+    - name: Clearance and dam check
+      note: Flue, chimney, recessed fixture, and vent clearances and their dams or baffles are confirmed and photographed before material is placed around them.
+    - name: Photo record by location
+      note: Each photograph is tagged to a plan location so the report can show what was installed behind any wall or ceiling later.
+    - name: Air-control layer verified first
+      note: The verification does not start until the air barrier is complete and leaks are closed, since insulation over a leaking boundary is wasted.

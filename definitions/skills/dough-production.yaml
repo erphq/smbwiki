@@ -93,3 +93,46 @@ automation:
 questions:
   - What condition caused the last batch to miss its service target?
   - How much staged dough can the line use before its quality changes?
+article:
+  what: >
+    The dough production process is the day-ahead work that turns a prep
+    list into fermented dough balls ready for the make line: the batch is
+    planned against expected demand and on-hand stock, mixed to a target
+    dough temperature, divided and labeled, moved through room and cold
+    fermentation stages, and staged in the order service will use it. It
+    ends when the last tray for the period is released and the unused
+    remainder is either held with a label or discarded. A pizzeria's
+    pizzaiolo owns it, and in a retail bakery the head baker runs the same
+    sequence for bread and laminated doughs.
+  why: >
+    Dough is the one product the kitchen cannot make faster during a rush.
+    When the batch plan is guessed, the line either runs out mid service or
+    throws away overproofed trays the next morning. When final dough
+    temperature is not measured, fermentation lands early or late even
+    though the formula was followed, and the crew blames the flour.
+    Unlabeled trays cannot be rotated by condition, so a service problem
+    cannot be traced to the batch that caused it. The process protects
+    sales, waste, and product consistency at the same time.
+  how: >
+    The pizzaiolo reads the prep list, counts on-hand dough by batch and
+    age, checks tomorrow's expected demand, room temperature, and
+    refrigeration space, and sets the mix quantity. Ingredients are weighed
+    and the water temperature is chosen so the dough leaves the mixer at the
+    target temperature, which is recorded with flour and room readings on
+    the batch record. The dough is divided to the ball weight, and every
+    tray is labeled with batch identity and production time before it moves.
+    Through the room and cold stages the pizzaiolo reads the dough, advances
+    or holds trays by condition, and notes any adjustment. For service,
+    trays are pulled in batch order and in the quantity the make line can
+    use, and the batch record closes with what was used, held, or discarded.
+  controls:
+    - name: Batch record with four temperatures
+      note: Flour, water, room, and final dough temperature are written for every batch so fermentation timing can be explained when it drifts.
+    - name: Tray labels before storage
+      note: No tray enters the walk-in or the proofing rack without batch identity and production time written on it.
+    - name: Fermentation read at each stage change
+      note: The pizzaiolo checks dough condition before moving trays from room to cold or cold to line, and records a hold or advance decision.
+    - name: Service release in batch order
+      note: Trays leave refrigeration oldest usable batch first and only in the quantity the line can work before quality declines.
+    - name: Waste and shortfall logged against the plan
+      note: What was discarded or run short is recorded next to the planned quantity so the next batch plan can move.

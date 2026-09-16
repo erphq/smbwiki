@@ -17,3 +17,48 @@ summary: >
 supply_chain:
   buys_from: [material-handling-equipment-provider]
   sells_to: [shipper]
+article:
+  operating_model: >
+    A warehouse operator holds other people's inventory under an account
+    agreement that says which movements need approval. The week is
+    receiving against inbound notices, putaway, replenishment,
+    allocation, picking, packing, and loading against carrier cutoffs,
+    with cycle counts, holds, and damage exceptions updating the same
+    item-location records. Inventory fulfillment is the load-bearing
+    skill, with client engagement setting the rules each account is run
+    by and equipment maintenance keeping forklifts and dock equipment
+    available. The tension is doors and labor: every account wants its
+    orders out by the same cutoff, so the warehouse manager allocates
+    people and staging by the day's mix.
+  starting: >
+    A warehouse operator starts with space, racking, forklifts, a
+    warehouse management system, and a first account agreement that
+    defines storage units, handling activities, count rules, and
+    liability. Day-one paperwork is the business registration, employer
+    registration, a certificate of occupancy for the storage use,
+    warehouse legal liability coverage sized for customer inventory, and
+    the food, hazardous material, or bonded storage registrations that
+    apply only if those goods are accepted. The minimum roles are a
+    warehouse manager, warehouse associates, an office manager for
+    invoicing and receivables, and a maintenance technician on call for
+    equipment. The first records are the client brief and engagement
+    letter, the inventory receipt, the stock record by item and
+    location, the customer order and pick list, the delivery ticket, and
+    the maintenance log. Client engagement, inventory fulfillment,
+    invoicing, and equipment maintenance must work before the first
+    pallet arrives.
+  economics: >
+    Revenue is storage fees, sold by pallet, bin, unit, or time, and
+    handling fees for receiving, picking, packing, and related movement.
+    Storage is priced on occupied space and handling on activity, so
+    gross margin is driven by how densely the building is filled, labor
+    hours per order, and whether the account agreement charges for every
+    activity that is actually performed. Inventory accuracy and order
+    cycle time are the metrics that decide profit, because a missed
+    count means unbilled storage or a claim, and a slow order means
+    overtime against a carrier cutoff; equipment uptime decides whether
+    the labor plan holds. Days sales outstanding matters because
+    accounts are invoiced monthly on activity reports. The business is
+    space-heavy and labor-heavy at once, with lease and equipment cost
+    fixed while handling revenue swings with clients' volume, which is
+    why long-term contracts with minimum charges are sought.

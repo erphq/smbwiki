@@ -95,3 +95,47 @@ questions:
   - >-
     Which record proves joint sealant installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The joint sealant installation process is how a waterproofing
+    contractor replaces or installs sealant in a building joint so that
+    it moves with the structure and keeps water out. It confirms joint
+    geometry and movement, removes old material, cleans and primes the
+    substrate, sets backer rod, guns the sealant, tools the profile,
+    and protects the cure. It begins from an inspection report that
+    identified the moisture source and ends with a test report showing
+    the joint held water. The waterproofing foreman owns it.
+  why: >
+    It protects the building from water that has already found a way
+    in. Sealing the visible leak without tracing pressure, path,
+    termination, and drainage moves water into a new concealed route
+    where it damages framing and finishes before anyone sees it.
+    Sealant applied to a wet or dirty substrate, without backing, or
+    with an incompatible product debonds within a season, and the
+    repair callback costs more than the original job.
+  how: >
+    The foreman reads the inspection report and current scope, then
+    verifies the identified moisture source, a sound and dryable
+    substrate, a compatible sealant system, prepared transitions, a
+    drainage route, and safe access. The work is translated into field
+    controls: joint by joint sequence, removal method, cleaning and
+    priming steps, backer size, tooling profile, cure protection, hold
+    points before the joint is closed, and the records to keep. During
+    installation the crew records quantities, observations, decisions,
+    and concealed details such as backer depth and primer coverage, and
+    stops when a field condition changes the planned method. At
+    acceptance the foreman checks continuous specified thickness,
+    bonded transitions, sealed penetrations, protected terminations,
+    drainage, cure, and the required water test, then closes
+    corrections and issues the test report.
+  controls:
+    - name: Substrate moisture and cleanliness check
+      note: Each joint is confirmed dry and free of old sealant, dust, and contaminants before primer, and the reading is recorded.
+    - name: Compatibility and adhesion test
+      note: The sealant, primer, and substrate combination is tested on a sample joint for adhesion before full installation proceeds.
+    - name: Backer rod depth recorded
+      note: Backer size and depth are checked against the joint width so the sealant reaches the specified thickness, and the value is written per joint.
+    - name: Cure protection maintained
+      note: Sealed joints are shielded from traffic, rain, and washdown for the manufacturer's cure period and the protection is inspected.
+    - name: Water test before closeout
+      note: The required water test is performed on the completed joints, and the test report records location, method, duration, and result.

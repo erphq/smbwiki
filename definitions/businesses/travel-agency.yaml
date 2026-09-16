@@ -25,3 +25,47 @@ revenue_model:
 supply_chain:
   buys_from: [travel-supplier]
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A travel agency turns a client brief into a set of reservations that
+    stay right until the trip is over. The week is research and
+    proposals for new trips, booking and payment deadlines for confirmed
+    ones, and schedule change, cancellation, and disruption handling for
+    trips in progress, all tracked by a client coordinator so nothing
+    lapses. Client engagement and professional service delivery are the
+    load-bearing skills, because supplier rules, fare conditions, and
+    entry requirements change while the itinerary is being built. The
+    tension is that commission is earned only on completed travel, so a
+    cancelled trip costs the hours spent and the revenue expected, which
+    is why fee-based planning exists.
+  starting: >
+    A travel agency starts with supplier access and a service model.
+    Day-one paperwork is the business registration, employer
+    registration once a professional is hired, seller-of-travel
+    registration in the states that require it, errors and omissions
+    coverage, and either a host agency agreement or the accreditation
+    that lets the agency book and be paid commission directly. The
+    minimum roles are a principal who sells and books and a client
+    coordinator, with a second professional added as trips overlap. The
+    first records are the client brief with traveler documentation and
+    preferences, the engagement letter that states fees and change
+    terms, the job request per trip, and the customer invoice for
+    service fees. Lead intake, client engagement, professional service
+    delivery, and invoicing must work before the first booking, and the
+    agency's supplier terms and confirmation custody have to be
+    understood before it takes a deposit.
+  economics: >
+    Revenue is booking commissions paid by suppliers on eligible
+    completed travel, and planning and service fees charged to clients
+    for research, booking, changes, and support. Commission is a
+    percentage set by the supplier and varies by product, so gross
+    margin depends on which suppliers the agency books, whether it sells
+    through a host that takes a share, and how much unpaid research
+    precedes each sale. The metrics that decide profit are engagement
+    gross margin, utilization rate, and work-in-progress age, because a
+    trip that sits half-planned while the client decides is labor with
+    no revenue yet. Booking rate and quote win rate measure how many
+    briefs become trips. Days sales outstanding matters on the
+    commission side, where payment follows travel by weeks. The business
+    is labor-intensive with almost no capital, so hours per trip and fee
+    discipline decide profit.

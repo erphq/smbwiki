@@ -24,3 +24,55 @@ revenue_model:
 supply_chain:
   buys_from: [grocery-wholesaler, food-distributor]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A grocery store receives, shelves, sells, and throws away food on a
+    cycle measured in days. Deliveries arrive most mornings, the stock
+    associate receives against purchase orders and rotates by date, the
+    retail manager walks the floor for stockouts, temperature, and
+    freshness, and sales associates run checkout and the service
+    counters. Retail replenishment and retail sale are the load-bearing
+    skills, with purchasing as the weekly discipline that sets what
+    arrives. The tension is between availability and shrink: a shelf
+    that is always full of perishables is a shelf that is throwing
+    product away, and a shelf that is empty sends the customer to a
+    competitor for the whole basket. Prepared and service departments
+    add labor and higher margin but also add production waste and food
+    safety checks that must happen inside the operating day.
+  starting: >
+    Day-one paperwork is business registration, sales tax registration
+    with the food exemptions the state applies, a retail food
+    establishment permit from the local health authority, food handler
+    training for staff in most jurisdictions, employer registration, and
+    a certificate of occupancy; selling alcohol, tobacco, or lottery
+    adds separate licenses, and accepting nutrition assistance benefits
+    requires retailer authorization from the federal program. Capital is
+    refrigeration and freezer cases, shelving, checkout lanes with a
+    point of sale that handles thousands of items and weighed goods, a
+    backroom cooler, and opening inventory from a grocery wholesaler and
+    food distributors who extend credit terms only after a payment
+    history. The minimum team is a retail manager who also buys, sales
+    associates covering checkout across all open hours, and a stock
+    associate for receiving and replenishment. The first records are the
+    purchase order, the inventory receipt with temperature checks, the
+    stock record by location and date, the sales receipt, the return
+    record, and the shift schedule. Retail replenishment, retail sale,
+    purchasing, and payment reconciliation must work from the first
+    open.
+  economics: >
+    Revenue is grocery merchandise sold from inventory plus prepared and
+    service departments such as deli, bakery, and counter production.
+    Pricing is per item against a wholesaler cost with category margins
+    that differ widely: staples are priced near cost to draw the basket,
+    while produce, prepared food, and general merchandise carry the
+    margin. Gross margin percentage is the blended result, and it is
+    eroded by shrink from spoilage, damage, and theft before it reaches
+    the bottom line. The metrics that decide profit are gross margin
+    percentage, inventory turnover, stockout rate, and labor cost
+    percentage, because a grocery store earns a small margin on a very
+    large volume and the two costs it controls are what it throws away
+    and who it schedules. Average ticket rises when the range is
+    complete enough that a customer finishes the whole trip in one
+    store. Capital intensity is in refrigeration and inventory; labor
+    intensity is in checkout and service departments; margins are thin
+    and are won on turns, waste, and schedule discipline.

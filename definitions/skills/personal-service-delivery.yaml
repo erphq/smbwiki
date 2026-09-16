@@ -92,3 +92,49 @@ automation:
 questions:
   - Which service scheduled today lacks the time or preparation its record indicates?
   - What information from a completed service would another provider need at the next visit?
+article:
+  what: >
+    The personal service delivery process carries a booked appointment
+    through the service itself: checking the client's current condition,
+    agreeing what will be done and what it will cost, preparing the
+    station and the client, delivering the service while watching for
+    reasons to stop, and updating the ticket and the client record with
+    what was done and what the next provider needs to know. It starts
+    when the client arrives against an appointment record and ends with
+    a completed service ticket. The service provider owns it in a barber
+    shop, a day spa, a massage practice, a nail salon, or a pet grooming
+    business.
+  why: >
+    It protects the client's safety and the provider's reputation. Skin,
+    hair, nails, muscles, health, and an animal's behavior change
+    between visits, and a service applied to last visit's condition can
+    injure or produce a result the client did not want. A service that
+    grows during the appointment without a new agreement runs over on
+    time and price and pushes every later client. A ticket that records
+    only a service code and a payment leaves the next provider to repeat
+    a product or an intensity the client reacted to. The record is what
+    makes the next visit safe.
+  how: >
+    The provider confirms the appointment by reviewing the appointment
+    record and the client profile: identity, requested service, the time
+    available, prior record, current condition, and known restrictions.
+    The service is then agreed with the client: result, method, limits,
+    price, timing, and consent, including any reason to defer or modify.
+    The station and the client are prepared: tools, products,
+    sanitation, protection, positioning, and comfort are ready before
+    work starts. During delivery the provider follows the agreed method
+    while monitoring condition, comfort, result, and timing, and stops
+    when a reason to stop appears. At the end the service ticket and the
+    client record are updated with the service, products used,
+    observations, aftercare given, price, and suggested follow-up.
+  controls:
+    - name: Condition check on every visit
+      note: A current condition and restriction check is recorded for repeat clients as well as new ones before the service begins, every time.
+    - name: Agreement recorded before work
+      note: Result, method, limits, price, and consent are captured on the ticket, and a change during the appointment gets a new recorded agreement.
+    - name: Station preparation checklist
+      note: Sanitation, tools, products, and protection are checked against the service before the client is seated, and the check is initialed.
+    - name: Stop reasons named in advance
+      note: The provider knows which observations end the service, and a stopped service is recorded with the reason and the client is told why.
+    - name: Ticket carries what the next visit needs
+      note: Products, methods, reactions, aftercare, and follow-up are on the ticket, and a ticket with only a code and a price is returned to the provider.

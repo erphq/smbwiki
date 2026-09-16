@@ -38,3 +38,48 @@ automation:
 questions:
   - Which material conclusion still lacks complete and reviewed evidence?
   - What workpaper version proves the released conclusion and who authorized it?
+article:
+  what: >
+    The accounting engagement control process is how an accounting firm
+    takes a signed engagement letter and a client's records and turns
+    them into a deliverable the firm is willing to put its name on: a
+    compilation, a review, an audit opinion, or a set of financial
+    statements. It starts when the engagement letter and client brief
+    fix the scope and period, and it ends when a partner authorizes
+    release against a locked workpaper file. The engagement partner owns
+    it, with a preparer and a reviewer working under that authority.
+  why: >
+    The deliverable carries the firm's signature, and a signed
+    conclusion that rests on an unreconciled balance can misstate the
+    client's position and force a correction or withdrawal after
+    lenders, investors, or tax authorities have relied on it. Without
+    engagement control, support is rebuilt after the reviewer asks for
+    it, final versions circulate by email outside the workpaper file,
+    and nobody can say which version of the evidence the released
+    conclusion actually rests on. The process also protects
+    independence, because the framework and the reviewer are named
+    before any work is done.
+  how: >
+    The engagement partner opens the file by confirming, from the
+    engagement letter and client brief, the scope, reporting period,
+    framework, records to be obtained, deadlines, independence, and who
+    prepares and who reviews. The preparer then links every source
+    record to a workpaper, reconciles balances, investigates
+    differences, documents adjustments, and escalates anything that
+    cannot be supported. The reviewer clears review notes against the
+    evidence, the final evidence set is locked in the accounting
+    workpaper file, management representations are obtained where the
+    framework requires them, and the partner authorizes the deliverable,
+    so the released conclusion points to one workpaper version and one
+    signature.
+  controls:
+    - name: Engagement letter on file before fieldwork
+      note: Scope, period, framework, independence, and review responsibility are confirmed in writing before any client record is requested or any balance is touched.
+    - name: Source link on every material balance
+      note: Each material workpaper balance points to a source record, a reconciliation, and a conclusion, and a gap holds the file from review.
+    - name: Review notes cleared and recorded
+      note: Every reviewer note is answered with evidence and closed by name before the file moves toward release.
+    - name: Locked workpaper version at release
+      note: The evidence set is frozen and version-stamped when the deliverable is authorized, so the released conclusion can be traced to exactly what was reviewed.
+    - name: Management representations obtained
+      note: Where the framework requires them, signed representations are on file before the deliverable leaves the firm.

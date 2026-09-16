@@ -42,3 +42,64 @@ licenses:
 supply_chain:
   buys_from: [laboratory-supply-distributor]
   sells_to: [patient, payer, commercial-client]
+article:
+  operating_model: >
+    A medical laboratory runs on specimen flow. Orders and specimens
+    arrive by courier or collection, the laboratory technologist
+    accessions each one against the specimen order, checking identity,
+    container, collection time, and stability, and the worklist then moves
+    through the benches under quality control before the principal or a
+    designated reviewer releases the lab result. Specimen processing is
+    the load-bearing skill, with staff scheduling close behind because
+    benches and couriers have to match specimen stability windows and the
+    promised turnaround. The tension sits between turnaround and control:
+    instruments produce numbers fast, but a result released before
+    controls are reviewed, or a critical value that is not called, is a
+    patient safety failure the laboratory owns.
+  starting: >
+    The definition binds a CLIA certificate, the federal certificate
+    required for any facility that performs covered testing on human
+    specimens, with the certificate type matched to the complexity of the
+    tests offered and a laboratory director who meets the qualification
+    rules; many states add their own laboratory license, and some regulate
+    personnel too. Add the business registration, employer registration
+    before the first technologist is hired, medical waste and hazardous
+    materials handling permits, and payer enrollment if the laboratory
+    will bill insurers. The minimum team is a principal who serves as or
+    hires the laboratory director, a laboratory technologist, and a client
+    coordinator who handles ordering clients, invoicing, and receivables.
+    The first records to set up are the specimen order, the accessioning
+    record inside the laboratory information system, quality control logs
+    per instrument, the lab result, and the customer invoice, and the
+    skills that must work before the first specimen is accepted are
+    specimen processing, staff scheduling, invoicing, and accounts
+    receivable. Capital is instrument and facility heavy: analyzers,
+    refrigeration, a courier vehicle or service, and the information
+    system.
+  economics: >
+    Revenue is diagnostic testing billed to clients, patients, or payers
+    per ordered test, and contracted laboratory services that bundle
+    recurring testing and courier logistics under an account agreement.
+    Pricing is per test by a fee schedule or a negotiated account rate,
+    and payer reimbursement is often fixed, so gross margin depends on
+    reagent and consumable cost per test and on batching enough specimens
+    through each instrument run. Specimen turnaround time decides whether
+    ordering clients stay, utilization rate of technologists and
+    instruments decides whether fixed costs are covered, and days sales
+    outstanding decides cash because payer claims settle slowly and
+    denials must be reworked. Booking rate reflects whether inquiries
+    become ordering accounts. The business is capital-intensive with high
+    fixed costs in instruments, reagents under contract, and qualified
+    staff, which means volume is the margin driver and a laboratory below
+    its instrument capacity loses money on every run.
+  benchmarks:
+    - scope: Employees per establishment, medical laboratories (NAICS 621511)
+      value: 14.0 paid employees per establishment
+      note: 232,333 paid employees in the week of March 12, 2023 across 16,635 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, medical laboratories (NAICS 621511)
+      value: 74,156 dollars per employee (2023)
+      note: Annual payroll of 17,228,940 thousand dollars divided by 232,333 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

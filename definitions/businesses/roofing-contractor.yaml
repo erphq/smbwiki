@@ -36,3 +36,58 @@ supply_chain:
   sells_to: [homeowner, general-contractor]
 seo:
   title: "Roofing Contractor: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A roofing contractor sells a measured assembly and then finds out
+    what is under it. The estimator measures, specifies the system, and
+    quotes, the office manager pulls the permit and orders material to
+    the site, and the crew lead and field crew tear off, inspect the
+    deck, repair, dry in, and install, with photographs and quantities
+    of deck and flashing damage sent for customer approval while the
+    condition is still visible. Install project and quoting are the
+    load-bearing skills, and permits and inspections set the start
+    date. The week is governed by dry-in and the forecast: every active
+    area has to be protected before weather changes or the crew leaves,
+    so crew size, material delivery, disposal, and fall protection all
+    have to support the same start.
+  starting: >
+    In most states a roofing contractor needs a state roofing or
+    general contractor license, and nearly every city requires a permit
+    and inspection for a reroof, so licensing and permitting have to be
+    working before the first sale. Employer registration comes with the
+    first crew, and workers compensation and general liability coverage
+    are unavoidable and expensive in this trade because of fall
+    exposure; the business registration and sales tax registration
+    where materials are taxable round out the paperwork. Capital items
+    are a truck and trailer, ladders, fall protection, tear-off tools,
+    and nail guns, with shingles and underlayment bought per job from a
+    distributor and delivered to the roof. The minimum roles are an
+    owner-operator, an estimator, a crew lead, and field crew, with an
+    office manager handling permits, purchasing, and invoicing. The
+    first records are the job request, the quote, the permit, the work
+    order, job photos of the deck before cover, the purchase order, the
+    supplier invoice, and the customer invoice, and the skills that must
+    exist from the first roof are lead intake, quoting, permits and
+    inspections, purchasing, install project, and invoicing.
+  economics: >
+    Revenue is replacement projects, sold as a full system from
+    measurement and specification, and repair projects for bounded
+    leak, flashing, drainage, and storm-damage work. Replacement is
+    priced per square of installed roof and gross margin lives in the
+    labor hours per square, the material waste, the disposal, and how
+    deck repair and flashing changes are captured as approved change
+    orders instead of absorbed. Repairs carry a higher margin per hour
+    and feed the replacement pipeline. The metrics that decide profit
+    are project gross margin, schedule variance, quote win rate,
+    booking rate on inquiries, and days sales outstanding, which grows
+    when insurance claims sit between the invoice and the payment. The
+    trade is labor intensive and weather bound, with insurance cost
+    scaling with payroll, so a crew that installs more squares per day
+    with fewer callbacks is the whole margin story, and storm-driven
+    demand can double volume in one season and disappear the next.
+  benchmarks:
+    - scope: Establishments, employment, and average pay, NAICS 238161 residential roofing contractors
+      value: "25,307 establishments, 135,211 employees, average annual pay $64,681 (2024 annual averages)"
+      note: BLS Quarterly Census of Employment and Wages, private ownership, US total, 2024 annual averages; roughly five employees per establishment on average. The nonresidential code 238162 separately reports 6,256 establishments and 115,353 employees at $79,212 average pay.
+      source: https://data.bls.gov/cew/data/api/2024/a/area/US000.csv
+      source_name: Bureau of Labor Statistics, Quarterly Census of Employment and Wages, 2024 annual averages

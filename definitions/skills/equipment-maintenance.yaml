@@ -95,3 +95,45 @@ automation:
 questions:
   - Which out-of-service asset has no confirmed cause or next action?
   - What evidence supports the latest return-to-service decision?
+article:
+  what: >
+    The equipment maintenance process takes a maintenance request, whether a
+    reported fault or a planned service, and carries the asset through
+    triage, controlled shutdown, diagnosis, repair, loaded verification, and
+    a recorded return to service. It applies equally to the washers on a
+    laundromat floor, the treadmills in a gym, the glycol chiller in a
+    brewery, and the mill in a machine shop. It ends when the asset is back
+    in service with a maintenance log entry that records fault, cause, work,
+    parts, downtime, and follow-up. A maintenance technician owns it, or the
+    owner in a business too small to employ one.
+  why: >
+    An asset left available with a known fault is how a customer gets hurt,
+    a batch is lost, or a small failure becomes a large one. Clearing the
+    symptom with a reset and no finding brings the same intermittent fault
+    back once people depend on the machine again. Testing at idle passes a
+    repair that fails under heat, weight, or flow. The log is what turns a
+    technician's memory into an asset history the business can plan against,
+    and what proves the machine was safe when it was released.
+  how: >
+    The technician receives the maintenance request and triages the risk:
+    injury, water, heat, electrical, fire, product loss, and secondary
+    damage decide whether the asset is isolated now or scheduled. The
+    asset's out-of-service state is made visible at the machine and in the
+    system staff and customers use. Diagnosis follows, with symptoms,
+    operating conditions, readings, the service history, parts availability,
+    and any vendor support resolved before the repair is planned. The repair
+    is made and the asset is tested under a realistic load, with safety
+    functions exercised, before release. The technician records fault,
+    cause, work, parts, downtime, readings, and follow-up on the maintenance
+    log against the asset.
+  controls:
+    - name: Risk triage recorded on the request
+      note: The hazard assessment and the resulting isolation decision are written on the maintenance request before any other work starts.
+    - name: Out-of-service status in two places
+      note: The asset is tagged at the machine and marked in the booking or status system so nobody uses it in the interim.
+    - name: Causal finding before parts
+      note: The log states the diagnosed cause and the evidence; a reset or adjustment without a finding keeps the request open.
+    - name: Loaded test before release
+      note: Return-to-service readings record the operating condition of the test, such as load, temperature, or flow, and the result.
+    - name: Maintenance log against the asset
+      note: Every request closes with an entry attached to the asset record so intervals and repeat faults can be seen.

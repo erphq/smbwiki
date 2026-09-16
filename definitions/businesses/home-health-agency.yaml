@@ -31,3 +31,58 @@ licenses:
 supply_chain:
   buys_from: [medical-supply-distributor]
   sells_to: [patient, payer]
+article:
+  operating_model: >
+    A home health agency schedules skilled visits into private homes
+    under a physician's plan of care. A referral arrives, often from a
+    hospital discharge, the care director confirms eligibility, orders,
+    and payer authorization, and visits are assigned to nurses,
+    therapists, and aides by discipline, frequency, geography, and
+    qualification. Each visit is documented on the care plan with
+    condition, medication observations, teaching, and response, and
+    missed or refused visits are recorded and escalated. Care plan
+    delivery and staff scheduling are the load-bearing skills, with
+    client engagement at intake deciding whether the episode will be
+    paid at all. The tension is between coverage and control: the agency
+    must deliver every ordered visit on time across a wide area with
+    staff it does not directly supervise in the home, while the payer
+    will deny the episode if the documentation, the orders, or the
+    timing fail its rules.
+  starting: >
+    Before the first patient, the agency needs the state home health
+    agency license, which in most states requires a licensed
+    administrator, a clinical supervisor, written policies, and a survey
+    of the office; billing public payers additionally requires federal
+    certification through an accreditation survey, an enrollment with
+    the payer, and, in many states, a certificate of need before the
+    license is granted. Add business registration, employer
+    registration, professional and general liability insurance,
+    background checks for every caregiver as the state requires, and a
+    compliance program for patient privacy. Capital is modest in
+    equipment but heavy in working capital, because staff are paid every
+    pay period while episode payments arrive months after the first
+    visit. The minimum team is a care director who is a registered
+    nurse, an office manager handling intake, scheduling, and billing,
+    and caregivers across the disciplines the agency will offer. The
+    first records are the client brief and engagement letter, the care
+    plan with signed orders, the medication record, the incident report,
+    the shift schedule, and the customer invoice. Client engagement,
+    care plan delivery, staff scheduling, and invoicing must work from
+    the first admission.
+  economics: >
+    Revenue is covered home health episodes, paid by a public or private
+    payer for a care period at a rate set by patient condition and visit
+    mix, and private duty visits billed by the hour or visit to the
+    patient or family. The pricing basis for covered work is set by the
+    payer, so the agency controls cost and documentation, and for
+    private duty it is set by the local market. Gross margin is visit
+    revenue less caregiver pay, mileage, and supplies, and it is decided
+    by how many visits a clinician completes in a day, which is a
+    scheduling and geography problem. The metrics that decide profit are
+    labor cost percentage, days sales outstanding, and incident rate,
+    because caregivers are the cost, payers are slow and deny incomplete
+    claims, and an incident can end a referral relationship or trigger a
+    survey. The business is labor-intensive with almost no fixed assets,
+    so margins live in visit density, in documentation that gets claims
+    paid the first time, and in a referral pipeline that keeps caseloads
+    full without overloading staff.

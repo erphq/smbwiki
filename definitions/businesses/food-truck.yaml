@@ -68,3 +68,53 @@ supply_chain:
   sells_to: [retail-consumer]
 seo:
   title: "Food Truck: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A food truck is a production kitchen that has to be somewhere
+    specific at a published time. The week is a location schedule, prep
+    in a commissary or on the truck, loading, travel, setup with power
+    and water, a service window in which the line is limited by the
+    equipment and people inside, and a closeout that stores food safely,
+    handles waste, cleans, restocks, and reconciles payment. Menu
+    planning, food prep, and service location planning are the
+    load-bearing skills, with order taking tuned to station capacity: a
+    menu wider than the truck can cook produces slow tickets, and a
+    location with no foot traffic produces nothing. The tension is
+    between a short menu that moves fast and the variety that draws
+    repeat customers.
+  starting: >
+    Day one needs a food service license from the state or local health
+    authority, which for a mobile unit usually means a vehicle
+    inspection plus a commissary agreement for prep, storage, and
+    wastewater, and a food handler permit for the people cooking; most
+    cities also require a mobile vending permit and a fire inspection
+    for the cooking equipment, and some limit where and how long a truck
+    can park. Business registration, sales tax registration, employer
+    registration once a line cook is hired, and vehicle registration
+    and commercial insurance on the truck complete the set. The minimum
+    team is an owner-operator and a line cook, with counter staff added
+    when the window is busy. The first records are the menu, recipe
+    cards, the prep list, the location schedule, purchase orders,
+    supplier invoices, and the order ticket, and the skills that must
+    work before the first service are menu planning, food prep, order
+    taking, food inventory, and service location planning.
+  economics: >
+    Revenue is street service, counter orders sold during a published
+    location and service window, and booked events, attendance at
+    private or organized events under agreed terms, which pay a
+    guaranteed minimum or a per-head rate. Menu prices are set against
+    recipe cost and the ticket a location will bear. Gross margin is
+    driven by food cost percentage and waste percentage, since a truck
+    cannot hold much and a slow day leaves prepped food unsold, while
+    labor cost percentage and ticket time set how many orders a window
+    can serve. Average ticket and order accuracy decide whether a
+    location is worth returning to. The truck itself is the main
+    capital item and a repair takes the whole business off the road, so
+    profit is judged after fuel, commissary rent, permits, and a reserve
+    for the vehicle.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, mobile food services
+      value: "$297,000 receipts per establishment; payroll 23.4 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 722330 (mobile food services, which covers food trucks, carts, and mobile canteens) in the 2022 Economic Census, establishments with payroll only; sales of $3.02 billion across 10,155 establishments owned by 10,062 firms, annual payroll of $705 million, 29,169 employees (about three per establishment). Owner-only trucks with no payroll are outside the count.
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector72/EC2272BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Accommodation and Food Services: Summary Statistics for the U.S., States, and Selected Geographies, EC2272BASIC (2022)"

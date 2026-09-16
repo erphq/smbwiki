@@ -37,3 +37,67 @@ org:
 supply_chain:
   buys_from: [sign-supply-distributor]
   sells_to: [individual-client, commercial-client, general-contractor]
+article:
+  operating_model: >
+    A sign shop runs on the approved proof. The estimator quotes from
+    message, dimensions, material, lighting, mounting, and site
+    conditions, the customer approves a proof that fixes content,
+    scale, color, and substrate, and the production manager releases a
+    production order with a routing sheet through printing, cutting,
+    routing, welding, wiring, painting, and assembly. The quality
+    inspector checks the piece against the proof, and the crew lead and
+    field crew install it with a lift and close the work order with
+    photos. Production control and production quality control are the
+    load-bearing skills, because a sign built to the wrong proof
+    version is scrap and a missed install date is a customer's opening
+    day. The tension is between custom one-off work and the machine
+    schedule that has to stay full.
+  starting: >
+    A shop needs floor space, a wide format printer, cutting and
+    routing equipment, finishing and assembly benches, and a bucket
+    truck or lift for installs, bought or leased before the first order,
+    with materials on account from a sign supply distributor.
+    Paperwork is the business registration, sales tax registration
+    since signs are tangible goods, employer registration for the first
+    operator, and general liability and vehicle coverage; illuminated
+    signs need a recognized electrical listing and in many states an
+    electric sign contractor or electrician license, and each installed
+    sign needs a permit from the city that the shop typically pulls on
+    the customer's behalf. The minimum team is an owner-operator, an
+    estimator, a production manager who also runs machines, a machine
+    operator, and a crew lead with field crew for installs, with
+    quality inspection and maintenance held by the production manager
+    at first. The first records are the quote, the customer order, the
+    production order, the routing sheet, the quality report, the
+    maintenance log, the delivery ticket, and the customer invoice, and
+    the skills that must work from the first job are quoting,
+    production control, production quality control, purchasing,
+    install project, and customer invoicing.
+  economics: >
+    Revenue is production orders sold by unit, lot, or project and
+    setup and engineering charged for custom design, permitting, and
+    site survey work that precedes fabrication. Pricing is material
+    plus machine time plus labor plus install, and gross margin is
+    decided by first-pass yield and scrap rate, since substrate and
+    vinyl wasted on a reprint are pure loss, and by equipment uptime,
+    because a down printer stalls every order behind it. Install work
+    carries its own margin and its own risk, tracked as install gross
+    margin, and permit delays sit between fabrication and payment. The
+    metrics that decide profit are first-pass yield, scrap rate,
+    on-time completion, equipment uptime, install gross margin, quote
+    win rate, and days sales outstanding, which stretches when general
+    contractors are the customer. The shop is equipment heavy and
+    skilled labor dependent, so the margin question is keeping the
+    machines scheduled with approved work and avoiding the rework that
+    proof version control exists to prevent.
+  benchmarks:
+    - scope: Profit margin on sales, sign companies, self-reported
+      value: 29.2 percent average (2019)
+      note: Signs of the Times 2020 State of the Industry survey, 149 responding companies; nearly 32 percent reported margins under 20 percent, and the report does not define whether the figure is gross or net. The expected margin for 2020 averaged 22.7 percent among 147 respondents.
+      source: https://signsofthetimes.com/2020stateoftheindustryreport/
+      source_name: Signs of the Times, 2020 State of the Industry Report (2019 data)
+    - scope: Establishments, employment, and average pay, NAICS 339950 sign manufacturing
+      value: "7,581 establishments, 76,480 employees, average annual pay $63,399 (2024 annual averages)"
+      note: BLS Quarterly Census of Employment and Wages, private ownership, US total, 2024 annual averages; about ten employees per establishment on average.
+      source: https://data.bls.gov/cew/data/api/2024/a/area/US000.csv
+      source_name: Bureau of Labor Statistics, Quarterly Census of Employment and Wages, 2024 annual averages

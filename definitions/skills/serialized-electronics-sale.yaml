@@ -37,3 +37,48 @@ automation:
 questions:
   - Which requirement, interface, accessory, or policy can still prevent successful use?
   - Does the unit record prove serial, condition, setup, warranty, and customer acceptance?
+article:
+  what: >
+    The serialized electronics sale process takes a customer's stated
+    need and the equipment they already own, and ends with one specific
+    unit leaving the store under a record that carries its serial,
+    condition, configuration, accessories, warranty route, and the
+    customer's acceptance. It starts with a job request checked against
+    the store's stock record and ends with a serialized product record
+    and a sales receipt. In an electronics store it belongs to the sales
+    advisor on the floor, with the store manager setting the open-box,
+    trade-in, privacy, and return rules the advisor applies.
+  why: >
+    It protects the customer's ability to use what they bought and the
+    store's ability to stand behind it. A television sold without the
+    interface the customer's receiver needs, a laptop sold without the
+    adapter that was missing from the open box, or a phone handed over
+    with the previous owner's data still on it produces a return, a
+    support dispute, or a privacy incident. Because the unit is
+    serialized, the record is also the store's evidence in a warranty
+    claim, a fraud check, or a stolen-goods inquiry.
+  how: >
+    The advisor first establishes what the customer needs the product to
+    do and what it must work with, meaning existing devices, interfaces,
+    physical dimensions, power, network, data to be moved, budget, and
+    the support they expect afterward. The advisor then verifies the
+    candidate product and the particular unit against the stock record,
+    checking model specifications, compatibility with what was
+    established, accessories that must ship with it, serial number,
+    condition, warranty status, any privacy work an open-box unit needs,
+    and its return status. At handoff the advisor records the unit
+    identity, the setup performed, how customer data was handled, the
+    customer's acceptance, the warranty route, any trade-in taken, and
+    the disposition of an open-box unit, and the sales receipt is issued
+    against that serialized product record.
+  controls:
+    - name: Requirement recorded before the model is chosen
+      note: The customer's use, existing devices, and interfaces are written on the job request so a compatibility gap is visible before the sale is rung up.
+    - name: Serial captured against the stock record
+      note: The unit serial on the receipt matches the stock record, and an open-box or returned unit carries its condition and prior-owner data status.
+    - name: Accessory dependency check
+      note: Cables, adapters, mounts, and licenses the product cannot work without are listed and either included or sold before the handoff.
+    - name: Customer acceptance at handoff
+      note: The customer signs or confirms the setup performed, the data handling, and the warranty route on the serialized product record.
+    - name: Return and support pattern review
+      note: Returns and support calls are traced back to unit records each month so recurring compatibility or condition problems change advice and assortment.

@@ -90,3 +90,47 @@ automation:
 questions:
   - Can every estimate line be traced to a recorded finding?
   - What happens operationally if the customer approves only part of the scope?
+article:
+  what: >
+    The repair estimating process turns the technician's inspection
+    findings into a priced scope the customer can decide on. It begins
+    when the inspection report is complete and ends when an estimate has
+    been issued that separates safety items, the stated concern,
+    maintenance, and optional work, with labor, parts, outside services,
+    fees, and tax tied to each finding and parts availability known. In
+    an auto repair shop it is owned by the service advisor, with the
+    parts manager confirming availability and the labor overlap between
+    operations.
+  why: >
+    The estimate is where a finding becomes money, and the customer's
+    trust follows the link between the two. A line with no matching
+    finding shifts the conversation from the vehicle to the price.
+    Bundled labor hidden across optional lines lets a customer decline
+    one line and unknowingly make another unsafe or impossible. A
+    special-order part priced without a source or arrival date leaves the
+    customer approving a repair the shop cannot schedule. The process
+    keeps each line traceable, each dependency visible, and each part's
+    timing known before approval.
+  how: >
+    The service advisor separates the findings from the inspection report
+    so safety, the stated concern, maintenance, and optional improvement
+    remain distinct choices. For each operation the advisor builds the
+    labor, parts, supplies, and outside services needed to finish it,
+    using the labor guide and parts pricing. The parts manager checks
+    availability and overlap, confirming source and arrival date for
+    special-order parts and identifying labor shared between operations
+    that changes price or the promised date if only some lines are
+    approved. The advisor issues the repair estimate so the customer can
+    see what fixes the concern, what can wait, and what changes if only
+    part of the scope is chosen.
+  controls:
+    - name: Every line traces to a finding
+      note: An estimate operation cannot be added without a matching finding on the inspection report or a recorded customer request.
+    - name: Required and optional work separated
+      note: Safety items, the stated concern, maintenance, and optional work are grouped so a customer's partial approval is a real choice.
+    - name: Dependencies disclosed on the estimate
+      note: Shared labor and required companion parts are stated on the lines they affect, so declining one line shows its effect on another.
+    - name: Parts source and date before presentation
+      note: Special-order parts carry a supplier, price, and expected arrival before the estimate is presented to the customer.
+    - name: Estimate versions retained
+      note: Each revision is stored so the shop can show which version the customer saw and later authorized.

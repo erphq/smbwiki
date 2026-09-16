@@ -93,3 +93,49 @@ automation:
 questions:
   - Which closed check cannot be matched to its recorded tender and settlement?
   - Which adjustment lacks a reason and responsible authority?
+article:
+  what: >
+    The restaurant payment closeout process settles each table and then
+    proves the whole shift. It begins when a guest check is ready to
+    present and ends when every closed check, tender, tip, void, comp,
+    discount, refund, and cash count for the service period has been
+    reconciled and a manager has signed the shift closeout with variances
+    and open checks named. In a full-service restaurant the check side is
+    owned by the server and the reconciliation and signoff by the general
+    manager or the manager on duty.
+  why: >
+    A restaurant's revenue leaves the building in small pieces, and each
+    unexplained edit is a piece gone. A void or comp with no reason and
+    no approving manager breaks the link between food served, inventory
+    used, tax owed, and money received. A tender settled outside the
+    check leaves a processor transaction with no table behind it. An
+    open check that crosses the cutoff makes the shift look short and
+    hands the problem to a team that never served the table. The process
+    keeps reason, authority, and settlement attached to each check so
+    the shift reconciles the same night.
+  how: >
+    The server completes the guest check from the order ticket so table,
+    seats, items, modifiers, added rounds, discounts, voids, comps,
+    taxes, and gratuity treatment agree with what was served. The server
+    presents and settles the check, recording split, transfer, tender,
+    tip, change, receipt, and any remaining balance once against the
+    current check on the payment record. The general manager controls
+    exceptions as they arise, so every reopen, void, comp, discount,
+    refund, walkout, charge dispute, and cash exception retains its
+    reason and the authorizing person. At cutoff the manager reconciles
+    the shift, matching closed checks against tender totals, processor
+    batches, the cash drawer, adjustments, tips, and the checks still
+    open. The manager then signs the shift closeout with variances,
+    unresolved checks, deposits, custody, and follow-up attached to the
+    service period.
+  controls:
+    - name: Manager approval on every void, comp, and discount
+      note: Each adjustment carries a reason code and the approving manager's credential before the check can close.
+    - name: Tender recorded against the check
+      note: Every card, cash, mobile, and gift payment is applied to a specific check, so no processor transaction stands alone.
+    - name: Open checks named at cutoff
+      note: The closeout lists every check still open at the cutoff with its table and server, so nothing crosses shifts silently.
+    - name: Cash counted by two people
+      note: The drawer is counted and the deposit prepared with a second person present, and both sign the count.
+    - name: Shift closeout signed and retained
+      note: The manager's signature, variances, and follow-up items are stored with the service period for the bookkeeper and the next shift.

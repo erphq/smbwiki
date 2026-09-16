@@ -23,3 +23,60 @@ revenue_model:
 supply_chain:
   buys_from: [jewelry-wholesaler, jewelry-repair-specialist]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A jewelry store manages a small number of expensive, individually
+    identified items. The week runs on the counter and the safe: sales
+    associates present and sell by item, the retail manager reconciles
+    payments and counts stock, and the stock associate receives, tags, and
+    moves pieces between showcase, safe, bench, and outside repair
+    specialist with a custody record at every handoff. Retail sale,
+    purchasing, and payment reconciliation are the load-bearing skills,
+    because a single missing ring is a large loss and a deposit or memo
+    item recorded against the wrong piece is a dispute. The tension sits
+    between showing enough stock to sell and tying up capital in inventory
+    that turns slowly.
+  starting: >
+    The definition binds no trade license. Day-one paperwork is the
+    business registration, sales tax registration since merchandise sales
+    are taxable, employer registration once the first associate is hired,
+    and a jewelers block insurance policy, which the insurer will only
+    write against a rated safe, an alarm, and documented stock procedures;
+    some cities also require a precious metals dealer or secondhand dealer
+    permit if the store buys from the public. The minimum team is a retail
+    manager who buys and reconciles, a sales associate, and a stock
+    associate, and the first records to set up are the stock record by
+    item, the inventory receipt, the sales receipt, the return record, and
+    the purchase order. Retail sale, retail replenishment, purchasing, and
+    payment reconciliation must work from the first day of trading.
+    Capital is inventory-heavy: the opening stock, showcases, a safe, and
+    bench tools for sizing and repair intake.
+  economics: >
+    Revenue is jewelry sales by identified item, stocked or on memo from a
+    wholesaler, plus repair and custom work such as sizing, engraving,
+    appraisal, and configured orders. Pricing is a markup on cost per
+    piece, so gross margin percentage is the first metric, but inventory
+    turnover is the one that decides profit because the store's capital
+    sits in the showcase: high margin on slow-turning stock can still
+    return less than a modest margin on pieces that sell within the
+    season. Average ticket, labor cost percentage, and stockout rate on
+    core sizes and styles fill in the picture. Memo goods and special
+    orders reduce inventory capital at the cost of margin, and repair work
+    carries a high margin on labor with little inventory, which is why
+    bench services stabilize a store's earnings when sales are slow.
+  benchmarks:
+    - scope: Pre-tax profit margin, retail jewelers
+      value: nearly 12 percent for high-profit jewelers versus a 4 percent median for all responding firms (fiscal 2013)
+      note: Jewelers of America 2014 Cost of Doing Business Report as summarized by National Jeweler; respondent count not stated in the article, and JA stopped publishing the report after this edition, so the figure is dated.
+      source: https://nationaljeweler.com/articles/8993-ja-releases-cost-of-doing-business-report
+      source_name: National Jeweler, JA releases Cost of Doing Business Report (fiscal 2013 data)
+    - scope: Employees per establishment, jewelry stores (NAICS 448310 under NAICS 2017)
+      value: 5.4 paid employees per establishment
+      note: 106,903 paid employees in the week of March 12, 2023 across 19,897 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, jewelry stores (NAICS 448310 under NAICS 2017)
+      value: 51,249 dollars per employee (2023)
+      note: Annual payroll of 5,478,648 thousand dollars divided by 106,903 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

@@ -101,3 +101,47 @@ automation:
 questions:
   - Which deliverable is closest to release without an identified reviewer?
   - Which engagement is consuming effort beyond its authorized scope or budget?
+article:
+  what: >
+    The professional service delivery process carries an engagement from
+    the signed engagement letter to an accepted deliverable and a closed
+    stage. It starts when a client has authorized scope, fee, and timing,
+    and it ends when the approved work product has reached the named
+    client recipient, acceptance and open items are recorded, and
+    unbilled time is reconciled. In an accounting firm, a law firm, or an
+    engineering firm it is owned by the professional running the
+    assignment, with a principal holding review and release authority
+    and a client coordinator closing the stage.
+  why: >
+    The firm's name goes on every deliverable, so the process is what
+    stands between a practitioner's draft and the client acting on it.
+    Without it, work drifts onto a superseded scope, the reviewer sees
+    the first complete version on the delivery day, and time sits
+    unrecorded until an invoice forces a reconstruction. Each of those
+    puts an unsupported conclusion, a missed requirement, or unbillable
+    effort under the firm's authority and leaves the principal unable to
+    say what was checked before release.
+  how: >
+    The professional plans the work from the engagement letter, turning
+    deliverables, methods, sources, reviewers, milestones, budget, and
+    client decision points into a plan the team can execute. Work then
+    proceeds against the current scope while assumptions, evidence,
+    issues, decisions, and effort are captured on the time record as
+    they occur. The principal reviews the work product for technical
+    sufficiency, scope, evidence, calculation, consistency, risk, and
+    presentation, and releases the approved version with its limitations
+    and requested decisions to the authorized client recipient, keeping
+    delivery evidence. The client coordinator then closes the engagement
+    stage by reconciling acceptance, follow-up, open items, records,
+    unbilled work, and the next authorized stage.
+  controls:
+    - name: Single current engagement version
+      note: Every team member works from the same scope and revision, and a change decision is recorded on the engagement before work proceeds under it.
+    - name: Named reviewer before the deadline
+      note: The reviewer and review date are set in the plan, so the work product reaches an independent principal with time to act on findings.
+    - name: Time recorded the day it is worked
+      note: Effort and issues are logged against the assignment daily, so budget consumption, staffing pressure, and unbilled value are visible before the invoice.
+    - name: Release evidence on file
+      note: The approved version, limitations, decisions requested, recipient, and delivery date are stored with the deliverable so the firm can show what was released and to whom.
+    - name: Stage closeout reconciliation
+      note: Acceptance, open items, unbilled work, and the next authorized stage are reconciled before the engagement stage is marked closed.

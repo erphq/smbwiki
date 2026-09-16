@@ -49,3 +49,59 @@ licenses:
       as_of: "2026-07-29"
 seo:
   title: "Optometry Practice: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    An optometry practice runs two paths from one exam: the clinical
+    visit and the product order. The receptionist schedules and checks
+    coverage, the clinical assistant does pretesting and intake, the
+    optometrist examines, prescribes, and decides on referral or return,
+    and the billing specialist files the claim for the exam and any
+    medical eye care. The second path starts at the dispensing counter:
+    frame or lens selection, measurements, coverage, patient payment,
+    lab order, receipt, quality check, fitting, and any remake, all tied
+    to the prescription. Clinical care, claims billing, and purchasing
+    are load-bearing. The tension is between exam throughput and
+    dispensing capture: a full exam schedule earns the fees, but the
+    margin is in the share of prescriptions that turn into eyewear or
+    contact lens orders at this counter instead of somewhere else.
+  starting: >
+    The optometrist license is required for the doctor providing
+    clinical services, and the practice needs the general layer of
+    business registration, sales tax registration because eyewear and
+    contact lenses are taxable retail in most states, and employer
+    registration once staff are hired. Vision plan and medical payer
+    credentialing take months and gate most of the exam and medical eye
+    care revenue, so it starts early. The exam lane, pretesting
+    equipment, and a frame board are the capital items, and a lab
+    relationship for lens work is in place before the first order. The
+    minimum team is an optometrist who is often the owner, a
+    receptionist, a clinical assistant, and a billing specialist, with
+    the office manager role held by the owner at first. The first
+    records are the appointment record, the patient registration and
+    insurance verification, the patient chart, the clinical note with
+    the prescription, the purchase order to the lab, and the supplier
+    invoice. Appointment scheduling, coverage verification, patient
+    intake, clinical care, claims billing, and purchasing must work from
+    the first exam.
+  economics: >
+    Revenue is eye examinations, corrective products (frames, lenses,
+    contact lenses), and medical eye care billed to medical payers for
+    conditions managed in the practice. Exam fees are set by vision
+    plans and are low; the product side carries the gross margin, and
+    the practice's price basis is the retail markup over the lab and
+    frame cost, less whatever the vision plan allows. The metrics that
+    decide profit are the appointment no-show rate, because an empty
+    exam slot also loses the sale that follows it, the clean claim rate
+    and days sales outstanding on both medical and vision claims, and
+    the recall reappointment rate, since an annual recall is the
+    practice's cheapest source of both an exam and a product order.
+    Labor is the largest cost, followed by cost of goods on eyewear and
+    rent; the practice is moderately capital-intensive in exam
+    equipment, and the margin improves as more exams convert into
+    product orders filled from this counter.
+  benchmarks:
+    - scope: Mean annual wage, optometrists employed by offices of optometrists
+      value: "$131,590 (May 2023)"
+      note: "Optometrists in NAICS 621320, 24,950 employed or 16.46 percent of the industry's 151,610 jobs; mean hourly wage $63.27. Dispensing opticians in the same offices averaged $42,610 and were 21.11 percent of employment."
+      source: https://www.bls.gov/oes/2023/may/naics5_621320.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 621320 Offices of Optometrists (May 2023)

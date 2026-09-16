@@ -38,3 +38,49 @@ automation:
 questions:
   - Which assumption or interface carries the greatest unverified consequence?
   - Does the check package identify the exact design revision that was released?
+article:
+  what: >
+    The engineering design verification process is the independent check a
+    firm runs on a design before it is released: a checker who did not
+    produce the work confirms the design basis, recalculates the critical
+    results, reviews the models and drawings, tests the interfaces, and
+    records every comment and its resolution in a check package tied to the
+    exact revision released. It starts when a design reaches a release
+    milestone and ends when the checked revision is authorized and the
+    deliverable and check package are issued together. An engineering firm's
+    discipline lead or a designated checker owns it, with the engineer of
+    record signing the release.
+  why: >
+    The check is what stands between a calculation error and a structure,
+    system, or process that relies on it. Without independence the designer
+    reviews their own assumptions and misses the same thing twice. Without
+    controlled inputs the checker verifies a load case that has since
+    changed. Without traceability the firm cannot show, in a claim or a
+    regulator's review, which revision was checked and by whom. The most
+    common failure is a checked calculation and an issued drawing that
+    quietly diverge because a late change was made after the check was
+    signed.
+  how: >
+    The checker reads the client brief and the design documents and confirms
+    the design basis: criteria, loads, controlled inputs, assumptions,
+    interfaces with other disciplines, methods, limitations, and the
+    responsible discipline. Then the independent check is performed.
+    Critical results are recalculated by a different method or tool where
+    practical, models and drawings are reviewed against the calculations,
+    interfaces are tested for consistency, and every comment is classified
+    by severity and logged. The designer resolves each comment and the
+    resolution is recorded. Deliverables are synchronized so drawing values,
+    model outputs, and calculations agree, deviations from the basis are
+    recorded, and the engineer of record authorizes the checked revision.
+    The check package and the deliverable are released as one set.
+  controls:
+    - name: Checker independent of the designer
+      note: The check is performed by someone who did not produce the calculation or drawing, and the check package names both people.
+    - name: Design basis frozen for the check
+      note: Criteria, loads, and inputs are fixed and listed in the package, and any change after the check reopens it.
+    - name: Critical results recalculated
+      note: The results with the greatest consequence are recomputed independently and the comparison is recorded in the package.
+    - name: Comment log with classification and resolution
+      note: Every comment carries a severity, a response, and a closure, and no critical comment is open at release.
+    - name: Released revision identified in the package
+      note: The check package states the exact revision it covers, and the deliverable issued carries that same revision.

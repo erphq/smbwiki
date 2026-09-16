@@ -90,3 +90,47 @@ automation:
 questions:
   - What portion of current utility use occurs outside paid machine cycles?
   - Did the last corrective action improve utility use without changing cycle results?
+article:
+  what: >
+    The utility monitoring process is how a laundromat owner reads water,
+    sewer, gas, and electricity bills against what the machines actually did
+    in the same period: cycle counts, operating hours, weather, hot water
+    demand, and known equipment changes. It starts when a bill arrives or a
+    meter is read and ends when any unexplained change in usage has been
+    traced on the floor to a leak, a failed control, a heating problem, or an
+    operating habit, and the next comparable period confirms the fix. The
+    owner or the store manager owns it, and the service technician is called
+    in when the cause is inside a machine or the boiler.
+  why: >
+    Utilities are one of the largest costs a laundromat carries after rent,
+    and most of the waste is silent. A flush valve that never closes, a water
+    heater cycling all night, a dryer with a stuck gas valve, or a ventilation
+    fan left running consume utilities while no customer is paying for a
+    cycle. Comparing bill totals without units, rates, and cycle volume
+    mistakes a tariff change or a hot summer for an equipment problem, and
+    cutting utility use blindly produces wet loads, poor washes, and repeat
+    cycles that cost more than the saving.
+  how: >
+    The owner aligns the service period first, placing meter dates, estimated
+    reads, billing days, demand windows, rates, and the cycle totals from the
+    cycle record on the same period so the bill and the machine data describe
+    the same days. Operating context is then normalized: open hours, machine
+    mix, program selection, weather, hot water need, and known outages explain
+    the legitimate part of any change. What remains is examined by base load,
+    usage per cycle, demand peaks, and time-of-day pattern to point at a
+    system or a location. The owner or technician then verifies on the floor,
+    checking meter movement, leaks, temperatures, burners, valves, drains,
+    controls, and idle equipment under real conditions. After the repair or
+    operating change, the next comparable period is compared to confirm that
+    the usage pattern moved without hurting cycle results.
+  controls:
+    - name: Units, dates, and rates on every review
+      note: Each bill is entered as consumption units, meter dates, billing days, and rate, and a review that only compares currency totals is sent back.
+    - name: Base load measured on a closed period
+      note: Usage during closed or idle hours is read from the meter at least once per billing period and recorded so overnight waste is visible.
+    - name: Usage per cycle tracked by period
+      note: Water, gas, and electricity per completed cycle are computed from the cycle record and the bill each period and kept in one table for comparison.
+    - name: Floor check written before the repair
+      note: The finding on the floor, with meter reading, location, and suspected cause, is recorded before a repair is ordered so the effect can be verified.
+    - name: Corrective result confirmed against cycle quality
+      note: The next comparable period is checked for both the utility change and any change in cycle time, repeat cycles, or customer complaints before the fix is called complete.

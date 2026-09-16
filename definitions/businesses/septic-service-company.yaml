@@ -25,3 +25,52 @@ revenue_model:
 supply_chain:
   buys_from: [wastewater-disposal-facility]
   sells_to: [homeowner, property-management-company]
+article:
+  operating_model: >
+    A septic service company runs a vacuum truck against a disposal
+    limit. The office manager takes the pumping request or the failure
+    call, the dispatcher matches it to a truck with the right hose reach
+    and remaining tank capacity, and the technician locates and uncovers
+    the tank, records levels and condition, pumps, checks the filter and
+    outlet, restores the site, and logs volume removed and where it was
+    discharged. Dispatch and field job execution are the load-bearing
+    skills, because jobs per day are bounded by tank capacity and the
+    round trip to the approved receiving facility. The tension is on
+    the failure call: the technician can see a defect, but repair is a
+    separate quoted job that needs the owner's authority before
+    anything in the system changes.
+  starting: >
+    The truck comes first: a vacuum tank truck with pump, hoses, and
+    the capacity to finish a day of routes, plus locating tools,
+    digging tools, and personal protective equipment. Most states or
+    counties license septage pumpers or haulers and inspect the vehicle,
+    and disposal requires an agreement with an approved wastewater
+    receiving facility and manifests for every load; system repair and
+    installation are licensed separately in many states, and real
+    estate transfer inspections often need a certified inspector.
+    Heavy trucks bring commercial driver and vehicle registration
+    requirements, and the business needs its registration, employer
+    registration for the first technician, and general liability,
+    pollution, and vehicle coverage. The minimum team is an
+    owner-operator who quotes and drives, one technician, and an office
+    manager who also dispatches. The first records are the job request,
+    the quote, the work order with job photos and volume removed, the
+    disposal record with the supplier invoice from the receiving
+    facility, and the customer invoice, and the skills that must exist
+    from the first route are lead intake, quoting, dispatch, field job
+    execution, and invoicing.
+  economics: >
+    Revenue is pumping and disposal priced per visit by tank volume,
+    access, and disposal cost, and inspection and repair sold as
+    separately approved work with a higher average ticket. Gross margin
+    on pumping is the technician hours and truck time per stop against
+    the disposal fee per gallon charged by the receiving facility,
+    which is a pass-through the company has to price correctly and
+    which rises when the nearest facility closes or restricts intake.
+    The metrics that decide profit are jobs per technician day, average
+    ticket, first-time fix rate, callback rate, and days sales
+    outstanding, with quote win rate showing whether observed defects
+    turn into approved repairs. The business is capital heavy for its
+    size because the truck is the capacity, so utilization of the truck
+    across the season, the distance to disposal, and route density
+    decide the margin more than the visit price does.

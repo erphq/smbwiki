@@ -70,3 +70,48 @@ products:
   - laundry-folding-machine
 seo:
   title: "Laundromat: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A laundromat sells machine time. A customer pays, a washer or dryer
+    activates, water and gas or electricity are consumed, and the cycle
+    completes; each vend is a transaction the operator can see on the
+    payment system without being in the store. The week runs on machine
+    uptime, cleanliness, and settlement: an attendant or the owner opens
+    and closes, clears lint and floors, handles refunds, and reports
+    machines that are down. Maintenance response is the load-bearing
+    skill, because one broken large washer shifts demand onto the rest
+    of the floor and shows up as queues and lost turns.
+  starting: >
+    Starting a laundromat is a build-out and equipment decision first.
+    The site needs water supply, drainage, gas or three-phase power,
+    and ventilation sized for the machine count, which is why many new
+    stores are existing laundromats bought and re-equipped or spaces
+    with the plumbing already in. Day-one paperwork is the business
+    registration, the certificate of occupancy, sales tax registration
+    where vends are taxable, and utility accounts in the business name;
+    some cities also require a self-service laundry permit and a
+    backflow prevention inspection. The minimum team is an
+    owner-operator and one attendant, with a maintenance technician on
+    call. The first records to set up are the machine transaction feed,
+    a collection log, a cleaning log, and a maintenance log, and the
+    skills that must exist from the first open are machine activation,
+    payment reconciliation, equipment maintenance, and facility
+    cleaning.
+  economics: >
+    Revenue is washer cycles, dryer time, and vending, priced per
+    machine size and cycle. Turns per machine per day drive the top
+    line: a store averaging four turns a day on its washers earns twice
+    what a two-turn store earns from the same equipment, so location,
+    hours, and uptime matter more than price. Utilities are the largest
+    operating cost after rent. The metrics that decide profit are turns
+    per machine day, utility cost per cycle, machine uptime, and cycle
+    failure rate, because a failed cycle costs a refund, the utility
+    spend, and a customer. Equipment is capital-heavy and depreciates
+    over a decade or more, which is why margins are judged after debt
+    service and a replacement reserve.
+  benchmarks:
+    - scope: Utilities as a share of gross revenue
+      value: 23 percent mean, 22 percent median
+      note: Owner-reported share of 2018 gross revenue spent on utilities, 2019 Coin Laundry Association survey by Readex Research, 253 responding store owners; 65 percent of stores reported between 15 and 29 percent.
+      source: https://coinlaundryassociation.com/wp-content/uploads/2019/08/IndustrySurvey19.pdf
+      source_name: Coin Laundry Association, 2019 Coin Laundry Industry Survey Results (2018 data)

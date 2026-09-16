@@ -91,3 +91,46 @@ automation:
 questions:
   - Which booked location still lacks one condition required to operate?
   - Which repeated location produces activity without enough usable service time?
+article:
+  what: >
+    The service location planning process decides where a mobile
+    operation such as a food truck will trade on a given day, and turns
+    that decision into a location schedule the crew and the public can
+    rely on. It starts when an opportunity appears, whether a host
+    invitation, an event, or a recurring lunch spot, and ends when the
+    day has been served and its sales, costs, and access problems have
+    been written back into the location history. In a food truck
+    business the owner-operator owns every step, from evaluating the
+    opportunity to recording the outcome.
+  why: >
+    It protects the service day from being consumed by things that have
+    nothing to do with cooking. A crowd can be real and the day still
+    lose money when the host fee, travel, setup time, a missing power
+    hookup, or a parking position with no foot traffic eats the service
+    window. It also protects the customer relationship, because a
+    published address that differs from where the truck actually parks
+    sends people to an empty curb and teaches them to stop checking.
+  how: >
+    The owner-operator evaluates the opportunity by looking at the
+    audience, the host or event, the expected service window, any sales
+    history at that spot, fees, travel, and whether the same date is
+    already committed. Before committing, the owner confirms the
+    operating conditions in writing, meaning permission, the exact
+    parking position, the arrival route, power, water, waste, restrooms,
+    security, a weather plan, and a named site contact. The location
+    then enters the operating calendar with its address, map point,
+    date, service hours, arrival time, contact, fees, site duties, and
+    cancellation route, which is the location schedule. The same record
+    is published to customers and used by staff for prep, loading,
+    travel, and setup. After service, sales, service time, waste, fees,
+    access issues, host performance, weather, and the repeat decision
+    are recorded against that location.
+  controls:
+    - name: Written operating conditions before the calendar entry
+      note: No location is committed until permission, position, utilities, and site contact are confirmed in a message the operator can produce later.
+    - name: One location record feeds every channel
+      note: The published address and hours come from the location schedule, so a change made there updates the crew brief and the customer post together.
+    - name: Outcome recorded with site cost
+      note: Every served day records fees, travel, setup, and usable service time alongside sales, so the repeat decision sees the full cost of trading there.
+    - name: Repeat decision reviewed against history
+      note: A location is rebooked only after its history, including host reliability and access problems, has been read by the operator.

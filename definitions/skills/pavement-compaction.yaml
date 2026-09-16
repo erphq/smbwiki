@@ -93,3 +93,51 @@ questions:
   - >-
     Which record proves pavement compaction was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The pavement compaction process is the rolling of a freshly laid
+    asphalt mat to its specified density before it cools past the
+    temperature at which it can still be worked. It matches the roller
+    type and pattern to the mat temperature and to the support
+    underneath, protects longitudinal and transverse joints and
+    unsupported edges, checks density as the passes are made, and
+    corrects roller marks and tears while the mat is still hot. It
+    starts from the site plan and the confirmed section and ends with a
+    test report of temperatures, passes, and density results. The paving
+    foreman owns it for a driveway paving contractor, with the roller
+    operator executing.
+  why: >
+    It protects pavement life, which is decided in the first minutes
+    after the mat is placed and cannot be recovered afterward. A mat
+    rolled too cold never reaches density and ravels; a mat rolled too
+    hot shoves and cracks; a joint left unrolled opens in the first
+    winter. Surface appearance hides all of it, so the owner sees a
+    smooth driveway and the contractor gets the call two seasons later.
+    The process also protects the schedule: correcting a low-density
+    area means cutting and replacing, and a weather window missed on a
+    small site is a lost day.
+  how: >
+    The foreman confirms the work basis before the paver starts: current
+    scope and revisions, approved limits and drainage, removed failed
+    material, a stable subgrade, the confirmed section, available mix,
+    the weather window, and traffic control. Field controls are set for
+    the roller operator: the breakdown, intermediate, and finish passes,
+    the roller pattern, the temperature range for each pass, joint and
+    edge handling, and where density will be checked. During compaction
+    the operator records mat temperature at delivery and at each pass,
+    the pattern used, density readings, and any tear, mark, or soft spot
+    corrected, and stops when the mix or the support differs from the
+    plan. Acceptance checks thickness, density, grade, smoothness,
+    drainage, joint quality, edge support, markings, and opening
+    strength, corrections are closed, and the test report is issued.
+  controls:
+    - name: Temperature logged at each pass
+      note: Mat temperature is read at delivery and before breakdown, intermediate, and finish rolling, and a reading outside the range stops that pass.
+    - name: Roller pattern written before rolling
+      note: Roller type, number of passes, overlap, and direction are set on the field sheet and confirmed with the operator at the start of the shift.
+    - name: Density checked in the mat
+      note: Readings are taken behind the finish roller while correction is still possible, and their locations are marked on the record.
+    - name: Joints and edges as a hold point
+      note: Longitudinal joints and unsupported edges are inspected and rolled before the adjacent pass proceeds, and the check is initialed.
+    - name: Test report tied to location
+      note: Every temperature, pass count, and density reading carries a station or grid reference so a failed area can be found and cut.

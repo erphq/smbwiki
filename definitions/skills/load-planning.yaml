@@ -91,3 +91,49 @@ automation:
 questions:
   - What tender fact still lacks shipper confirmation?
   - Can a carrier execute pickup and delivery using this tender alone?
+article:
+  what: >
+    The load planning process is how a freight brokerage turns an
+    accepted quote into a load tender a carrier can price, accept, and
+    execute without a phone call back. It reconciles what was quoted
+    with the shipper's actual order and specifies pickup, delivery,
+    commodity, equipment, handling, facility rules, contacts,
+    documents, and tracking cadence in one controlled version. It
+    begins when the shipper accepts the quote and ends when the tender
+    is published to sourcing. The freight broker who owns the account
+    runs it.
+  why: >
+    It protects the carrier commitment that sourcing is about to make.
+    A quote assumption that survives a changed order means the tender
+    needs different equipment, timing, or cost from what the shipper
+    agreed to pay. An appointment that exists with only one party gets
+    the driver refused at the gate. A freight description with weight
+    but no dimensions or packaging puts the wrong trailer, permits, or
+    securement on the load, and the failure shows up at pickup, when
+    the brokerage has the least room to recover.
+  how: >
+    The freight broker reconciles the accepted terms first, matching
+    rate, service, equipment, dates, accessorial rules, and assumptions
+    to the shipper's actual order and recording any reprice or approval
+    where they differ. Pickup and delivery are built next with
+    addresses, appointments, time zones, contacts, reference numbers,
+    check-in, loading, unloading, and facility restrictions stated
+    explicitly and confirmed with their source. Freight and equipment
+    are then specified: commodity, count, weight, dimensions,
+    packaging, temperature, securement, hazardous or sensitive
+    handling, and equipment detail, each traced to who confirmed it.
+    The tender is published with carrier-facing instructions, required
+    documents, tracking cadence, exception contacts, and commercial
+    rules in one controlled version that sourcing and execution both
+    use.
+  controls:
+    - name: Quote-to-order reconciliation recorded
+      note: Each difference between the quoted movement and the shipper's order is logged with the reprice or approval decision before the tender is built.
+    - name: Appointment confirmation source
+      note: Every appointment records who confirmed it, the reference, the time zone, and the facility contact so the driver's arrival is expected.
+    - name: Required freight fields complete
+      note: The tender cannot be published while commodity, count, weight, dimensions, packaging, or special handling remains blank.
+    - name: Single controlled tender version
+      note: Changes after publication create a new version with a change note, and sourcing and execution work from the current one only.
+    - name: Carrier self-sufficiency check
+      note: Before release the broker reads the tender as the carrier would and confirms pickup and delivery can be executed from it alone.

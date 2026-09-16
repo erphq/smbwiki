@@ -90,3 +90,47 @@ automation:
 questions:
   - Which completed job still lacks one fact required to invoice?
   - Can every invoice line be traced to authorized and completed work?
+article:
+  what: >
+    The invoicing process is how a business that does work for
+    customers on a job or engagement turns the completed work order
+    into a customer invoice that agrees with the authorized scope,
+    labor, material, tax, terms, deposits, and credits. It begins when
+    field or project staff mark work complete and ends when the invoice
+    has reached the customer's required contact or portal with a due
+    date and a payment route. A plumbing contractor, a law firm, and a
+    landscaping company all run it, usually through the office manager
+    or bookkeeper under the owner.
+  why: >
+    It protects cash flow and customer trust at once. Every day between
+    completion and a correct invoice is work the business is financing,
+    and an invoice with an unapproved change, a missing permit fee, or
+    the wrong recipient starts a dispute that delays payment further.
+    When the process is weak, the office bills from what was scheduled
+    instead of what was done, technicians are asked what to charge at
+    the end of the week, and invoices sent to the wrong address never
+    enter the customer's payable workflow at all.
+  how: >
+    The office manager confirms billable completion from the work
+    order, reviewing completed and incomplete scope, change approvals,
+    materials used, time, permit or inspection state, and customer
+    sign-off. The invoice is built with lines, quantities, rates, tax,
+    deposits, credits, retainage, and terms drawn from the governing
+    quote or service agreement. Differences are resolved before the
+    customer sees anything: missing authorization, unclear technician
+    notes, and price changes go back to the person who can settle them
+    while the job is fresh. The invoice is then issued and routed to
+    the customer's required contact and system with supporting
+    reference, due date, and payment route, and its delivery is
+    confirmed.
+  controls:
+    - name: Completion evidence before billing
+      note: Technician notes, test results, photos, and customer sign-off are attached to the work order before it can be marked billable.
+    - name: Invoice lines traced to authorization
+      note: Every line maps to the quote, agreement, or an approved change, and lines that exceed authorization are held for resolution.
+    - name: Account routing requirements on file
+      note: Each customer account records the required recipient, portal, purchase order reference, and format, and the invoice is checked against them.
+    - name: Unbilled work queue reviewed
+      note: Completed jobs without an issued invoice are listed at a set cadence and each one has an owner and the fact still missing.
+    - name: Delivery confirmation recorded
+      note: Portal acceptance, named recipient, or read confirmation is recorded so the receivables clock starts from a proven date.

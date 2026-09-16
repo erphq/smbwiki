@@ -95,3 +95,45 @@ questions:
   - >-
     Which record proves exterior water-shedding check was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The exterior water-shedding check process is the quality hold a siding
+    contractor runs before scaffold and lifts come down: the lead traces the
+    path water will take from the top of the wall through every transition,
+    window and door opening, penetration, cladding lap, flashing, and the
+    base drainage, and confirms each detail sheds water outward and onto the
+    next layer down. It starts when cladding on an elevation is declared
+    complete and ends with a quality report that clears the elevation or
+    lists what must be corrected while access still exists.
+  why: >
+    Cladding hides its own failures. A reverse-lapped flashing or a missed
+    kick-out looks fine on the day and rots the sheathing over three
+    winters, and by then the contractor is paying to strip a finished wall.
+    The check costs an hour per elevation while the scaffold is up; the same
+    correction after access is removed costs a lift rental and a day. It
+    also protects the manufacturer's warranty, which depends on the details
+    the check verifies.
+  how: >
+    The lead reads the construction plan and revisions and confirms that
+    sheathing was accepted, the substrate is dry, openings are complete, the
+    weather barrier is approved, flashing details are known, material was
+    acclimated, and access is in place. Field controls set the tracing route
+    from top to bottom on each elevation, the details to be checked at every
+    opening and penetration, the photograph required at each, and the hold
+    point that keeps the scaffold up until the report is issued. The lead
+    walks the elevation, records each detail as correct or deficient with a
+    location, notes concealed conditions, and stops when a detail differs
+    from the approved drawing. Acceptance checks drainage continuity,
+    fastening, clearances, joint layout, trim integration, appearance, and
+    manufacturer requirements, and the quality report is issued.
+  controls:
+    - name: Trace from top to base on every elevation
+      note: The check follows water from the upper transition down to the base drainage and records each layer it crosses.
+    - name: Every opening and penetration photographed
+      note: Head, jamb, and sill flashing at each opening and each penetration are photographed with a location before cladding is accepted.
+    - name: Scaffold held until the report clears
+      note: Access is kept on an elevation until the quality report has cleared it or the listed corrections are complete.
+    - name: Manufacturer detail compared in the field
+      note: Each flashing and clearance is checked against the manufacturer's published detail, and deviations are recorded.
+    - name: Corrections closed with a second photograph
+      note: Each deficiency is corrected and re-photographed, and the report shows the before and after by location.

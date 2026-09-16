@@ -22,3 +22,58 @@ revenue_model:
   - remove: [transport-charges, accessorial-charges]
 supply_chain:
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A local delivery service sells stops. The dispatcher builds routes
+    each morning from load requests and account schedules, assigns drivers
+    and vehicles, and watches live location, failed contacts, and
+    exceptions until every stop closes with a named recipient or an
+    authorized exception on the proof of delivery. Transport execution and
+    quoting are the load-bearing skills, with equipment maintenance third,
+    because a vehicle out of service on a scheduled route breaks every
+    promise on it. The tension sits between stop density and time windows:
+    the route earns more the more stops it holds, but each added stop
+    narrows the margin for a parking delay or a building that will not let
+    the driver in.
+  starting: >
+    The definition binds motor carrier authority only for covered for-hire
+    interstate operations; a service that stays inside one state follows
+    state and local rules instead, which can include a state carrier
+    registration or a commercial vehicle permit, so confirm the operating
+    territory before applying. Add the business registration, employer
+    registration before the first driver is hired, commercial vehicle
+    insurance with cargo coverage, and the vehicle registrations in the
+    business name. The minimum team is an owner-operator who quotes and
+    dispatches, one or two drivers, and a maintenance technician on call,
+    with the office manager role held by the owner until invoicing volume
+    grows. The first records to set up are the load request, the quote,
+    the bill of lading, the proof of delivery, the maintenance log, and
+    the customer invoice, and the skills that must work from the first
+    route are quoting, transport execution, customer invoicing, and
+    equipment maintenance. Capital is vehicle-heavy: vans or box trucks,
+    handling equipment, and delivery management software with driver apps.
+  economics: >
+    Revenue is scheduled local routes billed under account rates and on-
+    demand deliveries priced by zone, distance, time, or urgency. Route
+    work is priced per stop or per day and on-demand work per movement, so
+    revenue per driver hour depends on stop density and the share of
+    deliveries that complete on the first attempt. On-time delivery rate
+    and on-time pickup rate decide whether accounts renew, equipment
+    uptime decides whether the promised routes run, and quote win rate and
+    booking rate feed the on-demand side. Days sales outstanding matters
+    because account customers pay on terms while fuel, wages, and
+    maintenance are paid weekly. The business is labor and vehicle
+    intensive with fuel as a volatile cost, so margin is protected by
+    dense routes, low failed-stop rates, and a maintenance program that
+    keeps the fleet available.
+  benchmarks:
+    - scope: Employees per establishment, local messengers and local delivery (NAICS 492210)
+      value: 27.9 paid employees per establishment
+      note: 149,558 paid employees in the week of March 12, 2023 across 5,367 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, local messengers and local delivery (NAICS 492210)
+      value: 52,835 dollars per employee (2023)
+      note: Annual payroll of 7,901,850 thousand dollars divided by 149,558 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

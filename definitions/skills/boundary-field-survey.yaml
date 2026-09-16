@@ -94,3 +94,49 @@ questions:
   - >-
     Which record proves boundary field survey was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The boundary field survey process is how a land surveying firm
+    gathers the physical evidence that a boundary opinion rests on:
+    found and set monuments, occupation lines, improvements, and ties to
+    adjoining control. It starts when the survey purpose is defined and
+    the deeds, plats, and adjoining records have been pulled, and it
+    ends when the field crew's measurements close, the evidence is
+    recorded, conflicts are flagged, and a survey plat can be prepared
+    and signed. The licensed surveyor owns the opinion; the party chief
+    owns the field work and the notes.
+  why: >
+    Record dimensions are not the boundary; the evidence on the ground
+    is, and a crew that treats the deed call as truth can move a line
+    away from the monument that controls it. A monument not searched
+    for, an occupation line not noted, or a tie not taken to adjoining
+    control leaves the surveyor signing an opinion the evidence does not
+    support, and the neighbor's surveyor will find the gap. Without the
+    process, notes are reconstructed in the office, conflicts surface at
+    closing or in court, and the plat cannot be defended.
+  how: >
+    The party chief reads the survey purpose, the current deeds and
+    plats, the adjoining records, and the coordinate basis, and confirms
+    access, equipment checks, and the field safety plan before the crew
+    leaves. The field controls are then set: the monument search list,
+    the control ties to be observed, the occupation and improvement
+    features to locate, the measurement redundancy required for closure,
+    and the note format. In the field the crew records what was searched
+    for, what was found or not found and in what condition, occupation
+    and improvements, and every observation, and stops to consult the
+    surveyor when found evidence conflicts with the record. Back in the
+    office the measurements are checked for closure, the evidence is
+    reconciled into a boundary opinion, monuments set or found are
+    confirmed, the notes are completed, and the survey plat is prepared
+    and signed.
+  controls:
+    - name: Monument search recorded for every corner
+      note: Each corner is listed with what was searched for, found, or not found, and its condition, before the opinion is formed.
+    - name: Ties to adjoining control observed
+      note: Measurements to adjoining monuments or control are taken and recorded so the survey can be related to neighboring parcels.
+    - name: Closure check before the opinion
+      note: Field measurements are checked for closure within the required tolerance before the boundary is resolved.
+    - name: Conflicts flagged to the surveyor
+      note: Any disagreement between record calls and found evidence is written up and resolved by the licensed surveyor in the file.
+    - name: Signed plat with evidence references
+      note: The survey plat cites the monuments, records, and ties relied on and carries the surveyor's signature and seal.

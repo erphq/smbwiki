@@ -24,3 +24,55 @@ revenue_model:
 supply_chain:
   buys_from: [furniture-manufacturer, furniture-wholesaler]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A furniture store sells two things through one floor: stocked pieces
+    that leave from the store or warehouse, and configured orders
+    written against a manufacturer lead time and delivered weeks later.
+    The week runs on floor selling, receiving, and delivery routing.
+    Sales associates write the sale with the exact fabric, finish,
+    dimensions, and access conditions; the stock associate receives and
+    inspects inbound freight and assigns warehouse locations; the retail
+    manager schedules deliveries and resolves damage claims. Retail sale
+    and retail replenishment are the load-bearing skills, with
+    purchasing close behind. The tension is between the floor, where
+    samples must look good and occupy expensive space, and the
+    warehouse, where committed stock waits on delivery windows, because
+    a piece damaged on receipt or a missed delivery window turns a
+    closed sale into a return record.
+  starting: >
+    Day-one paperwork is business registration, sales tax registration
+    because furniture is taxable merchandise in most states, a
+    certificate of occupancy for a showroom with public access, and
+    employer registration once the first associate is hired; delivery
+    vehicles need commercial registration and insurance, and some cities
+    require a home improvement or delivery contractor registration for
+    in-home setup. Capital goes into floor samples, a warehouse or
+    backroom with a loading door, a delivery truck or a contract with a
+    delivery service, and manufacturer opening orders that usually carry
+    minimums. The minimum team is a retail manager who also buys, one
+    sales associate, and one stock associate who receives and loads. The
+    first records to set up are the stock record with a location for
+    every piece, the purchase order with the customer configuration
+    attached, the inventory receipt with condition notes, the sales
+    receipt with deposit and balance, and the return record. Retail
+    sale, retail replenishment, purchasing, and payment reconciliation
+    must work from the first open, because a deposit taken against a
+    wrong configuration is the most common early loss.
+  economics: >
+    Revenue is stocked and floor sales plus configured orders with
+    delivery, priced per piece with a delivery and setup charge that
+    customers compare against free-delivery competitors. Gross margin is
+    set at purchase: the spread between manufacturer cost and floor
+    price, less freight in, damage, and markdowns on discontinued
+    samples. Gross margin percentage and average ticket drive the top
+    line, because a store closes few transactions per day and each one
+    is large. Inventory turnover decides whether the margin becomes
+    cash, since floor and warehouse stock tie up capital for months and
+    rent is paid on the square footage it occupies. Stockout rate
+    matters less than in other retail because most sales are ordered,
+    but labor cost percentage rises quickly when commission-paid
+    associates are staffed for traffic that does not arrive. Capital
+    intensity is in inventory and delivery equipment; the margin
+    survives when deposits fund special orders and damage claims are
+    recovered from carriers and manufacturers.

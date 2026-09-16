@@ -87,3 +87,48 @@ questions:
   - >-
     Which record proves masonry layout was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The masonry layout process is how a masonry contractor establishes,
+    before any unit is laid, where every course, bond, opening, control
+    joint, corner, and elevation will fall so that the wall meets the
+    drawings and the other trades' work. It sets story poles, corner
+    leads, coursing, and interface dimensions from the construction
+    plan and the site benchmark, and it ends with a quality report that
+    records the layout the wall was built to. The masonry foreman owns
+    it with the layout checked by the superintendent.
+  why: >
+    It protects everything that follows in the wall. A layout error
+    becomes a cut course at a window head, a control joint through an
+    opening, a bond pattern that breaks at a corner, or a wall that
+    misses the steel embed by a course, and every one of those is
+    expensive once units are in mortar. Masonry locks layout,
+    structure, weather control, and finish into the same installed
+    work, so a layout that is wrong cannot be corrected without
+    demolition.
+  how: >
+    The foreman reads the current scope and revisions, then verifies
+    the approved sample, sound support, control lines, unit and mortar
+    supply, weather protection, embeds, and interface details. Layout
+    is set up as field controls: the benchmark and control lines,
+    coursing and story pole, bond and corner start, opening dimensions,
+    control joint locations, elevations at shelf angles and lintels,
+    responsibilities for each lead, hold points before the first
+    course, and the records to keep. During layout the crew records
+    quantities, observations, decisions, and dimensions that will be
+    concealed, and stops when a field condition such as a foundation
+    out of tolerance changes the planned method. At acceptance the
+    foreman checks line, level, plumb, bond, joint profile,
+    reinforcement, flashing, drainage, cleaning, and specified
+    appearance, closes corrections, and issues the quality report.
+  controls:
+    - name: Benchmark and control lines verified
+      note: Layout starts from the surveyed benchmark and control lines, checked against the plan before any story pole is set.
+    - name: Story pole approved against openings
+      note: Coursing is checked at every opening head and sill and at embeds before the pole is used to set leads.
+    - name: Foundation tolerance recorded
+      note: Foundation line and level are measured and deviations are recorded and resolved before the first course is laid.
+    - name: Control joint locations marked and checked
+      note: Joint locations are marked on the wall and confirmed against the plan and openings before units are placed.
+    - name: Corner leads checked by a second person
+      note: Each corner lead is checked for plumb, level, bond, and coursing by someone other than the mason who built it before the wall is run.

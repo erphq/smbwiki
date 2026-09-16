@@ -94,3 +94,61 @@ questions:
   - >-
     Which record proves commercial project closeout was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The commercial project closeout process gathers everything the owner
+    needs to occupy, operate, and warrant a finished building into one
+    controlled turnover: final inspections and certificates, test
+    reports, operator training, as-built drawings, warranties, attic
+    stock, lien releases, and a closed punch list. It starts as
+    substantial completion approaches and ends when the owner accepts
+    the closeout package. A commercial general contractor owns it
+    through the project manager, with the superintendent closing field
+    items and the project accountant collecting releases.
+  why: >
+    It protects final payment and the contractor's reputation after the
+    crews have left. Retainage stays unpaid while a single
+    subcontractor's warranty or lien release is missing. Systems tested
+    without a witnessed record get retested at the contractor's expense
+    when they fail in the first season. Missing as-builts turn every
+    future service call into an exploration. A punch item closed
+    verbally reopens as a warranty claim, and a closeout that ends with
+    a disputed exception costs more than the item was worth.
+  how: >
+    The project manager confirms the work basis by reading the current
+    scope and revisions against the construction plan and verifying
+    issued bid documents, coordinated trade boundaries, contractual
+    dates, review routes, and owner decisions. Field controls follow: a
+    closeout matrix listing each required item by trade, its owner, hold
+    points such as witnessed tests and authority inspections, and the
+    records each will produce. During the work the operator records
+    completed inspections, test results, training sessions, deliveries
+    of attic stock, and any changed condition, and stops when a
+    discovered condition alters the plan. Acceptance checks the
+    assembled package against the contract documents, authority
+    approvals, designer review, tested systems, and the owner's turnover
+    criteria, and the closeout package is issued after correction
+    closes.
+  controls:
+    - name: Closeout matrix by trade with owner
+      note: >
+        Every required inspection, test, warranty, release, and
+        document is listed per subcontractor with a named owner and
+        a current status.
+    - name: Witnessed test records before system acceptance
+      note: >
+        Each building system carries a test report signed by the
+        witness before it is listed as accepted on the matrix.
+    - name: Punch closure verified in the field
+      note: >
+        Punch items are closed only after the superintendent
+        verifies the correction on site and records the
+        verification.
+    - name: Lien releases matched to final payment
+      note: >
+        Final payment to each subcontractor is released against a
+        received lien release and warranty, tracked on the matrix.
+    - name: Owner acceptance recorded on the package
+      note: >
+        The owner's signed acceptance of the closeout package, with
+        any listed exceptions, closes the project record.

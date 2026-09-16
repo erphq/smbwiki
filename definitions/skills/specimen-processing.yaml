@@ -98,3 +98,51 @@ automation:
 questions:
   - Which specimen in process has an unresolved acceptance exception?
   - Which released result cannot be traced to an accepted analytical run?
+article:
+  what: >
+    The specimen processing process carries a test from the moment a
+    specimen and its order arrive at the laboratory to the moment a
+    verified result reaches the person who ordered it. It checks that
+    the patient, the specimen, and the order belong together, prepares
+    and routes the specimen without losing identity or stability, runs
+    the analysis under controls that prove the method was working,
+    reviews the result, and releases it with any critical notification
+    closed. In a medical laboratory it belongs to the laboratory
+    technologist on the bench, under a laboratory director who sets the
+    acceptance and release rules.
+  why: >
+    It protects the patient from a result that looks valid and is not. A
+    tube accepted with a mismatched identifier, a specimen that sat too
+    long before separation, or a run whose control was out and waved
+    through as instrument noise produces a number that a clinician will
+    act on. A critical value that reaches the record and never reaches a
+    qualified person is a missed treatment. The process is also what the
+    laboratory's accreditation inspects, so a gap in custody or control
+    evidence is a gap in the license.
+  how: >
+    The technologist accepts the order and the specimen together,
+    checking patient identifiers, the test ordered, specimen type,
+    collection time, container, volume, condition, transport, and
+    priority against the acceptance rules, and recording an authorized
+    decision on any exception. The specimen is accessioned, labeled,
+    separated or aliquoted, stored, and placed on a worklist with
+    custody preserved. The test is run on a validated method with the
+    instrument status, calibration, controls, reagent lot, maintenance,
+    and operator requirements satisfied. The result is reviewed for
+    control acceptance, flags, plausibility, repeat criteria, comparison
+    to prior results, interference, units, and reference information.
+    The verified result is released with the release authority, time,
+    and recipient recorded, a critical value is communicated with
+    readback, and the retained-specimen action is noted, all under the
+    same accession number.
+  controls:
+    - name: Patient identifier match at acceptance
+      note: The specimen and the order are matched on the required patient identifiers, and a mismatch is rejected or resolved by an authorized person on the record.
+    - name: Control acceptance before release
+      note: No patient result leaves the hold while a control in the same analytical run is outside its acceptance limits.
+    - name: Accession carries custody
+      note: Every handling step, storage location, and operator is recorded against the accession so the specimen's history can be reconstructed.
+    - name: Critical value readback
+      note: A critical result is communicated to a qualified recipient with readback and time recorded, with an escalation path if no recipient answers.
+    - name: Release authority recorded
+      note: The person or the autoverification rule that released each result is on the record, with the review criteria it passed.

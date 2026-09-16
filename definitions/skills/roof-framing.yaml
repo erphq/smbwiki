@@ -86,3 +86,50 @@ questions:
   - >-
     Which record proves roof framing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The roof framing process sets the structure that carries the roof,
+    meaning trusses or rafters, valleys, hips, blocking, bracing,
+    sheathing, openings, and connectors, in the sequence the engineer
+    specified. It begins when the wall framing below has been accepted
+    and the truss or lumber package, connector schedule, and current
+    drawing revision are on site, and it ends when layout, bearing,
+    fastening, bracing, openings, and plane have been checked and
+    recorded on a quality report ready for the framing inspection. In a
+    framing contractor it is owned by the lead framer or foreman, with
+    the company's quality checker or the inspector accepting the work.
+  why: >
+    The roof is the last structural stage before everything is covered,
+    so an error here is either found now or lived with. A truss set on
+    the wrong bearing, a hip or valley off the control line, a missing
+    hurricane tie, or temporary bracing removed before the permanent
+    bracing is complete can fail an inspection, hold up the roofer, or
+    fail under load. Layout errors made at the plate repeat through the
+    roof plane, the openings, and the finishes below. The process starts
+    from a checked basis, follows the engineered sequence, and leaves
+    evidence of bearing and connectors before sheathing hides them.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions, then verifying current dimensions, control lines, the
+    lumber or truss component package, connectors, openings, bearing
+    points, and that supporting wall work has been corrected and
+    accepted. The field controls set the erection sequence, the temporary
+    bracing plan, the crane or lift plan, who checks bearing and plumb at
+    each stage, the hold point before sheathing, and the photographs and
+    checklist the crew must leave. During erection the crew sets, braces,
+    blocks, and connects in sequence, recording quantities, observations,
+    and any decision a field condition forced, and stops when the plan
+    cannot be followed. Acceptance checks layout, bearing, fastening,
+    bracing, openings, plane, and inspection readiness, corrections are
+    closed, and the quality report is issued.
+  controls:
+    - name: Bearing and layout checked before setting
+      note: Wall plates, control lines, and bearing points are verified against the current drawings before the first truss or rafter is set.
+    - name: Connector schedule verified before sheathing
+      note: Every hanger, tie, and strap on the connector schedule is confirmed installed and photographed before the deck goes on.
+    - name: Temporary bracing per the truss manufacturer
+      note: The bracing plan is followed and checked daily until permanent bracing is complete, with each check recorded.
+    - name: Openings measured against the plan
+      note: Skylight, chimney, and vent openings are measured and recorded before sheathing so the next trade is never cutting into structure.
+    - name: Quality report issued before the inspection call
+      note: The framing inspection is requested only after the quality report shows all items accepted or corrected.

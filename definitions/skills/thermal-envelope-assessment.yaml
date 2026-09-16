@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves thermal envelope assessment was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The thermal envelope assessment process is the survey an insulation
+    contractor makes of a building before any insulation goes in: it maps
+    where the conditioned space ends, where the insulation is meant to sit,
+    which surfaces control air, how transitions and penetrations are handled,
+    and where access will limit the work. It begins when a job is released to
+    the insulation crew with a construction plan and ends with an inspection
+    report that fixes the boundary the crew will insulate and lists the
+    conditions that have to be corrected first. The estimator or lead
+    installer owns it, and the owner reviews it on jobs where the boundary is
+    unclear.
+  why: >
+    Insulation placed on the wrong side of a boundary, or against a leaking
+    air barrier, performs poorly for the life of the building and cannot be
+    seen once drywall is up. Voids, compression, wind washing, and bypasses
+    survive a visual inspection and show up as comfort complaints, ice dams,
+    condensation, and failed energy tests that the contractor is asked to fix
+    after the finishes are in. The assessment is also where the contractor
+    discovers that the space is wet, the ducts are missing, or a knee wall has
+    no air barrier, all of which change the price and the sequence.
+  how: >
+    The lead installer confirms the work basis from the current plan and
+    revisions, verifying that the air-control layer is complete, cavities are
+    dry, known leaks are closed, services are installed, the insulation system
+    is approved, and access is safe. Field controls are then written so the
+    crew can use them: the boundary marked on the plan and on site, the
+    sequence of areas, who checks each transition, the hold points before
+    covering, and the records to be kept. During the assessment the operator
+    records areas, depths, densities, transitions, penetrations, and access
+    limits, photographs concealed conditions, and stops when the field
+    condition differs from the plan. Acceptance checks a continuous thermal
+    and air boundary, full depth, correct density, protected clearances, and
+    documented concealed work, corrections are closed, and the inspection
+    report is issued.
+  controls:
+    - name: Boundary marked and agreed on the plan
+      note: The conditioned-space boundary is drawn on the construction plan and confirmed with the builder before the crew starts, so nobody insulates the wrong side.
+    - name: Air barrier checked before insulation
+      note: Every air-control surface along the boundary is inspected for continuity and open leaks, and gaps are listed for correction before the cavity is filled.
+    - name: Moisture and services verified
+      note: Cavities are confirmed dry and mechanical, electrical, and plumbing services are confirmed installed on the record before insulation is scheduled.
+    - name: Photo record of transitions and penetrations
+      note: Each transition, penetration, and clearance is photographed with its location before covering, so the concealed detail can be proven later.
+    - name: Inspection report closes the assessment
+      note: The report names the boundary, the corrections required, and who accepted the assessment, and is issued before the installation work package is released.

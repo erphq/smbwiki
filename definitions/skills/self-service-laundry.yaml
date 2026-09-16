@@ -87,3 +87,50 @@ automation:
 questions:
   - Which cycle outcome is being reported as complete while customers seek refunds?
   - Do the floor, payment system, and machine agree on current availability?
+article:
+  what: >
+    The self-service laundry process is what happens between a customer
+    paying to start a washer or dryer and that machine being ready for
+    the next person. The activation is validated, the running cycle
+    shows enough status to tell waiting from fault, interruptions are
+    handled safely, and completion or failure is recorded together with
+    the machine's availability state. It begins with a machine
+    transaction and ends with a cycle record. In a laundromat it belongs
+    to the attendant on shift, with the owner responsible for the posted
+    instructions, fault procedures, and refund rules the attendant
+    follows.
+  why: >
+    It protects the customer's paid value, the equipment, and the
+    floor's credibility. A washer that reports complete while the load
+    sits in cold water sends a wet load into a dryer and a complaint to
+    the counter, and a locked door with no recovery path leaves a
+    customer's clothes trapped while the attendant improvises around hot
+    water and a spinning drum. It also protects utilization, because an
+    out-of-order label that lags the repair keeps a working machine idle
+    through the busiest hours of the week.
+  how: >
+    The attendant, or the payment system on the attendant's behalf,
+    checks that the machine, the paid program, the price charged, and
+    the machine's start response agree before the cycle is treated as
+    active. While the cycle runs, program progress, remaining time, and
+    door state are visible on the machine or the floor display so a
+    customer or the attendant can tell normal waiting from a fault. When
+    a water, drain, heat, power, door, imbalance, or control fault
+    occurs, the machine routes to a safe stop and the attendant follows
+    the defined recovery path for that fault, including a refund or a
+    move to another machine. When the cycle ends, completion, duration,
+    readings, any fault, the refund or move, and the machine's
+    availability are written together into the cycle record, and the
+    floor label, the payment system, and the machine are brought back
+    into agreement.
+  controls:
+    - name: Activation match
+      note: A cycle counts as started only when the machine number, paid program, price, and start response agree in the transaction record.
+    - name: Fault recovery procedure per fault type
+      note: Door, drain, heat, and power faults each have a written safe-stop and customer recovery step the attendant follows, with a value-transfer rule for the paid cycle.
+    - name: One cycle record per activation
+      note: Completion, duration, readings, fault, refund or move, and resulting availability are recorded together on the same record, never as separate notes.
+    - name: Availability reconciliation each shift
+      note: The attendant walks the floor and confirms that labels, the payment system, and the physical machine state agree at the start and end of each shift.
+    - name: Refund and repeat-fault review
+      note: Refunds and fault codes are reviewed against machine number every week so a machine that keeps reporting complete on failed loads reaches maintenance.

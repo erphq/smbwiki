@@ -47,3 +47,58 @@ licenses:
       as_of: "2026-07-29"
 seo:
   title: "Chiropractic Clinic: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    The week is a stream of scheduled visits: initial evaluations that
+    take longer and produce a treatment plan, planned follow-up visits
+    delivered against that plan, re-evaluations, and same-day acute
+    requests fitted between them. The chiropractor and a clinical
+    assistant work the treatment rooms while the receptionist keeps the
+    book sorted by visit type and verifies coverage before the visit,
+    and the billing specialist sends claims from completed notes.
+    Clinical care and appointment scheduling are the load-bearing
+    skills, with claims billing close behind. The tension is between a
+    full book of short visits and the documentation each note needs to
+    support both the plan and the claim; a plan that drifts from its
+    stated goal produces denied claims and patients who stop coming
+    before the plan ends.
+  starting: >
+    A chiropractic clinic starts with a licensed chiropractor, since the
+    state chiropractic license is the credential the whole business is
+    built on and it must be active before the first patient is seen.
+    Around that sit the registrations every business needs: entity
+    registration, a tax identification number, employer registration
+    once the first assistant is hired, and, where the state requires
+    it, a clinic or facility registration and a business license from
+    the city. Payer enrollment and credentialing take weeks and should
+    start before opening if the clinic intends to bill insurance. The
+    minimum team is the chiropractor, a receptionist who also handles
+    coverage verification, and a part-time billing specialist or an
+    outsourced billing service; a clinical assistant is added when the
+    book fills. The first records are the patient registration, the
+    patient chart, the treatment plan, the clinical note, and the
+    recall list, kept in a practice management system paired with an
+    electronic health record. Patient intake, appointment scheduling,
+    clinical care, and claims billing must work from the first open.
+  economics: >
+    Revenue comes from initial evaluations, treatment visits, and
+    re-evaluations, priced per visit code and paid by insurers, cash
+    patients, or personal injury settlements depending on the payment
+    route agreed at intake. Treatment visits are short and repeat, so
+    the number of visits per plan and how many planned visits actually
+    occur are what fill the day. Gross margin is high on each visit
+    because the main cost is the chiropractor's time and the room; the
+    fixed costs of rent, staff, and software are covered once the book
+    reaches a steady visit count. The metrics that decide profit are
+    appointment no-show rate, clean claim rate, days sales outstanding,
+    and recall reappointment rate, because a missed visit cannot be
+    resold, a rejected claim delays cash, and a patient who is not
+    rebooked at the end of a plan is a new-patient acquisition cost
+    paid again. Labor intensity is moderate and capital intensity is
+    low, so margin depends on keeping the chiropractor's hours full.
+  benchmarks:
+    - scope: Median annual wage, chiropractors
+      value: 79,200 dollars, May 2025
+      note: "BLS Occupational Outlook Handbook; wage and salary chiropractors across settings; about 61,700 jobs in 2025 with employment projected to grow 9 percent from 2025 to 2035. Self-employed owners are outside the wage survey, so owner earnings differ."
+      source: https://www.bls.gov/ooh/healthcare/chiropractors.htm
+      source_name: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Chiropractors (May 2025 wages)

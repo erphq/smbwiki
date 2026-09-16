@@ -85,3 +85,49 @@ automation:
 questions:
   - Does every collection log use the same cutoff as its transaction report?
   - Which machines account for the current unexplained difference?
+article:
+  what: >
+    The payment reconciliation process closes a collection period for a
+    business that takes money through machines, meters, or self-service
+    terminals, by matching the transactions the equipment recorded
+    against the coin and cash physically collected and the card and
+    mobile amounts the processors settled. It starts with a fixed cutoff
+    on the machine transaction report and ends with a signed collection
+    log whose variance, if any, has a recorded explanation. The owner or
+    a trusted collector owns it in a laundromat, a self-storage
+    facility, or a convenience store with vending, and the bookkeeper
+    reviews the log.
+  why: >
+    It protects revenue from the two ways it leaks without anyone
+    noticing: a coin acceptor that miscounts or a card reader that drops
+    transactions, and a collection route where cash goes missing between
+    the machine and the deposit. Deposited without a cutoff, the money
+    and the transactions come from different periods and the variance
+    can never be explained, so it gets accepted as the cost of doing
+    business. Processor timing mistaken for loss sends staff
+    investigating money that arrives on the next settlement date. A
+    repeat difference on one machine is the earliest warning of a
+    failing acceptor or a skimming pattern.
+  how: >
+    The collector freezes the period by taking the machine transaction
+    report at a stated cutoff time, so late transactions cannot change
+    the total while money is being counted. Each payment stream is then
+    counted separately: coin, cash, card settlement, and mobile
+    settlement each keep their own total, so one cannot hide a shortage
+    in another. The operator matches each stream to the report and,
+    before treating any difference as loss, checks processor settlement
+    timing and the machine counters for hardware or recording causes.
+    The collection log is closed with the counted amounts, the reported
+    amounts, the variance, its explanation, and a signature, and it
+    stays attached to the period for the bookkeeper's review.
+  controls:
+    - name: Cutoff recorded on the log
+      note: The transaction report time and the collection time are both written on the collection log, and a mismatch between them reopens the count.
+    - name: Streams counted apart
+      note: Coin, cash, card, and mobile totals are counted and recorded separately, and a combined total is never the starting point for the match.
+    - name: Settlement timing checked before loss
+      note: Electronic differences are held against the next processor settlement before anyone is questioned, and the clearing date is noted on the log.
+    - name: Variance explained and signed
+      note: Each variance carries a cause of timing, hardware, handling, or recording and the collector's signature before the log closes.
+    - name: Repeat variance by machine
+      note: Differences are tracked by machine and location across periods, and a repeat triggers an acceptor inspection or a custody review.

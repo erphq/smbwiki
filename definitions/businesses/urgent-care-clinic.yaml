@@ -30,3 +30,58 @@ licenses:
 supply_chain:
   buys_from: [medical-supply-distributor]
   sells_to: [patient, payer]
+article:
+  operating_model: >
+    An urgent care clinic sells capacity to walk-in demand. The day
+    begins with rooms, a clinician, a clinical assistant, and a
+    receptionist ready for whoever arrives; patient intake and coverage
+    verification happen at the door, clinical care sets priority
+    alongside arrival order, and test turnaround, room cleaning, and
+    discharge documentation decide throughput while the waiting room
+    fills. Clinical care, patient intake, and claims billing are the
+    load-bearing skills, and the tension is between a full waiting room
+    and the transfer decision for a patient who belongs in an emergency
+    department. Volume is seasonal and unpredictable, so staff
+    scheduling against a forecast is what keeps wait times and labor
+    cost both tolerable.
+  starting: >
+    An urgent care clinic opens with a licensed physician, or the
+    supervising physician the state requires for advanced practice
+    clinicians, and the day-one paperwork is the business registration,
+    employer registration, professional liability coverage, a federal
+    laboratory certificate for in-house testing, controlled substance
+    registration if the clinic will prescribe them, enrollment and
+    credentialing with the payers it intends to bill, and a clinic
+    license or facility permit in the states that require one. The
+    minimum team is a clinician, a clinical assistant, a receptionist,
+    and a billing specialist, with an office manager over the front
+    desk. The first records are patient registration, the insurance
+    verification, the patient chart with clinical notes and treatment
+    plan, the insurance claim and patient statement, the recall list,
+    and the shift schedule. Patient intake, coverage verification,
+    clinical care, and claims billing must work on the first day,
+    because a visit that cannot be billed cleanly is a visit given away.
+  economics: >
+    Revenue is walk-in visits, paid by insurers at contracted rates or
+    by patients as self-pay, and tests and procedures performed during
+    the visit. The price of a visit is largely set by payer contracts,
+    so margin is made on volume per clinician hour, on the procedures
+    and tests attached to a visit, and on how much of each visit's
+    charge is actually collected. Clean claim rate and days sales
+    outstanding decide profit, because a denied or down-coded claim
+    turns a delivered visit into an unpaid one; appointment no-show rate
+    matters for the scheduled portion of the day, and recall
+    reappointment rate for follow-up visits. Labor is the dominant cost
+    and clinician hours are paid whether the waiting room is full or
+    empty, so staffing that tracks daily volume is the margin lever.
+  benchmarks:
+    - scope: "Median daily patient volume per urgent care center"
+      value: "56 patients per day (2022), of which 40 were provider visits"
+      note: "Median (50th percentile) reported by respondents to the 2022 UCA Operations Benchmarking Report, as summarized in the association's 2023 industry white paper; the balance was occupational medicine, workers' compensation, nurse, and digital health visits. Pre-COVID average was 32 patients per day."
+      source: https://urgentcareassociation.org/wp-content/uploads/2023-Urgent-Care-Industry-White-Paper.pdf
+      source_name: "Urgent Care Association, 2023 Urgent Care Industry White Paper (2022 Operations Benchmarking data)"
+    - scope: "Average cost of an urgent care visit versus an emergency department visit"
+      value: "171 dollars per urgent care visit against 1,646 dollars per emergency visit"
+      note: "A 2021 study cited in the UCA white paper; a cost-of-care comparison, not a revenue-per-visit benchmark for operators, but it frames the price ceiling payers apply to urgent care."
+      source: https://urgentcareassociation.org/wp-content/uploads/2023-Urgent-Care-Industry-White-Paper.pdf
+      source_name: "Urgent Care Association, 2023 Urgent Care Industry White Paper (citing a 2021 study)"

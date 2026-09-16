@@ -88,3 +88,49 @@ questions:
   - >-
     Which record proves masonry cleaning was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The masonry cleaning process is how a masonry contractor removes
+    mortar smears, efflorescence, and construction residue from
+    finished brick, block, or stone without etching the units, burning
+    out the joints, or staining the wall. It selects a test area, a
+    method, a dilution, a dwell time, rinsing, protection for adjacent
+    surfaces, and a sequence, proves them on the test panel, and then
+    applies them across the wall. It begins from the construction plan
+    and the approved sample and ends with a quality report on the
+    accepted appearance. The masonry foreman owns it.
+  why: >
+    It protects the visible finish that the whole masonry job will be
+    judged by. A cleaner that is too strong, left too long, or applied
+    to a dry wall bleaches units, dissolves joint faces, and leaves
+    streaks that cannot be undone, and overspray damages glass, metal,
+    and landscaping the contractor then pays to replace. Cleaning
+    before the mortar has cured drives residue into the pores, and
+    skipping the test area means the first mistake is on the whole
+    elevation.
+  how: >
+    The foreman reads the current scope and revisions, then verifies
+    the approved sample, sound support, control lines, unit and mortar
+    supply, weather protection, embeds, and interface details so the
+    wall is ready to be cleaned. Cleaning is set up as field controls:
+    the test area location, the product and dilution, dwell time,
+    pre-wet and rinse steps, protection for adjacent materials, the
+    sequence down the wall, hold points after the test panel and before
+    each elevation, and the records to keep. During cleaning the crew
+    records quantities, observations, decisions, and any detail that
+    will be hidden, and stops when weather, wall condition, or results
+    change the planned method. At acceptance the foreman checks line,
+    level, plumb, bond, joint profile, reinforcement, flashing,
+    drainage, cleaning, and the specified appearance against the
+    sample, closes corrections, and issues the quality report.
+  controls:
+    - name: Test panel approved before production cleaning
+      note: The method, dilution, and dwell are proven on a test area and accepted by the owner's representative before the wall is cleaned.
+    - name: Adjacent surface protection checked
+      note: Glass, metal, sealants, and landscaping are covered and inspected before any cleaner is applied, with the protection recorded.
+    - name: Mortar cure confirmed
+      note: Cleaning begins only after the mortar has cured for the period the plan and product require, and the date is recorded.
+    - name: Product and dilution logged per elevation
+      note: The cleaner, dilution, dwell, weather, and crew are logged for each elevation so results can be traced and repeated.
+    - name: Appearance compared to the sample
+      note: The cleaned wall is inspected next to the approved sample under natural light before the quality report is issued.

@@ -45,3 +45,76 @@ licenses:
     - remove: [liquor-license]
 seo:
   title: "Limited-Service Restaurant: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A limited-service restaurant is paid before it cooks. Counter, kiosk,
+    phone, and online orders land on the same stations, so the day is
+    built before the doors open: the head chef sets the menu and prep
+    list, line cooks prep to the expected mix, the general manager writes
+    the shift schedule, and counter staff and the shift lead run the order
+    queue and pickup during service. Order taking, food prep, and food
+    inventory are the load-bearing skills, because a wrong ticket or a
+    missing prepped item fails at the window in front of the customer. The
+    tension sits between ticket time and order accuracy on one side and
+    labor hours on the other: staffing for the peak is expensive,
+    understaffing it loses digital orders that arrive with a promised
+    pickup time.
+  starting: >
+    The definition binds a food service license from the state or local
+    health authority, issued after a plan review and inspection of the
+    kitchen, and food handler permits or training for covered food
+    employees in most jurisdictions. Add the business registration, sales
+    tax registration since prepared food is taxable almost everywhere,
+    employer registration before the first hire, a certificate of
+    occupancy, and where the space needs it a grease trap and hood
+    inspection; liquor licensing is outside this model. The minimum team
+    is an owner-operator, a head chef or lead cook, a line cook, a shift
+    lead, and counter staff, with the general manager role held by the
+    owner until volume needs a second manager. The first records to set up
+    are the menu, recipe cards, the prep list, the order ticket flow
+    through the point of sale and kitchen display, the purchase order, and
+    the shift schedule, and the skills that must work from opening day are
+    menu planning, food prep, order taking, food inventory, and staff
+    scheduling. Capital is build-out heavy: kitchen equipment,
+    ventilation, refrigeration, point of sale and online ordering, and the
+    counter itself.
+  economics: >
+    Revenue is counter orders paid at the register and digital orders
+    prepaid for pickup or delivery, priced per item from a menu. Food cost
+    percentage and labor cost percentage are the two metrics that decide
+    profit, and together they form prime cost, the share of every sale
+    that goes to ingredients and wages before rent and everything else.
+    Average ticket lifts revenue per transaction without adding labor,
+    order accuracy avoids remakes and refunds, ticket time keeps the
+    digital queue honest, and waste percentage shows whether prep was
+    sized to demand. Delivery platforms take a commission from digital
+    orders, so the same sale earns less through an app than at the
+    counter. The business is capital-heavy in build-out and thin in margin
+    per sale, which is why volume and throughput at peak, and the
+    discipline of prep to forecast, decide whether the store makes money.
+  benchmarks:
+    - scope: Labor cost as a share of sales, limited-service restaurants
+      value: 31.7 percent of sales, median (2024)
+      note: Salaries and wages including benefits; median of 30.0 percent among limited-service operators reporting a pre-tax profit and 34.1 percent among those reporting a loss; 2025 Restaurant Operations Data Abstract, financial and operating data from more than 900 restaurant operators nationwide.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/elevated-labor-costs-had-a-significant-impact-on-restaurant-profitability-in-2024/
+      source_name: National Restaurant Association, Elevated labor costs had a significant impact on restaurant profitability in 2024 (2024 data)
+    - scope: Food and non-alcohol beverage cost as a share of sales, limited-service restaurants
+      value: 32.4 percent of sales, median (2024)
+      note: Same 2025 Restaurant Operations Data Abstract, more than 900 operators nationwide; limited-service respondents only.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/restaurant-operators-kept-food-cost-ratios-in-check-in-2024/
+      source_name: National Restaurant Association, Restaurant operators kept food cost ratios in check in 2024 (2024 data)
+    - scope: Income before taxes and prime cost, limited-service restaurants
+      value: 4.0 percent of sales median income before taxes; prime cost a median of 65 cents per sales dollar
+      note: Prime cost is food, beverage, and labor combined; 2025 Restaurant Operations Data Abstract based on financial and operational data from more than 900 restaurants nationwide; the release does not state how many were limited-service.
+      source: https://restaurant.org/research-and-media/media/press-releases/new-resource-from-national-restaurant-association-provides-insights-into-operational-realities/
+      source_name: National Restaurant Association, press release on the 2025 Restaurant Operations Data Abstract (2024 data)
+    - scope: Employees per establishment, limited-service restaurants (NAICS 722513)
+      value: 18.4 paid employees per establishment
+      note: 4,965,080 paid employees in the week of March 12, 2023 across 270,088 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, limited-service restaurants (NAICS 722513)
+      value: 20,857 dollars per employee (2023)
+      note: Annual payroll of 103,557,315 thousand dollars divided by 4,965,080 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

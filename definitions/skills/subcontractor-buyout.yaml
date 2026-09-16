@@ -92,3 +92,53 @@ questions:
   - >-
     Which record proves subcontractor buyout was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The subcontractor buyout process closes the gap between a trade bid
+    and an executed subcontract on a commercial project. It reconciles
+    exclusions and alternates against the drawings and the other trades,
+    settles schedule duties, insurance, manpower, submittal
+    responsibilities, and closeout obligations, and writes them into a
+    contract before the trade mobilizes. It starts once the bid
+    documents, trade boundaries, and contract dates are settled and ends
+    when the trade's obligations have been carried through to the
+    closeout package. A commercial general contractor owns it through
+    the project manager or a dedicated buyout estimator.
+  why: >
+    It protects the project budget and the schedule from scope that fell
+    between trades. An electrical bid that excludes the fire alarm
+    conduit the fire alarm bid assumed, a drywall subcontract silent on
+    who patches after the mechanical rough-in, or an insurance
+    certificate that lapses mid-project each becomes a change order, a
+    delay claim, or an uninsured loss that lands on the general
+    contractor. Buyout is also where the profit on a job is made or
+    lost, because every unresolved exclusion is money the general
+    contractor will pay again.
+  how: >
+    The project manager reads the current scope and revisions, then
+    confirms issued bid documents, coordinated trade boundaries,
+    contractual dates, review routes, and owner decisions before
+    starting buyout. The buyout is set out as work limits by trade
+    package, a sequence that follows the schedule's need dates,
+    responsibilities between estimating, project management, and the
+    office, hold points where scope is reconciled before award, and the
+    buyout log and scope sheets everyone uses. During the work the
+    project manager reconciles each bid's exclusions and alternates
+    against the drawings and neighboring trades, negotiates schedule
+    duties, insurance, manpower, submittals, and closeout, records
+    decisions and price movements, and stops when an owner decision or a
+    design change alters the package. At acceptance each subcontract is
+    checked against contract documents, authority approvals, designer
+    review, tested systems, and owner turnover criteria, open items are
+    closed, and the trade's contribution enters the closeout package.
+  controls:
+    - name: Scope sheet per trade reconciled to neighbors
+      note: Each trade's inclusions and exclusions are written on a scope sheet and compared line by line with adjoining trades before award.
+    - name: Buyout log with budget variance
+      note: Every package records the budget, the awarded value, and the reason for any difference, and the operations lead reviews it.
+    - name: Insurance and license verified before execution
+      note: Certificates, endorsements, and licenses are on file and current before the subcontract is signed by either party.
+    - name: Schedule and submittal duties written into the contract
+      note: Milestone dates, manpower commitments, and submittal deadlines are contract exhibits, never assumptions carried in email.
+    - name: Closeout obligations listed at award
+      note: Warranties, as-builts, training, and attic stock are listed in the subcontract so the closeout package can be assembled from it.

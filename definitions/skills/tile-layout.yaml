@@ -86,3 +86,49 @@ questions:
   - >-
     Which record proves tile layout was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The tile layout process is the dry run a tile contractor performs before
+    any mortar is mixed: cuts are balanced so slivers do not land at doorways
+    and focal walls, patterns are centered, focal lines are resolved, movement
+    joints are located, and finished elevations are set, and the approved dry
+    layout is recorded so the setters can follow it. It starts when the
+    prepared substrate and the approved tile are on site and ends with a
+    layout the customer or general contractor has accepted and a quality
+    report that fixes the reference lines. The lead setter owns it, with the
+    estimator confirming that the layout still matches the quantity that was
+    sold.
+  why: >
+    Layout decides how the finished floor or wall looks and cannot be changed
+    once tile is set. A pattern that runs off center, a row of slivers along
+    the most visible wall, a movement joint left out where the substrate meets
+    a column, or a shower floor that does not fall to the drain are all layout
+    errors that turn into removal and replacement of finished tile. Writing
+    the approved layout down is what protects the contractor when the customer
+    later asks why the cut sits where it does.
+  how: >
+    The lead setter confirms the work basis by reading the current scope and
+    revisions and verifying a stable and flat substrate, cured work, the
+    approved tile and setting system, resolved movement joints, and
+    environmental control in the space. Field controls are then set: control
+    lines snapped and labeled, the pattern origin fixed, the sequence of
+    areas, who lays out and who checks, and the hold point where the customer
+    or general contractor approves the dry layout. During layout the operator
+    records elevations, control lines, cut sizes at perimeters, movement joint
+    positions, and any substrate condition found, and stops when a room
+    dimension or a substrate condition changes the planned pattern. Acceptance
+    checks bond coverage expectations, plane, joint alignment, movement
+    accommodation, drainage, lippage, grout, sealant, and the approved
+    appearance, corrections are closed, and the quality report with the
+    recorded layout is issued.
+  controls:
+    - name: Dry layout approved before setting
+      note: The pattern, cut sizes at perimeters, and focal lines are laid out dry and signed off by the customer or general contractor before mortar is mixed.
+    - name: Control lines recorded with dimensions
+      note: Snapped reference lines and the pattern origin are measured from fixed features and written in the quality report so another setter can rebuild them.
+    - name: Movement joints located on the plan
+      note: Every required movement joint is marked on the plan and on the floor during layout, including joints at columns, perimeters, and substrate changes.
+    - name: Slope checked to the drain
+      note: On wet areas the layout elevations are checked against the drain and the required fall before tile positions are fixed.
+    - name: Quantity reconciled after layout
+      note: Cut waste from the approved layout is compared with the sold quantity and any shortfall is ordered before setting begins.

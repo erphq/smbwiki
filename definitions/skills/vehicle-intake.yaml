@@ -90,3 +90,48 @@ automation:
 questions:
   - Can a technician reproduce each concern from the intake wording alone?
   - Who can approve added work, and how should that person be reached?
+article:
+  what: >
+    The vehicle intake process is the opening of a visit to an auto repair
+    shop, run by the service advisor at the counter or in the lane: the
+    vehicle and the person authorized to approve work are confirmed, the
+    driver's description of each concern is written in testable terms, the
+    arrival condition is recorded on a walkaround, and a repair order is
+    opened with one line per concern. It starts when the vehicle arrives
+    against an appointment record or as a walk-in and ends when the repair
+    order is released to the bay with contact and approval instructions. The
+    service advisor owns it and the shop manager sets the standard for what
+    intake must capture.
+  why: >
+    Everything the shop does later is built on the intake. A concern rewritten
+    as a diagnosis sends the technician to test an assumption and miss the
+    condition the driver actually experienced. A phone number without an
+    approval route leaves the bay waiting while the shop looks for someone who
+    can say yes. A blank walkaround turns a scratch, a warning light, or a
+    missing item into a dispute at pickup that the shop cannot win. The repair
+    order is the record that every later status call, estimate, and quality
+    check refers to.
+  how: >
+    The advisor confirms vehicle and authority from the appointment record,
+    capturing plate, mileage, keys, the contact route, and the person allowed
+    to approve work before the vehicle moves. The concerns are then written in
+    the driver's own words, preserving when, where, and under what conditions
+    each symptom appears, and the advisor asks the questions needed to make
+    each concern reproducible without turning it into a guess at the cause.
+    The arrival condition is recorded on the walkaround: fuel level, warning
+    lights, visible damage, and items left in the vehicle, with photos where
+    the shop uses them. The advisor opens the repair order with a separate
+    line for each concern so diagnosis and authorization can close each one
+    independently, and releases it to the bay with the approval contact and
+    any time or cost limit the customer set.
+  controls:
+    - name: Approval authority named on the order
+      note: The repair order records who can approve added work, how to reach them, and any limit they set, before the vehicle enters production.
+    - name: Concern written as a symptom
+      note: Each concern line records the driver's description with conditions, and a line that names a failed part without the symptom is rewritten.
+    - name: Walkaround completed before the bay
+      note: The arrival condition section, with fuel, warning lights, damage, and belongings, is completed and acknowledged by the customer before the vehicle is moved.
+    - name: One line per concern
+      note: Concerns are never combined on a single line, so each can be diagnosed, quoted, approved, and closed on its own.
+    - name: Mileage and identity read from the vehicle
+      note: Plate or VIN and mileage are read from the vehicle itself and recorded on the repair order, and a mismatch with the appointment record is resolved before release.

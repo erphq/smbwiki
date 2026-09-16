@@ -94,3 +94,47 @@ questions:
   - >-
     Which record proves unit masonry installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The unit masonry installation process is the laying of brick, block, or
+    stone by a masonry contractor to the bond, line, level, plumb, joint fill,
+    reinforcement, and daily height the construction plan calls for. It starts
+    when the approved sample, the support, and the control lines are in place
+    and ends with a quality report that records the accepted wall, the
+    reinforcement and flashing concealed inside it, and the cleaning. The
+    foreman owns it on site, the lead mason owns the line, and the owner or
+    project manager accepts the work with the general contractor.
+  why: >
+    Masonry is structure, weather barrier, and finish in one operation, and
+    the mistakes are permanent. A wall out of plumb carries through every
+    course above it; a missing flashing or weep passes water into the building
+    for its whole life; reinforcement, ties, and embeds laid in the wrong
+    course cannot be seen after the next course is set; and a stained or
+    smeared face costs an acid wash or a rebuild. Laying above the safe daily
+    height risks the wall itself. The field record of what went into the wall
+    is the contractor's only evidence once the joints are struck.
+  how: >
+    The foreman confirms the work basis from the current scope and revisions
+    and verifies the approved sample, sound support, control lines, unit and
+    mortar supply, weather protection, embeds, and interface details before
+    the crew is assigned. Field controls follow: the coursing story pole and
+    lines, mortar mix and batch control, daily height limits, reinforcement
+    and tie spacing, flashing and weep locations, the hold points at footings,
+    lintels, and before each concealed course, and the records the crew keeps.
+    During laying the operator records courses, batches, reinforcement, ties,
+    flashing, embeds, weather, and any support or interface condition found,
+    and stops when the field condition changes the planned method. Acceptance
+    checks line, level, plumb, bond, joint profile, reinforcement, flashing,
+    drainage, cleaning, and the specified appearance against the sample,
+    corrections are closed, and the quality report is issued.
+  controls:
+    - name: Sample panel approved and kept
+      note: The approved sample panel stays on site as the appearance standard, and the finished wall is compared with it at acceptance.
+    - name: Reinforcement and ties recorded before covering
+      note: Bar, joint reinforcement, tie, and embed locations are recorded with photos at each hold point before the next course conceals them.
+    - name: Flashing and weeps inspected in place
+      note: Flashing laps, end dams, and weep spacing are inspected and recorded before the course above is laid.
+    - name: Daily height and weather logged
+      note: Lifts laid per day and the weather protection in place are logged so the wall is never loaded beyond its cured strength.
+    - name: Mortar batches controlled
+      note: Mix proportions, batch times, and retempering limits are recorded so joint strength and color stay consistent across the wall.

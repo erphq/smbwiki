@@ -18,3 +18,69 @@ summary: >
 supply_chain:
   buys_from: [linen-service, hospitality-supply-distributor]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A hotel sells dated room nights it cannot store. Every day the room
+    map is reset: departures are checked out and folios settled,
+    housekeepers turn rooms and the status moves from dirty to clean to
+    inspected, maintenance clears requests that would otherwise take a
+    room out of service, and the front desk assigns arrivals against
+    what is ready. Reservation management and guest stay are the
+    load-bearing skills, with room turnover the operational clock
+    underneath them, because a room that is not inspected by check-in
+    time is unsold for that night. The general manager sets rates by day
+    and channel, watches the pickup, and schedules housekeeping against
+    forecast occupancy. The tension is between rate and occupancy on the
+    same night: dropping the rate fills rooms but trains the market, and
+    holding it leaves rooms empty that could have covered their variable
+    cost. The building runs around the clock, so overnight coverage,
+    security, and unresolved guest requests carry into the next shift.
+  starting: >
+    Day-one paperwork is business registration, a certificate of
+    occupancy for transient lodging, a hotel or lodging license from the
+    state or city where one is required, fire and life safety
+    inspection, employer registration, sales tax registration plus the
+    lodging or occupancy tax most jurisdictions levy on room nights, and
+    a food service permit and liquor license if the property serves
+    either; a franchise agreement, where chosen, adds brand standards,
+    fees, and a property improvement plan before opening. Capital is the
+    building or lease, furniture and fixtures per room, a property
+    management system connected to booking channels, key card locks,
+    laundry or a linen service contract, and life safety systems. The
+    minimum team is a general manager, front desk coverage across all
+    hours, housekeepers scaled to rooms per shift, and a maintenance
+    technician. The first records are the reservation request and
+    record, the room status board, the guest folio, the cleaning log,
+    the maintenance log, and the shift schedule. Reservation management,
+    guest stay, room turnover, and facility cleaning must work on
+    opening night, and the folio must settle every charge before the
+    guest leaves.
+  economics: >
+    Revenue is room nights sold under a rate plan and stay charges:
+    parking, food, amenities, and other property services posted to the
+    folio. The pricing basis is the room night, varied by day, season,
+    channel, room type, and length of stay, and the industry reads it
+    through occupancy rate, average rate, and revenue per available
+    room. Gross margin per additional room night is high because the
+    cost to service one more room is housekeeping labor, laundry,
+    utilities, and supplies, while the building, debt, and front desk
+    are fixed. The metrics that decide profit are occupancy rate,
+    average ticket per stay, labor cost percentage, and room turn time,
+    because housekeeping is the largest controllable cost and a slow
+    turn either delays check-in or adds staff. Equipment uptime matters
+    because a failed boiler or elevator takes rooms out of inventory.
+    Channel commissions reduce the net rate on booked rooms, so direct
+    bookings are worth more. The business is very capital-intensive and
+    fixed-cost heavy, so profit turns on running near the occupancy
+    where fixed costs are covered and managing the rate above it.
+  benchmarks:
+    - scope: Occupancy rate, all US hotels
+      value: 62.3 percent (full year 2025)
+      note: STR census of US hotel rooms, full-year 2025; down 1.2 percent on 2024, the first annual occupancy decline since 2020. Released January 20, 2026.
+      source: https://www.costar.com/products/str-benchmark/resources/press-releases/us-hotels-report-first-full-year-occupancy-revpar
+      source_name: CoStar / STR, US hotels report first full-year occupancy, RevPAR declines since 2020 (2025 data)
+    - scope: Average daily rate and revenue per available room, all US hotels
+      value: 160.54 dollars ADR; 100.02 dollars RevPAR (full year 2025)
+      note: Same STR full-year 2025 release; ADR up 0.9 percent and RevPAR down 0.3 percent on 2024. National averages across all chain scales; independent and economy properties run well below these figures.
+      source: https://www.costar.com/products/str-benchmark/resources/press-releases/us-hotels-report-first-full-year-occupancy-revpar
+      source_name: CoStar / STR, US hotels report first full-year occupancy, RevPAR declines since 2020 (2025 data)

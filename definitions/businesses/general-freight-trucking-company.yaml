@@ -24,3 +24,77 @@ revenue_model:
 supply_chain:
   buys_from: [truck-dealer, fuel-provider]
   sells_to: [shipper, freight-brokerage]
+article:
+  operating_model: >
+    A general freight trucking company sells loaded miles. A load
+    request arrives from a shipper or a freight brokerage, the
+    dispatcher checks commodity, weight, equipment, lane, appointment
+    windows, and the driver's remaining hours, and the load is released
+    as a trip. The driver picks up under a bill of lading, holds custody
+    through delivery, and returns a signed proof of delivery that starts
+    the invoice. The week runs on dispatch: keeping every tractor under
+    a load, minimizing empty repositioning miles, and matching pickups
+    and deliveries to driver hours and facility hours. Transport
+    execution and equipment maintenance are the load-bearing skills,
+    with quoting close behind because a lane priced without fuel, tolls,
+    and deadhead is a loss booked in advance. The tension is between
+    service and utilization: an on-time delivery may require an early
+    departure that strands the tractor in a market with no outbound
+    freight, and a breakdown takes a driver and a customer appointment
+    out at the same time.
+  starting: >
+    Before the first load, a for-hire interstate carrier needs a federal
+    DOT number and motor carrier operating authority, a process agent
+    designation, proof of liability and cargo insurance filed against
+    that authority, and registration under the unified carrier
+    registration and the fuel tax and apportioned plate agreements for
+    the states it will run through; intrastate-only operations follow
+    the state's own rules instead. Drivers need a commercial driver
+    license with the right class and endorsements, a medical
+    certificate, and enrollment in a drug and alcohol testing program
+    with a clearinghouse query on file. Add business registration,
+    employer registration, and the heavy vehicle use tax filing for each
+    tractor. Capital is the tractor and trailer, whether bought,
+    financed, or leased, an electronic logging device, and working
+    capital for fuel and payroll while invoices age. The minimum team is
+    an owner-operator who drives or dispatches, one dispatcher or office
+    manager handling load requests and billing, and a maintenance
+    arrangement. The first records are the load request, the quote, the
+    bill of lading, the proof of delivery, the customer invoice, the
+    driver qualification file, and the maintenance log. Lead intake,
+    quoting, transport execution, and customer invoicing must work from
+    the first trip.
+  economics: >
+    Revenue is linehaul and contract freight sold by lane, distance,
+    trip, or contract rate, plus accessorial and special work:
+    detention, extra stops, handling, storage, and authorized extras
+    that must be documented on the bill of lading to be collectible. The
+    pricing basis is the loaded mile or the trip, and gross margin is
+    what remains after fuel, driver pay, tolls, and the empty miles
+    needed to reach the next pickup. Because the tractor costs the same
+    to own whether it moves or sits, revenue per truck per week is the
+    number that matters, and it is driven by on-time pickup rate and
+    on-time delivery rate, which decide whether shippers keep tendering,
+    and by equipment uptime, since a truck in the shop earns nothing
+    while its payment continues. Days sales outstanding decides cash:
+    brokers and shippers pay on long terms, so small carriers factor
+    invoices or carry a working capital line. Quote win rate and booking
+    rate feed the pipeline. The business is capital-heavy and
+    margin-thin; small carriers survive on dedicated lanes, backhauls,
+    and disciplined maintenance.
+  benchmarks:
+    - scope: Average marginal cost of operating a truck, all sectors
+      value: 2.336 dollars per mile (2025)
+      note: Industry-average marginal cost per mile from ATRI's annual carrier survey of motor carriers, 2025 data; 1.854 dollars per mile excluding fuel; up 3.4 percent on 2024 and the highest recorded by the series.
+      source: https://truckingresearch.org/2026/07/new-atri-report-details-accelerating-costs-and-low-profitability-despite-cuts/
+      source_name: American Transportation Research Institute, An Analysis of the Operational Costs of Trucking, 2026 Update (2025 data)
+    - scope: Average operating margin, truckload carriers
+      value: below 1.0 percent (2025); negative 2.3 percent (2024)
+      note: Carrier-reported operating margins from ATRI's annual cost survey. 2025 truckload and refrigerated margins improved slightly but stayed below 1.0 percent, tank carriers averaged 4.0 percent, flatbed averaged a 0.5 percent loss. 2024 truckload margin was negative 2.3 percent with all sectors except LTL below 2 percent.
+      source: https://truckingresearch.org/2025/07/new-atri-report-shows-trucking-profitability-severly-squeezed-by-high-costs-low-rates/
+      source_name: American Transportation Research Institute, An Analysis of the Operational Costs of Trucking, 2025 Update (2024 data)
+    - scope: Empty (deadhead) miles as a share of total miles
+      value: 16.7 percent (2024)
+      note: Carrier-reported share of miles run without a load, ATRI 2025 update; the same report gives 0.93 drivers per truck and a 2.2 percent decline in truck capacity.
+      source: https://truckingresearch.org/2025/07/new-atri-report-shows-trucking-profitability-severly-squeezed-by-high-costs-low-rates/
+      source_name: American Transportation Research Institute, An Analysis of the Operational Costs of Trucking, 2025 Update (2024 data)

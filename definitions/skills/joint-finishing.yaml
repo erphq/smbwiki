@@ -89,3 +89,47 @@ questions:
   - >-
     Which record proves joint finishing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The joint finishing process is how a drywall contractor takes hung
+    board to the specified finish level: bedding tape, building
+    successive coats, treating fasteners and corners, controlling
+    drying between coats, sanding without damaging paper or filling the
+    building with dust, and delivering a surface ready for the
+    specified paint or texture. It begins when the space is enclosed
+    and dry and the board is accepted, and it ends with the surface
+    accepted against the construction plan and a punch list for
+    anything remaining. The finishing foreman owns it.
+  why: >
+    It protects the paint job and every trade that follows. Defects
+    hidden in the hanging or the coats reappear under paint and
+    finished lighting, when correction means repainting and often
+    refinishing whole walls. Finishing over wet framing or in an
+    unconditioned space cracks joints and pops fasteners months later.
+    Without a defined finish level and a recorded acceptance, the
+    painter, the general contractor, and the drywall crew argue about
+    whose work the blemish belongs to.
+  how: >
+    The foreman reads the current scope and revisions, then verifies a
+    dry and enclosed space, accepted framing and rough work, board type
+    and thickness, backing, control joints, access panels, and the
+    specified finish level. Those become field controls: coat sequence,
+    drying times, which areas get which level, corner and fastener
+    treatment, dust and safety limits, hold points between coats, and
+    the records the crew keeps. During the work the crew records
+    quantities, observations, decisions, and concealed conditions, and
+    stops when a field condition changes the planned method. At
+    acceptance the foreman checks board orientation, fastening, joints,
+    corners, finish level, surface tolerance, texture, protection, and
+    punch closure, then closes corrections and issues the punch list.
+  controls:
+    - name: Board acceptance before taping
+      note: Hanging is checked for fastener spacing, joint gaps, and damage, and corrections are made before the first coat hides them.
+    - name: Finish level stated per area
+      note: The specified level for each room and surface is written on the plan and the crew works to it, so lighting surprises are avoided.
+    - name: Drying verified between coats
+      note: Each coat is checked dry by touch and by room conditions before the next coat, and the record shows the date and conditions.
+    - name: Critical lighting inspection
+      note: Surfaces are checked under raking light matching the finished condition before the work is offered for acceptance.
+    - name: Punch list closed before paint
+      note: Every item is corrected, re-inspected, and signed before the painter is released to the area.

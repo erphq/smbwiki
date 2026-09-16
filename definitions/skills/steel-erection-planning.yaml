@@ -95,3 +95,52 @@ questions:
   - >-
     Which record proves steel erection planning was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The steel erection planning process turns the erection drawings and
+    the fabricator's shipping sequence into a site-specific plan: which
+    pieces go up in which order, from where the crane can reach them,
+    how the frame stays stable before its permanent bracing and
+    connections are complete, where the crew ties off, and what each
+    connection needs before the next lift. It starts when the erection
+    drawings, crane plan, and anchor conditions are approved and ends
+    when the plan has been carried out and the erected steel accepted in
+    a quality report. A structural steel erector owns it through the
+    erection superintendent.
+  why: >
+    It protects the crew from the most dangerous hours on a steel job,
+    the ones between a piece leaving the hook and its connections being
+    complete. A sequence that leaves a column line unbraced overnight, a
+    crane set where it cannot reach the last beam without repositioning
+    on a live road, or a truck loaded in the wrong order so the first
+    piece needed is at the back each turns into improvisation with a
+    load in the air. The plan is also what the general contractor, the
+    crane company, and the safety authority expect to see before the
+    first pick.
+  how: >
+    The superintendent reads the current scope and revisions, then
+    confirms approved erection drawings, stable access, the crane plan,
+    the piece sequence, connection information, anchor condition, and
+    the concrete strength notice before planning. The plan is written as
+    work limits by area and tier, a piece-by-piece sequence,
+    responsibilities for rigging, connecting, bolting, and inspection,
+    hold points where stability is checked before the next lift, and the
+    daily lift plan the crew reads. During erection the superintendent
+    records lifts made, temporary bracing installed and removed,
+    deviations from the sequence, and the reasons, and stops when a
+    field condition such as a late anchor bolt or a changed crane
+    position alters the planned method. At acceptance the erected work
+    is checked against erection tolerances, connection completion, weld
+    and bolt records, decking stability, and the required inspection
+    release, corrections are closed, and the quality report is issued.
+  controls:
+    - name: Stability check at the end of every shift
+      note: The plan states what bracing and connections must be complete before the crew leaves, and the condition is recorded daily.
+    - name: Crane plan matched to the sequence
+      note: Each pick's weight, radius, and set position are on the lift plan, and any crane relocation is a planned step with its own check.
+    - name: Shipping sequence confirmed with the fabricator
+      note: The load order of each truck is checked against the erection sequence before shipment so the first piece needed is reachable.
+    - name: Anchor and concrete readiness before setting columns
+      note: The anchor bolt survey and the concrete strength notice are on file for each footing before its column is lifted.
+    - name: Deviation recorded with the reason
+      note: Any change to the sequence is written on the field record with who approved it and what stability measure covered it.

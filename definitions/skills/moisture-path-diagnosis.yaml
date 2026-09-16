@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves moisture path diagnosis was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The moisture path diagnosis process is how a waterproofing
+    contractor finds where water is actually entering a building before
+    anyone proposes a repair. It begins with an inspection report
+    describing visible damage, and it ends with a test report that names
+    the source, the path the water travelled, and the evidence behind
+    that conclusion: weather history, knowledge of the wall or roof
+    assembly, moisture readings, selective water testing, and probes
+    opened in the assembly. The estimator or lead technician owns it,
+    and the repair scope is written from its result.
+  why: >
+    It protects the customer from paying for a repair that does not stop
+    the leak and the contractor from a callback and a warranty claim.
+    Visible damage is rarely at the entry point; water runs along
+    flashing, sheathing, and framing before it shows. Sealing the stain
+    without tracing pressure, path, termination, and drainage moves the
+    water to a new concealed route where it does more damage before it
+    is found again. The diagnosis also fixes the work basis for the
+    repair estimate, so a scope built on a guess is the first thing this
+    process prevents.
+  how: >
+    The technician confirms the work basis first: the current scope and
+    revisions, the identified moisture source hypothesis, whether the
+    substrate is sound and can dry, which system is compatible, prepared
+    transitions, the drainage route, and safe access. Field controls are
+    then set: test limits, the sequence of water testing from lowest to
+    highest, who reads instruments, hold points where the assembly is
+    opened, and the records the crew will keep. During the work the
+    technician logs readings, observations, probe locations, and
+    decisions, and stops if a condition changes the planned method.
+    Acceptance is checked against the repair criteria: specified
+    thickness, bonded transitions, sealed penetrations, protected
+    terminations, drainage, cure, and the required water test, then
+    corrections are closed and the test report is issued.
+  controls:
+    - name: Source hypothesis before testing
+      note: The inspection report and weather history are read and a candidate source named before any water test, so the test sequence has a purpose.
+    - name: Sequenced water test with hold points
+      note: Testing runs from the lowest element upward with a hold at each level, and the crew cannot skip a level that has not been cleared.
+    - name: Readings and probes tied to location
+      note: Every moisture reading and opened probe is recorded with a marked location and a photo so another operator can find it later.
+    - name: Changed condition stops the method
+      note: When the assembly differs from the drawing or an unexpected path appears, work stops and the basis is revised before it resumes.
+    - name: Test report issued before repair scope
+      note: The repair estimate references the test report, and a scope without a diagnosed source does not leave the office.

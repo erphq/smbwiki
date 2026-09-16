@@ -93,3 +93,49 @@ questions:
   - >-
     Which record proves selective demolition was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The selective demolition process removes chosen parts of a standing
+    building while the rest stays in service, from the day the removal
+    limits are marked on the construction plan to the day the cleared
+    area is accepted with a daily report of what was found behind the
+    finishes. It starts once the engineering survey, utility shutdown,
+    and hazardous-material disposition are settled, and it ends when the
+    remaining structure is stable, protected services are intact, and
+    waste has left by the agreed route. A demolition contractor owns it,
+    usually through a foreman working for a general contractor or a
+    building owner on a renovation or tenant fit-out.
+  why: >
+    It protects the people on the floor and the structure they are
+    standing in. A partition that carries load, a live conduit behind
+    drywall, or an asbestos-bearing mastic under old tile is invisible
+    until the first cut, and an unplanned removal sequence turns a
+    routine strip-out into a collapse, a flooded floor, or a
+    contaminated site. It also protects the design decisions that
+    follow, because the architect and engineer price the next phase from
+    the concealed conditions this process records.
+  how: >
+    The foreman reads the current scope and revisions, then confirms the
+    engineering survey, utility isolation, hazardous-material report,
+    exclusion zones, removal sequence, and disposal routes before anyone
+    picks up a tool. The plan is translated into marked work limits, a
+    removal order the crew can follow, named responsibilities, hold
+    points where an engineer or the general contractor looks before the
+    next stage, and the forms the crew fills in. During the work the
+    crew records quantities removed, concealed conditions exposed, and
+    any decision that changed the method, and stops when a field
+    condition differs from the plan. At the end the foreman checks the
+    cleared area against the specified removals, stable remaining
+    structure, protected services and finishes, segregated waste, and
+    clean limits, closes any correction, and issues the daily report.
+  controls:
+    - name: Readiness check before the first cut
+      note: Engineering survey, utility isolation, hazardous-material clearance, and disposal route are confirmed and dated on the work package before labor is assigned.
+    - name: Marked removal limits
+      note: Every wall, slab edge, and service to be removed is physically marked and photographed against the current plan revision, so a crew member can see the limit without reading a drawing.
+    - name: Stop rule on changed conditions
+      note: An unexpected load path, live service, or suspect material stops that removal until the engineer or general contractor records a decision on the field record.
+    - name: Hold point on remaining structure
+      note: Temporary shoring and the remaining structure are inspected and signed at each stage before the next removal is released.
+    - name: Daily report with concealed conditions
+      note: Each shift's report lists quantities, photos, and exposed conditions so the design team prices the next phase from what is actually there.

@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves sealcoating and striping was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The sealcoating and striping process restores and marks an existing
+    asphalt surface. It begins when the site plan fixes the limits,
+    drainage, and marking layout and the pavement has been assessed for
+    cracks, failed areas, and drainage, and it ends when cracks are
+    repaired, the surface is cleaned and dry, sealer is applied at the
+    specified rate and cured, markings are laid out and painted, and the
+    closed area is protected until the recorded release. In a driveway
+    paving contractor it is owned by the crew foreman, with the estimator
+    or owner accepting the work and issuing the test report.
+  why: >
+    A sealed surface looks finished whether or not the work under it was
+    done. Sealer applied over dust, moisture, or unrepaired cracks peels
+    within a season; a thin or uneven rate wears through in traffic
+    lanes; markings laid out before the surface has cured lift and smear;
+    an area opened early carries tire marks and tracking into the
+    customer's building. Surface appearance can hide weak subgrade, thin
+    base, or trapped drainage that shortens pavement life. The process
+    ties readiness, material rate, cure, layout, and closure to a record
+    so the customer's callback has an answer.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions and verifying approved limits and drainage, removed failed
+    material, stable subgrade, confirmed section, available mix, weather
+    window, and traffic control. The field controls set the crack repair
+    sequence, cleaning and drying checks, application rate and coats,
+    cure time before striping and before opening, the marking layout, and
+    the closure and signage plan. During the work the crew records areas
+    repaired, surface and weather conditions at application, material
+    used against area covered, cure times, and the layout as painted, and
+    stops when moisture, temperature, or a subsurface condition changes
+    the planned method. Acceptance checks thickness, density, grade,
+    smoothness, drainage, joint quality, edge support, markings, and
+    opening strength, corrections are closed, and the test report is
+    issued with the release time.
+  controls:
+    - name: Surface dry and clean before sealer
+      note: The foreman records surface temperature, moisture, and cleaning at the start of application, and holds the crew when the weather window closes.
+    - name: Material rate checked against area
+      note: Sealer quantity used is compared with area covered at each load so a thin coat is caught during the job and never after.
+    - name: Cure time recorded before striping and opening
+      note: Time of final coat, time striping began, and time the area opened are written on the record with the temperature.
+    - name: Layout matched to the site plan
+      note: Stall count, dimensions, accessible spaces, and fire lanes are checked against the site plan before paint goes down.
+    - name: Closure maintained until release
+      note: Barricades and signage stay in place until the foreman records the release time, and the customer is told when the area may open.

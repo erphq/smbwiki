@@ -50,3 +50,76 @@ licenses:
 supply_chain:
   buys_from: [pharmaceutical-wholesaler]
   sells_to: [patient, payer, retail-consumer]
+article:
+  operating_model: >
+    A pharmacy runs a fill queue and a front store on the same floor.
+    Prescriptions arrive electronically, by phone, and on paper, the
+    pharmacy technician enters them, adjudicates the claim, and prepares
+    the product, and the pharmacist verifies the prescription, the
+    prepared product, the label, and the patient before it leaves the
+    counter. The retail manager and stock associate run replenishment
+    for the front store and the dispensing stock, and the pharmacist is
+    also the person a patient asks about interactions, a prescriber
+    calls about a clarification, and an inspector asks for the
+    controlled substance records. Medication dispensing, retail
+    replenishment, and purchasing are load-bearing. The tension is that
+    a valid order can still wait on a prior authorization, a refill
+    timing rejection, out-of-stock product, or a pharmacist decision,
+    while the patient is standing at the counter expecting a promised
+    time.
+  starting: >
+    Day one requires the state pharmacy permit for the premises, which
+    is inspected before opening and tied to a pharmacist in charge, and
+    the pharmacist license for every pharmacist who performs the final
+    check; technicians are registered or certified in most states. A
+    federal controlled substance registration is required before any
+    controlled drug is stocked, and a national provider identifier and
+    a pharmacy processor identifier are needed before claims can be
+    adjudicated. Payer contracts through pharmacy benefit managers and
+    enrollment in federal programs take months and gate almost all
+    prescription revenue, so they start well before opening. The
+    general layer is business registration, sales tax registration for
+    the front store, and employer registration. Wholesaler credit terms
+    and the opening drug inventory are the largest capital items after
+    the build-out with its secure storage and counseling area. The
+    minimum team is a pharmacist who is often the owner, a pharmacy
+    technician, and a sales or stock associate for the front, with the
+    retail manager role held by the owner at first. The first records
+    are the prescription, the dispensing record, the purchase order, the
+    inventory receipt, the stock record, and the sales receipt.
+    Medication dispensing, purchasing, retail replenishment, and payment
+    reconciliation must work from the first fill.
+  economics: >
+    Revenue is prescription dispensing, paid mostly by payers under
+    contract terms with a patient copay, and front store sales of
+    nonprescription health and convenience merchandise. The price basis
+    on prescriptions is set by the payer, so the pharmacy's gross margin
+    per fill is the reimbursed amount less the acquisition cost, and
+    generic drugs carry most of the gross while brand drugs carry most
+    of the revenue at thin margin. Post-sale fee clawbacks and
+    reimbursement below acquisition cost on some drugs are the reasons
+    dispensing margins have been falling. The metrics that decide profit
+    are gross margin percentage on prescriptions and on the front store,
+    inventory turnover, because drug inventory is the largest asset and
+    expires, prescription fill time, which drives retention, the
+    stockout rate, the labor cost percentage, since the pharmacist is a
+    high-cost hour, and average ticket on the front store. The pharmacy
+    is capital-heavy in inventory and labor-heavy in licensed staff; net
+    margin is thin and depends on volume per pharmacist hour and on
+    services beyond dispensing.
+  benchmarks:
+    - scope: Gross profit margin, independent community pharmacies
+      value: 19.7 percent (2023)
+      note: NCPA Digest survey of independent pharmacy owners, described by NCPA as the lowest point in the report's ten-year lookback window; the same release counted 18,984 independent pharmacies in June 2024 and an average of 59,644 prescriptions per store.
+      source: https://ncpa.org/newsroom/news-releases/2024/10/27/ncpa-releases-2024-digest-report
+      source_name: NCPA, NCPA Releases 2024 Digest Report (2023 data)
+    - scope: Prescriptions per store, independent community pharmacies
+      value: 67,601 per year (2024)
+      note: NCPA Digest, up from 59,644 in 2023; 18,960 independent locations as of July 2025, 84 percent of prescriptions filled generic, 52 percent covered by Medicare Part D or Medicaid. NCPA did not publish the 2024 gross margin in this release.
+      source: https://ncpa.org/newsroom/news-releases/2025/10/19/ncpa-releases-2025-digest-report
+      source_name: NCPA, NCPA Releases 2025 Digest Report (2024 data)
+    - scope: Mean annual wage, pharmacists and pharmacy technicians in health and personal care retailers
+      value: "$126,990 pharmacists, $40,170 pharmacy technicians (May 2023)"
+      note: "NAICS 4561 Health and Personal Care Retailers, which includes chain and independent pharmacies; 134,050 pharmacists (12.09 percent of industry employment) and 237,010 technicians (21.37 percent) out of 1,108,980 jobs."
+      source: https://www.bls.gov/oes/2023/may/naics4_456100.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 4561 Health and Personal Care Retailers (May 2023)

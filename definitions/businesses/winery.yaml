@@ -53,3 +53,59 @@ licenses:
 supply_chain:
   buys_from: [vineyard, packaging-distributor]
   sells_to: [retail-consumer, commercial-client, beverage-distributor]
+article:
+  operating_model: >
+    A winery runs on the vintage calendar. Harvest and crush concentrate
+    a year's raw material into a few weeks, then fermentation, transfer,
+    aging, blending, treatment, and laboratory testing run through the
+    cellar for months or years before bottling and release, while the
+    tasting room, club allocations, and distributor orders sell finished
+    wine every week of the year. Beverage batch production and beverage
+    quality release are the load-bearing skills in the cellar, and
+    retail sale is the load-bearing skill at the front. The tension is
+    that cash goes into grapes, barrels, and bottles long before the
+    wine is released, and a lot's identity, volume, additions, and tax
+    status must be tracked across every vessel it passes through.
+  starting: >
+    A winery cannot produce before the federal bonded winery permit is
+    issued, and direct sales need a state winery or liquor license, so
+    the day-one list is the business registration, the federal permit
+    and bond, the state producer license, label approvals before any
+    bottle is sold, excise tax accounts, sales tax registration for the
+    tasting room, employer registration, and the shipping permits of
+    each state the club will ship to. Grapes come from a vineyard
+    contract or the winery's own acreage, and packaging from a
+    distributor account. The minimum team is a beverage production lead
+    who is the winemaker, a cellar operator, a beverage quality
+    technician who may be the same person early on, a retail manager or
+    sales associate for the tasting room, and an office manager for
+    invoicing and payables. The first records are the batch record per
+    lot, the lab result, the beverage release record, the packaging
+    record, the stock record separating bulk, bottled, committed,
+    sample, and tax-paid wine, and the sales receipt.
+  economics: >
+    Revenue is wholesale wine, bottled cases sold to distributors and
+    trade accounts at a discounted price, and direct and club sales
+    through the tasting room, allocations, club shipments, and permitted
+    direct shipment at retail price. The channel mix drives gross margin
+    percentage more than anything else, because a case sold direct keeps
+    the distributor and retailer margins; batch yield decides how many
+    cases a ton of grapes becomes, and batch release conformance decides
+    how much of it can carry the label. Average ticket in the tasting
+    room and booking rate on club sign-ups decide the direct channel,
+    equipment uptime matters in the compressed crush window, and days
+    sales outstanding runs long on distributor accounts. The business is
+    capital-intensive in land, tanks, barrels, and aging inventory, so
+    margin is judged after the carrying cost of wine that will not be
+    sold for years.
+  benchmarks:
+    - scope: "Tasting room and wine club share of the average winery's sales"
+      value: "53 percent (2025)"
+      note: "Silicon Valley Bank State of the US Wine Industry Report 2026, drawn from SVB's annual winery survey and peer group database; some regions rely on direct-to-consumer channels for as much as 78 percent of revenue. Respondent count not stated on the summary page."
+      source: https://www.svb.com/trends-insights/reports/wine-report/
+      source_name: "Silicon Valley Bank, State of the US Wine Industry Report 2026 (2025 data)"
+    - scope: "Operating margin, top versus bottom quartile wineries"
+      value: "11.9 percent operating income for the top quartile against negative 10.5 percent for the bottom quartile (2025)"
+      note: "SVB State of the US Wine Industry Report 2026; the top quartile also reported 8 percent sales growth while the bottom quartile saw a 10.2 percent sales decline. Industry sales declined 2.0 percent by cases and 1.6 percent by dollars in 2025."
+      source: https://www.svb.com/trends-insights/reports/wine-report/
+      source_name: "Silicon Valley Bank, State of the US Wine Industry Report 2026 (2025 data)"

@@ -31,3 +31,62 @@ skills:
 supply_chain:
   buys_from: [pet-supply-distributor]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A pet boarding business sells nights in enclosures, so the week is a
+    reservation calendar against kennel count, suitable space for each
+    size and temperament, and the staff on shift to feed, medicate,
+    exercise, clean, and observe. The client coordinator takes bookings
+    and runs check-in and pickup, the service provider delivers the care
+    plan and logs food, water, medication, elimination, behavior, and
+    cleaning, and the owner-operator sets the shift schedule and buys
+    supplies. Appointment scheduling, care plan delivery, and client
+    checkout are load-bearing. The tension is that the animals are there
+    around the clock while the staff are not: every shift change has to
+    hand over medication timing, behavior changes, and an animal that is
+    off its food, and any injury, illness, or escape risk needs an owner
+    reached and a record that survives the handover.
+  starting: >
+    Most cities or counties license kennels or boarding facilities, and
+    in some states the agriculture department inspects them; zoning is
+    the first gate, because animal noise and outdoor runs are restricted
+    in many districts. The general layer is business registration,
+    employer registration for the first shift worker, and sales tax
+    registration where boarding or retail add-ons are taxable. The
+    facility (enclosures, drainage, ventilation, fencing, isolation
+    space for a sick animal) is the capital decision and the reason many
+    operators buy an existing kennel. A veterinary relationship for
+    emergencies, vaccination requirements, and a written emergency
+    authority from each owner exist before the first stay. The minimum
+    team is an owner-operator, a client coordinator, and enough service
+    providers to cover morning and evening care every day of the week
+    including holidays, which is the hardest staffing problem in the
+    model. The first records are the appointment record, the client
+    profile with the animal's health, vaccine, feeding, medication, and
+    behavior details, the care plan, the medication record, the incident
+    report, and the service ticket. Appointment scheduling, client
+    consultation, care plan delivery, and client checkout must work from
+    the first night.
+  economics: >
+    Revenue is boarding nights, priced per night by enclosure size and
+    care level, and added care and activity (medication, play, grooming,
+    transport) sold on top. Occupancy decides everything: the building,
+    the insurance, and most of the staff cost the same at half full as
+    at full, so the margin arrives in the last enclosures filled, which
+    is why holidays and school breaks carry the year. The metrics that
+    decide profit are service utilization (occupancy against enclosure
+    count), average ticket, which rises with add-ons, the labor cost
+    percentage, because care must be staffed every day whether the
+    kennels are full or not, the appointment no-show rate, since a held
+    enclosure that goes empty on a holiday weekend cannot be resold, the
+    rebooking rate, and the incident rate, which drives veterinary
+    costs, refunds, and reputation. The business is capital-heavy in the
+    facility and labor-heavy in the care, and its margins depend on
+    peak-season pricing and add-on capture more than on the base nightly
+    rate.
+  benchmarks:
+    - scope: Mean annual wage, animal caretakers in other personal services
+      value: "$33,150 (May 2023)"
+      note: "Animal caretakers in NAICS 8129 Other Personal Services, 134,120 employed or 33.37 percent of the industry's 401,980 jobs; mean hourly wage $15.94. The industry group contains pet care services (boarding, grooming, sitting) alongside unrelated personal services."
+      source: https://www.bls.gov/oes/2023/may/naics4_812900.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 8129 Other Personal Services (May 2023)

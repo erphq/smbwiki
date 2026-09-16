@@ -97,3 +97,50 @@ questions:
   - >-
     Which record proves appraisal reconciliation and reporting was accepted
     before it was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The appraisal reconciliation and reporting process is the final
+    stage of an appraisal, where the appraiser weighs the sales
+    comparison, cost, and income approaches that apply, resolves the
+    conflicts between them, states one value opinion, discloses the
+    assumptions and limits behind it, and signs the report. It starts
+    when the analyses are complete under the scoped engagement letter
+    and ends when the signed appraisal report is delivered to the
+    client. The signing appraiser owns it; a reviewer or supervising
+    appraiser reads the report before it leaves the firm.
+  why: >
+    This is where an appraisal becomes an opinion someone will rely on.
+    Averaging approaches instead of reconciling them, leaning on an
+    approach the market does not use, or stating a value the evidence
+    does not support produces a report that reads well and fails on
+    review, in litigation, or when the loan goes bad. Undisclosed
+    assumptions leave the client unaware of what the value depends on.
+    Without the process, the report is a set of numbers with a
+    conclusion attached, and the appraiser cannot show a reviewer how
+    the evidence led to the opinion.
+  how: >
+    The appraiser reads the engagement letter and the scope revisions
+    and confirms the client and intended use, property rights, effective
+    date, assignment conditions, and that the market data and access
+    were sufficient. The reconciliation is then planned: which
+    approaches apply, how each will be weighted, which conflicts in the
+    evidence need resolving, and where a reviewer reads the draft. As
+    the report is written the appraiser records the reasoning for each
+    weight, the evidence that was rejected and why, and any assumption
+    or limiting condition the opinion depends on, and stops to reopen
+    analysis if the approaches cannot be reconciled. Before signing, the
+    draft is checked for credible supported analyses, disclosed scope
+    and assumptions, a reconciled value opinion, and compliance with the
+    report form, corrections are closed, and the appraisal report is
+    signed and delivered.
+  controls:
+    - name: Reasoned weighting of approaches
+      note: The report states why each applicable approach was given its weight, and an unexplained average is returned for revision.
+    - name: Conflicting evidence resolved in writing
+      note: Where approaches or comparables disagree, the reasoning for the resolution is written into the workfile and the report.
+    - name: Assumptions and limiting conditions listed
+      note: Every hypothetical condition and extraordinary assumption is stated in the report and matches the engagement letter.
+    - name: Reviewer sign-off before signature
+      note: A second appraiser reads the draft against the scope and the evidence before the signing appraiser delivers it.
+    - name: Workfile retained with the report
+      note: The workfile holding data, analyses, and reasoning is retained so the signed opinion can be reconstructed later.

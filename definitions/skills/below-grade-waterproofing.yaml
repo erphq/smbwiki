@@ -95,3 +95,53 @@ questions:
   - >-
     Which record proves below-grade waterproofing was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The below-grade waterproofing process is how a waterproofing
+    contractor installs the membrane, reinforcement, terminations,
+    penetration seals, drainage composite, protection, and backfill
+    controls that keep water out of a foundation or basement, as one
+    system. It starts when an inspection report has identified the
+    moisture source and the substrate is sound and dryable, and it ends
+    when the system has been placed, tested where required, and accepted
+    on a test report before backfill covers it. The waterproofing
+    foreman owns it, with the contractor's estimator responsible for the
+    system selection.
+  why: >
+    Everything this process installs is buried. A termination left
+    unsealed, a penetration wrapped without a proper boot, a membrane
+    placed on a damp or dusty wall, or drainage composite that does not
+    reach the drain lets water find a new route into the building, and
+    the fix means excavation. Treating the visible leak without tracing
+    pressure, path, and drainage moves the water somewhere else. Without
+    the process, the crew cannot show what was installed, the water test
+    is skipped, and the warranty claim arrives with no record to answer
+    it.
+  how: >
+    The foreman reads the inspection report, the scope, and any
+    revisions and confirms the moisture source, that the substrate is
+    sound and can be dried, that the selected system is compatible with
+    the substrate and conditions, that transitions are prepared, that
+    the drainage route exists, and that access is safe. Field controls
+    follow: surface preparation standard, membrane thickness and lap,
+    reinforcement at corners and transitions, termination detail,
+    penetration method, drainage composite placement, protection board,
+    backfill sequence, and hold points before each cover. During the
+    work the crew records thickness readings, lap and termination
+    locations, penetrations, cure times, and any substrate condition
+    that differs, and stops when moisture, cracking, or an unplanned
+    penetration changes the method. At acceptance the system is checked
+    for continuous thickness, bonded transitions, sealed penetrations,
+    protected terminations, drainage, cure, and the required water test,
+    corrections are closed, and the test report is issued.
+  controls:
+    - name: Substrate moisture and soundness check
+      note: The wall is tested for moisture and inspected for cracks and contamination before membrane is applied.
+    - name: Thickness readings at set intervals
+      note: Wet-film or dry-film readings are taken and recorded across the wall, and thin areas are recoated before cover.
+    - name: Termination and penetration detail photographed
+      note: Each termination and penetration is photographed with location before protection board or backfill covers it.
+    - name: Water test before backfill
+      note: Where the specification requires it, a flood or spray test is run and its result recorded before the excavation is closed.
+    - name: Backfill release signed
+      note: The foreman signs the backfill release only after protection and drainage composite are confirmed in place.

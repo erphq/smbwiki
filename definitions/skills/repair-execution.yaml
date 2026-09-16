@@ -93,3 +93,48 @@ automation:
 questions:
   - What evidence shows the repaired system was tested before handoff?
   - Which current vehicles are waiting inside a repair step, and why?
+article:
+  what: >
+    The repair execution process is the technician's work on the vehicle
+    between authorization and quality control. It begins when the repair
+    order and the work authorization agree on the approved lines and ends
+    when the repair has been performed to procedure, tested under the
+    conditions of the original finding, and written up as a repair
+    completion with parts installed, measurements, and unresolved
+    observations. In an auto repair shop, a tire dealer, or a dealership
+    service department it is owned by the automotive technician assigned
+    to the repair order.
+  why: >
+    Most comebacks are procedure gaps, never the main operation. A
+    fastener left short of torque, a fluid not topped, a harness routed
+    against a hot surface, or a trim clip broken on disassembly returns
+    as a leak, a noise, or a warning light after the customer has paid.
+    Work outside the authorization reaches the invoice or buries a new
+    finding inside the original job. A vehicle sitting in a bay with no
+    recorded hold reason blocks capacity nobody knows is blocked. The
+    process makes preparation, procedure, testing, and recording part of
+    the operation itself.
+  how: >
+    The automotive technician confirms the authorized lines by reading
+    the repair order against the work authorization and starts only from
+    the current approved scope, stopping when a new finding changes it.
+    The technician prepares the vehicle and parts, setting protection,
+    tooling, service information, parts, and one-time-use items in place
+    before disassembly. The repair is performed with procedure, torque,
+    adjustment, fluid, routing, and cleanliness requirements treated as
+    part of the job. The repaired system is tested under the conditions
+    relevant to the original finding before handoff. The technician
+    records completion on the repair completion, listing work performed,
+    parts installed, measurements, test readings, and unresolved
+    observations, ready for quality control.
+  controls:
+    - name: Authorized scope checked before the first bolt
+      note: The technician confirms the repair order matches the current work authorization and stops for any difference before starting.
+    - name: Stop-work on new findings
+      note: A condition beyond the diagnosis or authorization is returned to the service advisor before any unapproved work is done.
+    - name: Torque, fluid, and adjustment readings recorded
+      note: Required measurements for the operation are written on the completion so the assembly detail can be verified by the checker.
+    - name: Test performed under the original condition
+      note: The completion names the test run and the result, matching the operating detail recorded at intake and diagnosis.
+    - name: Hold reason on every waiting vehicle
+      note: A vehicle waiting on parts, approval, information, or specialist help carries an explicit hold reason and the time it began.

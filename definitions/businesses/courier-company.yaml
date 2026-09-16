@@ -23,3 +23,67 @@ revenue_model:
   - remove: [transport-charges, accessorial-charges]
 supply_chain:
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A courier company week is run from dispatch. Load requests arrive
+    by phone, portal, or account schedule, the dispatcher assigns each
+    job to a driver by zone, deadline, and vehicle, and the driver
+    scans at pickup, at every transfer, and at delivery so custody is
+    recorded end to end. Priority jobs are fitted around the contracted
+    routes that give the day its backbone, and exceptions such as a
+    closed office, a wrong address, or a damaged package are
+    communicated to the customer before they become a complaint. The
+    load-bearing skills are transport execution and staff scheduling,
+    because on-time pickup and on-time delivery depend on having a
+    driver where the job is when it is ready. The tension is between
+    accepting another priority job into a route that is already tight
+    and protecting the contracted deliveries that pay every week; the
+    maintenance technician keeps vehicles available so the plan is not
+    broken by a van that will not start.
+  starting: >
+    A courier company starts with vehicles, drivers, and the accounts
+    that fill them. Day-one paperwork is the business registration,
+    employer registration once drivers are hired, commercial auto
+    insurance and cargo coverage at the limits accounts require, and a
+    local business license depending on the city. Operating for hire
+    across state lines, or with vehicles above the weight thresholds,
+    brings federal motor carrier authority and a USDOT number; purely
+    local light-vehicle work usually does not, and medical specimen or
+    pharmaceutical work adds handling and training requirements set by
+    the customer. Drivers can be employees or contractors, and the
+    classification rules in the state decide which. The minimum team is
+    an owner-operator who dispatches, an office manager who invoices,
+    and enough drivers to cover the contracted routes with a spare for
+    priority jobs; a maintenance technician is contracted until the
+    fleet is large enough to keep one busy. The first records are the
+    load request, the quote, the bill of lading or manifest, the proof
+    of delivery with signature and time, the customer invoice, the
+    shift schedule, and the maintenance log, running on a delivery
+    management or transportation management system that drivers scan
+    into from a phone. Lead intake, quoting, transport execution,
+    customer invoicing, and staff scheduling must work from the first
+    day.
+  economics: >
+    Revenue is priority courier jobs priced by zone, distance, or
+    service level, and contracted routes billed under an account
+    agreement for repeated scheduled movements. Priority jobs carry the
+    higher price per stop, contracted routes carry the predictable
+    volume, and a healthy book mixes both so that the fleet is paid for
+    by contracts and the margin comes from the priority work laid on
+    top. Gross margin is driver time and vehicle cost against revenue
+    per stop, so density decides everything: a route with many stops
+    close together earns several times what the same hours earn on
+    scattered jobs. The metrics that decide profit are on-time pickup
+    rate, on-time delivery rate, equipment uptime, days sales
+    outstanding, and quote win rate, because a missed deadline is a
+    credit or a lost account, a vehicle off the road is a driver with
+    no revenue, and commercial accounts pay on terms while fuel and
+    wages are paid weekly. The business is labor-intensive and
+    moderately capital-intensive in vehicles, and margins are judged
+    after fuel, insurance, and vehicle replacement.
+  benchmarks:
+    - scope: Average hourly earnings, couriers and messengers industry (NAICS 492)
+      value: 25.46 dollars per hour, all employees, June 2026
+      note: "BLS Current Employment Statistics industry summary; average weekly hours for all employees were 32.3 in June 2026 and industry employment was about 1.08 million. The industry includes the national parcel carriers, so a local courier's driver pay will vary from this average."
+      source: https://www.bls.gov/iag/tgs/iag492.htm
+      source_name: U.S. Bureau of Labor Statistics, Industries at a Glance, Couriers and Messengers NAICS 492 (June 2026)

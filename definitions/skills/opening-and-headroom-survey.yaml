@@ -95,3 +95,51 @@ questions:
   - >-
     Which record proves opening and headroom survey was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The opening and headroom survey process is the site measurement a
+    garage door contractor performs before a door and operator are
+    ordered or installed. It measures the rough opening width and
+    height, the condition of the jambs and header, the headroom above
+    the opening, the backroom into the garage, the sideroom on each
+    side, the floor level, conflicts with pipes, lights, and existing
+    track, the power supply, and where the operator will mount. It
+    starts from the work order and ends with a commissioning record that
+    the installer and the order desk both work from. The surveying
+    technician owns it.
+  why: >
+    It protects the job from the most expensive mistake in the trade: a
+    door or track system that does not fit the opening it arrives at. A
+    missed pipe in the headroom, an inch short of sideroom, a header
+    that will not hold the spring anchor, or an unpowered ceiling turns
+    an installation day into a return trip, a reorder, and an idle crew.
+    Because a door can cycle under power while its spring balance,
+    attachment, or safety reversal is unsafe, the survey is also where
+    the structure is judged fit to carry the hardware the design
+    assumes.
+  how: >
+    The technician confirms the work basis from the work order: the
+    current scope and revisions, the selected door and operator,
+    electrical provision, hardware, spring design, access, and site
+    protection. Field controls are set for the survey: which dimensions
+    are taken, where, with what tool, and which conditions are hold
+    points that stop the order. During the survey the technician records
+    each measurement, the jamb and header condition, floor level, track
+    and headroom conflicts, power location, and operator position, with
+    photos of anything concealed or marginal, and stops to revise the
+    basis when the opening does not match the order. Acceptance checks
+    that the recorded opening supports secure attachment, balanced
+    travel, correct clearances, functional controls, entrapment
+    protection, manual release, seals, and owner instruction, then the
+    commissioning record is issued.
+  controls:
+    - name: Measurement sheet with fixed fields
+      note: Width, height, headroom, backroom, sideroom, floor level, and power are recorded on a form with no blank allowed, and each is taken twice.
+    - name: Structure judged for spring and track loads
+      note: Jamb and header material and condition are recorded and compared to the spring design before the order is placed with the supplier.
+    - name: Conflicts photographed and located
+      note: Pipes, lights, ducts, and existing track inside the travel zone are photographed with a dimension to the opening on the record.
+    - name: Survey checked against the selected door
+      note: The order desk compares the survey to the selected door, track, and operator before ordering, and a mismatch returns the job to the technician.
+    - name: Commissioning record carried to installation
+      note: The installer signs that the opening matched the survey on arrival, and a difference is recorded before any work starts.

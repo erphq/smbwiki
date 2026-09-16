@@ -37,3 +37,77 @@ licenses:
 supply_chain:
   buys_from: [food-distributor, education-supply-distributor]
   sells_to: [individual-client, payer]
+article:
+  operating_model: >
+    A child care center takes custody of children for defined hours and
+    has to be able to account for every one of them at every moment. The
+    day runs on the attendance log and the class roster: children are
+    signed in by an authorized adult, assigned to a room by age, cared
+    for at the staff-to-child ratio the license sets, fed, rested,
+    taught, changed, and signed out to an authorized adult. The
+    care-director keeps rooms in ratio through breaks and absences,
+    reviews incident reports, and talks to guardians; caregivers run the
+    rooms; the office-manager bills families and payers and orders food
+    and supplies. Care plan delivery and class scheduling are the
+    load-bearing skills, with staff scheduling as the third, because a
+    room that drops out of ratio must either close or pull staff from
+    another room. The tension is fill against ratio: a room is
+    profitable only when full, but an extra child past the ratio is a
+    licensing violation, and an absent caregiver takes capacity off the
+    floor for every child in that room.
+  starting: >
+    A center cannot open until it holds the child care license of its
+    state or local licensing agency, which is granted after the building
+    passes fire, health, and safety inspections for the ages served, the
+    director meets the education and experience standard, every staff
+    member clears a fingerprint background check, and the center files
+    its ratios, room capacities, emergency plans, and health policies.
+    Most states also require first aid and CPR certification and a set
+    of pre-service training hours before a caregiver is counted in
+    ratio. Around the license sit the business registration, an employer
+    registration, liability insurance the licensing agency will ask
+    about, a food service permit where meals are prepared on site, and
+    enrollment in the federal child and adult care food program if the
+    center wants meal reimbursement. The premises need age-appropriate
+    rooms, a fenced outdoor play area, cribs, and changing stations that
+    pass inspection. The minimum team is a qualified care-director,
+    enough caregivers to hold ratio in every room that will open with
+    relief for breaks, and an office-manager or the owner handling
+    billing. The first records are the enrollment agreement and client
+    brief for each child, the care plan with allergies, medication, and
+    pickup authority, the class roster, the attendance log, the
+    medication record, and the incident report file. Client engagement,
+    care plan delivery, class scheduling, staff scheduling, purchasing,
+    and invoicing must all work before the first child is signed in, and
+    the state surveyor will read the attendance log and the ratio record
+    first.
+  economics: >
+    Revenue is recurring enrollment, billed by week, month, or program
+    term for a reserved place, and added care and programs, which are
+    extended hours, meals, transport, and special programs. Tuition is
+    set per age group, and infant care is priced highest because the
+    ratio is tightest, so an infant room carries the most staff per
+    dollar of revenue. Payment comes from families directly and from
+    payers such as state subsidy programs, which pay on their own
+    schedule and at their own rate, which is why days sales outstanding
+    matters and why a center's payer mix shapes its margin. Labor is the
+    overwhelming cost, and labor cost percentage decides profit: the
+    ratio fixes the minimum staff per room, so the only lever is class
+    fill rate, and a room running well under capacity loses money at the
+    same staffing. Incident rate is the other deciding metric, because
+    incidents drive licensing action and disenrollment. Capital is the
+    building and the fit-out to licensing standard; the fixed cost of an
+    inspected room is carried whether or not it is full, which is why
+    waitlists and enrollment mix by age are managed as closely as the
+    rota.
+  benchmarks:
+    - scope: National average annual price of child care per child
+      value: About 10,600 dollars per year (2021)
+      note: Child Care Aware of America estimate for 2021 across provider types and age groups; the range of its methodologies runs from roughly 10,400 to 10,800 dollars, equal to about 10 percent of a married-couple family's income and 35 percent of a single parent's income.
+      source: https://www.childcareaware.org/price-of-care/
+      source_name: Child Care Aware of America, Price of Care (2021 data)
+    - scope: Licensed child care supply gap, United States
+      value: 8.7 million licensed slots against 12.3 million children potentially needing care in 2021, a gap of 3.6 million slots
+      note: Child Care Aware of America count of licensed center and family child care slots versus children potentially needing care in reporting states for 2021; the South and West each showed a gap over 1 million slots and the Northeast and Midwest over half a million each.
+      source: https://www.childcareaware.org/price-of-care/
+      source_name: Child Care Aware of America, Price of Care (2021 data)

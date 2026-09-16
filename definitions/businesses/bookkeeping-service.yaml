@@ -23,3 +23,54 @@ revenue_model:
   - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
 supply_chain:
   sells_to: [commercial-client]
+article:
+  operating_model: >
+    A bookkeeping service runs on the monthly close. Through the month,
+    bank, card, sales, payroll, and purchase activity is coded as it
+    arrives; at cutoff the bookkeeper reconciles every balance, lists
+    the missing documents and unusual entries, gets the client's
+    decisions on them, posts adjustments, and delivers the reports. The
+    principal reviews the close and sells, professionals carry a
+    portfolio of clients each, and a client-coordinator chases the
+    documents. Professional service delivery is the load-bearing skill,
+    and client engagement is a close second, because the division of
+    responsibilities in the engagement letter decides what the
+    bookkeeper is accountable for. The tension is the client's own
+    discipline: the close is only as fast as the last receipt, and a
+    client who mixes personal and business spending turns a fixed
+    monthly fee into an open-ended cleanup.
+  starting: >
+    There is no license to keep books for others in the United States;
+    day one needs the business registration, an employer registration
+    once the first bookkeeper is hired, professional liability
+    insurance, and an engagement letter that fixes the chart of
+    accounts, the cutoff, the evidence standard, and which tasks the
+    client keeps. A bookkeeper who also files payroll or sales tax
+    returns for clients may need to register with the tax authority as a
+    preparer or agent, depending on the return. The tooling is the
+    accounting platform the clients will be kept on and secure access to
+    their bank and card feeds. The minimum team is a principal who can
+    close a set of books alone; the first professional is hired when the
+    principal's portfolio is full, and a client-coordinator when
+    document chasing is eating billable hours. The first records are the
+    client brief, the engagement letter, the monthly deliverable file,
+    and time records by client, because time is how a fixed fee is
+    checked. Lead intake, client engagement, professional service
+    delivery, invoicing, and accounts receivable must work from the
+    first client.
+  economics: >
+    Revenue is recurring bookkeeping, sold as a monthly fee tied to
+    transaction volume and complexity, and cleanup and setup, sold as a
+    bounded project to correct or convert a ledger. The recurring fee is
+    what makes the business worth owning: it is predictable, it is
+    collected by card on file, and it compounds as clients are added.
+    Gross margin on each client is the fee less the hours the close
+    takes, so utilization rate and engagement gross margin decide
+    profit, with the hidden risk being scope creep inside a fixed fee.
+    Work-in-progress age shows closes that are stuck waiting on the
+    client; days sales outstanding shows whether the fee is really being
+    collected monthly. Quote win rate and booking rate size the
+    pipeline. The business has almost no capital and scales on portfolio
+    size per bookkeeper, which software automation raises; the practical
+    ceiling is how many clients one careful person can close on time
+    each month.

@@ -93,3 +93,57 @@ questions:
   - >-
     Which record proves clearing and grubbing was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The clearing and grubbing process takes a marked site from standing
+    vegetation and obstructions to stabilized, stripped ground that the
+    next earthwork operation can start on. It begins when the site plan,
+    survey control, permits, and erosion controls are in hand and ends
+    when the cleared limits, stockpiles, and exposed ground are accepted
+    and recorded in the daily report. A site preparation contractor owns
+    it through the foreman on the crew and the superintendent who
+    accepts the work.
+  why: >
+    It protects everything the site plan says must survive: property
+    lines, trees and features marked for protection, buried utilities,
+    and the topsoil the finished grading will need back. Once a machine
+    crosses a limit or cuts an unlocated line the damage is done and the
+    schedule pays for it. Weak stabilization of exposed ground turns the
+    first rain into sediment leaving the site and a permit problem.
+    Unsegregated material means paying to haul what could have been
+    reused.
+  how: >
+    The foreman first confirms the work basis by reading the current
+    scope and revisions on the site plan and verifying survey control,
+    utility information, permits, erosion controls, equipment access,
+    haul route, soil direction, and the weather plan. The field controls
+    are then set: work limits flagged on the ground, sequence, crew
+    responsibilities, hold points at protected features, and the records
+    the crew will keep. During the work the operator records quantities,
+    observations, decisions, and concealed details in the daily report
+    and stops when a field condition changes the planned method.
+    Acceptance checks the completed work against specified limits, safe
+    slopes and support, approved grades, drainage, compaction,
+    stabilized access, and recorded quantities, and correction is closed
+    before the daily report is issued.
+  controls:
+    - name: Utility locate and protected-feature flagging before equipment moves
+      note: >
+        Marked utilities and protected features are walked and
+        photographed against the site plan before the first machine
+        starts.
+    - name: Limit stakes checked against survey control
+      note: >
+        Clearing limits are set from current survey control, and any
+        revision to the site plan resets the stakes before work
+        continues.
+    - name: Material segregation recorded by stockpile
+      note: >
+        Topsoil, reusable material, and waste are stockpiled
+        separately with location and quantity written in the daily
+        report.
+    - name: Stabilization hold point before release
+      note: >
+        Exposed ground and access are stabilized and erosion
+        controls inspected before the area is released to the next
+        operation.

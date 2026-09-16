@@ -87,3 +87,52 @@ questions:
   - >-
     Which record proves concrete curing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The concrete curing process protects a fresh placement until it
+    reaches the strength the design assumes: keeping moisture in and
+    temperature within range, protecting the surface from traffic and
+    weather, recording how long each area has cured, and releasing forms
+    or loading only when test results support it. It starts as soon as
+    finishing ends and runs until the test report shows the required
+    strength. A poured concrete contractor owns it through the foreman,
+    with the superintendent or engineer releasing loading.
+  why: >
+    It protects strength and surface that cannot be added back later.
+    Concrete that dries out or freezes in its first days never reaches
+    design strength, and the defect is invisible until it cracks or
+    fails under load. Forms stripped or a slab loaded on the calendar
+    instead of on test results is the common cause. A curing record that
+    is blank leaves the contractor unable to show the engineer what was
+    done when a low break comes back.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions on the construction plan and verifying surveyed layout,
+    excavation acceptance, form dimensions, embeds, reinforcement, mix
+    information, access, and weather controls. Field controls set the
+    curing method by area, the temperature and moisture limits, the
+    protection from traffic, hold points for form removal and loading,
+    and the records the crew keeps. During curing the operator records
+    start and end times, ambient and concrete temperatures, protection
+    in place, decisions, and concealed details, and stops when weather
+    or a reading changes the planned method. Acceptance checks the work
+    against specified geometry, cover, placement record, finish, curing,
+    and required concrete test results, and the test report is issued
+    after correction closes.
+  controls:
+    - name: Curing method and duration set per placement
+      note: >
+        Each area carries the method, start time, and required
+        duration on the placement record before curing begins.
+    - name: Temperature and moisture readings logged
+      note: >
+        Readings are taken and recorded at the planned interval, and
+        an out-of-range reading triggers a documented response.
+    - name: Form removal and loading tied to test results
+      note: >
+        Forms come off and loads go on only when the cylinder or
+        field test result on the test report supports it.
+    - name: Protection inspected at each shift change
+      note: >
+        Cover, wind and traffic protection, and heating or shading
+        are checked and recorded when crews change over.

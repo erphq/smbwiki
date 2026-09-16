@@ -95,3 +95,48 @@ questions:
   - >-
     Which record proves field control establishment was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The field control establishment process is the first field work on a
+    survey: the crew selects stable control points, ties them to the
+    coordinate and elevation basis the project requires, observes redundant
+    measurements so the network can be checked, computes closure, and
+    protects and records the references so every later measurement on the
+    job is traceable to them. It starts when the survey purpose, deeds,
+    plats, and coordinate basis are in hand and ends with an accepted
+    control network recorded in the notes that supports the survey plat. A
+    land surveying firm's party chief owns it under the licensed surveyor.
+  why: >
+    Every boundary opinion, stakeout, and plat on the job inherits the error
+    in its control. Control set on an unstable monument moves between visits
+    and the later measurements disagree without anyone knowing why. A
+    network observed without redundancy cannot be checked, so a blunder
+    passes straight into the deliverable. Treating record dimensions as
+    field truth, instead of measuring to controlling evidence, moves a
+    boundary opinion away from where the law would put it. The licensed
+    surveyor signs the plat on the strength of this work.
+  how: >
+    The party chief reads the site plan and the project scope and confirms
+    the defined survey purpose, current deeds and plats, adjoining records,
+    the coordinate basis, access, equipment checks, and the field safety
+    plan. Field controls set which monuments and points will serve as
+    control, the observation scheme with its redundancy, the instruments and
+    their checks, the tolerances, and the hold point where closure is
+    computed before the crew moves on. In the field the crew records each
+    point's description, the observations, the equipment used, conditions,
+    and any monument found disturbed or missing, and stops when the evidence
+    on the ground contradicts the record. Acceptance checks traceable
+    evidence, closed measurements, a resolved basis, set or found monuments,
+    complete notes, and the signed deliverable, and the control is issued to
+    the job.
+  controls:
+    - name: Equipment checks recorded before observation
+      note: Instrument calibration and peripheral checks are recorded in the notes on the day before the first observation is taken.
+    - name: Redundant observations on every control point
+      note: Each point is observed from more than one setup or in repeated sets so a blunder can be detected.
+    - name: Closure computed before leaving the site
+      note: Network closure is computed against the tolerance while the crew can still re-observe, and the result is in the notes.
+    - name: Monument descriptions and photographs
+      note: Every control point and found monument is described, photographed, and located in the notes for recovery later.
+    - name: Basis reviewed by the licensed surveyor
+      note: The coordinate and elevation basis and the control results are reviewed and accepted by the surveyor who will sign the plat.

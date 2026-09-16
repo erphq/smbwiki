@@ -42,3 +42,62 @@ summary: >
   of whether the intervention changed the operating result.
 supply_chain:
   sells_to: [commercial-client]
+article:
+  operating_model: >
+    A management consulting firm sells an answer to a business question
+    and the work to make it stick. The week moves between client sites and
+    analysis: management consultants interview, gather operating and
+    financial data, run workshops, and build the recommendation, while the
+    principal owns the client relationship and the decision owner on the
+    client side. Consulting diagnosis and decision is the load-bearing
+    skill, with client engagement and professional service delivery beside
+    it, because a diagnosis without a recorded decision and assigned
+    actions leaves nothing to bill against and nothing to measure. The
+    tension sits between the engagement's defined scope and the questions
+    that surface once the data is in: scope creep is welcome when it
+    becomes a new engagement letter and fatal when it is absorbed into the
+    current fee.
+  starting: >
+    The definition binds no trade license; what the firm needs on day one
+    is the business registration, professional liability insurance,
+    employer registration before the first consultant is hired, and where
+    the firm advises on regulated matters such as securities or tax, the
+    separate credentials those areas require. Most engagements also need a
+    confidentiality agreement before any client data is shared. The
+    minimum team is a principal who sells and leads engagements, a
+    management consultant, and a client coordinator who handles intake,
+    engagement letters, invoicing, and receivables. The first records to
+    set up are the client brief, the engagement letter with scope and fee,
+    the consulting decision record, the deliverable, and the time record,
+    and the skills that must work from the first engagement are client
+    engagement, consulting diagnosis and decision, professional service
+    delivery, and invoicing. Capital is close to nothing beyond software
+    and travel, which makes the firm easy to start and hard to
+    distinguish, so the principal's reputation and a first reference
+    client are the real starting assets.
+  economics: >
+    Revenue is diagnostic and transformation fees: fixed-fee engagements
+    for defined diagnostics, time-based work billed at agreed rates for
+    implementation support, recurring advisory retainers, and in some
+    firms fees tied to measured operating outcomes. Fees are set from
+    expected consultant days, so engagement gross margin depends on the
+    estimate holding and on the leverage between senior and junior time.
+    Utilization rate is the first metric that decides profit because
+    unbilled consultant days are pure cost; work-in-progress age and days
+    sales outstanding come next because engagements are billed at
+    milestones and large clients pay slowly; on-time completion and quote
+    win rate show whether proposals convert and whether engagements end
+    when the fee does. The business is entirely labor and travel, so
+    margins swing with utilization and with the share of work that becomes
+    repeat advisory revenue instead of one-off diagnostics.
+  benchmarks:
+    - scope: Employees per establishment, administrative management and general management consulting services (NAICS 541611)
+      value: 8.3 paid employees per establishment
+      note: 869,457 paid employees in the week of March 12, 2023 across 104,494 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, administrative management and general management consulting services (NAICS 541611)
+      value: 121,753 dollars per employee (2023)
+      note: Annual payroll of 105,858,919 thousand dollars divided by 869,457 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

@@ -89,3 +89,49 @@ questions:
   - >-
     Which record proves plat preparation was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The plat preparation process turns a completed boundary survey into
+    the drawing a licensed surveyor signs: boundary lines and calls,
+    monuments found and set, easements, encroachments, improvements,
+    notes, and the certification. It starts from the site plan, the
+    field data, and the deed and record research, and it ends with a
+    survey plat reviewed and signed by the professional in charge. A
+    survey technician or drafter prepares it in a land surveying firm,
+    the party chief supplies the field record, and the licensed surveyor
+    owns the boundary opinion the plat expresses.
+  why: >
+    It protects the boundary opinion, which is the product the client is
+    paying for and the thing that ends up in a courtroom if it is wrong.
+    A plat drawn from record dimensions instead of field evidence can
+    move a line away from the controlling monuments; a missing easement
+    or an unshown encroachment becomes a title claim; a call that does
+    not close is a drawing the surveyor cannot sign. The plat is also
+    the record another surveyor will retrace decades later, so evidence
+    that is not on it is evidence that is lost.
+  how: >
+    The drafter confirms the work basis: the current scope and
+    revisions, the defined survey purpose, current deeds and plats,
+    adjoining records, the coordinate basis, and the field crew's
+    access, equipment checks, and safety plan. Field controls translate
+    the survey into what the plat needs: which monuments are to be tied,
+    closure tolerance, the evidence to be photographed, and the hold
+    points where the surveyor reviews before drafting continues. During
+    preparation the drafter records the evidence used, the measurements
+    adjusted, decisions taken, and any conflict between record and
+    field, and stops for the surveyor when a conflict changes the
+    boundary. Acceptance checks traceable evidence, closed measurements,
+    a resolved boundary opinion, set or found monuments, complete notes,
+    and the signed deliverable; corrections are closed and the survey
+    plat is issued.
+  controls:
+    - name: Evidence listed for every line
+      note: Each boundary line on the plat cites the monuments, records, or occupation that control it, and a line with no cited evidence is returned to the field.
+    - name: Closure checked before drafting
+      note: Field measurements are adjusted and closure computed against tolerance before any line is drawn, and the result is kept on the file.
+    - name: Record versus field conflicts logged
+      note: Every disagreement between deed calls and found monuments is recorded with the surveyor's resolution before the plat advances.
+    - name: Surveyor review as a hold point
+      note: The licensed surveyor reviews the boundary opinion, easements, and encroachments at a defined stage, and the review is dated on the file.
+    - name: Signed plat matches the field record
+      note: Monument descriptions, notes, and certification on the final plat are checked against the field book before the surveyor signs.

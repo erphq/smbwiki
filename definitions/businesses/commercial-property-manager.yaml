@@ -86,3 +86,59 @@ supply_chain:
   sells_to:
     - commercial-tenant
     - property-owner
+article:
+  operating_model: >
+    A commercial property manager's week runs on the lease and the
+    calendar. Rent and expense recoveries are billed and collected
+    against each tenant ledger, tenant requests and maintenance
+    requests are triaged into work orders, and vendors for janitorial,
+    security, and repairs are dispatched, checked, and paid against
+    contracts. The property manager reads each lease to decide whether
+    a repair belongs to the owner, the tenant, a service contract, or
+    an insurance claim, and the maintenance coordinator keeps the
+    common areas, building systems, and compliance dates in order. The
+    load-bearing skills are commercial lease administration, property
+    vendor control, and expense recovery reconciliation, because every
+    dollar of operating expense has to land in the right recovery pool
+    or the owner absorbs it. The tension is between keeping occupied
+    premises safe and usable today and preserving the authority and
+    evidence the lease requires before spending, and the monthly owner
+    report is where both are reconciled.
+  starting: >
+    A commercial property manager starts with a management agreement
+    from a property owner, and in most states the person negotiating
+    leases or collecting rent for others must hold a real estate broker
+    license or work under one; a few states exempt pure management. The
+    universal paperwork is the business registration, employer
+    registration once staff are hired, errors and omissions and general
+    liability insurance, and a trust or client account arrangement that
+    keeps owner funds separate from the manager's own, which state real
+    estate rules commonly require. The minimum team is a property
+    manager who holds the license and the owner relationship and a
+    maintenance coordinator who runs vendors and requests; accounting
+    is often shared or outsourced at the start. The first records are
+    the lease with its abstracted terms, the tenant ledger, the lease
+    application for new tenancies, the maintenance request, the work
+    order, the supplier invoice, and the property operating statement,
+    all held in a property management system with accounting behind
+    it. Lease administration, maintenance coordination, accounts
+    receivable, payment reconciliation, and expense recovery
+    reconciliation must work from the first month.
+  economics: >
+    Revenue is management fees, usually a percentage of collected rent
+    or a fixed monthly amount per property, and leasing fees earned
+    when a space is let or renewed. The fee base is the owner's rent
+    roll, so the manager's revenue rises and falls with occupancy and
+    collections it does not fully control. Gross margin is labor: the
+    cost of the property manager and maintenance coordinator against
+    the fees the portfolio produces, so profit depends on how many
+    square feet and tenancies each person can administer without
+    missing recoveries or compliance dates. The metrics that decide
+    profit are rent collection rate, operating expense variance,
+    vacancy rate, and maintenance response time, because uncollected
+    rent shrinks the fee, unrecovered expenses cost the owner and
+    eventually the contract, vacancy removes the fee base, and slow
+    response loses tenants at renewal. The business is capital-light
+    and reputation-heavy, and margins grow with portfolio density more
+    than with any single building, so the practical constraint is how
+    many properties one team can run well before service falls off.

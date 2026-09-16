@@ -88,3 +88,47 @@ automation:
 questions:
   - Which accounts have different billing and access status today?
   - Can each recurring charge be traced to an active agreement and service period?
+article:
+  what: >
+    The membership billing process turns a signed membership agreement
+    into a recurring charge schedule and keeps that schedule, the
+    payments against it, and the member's access status telling the same
+    story. It starts when an agreement is activated and continues for
+    the life of the account through renewals, plan changes, pauses,
+    credits, failed payments, and cancellation, ending only when the
+    final charge is settled and access ends on the same date. In a gym
+    it belongs to the membership administrator or the bookkeeper, with
+    the owner deciding hardship and courtesy exceptions.
+  why: >
+    It protects the recurring revenue model and the member's trust in
+    the account at the same time. A schedule built from a stale plan
+    collects money the member no longer owes; two active schedules on
+    one membership produce a duplicate debit, a dispute, and processor
+    fees. A failed payment with no defined retry, notice, and grace
+    state leaves the front desk improvising when a credential is
+    refused, and a plan change or cancellation applied in different
+    periods by billing and by the door system creates an argument nobody
+    can settle from the record.
+  how: >
+    The billing schedule is established from the signed agreement:
+    amount, frequency, start date, renewal, tax, discount, the member's
+    payment authority, and the conditions that end it. On each cycle the
+    system generates a customer invoice that names the plan and the
+    period it covers before collection runs. Successful collection posts
+    a payment record that settles that specific invoice and updates the
+    account once. The administrator then works the exception queue:
+    failed payments move through retry, notice, grace, and access effect
+    in a defined order, and plan changes, pauses, credits, and
+    cancellations are entered with an owner, a reason, and an effective
+    date that billing and the access system both apply.
+  controls:
+    - name: Schedule traced to an active agreement
+      note: Every recurring charge points to a signed agreement and a service period, and an account cannot carry two active schedules for one membership.
+    - name: Invoice before collection
+      note: A customer invoice naming plan and period exists before the processor is asked to collect, so the member can see what a charge covers.
+    - name: Defined failed-payment states
+      note: Retry count, notice sent, grace period, and access effect are recorded states on the account, and staff follow them instead of deciding case by case.
+    - name: Effective dates reconciled to access
+      note: Accounts whose billing status and access status disagree are listed and cleared, and plan changes, pauses, and cancellations carry one date both systems use.
+    - name: Exceptions with reason and owner
+      note: Hardship, courtesy, and disputed charges are approved by a named person and recorded on the account history with the reason given.

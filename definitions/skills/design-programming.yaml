@@ -90,3 +90,55 @@ questions:
   - >-
     Which record proves design programming was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The design programming process turns a client brief into an approved
+    program the design can be built on: interviewing users, inventorying
+    activities and equipment, quantifying the space each needs, mapping
+    adjacencies, recording performance needs, and securing the client's
+    approval of the program before design begins. It starts when the
+    brief, existing conditions, and decision structure are confirmed and
+    ends when the approved program and its early finish schedule are
+    accepted. An interior design firm owns it through the project
+    designer, with the principal approving the deliverable.
+  why: >
+    It protects every downstream decision from a late change. A user
+    group never interviewed appears after layouts are drawn and their
+    equipment does not fit. Unquantified space forces the plan to be
+    reworked when the budget or the floor plate is tested. A performance
+    need recorded late, such as acoustic separation or a heavy floor
+    load, changes building systems, price, lead time, and installed work
+    at once. The approved program is what makes the client's later
+    change a change, and priced as one.
+  how: >
+    The project designer confirms the work basis by reading the current
+    brief and revisions and verifying the approved program status,
+    measured existing conditions, consultant criteria, budget, schedule,
+    code basis, and the client's decision structure. Field controls set
+    the interview list, the inventory templates, the space standards,
+    hold points such as the client's program sign-off, and the records
+    the team keeps. During the work the designer records interviews,
+    activity and equipment inventories, area quantities, adjacency maps,
+    performance requirements, decisions, and any condition that changes
+    the approach. Acceptance checks the program against coordinated safe
+    spaces, approved selections, complete documents, released
+    procurement, installed intent, and resolved deficiencies, and the
+    finish schedule is issued after correction closes.
+  controls:
+    - name: Interview log against the user list
+      note: >
+        Every user group named in the decision structure has an
+        interview record, and gaps are flagged before quantification
+        starts.
+    - name: Space quantities tied to inventory
+      note: >
+        Each area figure references the activities and equipment it
+        was derived from, so the basis can be reviewed later.
+    - name: Performance needs recorded per space
+      note: >
+        Acoustic, load, power, data, and environmental needs are
+        captured on the program record for each space.
+    - name: Client program sign-off before design
+      note: >
+        The program is approved in writing by the client's named
+        decision owner before layouts start.

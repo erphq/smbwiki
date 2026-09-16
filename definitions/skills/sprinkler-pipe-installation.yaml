@@ -95,3 +95,52 @@ questions:
   - >-
     Which record proves sprinkler pipe installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The sprinkler pipe installation process hangs and connects the
+    system in the building to the approved layout, covering hangers,
+    mains, branch lines, drops, heads, control valves, drains, gauges,
+    and the seismic bracing the design calls for. It starts once the
+    coordinated drawings are approved, the listed material has been
+    released, and access and any outage are arranged, and it ends when
+    the installed piping has passed its hydrostatic test and been
+    accepted in a test report. A fire sprinkler contractor owns it
+    through a foreman running the field crew.
+  why: >
+    It protects the coverage the design promised and the tenant's
+    ability to occupy the space. A head installed too close to a beam or
+    a light fixture, a hanger spaced beyond the standard, a drop cut
+    short of the ceiling, or a main brought online without a drain
+    leaves the system outside its listing and the inspector's
+    acceptance. Because the pipe is above ceilings that other trades
+    close, a deficiency found after inspection means opening finished
+    work, and a system that cannot be accepted holds up the certificate
+    of occupancy.
+  how: >
+    The foreman reads the current scope and revisions, then confirms the
+    verified hazard and occupancy, the approved hydraulic basis,
+    coordinated drawings, listed material, fabrication release, access,
+    and the outage plan before assigning the crew. The installation is
+    set out as work limits by area, an installation sequence following
+    the structure and the other trades, responsibilities, hold points
+    where hangers and heads are checked before ceilings close, and the
+    field record the crew keeps. During installation the crew hangs and
+    connects the piping, sets heads, valves, drains, gauges, and seismic
+    components, records quantities, spool locations, observations, and
+    decisions, and stops when a field condition such as an unexpected
+    obstruction changes the planned routing. At acceptance the foreman
+    checks the work against approved coverage, support and clearances,
+    clean piping, the hydrostatic result, alarm and supervisory
+    operation, inspection, and owner records, closes corrections, and
+    issues the test report.
+  controls:
+    - name: Hanger and bracing check per area
+      note: Hanger spacing, type, and attachment and every seismic brace are checked against the design and the listing before the area is closed.
+    - name: Head position verified against obstructions
+      note: Each head's distance to walls, beams, ducts, and fixtures is checked and recorded before the ceiling grid is finished.
+    - name: Above-ceiling hold point
+      note: The installed area is inspected and photographed before ceilings or soffits are closed, and the photos are filed by grid line.
+    - name: Material and head listing traced
+      note: Pipe, fittings, and head types installed are recorded against the approved submittal, and substitutions are approved before installation.
+    - name: Outage and drain-down logged
+      note: Any shutdown of an existing system is scheduled, notified, and recorded with the time it was restored to service.

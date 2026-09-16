@@ -95,3 +95,53 @@ questions:
   - >-
     Which record proves steel erection inspection was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The steel erection inspection process verifies erected steel before
+    it is loaded or covered, checking plumbness and alignment against
+    tolerance, temporary and permanent stability, completion of every
+    connection, decking attachment, damaged members, and the hold points
+    where the engineer or special inspector must look before the next
+    lift or the next trade. It starts when a sequence of steel has been
+    set and ends with a quality report that releases it. A structural
+    steel erector owns it through a quality lead or superintendent, with
+    the special inspector and engineer of record witnessing where
+    required.
+  why: >
+    It protects the crew working on the steel and the structure everyone
+    else will build on. A column out of plumb that is accepted because
+    the next tier is waiting, a moment connection left at snug tight
+    because the bolt crew moved on, or a deck sheet left unattached over
+    a bay each looks complete from the ground. The cost appears as a
+    frame that cannot be plumbed later, a connection that cannot be
+    pretensioned once the deck is on, or a fall through an unsecured
+    sheet. The inspection is also the record that lets the owner's
+    inspector release the work.
+  how: >
+    The quality lead reads the current scope and revisions, then
+    confirms approved erection drawings, stable access, the crane plan,
+    the piece sequence, connection information, anchor condition, and
+    the concrete strength notice before inspection starts. Inspection is
+    set out as work limits by tier and bay, a sequence that follows
+    erection, responsibilities between the erector's inspector and the
+    special inspector, hold points before loading, decking, or covering,
+    and the report the crew and inspectors sign. During the work the
+    inspector surveys plumbness and alignment, checks stability,
+    connection completion, decking, and damaged members, records
+    readings, photos, and deviations, and stops when a reading is
+    outside tolerance or a field condition changes the sequence. At
+    acceptance the erected steel is checked against erection tolerances,
+    connection completion, weld and bolt records, decking stability, and
+    the required inspection release, corrections are closed, and the
+    quality report is issued.
+  controls:
+    - name: Plumb survey per tier before the next lift
+      note: Column plumbness and alignment are surveyed and recorded against tolerance before the tier above is set.
+    - name: Connection completion log
+      note: Every connection is recorded as complete with its weld or bolt record before the bay is loaded or decked.
+    - name: Hold point before covering
+      note: Deck, fireproofing, or the next trade is released only after the inspection for that area is signed on the report.
+    - name: Damaged member register
+      note: Any bent, cracked, or mislocated member is recorded with a disposition from the engineer before it is left in place.
+    - name: Special inspection reconciled to the erector's record
+      note: The special inspector's reports and the erector's quality report agree on what was inspected and released, area by area.

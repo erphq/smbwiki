@@ -37,3 +37,49 @@ automation:
 questions:
   - Which allocation, program, transport, preparation, or funding condition can still stop delivery?
   - Does one record prove the exact unit, eligible terms, completed preparation, and release?
+article:
+  what: >
+    The new vehicle allocation and readiness process follows a single
+    new unit from the moment a dealership either receives a manufacturer
+    allocation or writes a customer order against one, through build,
+    transport, arrival inspection, campaign and accessory work, and
+    detailing, to the moment it is released to a retail customer under a
+    vehicle purchase agreement. It ends when the exact VIN, its eligible
+    incentives, its completed preparation, and the customer's acceptance
+    are recorded together. The sales manager of a new car dealership
+    owns the allocation and the deal; the service and detail departments
+    own physical readiness.
+  why: >
+    It protects gross and the customer's delivery date from promises
+    made on uncertain facts. Allocation is scarce and incentive programs
+    have deadlines, so the pressure is to commit a customer to a unit
+    before the build status, the program eligibility, and the funding
+    path are certain. When the deal cites an incentive the unit or the
+    customer does not qualify for, delivery slips, gross changes, or the
+    dealership absorbs the difference. A unit released with an open
+    recall campaign, a due-bill accessory, or transport damage nobody
+    logged becomes a service complaint on day one.
+  how: >
+    The sales manager confirms the order and allocation: model, trim,
+    options, color, price basis, and the customer's commitment are
+    matched to a specific allocation, its build status, and the programs
+    the unit and the buyer are eligible for, and the manufacturer
+    allocation record is opened. As the unit moves, the process tracks
+    transport, damage at arrival, VIN identity, pre-delivery inspection,
+    open campaigns, ordered accessories, detailing, keys, documents, and
+    due-bill items against the stock record. At release the manager
+    verifies the exact unit, completed readiness, current incentives,
+    lender conditions, disclosures, registration work, and warranty
+    activation, and the customer signs the vehicle purchase agreement
+    and accepts the vehicle.
+  controls:
+    - name: VIN bound to the deal
+      note: A customer order is linked to a specific VIN or allocation slot before any delivery date is promised, and the link is visible on the deal.
+    - name: Program eligibility evidenced
+      note: Each incentive on the deal carries its effective dates, customer eligibility, and unit identity, and a mismatch holds the deal until resolved.
+    - name: Arrival inspection with damage record
+      note: Every unit is inspected at transport arrival and damage, campaign status, and identity are recorded before it enters preparation.
+    - name: Readiness checklist gates release
+      note: Inspection, campaigns, accessories, detail, keys, and documents are signed off on one checklist, and release is blocked while an item is open.
+    - name: Release record complete
+      note: The purchase agreement, disclosures, lender conditions, registration, and warranty activation are filed together against the VIN at delivery.

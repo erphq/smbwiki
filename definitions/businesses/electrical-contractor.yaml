@@ -35,3 +35,74 @@ supply_chain:
   sells_to: [homeowner, general-contractor]
 seo:
   title: "Electrical Contractor: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    An electrical contractor's week has two rhythms. Service calls
+    arrive as symptoms, the dispatcher assigns a technician by skill
+    and location, and the technician diagnoses under live-system
+    constraints, fixes on the first visit when the truck stock allows,
+    and closes the work order with readings and photos. Quoted projects
+    begin with drawings or a site survey and run as a sequence of
+    permit, rough-in, inspection, trim, testing, and energization,
+    coordinated with other trades and shutdown windows. The lead
+    technician runs projects and mentors technicians, and the office
+    manager keeps permits and inspections moving so a crew is never
+    committed to a site that cannot pass. The load-bearing skills are
+    dispatch, field job execution, and install project, with permits
+    and inspections as the gate. The tension is between the service
+    book that pays the trucks every day and the project that ties a
+    crew up for weeks; pulling a technician off a project for an
+    emergency call is the daily decision.
+  starting: >
+    An electrical contractor starts with a licensed electrician, since
+    every state licenses electrical work and most require a master
+    electrician license or a licensed qualifier to hold the contractor
+    license, pull permits, and supervise journeymen and apprentices;
+    the exams, experience proof, and continuing education vary by state
+    and some cities license separately. The universal paperwork is the
+    business registration, employer registration once the first
+    technician is hired, general liability and workers' compensation at
+    limits general contractors require, a contractor bond in most
+    states, commercial auto insurance for the trucks, and sales tax
+    handling for materials that varies by state. The minimum team is an
+    owner-operator who holds the license and works as lead technician,
+    a technician or apprentice, and an office manager who dispatches,
+    invoices, and tracks permits; a dedicated dispatcher comes with the
+    third truck. The first records are the job request, the quote, the
+    permit, the work order, job photos, the purchase order and supplier
+    invoice for material, the customer invoice, and the payment record,
+    held in a field service management system with inventory for truck
+    stock and accounting behind it. Lead intake, dispatch, field job
+    execution, quoting, permits and inspections, install project, and
+    invoicing must work from the first day.
+  economics: >
+    Revenue is service calls dispatched from reported faults and quoted
+    projects sold from surveyed scope. Service is priced flat rate per
+    task or by the hour plus material with a dispatch fee, and projects
+    are priced from a takeoff of labor hours and material with a margin
+    on both. Gross margin is technician hours and material against the
+    price, so the truck has to be billing most of the hours it is paid
+    for. The metrics that decide profit are jobs per tech day,
+    first-time fix rate, callback rate, average ticket, install gross
+    margin, quote win rate, and days sales outstanding, because a
+    second visit to finish a service call is unpaid, a callback on a
+    project is unpaid labor and material, and project customers pay on
+    schedules with retention while wages and supplier terms are
+    shorter. Material prices move, so quotes carry a validity window
+    and long-lead equipment is ordered against a deposit. The business
+    is labor-intensive and moderately capital-intensive in trucks and
+    tools, and the license holder is the constraint on how many crews
+    can run, so margins depend on keeping licensed hours full and on
+    the mix of quick service work that funds the slower project
+    pipeline.
+  benchmarks:
+    - scope: Median annual wage, electricians
+      value: 63,190 dollars, May 2025
+      note: "BLS Occupational Outlook Handbook; the lowest 10 percent earned under 42,640 dollars and the highest 10 percent over 108,510 dollars. About 821,000 jobs in 2025, projected growth 9 percent from 2025 to 2035. Loaded labor cost for quoting sits above the wage once payroll taxes, insurance, and benefits are added."
+      source: https://www.bls.gov/ooh/construction-and-extraction/electricians.htm
+      source_name: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Electricians (May 2025 wages)
+    - scope: Firm size and revenue distribution, electrical contracting firms
+      value: 51 percent of firms have 1 to 9 employees; 42 percent have annual revenue of 1 million dollars or less (2024 survey)
+      note: "ELECTRICAL CONTRACTOR magazine 2024 Profile of the Electrical Contractor, a biennial survey of electrical contracting firms published with NECA; new construction was 36.6 percent of revenue in the same survey."
+      source: https://www.prnewswire.com/news-releases/2024-profile-of-the-electrical-contractor-reveals-industry-growth-and-shifting-trends-302198383.html
+      source_name: ELECTRICAL CONTRACTOR magazine and NECA, 2024 Profile of the Electrical Contractor press release (July 2024)

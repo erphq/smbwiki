@@ -110,3 +110,56 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A garage door contractor runs a mix of same-day repairs and
+    scheduled installations from a truck stocked with springs, cables,
+    rollers, and operator parts. The office manager takes job requests
+    and books the calendar; the estimator surveys openings and quotes;
+    the foreperson and installer hang doors, set tracks, balance
+    springs, fit operators, and run safety tests before handover. The
+    load-bearing skills are the opening and headroom survey, because a
+    door ordered against a wrong measurement cannot be installed, spring
+    and cable balancing, and garage door safety testing, because an
+    unbalanced door or an operator that fails to reverse is the injury
+    and callback exposure. The tension is between repair calls that pay
+    today and installation projects that wait on a door order with a
+    lead time; both draw on the same installers, so schedule variance
+    shows up as either a missed install date or a repair customer left
+    with a car trapped inside.
+  starting: >
+    Day-one paperwork is business registration, employer registration
+    for the first installer, general liability and workers compensation
+    insurance because the trade involves stored spring energy and
+    overhead lifting, and a contractor license where the state or city
+    licenses this specialty; many jurisdictions treat garage door work
+    under a general or specialty contractor class, so the requirement is
+    checked locally before quoting. Sales tax registration applies where
+    installed materials or parts are taxable. Capital is a service truck
+    with a rack and parts bins, spring winding bars and lifting
+    equipment, a torsion spring and section inventory for common
+    residential sizes, and a distributor account with the door and
+    operator manufacturers. The minimum team is an owner who estimates
+    and installs, one installer, and someone answering the phone. The
+    first records are the job request, the quote with opening dimensions
+    and headroom, the work order, the commissioning record with balance
+    and reversal test results, and the customer invoice. Lead intake,
+    quoting, the survey, installation, and safety testing must work from
+    the first job.
+  economics: >
+    Revenue comes from quoted installation projects and from door and
+    operator product, service, and parts work: the door and operator
+    margin, installation labor, remotes and access devices, repairs,
+    parts, and maintenance visits. Pricing is per job with a flat repair
+    fee plus parts, and per opening for installations with the door cost
+    passed through at a markup. Gross margin is highest on repairs
+    because the parts are cheap and the labor is skilled and fast; it is
+    thinner on installations where the door is most of the price. The
+    metrics that decide profit are quote win rate, project gross margin,
+    rework rate, and on-time completion, because a return visit to
+    rebalance a door or replace a mis-ordered section consumes the
+    margin of the original job. Booking rate on inbound calls matters
+    because repair demand is urgent and goes to whoever answers first.
+    The business is labor-intensive with modest equipment; margins are
+    protected by truck stock that avoids a second trip and by a
+    commissioning record that closes the job cleanly.

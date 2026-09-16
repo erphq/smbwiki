@@ -87,3 +87,50 @@ questions:
   - >-
     Which record proves space planning was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The space planning process tests how a program of rooms and
+    functions fits inside a measured shell, working through circulation,
+    accessibility, egress, furniture, clearances, privacy, daylight,
+    building systems, and the changes the client expects to make later.
+    It starts with an approved program and measured existing conditions
+    from the client brief and ends when a plan has been accepted and the
+    selections it drives have been released into a finish schedule. An
+    interior design firm owns it, usually through the project designer
+    under a principal who holds the client relationship.
+  why: >
+    It protects the client from a plan that works on paper and fails in
+    occupancy, and it protects the firm from redesign after procurement.
+    A corridor that meets code on the drawing but loses clearance once
+    the casework arrives, a workstation layout that puts the quiet team
+    under the mechanical unit, or an egress path that a later partition
+    closes each surfaces after the furniture is ordered, when fixing it
+    costs lead time, price, and installed work at the same time.
+  how: >
+    The designer reads the current scope and revisions, then confirms
+    the approved program, the measured existing conditions, the
+    consultants' criteria, the budget, the schedule, the code basis, and
+    how the client makes decisions before planning starts. The work is
+    set out as a sequence with the options to test, the reviews with
+    consultants and the client, hold points where the plan is frozen
+    before selections proceed, and the drawing and decision record the
+    team uses. During planning the designer tests circulation,
+    accessibility, egress, furniture, clearances, privacy, daylight, and
+    systems against the measured shell, records the decisions and the
+    reasons behind them, and stops when a field measurement or a
+    consultant's requirement changes the approach. At acceptance the
+    designer checks the plan against coordinated safe spaces, approved
+    selections, complete documents, released procurement, installed
+    intent, and resolved deficiencies, closes any open item, and issues
+    the finish schedule.
+  controls:
+    - name: Plan tested against measured conditions
+      note: Every option is drawn on the field-verified shell, and a discrepancy between survey and drawing stops the option until it is resolved.
+    - name: Code and accessibility check recorded per option
+      note: Egress widths, door clearances, and accessible routes are checked and noted on each plan option before it goes to the client.
+    - name: Consultant coordination before freeze
+      note: Mechanical, electrical, and structural criteria are confirmed against the plan and logged before the plan is frozen.
+    - name: Client decision log
+      note: Each client decision on the plan is recorded with the date and the option chosen, so a later change is priced as a change.
+    - name: Finish schedule released from the frozen plan
+      note: Selections are released for procurement only against the accepted plan revision, and the schedule cites that revision.

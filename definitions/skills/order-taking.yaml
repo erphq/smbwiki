@@ -82,3 +82,47 @@ automation:
 questions:
   - Which ticket corrections recur often enough to change the menu setup?
   - Does the customer confirmation exactly match the production ticket?
+article:
+  what: >
+    The order taking process turns what a customer says at the counter,
+    at the table, on the phone, or through an app into an order ticket
+    that a production station can read without asking a question. It
+    settles item, size, quantity, modifiers, any allergy or handling
+    note, the service channel, the destination or name, the price, and
+    the promised time before the ticket enters the queue. It starts when
+    the customer begins ordering and ends when the customer's
+    confirmation and the production ticket match. In a full-service
+    restaurant the server owns it; in a pizzeria or a coffee shop it
+    belongs to whoever is at the register or the phone.
+  why: >
+    It protects production time and product. An unclear modifier, a
+    missing table number, or a pickup name that was never captured is
+    discovered after the station has already started the order, and the
+    correction costs the product, the time, and often the customer. A
+    promise quoted from a normal-service chart while twenty tickets are
+    open produces a customer who arrives before the food exists. An
+    allergy note typed as free text and read three different ways is the
+    version of this failure with the highest consequence.
+  how: >
+    The order taker establishes the service context first, because
+    counter, table, pickup, and delivery orders need different identity,
+    location, payment, and timing details. Items are then captured
+    against the current menu so that each choice and each modifier maps
+    to something the station can read, and a request that does not fit
+    the menu vocabulary is clarified with the customer before it is
+    entered. Before a time is quoted, the taker checks availability,
+    allergy handling, the current production load, and the delivery
+    area. The ticket is confirmed by reading back items, total, channel,
+    name or location, and promise to the customer, and the same content
+    is released to the production queue as the order ticket.
+  controls:
+    - name: Channel identity mandatory
+      note: A ticket cannot release without a table number, pickup name, order number, or delivery address that matches its service channel.
+    - name: Modifiers from the defined list
+      note: Free text is reserved for allergy and handling notes; every other change is a menu modifier, and repeated free-text phrasings trigger a menu review.
+    - name: Allergy note flagged and read back
+      note: An allergy or handling note is entered in its own field, repeated to the customer, and displayed prominently on the station ticket.
+    - name: Promise checked against the live queue
+      note: Quoted times come from current open-ticket load and delivery distance, and the suggested time is overridden only with a recorded reason.
+    - name: Confirmation equals the ticket
+      note: The customer's receipt or read-back and the production ticket are generated from the same record, and a mismatch found at handoff is logged.

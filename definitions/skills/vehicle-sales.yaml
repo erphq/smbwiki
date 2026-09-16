@@ -100,3 +100,51 @@ automation:
 questions:
   - Which promised vehicle is not ready under the condition represented to the buyer?
   - Which delivered deal still depends on an unfunded or unverified condition?
+article:
+  what: >
+    The vehicle sales process carries a single identified unit from the lot to
+    the buyer's driveway in a new or used car dealership: the salesperson
+    matches the buyer to a vehicle whose condition and availability are known,
+    presents and demonstrates it, agrees a deal on a vehicle purchase
+    agreement, the finance manager completes funding and title, and the
+    salesperson delivers the vehicle and closes the deal with a sales receipt
+    and deal accounting. It starts when a client profile meets a stock record
+    and ends when the vehicle, the money, the title, and the accounting all
+    describe the same transaction. The sales manager owns the desk, the
+    finance manager owns funding, and the salesperson owns the buyer.
+  why: >
+    A vehicle sale is a promise, a contract, a loan, a title transfer, and a
+    delivery, and they fail when they describe different things. A price
+    quoted on a unit whose reconditioning or title state changed after the
+    quote, a vehicle released before the lender's conditions were met, or a
+    due bill promised outside the deal jacket produce unwound deals, delayed
+    cash, and disputes after the vehicle has left. One deal jacket with the
+    unit, the buyer, the terms, the funding, the title, and every commitment
+    is what keeps sales, finance, service, and accounting from reconciling
+    after delivery.
+  how: >
+    The salesperson matches buyer and vehicle from the client profile and the
+    stock record, confirming intended use, budget, timing, trade, required
+    features, and the unit's availability, condition, and ownership facts. The
+    presentation and demonstration record the identified vehicle, its
+    equipment, condition, history, warranty, inspection, the test drive, and
+    any unanswered questions. The deal is agreed on the vehicle purchase
+    agreement, with vehicle, price, trade, taxes, fees, products, credits,
+    deposit, delivery conditions, and signatures forming one buyer decision.
+    The finance manager then completes identity, credit, lender terms, the
+    contract, payoff, title, tax, registration, insurance, and funding
+    conditions. On delivery the salesperson verifies final vehicle condition,
+    accessories, keys, documents, and payment, obtains customer acceptance,
+    and the sales receipt, inventory relief, and deal accounting close the
+    transaction.
+  controls:
+    - name: Unit state confirmed before quoting
+      note: Stock status, reconditioning completion, title state, and installed equipment are verified on the stock record before a price is put in writing.
+    - name: Purchase agreement holds every commitment
+      note: Accessories, due bills, trade payoff, and delivery conditions are written on the vehicle purchase agreement, and a promise outside it is never honored by accounting.
+    - name: Funding conditions cleared before release
+      note: The delivery checklist shows lender approval, identity, insurance, contract, and stipulations complete before the keys are handed over.
+    - name: Title and payoff verified by finance
+      note: Title status and any trade payoff are confirmed with the lienholder and recorded in the deal jacket before funding.
+    - name: Deal accounting reconciled to the jacket
+      note: Gross, products, fees, and commitments in the accounting entry are reconciled to the signed deal jacket before the deal is reported as closed.

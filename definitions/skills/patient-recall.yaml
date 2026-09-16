@@ -83,3 +83,48 @@ automation:
 questions:
   - Why is the oldest clinically important recall still open?
   - Does every contact attempt leave a clear outcome and next action?
+article:
+  what: >
+    The patient recall process finds the people whose recurring care is
+    due or overdue, confirms that the recommendation and the way to reach
+    them are still current, and works them through to a booking, a
+    deferral, a transfer, a documented refusal, or a recorded
+    unreachable status. It starts from the care intervals and completed
+    visits in the patient chart and ends with each name on the recall
+    list closed with an outcome and a next action. The front-desk lead
+    or a recall coordinator owns it in a dental clinic, an optometry
+    practice, or a physical therapy clinic; in a veterinary clinic it is
+    the receptionist working vaccine and wellness dates.
+  why: >
+    It protects continuity of care and the practice's future schedule at
+    the same time. A list generated without checking completed visits
+    sends reminders for care already done and teaches patients the
+    practice does not know its own record. Attempts with no recorded
+    disposition mean staff repeat the same message to someone who
+    already declined or moved away. A list sorted only by due date
+    leaves a clinically important follow-up behind routine cleanings and
+    eye exams. The process also protects the patient's choice:
+    persistence ends when a clear answer has been given.
+  how: >
+    The coordinator calculates who is due from the chart: the documented
+    care interval and the latest completed visit produce the due date,
+    and the recall list is generated from that. The worklist is cleaned
+    before any outreach: duplicates, care completed elsewhere, inactive
+    patients, bad contact details, and clinical exceptions are removed
+    or corrected. The contact sequence is then worked, with each attempt
+    recording the channel used, the result, what the patient promised,
+    and the next date someone should act. Each recall is closed with an
+    outcome the chart can distinguish: booked, deferred with a date,
+    refused, transferred, or unreachable after the defined attempts, and
+    a completed visit creates the next due event.
+  controls:
+    - name: Due date from the chart
+      note: The recall list is regenerated from care intervals and completed visits, and a manual addition to the list requires a chart entry behind it.
+    - name: Cleaning pass before outreach
+      note: Completed, duplicate, inactive, and bad-contact entries are removed and the count of removals is recorded before the first contact is made.
+    - name: Every attempt has a disposition
+      note: Channel, result, promise, and next action are required fields on each contact, and an attempt without an outcome is not counted.
+    - name: Clinical priority on the list
+      note: A clinician marks recalls that carry clinical risk, and those are worked first regardless of where their due date falls.
+    - name: Suppression after a clear answer
+      note: A refusal or transfer stops further outreach for that recommendation, and the reason is visible in the chart to everyone.

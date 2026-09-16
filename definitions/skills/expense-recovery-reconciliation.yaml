@@ -96,3 +96,49 @@ questions:
   - >-
     Which record proves expense recovery reconciliation was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The expense recovery reconciliation process is the annual finance work a
+    commercial property manager does to true up what tenants were billed in
+    estimated operating expenses against what the building actually spent:
+    recoverable costs are classified, each lease's pool, share, cap, and
+    exclusions are applied, estimates are reconciled to actuals, statements
+    go to tenants with supporting detail, and tenant questions and audits
+    are answered. It starts when the year's books close and ends when
+    statements are issued, adjustments are billed or credited, and the
+    reconciliation supports the property operating statement to the owner.
+  why: >
+    Recoveries are a large share of a commercial building's income, and
+    every dollar in dispute is a dollar the owner does not receive on time.
+    Costs classified outside the lease definition get thrown out in a tenant
+    audit, sometimes years later with interest. A cap applied wrongly
+    overbills an anchor tenant and damages the renewal. Reconciliations
+    issued late miss the lease deadline and forfeit the recovery entirely.
+    The process protects the owner's income and the manager's credibility
+    with tenants at the same time.
+  how: >
+    The property manager reads the scope and confirms the current leases and
+    their recovery clauses, tenant contacts, vendor contracts, the property
+    budget, the building systems the costs relate to, the compliance
+    calendar with statement deadlines, and the owner's authority on
+    adjustments. Field controls translate that into a reconciliation
+    schedule, the classification rules per lease, the sequence of review,
+    the hold point where the accountant's figures are checked against lease
+    terms, and the records each step produces. During the reconciliation the
+    manager records classification decisions, cap and exclusion
+    applications, and any cost that does not fit the lease, and stops when a
+    lease or a vendor contract differs from the assumptions. Acceptance
+    checks accurate charges and recoveries, maintained common areas,
+    controlled vendors, documented tenant work, and timely reporting, and
+    the property operating statement is issued to the owner.
+  controls:
+    - name: Classification against each lease definition
+      note: Every cost line is classified as recoverable or excluded per the specific lease clause, and the decision is recorded.
+    - name: Cap and pool calculation checked by a second person
+      note: Shares, gross-ups, and caps are recomputed by someone other than the preparer before statements go out.
+    - name: Statement deadline on the compliance calendar
+      note: Each lease's reconciliation deadline is tracked so no recovery is forfeited by a late statement.
+    - name: Support file per statement
+      note: Invoices, contracts, and the allocation workpaper are filed with each tenant statement to answer review or audit.
+    - name: Owner approval on adjustments
+      note: Credits, write-offs, and disputed items are approved by the owner in writing before they are posted.

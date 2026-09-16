@@ -109,3 +109,66 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A drywall contractor's week runs behind the framers and ahead of
+    the painters. The estimator quotes from plans by board quantity and
+    finish level, the project manager confirms that framing, backing,
+    and rough systems are ready, and the crew lays out, hangs, tapes,
+    finishes, and textures in a sequence paced by drying time as much
+    as labor. Trade forepersons check board type, control joints, and
+    edge support before hanging hides the supporting work, and
+    finishers inspect under representative light before the crew leaves
+    so punch work is closed before paint reveals it. The load-bearing
+    skills are drywall hanging, joint finishing, and drywall punch,
+    because hanging sets the production rate and finishing sets whether
+    the job is accepted. The tension is between speed and surface: a
+    crew pushed to hang faster leaves finishing problems, and a finish
+    rushed before coats dry cracks or shows after paint, when the fix
+    is a return trip on the contractor's own account.
+  starting: >
+    A drywall contractor starts with a crew, tools, scaffolding or
+    lifts, and a relationship with a drywall distributor who will
+    deliver and stock board on the floor. Most states license drywall
+    as a specialty contractor trade or under a general contractor
+    license, some do not license it at all, and general contractors
+    will still require proof of insurance and workers' compensation
+    before a crew is allowed on site. The universal paperwork is the
+    business registration, employer registration once the crew is
+    hired, general liability, workers' compensation, and sales tax
+    handling for materials that varies by state. The minimum team is an
+    owner-operator who estimates and runs the job, an office manager
+    for invoicing and scheduling, and a crew of a trade foreperson and
+    installers split between hangers and finishers; the project manager
+    and site superintendent roles are held by the owner until there are
+    concurrent jobs. The first records are the job request, the quote,
+    the construction plan with finish levels marked, the work order,
+    the punch list, job photos, the supplier invoice from the
+    distributor, and the customer invoice. Lead intake, quoting,
+    drywall layout, drywall hanging, joint finishing, drywall punch,
+    and invoicing must work on the first job.
+  economics: >
+    Revenue is quoted projects priced as measured board and finishing
+    scope, adjusted for assembly type, ceiling height, access, finish
+    level, texture, protection, and patch work. Pricing is per square
+    foot of board with finishing priced by level, so the estimate has
+    to count the board correctly and price the finish level the owner
+    actually expects. Gross margin is board and compound against crew
+    labor, and labor is the larger share, so the production rate per
+    crew day and the rework rate decide profit more than material
+    price. The metrics that decide profit are project gross margin,
+    rework rate, on-time completion, schedule variance, and days sales
+    outstanding, because a return trip to fix a finish after paint is
+    unpaid labor, a job that waits on framing keeps a crew idle, and
+    general contractors pay on their own owner's schedule with
+    retention held. Quote win rate against booking rate shows whether
+    pricing matches the market for the finish level offered. The
+    business is labor-intensive and capital-light, which makes it easy
+    to enter and hard to hold margin in, since the price is set by
+    competitors with the same cost structure.
+  benchmarks:
+    - scope: Median annual wage, drywall and ceiling tile installers
+      value: 58,930 dollars, May 2025
+      note: "BLS Occupational Outlook Handbook; tapers had a median of 68,270 dollars in the same period. About 118,000 jobs in 2025 for the combined group, projected growth 2 percent from 2025 to 2035. Loaded crew cost for quoting sits above the wage once payroll taxes, insurance, and benefits are added."
+      source: https://www.bls.gov/ooh/construction-and-extraction/drywall-and-ceiling-tile-installers-and-tapers.htm
+      source_name: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Drywall and Ceiling Tile Installers and Tapers (May 2025 wages)

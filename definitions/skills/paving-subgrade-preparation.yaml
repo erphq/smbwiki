@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves paving subgrade preparation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The paving subgrade preparation process is the earthwork that makes
+    the ground ready to carry a driveway: removing unsuitable material,
+    shaping the formation to drain, conditioning moisture, compacting to
+    the specified density, proof-rolling to find soft areas, and
+    recording every correction before base or asphalt is placed. It
+    starts from the site plan and ends with a test report showing the
+    formation meets grade, density, and drainage and that weak areas
+    were repaired. The paving foreman owns it for a driveway paving
+    contractor, with the excavator and roller operators executing.
+  why: >
+    It protects everything placed on top. A driveway fails from below: a
+    soft spot left under the base becomes a depression, trapped water
+    under the section heaves in frost, and a formation that does not
+    drain keeps the base wet so the asphalt cracks along the wet line.
+    None of this is visible once the surface is down, and the owner's
+    complaint arrives a year later as a settlement or a pothole that has
+    to be cut out to the subgrade to fix. The proof roll and the
+    compaction record are the only evidence the contractor has that the
+    ground was sound.
+  how: >
+    The foreman confirms the work basis: current scope and revisions,
+    approved limits and drainage, removed failed material, a stable
+    subgrade target, the confirmed section, available mix, the weather
+    window, and traffic control. Field controls set the excavation
+    limits, the drainage shape and fall, the moisture range for
+    compaction, roller type and passes, where density is tested, and the
+    proof-roll route and load. During the work the crew strips
+    unsuitable material, shapes the formation, adjusts moisture,
+    compacts in lifts, proof-rolls, and records each soft area found and
+    how it was corrected, stopping when the ground differs from what the
+    plan assumed. Acceptance checks thickness, density, grade,
+    smoothness, drainage, joint quality, edge support, markings, and
+    opening strength for the finished section, corrections are closed,
+    and the test report is issued.
+  controls:
+    - name: Unsuitable material logged at removal
+      note: Organic, saturated, or soft material found during stripping is recorded with location, depth, and the replacement material placed.
+    - name: Drainage fall checked before compaction
+      note: The shaped formation is checked for cross fall and outlet before rolling begins, and a low area is corrected before the roller moves.
+    - name: Moisture within range at compaction
+      note: Moisture is checked and adjusted before each lift is rolled, and the reading is on the record with the lift it belongs to.
+    - name: Proof roll witnessed and recorded
+      note: The loaded proof roll is watched by the foreman, every deflection is marked and corrected, and the second pass is recorded.
+    - name: Density results before base placement
+      note: Compaction tests at the specified locations pass before base material is ordered onto the formation, and the report is filed with the job.

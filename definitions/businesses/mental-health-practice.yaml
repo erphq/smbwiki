@@ -30,3 +30,57 @@ licenses:
       as_of: "2026-07-29"
 supply_chain:
   sells_to: [patient, payer]
+article:
+  operating_model: >
+    A mental health practice sells clinician time in scheduled sessions,
+    so the week is a grid of appointment slots against a small number of
+    licensed clinicians. The receptionist fills and confirms the grid,
+    the clinical assistant handles intake, the clinician delivers the
+    session and writes the note, and the billing specialist turns the
+    note and the verified coverage into a claim. Appointment scheduling,
+    clinical care, and claims billing are load-bearing. The tension sits
+    between continuity and risk: a missed visit, a crisis statement, or a
+    message that needs action before the next session has to reach a
+    clinician the same day, while the schedule stays full enough to
+    cover payroll.
+  starting: >
+    Day one requires the mental health professional license for every
+    clinician who provides regulated care, plus the general layer every
+    business needs: entity registration, an employer registration once
+    staff are hired, and a tax account; therapy sessions are usually
+    exempt from sales tax, but the practice should confirm that in its
+    own state. Payer contracts and credentialing take months and gate
+    the contracted-care revenue stream, so they start before the lease
+    is signed. The minimum team is a clinician who also owns the
+    practice, a receptionist, and a billing specialist, with the office
+    manager role held by the owner at first and a clinical assistant
+    added as the schedule fills. The first records are the patient
+    registration, the insurance verification, the patient chart with its
+    consent and disclosure forms, the clinical note, and the recall
+    list. Appointment scheduling, coverage verification, patient intake,
+    clinical care, and claims billing must all work from the first
+    session, because the record is what protects both the patient and
+    the practice when a disclosure, a subpoena, or a complaint arrives.
+  economics: >
+    Revenue is therapy sessions billed per session and contracted care
+    paid under payer or organization agreements, so the price basis is
+    the session, set by payer fee schedules for covered care and by the
+    practice for private-pay clients. Gross margin is clinician cost
+    against session revenue: a salaried or per-session clinician who
+    sees a full schedule earns the practice a margin on every hour,
+    while an empty slot costs the same clinician time and returns
+    nothing. The metrics that decide profit are the appointment no-show
+    rate, which is the direct measure of lost clinician hours, the clean
+    claim rate and days sales outstanding, which decide how much of the
+    billed work is collected and how fast, and the recall reappointment
+    rate, which keeps the schedule full without new marketing. The
+    practice is labor-intensive and capital-light; rent, software, and
+    malpractice cover are the fixed base, and the margin swings almost
+    entirely with how many billable hours each clinician delivers and
+    how many of those hours are paid.
+  benchmarks:
+    - scope: Mean annual wage, counselors employed by offices of mental health practitioners
+      value: "$69,610 (May 2023)"
+      note: "Substance abuse, behavioral disorder, and mental health counselors in NAICS 621330, 51,750 employed or 25.28 percent of the industry's 204,760 jobs; mean hourly wage $33.47. Clinical and counseling psychologists in the same industry averaged $115,040 and marriage and family therapists $68,850."
+      source: https://www.bls.gov/oes/2023/may/naics5_621330.htm
+      source_name: "BLS, Occupational Employment and Wage Statistics, NAICS 621330 Offices of Mental Health Practitioners except Physicians (May 2023)"

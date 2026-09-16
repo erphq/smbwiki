@@ -96,3 +96,51 @@ questions:
   - >-
     Which record proves structural and interior inspection was accepted before
     it was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The structural and interior inspection process is the part of a home
+    inspection that walks the visible structure and interior of a
+    property, meaning foundation, framing, floors, walls, ceilings,
+    stairs, attic, crawlspace, and the moisture, movement, and unsafe
+    conditions they show, and records what was seen, what was not
+    accessible, and why. It starts from a signed scope in the client
+    brief and ends with an inspection report the buyer can act on before
+    their contingency expires. A home inspection service owns it through
+    the licensed inspector who performs and signs the inspection.
+  why: >
+    It protects the buyer's decision and the inspector's license. A
+    crawlspace skipped because it was tight, a stain on a ceiling called
+    cosmetic without checking above it, or a cracked foundation
+    described in vague terms leaves the buyer to discover a structural
+    repair after closing, and the inspector to explain the report in a
+    complaint or a claim. A limitation left unstated reads as an
+    inspection that found nothing. The standards the inspector is
+    licensed under require the observations, the limitations, and the
+    risk to be stated clearly.
+  how: >
+    The inspector reads the signed scope and any revisions, then
+    confirms the identified property, the agreed access, known occupancy
+    and utilities, required disclosures, the tools, and the weather
+    before the visit. The inspection is set out as a route through the
+    property, the systems and areas to observe, the responsibilities if
+    another inspector or a specialist is involved, hold points where an
+    unsafe condition stops entry, and the report form the observations
+    go into. On site the inspector traces foundation, framing, floors,
+    walls, ceilings, stairs, attic, and crawlspace, records
+    observations, photos, moisture readings, and every area that could
+    not be entered with the reason, and stops when a condition changes
+    the planned method. At acceptance the report is checked for complete
+    accessible-system observations, stated limitations, clear defect
+    evidence, risk significance, and timely delivery to the client, gaps
+    are closed, and the inspection report is issued.
+  controls:
+    - name: Every inaccessible area stated with a reason
+      note: Each area the inspector did not enter or could not see is listed in the report with why, so silence never reads as clearance.
+    - name: Photo evidence for every defect
+      note: Each reported defect carries a photograph, its location, and the observation that supports the conclusion drawn.
+    - name: Moisture and movement readings recorded
+      note: Meter readings and measured cracks or slopes are recorded with the location and the instrument used.
+    - name: Risk stated for each finding
+      note: Every finding is classified for its significance and given a recommended next step, so the buyer can prioritize.
+    - name: Report delivered inside the contingency
+      note: The delivery time is recorded against the client's deadline, and a late report is an exception the owner reviews.

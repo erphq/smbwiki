@@ -96,3 +96,50 @@ automation:
 questions:
   - Which confirmed arrival depends on a room attribute not reserved in inventory?
   - Which booking source can change availability without updating the property record?
+article:
+  what: >
+    The reservation management process commits a room for specific nights
+    to a specific guest under a rate and terms both sides can rely on. It
+    begins when a stay request arrives from any channel and ends when the
+    reservation record holds guest identity, dates, room type, rate,
+    guarantee, terms, and source, and stays current through changes,
+    payments, and cancellation until the guest arrives. In a hotel or a
+    bed-and-breakfast inn it is owned by the front desk agent, with the
+    owner or revenue manager setting the rate rules the agent works
+    inside.
+  why: >
+    A room night sold twice or sold on terms the property never recorded
+    is a conflict that lands on the front desk at arrival. A confirmation
+    living in an email or a channel portal without a matching record lets
+    two guests hold the same last room. A free-text request treated as a
+    guarantee promises capacity or attributes the property never
+    reserved. A stored total without its rate plan leaves cancellation,
+    deposit, and included-service terms to be argued after the guest has
+    acted on the price. The process keeps availability, terms, and
+    requests on one record so the arrival promise is one the property can
+    keep.
+  how: >
+    The front desk agent reads the stay request, confirming dates, party,
+    room needs, accessibility, purpose, preferences, flexibility, contact
+    details, and booking source. The agent selects available inventory,
+    choosing a room type and rate against physical availability,
+    restrictions, minimum stays, maintenance holds, and known group
+    commitments. The terms are established and explained: price, taxes,
+    deposit or guarantee, cancellation, arrival and departure, occupancy,
+    and the status of each special request. The reservation is committed
+    only when guest identity, dates, room type, rate, terms, source, and
+    confirmation are stored together on the reservation record, and
+    inventory is reduced at that moment. The agent then maintains the
+    arrival record, applying changes, payments, messages, requests,
+    estimated arrival, and cancellation state to the same reservation.
+  controls:
+    - name: Inventory reduced only by the reservation record
+      note: A room is held only when a complete reservation record exists, so channel and email confirmations must be entered before they count.
+    - name: Rate plan and terms stored with the total
+      note: Every reservation carries its rate plan, cancellation, deposit, and tax basis, so a bare total is never the only record of the price.
+    - name: Special requests carry a status and owner
+      note: Each request is marked guaranteed, preferred, or declined with the person responsible, so nothing free-text is mistaken for a promise.
+    - name: Guarantee collected or authorized at commit
+      note: A deposit or valid payment guarantee is recorded before the reservation is confirmed to the guest.
+    - name: Daily arrivals reconciled against inventory
+      note: The next day's arrivals are checked against physical availability and holds so an oversold type is found before the guest is standing at the desk.

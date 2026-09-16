@@ -37,3 +37,49 @@ automation:
 questions:
   - Which file, specification, approval, or finishing dependency can still invalidate the run?
   - Does the production order point to the exact imposed proof the customer approved?
+article:
+  what: >
+    The print preflight and proofing process turns the files a customer
+    supplies and the specification on the customer order into an
+    imposed, technically valid proof the customer has approved and a
+    production order that points to exactly that proof. It starts when
+    the order and the deliverable files arrive in prepress and ends when
+    the approved proof, the material specification, the correction
+    record, and the production order share one revision and the run is
+    released to press. The prepress operator owns it in a commercial
+    printer, with the customer service representative holding the
+    approval conversation.
+  why: >
+    It protects the run. A press that runs a revision the customer did
+    not approve, or a file with a missing font, a low-resolution image,
+    a wrong color space, or no bleed, turns the full quantity into scrap
+    and takes finishing and delivery capacity with it. Press capacity
+    and due dates push files toward the press before defects,
+    corrections, finishing assumptions, and approval are closed, and
+    repairs made at press are made by the person least able to check
+    them. Approval inferred from an email or a filename is where a
+    dispute about who pays for the reprint starts.
+  how: >
+    The operator confirms the production specification with the
+    customer service representative: size, quantity, stock, ink, color,
+    pages, finishing, personalization, packaging, delivery, and the
+    revision the specification represents. Files are then preflighted
+    and prepared: fonts, links, resolution, bleed, trim, color spaces,
+    separations, pagination, imposition, and any variable data are
+    checked, defects are corrected or returned to the customer, and each
+    correction is logged. A print production proof is generated from the
+    prepared, imposed file. The customer's approval is bound to that
+    proof, the material specification, and the correction record, and
+    the production order is updated to the same revision and released
+    to the press.
+  controls:
+    - name: Specification confirmed before preflight
+      note: The production specification is confirmed with the customer and recorded with a revision before any file work begins in prepress.
+    - name: Preflight report on file
+      note: The automated and manual preflight results, and every correction made or returned, are kept with the job under the same revision.
+    - name: Approval bound to one proof
+      note: The customer approves a named proof revision in writing, and the approval record is attached to that proof and no other.
+    - name: Production order matches the proof
+      note: Release is blocked while the production order, the imposed file, and the approval record carry different revisions or specifications.
+    - name: Finishing checked on the proof
+      note: Folds, trims, scores, and binding are marked on the imposed proof and checked against the finishing specification before release.

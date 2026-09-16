@@ -90,3 +90,47 @@ questions:
   - >-
     Which record proves finish protection was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The finish protection process covers the completed finish work that
+    other trades will walk on, roll carts past, and spray around before
+    the owner takes the space. It starts when a finish surface is complete
+    and accepted while other work continues around it, and it ends when
+    the protection comes off without residue, damage found underneath is
+    recorded and assigned, and the surface is accepted for handover on the
+    punch list. On a finish carpentry contractor's crew the foreman owns
+    it, since the crew's own work is what gets damaged when it fails.
+  why: >
+    Finished stair treads, cabinetry, wood floors, and painted trim are
+    the most expensive surfaces to repair and the last work anyone touches
+    before the walkthrough. Without planned protection, a painter's
+    ladder, a plumber's cart, or a wet boot marks a surface the finish
+    carpenter then refinishes at their own cost, and the argument about
+    who caused it has no evidence. Wrong coverings cause their own harm:
+    tape that lifts finish, plastic that traps moisture in fresh wood, and
+    board that blocks the ventilation a curing floor needs.
+  how: >
+    The foreman reads the current scope and revisions and confirms the
+    space is conditioned, dimensions are settled, the material is dry, and
+    access routes are known, so the protection covers real completed work
+    and the traffic that will actually cross it. The protection plan is
+    then set: which surfaces are vulnerable, which covering is compatible
+    with each finish, where access and ventilation are kept open, who
+    inspects the protection on which days, and where damage is recorded.
+    During the period the crew records the date protection went down, any
+    damage found on inspection with the trade present at the time, and any
+    point where a changed condition such as a new trade or a wet area
+    required a different covering. At removal the foreman checks the
+    surface condition, fit, alignment, and finish readiness, closes any
+    correction, and issues the punch list.
+  controls:
+    - name: Compatibility check per finish
+      note: The covering, tape, and adhesive for each surface are confirmed compatible with that finish before they go down, with the manufacturer's guidance kept on file.
+    - name: Dated photo record at cover and uncover
+      note: Each protected area is photographed the day protection goes on and the day it comes off so damage underneath has a time window and a responsible trade.
+    - name: Scheduled protection inspection
+      note: A named person walks the protection on a set cadence and records tears, lifted edges, and trapped moisture before they become finish damage.
+    - name: Ventilation and access kept open
+      note: Protection is laid so curing finishes can breathe and required egress and trade access stay usable, and any blocked route is a stop.
+    - name: Punch list for damage found at removal
+      note: Every mark, dent, or residue found when protection comes off is listed with an owner and closed before handover.

@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves reinforcement placement was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The reinforcement placement process puts the steel in the right place
+    before concrete makes it permanent. It begins when the construction
+    plan and the current revision name bar size, spacing, cover, laps,
+    dowels, embeds, and support for a placement, and it ends when the
+    placed reinforcement has been checked against those requirements,
+    corrected, and recorded before the pour, with the concrete test
+    results attached afterward. In a poured concrete contractor it is
+    owned by the foreman running the pour, with the rodbuster crew
+    placing and an inspector or the project engineer verifying at the
+    hold point.
+  why: >
+    Concrete fixes the location of every bar and embed at placement, so
+    an error found after the pour is demolition or a structural repair,
+    never an adjustment. Cover that is too thin corrodes, laps that are
+    too short fail under load, missing dowels leave a cold joint
+    unconnected, and an embed set in the wrong place stops the next
+    trade. The process puts an independent check between placement and
+    concrete and leaves a record that proves what was in the form before
+    it disappeared.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions, then verifying the surveyed layout, excavation acceptance,
+    form dimensions, embed locations, the reinforcement schedule, mix
+    information, access, and weather controls. The field controls
+    translate that into the placement sequence, who ties what, where the
+    pre-pour hold point sits, and which photographs and checklists the
+    crew must leave. During placement the crew sets bars, mesh, dowels,
+    chairs, laps, and embeds to the specified size, spacing, cover,
+    support, and cleanliness, recording quantities and any decision a
+    field condition forced, and stopping when the plan cannot be
+    followed. At the hold point the foreman or inspector checks geometry,
+    cover, and the placement record, closes corrections, and only then
+    releases the pour; finish, curing, and concrete test results complete
+    the test report.
+  controls:
+    - name: Pre-pour hold point
+      note: No concrete is placed until the reinforcement has been inspected against the schedule and the inspector's release is recorded with the date and location.
+    - name: Cover and spacing measured at the form
+      note: Cover, spacing, and lap length are measured at representative points and written on the placement record before release.
+    - name: Photographs before concrete
+      note: The placed reinforcement and embeds are photographed by location so the concealed work can be shown later without coring.
+    - name: Current revision on the placement record
+      note: The drawing revision the crew placed to is written on the record, so a superseded schedule is caught before the pour.
+    - name: Test results attached to the placement
+      note: Concrete test reports are filed against the same placement record so strength and reinforcement evidence sit together.

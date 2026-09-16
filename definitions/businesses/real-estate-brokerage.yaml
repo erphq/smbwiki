@@ -29,3 +29,67 @@ licenses:
       as_of: "2026-07-29"
 supply_chain:
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A real estate brokerage works through its agents. Each agent finds
+    sellers, buyers, landlords, or tenants, signs them under a
+    representation agreement, and then lists, shows, writes offers,
+    negotiates, and shepherds the file through inspection, financing,
+    appraisal, title, and possession. The broker, who is the principal
+    in the definition, supervises: advertising, disclosures, deadlines,
+    conflicts, deposits held in trust, and the records the state
+    requires the firm to retain. Client engagement and professional
+    service delivery are the load-bearing skills, because every
+    commission depends on a signed agreement and a closed transaction.
+    The tension is that agents are usually independent contractors paid
+    only at closing while the broker carries the liability for their
+    conduct, so supervision and the pipeline are the broker's daily
+    work.
+  starting: >
+    A brokerage cannot open without a broker license held by the person
+    who will conduct and supervise the firm, and every agent working
+    under the firm needs their own state salesperson or broker license.
+    Around that sit the business registration, employer registration
+    for staff such as the client coordinator, a trust account for
+    earnest money and other client funds where the state requires the
+    firm to hold them, errors and omissions coverage, and membership in
+    the local multiple listing service and association so listings can
+    be published and shared. The minimum team is the broker principal,
+    one or more licensed professionals, and a client coordinator who
+    handles intake, transaction files, invoicing, and receivables. The
+    first records are the job request, the client brief, the engagement
+    letter which is the representation agreement, the deliverable which
+    is the transaction file, and the customer invoice for commissions
+    and fees, and the skills that must work from the first listing are
+    lead intake, client engagement, professional service delivery, and
+    accounts receivable, since commission is collected from the closing
+    agent, split, and paid out under a documented schedule.
+  economics: >
+    Revenue is transaction commissions earned when represented
+    transactions close, plus brokerage services such as leasing,
+    referral, and management related fees. Commission is a negotiated
+    percentage of the sale or lease price, and the brokerage keeps only
+    the company share after the agent split, so the split schedule,
+    desk fees, and transaction fees define gross margin; a firm that
+    pays its producers most of the commission runs on volume and
+    ancillary fees, while a firm with lower splits has to supply the
+    leads and support that justify them. The metrics that decide profit
+    are booking rate from inquiry to signed agreement, quote win rate on
+    listing presentations, engagement gross margin per closed file, work
+    in progress age for pending transactions that can fall through, and
+    utilization of the coordinator and staff. Days sales outstanding is
+    short because commission is disbursed at closing, but revenue is
+    lumpy and moves with interest rates and inventory, which is why
+    fixed office cost against a variable pipeline is the risk that
+    closes brokerages.
+  benchmarks:
+    - scope: Median gross income of REALTORS from real estate activities
+      value: "$58,100 (2024)"
+      note: National Association of REALTORS 2025 Member Profile, member survey; up from $55,800 in 2023; members spent a median of $8,010 on business expenses in 2024. This is per-agent gross income after the broker split, which is why the brokerage's own margin is a separate question.
+      source: https://www.nar.realtor/agent-income
+      source_name: National Association of REALTORS, Agent Income, 2025 Member Profile (2024 data)
+    - scope: Establishments, employment, and average pay, NAICS 531210 offices of real estate agents and brokers
+      value: "161,270 establishments, 347,691 employees, average annual pay $88,689 (2024 annual averages)"
+      note: BLS Quarterly Census of Employment and Wages, private ownership, US total, 2024 annual averages. Employment counts wage and salary staff only; independent-contractor agents are outside this count, so the establishment figure is the useful one.
+      source: https://data.bls.gov/cew/data/api/2024/a/area/US000.csv
+      source_name: Bureau of Labor Statistics, Quarterly Census of Employment and Wages, 2024 annual averages

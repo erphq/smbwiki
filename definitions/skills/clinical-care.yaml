@@ -89,3 +89,53 @@ automation:
 questions:
   - Could another clinician continue care from this record without guessing?
   - Which unsigned note is currently delaying follow-up or billing?
+article:
+  what: >
+    The clinical care process is the visit itself: the clinician
+    establishes the current concern, examines and assesses, decides and
+    delivers care with the patient's understanding, and signs a note
+    that separates what was done from what is proposed. It starts when
+    the patient is roomed with the appointment record and chart open and
+    ends when the clinical note and treatment plan are signed. In a
+    primary care practice, a dental clinic, or a veterinary clinic the
+    clinician owns it personally; no one else can sign it.
+  why: >
+    It protects the patient's next decision and everything downstream of
+    the record. An old finding carried forward as current distorts the
+    next clinician's judgment. A note that blurs delivered and planned
+    procedures leaves the patient, the biller, and the next provider
+    unable to say what happened. A note closed after the day ends is
+    reconstructed from cues, and the specific instruction or exception
+    that mattered is the part that goes missing. Continuity, follow-up,
+    and the claim all depend on the same signed record.
+  how: >
+    The clinician opens the visit with the patient's report and the
+    relevant changes since the prior record in the patient chart, framed
+    by the appointment record's stated reason. Examination follows, and
+    findings are recorded with enough specificity to support the
+    decision and to be compared at the next visit. Options, risks,
+    expected result, and follow-up are discussed with the patient at the
+    point where the plan can still change, and care is delivered. The
+    clinician then signs the clinical note and the treatment plan,
+    keeping care delivered and care proposed distinct so billing,
+    follow-up, and another clinician can each read it without guessing.
+  controls:
+    - name: Current concern documented in the patient's words
+      note: >
+        The reason for today's visit and the changes since the last
+        record are entered before examination findings are written.
+    - name: Findings written fresh each visit
+      note: >
+        Carried-forward text is reviewed against today's examination
+        and edited, so identical findings across changed visit
+        purposes are caught.
+    - name: Delivered and proposed care separated
+      note: >
+        Each procedure in the record carries a completion status,
+        and proposed items sit in the treatment plan instead of the
+        note.
+    - name: Note signed on the clinical day
+      note: >
+        Unsigned notes are listed at the close of the day and
+        cleared before the clinician leaves, so billing and follow-
+        up never wait on memory.

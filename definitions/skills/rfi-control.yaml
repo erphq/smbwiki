@@ -86,3 +86,50 @@ questions:
   - >-
     Which record proves rfi control was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The RFI control process is how a commercial general contractor gets a
+    design question answered without the field guessing. It begins when a
+    conflict between drawings, specifications, site conditions, or trade
+    scopes is found and cannot be resolved from the contract documents,
+    and it ends when the designer's response is recorded, any resulting
+    change is priced and carried into the current drawings, and affected
+    trades are working from the revised basis. It is owned by the project
+    engineer or project manager, with the superintendent raising field
+    conflicts and the architect or engineer of record responding.
+  why: >
+    An unanswered design question becomes a field decision, and a field
+    decision made without the designer becomes rework, a claim, or both.
+    A conflict resolved on site and never written down leaves no record
+    of who approved it when the inspector or the owner asks. A response
+    that changes cost or time but never becomes a change order leaves the
+    contractor carrying the difference. A revision that does not reach
+    every affected trade means one crew builds to the old drawing. The
+    process moves each question to the right designer, keeps the answer,
+    and pushes the change into the work basis.
+  how: >
+    The project engineer confirms the work basis by reading the current
+    scope and revisions and verifying issued bid documents, coordinated
+    trade boundaries, contractual dates, review routes, and owner
+    decisions. The field controls set who may raise an RFI, the required
+    content, the routing to the designer, response time expectations, and
+    how a response is logged and distributed. When a conflict arises the
+    superintendent or trade documents it with location, drawing
+    references, photographs, and a proposed resolution; the engineer
+    logs it, sends it, tracks the response, records the answer, and stops
+    affected work when the response changes the method. Acceptance checks
+    that the resolution agrees with contract documents, authority
+    approvals, designer review, tested systems, and owner turnover
+    criteria, and the closed RFI with its drawings goes into the closeout
+    package.
+  controls:
+    - name: RFI log with dates and owner
+      note: Every RFI has a number, date raised, designer, date due, date answered, and current owner, reviewed at each coordination meeting.
+    - name: Response recorded in writing
+      note: A designer's answer given by phone or on site is written into the RFI and confirmed by the designer before the field acts on it.
+    - name: Cost and time impact flagged at response
+      note: Each response is assessed for cost or schedule change and linked to a change request before the affected work proceeds.
+    - name: Revised drawings distributed to all affected trades
+      note: The engineer records which trades received the revision and when, so no crew builds to a superseded sheet.
+    - name: Closed RFIs filed in the closeout package
+      note: Every RFI, response, and resulting drawing revision is retained with the as-built set for the owner and the warranty period.

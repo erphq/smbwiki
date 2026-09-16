@@ -75,3 +75,62 @@ products:
   - sewer-jetting-truck
 seo:
   title: "Plumbing Contractor: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A plumbing contractor runs two businesses on one board: the service
+    side, where a dispatcher matches an urgent fault to the nearest
+    qualified plumber with the right parts on the truck, and the project
+    side, where the master plumber surveys, quotes, pulls the permit,
+    and schedules a crew for a repipe, a sewer replacement, or a fixture
+    package. The office manager takes calls, invoices, and collects, the
+    plumber and apprentice execute against the work order with photos
+    and test results, and the master plumber owns quoting, permits, and
+    inspections. Dispatch, field job execution, quoting, and permits and
+    inspections are load-bearing. The tension is capacity: an emergency
+    callout sells protected capacity at a premium, but every hour a
+    plumber spends on a callout is an hour taken from a quoted project
+    with a date already promised.
+  starting: >
+    In most states the business or its qualifying party needs a plumbing
+    contractor license, and every person doing regulated plumbing work
+    needs a plumber license at the journeyman or master level, with
+    apprentices registered and supervised; the license usually requires
+    proof of insurance and a bond, and the master's license is the
+    credential that lets the company pull permits. The general layer is
+    business registration, employer registration once the first plumber
+    is hired, sales tax registration where the state taxes materials or
+    the service, and commercial auto cover for the trucks. A stocked
+    service van, tools, and a supply house account are the capital
+    items; jetting and camera equipment are added when the sewer work
+    justifies them. The minimum team is a master plumber who is often
+    the owner, one plumber, an apprentice, and an office manager who
+    also dispatches at first. The first records are the job request, the
+    quote, the work order with job photos, the permit, and the customer
+    invoice, and lead intake, dispatch, field job execution, quoting,
+    permits and inspections, and invoicing must all work from the first
+    week.
+  economics: >
+    Revenue is service calls billed from a dispatched visit, quoted
+    projects estimated and scheduled ahead, and emergency callouts sold
+    at a premium against protected capacity. Service work is priced
+    flat-rate from a book or by the hour plus parts; projects are quoted
+    on labor and material with the margin set in the estimate. Labor is
+    the largest cost, and gross margin is the price less the plumber
+    hours and the parts consumed, so jobs per tech day and first-time
+    fix rate decide the service margin and install gross margin decides
+    the project margin. The metrics that decide profit are average
+    ticket and jobs per tech day on the service side, quote win rate,
+    booking rate, and install gross margin on the project side, callback
+    rate, because a callback is a free visit plus a reputation cost, and
+    days sales outstanding on property management and general
+    contractor accounts, which pay slowest. The business is labor-heavy
+    and capital-moderate in vehicles and equipment, and margins improve
+    with dispatch density, truck stock that avoids a supply house run,
+    and a mix that keeps quoted projects filling the days between
+    emergencies.
+  benchmarks:
+    - scope: Mean annual wage, plumbers employed by plumbing, heating, and air-conditioning contractors
+      value: "$68,570 (May 2023)"
+      note: "Plumbers, pipefitters, and steamfitters in NAICS 238220, 308,840 employed or 24.97 percent of the industry's 1,236,740 jobs; mean hourly wage $32.97. The industry code combines plumbing with HVAC contractors."
+      source: https://www.bls.gov/oes/2023/may/naics5_238220.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 238220 Plumbing, Heating, and Air-Conditioning Contractors (May 2023)

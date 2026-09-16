@@ -31,3 +31,74 @@ skills:
 supply_chain:
   buys_from: [technology-distributor, cloud-service-provider]
   sells_to: [commercial-client]
+article:
+  operating_model: >
+    A managed IT service provider is paid to keep someone else's systems
+    running. The week is a stream of tickets, alerts, changes, and
+    scheduled maintenance across every client under agreement, worked by
+    professionals and coordinated by the principal, with the client
+    coordinator handling intake, engagement letters, and invoicing.
+    Onboarding sets the inventory, access, baseline, and escalation paths,
+    and after that the service agreement defines what is covered and what
+    becomes a separately authorized project. Maintenance agreements and
+    professional service delivery are the load-bearing skills, with client
+    engagement deciding whether the next agreement is signed. The tension
+    sits between the fixed monthly fee and the variable effort behind it:
+    a client with unsupported systems or repeated failures consumes hours
+    the fee did not price, and the recurring review is where the provider
+    either fixes that or reprices it.
+  starting: >
+    The definition binds no trade license. Day-one paperwork is the
+    business registration, employer registration before the first
+    technician is hired, professional and cyber liability insurance, and
+    sales tax registration where hardware resale or some software
+    subscriptions are taxable; contracts with regulated clients will add
+    confidentiality and data handling terms that the provider has to be
+    able to meet. The minimum team is a principal who sells, scopes, and
+    escalates, at least one professional who works tickets and projects,
+    and a client coordinator who handles intake, invoicing, and
+    receivables. The first records to set up are the client brief and
+    engagement letter for onboarding, the service agreement with its
+    covered scope and hours, the work order for changes and projects, the
+    time record, and the customer invoice, and the skills that must work
+    from the first client are client engagement, maintenance agreements,
+    professional service delivery, and invoicing. Capital is light in
+    equipment but heavy in tooling subscriptions: remote monitoring,
+    ticketing, backup, and security platforms have to exist before the
+    first agreement starts.
+  economics: >
+    Revenue is recurring managed service billed by user, device, or
+    agreement, plus projects and procurement authorized separately for
+    implementations and supplied equipment. The recurring fee is priced
+    from expected support hours, tooling cost per endpoint, and vendor
+    subscriptions passed through with a margin, so engagement gross margin
+    depends on keeping the hours per client below what the fee assumed.
+    Utilization rate of the professionals, agreement renewal rate, and
+    work-in-progress age decide profit: renewals are the whole point of
+    the model, and unbilled project time is margin leaking out. Quote win
+    rate and booking rate govern growth, and days sales outstanding
+    matters because vendor subscriptions are paid whether or not the
+    client has paid. The business is labor-intensive with recurring tool
+    costs, which rewards standardization across clients and penalizes
+    bespoke environments that need bespoke hours.
+  benchmarks:
+    - scope: Average managed service gross margin, MSPs worldwide
+      value: 46.2 percent (Q2 2024)
+      note: Service Leadership Index benchmark data published by ConnectWise; described as the highest in over a year; participant count for the quarter not stated in the release.
+      source: https://www.connectwise.com/company/press/releases/2024-08-06-service-leadership-q2-data-report
+      source_name: ConnectWise, Service Leadership Q2 2024 Data Report press release (Q2 2024 data)
+    - scope: Average adjusted EBITDA, MSPs worldwide
+      value: 14.1 percent (Q2 2024); 18.7 percent for private-equity-backed MSPs
+      note: Same Service Leadership Q2 2024 data report; described as the highest in eight quarters.
+      source: https://www.connectwise.com/company/press/releases/2024-08-06-service-leadership-q2-data-report
+      source_name: ConnectWise, Service Leadership Q2 2024 Data Report press release (Q2 2024 data)
+    - scope: Employees per establishment, computer facilities management services (NAICS 541513)
+      value: 16.2 paid employees per establishment
+      note: 103,562 paid employees in the week of March 12, 2023 across 6,374 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, computer facilities management services (NAICS 541513)
+      value: 101,822 dollars per employee (2023)
+      note: Annual payroll of 10,544,889 thousand dollars divided by 103,562 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

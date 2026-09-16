@@ -106,3 +106,52 @@ automation:
 questions:
   - Which committed project still lacks one item the crew needs to keep producing?
   - What field change is consuming cost without a priced customer decision?
+article:
+  what: >
+    The project delivery process is the path an accepted quote takes to a
+    closed job. The estimator converts the accepted scope into a
+    controlled work order, the crew lead clears readiness, sets up the
+    site, runs production while stopping added scope for a priced
+    decision, and inspects and releases the finished work with job
+    photos as evidence. It begins when the customer accepts the quote and
+    ends when acceptance, punch work, cleanup, and closeout evidence are
+    on the job record. In a residential remodeler, a landscaping company,
+    or a masonry contractor it is owned by the crew lead, with the
+    estimator and the office holding cost and change authority.
+  why: >
+    It protects the margin the quote promised. A crew sent to a site
+    before material, access, decisions, or predecessor work are settled
+    burns paid hours finding them. A field condition that changes the
+    work without a customer decision reaches final billing as unpriced
+    labor. A job marked complete before punch work, acceptance, and
+    evidence are recorded turns into a dispute with no record of who
+    inspected it. The process keeps cost, schedule, customer decisions,
+    and completion evidence attached to one job so none of those losses
+    arrive silently.
+  how: >
+    The estimator builds the field package from the accepted quote,
+    entering scope, measurements, selections, exclusions, access,
+    customer duties, cost allowance, and change authority into one work
+    order. The crew lead clears readiness against that work order,
+    checking labor, material, equipment, site access, predecessor work,
+    protection, weather exposure, and approvals before committing the
+    crew. On the first day the crew lead establishes the site, confirming
+    existing condition, work limits, staging, safety, occupants, and the
+    day's completion point. During production the crew lead keeps
+    installed quantity, labor, material use, defects, delays, and changed
+    conditions current and stops added scope for a priced customer
+    decision. At the end the crew lead inspects completed scope, cleanup,
+    punch work, and operating checks, records customer acceptance and
+    warranty information, and files the job photos before the job leaves
+    the board.
+  controls:
+    - name: Readiness gate with owner and due time
+      note: Every open critical item on a committed start has a named owner and a due time, and the crew is held until the list is clear.
+    - name: Change stops work for a priced decision
+      note: Work outside the accepted scope pauses until the customer has approved a priced change on the job record, so daily notes never describe unpriced work.
+    - name: Daily production record
+      note: Installed quantity, labor, material use, defects, and delays are logged each day against the work order, so cost and schedule are known before closeout.
+    - name: Inspection and acceptance recorded before closeout
+      note: The job is closed only when the record names who inspected it, who accepted it, and what punch work remained.
+    - name: Job photos as completion evidence
+      note: Photographs of completed scope, concealed work, and site condition at handover are filed with the job so a later dispute has a record.

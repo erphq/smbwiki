@@ -116,3 +116,54 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    An elevator service contractor lives on maintenance agreements and
+    the callouts they generate. The week is a route of scheduled
+    maintenance visits interleaved with trouble calls in occupied
+    buildings, code tests with an inspector present, repairs that need
+    parts matched to the unit, and modernization projects that run for
+    weeks. Elevator diagnostics, maintenance planning, and code testing
+    are the load-bearing skills: a technician has to preserve fault
+    evidence before resetting a car, and a unit only returns to service
+    after functional and safety checks, whatever cleared the symptom.
+    The tension is between response time and evidence: building owners
+    want the car running, and the record has to survive that pressure.
+  starting: >
+    A firm needs an elevator contractor license where the state or
+    locality licenses this work, which is most places, and the
+    technicians it fields usually need their own mechanic licenses; the
+    business registration, employer registration, and the insurance that
+    building owners require for access come before the first agreement
+    is signed. Parts accounts with an elevator parts distributor and,
+    where possible, the manufacturer are day-one requirements because a
+    callout without the right board or door part is a return visit. The
+    minimum team is an owner-operator, an office manager who runs intake
+    and invoicing, an estimator, and a project manager over a trade
+    foreperson and installer; in a small firm the owner and foreperson
+    are often the same person. The first records are the job request,
+    the service ticket, the test report, the quote, and the work order,
+    and the skills that must exist from the first day are lead intake,
+    quoting, elevator diagnostics, elevator repair, and elevator code
+    testing.
+  economics: >
+    Revenue comes from quoted projects and from maintenance agreements
+    with their callouts, testing, repairs, modernization, and
+    after-hours response. Agreements are priced per unit per month and
+    set the base; callouts, repairs, and modernization are quoted. Gross
+    margin is driven by route density and callback rate: a technician
+    who covers many units in one building earns the agreement price
+    with less travel, and a callback consumes labor the agreement
+    already paid for. The metrics that decide profit are project gross
+    margin on modernization, rework rate, on-time completion of tests,
+    quote win rate, and days sales outstanding, since building owners
+    and management companies pay slowly. The business is labor-intensive
+    and skill-scarce, so the constraint on growth is licensed mechanics,
+    and parts inventory ties up capital because units from many
+    manufacturers and decades stay in service.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, other building equipment contractors
+      value: "$5.49 million receipts per establishment; payroll 27.9 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 238290 (other building equipment contractors, the code that covers elevator and escalator installation and service alongside other specialized building equipment) in the 2022 Economic Census, establishments with payroll; receipts of $42.4 billion across 7,725 establishments, annual payroll of $11.9 billion, 141,908 employees (about eighteen per establishment).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector23/EC2223BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Construction: Summary Statistics for the U.S., States, and Selected Geographies, EC2223BASIC (2022)"

@@ -34,3 +34,53 @@ licenses:
 supply_chain:
   buys_from: [food-distributor, packaging-distributor]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A retail bakery bakes before it knows what will sell. The head chef
+    sets the prep list from prior sales, preorders, weather, and the
+    calendar, the line cooks mix, ferment, shape, proof, bake, cool, and
+    finish through the night and early morning, and the counter opens
+    with the display full while later batches are still adjustable.
+    Servers take counter and advance orders, and the general manager
+    schedules the shifts around the bake. Dough production and food
+    inventory are the load-bearing skills, since yield per batch and
+    the ingredients on hand decide what can be promised for pickup. The
+    tension is between selling out early, which loses customers, and
+    baking too much, which turns into waste that leaves inventory the
+    same day.
+  starting: >
+    A bakery needs a commercial kitchen with ovens, mixers, proofing,
+    refrigeration, and cooling space, a counter and display, and
+    accounts with a food distributor and a packaging distributor.
+    Licensing in the United States is the food service license from the
+    state or local health authority, which follows a plan review and an
+    inspection of the kitchen, and food handler permits for covered
+    employees depending on the jurisdiction; the definition carries
+    parallel layers for India, where food safety registration and
+    shops and establishments registration apply, and Singapore, where
+    company registration and a food shop licence attach to the
+    premises. Every location also needs the business registration,
+    sales tax registration where prepared food is taxable, and employer
+    registration for the first bakers. The minimum team is an
+    owner-operator, a head chef, a line cook, and a server, with the
+    general manager role held by the owner at first. The first records
+    are the recipe card, the prep list, the order ticket, the purchase
+    order, the supplier invoice, and the shift schedule, and the skills
+    that must work from the first morning are dough production, food
+    prep, order taking, food inventory, and staff scheduling.
+  economics: >
+    Revenue is counter sales of same day product and advance orders for
+    decorated, packaged, or larger items produced for a promised pickup,
+    with advance orders priced higher per unit because the labor and
+    the timing are known. Gross margin is set by food cost per item
+    and by waste, since flour, butter, eggs, and packaging are bought
+    ahead of demand and unsold product has no salvage value. The
+    metrics that decide profit are dough yield, waste percentage, food
+    cost percentage, and labor cost percentage, with ticket time
+    mattering at the counter during the morning peak. Labor is the
+    larger cost because skilled baking happens overnight on a shift
+    premium, so the balance of low margin bread against high margin
+    pastry and cakes, and the share of advance orders that can be
+    produced to a known quantity, decides whether a busy display turns
+    into profit. Ovens and refrigeration are the capital items and
+    they set the ceiling on daily output.

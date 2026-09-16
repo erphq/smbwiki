@@ -99,3 +99,49 @@ automation:
 questions:
   - Which occupied unit lacks one completed condition required before possession?
   - Which tenant-ledger charge cannot be traced to a lease term or signed change?
+article:
+  what: >
+    The lease administration process is how a residential property
+    manager, a commercial property manager, or a self-storage facility
+    fills a vacant unit and keeps the resulting tenancy enforceable:
+    application, screening, offer, signature, deposit, move-in,
+    recurring charges, notices, renewal, and move-out. It starts with a
+    lease application for a specific unit and ends only when the tenant
+    has moved out and the deposit is disposed of, with the lease and
+    the tenant ledger tied to the same unit and parties throughout. The
+    property manager owns it.
+  why: >
+    It protects revenue and the property's legal position at the same
+    time. A unit handed over before signatures, funds, and insurance
+    are in place is occupied without an enforceable agreement; a ledger
+    charge with no matching lease term cannot be collected in a
+    dispute; a notice with no delivery evidence loses its date when
+    renewal, cure, or termination is contested. Inconsistent screening
+    exposes the owner to fair-housing complaints that a documented
+    process would have answered.
+  how: >
+    The property manager qualifies the application, confirming unit,
+    applicants, consent, screening criteria, supporting information,
+    fair-housing controls, and who has decision authority. The offer is
+    established as one proposed tenancy: premises, term, rent, deposit,
+    utilities, occupants, concessions, rules, and required
+    disclosures. The lease is executed when the required parties sign
+    the current terms and satisfy funds, insurance, identity, and
+    move-in conditions before possession. The tenant account is opened
+    from the executed lease, so recurring charges, deposit treatment,
+    credits, due dates, payment methods, notices, and opening balance
+    all trace to a signed term. The tenancy is then maintained:
+    payments, notices, changes, renewals, access, violations, move-out,
+    and deposit disposition each keep their authority and dates in the
+    same record.
+  controls:
+    - name: Move-in gate before keys
+      note: Access is released only when signatures, funds, insurance, identity, and required disclosures are all recorded complete on the unit.
+    - name: Ledger charges traced to lease terms
+      note: Every recurring or one-time charge references the lease clause or signed amendment that authorizes it, and manual charges are reviewed.
+    - name: Screening criteria applied uniformly
+      note: Approved criteria, the decision, and the decision maker are recorded for every application so treatment can be shown consistent.
+    - name: Notice delivery evidence
+      note: Each notice records text, method, date, and proof of delivery so its timing can be defended in a dispute.
+    - name: Renewal review with current terms
+      note: Before a renewal offer, rent, concessions, rules, and open violations are reviewed and the new terms are signed before the old term ends.

@@ -37,3 +37,48 @@ automation:
 questions:
   - Which deadline or duty can change the client's position before the next review?
   - What matter record proves authorization, completion, filing, or service?
+article:
+  what: >
+    The legal matter and deadline control process is how a law firm
+    keeps one matter under control from engagement to closing: who the
+    client is and who may instruct, whether a conflict exists, which
+    jurisdiction and rules apply, what is privileged, what evidence
+    exists and who holds it, what has been promised, and every filing,
+    service, and deadline that follows. It begins with the engagement
+    letter and the client brief and ends with a legal matter file that
+    records authorization, completion, filing, and service for each
+    deliverable. The responsible attorney owns it, with a paralegal or
+    legal assistant maintaining the calendar and file.
+  why: >
+    It protects the client's rights and the firm's license. A missed
+    controlling deadline can forfeit a claim, draw sanctions, or
+    trigger a malpractice claim, and the most common cause is a date
+    that lived in one attorney's inbox with no verified source, no
+    owner, and no reminder. Weak conflict checks disqualify the firm
+    mid-matter; weak privilege control waives protection; unrecorded
+    client decisions leave the firm unable to show it acted on
+    instruction.
+  how: >
+    The attorney opens the controlled matter by confirming client
+    identity and authority, running the conflict check, and fixing
+    scope, jurisdiction, objectives, key facts, deadlines, and custody
+    of evidence in the matter file. Actions and evidence are then
+    directed: responsibility is assigned for each task, privilege is
+    protected in how documents are labeled and shared, facts and law
+    are verified, versions are controlled, and every dependent action
+    is calendared from its source rule with reminders ahead of it. As
+    each action completes, the file records the authorization behind
+    it, the filing or service evidence, the client's decisions, the
+    remaining obligations, and the responsible counsel, so the next
+    duty is visible to anyone who opens the matter.
+  controls:
+    - name: Conflict check before engagement
+      note: The conflict search is run and its result recorded against the engagement letter before any substantive work or confidential intake begins.
+    - name: Deadline with source, owner, and predecessor
+      note: Every calendared deadline records the rule or order it comes from, the responsible attorney, the action that must precede it, and a reminder.
+    - name: Client authority and instruction record
+      note: Who may instruct and each material instruction or decision is recorded in the matter file with the date and the communication.
+    - name: Filing and service evidence
+      note: Each filing or service records the method, date, confirmation, and the person who completed it, attached to the calendared deadline.
+    - name: Privilege labeling and access control
+      note: Privileged material is marked and access is restricted in the matter system so inadvertent disclosure is prevented and traceable.

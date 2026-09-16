@@ -100,3 +100,74 @@ org:
     reports:
       - role: client-coordinator
       - role: home-inspector
+article:
+  operating_model: >
+    A home inspection service sells a documented walk-through of a house
+    under contract, usually inside a buyer's inspection contingency
+    window. A job request arrives from the buyer or their agent, the
+    client coordinator books a slot and sends the inspection agreement,
+    and the inspector spends a few hours on site working roof to
+    foundation through exterior, structure and interior, and building
+    systems, taking photographs, and then writes the report the same day
+    or the next. Inspection agreement control, the field inspections,
+    and home inspection reporting are the load-bearing skills; the
+    agreement fixes the standard, the exclusions, and the limits of
+    liability before the inspector touches the house. The week runs on
+    the calendar and the turnaround: closings do not wait, so an
+    inspection booked late and a report delivered late both cost the
+    client the deal or the inspector the agent. The tension is between
+    thoroughness and time, since every defect needs location, evidence,
+    and a recommendation, and every inaccessible area needs a stated
+    limitation.
+  starting: >
+    Day-one paperwork is business registration, general liability and
+    errors and omissions insurance, which agents and many states expect
+    before a referral, and a home inspector license in states that
+    license the activity, typically requiring approved training hours,
+    an exam, and continuing education; in states without a license, a
+    recognized association certification serves the same purpose with
+    agents. Add employer registration once a second inspector is hired
+    and sales tax registration only where the state taxes the service.
+    Capital is small: a vehicle, ladders, a moisture meter, an outlet
+    tester, a thermal camera, a gas detector, and report writing
+    software with scheduling and online payment. Radon, sewer scope, and
+    mold add-ons require their own equipment and, in some states,
+    separate certification. The minimum team is a principal who inspects
+    and a client coordinator who books, sends agreements, and follows up
+    on payment; many start as a single inspector with software doing the
+    coordinating. The first records are the job request, the client
+    brief with property details, the engagement letter, the inspection
+    report, the time record, and the customer invoice. Lead intake,
+    client engagement, inspection agreement control, the inspections
+    themselves, and home inspection reporting must work from the first
+    booking.
+  economics: >
+    Revenue is fixed-fee engagements priced per inspection by square
+    footage, age, and add-ons, with time-based work for specialty or
+    commercial jobs and recurring advisory arrangements for investors or
+    property managers who inspect regularly. Gross margin per inspection
+    is high because the direct costs are travel, a few hours of
+    inspector time, and software; the expensive inputs are insurance,
+    marketing to agents, and the report writing hours that follow the
+    site visit. The metrics that decide profit are utilization rate,
+    which is inspections per inspector per week, engagement gross
+    margin, report turnaround time, and quote win rate, because most
+    demand comes through agent referral and a slow or late report ends
+    the referral. Booking rate on inbound requests matters because
+    buyers call several inspectors at once. Days sales outstanding
+    should be near zero, since payment is collected at or before the
+    inspection. The business is labor-intensive with little capital and
+    is cyclical with home sales, so a solo inspector's income tracks
+    local transaction volume and the second inspector is added only when
+    the calendar is full.
+  benchmarks:
+    - scope: Average price of a residential home inspection, United States
+      value: 462 dollars (as of February 2024)
+      note: Average across more than one million inspections logged in the Spectora inspection software platform through December 2023; vendor platform data, unweighted for home size or age.
+      source: https://www.spectora.com/r/average-home-inspection-price-searchable-list
+      source_name: Spectora, average home inspection price by zip code (platform data through December 2023)
+    - scope: National average home inspection quote
+      value: 569 dollars (2025), up from 457 dollars (2024)
+      note: Vendor figure from the Spectora 2026 Home Inspection Industry Report, a survey of 429 inspectors and 433 agents combined with platform-wide quote data, as cited in Spectora's pricing guide; 52 percent of inspectors reported raising prices in the year.
+      source: https://www.spectora.com/r/how-to-price-your-home-inspection-business-without-guessing
+      source_name: Spectora, How to Price Your Home Inspection Business, citing the Spectora 2026 Industry Report (2025 data)

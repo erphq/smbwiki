@@ -94,3 +94,48 @@ questions:
   - >-
     Which record proves elevator modernization was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The elevator modernization process replaces controls, drive, doors, or
+    other major equipment on an existing unit while the building keeps
+    operating: the contractor surveys what is retained, coordinates design
+    and permits, phases the outage and material deliveries, installs the new
+    equipment, and manages the acceptance test with the jurisdiction. It
+    starts from a service ticket or contract for the unit and ends with a
+    test report, an inspection sign-off, and the unit's log restarted on the
+    new equipment. An elevator service contractor's modernization project
+    manager owns it with a lead mechanic on site.
+  why: >
+    Modernization mixes old and new equipment in one hoistway, and the
+    interfaces are where it fails. A retained machine or rail that was never
+    surveyed properly does not fit the new controller's assumptions, and the
+    discovery comes mid-outage with the car out of service and the building
+    complaining. Permits and inspection scheduling left late add weeks of
+    downtime. Material phased wrong fills the machine room with equipment
+    that cannot be installed yet. Acceptance testing skipped or
+    under-recorded leaves the unit running without proof it meets the code
+    it was upgraded to.
+  how: >
+    The project manager reads the contract scope and confirms the identified
+    unit, its maintenance history and code status, safe access, the outage
+    plan agreed with the building, parts and equipment deliveries, qualified
+    staff, and rescue provisions during construction. Field controls set the
+    outage phases, the sequence of removal and installation, hold points for
+    retained-equipment verification and inspector visits, responsibilities
+    between the crew and the manufacturer, and the records for each phase.
+    On site the lead mechanic records retained conditions, installation
+    details, wiring, and settings, and stops when a retained condition does
+    not match the survey. Acceptance runs the full test with the inspector,
+    checks safe operation, clearances, corrected defects, recorded tests,
+    the new log, and the inspection status, and the test report is issued.
+  controls:
+    - name: Retained-equipment survey on record
+      note: Every component kept in service is measured and photographed before design is finalized, and the survey is attached to the job.
+    - name: Permit and inspection dates scheduled early
+      note: The permit application and the inspector's acceptance visit are booked before the first outage phase begins.
+    - name: Phase gate before each outage
+      note: Material on hand, crew, and building notice are confirmed before the car is taken out of service for a phase.
+    - name: Concealed wiring and settings recorded
+      note: Wiring routes, parameter settings, and adjustments are recorded as they are made so the unit can be serviced later.
+    - name: Acceptance test witnessed and reported
+      note: The full test is run with the inspector, and the test report and log are issued before the unit carries passengers.

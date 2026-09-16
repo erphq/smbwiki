@@ -30,3 +30,61 @@ licenses:
 supply_chain:
   buys_from: [massage-supply-distributor, linen-service]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A massage practice sells provider time in a private room. The client
+    coordinator or the provider schedules appointments, the service
+    provider reviews the client profile and intake before each session,
+    delivers the massage, records the service and client response on the
+    service ticket, and resets the room before the next client. Client
+    consultation, personal service delivery, and appointment scheduling
+    are the load-bearing skills, because intake decides what is safe to do
+    and scheduling decides how many sessions a provider can deliver in a
+    day with preparation and documentation included. The tension sits
+    between provider capacity and demand timing: sessions cannot be
+    stockpiled, an unfilled hour is gone, and evenings and weekends fill
+    first.
+  starting: >
+    The definition binds a massage therapist license as conditional,
+    meaning it is required wherever the state or locality regulates the
+    massage services offered; in most states that is a state board license
+    after approved training hours and an examination, and some cities add
+    an establishment permit for the premises itself. Add the business
+    registration, sales tax registration where massage or retail products
+    are taxable, professional liability insurance, and employer
+    registration when a second provider is hired as an employee. The
+    minimum team is an owner-operator who also provides service, or one
+    service provider plus a client coordinator handling booking and
+    checkout. The first records to set up are the client profile with
+    health history and consent, the appointment record, the service
+    ticket, the customer invoice, and the shift schedule, and the skills
+    that must work from the first appointment are appointment scheduling,
+    client consultation, personal service delivery, and client checkout.
+    Capital is modest: a treatment table, linens and a linen service,
+    supplies, and appointment and business management software.
+  economics: >
+    Revenue is massage sessions sold by length and packages and
+    memberships that prepay or subscribe to eligible appointments. Pricing
+    is per session length, so revenue is bounded by provider hours
+    multiplied by session price, and service utilization, the share of
+    available provider time that is booked and delivered, is the metric
+    that decides profit. Appointment no-show rate and rebooking rate come
+    next because an empty slot cannot be resold and a client who rebooks
+    at checkout costs nothing to acquire. Average ticket rises with longer
+    sessions and add-ons, and service ticket time includes reset and
+    documentation, which caps sessions per day. Labor cost percentage is
+    the main cost whether providers are employees or contractors, and
+    memberships smooth cash while obligating future capacity. The business
+    is labor-intensive with light capital, so margin depends on filling
+    the calendar and keeping providers from burning out.
+  benchmarks:
+    - scope: Practice settings, massage therapists
+      value: 40 percent work in their own office, 37 percent in the client's home, 25 percent in the therapist's home, 20 percent in a spa or salon, 13 percent in a massage franchise
+      note: Therapists may practice in multiple settings, so the shares overlap; AMTA Massage Therapy Industry Fact Sheet drawing on the 2026 Massage Profession Research Report; sample size not stated on the page.
+      source: https://www.amtamassage.org/publications/massage-industry-fact-sheet/
+      source_name: American Massage Therapy Association, Massage Therapy Industry Fact Sheet (2026)
+    - scope: Career entry, massage therapists
+      value: 82 percent report that massage therapy was not their first career
+      note: Same AMTA fact sheet, 2026 Massage Profession Research Report respondents.
+      source: https://www.amtamassage.org/publications/massage-industry-fact-sheet/
+      source_name: American Massage Therapy Association, Massage Therapy Industry Fact Sheet (2026)

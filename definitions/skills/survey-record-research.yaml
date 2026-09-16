@@ -94,3 +94,48 @@ questions:
   - >-
     Which record proves survey record research was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The survey record research process is the first thing a land surveying
+    firm does on a boundary job, before anyone loads the truck: the researcher
+    collects the deeds, plats, easements, corner records, adjoining
+    descriptions, prior surveys, and control for the parcel, then lists the
+    gaps and conflicts that the field crew has to resolve. It starts when a
+    survey request is accepted and ends when a research package with a
+    marked-up site plan and a list of monuments to search for is handed to the
+    crew chief. The licensed surveyor owns the conclusions and a research
+    technician or the surveyor does the collection.
+  why: >
+    A crew sent out without the record wastes days looking for corners the
+    record could have located and misses the corners the record shows should
+    exist. An unread easement, an adjoiner's senior deed, or a prior survey
+    that already found a conflict can change the boundary opinion, and a
+    surveyor who signs a plat without having looked for those documents has no
+    defense when the line is disputed. The research package is also where the
+    firm decides whether the job as quoted is the job the record describes.
+  how: >
+    The surveyor confirms the work basis by fixing the purpose of the survey,
+    pulling current deeds and plats, adjoining records, and the coordinate
+    basis, and checking access, equipment, and the field safety plan against
+    what the record suggests the site holds. Field controls are then set for
+    the research itself: which sources are in scope, the search sequence from
+    the subject deed outward through adjoiners and prior surveys, who compiles
+    and who reviews, and the hold point where the surveyor reads the conflicts
+    before fieldwork is scheduled. The researcher records each document found,
+    its source and date, the calls it contains, and every gap or conflict
+    between documents, and stops to consult the surveyor when a senior title
+    or an unrecorded survey changes the planned method. Acceptance checks that
+    the evidence is traceable, that conflicts are listed for field resolution,
+    and that the package supports a resolved boundary opinion, found or set
+    monuments, complete notes, and a signed survey plat.
+  controls:
+    - name: Source list with recording data
+      note: Every deed, plat, easement, and corner record is logged with its book, page, or document number and the date it was pulled, so the chain can be reread.
+    - name: Adjoiner search completed on every side
+      note: The record for each adjoining parcel is read and compared with the subject description before the research package is closed.
+    - name: Conflict list handed to the crew
+      note: Gaps, overlaps, and disagreements between documents are written as a list of field questions the crew chief signs for before mobilizing.
+    - name: Prior surveys and corner records checked
+      note: Recorded prior surveys and corner records for the parcel and its adjoiners are searched and noted, including a negative result.
+    - name: Surveyor reviews before fieldwork
+      note: The licensed surveyor reads the research package and the conflict list and approves the field plan before the crew is scheduled.

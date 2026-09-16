@@ -86,3 +86,50 @@ questions:
   - >-
     Do the layout record and opening checks reconcile structure, bearing,
     shear lines, dimensions, and downstream trade access?
+article:
+  what: >
+    The framing layout process transfers the plan to the structure: grid
+    lines, wall locations, opening positions, bearing points, elevations,
+    and component locations marked on the deck or slab as verified control
+    the crew builds to. It starts when the supporting work is corrected
+    and the current dimensions, control lines, and component package are
+    known, and it ends when the layout has been checked against the plan
+    for bearing, openings, and cumulative dimension and recorded in the
+    quality report before walls go up. The framing foreman owns it for a
+    framing contractor and usually does the layout personally.
+  why: >
+    A layout error is the cheapest mistake to fix and the most expensive
+    to find late. A wall line an inch off repeats through the floors
+    above, moves a bearing point off its beam, puts a window where the
+    cabinet wanted to be, and leaves a shear line short of its hold-down.
+    By the time a plumber or a cabinet installer finds it, the fix means
+    moving framed and sheathed work. The process protects the engineer's
+    bearing and shear design, the downstream trades' dimensions, and the
+    crew's own production.
+  how: >
+    The foreman reads the current scope and revisions and confirms the
+    dimensions, control lines, lumber or component package, connectors,
+    openings, bearing points, and correction of supporting work, and
+    checks that a datum and cumulative dimensions are verified before the
+    first line is snapped. The field controls are then set: which datum
+    and control lines the layout is measured from, the order of grid,
+    walls, openings, and bearing, the hold points where the layout is
+    checked before plates are cut, and the layout record the crew keeps.
+    While laying out, the foreman marks and records wall lines, opening
+    positions, bearing and shear locations, and any place the deck, slab,
+    or supporting work differs from the plan, and stops when the
+    cumulative dimension does not close. At acceptance the layout record
+    and opening checks are reconciled to structure, bearing, shear lines,
+    dimensions, and downstream trade access, correction is closed, and the
+    quality report is issued.
+  controls:
+    - name: Datum verified before the first line
+      note: The reference datum and control lines are checked against survey and foundation before any layout is measured from them.
+    - name: Cumulative dimension closure
+      note: Running dimensions are checked against the overall plan dimension at the end of each wall line, and a difference stops layout until it is found.
+    - name: Bearing and shear marked and checked
+      note: Bearing points, posts, and shear wall lines are marked on the deck and checked to the engineer's plan before plates are cut.
+    - name: Opening check against schedules
+      note: Each opening's rough dimension and location are checked to the window, door, and cabinet schedules, since those trades build to the layout.
+    - name: Layout record issued with the quality report
+      note: The layout record, its checks, and any plan deviation are recorded in the quality report so the wall crew and the next floor build to verified control.

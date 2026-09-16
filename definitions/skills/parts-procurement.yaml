@@ -89,3 +89,47 @@ automation:
 questions:
   - Which open repair is currently waiting for a part without a confirmed arrival?
   - Are cores and rejected parts tracked until credit is received?
+article:
+  what: >
+    The parts procurement process gets the exact component or supply
+    that an authorized repair needs to the technician's bay, with its
+    cost, arrival, and return status tied to the repair order the whole
+    way. It starts when a repair is authorized and the method is known,
+    and it ends when the part has been received, checked, labeled to the
+    repair, and its invoice cost posted to the job, with any core or
+    return tracked to credit. The parts manager owns it in an auto
+    repair shop; in a small shop the service writer or the owner does it
+    between customers.
+  why: >
+    It protects bay capacity and job margin. A part ordered from year
+    and model without the vehicle's full identifier or the installed
+    part's number arrives as the wrong variant, and the car sits in the
+    bay while a second part is sourced and the first enters a return. A
+    part received without a repair label gets installed on another job
+    or lost from the job cost. A core or a rejected part with no return
+    owner and no due date becomes a permanent supplier charge. The
+    fastest source is often the least supported one, and the process is
+    where that trade is made deliberately.
+  how: >
+    The parts manager reads the work authorization and translates it
+    into a specification: vehicle identity, equipment variant, and the
+    repair method fix the part before any price is compared. A source is
+    then chosen with availability, fit confidence, warranty, return
+    terms, and delivery time weighed together, and a promise date is set
+    from the supplier's commitment. The purchase order is placed
+    carrying the repair order reference and the required date so the
+    promise can be checked. On arrival the part is received to the
+    repair: quantity, damage, identifiers, cores, and invoice cost are
+    checked, the supplier invoice is matched, and the part is labeled
+    and staged for the technician.
+  controls:
+    - name: Specification before sourcing
+      note: The part is identified from the VIN, the equipment variant, and where possible the installed part number, and an order from year and model alone is held.
+    - name: Purchase order carries the repair reference
+      note: Every order names the repair order and the required date, so an arrival can be matched and a late promise escalated before the bay waits.
+    - name: Receiving check to the repair
+      note: Quantity, damage, and identifiers are checked at receipt, the part is labeled with the repair number, and the invoice cost is posted to the job.
+    - name: Core and return register
+      note: Every core and every rejected part has a return owner, a supplier reference, and a due date, and the register is reviewed until credit posts.
+    - name: Open-part list against active repairs
+      note: Repairs waiting for parts are listed with the promised arrival, and a missing promise is chased before the bay is scheduled.

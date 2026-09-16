@@ -49,3 +49,76 @@ licenses:
 supply_chain:
   buys_from: [legal-support-service]
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A law firm sells the attorney's time and judgment under professional
+    rules. The week is a queue of matters: the client coordinator intakes
+    leads and runs conflict checks, the principal or attorney sets scope
+    and fee in the engagement letter, and the attorney then advises,
+    drafts, negotiates, files, or appears, recording time against the
+    legal matter file as work proceeds. Legal matter and deadline control
+    is the load-bearing skill, with client engagement and professional
+    service delivery beside it, because a missed filing deadline is
+    malpractice and an undocumented scope becomes an unpaid invoice. The
+    tension sits between billable hours and everything else: intake,
+    conflict checks, trust accounting, and court scheduling consume
+    attorney time that no client pays for.
+  starting: >
+    The definition binds an attorney license for every lawyer providing
+    legal services, issued by the state bar or supreme court of the
+    jurisdiction where the firm practices; the firm entity itself must be
+    a form the state permits for law practice, and any trust account
+    holding client funds must follow the state's client trust accounting
+    rules from the first retainer. Add the business registration,
+    professional liability insurance, and employer registration before the
+    first staff hire. The minimum team is a principal attorney and a
+    client coordinator who handles intake, engagement letters, invoicing,
+    and receivables; a second attorney comes when matter volume needs
+    coverage for deadlines. The first records to set up are the client
+    brief, the engagement letter, the legal matter file with its calendar
+    of deadlines, the time record, and the customer invoice, and the
+    skills that must work from the first matter are client engagement,
+    legal matter and deadline control, professional service delivery, and
+    invoicing. Capital is light: practice management software, a research
+    subscription, and an office that can hold a confidential conversation.
+  economics: >
+    Revenue is matter and retainer fees: fixed fees for defined matters,
+    authorized time billed at hourly rates, retainers drawn down as work
+    is done, and recurring counsel arrangements. Every form reduces to
+    attorney hours, so utilization rate, the share of the working day that
+    becomes billable time, is the first metric; engagement gross margin
+    then depends on how much of that time is invoiced and collected, and
+    work-in-progress age and days sales outstanding measure the lag
+    between doing the work and banking it. On-time completion protects
+    against deadline losses, and quote win rate shows whether
+    consultations turn into signed engagements. The business is labor-
+    intensive with almost no capital equipment, so profit is decided by
+    attorney leverage, the ratio of billing staff to overhead, and by
+    billing discipline, since unrecorded or written-off hours never appear
+    on any invoice.
+  benchmarks:
+    - scope: Utilization rate, law firms
+      value: 38 percent average (2025), equal to 3.0 billable hours in an eight-hour day
+      note: Share of an eight-hour day put toward billable work; aggregated and anonymized data from tens of thousands of law firms using Clio, reported in the Legal Trends Report.
+      source: https://www.clio.com/resources/legal-trends/benchmarks/
+      source_name: Clio, Legal Trends Report law firm benchmarks (2025)
+    - scope: Realization and collection rates, law firms
+      value: 88 percent realization and 93 percent collection, averages (2025)
+      note: Realization is the share of billable work invoiced; collection is the share of invoiced work paid; same Clio data set.
+      source: https://www.clio.com/resources/legal-trends/benchmarks/
+      source_name: Clio, Legal Trends Report law firm benchmarks (2025)
+    - scope: Total lockup, law firms
+      value: "93 days median (2025): 43 days realization lockup plus 32 days collection lockup"
+      note: Days of annual revenue tied up as unbilled work or unpaid invoices; medians across the same Clio data set.
+      source: https://www.clio.com/resources/legal-trends/benchmarks/
+      source_name: Clio, Legal Trends Report law firm benchmarks (2025)
+    - scope: Employees per establishment, offices of lawyers (NAICS 541110)
+      value: 6.6 paid employees per establishment
+      note: 1,093,331 paid employees in the week of March 12, 2023 across 165,491 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, offices of lawyers (NAICS 541110)
+      value: 125,580 dollars per employee (2023)
+      note: Annual payroll of 137,300,251 thousand dollars divided by 1,093,331 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

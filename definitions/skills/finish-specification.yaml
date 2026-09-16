@@ -92,3 +92,52 @@ questions:
   - >-
     Which record proves finish specification was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The finish specification process is how an interior design firm turns
+    a client brief into a finish schedule: a room-by-room and
+    surface-by-surface list of flooring, wall finish, tile, countertop,
+    millwork finish, and hardware, each chosen for the way the space is used, the
+    code it must meet, the maintenance the client will accept, the budget,
+    the substrate it goes on, the transition it meets, and the sample the
+    client approved. It starts once the program and existing conditions
+    are settled and ends when the schedule is complete, samples are
+    signed, and procurement is released. The project designer owns it,
+    with the principal approving the released schedule.
+  why: >
+    A finish decided late or loosely reaches every other trade at once:
+    the tile setter needs the substrate prepared for that tile, the
+    electrician needs the countertop thickness, the contractor needs the
+    lead time, and the client needs the price. When the specification is
+    weak, a material arrives that fails slip or fire requirements, cannot
+    be cleaned the way the client cleans, or meets an adjacent finish with
+    no transition detail, and the firm absorbs the redesign or the
+    reputation. The process protects the design intent, the budget, and
+    the firm's liability for what it specified.
+  how: >
+    The designer reads the current brief and revisions and confirms the
+    approved program, measured existing conditions, consultant criteria,
+    budget, schedule, code basis, and client decision structure before
+    selecting anything. The controls are then set: the schedule format by
+    room and surface, the criteria each selection must meet, the order in
+    which rooms and long-lead items are decided, the hold points where the
+    client signs a sample and where the contractor confirms substrate and
+    lead time, and who keeps the schedule current. As selections are made,
+    the designer records the basis for each choice, the sample reference,
+    availability confirmed with the supplier, and any substitution with
+    the reason, and stops when a substrate, budget, or code finding
+    changes what can be specified. At acceptance the principal checks
+    that spaces are coordinated, selections are approved, documents are
+    complete, procurement is released, and any deficiency is resolved,
+    then issues the finish schedule.
+  controls:
+    - name: Criteria checklist per selection
+      note: Each line on the schedule records use, code, maintenance, availability, budget, substrate, and transition, and a blank column holds the selection.
+    - name: Signed sample on file
+      note: The physical or photographed sample the client approved is referenced on the schedule line so the installed material can be checked against it.
+    - name: Substitution logged with reason
+      note: Any change from the approved selection carries the reason, the approver, and the date, and the affected trades are notified from the log.
+    - name: Lead time confirmed before release
+      note: Availability and lead time are confirmed with the supplier and recorded before the schedule line is released to procurement.
+    - name: Schedule revision control
+      note: The finish schedule carries a revision date, and only the current revision is issued to the contractor and suppliers.

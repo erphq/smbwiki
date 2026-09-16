@@ -95,3 +95,48 @@ questions:
   - >-
     Which record proves interior trim installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The interior trim installation process is how a finish carpentry
+    contractor sets jambs, casing, base, crown, panels, and returns so
+    that reveals are consistent, joints are tight, and every piece is
+    fastened to backing that will hold it. It begins when the space is
+    conditioned and dry, dimensions are verified, and profiles and
+    samples are approved, and it ends with the installed trim accepted
+    against the construction plan and a punch list that names whatever
+    remains. The lead carpenter owns it, with the foreman holding the
+    acceptance.
+  why: >
+    It protects the most visible work in the building. Finish carpentry
+    absorbs the accumulated tolerances of framing, drywall, floors, and
+    casework, and when the process is weak the result is uneven
+    reveals, open miters, nail pops, and crown that telegraphs a wavy
+    ceiling. Trim installed in an unconditioned space or with wet
+    material shrinks and opens after painting, and correction at that
+    stage means repainting rooms that were finished.
+  how: >
+    The lead carpenter reads the current scope and revisions, then
+    verifies a stable conditioned space, field dimensions, dry
+    material, approved profiles and samples, complete backing, and
+    protected access before the crew is committed. The plan becomes
+    field controls: the sequence by room and element, which reveals and
+    joint types govern, who cuts and who sets, hold points where
+    framing or drywall conditions have to be accepted first, and the
+    records the crew keeps. During installation the crew records
+    quantities, observations, decisions, and any backing or shim
+    conditions that will be concealed, and stops when a field condition
+    changes the planned method. At acceptance the foreman checks fit,
+    reveal, joint, door and window operation, fastening, surface
+    condition, alignment, hardware, and finish readiness, then closes
+    corrections and issues the punch list.
+  controls:
+    - name: Moisture and conditioning check
+      note: Material moisture content and room temperature and humidity are confirmed and recorded before any trim is cut or set.
+    - name: Reveal and profile sample approval
+      note: The approved sample and reveal dimension are on site and signed before the first piece is set in any room.
+    - name: Backing verified before covering
+      note: Blocking locations for base, crown, and panels are confirmed and photographed before drywall or trim conceals them.
+    - name: Room-by-room acceptance
+      note: Each room is checked against fit, reveal, joint, and operation criteria and corrections are recorded before the crew moves on.
+    - name: Punch list with owner and status
+      note: Every open item names the room, the element, the correction, and who will close it, so nothing lingers into paint.

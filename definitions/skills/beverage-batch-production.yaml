@@ -97,3 +97,50 @@ automation:
 questions:
   - Which active batch has an unrecorded change of vessel, quantity, or state?
   - Which packaging run is waiting on evidence that the source lot is ready?
+article:
+  what: >
+    The beverage batch production process is how a brewery or winery
+    moves a defined quantity of liquid from raw ingredients through
+    preparation, fermentation or aging, transfers, conditioning, and
+    packaging while it stays one identifiable batch. It starts when the
+    production lead releases a batch plan and ends when the packaged
+    quantity has been reconciled against the source volume and the
+    finished inventory is on the shelf under its lot code. The
+    production lead owns the batch; cellar operators run and record it,
+    and the packaging operator closes it.
+  why: >
+    Liquid passes through shared vessels, hoses, and lines, and its
+    identity is only as good as the record that follows it. When a
+    transfer is written down without source and destination, laboratory
+    results, additions, and later packages can no longer be tied to the
+    same lot, and a quality problem cannot be contained. Packaging
+    started before a required check is complete commits labels,
+    containers, and line time to product that may have to be held.
+    Without the process, vessel boards and operator memory carry batch
+    state, and yield loss has no location.
+  how: >
+    The production lead releases the batch plan, which fixes the
+    formula, ingredients and source lots, target quantity, vessels,
+    timing, required checks, packaging destination, and responsible
+    operators, and opens the batch record. The cellar operator prepares
+    equipment and materials, confirming vessel status, cleaning,
+    utilities, ingredients, transfer paths, instruments, and downstream
+    capacity. The batch is then run with quantities, temperatures,
+    times, additions, observations, transfers, losses, and exceptions
+    written into the batch record where they occur. When required cellar
+    time and checks are complete, the production lead confirms
+    conditioning and clears packaging: format, materials, labels, line,
+    and quantity. The packaging operator packages the lot and reconciles
+    source volume, packaged quantity, material use, codes, rejects,
+    retained liquid, and losses on the packaging record.
+  controls:
+    - name: Batch plan released before material commitment
+      note: Formula, source lots, vessels, and checks are settled and signed by the production lead before ingredients are weighed.
+    - name: Transfer recorded with both identities
+      note: Every vessel or hose movement carries source, destination, quantity, and time, and a transfer without them is an open exception.
+    - name: Required checks closed before packaging
+      note: Packaging is cleared only when the batch record shows every required cellar check complete and reviewed.
+    - name: Lot code on every package run
+      note: The packaging record ties the printed lot code to the source batch, line, and date before product goes to inventory.
+    - name: Yield reconciliation with explained variance
+      note: Source volume, packaged quantity, rejects, retained liquid, and losses are reconciled, and an unexplained gap is investigated before the batch closes.

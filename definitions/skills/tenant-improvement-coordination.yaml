@@ -96,3 +96,50 @@ questions:
   - >-
     Which record proves tenant improvement coordination was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The tenant improvement coordination process is how a commercial property
+    manager runs a tenant's build-out inside a building the owner still has to
+    protect: landlord criteria, design review, permits, contractor access,
+    utility shutdowns, inspections, damage, closeout, and the lease
+    commencement dates that depend on all of it. It starts when a signed lease
+    carries a tenant improvement obligation or allowance and ends when the
+    space is accepted, the allowance is reconciled, and rent commencement is
+    recorded on the property operating statement. The property manager owns
+    it, with the building engineer on systems and the owner on money above the
+    manager's authority.
+  why: >
+    Tenant work happens in a building full of other tenants and building
+    systems the owner will keep long after the lease ends. Without
+    coordination, an unreviewed design ties into the wrong riser, an
+    unscheduled shutdown takes a neighbor offline, a contractor without
+    insurance damages a corridor nobody can bill, and a missed inspection
+    delays commencement so the owner loses rent and the tenant claims a delay.
+    The record of who approved what and when is what settles the allowance
+    reconciliation and any dispute over the commencement date.
+  how: >
+    The property manager confirms the work basis by reading the lease and its
+    work letter, current tenant contacts, vendor contracts, the property
+    budget, the building systems the work touches, the compliance calendar,
+    and the limit of the owner's authority delegated to the manager. Field
+    controls follow: landlord criteria issued to the tenant's architect, a
+    design review hold point, contractor insurance and access rules, a
+    shutdown request procedure, an inspection schedule, and the records each
+    party keeps. During the build-out the manager logs access, shutdowns,
+    inspections, damage, change requests, and decisions, and stops the work
+    when a condition changes the approved plan or threatens another tenant.
+    Acceptance checks accurate charges and recoveries, maintained common
+    areas, controlled vendors, documented tenant work, and timely owner
+    reporting, then closes corrections, reconciles the allowance, and records
+    commencement on the property operating statement.
+  controls:
+    - name: Design approved against landlord criteria
+      note: Tenant drawings are reviewed and approved in writing against the building criteria before a permit application or contractor mobilization.
+    - name: Contractor insurance and access on file
+      note: Certificates of insurance, access hours, and building rules are received and acknowledged by the tenant's contractor before the first key is issued.
+    - name: Shutdown requests scheduled and logged
+      note: Every utility or system shutdown is requested in advance, approved by the building engineer, notified to affected tenants, and logged with actual times.
+    - name: Damage and inspection log kept current
+      note: Common-area damage, inspections passed or failed, and open corrections are recorded as they happen, with the responsible party named.
+    - name: Allowance and commencement reconciled to the lease
+      note: Allowance draws, lien waivers, acceptance, and the commencement date are reconciled against the lease terms before the operating statement records rent.

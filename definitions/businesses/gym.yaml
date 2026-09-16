@@ -88,3 +88,70 @@ products:
   - adjustable-dumbbell
 seo:
   title: "Gym: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A gym sells recurring access. A prospect tours, signs a membership
+    agreement and a liability waiver, receives an access credential, and
+    is billed every month until a cancellation is processed. The week
+    runs on the front desk and the billing run: the front desk attendant
+    checks people in and handles access problems, the membership advisor
+    tours and closes prospects, trainers run classes and sessions, and
+    the general manager watches failed payments, cancellation requests,
+    and the class schedule. Member sales, membership billing, and member
+    retention are the load-bearing skills, with equipment maintenance
+    underneath them because a broken cable machine or treadmill is
+    visible to every member. The tension is between joining and leaving:
+    the club is always selling to replace members who quietly stop
+    attending and then cancel, so attendance logs are read as an early
+    warning and the retention effort is aimed at members whose visits
+    have dropped.
+  starting: >
+    Day-one paperwork is business registration, a certificate of
+    occupancy for assembly use, employer registration, sales tax
+    registration where memberships or day passes are taxable, and music
+    licensing for classes and the floor; many states regulate health
+    club contracts with a specific registration, a bond, and required
+    cancellation terms, so the membership agreement is drafted against
+    that statute before the first sale. Trainers need a recognized
+    certification and current CPR and defibrillator training, and the
+    club needs a defibrillator on site in states that require it.
+    Capital is the lease build-out with showers and ventilation, cardio
+    and strength equipment bought or leased, flooring, an access control
+    system, and membership management software with recurring billing.
+    The minimum team is a general manager, a membership advisor, front
+    desk coverage across all open hours, and one trainer, with a
+    maintenance technician on call. The first records are the membership
+    application and agreement, the liability waiver, the access
+    credential, the attendance log, the class roster, the maintenance
+    log, and the cancellation record. Member sales, member onboarding,
+    membership billing, and facility access must work from the first
+    day.
+  economics: >
+    Revenue is recurring memberships billed monthly or annually,
+    personal training sold per session or in packages, group classes
+    included in a tier or sold as add-on access, and day passes for
+    nonmembers. Pricing is per member per month, set against the local
+    competitor set, with training and premium tiers lifting revenue per
+    member. Gross margin is high on each incremental member because
+    rent, equipment, and front desk staffing are fixed; the cost that
+    scales is trainer pay on sessions and classes. The metrics that
+    decide profit are monthly recurring revenue, member churn rate,
+    membership conversion rate, and revenue per member, because a club
+    that loses members as fast as it signs them pays the acquisition
+    cost twice. Active member rate is watched because members who do not
+    attend cancel next, and class fill rate decides whether instructor
+    hours are profitable. Equipment uptime protects retention. The
+    business is capital-heavy at opening and fixed-cost heavy after, so
+    profit turns on reaching a member count above break-even and holding
+    it through the seasonal drop after the new year surge.
+  benchmarks:
+    - scope: Median EBITDA margin, fitness facility operators
+      value: 23.6 percent (2024)
+      note: Median across 175 reporting companies representing more than 17,000 facilities in 27 countries, surveyed April to June 2025; two-thirds of clubs reported positive EBITDA. Sample is global and skews to multi-site operators.
+      source: https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/
+      source_name: Health & Fitness Association, 2025 Fitness Industry Benchmarking Report (2024 data)
+    - scope: Annual member retention, fitness facility operators
+      value: 66.4 percent average (2024)
+      note: Same HFA benchmarking sample; reporting operators also posted median revenue growth of 9.9 percent over 2023 and average net membership growth of 5.5 percent.
+      source: https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/
+      source_name: Health & Fitness Association, 2025 Fitness Industry Benchmarking Report (2024 data)

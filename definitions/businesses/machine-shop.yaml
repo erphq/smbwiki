@@ -38,3 +38,88 @@ summary: >
 supply_chain:
   buys_from: [metal-service-center, tooling-distributor]
   sells_to: [commercial-client]
+article:
+  operating_model: >
+    A machine shop turns a drawing into accepted parts. A job request
+    arrives with a model, a revision, a material, tolerances, a quantity,
+    and a due date; the estimator quotes it, the customer order becomes a
+    production order, and the machinist and production manager plan the
+    process on a routing sheet and machining setup sheet before any metal
+    is cut. From there the week is capacity: setup, programming, fixtures,
+    run time, in-process checks by the quality inspector, outside
+    processing such as plating or heat treat, and final inspection before
+    the delivery ticket. Machining process planning, production control,
+    and production quality control are the load-bearing skills, with
+    equipment maintenance underneath them. The tension sits between the
+    quote and the floor: the estimator priced a setup time and a cycle
+    time, and every extra setup, tool change, or rework hour comes out of
+    that price.
+  starting: >
+    The definition binds no trade license; what a shop needs on day one is
+    the business registration, employer registration before the first
+    operator is hired, a certificate of occupancy for industrial use with
+    the power service the machines need, sales tax registration with
+    resale certificates for material, and property and liability insurance
+    that covers the machines. Customers in regulated sectors will ask for
+    a quality system and material certifications before they send work, so
+    the first quality report and the material traceability on each
+    production order matter from the first job. The minimum team is an
+    owner-operator, a machinist who can plan and set up, a machine
+    operator, and a quality inspector, with the estimator, production
+    manager, and office manager roles held by the owner until order volume
+    splits them; a maintenance technician can be on call. The first
+    records to set up are the quote, the customer order, the production
+    order, the routing sheet, the machining setup sheet, the quality
+    report, the purchase order for material and tooling, and the delivery
+    ticket, and the skills that must work from the first order are
+    quoting, machining process planning, production control, production
+    quality control, and customer invoicing. Capital is the heaviest part
+    of the decision: machine tools, tooling, workholding, inspection
+    equipment, and material inventory, financed before the first part
+    ships.
+  economics: >
+    Revenue is machined parts sold by lot or unit, with setup,
+    programming, fixtures, inspection, and coordinated outside-process
+    charges either priced into the part or invoiced as separate setup and
+    engineering lines; production orders for repeat parts carry lower
+    setup per piece and steadier margin than one-off jobs. The quote is
+    built from material cost, setup hours, cycle time per part, tooling,
+    inspection, and outside processing, so gross margin is decided by
+    whether actual hours match quoted hours and by how much spindle time
+    turns into billable parts. First-pass yield and scrap rate decide
+    profit directly because a scrapped part consumes material, machine
+    time, and often an outside-process charge that cannot be recovered;
+    on-time completion decides whether customers keep sending work;
+    equipment uptime decides how much capacity exists to sell; and quote
+    win rate and booking rate show whether pricing matches the market.
+    Days sales outstanding matters because material is paid on receipt and
+    industrial customers pay on terms. The business is capital-intensive,
+    which means fixed machine and building costs have to be spread over
+    enough spindle hours, and idle capacity is the most common way a shop
+    loses money.
+  benchmarks:
+    - scope: Median profit margin, US machine shops
+      value: 13.5 percent for Top Shops versus 8 percent for other shops (2014 performance)
+      note: Modern Machine Shop Top Shops benchmarking survey, fifth annual edition, 277 participating shops reporting 2014 data; Top Shops are the top 20 percent of participants by survey score; self-reported.
+      source: https://www.mmsonline.com/articles/best-practices-of-top-us-shops
+      source_name: Modern Machine Shop, Best Practices of Top U.S. Shops (2015 survey, 2014 data)
+    - scope: Median spindle utilization, US machine shops
+      value: 75 percent for Top Shops versus 65 percent for other shops (2014 performance)
+      note: Same 2015 Top Shops survey of 277 shops; median overall equipment effectiveness was 73 percent for Top Shops and 65 percent for others.
+      source: https://www.mmsonline.com/articles/best-practices-of-top-us-shops
+      source_name: Modern Machine Shop, Best Practices of Top U.S. Shops (2015 survey, 2014 data)
+    - scope: On-time delivery and quote-to-book ratio, US machine shops
+      value: 95 percent on-time delivery and a 60 percent quote-to-book ratio, for both Top Shops and other shops
+      note: Modern Machine Shop Top Shops survey with 407 shop representatives responding (2014 edition); Top Shops defined as the top 20 percent by survey score; median order lead time was 15 days for Top Shops and 21 days for others.
+      source: https://www.mmsonline.com/articles/what-it-takes-to-be-a-top-shop
+      source_name: Modern Machine Shop, What It Takes to Be a Top Shop (2014 survey)
+    - scope: Employees per establishment, machine shops (NAICS 332710)
+      value: 13.0 paid employees per establishment
+      note: 223,313 paid employees in the week of March 12, 2023 across 17,156 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, machine shops (NAICS 332710)
+      value: 63,715 dollars per employee (2023)
+      note: Annual payroll of 14,228,383 thousand dollars divided by 223,313 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

@@ -94,3 +94,51 @@ automation:
 questions:
   - Which room is marked available while an unresolved defect remains?
   - Where does ready mean task complete instead of inspected and saleable?
+article:
+  what: >
+    The room turnover process takes a room from a guest's departure to a
+    state the front desk can sell again. It begins when the departure is
+    confirmed and the room is released for entry, and it ends when the
+    room has been inspected against the standard, every defect has a
+    work decision or a hold, and the room status and cleaning log show
+    who turned it, who inspected it, and when it became ready. In a hotel
+    or a bed-and-breakfast inn it is owned by the housekeeping lead, with
+    the front desk agent releasing the room and the maintenance
+    technician closing defects.
+  why: >
+    The word ready is a promise to the next guest, and a room marked
+    ready from task completion has not earned it. A cleaner finishing and
+    the status flipping in the same moment means nobody inspected. An
+    open maintenance request on an available room lets the front desk
+    assign inventory that cannot meet the stay. A starting condition not
+    recorded before the room is stripped leaves damage, lost property,
+    and unusual cleaning with no one to attribute them to. The process
+    keeps occupancy, cleaning, damage, lost property, maintenance,
+    inspection, and release state explicit so the front desk can trust
+    the board.
+  how: >
+    The front desk agent releases the departed room, confirming departure
+    and recording any late checkout, guest property, payment hold, or
+    access restriction before entry. The housekeeper inspects the
+    starting condition and records damage, maintenance needs, lost
+    property, unusual cleaning, missing items, and safety conditions
+    before they disappear under the turn. The housekeeper then turns the
+    room, with cleaning, linen, bed, bathroom, waste, amenities,
+    surfaces, and presentation following the room standard and known
+    guest needs. The maintenance technician closes exceptions, giving
+    each defect a work decision and holding the room when the remaining
+    condition prevents sale or safe occupancy. A second housekeeper or
+    the supervisor inspects and releases, recording room identity,
+    completion, inspection, exceptions, and ready time on the room status
+    and cleaning log before front desk availability changes.
+  controls:
+    - name: Starting condition logged before stripping
+      note: Damage, lost property, and unusual conditions are recorded with the time and the guest's departure before the bed is touched.
+    - name: Inspection separate from cleaning
+      note: The person who inspects and releases the room is different from the person who cleaned it, and both are named on the cleaning log.
+    - name: Maintenance hold blocks availability
+      note: A room with an open maintenance request cannot show as available until the technician records the fix or clears the hold.
+    - name: Lost property logged and secured
+      note: Any guest item found is logged with the room, date, and finder and stored securely before the room is released.
+    - name: Ready time recorded by the inspector
+      note: The ready timestamp is set by the inspection, so the status board reflects an inspected room and never a finished task list.

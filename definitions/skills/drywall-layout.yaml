@@ -87,3 +87,44 @@ questions:
   - >-
     Which record proves drywall layout was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The drywall layout process is the planning pass that happens before any
+    board is cut: the crew lead walks each room with the construction plan
+    and decides board orientation, how joints stagger, where control joints
+    and access panels land, which edges need backing, and in what order the
+    room is cut and hung. It ends when the layout is marked, the material is
+    counted against it, and the hanging crew has a sequence to follow. A
+    drywall contractor's lead or foreman owns it.
+  why: >
+    A poorly planned room wastes board and creates joints where they will
+    show. Butt joints lined up over a door frame crack, a control joint left
+    out of a long corridor lets the finish split, and an access panel
+    forgotten in layout is cut into a finished wall later at the
+    contractor's cost. Layout is also where quantities become real; without
+    it the crew orders by square footage and runs short on the last ceiling
+    or leaves a pallet unused on site.
+  how: >
+    The lead reads the construction plan and revisions, then confirms the
+    room is dry and enclosed, that framing and rough work are accepted, and
+    that board type and thickness, backing, control joints, access panels,
+    and finish level are known. From that basis the lead sets the field
+    controls: the orientation and stagger for each wall and ceiling, the
+    location of control joints and panels, the cut list and sequence, and
+    the hold point where the layout is checked before hanging begins. The
+    layout is marked and recorded with quantities and any concealed detail
+    it depends on, and the lead stops when a wall or opening does not match
+    the drawing. Acceptance checks the marked layout against orientation,
+    joint, corner, and finish level requirements, and the punch list records
+    what the hanging crew must watch for.
+  controls:
+    - name: Layout marked before cutting
+      note: Orientation, stagger, control joints, and access panel locations are marked on the framing and recorded before the first cut.
+    - name: Material count reconciled to layout
+      note: Board quantities by type and thickness are counted against the layout so shortages surface before the crew is standing idle.
+    - name: Control joint and panel review
+      note: The lead checks every long run and every concealed valve or junction against the plan for a required joint or panel.
+    - name: Changed-condition stop
+      note: When framing spacing, openings, or backing differ from the plan the layout is revised and approved before hanging starts.
+    - name: Layout handed over on the punch list
+      note: The punch list records the layout decisions the hanging crew must follow and any location still unresolved.

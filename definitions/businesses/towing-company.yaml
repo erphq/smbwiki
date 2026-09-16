@@ -25,3 +25,46 @@ revenue_model:
 supply_chain:
   buys_from: [towing-equipment-distributor]
   sells_to: [individual-client, commercial-client, auto-repair-shop]
+article:
+  operating_model: >
+    A towing company runs on dispatch. A call comes in from a motorist,
+    a motor club, a police rotation, a property owner, or a repair shop;
+    the dispatcher establishes authority, location, vehicle condition,
+    and payment path, matches truck and recovery method, and the driver
+    documents preexisting damage, hookup, securement, keys, and personal
+    property before moving. Transport execution and lead intake are the
+    load-bearing skills, and equipment maintenance is what keeps the
+    trucks earning. The tension is roadside exposure against response
+    time: the driver holds stop authority at the scene, and a damaged
+    truck or a wrong-truck dispatch takes a unit off the board for the
+    rest of the day.
+  starting: >
+    A towing business starts with a truck, insurance, and a place to put
+    vehicles. Day-one paperwork is the business registration, employer
+    registration for the first driver, commercial auto and on-hook
+    coverage at the limits rotation lists and motor clubs demand, a
+    federal motor carrier number and operating authority when work
+    crosses state lines for hire, and the towing permits, driver
+    background checks, and rate filings that many states and cities
+    require; storage and impound work adds a secured lot and, depending
+    on the jurisdiction, a storage license and a lien sale procedure.
+    The minimum roles are an owner-operator who drives, a dispatcher who
+    also handles the office, and a maintenance technician on call. The
+    first records are the load request, the bill of lading or tow ticket
+    with condition photos, proof of delivery, the customer invoice, and
+    the maintenance log. Lead intake, quoting, transport execution, and
+    customer invoicing must work from the first call.
+  economics: >
+    Revenue is towing and recovery, billed by hookup, mileage, winching,
+    and scene time, and storage and release, billed daily until an
+    authorized release. Rates are often set by rotation contracts, motor
+    club schedules, or local ordinances, so gross margin is decided by
+    truck utilization, fuel and labor per call, and how much of the day
+    is spent deadheading. On-time pickup rate and on-time delivery rate
+    decide whether the company keeps its motor club and rotation
+    positions, equipment uptime decides how many calls it can accept,
+    and quote win rate against booking rate shows whether private-pay
+    pricing is competitive. Days sales outstanding is the hidden cost,
+    because motor clubs, insurers, and impound lien sales pay slowly.
+    Trucks are capital-heavy and the fleet must be replaced on a cycle,
+    so a company is judged on revenue per truck after debt service.

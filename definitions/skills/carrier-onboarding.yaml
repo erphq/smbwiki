@@ -94,3 +94,51 @@ automation:
 questions:
   - Which independent source verifies the person currently controlling this carrier account?
   - What change would automatically prevent this carrier from receiving a load?
+article:
+  what: >
+    The carrier onboarding process is how a freight brokerage decides
+    that a motor carrier is who it says it is and is fit to haul the
+    freight the brokerage may assign. It starts when a carrier packet
+    arrives, whether from a load board contact, a referral, or the
+    carrier itself, and it ends when an approved carrier record exists
+    with an approval date, work limits, required rechecks, payment
+    setup, monitoring, and the conditions that would suspend it. The
+    carrier compliance specialist owns it; sourcing may assign a load
+    only within the limits the record sets.
+  why: >
+    Freight and money both move on this decision. Cargo theft by
+    identity fraud begins with a packet whose phone, email, documents,
+    and bank details all belong to the same impostor, and an onboarding
+    that confirms each fact through the packet's own contacts confirms
+    nothing. A carrier whose authority or insurance lapsed after
+    approval is still assigned loads if nobody is watching. A payment
+    redirect that comes through the same contact requesting it sends the
+    carrier's money to a stranger. Without the process, a complete-
+    looking packet is treated as approval and the approval lasts
+    forever.
+  how: >
+    The specialist begins with identity and control, checking the legal
+    entity, authority identifiers, addresses, domains, phone numbers,
+    signer, tax details, and the route for bank changes through sources
+    independent of the packet. Operating eligibility follows: authority
+    status, insurance, safety information, equipment, geography, and
+    commodity fit are confirmed current for the kind of freight under
+    consideration. The specialist then reviews fraud and payment risk,
+    resolving recent identity changes, contact inconsistencies,
+    assignment pressure, bank changes, and document anomalies explicitly
+    instead of letting them pass. Approval is recorded on the approved
+    carrier record with the date, work limits, required rechecks,
+    payment setup, monitoring, and suspension conditions, and that
+    record is what sourcing sees when it considers the carrier for a
+    load.
+  controls:
+    - name: Independent source for each identity fact
+      note: Phone, email, address, and authority are confirmed through the agency record, the insurer, or a published number, never through the packet alone.
+    - name: Insurance confirmed with the insurer
+      note: The certificate is verified with the issuing agent or insurer, and the coverage is checked against the freight type.
+    - name: Bank details set through a verified route
+      note: Payment instructions are established and changed only through a callback to a previously verified contact, and the check is recorded.
+    - name: Approval with limits and recheck date
+      note: The approved carrier record states what the carrier may haul, where, and when the next verification is due.
+    - name: Monitoring suspends on change
+      note: Authority, insurance, or safety changes automatically move the record to suspended until the specialist reviews it.

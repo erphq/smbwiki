@@ -95,3 +95,51 @@ questions:
   - >-
     Which record proves property data verification was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The property data verification process is the appraiser's check that
+    the subject property is what the records and the client say it is.
+    It begins when an engagement letter names the client, intended use,
+    property rights, and effective date, and it ends when physical and
+    legal characteristics have been inspected, compared with public and
+    private records, reconciled where they disagree, and carried into the
+    appraisal report with the evidence behind them. In a real estate
+    appraisal firm it is owned by the appraiser signing the report, with
+    a supervising appraiser accepting the work when the firm requires
+    one.
+  why: >
+    A value opinion is only as good as the property facts under it. A
+    wrong living area, an unrecorded easement, a zoning classification
+    taken from a listing, or a condition rating assigned from the curb
+    makes a polished report unsupported and exposes the appraiser and the
+    firm to a review finding or a claim. The process forces the
+    discrepancies to surface while the property can still be revisited
+    and the records rechecked, and it leaves a field record that another
+    appraiser can trace when the report is questioned.
+  how: >
+    The appraiser first confirms the work basis from the engagement
+    letter: the identified client and intended use, the property rights
+    appraised, the effective date, assignment conditions, access
+    arrangements, available market data, and the appraiser's own
+    competence for the property type. The field controls then set what
+    will be measured, photographed, and checked against which records,
+    and where the appraiser will stop and consult the client, for example
+    when access is refused or the legal description does not match the
+    site. During the inspection and records work the appraiser records
+    measurements, observations, record sources, and decisions, and pauses
+    when a finding changes the planned method. Acceptance checks the
+    completed work against credible supported analyses, disclosed scope
+    and assumptions, a reconciled value opinion, and a compliant report
+    before the signed appraisal report is delivered and any correction is
+    closed.
+  controls:
+    - name: Engagement basis confirmed before inspection
+      note: Client, intended use, property rights, effective date, and assignment conditions are recorded from the engagement letter before any fieldwork begins.
+    - name: Record source logged for each fact
+      note: Every physical and legal characteristic in the report names the record or observation it came from, so a reviewer can retrace it.
+    - name: Material discrepancy resolved or disclosed
+      note: A conflict between inspection, public record, and client information is reconciled in the file or disclosed as an assumption before the value is reconciled.
+    - name: Field record retained with photographs
+      note: Measurements, sketches, photographs, and inspection date are kept in the workfile so the report can be defended after delivery.
+    - name: Review before signature
+      note: A second appraiser or the signing appraiser's own checklist confirms scope, assumptions, analyses, and compliance before the report is signed and delivered.

@@ -99,3 +99,49 @@ automation:
 questions:
   - Which dispatched trip cannot meet its next commitment under current hours and conditions?
   - Which completed delivery still lacks evidence sufficient for billing and custody?
+article:
+  what: >
+    The transport execution process is the run of a single movement from
+    accepted load request to closed trip: the dispatcher plans the trip and
+    releases a driver and vehicle, the driver takes custody of the cargo on a
+    bill of lading, controls the movement against hours and appointments, and
+    delivers against a proof of delivery that the office can bill. It starts
+    when a load request has been accepted and ends when the trip record is
+    reconciled and the invoice can be raised. In a courier company or a local
+    delivery service the dispatcher and driver may be the same person on a
+    small day; in a general freight trucking company or a moving company the
+    dispatcher owns the plan and the driver owns custody.
+  why: >
+    Cargo in transit is the business's liability and its revenue at the same
+    time. A plan that cannot meet its appointments inside legal hours puts the
+    driver under pressure to run late or run illegal. A shortage or damage
+    noted on the pickup document but missing from the trip record becomes a
+    claim the carrier cannot defend. A delivery without a legible recipient,
+    time, and condition cannot be billed and cannot be used to close a custody
+    dispute. The trip record is the one place where plan, custody, exceptions,
+    and proof stay together.
+  how: >
+    The dispatcher plans the trip from the load request, checking stops,
+    cargo, equipment, handling, appointments, route, distance, hours, access,
+    cost, and the customer promise together, and then releases a qualified
+    driver with serviceable equipment, instructions, documents, contacts,
+    tracking, and the authority to handle exceptions. The driver takes custody
+    at pickup, recording arrival, count, condition, securement, seal, any
+    exception, and departure time on the bill of lading. During the movement
+    the driver keeps location, available hours, vehicle condition, delays,
+    customer contact, route changes, and recovery actions current on the trip
+    record. At delivery the driver records recipient, time, count, condition,
+    signature, any refusal or return, final mileage, documents, and vehicle
+    status on the proof of delivery, and dispatch reconciles the trip so it
+    can be billed.
+  controls:
+    - name: Feasibility check at release
+      note: Planned arrival times are checked against loading time, traffic, access, breaks, and available hours before the driver is released, and an infeasible plan is replanned.
+    - name: Driver and vehicle qualification confirmed
+      note: License, hours available, and the pre-trip inspection result are recorded on the trip before the vehicle leaves the yard.
+    - name: Exceptions written on both documents
+      note: Any shortage, damage, count, or seal exception at pickup is noted on the bill of lading and on the trip exception record at the same time.
+    - name: Proof of delivery reviewed before closing
+      note: Recipient name, time, count, condition, and signature are checked for completeness and legibility before the trip is closed for billing.
+    - name: Trip record reconciled to mileage and documents
+      note: Final mileage, fuel, documents returned, and vehicle status are reconciled to the trip record before the invoice is raised.

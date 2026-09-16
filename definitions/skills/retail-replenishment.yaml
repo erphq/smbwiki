@@ -99,3 +99,48 @@ automation:
 questions:
   - Which positive stock balance cannot be found in its recorded location?
   - Which receiving discrepancy is still included in available inventory?
+article:
+  what: >
+    The retail replenishment process moves goods from the receiving door
+    to the shelf with the stock record telling the truth at every step.
+    It begins when a delivery arrives against a purchase order and ends
+    when accepted units are priced, prepared, and in the selling
+    position, reserve stock is identifiable, and every shortage, damage,
+    or cost discrepancy has an owner and a disposition. In a grocery
+    store, a pharmacy, or a hardware store it is owned by the stock
+    associate on receiving, with the retail manager owning variance
+    decisions.
+  why: >
+    A stock record that is wrong is worse than none, because the business
+    acts on it. A delivery posted before it is checked means the store
+    pays for and promises units that were short, damaged, or never came.
+    A positive on-hand balance with no usable location ties up cash in
+    goods staff cannot find when a customer asks. Received quantity that
+    becomes available before pricing, labeling, security, or inspection
+    puts unsaleable goods on the floor. The process keeps identity,
+    quantity, cost, condition, and location moving together so
+    availability means what it says.
+  how: >
+    The stock associate matches the delivery against the purchase order
+    and the inventory receipt, checking supplier, shipment, item,
+    quantity, condition, and unexpected substitutions before any
+    inventory is accepted. Accepted quantity, cost, status, and initial
+    location are recorded on the stock record while discrepancies stay
+    visible as open lines. The associate prepares merchandise, completing
+    pricing, labeling, security, assembly, shelf-life, and handling
+    requirements before an item is marked saleable. Available units are
+    then moved to the selling position with reserve stock left
+    identifiable in its location. The retail manager resolves variance,
+    giving each damaged, missing, misplaced, expired, or incorrectly
+    costed item an owner and a disposition on the stock record.
+  controls:
+    - name: Count against the order before posting
+      note: The delivery is counted against the order before the receipt is posted, and a shipment cannot close with unmatched lines.
+    - name: Discrepancy lines stay open
+      note: Shortages, damage, and substitutions remain open on the receipt until a supplier credit or a manager disposition closes them.
+    - name: Saleable status follows preparation
+      note: An item's available quantity increases only when pricing, labeling, and required preparation are marked complete.
+    - name: Location recorded for every unit
+      note: Each accepted unit has a floor or reserve location on the stock record, and empty positions with positive balances are investigated.
+    - name: Variance reviewed by the manager on a schedule
+      note: Open variances are reviewed with the manager at a fixed interval so recurring supplier or handling problems become visible.

@@ -100,3 +100,49 @@ automation:
 questions:
   - Which inventory balance has no confirmed physical location?
   - Which released order cannot meet its handoff cutoff with current stock and labor?
+article:
+  what: >
+    The inventory fulfillment process is how a warehouse operator moves
+    goods from the receiving dock to a controlled location and back out
+    against an authorized customer order. It begins with an inventory
+    receipt that identifies what arrived and ends with a delivery
+    ticket that records who took custody of what was picked and
+    packed. In between, the stock record and the pick list keep item
+    identity, lot or serial, count, condition, and location traceable
+    at every movement. The warehouse manager owns the release of
+    orders; the warehouse associates own receiving, putaway, picking,
+    and packing.
+  why: >
+    It protects the customer's order and the owner's inventory at the
+    same time. When it is weak, product sits in receiving without
+    labels while putaway begins, a picker substitutes what is on hand
+    for what was ordered, and shipments are confirmed before anything
+    is staged, so available balance disappears with no proof of
+    receipt. Each of those produces a short shipment, a lost lot, or an
+    expensive search, and a lot recall cannot say where the product
+    went.
+  how: >
+    A warehouse associate receives and identifies the shipment against
+    the inventory receipt, recording item, quantity, condition, lot or
+    serial, handling status, and any discrepancy, which creates the
+    stock record. Goods are put away into an allowed location under
+    capacity, compatibility, rotation, security, and retrieval rules.
+    The warehouse manager releases the order once valid lines,
+    available stock, allocation, priority, carrier cutoff, and handling
+    instructions are confirmed, and the pick list is issued. The
+    associate picks from the source location and verifies item
+    identity, quantity, condition, and lot or serial as goods move to
+    staging. Packing closes with contents, packaging, labels,
+    documents, carrier or customer custody, and the inventory movement
+    recorded together on the delivery ticket.
+  controls:
+    - name: Receipt before putaway
+      note: No goods leave the receiving area until item, quantity, condition, and lot or serial are recorded on the stock record.
+    - name: Directed putaway to allowed locations
+      note: Location rules for capacity, compatibility, and rotation are enforced at putaway so the system location matches the physical one.
+    - name: Pick verification against the pick list
+      note: Item, quantity, and lot or serial are scanned or confirmed at the source location, and substitutions require manager authority.
+    - name: Custody evidence at handoff
+      note: The delivery ticket is signed or scanned by the carrier or customer before the shipment is confirmed and inventory leaves the balance.
+    - name: Cycle counts reconcile locations
+      note: Scheduled counts compare physical stock to the stock record by location and any variance is investigated and adjusted with a named approver.

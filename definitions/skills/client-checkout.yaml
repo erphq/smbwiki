@@ -90,3 +90,58 @@ automation:
 questions:
   - Which invoice line required verbal reconstruction from the stylist?
   - Does every correction concern leave checkout with an owner and response time?
+article:
+  what: >
+    The client checkout process closes a visit: it takes the completed
+    service ticket and turns it into an invoice the client understands,
+    a payment record that reconciles once, product guidance the client
+    can follow at home, and a next appointment set from the real service
+    interval. It starts when the provider marks the ticket complete and
+    ends when the client leaves with a receipt and a follow-up route. A
+    hair salon, a day spa, or a pet grooming business runs it through
+    the front desk coordinator, with the stylist or technician closing
+    the relationship side.
+  why: >
+    It protects the price the client was quoted and the result the
+    provider just delivered. When ticket changes reach the desk by word
+    of mouth, the coordinator totals from guesswork and the client hears
+    a new price with nothing to back it. A retail item rung up without
+    guidance goes home unused and comes back as a complaint. A hesitant
+    client whose concern is noted with no owner calls a week later,
+    after the team has lost the context. Each is a small dispute that
+    costs the next booking.
+  how: >
+    The salon coordinator reviews the completed service ticket first,
+    settling delivered services, add-ons, products used, retail items,
+    deposit, discount, and provider attribution before totaling. The
+    customer invoice is presented and issued with final service and
+    retail lines and any change from the original appointment explained
+    to the client. Payment is collected and the payment record
+    reconciles tender, gratuity, gift balance, package credit, and
+    change to the invoice exactly once. The stylist then closes the
+    service relationship: home care, product use, timing for the next
+    service, and any correction concern get a clear route, and the
+    rebooking uses the actual service interval.
+  controls:
+    - name: Ticket changes recorded by the provider
+      note: >
+        Any service added, dropped, or discounted is written on the
+        service ticket by the provider before the client reaches the
+        desk.
+    - name: Invoice presented with changes explained
+      note: >
+        The client sees each line and hears the reason for any
+        difference from the booked service before payment is taken.
+    - name: Single reconciliation of tender to invoice
+      note: >
+        Tender, gratuity, gift and package credits, and change are
+        reconciled to the invoice once, and the payment record is
+        closed at that moment.
+    - name: Retail line carries a recommendation
+      note: >
+        Every retail item on the invoice links to a recommendation
+        on the service ticket with use frequency and amount.
+    - name: Correction concern owned before departure
+      note: >
+        A noted dissatisfaction leaves checkout with a named owner
+        and a response date, visible to the next shift.

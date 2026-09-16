@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves solar site assessment was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The solar site assessment process is the first visit to a
+    prospective installation, where the assessor records the roof
+    structure and its condition, orientation and pitch, shading through
+    the year, access, the electrical service and panel, where equipment
+    can go, the owner's energy use, and whether the job can actually be
+    built. It starts when a sale or proposal needs real site data and
+    ends with a record the designer can trust. A solar installation
+    contractor owns it, usually through a site assessor or lead
+    installer who also flags constructability problems.
+  why: >
+    It protects the design and the proposal from being built on a guess.
+    A roof with a rotten deck, a service panel with no room for a
+    backfeed breaker, a chimney that shades the best array area at noon
+    in winter, or an attic with no route for conduit each changes the
+    system size, the cost, or whether the job should be sold at all.
+    Finding those on installation day means a redesign, a change order,
+    and a customer who no longer trusts the estimate.
+  how: >
+    The assessor reads the current scope and any revisions, then
+    confirms what is already known about the roof or ground condition,
+    energy use and shading data, the electrical design basis, the permit
+    path, the utility route, the proposed equipment, and fall protection
+    before the visit. The visit is set out as a sequence with the
+    measurements, photos, and readings to capture, the areas that must
+    be accessed, and the record form the designer expects. On site the
+    assessor records roof structure and condition, orientation, shade
+    readings, access routes, service size and panel condition, equipment
+    locations, and the owner's consumption history, and stops to flag
+    anything that changes the planned method. At acceptance the assessor
+    checks that the record supports structural and electrical
+    compliance, attachment and flashing decisions, circuit labeling,
+    shutdown, production estimates, inspection, and utility permission,
+    closes any gap, and issues the record for design.
+  controls:
+    - name: Roof structure documented, never assumed
+      note: Rafter size, spacing, deck condition, and layers are measured or photographed from the attic or the roof, with the attic access noted.
+    - name: Shade readings from the array area
+      note: Shading is measured at the proposed array locations with the tool, the date, and the time recorded.
+    - name: Service panel photographed with the label
+      note: Main breaker rating, bus rating, and available spaces are recorded so the designer can confirm the backfeed rule.
+    - name: Energy use from bills, with the period shown
+      note: Consumption is recorded from utility bills covering a full year, and any expected change in use is noted.
+    - name: Constructability flags on the record
+      note: Access, conduit route, and equipment location problems are listed on the assessment so design and estimating see them before the proposal.

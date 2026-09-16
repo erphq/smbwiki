@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves weather barrier installation was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The weather barrier installation process is the siding contractor's
+    installation of the water-resistive barrier and flashing that the siding
+    will cover: sheets are lapped shingle fashion so water runs out, openings
+    are flashed in the right order with the barrier, transitions to roofs,
+    decks, and foundations are made continuous, penetrations are sealed,
+    terminations are detailed, the drainage path behind the cladding is kept
+    open, and damage from other trades is repaired. It starts when the
+    substrate has been accepted as ready and ends with a quality report that
+    releases the wall for siding. The siding foreman owns it and the installer
+    who wraps each elevation is responsible for its laps.
+  why: >
+    The weather barrier, and how it is lapped and flashed, is what keeps water
+    out of the wall once the siding lets it through, which every cladding
+    does. A reverse lap at a window head, a barrier run over a flashing where
+    it should run under, an unsealed penetration, or a torn sheet left for the
+    siding crew leaves a water path that nobody sees until the sheathing rots.
+    A finished elevation can look complete while these details are already set
+    to fail, so the record made before the siding goes on is the only proof
+    the contractor has.
+  how: >
+    The foreman confirms the work basis from the current scope and revisions,
+    verifying accepted sheathing, a dry substrate, complete openings, the
+    approved barrier product, flashing details, material acclimation, and
+    access. Field controls follow: the lap and fastening pattern for the
+    product, the flashing sequence at heads, jambs, and sills, transition and
+    termination details, the order of elevations, who inspects before
+    covering, and the hold point at each opening. During installation the
+    operator records elevations completed, laps, flashing at each opening,
+    penetrations sealed, transitions, repairs to site damage, and photographs
+    each opening before trim, and stops when a substrate condition or a detail
+    differs from the planned method. Acceptance checks drainage continuity,
+    fastening, clearances, joint layout, trim integration, appearance, and
+    manufacturer requirements, corrections are closed, and the quality report
+    is issued.
+  controls:
+    - name: Laps checked for direction on every elevation
+      note: Horizontal and vertical laps are checked for shingle-fashion direction and minimum overlap before an elevation is released.
+    - name: Opening flashing photographed in sequence
+      note: Each opening's sill, jamb, and head flashing is photographed with the barrier lapped over it, before the window trim or siding covers it.
+    - name: Penetrations and terminations listed
+      note: Every penetration, kick-out, and termination is listed on the record with its treatment, and an untreated item holds the wall.
+    - name: Site damage repaired before covering
+      note: Tears and punctures from other trades are inspected for on each elevation and repaired with the product's method before siding begins.
+    - name: Manufacturer requirements confirmed
+      note: Fastening, tape, and lap requirements for the specific barrier product are confirmed against the installation instructions and recorded on the quality report.

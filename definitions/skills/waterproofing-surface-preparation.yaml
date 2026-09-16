@@ -96,3 +96,52 @@ questions:
   - >-
     Which record proves waterproofing surface preparation was accepted before
     it was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The waterproofing surface preparation process is the work a waterproofing
+    contractor does to a concrete or masonry substrate before a membrane will
+    bond to it: weak material and contamination are removed, voids and
+    honeycomb are repaired, the surface is profiled to the membrane
+    manufacturer's requirement, moisture is brought within limits, and
+    corners, cracks, and penetrations are treated so the membrane can be
+    continuous. It starts when the substrate is released to the contractor
+    with an inspection report on its condition and ends when the prepared
+    surface is accepted for membrane installation and the preparation is
+    recorded toward the final test report. The foreman owns it and the
+    manufacturer's representative is involved on warranted systems.
+  why: >
+    Membranes fail at the substrate more often than in the field of the sheet.
+    Laitance, curing compound, oil, or dust break the bond; an unrepaired
+    crack or cold joint moves and tears the membrane; a surface too rough or
+    too smooth for the product prevents the specified thickness; and moisture
+    in the concrete blisters a coating within days. Corners without a fillet
+    and penetrations without a detail are the places water finds first.
+    Preparation cannot be verified after the membrane is on, so the record has
+    to be made while the surface can still be seen.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions and verifying the identified moisture source, a sound and
+    dryable substrate, a compatible system, prepared transitions, a drainage
+    route, and safe access, starting from the inspection report on the
+    substrate. Field controls are then set: the profile and moisture limits
+    for the specified membrane, the repair materials and their cure times, the
+    sequence of areas, the crack and penetration details, who tests moisture
+    and who inspects, and the hold point before priming. During preparation
+    the operator records areas cleaned, material removed, repairs with product
+    and date, profile checks, moisture readings, and every crack, corner, and
+    penetration treated, with photos, and stops when the substrate differs
+    from the report. Acceptance checks that the surface will support
+    continuous specified thickness, bonded transitions, sealed penetrations,
+    protected terminations, drainage, and cure, corrections are closed, and
+    the record is carried into the test report.
+  controls:
+    - name: Substrate defects reported before repair
+      note: Cracks, voids, honeycomb, and contamination found during preparation are photographed and reported to the general contractor before repair removes the evidence.
+    - name: Profile checked against the manufacturer requirement
+      note: The surface profile is compared with the membrane manufacturer's stated requirement for each area and the result is recorded.
+    - name: Moisture tested before priming
+      note: Substrate moisture is tested by the method the membrane manufacturer specifies, and the reading and location are recorded before primer is applied.
+    - name: Repair materials and cure recorded
+      note: Every repair mortar, crack treatment, and fillet is logged with product, location, date, and cure time before the membrane is scheduled.
+    - name: Prepared surface accepted at a hold point
+      note: The foreman and, on warranted systems, the manufacturer's representative inspect and sign the prepared surface before membrane installation starts.

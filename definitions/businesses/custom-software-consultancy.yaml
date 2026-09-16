@@ -25,3 +25,61 @@ revenue_model:
 supply_chain:
   buys_from: [cloud-service-provider]
   sells_to: [commercial-client]
+article:
+  operating_model: >
+    A custom software consultancy's week runs in engagements. The
+    principal sells and scopes, the client coordinator keeps each
+    engagement's brief, approvals, and schedule current, and
+    professionals deliver discovery, design, implementation, testing,
+    and deployment against the engagement letter. Time records are kept
+    daily because they are the basis for billing on time-based phases
+    and for knowing whether a fixed milestone is on budget. The
+    load-bearing skills are professional service delivery and client
+    engagement, because working software creates new information every
+    week and someone has to decide with the client whether an estimate,
+    a constraint, or a defect changes the plan. The tension is between
+    utilization and quality: a team billing every available hour has no
+    slack for the support commitments already sold, and a team with
+    slack is losing money on idle capacity. Support and evolution
+    retainers smooth the swings but bring their own on-call
+    obligations.
+  starting: >
+    A custom software consultancy starts with a first client and an
+    engagement letter, since there is no license to obtain and little
+    equipment to buy. Day-one paperwork is the business registration,
+    employer registration once the first professional is hired,
+    professional liability insurance that clients increasingly require
+    in their contracts, and sales tax registration where the state
+    taxes software services or delivered software. Contracts matter
+    more than permits here: the engagement letter has to name the
+    users, workflows, integrations, environments, acceptance criteria,
+    intellectual property ownership, and who can change priorities, or
+    the consultancy will deliver against a moving target. The minimum
+    team is a principal who sells and leads delivery and a professional
+    or two; the client coordinator role is held by the principal until
+    there are several concurrent engagements. The first records are the
+    job request, the client brief, the engagement letter, the time
+    record, the deliverable with its acceptance, and the customer
+    invoice, held in a professional services automation system with a
+    customer relationship management tool in front and accounting
+    behind. Lead intake, client engagement, professional service
+    delivery, invoicing, and staff scheduling must work from the first
+    engagement.
+  economics: >
+    Revenue is software delivery projects billed by phase, milestone,
+    or time, and support and evolution retainers that sell recurring
+    maintenance, operations, and improvement capacity. Pricing is a day
+    or hour rate for time-based work and an estimated effort times rate
+    for fixed milestones, so the margin on fixed work depends on
+    estimating well and controlling scope. Gross margin is the rate
+    charged against the loaded cost of the professionals delivering,
+    which makes engagement gross margin and utilization rate the two
+    numbers that decide profit: unbilled hours are the cost, and a
+    milestone that took longer than estimated is a margin given back.
+    Work in progress age and days sales outstanding decide cash,
+    because milestones are invoiced on acceptance and clients pay on
+    terms, so a delayed acceptance is a delayed payment for work
+    already salaried. Quote win rate against booking rate shows whether
+    the pipeline can keep the team utilized. The business is
+    labor-intensive and capital-light, and cloud services are passed
+    through, so margins are judged on people cost alone.

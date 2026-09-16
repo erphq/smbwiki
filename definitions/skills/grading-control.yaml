@@ -88,3 +88,49 @@ questions:
   - >-
     Which record proves grading control was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The grading control process keeps earthwork on the site plan:
+    benchmarks and survey control maintained through the job, cut and
+    fill balanced against the plan, fill placed in lifts and compacted,
+    drainage shaped to carry water off the pad, elevations checked as the
+    grade develops, and finished grade protected from traffic and rain
+    until the next trade takes it. It starts when survey control, utility
+    information, permits, and erosion controls are in place and ends when
+    grades, drainage, compaction, and quantities are accepted on the daily
+    report. The grading foreman owns it for a site preparation contractor.
+  why: >
+    Earthwork moves fast and buries its mistakes. A lost benchmark puts a
+    building pad at the wrong elevation, a lift placed too thick fails
+    compaction under the slab, a swale shaped the wrong way sends water at
+    the foundation, and a finished grade driven over in the rain has to be
+    reworked. Each of these is repeated handling of the same dirt, and
+    some are structural. The process protects the design elevations, the
+    compaction record the engineer will ask for, and the quantities the
+    contractor gets paid on.
+  how: >
+    The foreman reads the current scope and revisions and confirms survey
+    control, utility information, permits, erosion controls, equipment
+    access, haul route, soil direction, and the weather plan before
+    equipment moves. The field controls are then set: benchmark and stake
+    protection, the cut and fill sequence, lift thickness and compaction
+    testing frequency, drainage shaping checkpoints, elevation checks at
+    each stage, and the daily report the foreman keeps. During grading the
+    foreman records quantities moved, elevations checked, compaction
+    results, soil conditions encountered, weather, and any point where
+    unsuitable soil, water, or an unmarked utility changed the plan, and
+    stops until the changed condition is resolved. At acceptance the
+    foreman checks limits, slopes and support, approved grades, drainage,
+    compaction, stabilized access, and recorded quantities against the
+    plan, closes correction, and issues the daily report.
+  controls:
+    - name: Benchmark check each day
+      note: Survey control is verified before grading starts each day and any disturbed stake is reset and recorded.
+    - name: Lift thickness and compaction test log
+      note: Each lift's thickness and its compaction test result are logged by location before the next lift goes on.
+    - name: Elevation check at each stage
+      note: Subgrade, drainage, and finished grade elevations are shot and recorded against the plan before the stage is called complete.
+    - name: Unsuitable soil and water stop rule
+      note: Unsuitable material, groundwater, or an unmarked utility stops work in that area until the disposition is recorded.
+    - name: Daily report with quantities
+      note: Quantities moved, tests, elevations, weather, and changed conditions go on the daily report the same day they happen.

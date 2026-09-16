@@ -54,3 +54,77 @@ licenses:
 supply_chain:
   buys_from: [malt-supplier, hop-supplier, packaging-distributor]
   sells_to: [retail-consumer, commercial-client, beverage-distributor]
+article:
+  operating_model: >
+    A brewery is a schedule of tank time. Each recipe occupies the
+    brewhouse for a day, a fermenter for a week or more, and a bright
+    tank or conditioning vessel after that, so the production lead plans
+    brew days backward from when packaged beer is needed and the cellar
+    operator moves beer between vessels as tests allow. Packaging runs
+    turn released beer into kegs and cans, the quality technician signs
+    the release record, and the maintenance technician keeps pumps, the
+    glycol chiller, and the canning line running. On the front side the
+    retail-manager and sales associates run the taproom, and the
+    office-manager invoices distributors and files the excise return.
+    Beverage batch production and beverage quality release are the
+    load-bearing skills, with equipment maintenance a close third
+    because one down chiller stops every fermenter. The tension is
+    committed against available liquid: a beer promised to a distributor
+    and a beer poured in the taproom come from the same tank, and the
+    taproom pays more.
+  starting: >
+    Before a single batch is brewed, the brewery must hold a federal
+    Brewer's Notice from the alcohol tax authority, which covers the
+    premises, the ownership, a bond where required, and the
+    recordkeeping, and it must have the state manufacturer's license
+    that most states layer on top. Selling beer on the premises needs
+    the state or local retail alcohol license for the taproom, and
+    selling to distributors needs the state's distribution or
+    self-distribution arrangement, which differs by state. Labels for
+    packaged beer that crosses state lines need federal label approval.
+    Around those sit the business registration, sales tax and excise
+    registrations, an employer registration, a food service permit if
+    the taproom serves food, and a wastewater agreement with the
+    utility, because brewery effluent is high-strength and many cities
+    meter and surcharge it. The capital is the brewhouse, fermenters, a
+    glycol chiller, cold storage, kegs, and a packaging line. The
+    minimum team is a production lead who brews, a cellar operator who
+    can also package, and a retail-manager for the taproom, with
+    quality, maintenance, and office roles absorbed by the owner until
+    volume grows. The first records are the batch record, the packaging
+    record, the lab result and release record, purchase orders to malt,
+    hop, and packaging suppliers, the delivery ticket, and the
+    excise-ready inventory of beer removed from the bonded premises.
+    Beverage batch production, beverage quality release, purchasing,
+    retail sale, customer invoicing, and equipment maintenance must all
+    work from the first brew day.
+  economics: >
+    Revenue is wholesale beer, sold in kegs and packages to distributors
+    or direct accounts, and taproom sales, sold by the pint, the flight,
+    and the to-go package at retail. The two channels have very
+    different economics: wholesale is priced per keg or case at the
+    brewery's price to the distributor, who takes a margin before the
+    retailer takes another, while the taproom sells the same beer at the
+    retail price with no intermediary, so gross margin percentage is
+    decided by channel mix before anything else. Inside production,
+    batch yield decides how much saleable beer each brew day's
+    ingredients become, batch release conformance decides how much of it
+    can be sold, and equipment uptime decides how many brew days the
+    calendar delivers. Average ticket in the taproom rises with food and
+    merchandise. Days sales outstanding matters on the wholesale side,
+    where distributors pay on terms while excise tax is due on removal.
+    The business is capital intensive in tanks and packaging and cash
+    intensive in kegs that sit at accounts, and the strategic question
+    is how much beer to sell through the taproom before growing into
+    wholesale volume that carries thinner margin.
+  benchmarks:
+    - scope: Number of craft breweries operating in the United States
+      value: 9,578 craft breweries in 2025, down 2.9 percent from 9,796 in 2024
+      note: Brewers Association count of craft breweries by category for 2025; 1,994 microbreweries, 3,910 taprooms, 3,525 brewpubs, and 275 regional craft breweries, with 9,724 total US breweries including 146 large and non-craft.
+      source: https://www.brewersassociation.org/statistics-and-data/national-beer-stats/
+      source_name: Brewers Association, National Beer Sales and Production Data (2025)
+    - scope: Craft beer share of the US beer market
+      value: 13.4 percent of volume and 24.8 percent of retail dollars in 2025
+      note: Brewers Association national figures for 2025; craft brewer volume declined 4 percent and retail dollar sales fell 2.8 percent to 28.0 billion dollars against a 113 billion dollar total US beer market, in a year when overall US beer production and imports were down 5.7 percent.
+      source: https://www.brewersassociation.org/statistics-and-data/national-beer-stats/
+      source_name: Brewers Association, National Beer Sales and Production Data (2025)

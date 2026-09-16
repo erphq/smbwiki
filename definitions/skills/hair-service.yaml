@@ -89,3 +89,50 @@ automation:
 questions:
   - Who owns every active timer and delegated technical stage?
   - Did the service ticket capture each change from the consultation plan?
+article:
+  what: >
+    The hair service process is the work at the chair from the moment the
+    client sits down to the moment the service ticket reaches checkout:
+    confirming the plan from the appointment record and formula card,
+    executing the cut, color, texture, treatment, or styling sequence,
+    handling what the hair reveals along the way, and finishing with a
+    record of what was actually delivered. It starts when the consultation
+    plan is agreed and the station is ready and ends when the ticket,
+    formula changes, home care, and next recommendation are complete. The
+    stylist owns it in a hair salon, with assistants taking delegated
+    stages under the stylist's direction.
+  why: >
+    Chemical services do not wait. A color left processing while the
+    stylist starts the next client, a formula passed to an assistant by
+    word of mouth, or a change made mid-service and forgotten by checkout
+    costs the client's hair condition, the salon's revenue on the actual
+    work, and the accuracy of the record the next stylist will trust. The
+    process protects the client's scalp and hair, the salon's charge for
+    what was delivered, and the formula card that makes the next visit
+    repeatable.
+  how: >
+    The stylist confirms the plan and readiness: the service, timing,
+    protection, products, tools, and any assistant handoff are ready
+    against the appointment record and formula card before technical work
+    begins. The stylist then executes the technical sequence, sectioning,
+    application, cutting, tension, heat, processing, and checks, following
+    the agreed plan and the hair's current condition, with every timer and
+    delegated stage owned by a named person. When the hair reveals
+    something unexpected, such as faster lift, uneven porosity, a
+    reaction, or a timing problem, the stylist controls the change by
+    discussing it with the client when it affects result, scope, price,
+    or future condition, and records the decision. At the finish the
+    stylist records delivered services, products used, formula changes,
+    result, home care, and the follow-up recommendation on the service
+    ticket so checkout and the client's profile reflect the work done.
+  controls:
+    - name: Formula visible at the chair
+      note: The formula card is at the station and any delegated stage is written with product, section, saturation, and timing before the assistant starts.
+    - name: Named owner for every timer
+      note: Each processing timer carries the name of the person responsible for the check, and that person stays on the floor until it is done.
+    - name: Client consent on scope or price change
+      note: A change that alters result, scope, price, or future condition is agreed with the client and noted before it is applied.
+    - name: Service ticket matches the work
+      note: Delivered services and products on the ticket are checked against what was actually done before the ticket goes to checkout.
+    - name: Formula card updated at finish
+      note: Formula changes and the observed result are written to the card so the next appointment starts from the real history.

@@ -102,3 +102,52 @@ automation:
 questions:
   - Which upcoming reservation has no confirmed ready asset?
   - Which returned asset is marked available with an unresolved condition or service item?
+article:
+  what: >
+    The rental turnaround process is the life of one rental from
+    reservation to the asset being ready to go out again. It begins when
+    a customer's need is matched to a specific physical asset under a
+    rental agreement, moves through a documented handoff, the active
+    rental term, and a return inspection, and ends when added charges
+    are settled on the customer invoice and the asset is either available
+    or on a service hold. In an equipment rental company it is owned by
+    the rental agent at the counter, with the maintenance technician
+    owning return assessment and service release.
+  why: >
+    The asset is the business, and every turnaround is a chance to lose
+    it, damage it, or dispute it. A reservation held against a class with
+    no ready unit fails on pickup day. A handoff without a timestamped
+    condition report turns every scratch, empty tank, and missing bucket
+    into an argument at return. An asset marked available before its
+    return inspection and service are closed sends hidden damage and
+    overdue maintenance out with the next customer. The process keeps
+    agreement, custody, meter, accessories, damage, maintenance, and
+    billing on one record so each transition is provable.
+  how: >
+    The rental agent reserves a suitable asset from the rental agreement,
+    confirming customer, use, dates, location, capacity, attachments,
+    transport, and operator requirements against real availability. At
+    handoff the agent completes the equipment condition report with
+    identity, operating state, meter, fuel or charge, accessories,
+    existing damage, instructions, and the customer's custody signature.
+    During the term the agent maintains the active rental, keeping
+    extensions, exchanges, service calls, location, incidents, late
+    status, and payment authority attached to the asset and customer. On
+    return the maintenance technician receives and assesses the asset,
+    comparing return time, meter, fuel, accessories, cleanliness, damage,
+    and function with the release report and noting required
+    maintenance. The rental agent then closes and restores the rental:
+    time, usage, transport, consumables, cleaning, damage, credits, and
+    payment are reconciled on the customer invoice, a service hold is set
+    if needed, and availability is updated.
+  controls:
+    - name: Specific asset assigned before pickup day
+      note: A reservation names a physical unit, confirmed ready, before the customer arrives, so a class promise never fails at the counter.
+    - name: Condition report signed at both ends
+      note: Release and return condition are timestamped, photographed, and acknowledged by the customer, so a damage charge rests on evidence.
+    - name: Meter and fuel recorded out and in
+      note: Hour or mileage and fuel or charge are written on both reports so usage and refuel charges are calculated from readings, never estimated.
+    - name: Service hold before availability
+      note: An asset with an open inspection finding or due maintenance cannot show as available until the technician releases it.
+    - name: Invoice reconciled to the agreement
+      note: Every added charge on the customer invoice traces to a line on the agreement or a documented return finding.

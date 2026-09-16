@@ -87,3 +87,50 @@ questions:
   - >-
     Which record proves grout and seal was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The grout and seal process finishes a tile installation: joints are
+    cleaned and prepared, grout is mixed and placed, the surface is shaped
+    and cleaned, movement joints receive sealant, the grout cures, and a
+    sealer goes on where the specification calls for it. It starts when
+    the set tile is cured and the substrate, tile, and setting system are
+    accepted, and it ends when bond, plane, joint alignment, movement
+    accommodation, drainage, grout, sealant, and appearance are checked
+    and the quality report is issued. The tile foreman owns it for a tile
+    contractor.
+  why: >
+    Grout and sealant are what the owner sees and what keeps water out of
+    the assembly. A joint grouted before the setting material has cured, a
+    movement joint filled with grout instead of sealant, or a shower floor
+    sealed over trapped water looks fine on the day and cracks, stains, or
+    leaks within the year, and the repair means cutting out finished work.
+    The process protects the water management the assembly was designed
+    for, the appearance the client approved, and the contractor's
+    warranty.
+  how: >
+    The foreman reads the current scope and revisions and confirms the
+    substrate is stable and flat, setting work is cured, the tile and
+    setting system are the approved ones, movement joints are resolved,
+    layout is dry, and temperature and humidity are controlled before
+    grout is mixed. The field controls are then set: grout type and mix
+    per area, the order of grouting, cleaning, sealant, cure, and sealer,
+    hold points for joint preparation before grout and for cure before
+    sealer, and the record the crew keeps. During the work the crew
+    records grout batches, areas completed, movement joint locations and
+    sealant used, cure times, and any condition such as a soft setting bed
+    or an unplanned movement joint that changed the method. At acceptance
+    the foreman checks bond coverage, plane, joint alignment, movement
+    accommodation, drainage, lippage, grout, sealant, and appearance
+    against the approved sample, closes correction, and issues the quality
+    report.
+  controls:
+    - name: Cure check before grouting
+      note: Setting material cure time is confirmed and recorded before the joints in that area are grouted.
+    - name: Movement joints mapped and sealed
+      note: Every movement joint location is marked on the layout and receives sealant, and a grouted movement joint is a correction.
+    - name: Grout batch and area log
+      note: Each batch's product, mix, and the area it covers are logged so a color or hardness difference can be traced.
+    - name: Drainage test on wet areas
+      note: Shower floors and wet areas are flood tested or checked for drainage before sealer goes on.
+    - name: Appearance check against approved sample
+      note: The finished surface is compared with the approved grout and tile sample in daylight before the quality report is issued.

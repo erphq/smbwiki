@@ -94,3 +94,49 @@ automation:
 questions:
   - What operating evidence proves the latest completed job resolved its condition?
   - Which field finding should change intake, quoting, or truck preparation?
+article:
+  what: >
+    The field job execution process is the technician's side of a service
+    visit: arriving with a work order, agreeing the scope and access with
+    the person on site, protecting the property and isolating the hazard,
+    confirming the condition matches the order before working, performing
+    the authorized work and stopping for any change, testing the result
+    under real operating conditions, and sending photos and evidence back so
+    the office can close the job. It runs in an HVAC contractor, a plumbing
+    contractor, an appliance repair service, a pest control company, and
+    every other trade that sends a technician to a customer's premises, and
+    the technician owns the visit.
+  why: >
+    The office prices, schedules, and invoices from what the technician
+    reports, and the customer judges the company on what the technician
+    leaves behind. Work done on a condition that was never confirmed gets
+    billed as the wrong thing. Scope expanded on site without authorization
+    is either unpaid or disputed. A repair that passes at rest and fails
+    under load is a callback and a lost customer. Water on a floor, debris
+    on a lawn, or a gate left open becomes a second job and a complaint. The
+    process keeps each of those outcomes tied to a step that has a record.
+  how: >
+    The technician reviews the work order with the responsible person on
+    site, covering contact, access, the reported condition, the authorized
+    work, site history, and known hazards. Before opening anything the
+    technician sets up isolation, protection, a test area, tools, materials,
+    and the arrangement for occupants. The condition is confirmed and the
+    work performed; when findings do not support the order or the scope
+    needs to grow, work stops until the office or customer authorizes the
+    change, and required procedure and code stay part of completion. The
+    result is tested under a realistic operating state, checking function,
+    safety, leaks, settings, controls, cleanup, and the original condition.
+    Before and after photos, test evidence, materials used, customer
+    instruction, and any remaining issue go back on the work order for the
+    office to close.
+  controls:
+    - name: Site acceptance recorded before work
+      note: Contact, access, reported condition, and hazards are confirmed with the person on site and noted on the work order.
+    - name: Protection and isolation photographed
+      note: Floor protection, isolation, and the work area are photographed before the system or structure is opened.
+    - name: Change authorization before scope grows
+      note: Any work beyond the order stops until an authorization with a price is recorded from the customer or the office.
+    - name: Operating test with readings
+      note: The completion record carries readings taken under load, flow, heat, pressure, or the relevant operating condition.
+    - name: Handoff evidence on the work order
+      note: Before and after photos, materials, customer sign-off, and remaining issues are attached before the technician leaves the site.

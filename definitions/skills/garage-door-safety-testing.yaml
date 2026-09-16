@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves garage door safety testing was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The garage door safety testing process is the set of checks a garage
+    door contractor runs after installing or servicing a door and operator
+    before handing it to the owner: photo eyes, edge or force reversal,
+    open and close limits, manual release, spring balance, emergency
+    controls, warning labels, and a demonstration of owner operation. It
+    starts when the door and operator are installed on a verified opening
+    under a work order and ends when every test has passed, correction is
+    closed, and the commissioning record is signed. The installing
+    technician owns it, with the service manager reviewing the record.
+  why: >
+    A garage door is heavy, spring loaded, and driven by an operator that
+    will cycle it whether or not the balance, track attachment, and
+    reversal system are right. A door that does not reverse on contact or
+    beam interruption can injure a child or crush a vehicle, and a door
+    out of balance loads the operator until it fails. The process protects
+    the occupant, the contractor's liability, and the warranty claim the
+    manufacturer will only honor with a test record.
+  how: >
+    The technician reads the current scope and revisions on the work
+    order and confirms the opening and structure were verified, the
+    selected door and operator are the ones installed, electrical
+    provision is correct, hardware and spring design match the door, and
+    the site is protected. The testing controls are then set: the test
+    sequence, the pass criteria for each safety function, hold points
+    where a failed test stops the handover, and the commissioning record
+    the technician fills in. During testing the technician records each
+    result, the force and limit settings, the balance check with the
+    operator disconnected, and any condition such as an out-of-square
+    opening or a misaligned track that changed the plan, and stops if a
+    test fails until it is corrected. At acceptance the technician checks
+    secure attachment, balanced travel, clearances, functional controls,
+    entrapment protection, manual release, seals, and owner instruction,
+    closes correction, and issues the signed commissioning record.
+  controls:
+    - name: Balance test with operator disconnected
+      note: The door is held at mid travel by hand with the operator released, and the result is recorded before the operator is reconnected.
+    - name: Reversal tests recorded per function
+      note: Photo eye interruption and contact reversal are each tested and their results recorded, and a failure stops handover.
+    - name: Force and limit settings on the record
+      note: The final force and travel limit settings are written on the commissioning record so a later service call has a baseline.
+    - name: Warning labels and manual release verified
+      note: Labels are present and legible and the manual release operates, and both are ticked before the owner demonstration.
+    - name: Owner demonstration signed
+      note: The owner operates the door and the manual release with the technician present and signs the commissioning record.

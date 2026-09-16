@@ -84,3 +84,43 @@ automation:
 questions:
   - Which invoices due in the next payment run still lack approval?
   - Can every payment be traced to an invoice and an authorized order?
+article:
+  what: >
+    The accounts payable process is the path a supplier bill takes from
+    the day it arrives to the day the money leaves: registered with a
+    due date, matched to what was ordered and received, approved by
+    someone who owns the spend, and paid on the agreed terms with a
+    record that ties the payment back to the invoice. It belongs to the
+    owner or the bookkeeper in a small business and to a payables clerk
+    under a controller in a larger one, and every business type in the
+    catalog that buys anything runs it.
+  why: >
+    It protects cash twice. Paying early forfeits working capital, and
+    a discount for prompt payment is only worth taking on purpose;
+    paying late costs terms, credit lines, and the supplier's
+    willingness to ship the next urgent order. Between those two dates
+    the process is the only check that the business is paying for what
+    it actually received at the price it agreed, which is where
+    duplicate invoices, short shipments, and price creep hide.
+  how: >
+    A bill is registered the day it arrives, with the supplier, amount,
+    invoice number, and due date captured before it leaves the inbox.
+    It is then matched: quantity and price against the purchase order,
+    receipt against the delivery record, and the job or department
+    that owns the spend against the person approving it. Lines that do
+    not match stay in an exception queue with one owner and a next
+    action until they are resolved or credited. On the payment run,
+    approved bills due inside the window are released together, and
+    the payment record links each payment to the invoices it settled
+    so the supplier statement reconciles without a search.
+  controls:
+    - name: Three-way match
+      note: Invoice, purchase order, and receiving record agree on item, quantity, and price before approval; a missing one sends the bill to exceptions, never to the payment run.
+    - name: Duplicate check on invoice number
+      note: The same supplier and invoice number cannot be registered twice, and near duplicates, the same amount within a few days, are held for a human look before release.
+    - name: Named approver with spend authority
+      note: Every bill is approved by a person whose limit covers the amount and who owns the job or department charged, and the approval is recorded on the bill.
+    - name: Aging queue reviewed before each run
+      note: Open bills are listed by due date before every payment run so nothing due inside the window is left unassigned or unapproved.
+    - name: Payment record reconciled to the bank
+      note: Each payment in the bank feed maps to a payment record and its invoices, so the supplier ledger and the bank agree at month end without a search.

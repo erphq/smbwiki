@@ -89,3 +89,49 @@ automation:
 questions:
   - What operating promise still awaits operations review?
   - What evidence supports the volume and timing on the highest-value open lane?
+article:
+  what: >
+    The shipper sales process is how a freight brokerage finds and
+    qualifies freight it can actually price and move, from the first
+    conversation with a shipper to the first load request the operations
+    desk can act on. It covers whether the freight fits the brokerage's
+    carriers and service, how the shipper decides and pays, what the
+    lane really looks like, and what the incumbent is getting wrong. A
+    shipper sales representative owns it in a freight brokerage, with
+    operations joining before any service promise and credit signing off
+    before any load moves.
+  why: >
+    It protects the brokerage from winning freight it cannot serve or
+    collect on. A lane pursued on a volume claim with no tender history
+    leaves carrier development and pricing built around loads that never
+    arrive; a tracking or appointment promise made before operations
+    reviews it becomes a service failure on the first shipment; a
+    customer moved before credit and billing requirements are known
+    becomes a receivable the brokerage cannot collect. Each of those
+    losses arrives after the customer has already said yes.
+  how: >
+    The representative first establishes operating fit by aligning the
+    freight type, geography, volume pattern, equipment, service level,
+    and the shipper's role with what the brokerage's carrier base and
+    service can deliver. The representative then maps the buying
+    process, learning who decides, how the routing guide and tender
+    work, how credit is approved, when pricing happens, what documents
+    are required, and how performance is reviewed. The lane and the
+    shipper's current problem are qualified next, with origin,
+    destination, timing, commodity, volume variability, appointment
+    behavior, accessorial exposure, and the incumbent's failure stated
+    specifically enough for operations to evaluate. The first
+    opportunity is then written as a load request that carries the
+    actual movement requirement, the promise made to the customer, the
+    commercial owner, and the next decision.
+  controls:
+    - name: Operating fit recorded before a quote
+      note: Equipment, geography, and service level are matched to brokerage capability on the account record before any pricing effort starts.
+    - name: Volume claim backed by evidence
+      note: A forecasted lane carries sample shipment history, a calendar, an award rule, or a first shipment date before it counts in the pipeline.
+    - name: Operations review before a service promise
+      note: Coverage, tracking, appointment, and recovery commitments are reviewed by the operations desk before they are made to the shipper.
+    - name: Credit and payment path before the first load
+      note: A named credit owner, billing portal, document list, and payment terms are on file before the load request is released to operations.
+    - name: Win and loss reasons captured
+      note: Each closed opportunity records why it was won or lost so target accounts and qualification prompts improve over time.

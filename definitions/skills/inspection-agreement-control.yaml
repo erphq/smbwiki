@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves inspection agreement control was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The inspection agreement control process is the check a home
+    inspection service runs between a client's request and the first
+    step onto the property. It confirms who the client is, which
+    property is being inspected, what purpose and standard of practice
+    govern the work, what is excluded, what the fee and timing are, how
+    access and utilities will be arranged, who will attend, and how the
+    report will be delivered. It begins with the client brief and ends
+    with a signed agreement the inspector can work from and an
+    inspection report that can be traced back to it. The inspector or
+    the office coordinator owns it.
+  why: >
+    It protects the inspector from doing work nobody agreed to pay for
+    and the buyer from believing the inspection covered more than it
+    did. Without a settled agreement the inspector arrives at a house
+    with no power or water, a seller who did not know, or a client who
+    expected a pool, a septic system, or a detached structure to be
+    included. After the fact, a missing exclusion or an unsigned scope
+    turns a disputed defect into a liability claim with nothing in the
+    file to answer it.
+  how: >
+    The office reads the client brief and the current scope, then
+    verifies the signed scope, the identified property, the agreed
+    access, the known occupancy and utility status, the required
+    disclosures, the tools needed, and the weather conditions before a
+    date is committed. The coordinator translates that into field
+    controls: what the inspector will and will not enter, the sequence
+    through the property, hold points for conditions that stop the
+    inspection, and the records the inspector will keep. During
+    fieldwork the inspector records observations, limitations,
+    decisions, and anything inaccessible, and stops when a condition
+    changes the planned method. At acceptance the report is checked for
+    complete observations of accessible systems, stated limitations,
+    clear defect evidence, risk significance, and delivery on the
+    promised date, then issued.
+  controls:
+    - name: Signed agreement before scheduling
+      note: No inspection date is confirmed until the client has signed the scope, fee, standard, and exclusions that will govern the report.
+    - name: Property and access confirmation
+      note: Address, occupancy, utility status, and who provides entry are confirmed with the listing side and recorded before the inspector leaves the office.
+    - name: Limitation log kept in the field
+      note: Every area not entered, system not operated, or condition not observable is written at the time with the reason, so the report can state it.
+    - name: Report checked against the agreement
+      note: Before delivery, the report is compared to the agreed scope and standard so nothing promised is missing and nothing excluded is reported as inspected.
+    - name: Delivery evidence
+      note: The report's delivery date, method, and recipient are recorded against the agreement so the timing promise can be shown.

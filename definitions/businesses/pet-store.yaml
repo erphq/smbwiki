@@ -34,3 +34,53 @@ summary: >
 supply_chain:
   buys_from: [pet-supply-distributor]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A pet store sells replenishment: food, litter, habitat supplies,
+    equipment, and care products that the same customers buy again on a
+    cycle, and, where permitted, live animals with their own records.
+    The week runs on receiving, replenishment, and the sales floor: the
+    stock associate receives against the purchase order and checks lot,
+    expiry, damage, and temperature, the retail manager orders and
+    reconciles, the sales associate sells and handles returns, and the
+    pet care specialist watches product safety, recalls, and any live
+    animal on the floor. Retail replenishment, retail sale, and pet
+    product safety control are load-bearing. The tension is between
+    advice and liability: staff must know the products well enough to
+    recommend a food for a life stage or a habitat for a species, while
+    directing every health concern to a veterinarian and pulling a
+    recalled lot the day the notice arrives.
+  starting: >
+    A store that sells only supplies needs the general layer: business
+    registration, sales tax registration, employer registration for the
+    first hire, and a certificate of occupancy for the space. Selling
+    live animals changes the paperwork: most states license pet dealers
+    or pet shops, inspect enclosures and husbandry, require health
+    records and a sales disclosure for each animal, and restrict which
+    species may be sold; some cities ban the retail sale of dogs and
+    cats altogether, so the decision to carry animals is made before the
+    lease. Shelving, refrigeration for some foods, habitats, and the
+    opening inventory are the capital items, and inventory is the
+    largest one. The minimum team is a retail manager who is usually the
+    owner, a sales associate, a stock associate, and a pet care
+    specialist if animals are sold. The first records are the purchase
+    order, the inventory receipt, the stock record, the lot and expiry
+    record, the sales receipt, and the return record, and retail
+    replenishment, retail sale, purchasing, payment reconciliation, and
+    pet product safety control must work from opening day.
+  economics: >
+    Revenue is merchandise sales, special orders sourced against a
+    committed order, and recurring pet supply and care sales, which is
+    the stream that matters: a customer who buys the same food every
+    month is worth a year of tickets, and the store's price basis is the
+    retail margin over wholesale cost on each product line, with food
+    thin and accessories, habitat, and care products wider. The metrics
+    that decide profit are gross margin percentage by category,
+    inventory turnover, because food and treats expire and habitat
+    equipment ties up cash, the stockout rate on the recurring items
+    that bring the customer back, average ticket, and the labor cost
+    percentage. Rent and staff are the fixed base; the store is
+    capital-moderate in inventory and shelving and competes on
+    convenience and advice against online and big-box food prices, so
+    the margin depends on the mix shifting toward the categories where
+    the store's knowledge is worth paying for.

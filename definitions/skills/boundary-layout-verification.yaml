@@ -95,3 +95,47 @@ questions:
   - >-
     Which record proves boundary layout verification was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The boundary layout verification process is how a fence contractor
+    confirms where a fence may be built before a post goes in. It starts
+    when the owner has said where they want the fence and the site plan
+    or survey shows where the property line and easements are, and it
+    ends when a buildable line is marked on the ground at an approved
+    offset, corners and easements are checked, and a quality report
+    records what was marked and on what basis. The crew lead owns it,
+    with the estimator responsible for the owner conversation.
+  why: >
+    A fence can be straight, plumb, and finished and still be on the
+    neighbor's land. Owner direction and survey evidence are two
+    different things, and a crew that builds to the owner's pointing
+    finger with no offset, no located utilities, and no easement check
+    may have to take the fence down at the contractor's cost, or leave
+    the owner in a dispute. Without the process, the line is set by eye,
+    utility strikes and blocked gates surface during the dig, and there
+    is no record of who approved the location.
+  how: >
+    The crew lead reads the site plan and any revisions and confirms
+    that the boundary is verified or the alignment has been approved,
+    that utilities are located, that the system, grade, gate geometry,
+    and material are known, and that access is workable. Field controls
+    follow: the offset from the line, the corner and easement points to
+    check, the string line and stake method, the utility clearance, and
+    the hold point for the owner's approval of the marked line. During
+    layout the crew records found corners, offsets used, utility marks,
+    and any point where the owner's direction and the survey disagree,
+    and stops until the disagreement is resolved. Before the crew digs,
+    the marked line is checked for line, grade, post spacing, gate
+    geometry, and clearance, corrections are made, and the quality
+    report records the line, the approvals, and the evidence.
+  controls:
+    - name: Survey or approved alignment on file
+      note: Layout does not start without a survey, a plat, or a written owner approval of the alignment on file.
+    - name: Utility locate confirmed before staking
+      note: The locate ticket and marks are confirmed on site and recorded before any stake or post hole.
+    - name: Offset and corners checked
+      note: The offset from the line is measured at each corner and recorded, and easements are confirmed clear.
+    - name: Owner sign-off on the marked line
+      note: The owner walks and approves the staked line before digging, and the approval is recorded on the quality report.
+    - name: Quality report issued before installation
+      note: Line, offsets, corners, utilities, and approvals are documented and filed before the fence crew mobilizes.

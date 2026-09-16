@@ -86,3 +86,58 @@ automation:
 questions:
   - Which published class depends on one instructor with no approved cover?
   - How much class capacity is lost after late cancellations?
+article:
+  what: >
+    The class scheduling process turns a decision to offer a session
+    into a published timetable slot with a qualified instructor, a room
+    that fits, a safe capacity, and a roster that stays accurate through
+    attendance. It starts with defining the session and ends when the
+    class has run and attendance is recorded. In a gym it is owned by
+    the group fitness manager or the owner; in a child care center by
+    the director, who also holds the staff shift schedule it feeds.
+  why: >
+    It protects members' trust in the timetable and the safety limits of
+    each room. A recurring session with one instructor and no approved
+    substitute becomes a late cancellation the first time that person is
+    unavailable. Consecutive classes booked in one room with no turnover
+    allowance overlap through setup and equipment reset. A waitlist
+    released minutes before start leaves capacity empty while members
+    who wanted the spot never had time to arrive. Each of these erodes
+    attendance and makes staff plan around the schedule instead of with
+    it.
+  how: >
+    The session is defined first: audience, format, duration, safe
+    capacity, room, equipment, and the instructor qualification
+    required, all recorded before a time is offered. The instructor and
+    room are then allocated, and the commitment lands on the shift
+    schedule with travel, setup, cleanup, and adjacent sessions
+    included. The offer is published and enrollment opens, with members
+    seeing current eligibility, capacity, waitlist position,
+    cancellation terms, and arrival requirements. Up to and through the
+    session, the live roster absorbs cancellations, waitlist releases,
+    walk-ins, instructor changes, and attendance while members can still
+    respond, and the class roster is the record that closes it.
+  controls:
+    - name: Qualified cover named per session
+      note: >
+        Each recurring session lists an approved substitute
+        instructor whose qualification matches the format before it
+        is published.
+    - name: Room turnover allowance
+      note: >
+        Consecutive sessions in one room carry a transition
+        allowance for setup, cleanup, equipment reset, and member
+        exit, checked in the conflict review.
+    - name: Safe capacity locked on the session record
+      note: >
+        Enrollment and walk-ins cannot exceed the safe capacity set
+        at definition, and any change to it is approved by the
+        program owner.
+    - name: Waitlist release rule with notice
+      note: >
+        Open spots are offered to waitlisted members in order with a
+        stated response deadline early enough for them to attend.
+    - name: Attendance reconciled to the roster
+      note: >
+        Actual attendance is recorded against the class roster after
+        every session and reviewed to reshape the timetable.

@@ -90,3 +90,49 @@ questions:
   - >-
     Which record proves asphalt placement was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The asphalt placement process is how a driveway paving contractor
+    lays hot mix over a prepared base and turns it into a finished
+    surface that meets the plan. It starts once the base has been
+    accepted and the plant, trucks, and weather window line up, and it
+    ends when the mat has been placed, compacted, and checked against
+    thickness, density, grade, smoothness, joints, and edges, with a
+    test report the owner can keep. The paving foreman owns it,
+    coordinating the plant, the truck cycle, the paver operator, the
+    screed, the rollers, and the rakers.
+  why: >
+    Hot mix has a short working life. Mix that arrives cold, a paver
+    that stops and starts, a roller that falls behind, or a joint that
+    is placed against a cold edge produces a surface that looks
+    acceptable at handover and ravels, cracks, or holds water within a
+    season. Segregation, thin spots, and poor edge support are hidden by
+    a fresh black surface. Without a work basis and test report, the
+    contractor cannot show what mix went down, at what temperature, at
+    what thickness, and cannot answer a warranty call with evidence.
+  how: >
+    Before the first truck the foreman reads the site plan and revisions
+    and confirms the limits and drainage, that failed material is gone,
+    that the base is stable and accepted, the confirmed section, that
+    mix is available at the plant, the weather window, and traffic
+    control. He sets the field controls: truck cycle against paver
+    speed, mix temperature limits at delivery, lift thickness, joint
+    locations and method, handwork areas, roller pattern and timing, and
+    the hold points for testing. During placement the crew records
+    delivery tickets, temperatures, lift depths, joint positions, and
+    any base or drainage condition found under the mat, and stops when
+    cold mix, rain, or a soft spot changes the method. At acceptance the
+    surface is checked for thickness, density, grade, smoothness,
+    drainage, joint quality, edge support, markings, and opening
+    strength, corrections are closed, and the test report is issued.
+  controls:
+    - name: Mix ticket and temperature per load
+      note: Each load's ticket is matched to the specified mix and its temperature is checked at delivery, and a cold load is rejected.
+    - name: Paver speed matched to supply
+      note: The truck cycle is set so the paver does not stop, and a stoppage is recorded with its location.
+    - name: Joint placement recorded
+      note: Longitudinal and transverse joint locations and the method used are recorded before the next pass covers them.
+    - name: Density and thickness at the hold point
+      note: Cores or gauge readings are taken at the agreed frequency and the surface is not opened to traffic until they pass.
+    - name: Test report issued before opening
+      note: Tickets, temperatures, tests, and corrections are compiled into the test report before the driveway or lot is released.

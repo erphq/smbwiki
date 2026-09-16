@@ -111,3 +111,52 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A framing contractor converts structural plans into floors, walls,
+    roofs, and openings at a pace measured in framed square feet per
+    crew day. The week is layout, lumber and truss deliveries, crane
+    days, wall and roof assembly, bracing, and inspection readiness,
+    with the foreperson checking bearing, connectors, and rough openings
+    before sheathing hides them. Framing layout, rough opening control,
+    and wall framing are the load-bearing skills, because a layout error
+    repeats across every piece and shows up later in windows, cabinets,
+    and mechanical runs that no longer fit. The tension is between
+    installed quantity, which is how the crew is paid, and the
+    load-path details and daily checks that slow it down.
+  starting: >
+    Framing is licensed as a specialty trade in some states and covered
+    by general contractor thresholds in others, so the state board is
+    the first call; builders will require insurance certificates, and
+    workers' compensation is unavoidable because the work is high-risk.
+    Day-one paperwork is the business registration, employer
+    registration for the crew, and accounts with a lumberyard and an
+    engineered wood supplier, since truss and beam lead times set the
+    start date. The minimum team is an owner-operator who estimates and
+    runs the site, a trade foreperson, and installers, with a project
+    manager and office manager added as the number of open jobs grows.
+    The first records are the job request, the quote, the construction
+    plan, the work order, the quality report, and job photos of
+    concealed connectors. The skills that must work on the first job
+    are lead intake, quoting, framing layout, floor framing, wall
+    framing, roof framing, and rough opening control.
+  economics: >
+    Revenue is quoted projects priced on framed area or package value,
+    adjusted for lumber and truss supply, crane, hardware, sheathing,
+    openings, and correction work. Bids are built per square foot with
+    material either supplied by the builder or carried by the framer at
+    a markup, which shifts lumber price risk. Gross margin is driven by
+    crew productivity and by rework, so project gross margin, production
+    plan attainment, rework rate, and on-time completion decide profit,
+    with schedule variance tracking weather and delivery slips and quote
+    win rate showing whether pricing holds against competing crews. Days
+    sales outstanding matters because builders pay on draws after
+    inspection. The business is labor-intensive with capital in trucks,
+    nail guns, and lifts, and margins swing with lumber prices when the
+    framer carries material.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, framing contractors
+      value: "$2.22 million receipts per establishment; payroll 18.8 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 238130 (framing contractors) in the 2022 Economic Census, establishments with payroll; receipts of $29.1 billion across 13,125 establishments, annual payroll of $5.5 billion, 103,612 employees (about eight per establishment). Lumber and truss packages carried by the framer sit inside receipts.
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector23/EC2223BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Construction: Summary Statistics for the U.S., States, and Selected Geographies, EC2223BASIC (2022)"

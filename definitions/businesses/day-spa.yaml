@@ -24,3 +24,65 @@ revenue_model:
 supply_chain:
   buys_from: [spa-supply-distributor, linen-service]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A day spa week runs on the appointment book and the rooms behind
+    it. The client coordinator books services by provider, room, and
+    duration, confirms appointments to cut no-shows, and checks clients
+    in with intake and consent forms; service providers deliver
+    massage, skin, and body treatments in sequence with room resets,
+    linen changes, and product prep between them. Packages and
+    consecutive services link rooms and providers, so a late start
+    ripples through the afternoon. The load-bearing skills are
+    appointment scheduling, personal service delivery, and client
+    consultation, because the consultation is where contraindications
+    are caught and where retail and rebooking are sold. The tension is
+    between service utilization and the recovery time each room and
+    provider needs; a book packed to the minute produces late starts,
+    tired providers, and adverse responses that cost more than the
+    empty slot would have.
+  starting: >
+    A day spa starts with a build-out of treatment rooms with plumbing,
+    ventilation, and sound control, and with providers who hold the
+    licenses their services require. Massage therapists and
+    estheticians are licensed by the state in most places, and the
+    establishment itself usually needs a salon or spa license with a
+    health inspection; medical services such as injectables require a
+    licensed medical provider and sit outside this model. The universal
+    paperwork is the business registration, sales tax registration for
+    retail products and in some states for services, employer
+    registration once staff are hired, and a certificate of occupancy.
+    The minimum team is an owner-operator, a client coordinator at the
+    desk, and a few licensed service providers covering the core
+    services, with a linen service and a spa supply distributor under
+    contract. The first records are the appointment request, the
+    appointment record, the client profile with intake, consent, and
+    observations, the service ticket, the customer invoice, the
+    purchase order, and the shift schedule, held in an appointment
+    business management system with inventory and accounting behind
+    it. Appointment scheduling, client consultation, personal service
+    delivery, and client checkout must work from the first open.
+  economics: >
+    Revenue is spa services sold by appointment and packages and
+    retail: bundled visits, memberships, and take-home products.
+    Services are priced per treatment and duration, so revenue per hour
+    of room time is the basis, and packages trade a lower price per
+    visit for committed volume. Gross margin on services is provider
+    time and product against the ticket, and providers are commonly
+    paid by commission or hourly plus gratuity, so labor cost
+    percentage is the largest line and moves with the book. The metrics
+    that decide profit are service utilization, average ticket,
+    rebooking rate, appointment no-show rate, and service ticket time,
+    because an empty room earns nothing, a client who rebooks at
+    checkout costs nothing to acquire, and a treatment that runs long
+    delays the next one. Retail attached to a service is the
+    highest-margin revenue in the building. The business is
+    labor-intensive with a fixed room count, so profit comes from
+    filling rooms across the whole week and from memberships that
+    smooth demand.
+  benchmarks:
+    - scope: Revenue per spa visit, U.S. spa industry
+      value: 123.10 dollars per visit, 2025
+      note: "ISPA U.S. Spa Industry Study commissioned by the ISPA Research Foundation and conducted by PwC; industry-wide average across 22,060 spa locations, 191 million visits, and 23.5 billion dollars of revenue in 2025, so day spas, resort spas, and medical spas are mixed together."
+      source: https://experienceispa.com/press-releases/powered-by-the-industry-it-serves-ispas-2026-big-five-statistics-show-steady-gains-and-enduring-strength/
+      source_name: International Spa Association, 2026 Big Five Statistics press release (2025 data)

@@ -92,3 +92,50 @@ automation:
 questions:
   - What evidence needed for the oldest open claim is still at risk of disappearing?
   - Which claim cause should change how the next similar load is handled?
+article:
+  what: >
+    The freight claims process is how a freight brokerage handles a load
+    that arrived damaged, short, lost, or late: the evidence is secured
+    while it still exists, the right parties are put on notice in the
+    right time, the loss is valued, the claim is filed as one package, and
+    the matter is worked to acceptance, denial, settlement, or another
+    closure. It starts the moment an exception is reported, usually by the
+    consignee or the carrier at delivery, and ends when the claim record
+    is closed with the outcome and the cause. The claims coordinator owns
+    it, with the account owner handling the customer conversation.
+  why: >
+    The brokerage stands between a shipper who lost product and a carrier
+    whose insurer will look for any reason to deny. Once the next load
+    moves, the delivery notation, the photos, the temperature data, and
+    the salvage disposition cannot be recreated, and a claim without them
+    is a customer relationship the brokerage pays for out of margin. The
+    process protects recovery from the carrier, the shipper's confidence
+    that the brokerage will stand behind a load, and the operating changes
+    that stop the same exception from recurring on the same lane or
+    facility.
+  how: >
+    The claims coordinator preserves the exception record first: the bill
+    of lading and proof of delivery with their notations, seal and count
+    records, photos, temperature or handling data, packaging, and every
+    message about the load are secured while they are available. The
+    coordinator then establishes notice and custody: who the parties are,
+    which contract governs, who owns the cargo, which carrier had custody
+    at which transfer point, and which notice deadlines apply, so the next
+    action has a name and a date. The claim is quantified and filed as one
+    package with items, quantity, value basis, salvage and mitigation,
+    requested remedy, evidence, and filing date, producing the freight
+    claim. Resolution is then worked: acknowledgement, information
+    requests, the carrier's investigation, a reserve on the brokerage's
+    books, customer communication, carrier response, settlement, and
+    closure each carry an owner and a date until the record is closed.
+  controls:
+    - name: Exception evidence secured on report
+      note: Bill of lading and proof of delivery notations, photos, and condition data are collected and attached to the claim record the day the exception is reported.
+    - name: Notice deadline tracked by party
+      note: Each party's notice and filing deadline is recorded on the claim with the date notice was sent and to whom.
+    - name: Salvage and mitigation decision on record
+      note: Damaged freight has a location, a preservation instruction, a named decision owner, and a disposition before value is claimed.
+    - name: Single claim package
+      note: Value basis, evidence, remedy, and filing date go out together, and the package version sent to the carrier is retained.
+    - name: Open claim status with owner and due date
+      note: Every open claim states its next item, who owns it, and when it is due, so nothing waits on an undefined document.

@@ -91,3 +91,56 @@ automation:
 questions:
   - What proves the arriving truck is controlled by the approved carrier?
   - Which tender condition remains unacknowledged in the carrier commitment?
+article:
+  what: >
+    The carrier sourcing process starts when a load tender is ready to
+    cover and ends when an authorized contact at an approved carrier has
+    accepted a rate confirmation that operations will dispatch from. In
+    between, the carrier sales representative shares the full tender,
+    rechecks the carrier's current approval and identity for this
+    specific load, and settles the buy rate with its operating
+    conditions. In a freight brokerage it belongs to the carrier sales
+    desk, with the compliance record owned by whoever maintains the
+    approved carrier list.
+  why: >
+    It protects the load and the brokerage's name on it. A truck booked
+    on price alone can arrive under a different identity than the
+    approved company, without the equipment or tracking the shipper was
+    promised, or with an accessorial position that only surfaces at the
+    dock. The recheck is the last point where an expired insurance
+    certificate or a suspicious phone number can stop the tender, and
+    the confirmation is the only version of the deal both sides can hold
+    each other to when a detention or cancellation dispute arrives.
+  how: >
+    The representative first exposes the tender: lane, pickup and
+    delivery timing, freight, equipment, facility rules, tracking, and
+    accessorial conditions go to the carrier before any quoted price is
+    treated as usable. The approved carrier record is then reread for
+    this load, checking current approval, identity, equipment, driver
+    and truck, geography, insurance, and restrictions. Negotiation
+    settles the buy rate along with included service, accessorial rules,
+    payment terms, tracking, dispatch contact, and cancellation
+    exposure. The rate confirmation is issued and the authorized carrier
+    contact accepts the same version that operations will use for
+    pickup, so dispatch and the commitment never diverge.
+  controls:
+    - name: Tender acknowledged before rate
+      note: >
+        The carrier's acceptance references the full tender
+        conditions, and a buy rate recorded without that
+        acknowledgement is held until it is obtained.
+    - name: Identity match at assignment
+      note: >
+        Driver, truck, phone, and email on the booking are compared
+        with the approved carrier record, and any conflict stops
+        dispatch until the carrier explains it.
+    - name: Approval status current on the load date
+      note: >
+        Insurance, authority, and restrictions are checked against
+        the pickup date for this load, with recovery and same-day
+        loads receiving the same check as planned ones.
+    - name: Single confirmation version
+      note: >
+        The rate confirmation accepted by the carrier is the one
+        operations dispatch from, and any later change creates a new
+        confirmed version.

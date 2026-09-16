@@ -109,3 +109,54 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A fence contractor's week is measured in linear feet installed.
+    Leads come in as job requests, an estimator walks the line and
+    prices posts, panels, gates, and removal, and crews run repetitive
+    production that turns risky at corners, slopes, gate posts, and
+    utility crossings. Boundary layout verification, fence post
+    installation, and gate installation are the load-bearing skills: a
+    fence set on the wrong side of a property line or over an unmarked
+    utility is a rebuild, and a gate that sags is the callback that
+    costs the referral. The tension is between crew pace and the
+    verification steps that slow it, which is why the foreperson checks
+    line and post depth before concrete goes in.
+  starting: >
+    Most states do not license fence work separately, but many treat it
+    as general contracting above a dollar threshold, and cities often
+    require a fence permit and a setback or height review per job, so
+    the first calls are to the state contractor board and the local
+    building department. The utility locate service must be called
+    before every dig. Day-one paperwork is the business registration,
+    employer registration for the crew, sales tax registration where
+    materials or installed work are taxable, and accounts with a fence
+    material distributor and a gate operator distributor. The minimum
+    team is an owner-operator who estimates and sells, a trade
+    foreperson, and an installer, with an office manager added when
+    intake and invoicing outgrow the truck cab. The first records are
+    the job request, the quote, the site plan, the work order, the
+    quality report, and job photos, and the skills that must work from
+    the first job are lead intake, quoting, boundary layout
+    verification, fence post installation, fence panel installation,
+    and fence closeout.
+  economics: >
+    Revenue is quoted projects priced on installed fence length plus
+    posts, gates, operators, hardware, access controls, removal, repair,
+    and maintenance. Quotes are built per foot by material type with
+    adders for gates, grade, and demolition. Gross margin is driven by
+    material cost against the quoted price and by crew productivity in
+    feet per day, so project gross margin, rework rate, and on-time
+    completion decide profit, with quote win rate and booking rate
+    showing whether pricing matches the market. Schedule variance
+    matters because weather and material delivery move jobs, and days
+    sales outstanding matters on general contractor work that pays on
+    draw schedules. The business is labor-intensive with modest
+    equipment, an auger and trucks, so margins track crew output and
+    callbacks more than capital.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, all other specialty trade contractors
+      value: "$1.96 million receipts per establishment; payroll 22.7 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 238990 (all other specialty trade contractors, the residual code that carries fence contractors together with paving, driveway, and similar trades) in the 2022 Economic Census, establishments with payroll; receipts of $82.8 billion across 42,325 establishments, annual payroll of $18.8 billion, 284,265 employees (about seven per establishment).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector23/EC2223BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Construction: Summary Statistics for the U.S., States, and Selected Geographies, EC2223BASIC (2022)"

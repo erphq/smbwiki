@@ -110,3 +110,53 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A finish carpentry contractor installs doors, trim, cabinets,
+    panels, and hardware into rooms that already carry the tolerances
+    of every earlier trade. The week is field measurement, scribing,
+    and installation room by room, sequenced around drywall, floor, and
+    paint, with millwork deliveries that arrive finished and expensive.
+    Field measurement and scribing, door fitting, and finish protection
+    are the load-bearing skills, because the work is judged at close
+    range, a bad cut in prefinished material is a reorder, and a scratch
+    from another trade after installation is a punch-list item the
+    carpenter absorbs. The tension is between installing fast and
+    protecting what is installed while the building finishes around it.
+  starting: >
+    Finish carpentry usually falls under general contractor licensing
+    rules in most states, with a dollar threshold that many single-room
+    jobs stay under, and only a few states issue a separate carpentry
+    license; check the state board, and expect general contractor
+    clients to require insurance certificates before site access.
+    Day-one paperwork is the business registration, employer
+    registration for the crew, sales tax registration where installed
+    material is taxable, and accounts with a millwork fabricator and a
+    hardware distributor, since cabinet and door lead times set the
+    schedule. The minimum team is an owner-operator who measures and
+    quotes, a trade foreperson, and an installer, with an office manager
+    and estimator added as volume grows. The first records are the job
+    request, the quote, the construction plan, the work order, the punch
+    list, and job photos. The skills that must work on the first job
+    are lead intake, quoting, field measurement and scribing, interior
+    trim installation, door fitting, and finish protection.
+  economics: >
+    Revenue is quoted projects covering installed trim or millwork scope
+    plus field measurement, material, fabrication coordination,
+    finishing, protection, and punch work. Quotes are built per opening,
+    per linear foot of trim, and per cabinet run, with material either
+    supplied by the contractor at a markup or furnished by the client.
+    Gross margin depends on measurement accuracy and installation hours,
+    since a remade door or cabinet erases the margin on a room, so
+    project gross margin and rework rate decide profit, with on-time
+    completion and schedule variance showing how well the crew fits the
+    builder's sequence. Quote win rate and days sales outstanding matter
+    because builders compare bids closely and pay on draws. The business
+    is labor-intensive and tool-light, so margins track skilled hours
+    and callbacks, and prefinished material makes waste expensive.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, finish carpentry contractors
+      value: "$1.33 million receipts per establishment; payroll 23.0 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 238350 (finish carpentry contractors) in the 2022 Economic Census, establishments with payroll; receipts of $42.7 billion across 32,189 establishments, annual payroll of $9.8 billion, 177,934 employees (about five or six per establishment).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector23/EC2223BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Construction: Summary Statistics for the U.S., States, and Selected Geographies, EC2223BASIC (2022)"

@@ -18,3 +18,56 @@ summary: >
 supply_chain:
   buys_from: [equipment-dealer]
   sells_to: [individual-client, commercial-client, general-contractor]
+article:
+  operating_model: >
+    An equipment rental company sells time on machines it owns. The
+    week runs on reservations, deliveries, returns, and the turnaround
+    between them: a rental agent matches a customer's job, site, and
+    dates to a specific unit, a driver or the customer moves it, and at
+    return the technician checks hours, fuel, damage, and condition
+    before the unit is promised again. Rental turnaround and equipment
+    maintenance are the load-bearing skills, because a unit that is on
+    the calendar but not actually ready produces an unkept promise, and
+    a unit that breaks on site produces a swap, a credit, and a repair.
+    The tension sits between utilization and downtime: every day a
+    machine earns is a day it is not being serviced.
+  starting: >
+    The company begins with a fleet decision and the yard to hold it:
+    fenced storage, wash-down, a shop bay, and a truck or trailer sized
+    for delivery. Day-one paperwork is the business registration, sales
+    tax registration because rental charges are taxable in most states,
+    employer registration, a dealer account with an equipment dealer,
+    and the insurance that both the lender and the customer contracts
+    assume; some categories, such as units driven on public roads or
+    aerial lifts, bring their own registration or operator training
+    rules. The minimum team is an owner-operator, a rental agent, and a
+    maintenance technician. The first records are the rental agreement
+    template, the equipment condition report, the maintenance request
+    and maintenance log, the quote, and the customer invoice, and the
+    skills that must work before the first pickup are lead intake,
+    quoting, rental turnaround, and equipment maintenance.
+  economics: >
+    Revenue is rental time sold by hour, day, week, month, or contract
+    term, plus delivery and service charges for transport, setup,
+    consumables, cleaning, and added usage. Rates are set per unit class
+    against time period, with longer terms discounted. Gross margin is
+    driven by rental utilization, because ownership cost is fixed
+    whether a unit is out or in the yard, and by damage rate and
+    equipment uptime, since repair labor and parts come straight out of
+    the rental earned. Booking rate, quote win rate, and days sales
+    outstanding round out the metrics that decide profit, contractors
+    being slow payers. The business is capital-intensive: fleet is
+    bought with debt or leases, depreciates on a schedule, and is
+    resold, so profit is judged after interest, depreciation, and the
+    residual value actually realized.
+  benchmarks:
+    - scope: Construction and industrial equipment rental penetration, US
+      value: 57 percent (2024)
+      note: Share of construction and industrial equipment in use that is rented, as reported by the American Rental Association with S&P Global; described as the fourth consecutive annual increase and above the pre-pandemic peak. The same report put 2024 US equipment rental revenue at $77.92 billion. Figures as reported by Rental Equipment Register from the ARA forecast release.
+      source: https://www.rermag.com/news-analysis/headline-news/article/55275129/american-rental-association-projects-52-percent-growth-rate-in-2025
+      source_name: "Rental Equipment Register, American Rental Association Projects 5.2-Percent Growth Rate in 2025 (March 2025)"
+    - scope: Receipts per establishment and payroll share, construction, mining, and forestry machinery rental
+      value: "$7.09 million receipts per establishment; payroll 17.3 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 532412 (construction, mining, and forestry machinery and equipment rental and leasing) in the 2022 Economic Census, establishments with payroll; receipts of $36.4 billion across 5,130 establishments owned by 2,592 firms, annual payroll of $6.3 billion, 79,852 employees. National branch networks dominate the code, so a single-yard independent runs well below this average.
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector53/EC2253BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Real Estate and Rental and Leasing: Summary Statistics for the U.S., States, and Selected Geographies, EC2253BASIC (2022)"

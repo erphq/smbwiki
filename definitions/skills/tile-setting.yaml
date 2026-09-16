@@ -87,3 +87,49 @@ questions:
   - >-
     Which record proves tile setting was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The tile setting process is the production work of a tile contractor:
+    mortar is mixed to the manufacturer's ratio, the substrate is keyed, tile
+    is set inside the open time, ridges are collapsed, coverage is checked by
+    lifting tiles, plane and joint alignment are held to the recorded layout,
+    and joints are cleaned before the mortar cures. It starts when the
+    substrate has been prepared and the layout has been approved and ends when
+    the set field has been accepted and released for grout. The lead setter
+    owns it and each setter is responsible for the coverage of the tile they
+    set.
+  why: >
+    Bond is invisible after the tile is down. Mortar that skinned over, ridges
+    that were never collapsed, or coverage under the minimum leave hollow
+    tiles that crack under load and, in a shower, let water sit under the
+    tile. Lippage and drifting joints show in raking light and cannot be fixed
+    after cure without removing tile. Because a visually acceptable surface
+    can conceal poor bond or trapped water, the checks made during setting are
+    the only proof the contractor has that the floor will last past the
+    warranty.
+  how: >
+    The lead setter confirms the work basis from the current scope and
+    revisions and verifies a stable and flat substrate, cured work, the
+    approved tile and setting system, resolved movement joints, the approved
+    dry layout, and environmental control. Field controls are set for the
+    crew: mix ratios and open time for the mortar, the setting sequence from
+    the control lines, who checks coverage and how often, the hold point at
+    the first area, and the records to keep. During setting the operator
+    records batches, areas completed, coverage checks with photos of lifted
+    tiles, ambient conditions, and any substrate condition found under the
+    mortar, and stops when the substrate, the material, or the space changes
+    the planned method. Acceptance checks bond coverage, plane, joint
+    alignment, movement accommodation, drainage, lippage, grout, sealant, and
+    the approved appearance, corrections are closed, and the quality report is
+    issued.
+  controls:
+    - name: Coverage checked by lifting tiles
+      note: A tile is lifted and photographed at set intervals and at every change of material or crew, and the coverage result is written on the record.
+    - name: Mortar batch and open time recorded
+      note: Mix ratio, water, mixing time, and the clock time of each batch are logged so a bond failure can be traced to a batch.
+    - name: Plane and lippage checked against the layout
+      note: Straightedge and lippage checks are made as each area is set, before cure, against the elevations in the recorded layout.
+    - name: Movement joints kept open
+      note: Movement joints are protected from mortar and tile during setting and confirmed open before the area is released for grout.
+    - name: Area accepted before grout
+      note: Each set area is inspected for coverage, alignment, and cleaned joints and released on the quality report before the grout crew begins.

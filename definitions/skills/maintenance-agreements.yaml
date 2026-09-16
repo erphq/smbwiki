@@ -89,3 +89,48 @@ automation:
 questions:
   - How many included visits are currently due without a protected slot?
   - Does each renewal account for completed visits and the current asset list?
+article:
+  what: >
+    The maintenance agreements process is how an HVAC contractor, a
+    landscaping company, a managed IT service provider, or a pest
+    control company sells and delivers a recurring service promise:
+    which assets are covered, what each visit includes, how often, what
+    priority the customer gets, what is excluded, what it costs, and
+    how it renews. It begins when a promise is designed against real
+    capacity and ends, for each term, when renewal is reviewed against
+    completed visits and open findings. The owner or service manager
+    designs and prices the agreement; the office schedules and records
+    the visits.
+  why: >
+    It protects both the customer's expectation and the calendar that
+    has to honor it. Agreements sold as discounts without regard to
+    capacity crowd the schedule and arrive late; asset lists that drift
+    from what the technician actually services create either unbilled
+    work or a customer who expected a system to be included; renewals
+    that go out before visit completion is reconciled bill the customer
+    for another term while last term's obligation is still open.
+  how: >
+    The service manager defines the promise first, matching covered
+    assets, visit work, frequency, access, priority, exclusions, price,
+    renewal, and cancellation to the capacity the calendar can protect.
+    The agreement is presented so the customer can distinguish included
+    maintenance from repairs, emergency response, material, and code or
+    upgrade work. On activation, the asset list, start, renewal date,
+    billing, visit cadence, contact, and priority state enter the
+    system that will generate future work orders, and the service
+    agreement becomes the record. Each visit updates that record with
+    completed service, findings, declined recommendations, asset
+    changes, and the next due date. Before a new term, scope, asset
+    count, price, visit completion, and open issues are reviewed and
+    the renewal is adjusted.
+  controls:
+    - name: Capacity check before sale
+      note: Included visits and priority slots are counted against protected calendar capacity before a new agreement is activated.
+    - name: Asset list reconciled after each visit
+      note: The technician's visit record and the agreement's covered assets are compared, and differences are corrected or priced.
+    - name: Due visits tracked with a protected slot
+      note: Every included visit that is due appears in a queue with a scheduled date, and overdue visits have an owner.
+    - name: Renewal blocked until obligations reconcile
+      note: Renewal cannot issue until completed visits, open findings, and asset changes for the ending term are reviewed and recorded.
+    - name: Included and excluded work stated on the agreement
+      note: The signed agreement lists exclusions and how repairs and emergency calls are billed, so field staff and customer read the same terms.

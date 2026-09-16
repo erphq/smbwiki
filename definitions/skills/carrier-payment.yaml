@@ -89,3 +89,50 @@ automation:
 questions:
   - Which carrier payment is held without a specific amount, reason, and owner?
   - Has every bank change been verified through an independent trusted route?
+article:
+  what: >
+    The carrier payment process is how a freight brokerage pays a motor
+    carrier for a delivered load. It starts when the carrier invoice and
+    the proof of delivery arrive and ends when a payment record shows
+    the payee, method, amount, date, invoices settled, deductions, and
+    remittance, all linked to the load. Between those points the billing
+    specialist proves the invoice belongs to the approved carrier for
+    that load, matches every charge to the rate confirmation and later
+    approvals, and resolves exceptions with the carrier before money
+    moves. The billing specialist owns it under the controller.
+  why: >
+    The brokerage's margin and its carrier relationships both ride on
+    this. Paying an invoice whose remittance details differ from the
+    approved carrier record sends cash to a fraudster while the real
+    carrier goes unpaid and the load is still owed. Deducting a disputed
+    accessorial without telling the carrier why turns a small
+    disagreement into a collection call and a lost truck. Holding a
+    whole invoice over a damage claim that covers a fraction of it
+    punishes the carrier for the brokerage's process. Without the
+    process, invoices are paid from email and differences surface when a
+    collector calls.
+  how: >
+    The billing specialist validates the carrier invoice and proof of
+    delivery against the approved carrier record and the load: carrier
+    identity, load number, invoice number, delivery, legibility and
+    completeness of the proof, amount, and payment instructions. Line
+    haul, fuel, stops, detention, layover, handling, advances, and
+    deductions are then matched to the rate confirmation and any
+    approvals given after it. Anything that does not match, whether
+    missing proof, a disputed charge, a claim hold, a duplicate invoice,
+    or a bank change, is given its own owner and communicated to the
+    carrier with the amount, the reason, and what is needed. Once clear,
+    payment is released on the agreed terms and the payment record ties
+    payee, method, amount, date, settled invoices, deductions, and
+    remittance to the load.
+  controls:
+    - name: Remittance matched to the approved carrier record
+      note: Payment instructions on the invoice are compared to onboarding records, and any difference is re-verified through an independent route before release.
+    - name: Proof of delivery on file
+      note: A legible, signed proof is attached to the load before the invoice is eligible for payment.
+    - name: Accessorials traced to written approval
+      note: Every charge beyond line haul and fuel points to the rate confirmation or a recorded approval, and an untraced charge is an exception.
+    - name: Partial hold limited to the claim
+      note: A claim hold states the amount held, the authority, and a review date, and undisputed charges are paid on terms.
+    - name: Duplicate check by carrier and load
+      note: The same carrier and load number cannot be paid twice, and a second invoice for a paid load is held for review.

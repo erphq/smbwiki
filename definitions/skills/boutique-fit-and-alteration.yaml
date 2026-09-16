@@ -37,3 +37,46 @@ automation:
 questions:
   - Which variant, condition, or requested alteration remains unconfirmed?
   - What record proves custody, completed scope, customer acceptance, and inventory disposition?
+article:
+  what: >
+    The boutique fit and alteration process is how a clothing boutique
+    carries a garment from the rack through the fitting room, a hold, an
+    alteration, and a final handoff without losing track of which item
+    it is, who has it, and what was promised. It starts when a customer
+    identifies a style and the advisor confirms the variant in the stock
+    record, and it ends when the customer accepts the finished garment,
+    the sales receipt is issued, and the variant is removed from
+    saleable stock. The sales advisor owns it; the seamstress or outside
+    tailor owns the alteration work.
+  why: >
+    Personalized service is the boutique's reason to exist, and it is
+    also where garments disappear. A dress in the fitting room, a jacket
+    on hold behind the counter, or a hem out with the tailor can still
+    show as saleable and be sold twice, or be altered to the wrong
+    measurement because the note was verbal. A missing due date or an
+    unclear scope turns pickup into a dispute. Without the process,
+    custody, measurements, price, and return terms live in the advisor's
+    memory.
+  how: >
+    The advisor confirms the style, size, color, and condition against
+    the stock record, and settles the occasion, fit preference,
+    availability, and return constraints with the customer. If the
+    garment goes to a fitting, a hold, or an alteration, a fitting and
+    alteration record is opened from the job request that tracks
+    custody, the advisor's observations, measurements, the requested
+    change, its feasibility, price, due date, and who is responsible,
+    and the variant is reserved in stock. When the garment comes back,
+    the advisor checks it against the requested change, the customer
+    accepts it, the sales receipt is issued with the alteration and
+    return terms, and the stock record is updated.
+  controls:
+    - name: Variant identifier on every held garment
+      note: The hold or alteration tag carries the exact stock variant, customer, and date, and stock is reserved at that moment.
+    - name: Written measurements and scope
+      note: Measurements and the requested change are written on the record and confirmed with the customer before the garment leaves the floor.
+    - name: Feasibility and price confirmed before work
+      note: The seamstress or tailor confirms the alteration can be done and at what price before the customer commits.
+    - name: Customer acceptance recorded
+      note: The customer's acceptance of the finished garment is noted on the record before the receipt is closed.
+    - name: Stock reconciled to holds and alterations
+      note: Garments on hold or out for alteration are counted against the stock record at each cycle count.

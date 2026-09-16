@@ -135,6 +135,22 @@ const contextualTitle = (name, context) => {
   const boundary = clipped.lastIndexOf(" ");
   return `${clipped.slice(0, boundary > 0 ? boundary : available).trim()}${suffix}`;
 };
+// Skill pages are named for the process people search for: "Accounts
+// payable process". Names that already say "process" are left alone.
+const processName = (name) => (/\bprocess\b/i.test(name) ? name : `${name} process`);
+const skillTitle = (name) => {
+  const suffix = " | SMBwiki";
+  for (const candidate of [`${processName(name)}: Steps and Controls`, processName(name)])
+    if (`${candidate}${suffix}`.length <= 65) return `${candidate}${suffix}`;
+  return contextualTitle(name, "Process and Controls");
+};
+const aOrAn = (name) => (/^(?:[aeiou]|hvac)/i.test(name) ? "an" : "a");
+const businessTitle = (name) => {
+  const suffix = " | SMBwiki";
+  for (const context of ["How It Works and How to Start One", "How It Works, How to Start One", "How the Business Works"])
+    if (`${name}: ${context}${suffix}`.length <= 65) return `${name}: ${context}${suffix}`;
+  return contextualTitle(name, "How the Business Works");
+};
 const normalizeTitleBrand = (title) => cleanText(title).replace(/\|\s*smbwiki$/i, "| SMBwiki");
 const jsonScriptData = (value) => JSON.stringify(value)
   .replace(/&/g, "\\u0026")
@@ -863,12 +879,26 @@ for (const r of resolved.values()) {
   const revenue = `<ul class="revenue-list">${(r.revenue_model ?? []).map((m) =>
     `<li><strong>${esc(sentenceLabel(m.id))}</strong>${m.note ? `: ${esc(m.note)}` : ""}</li>`,
   ).join("")}</ul>`;
+  const a = r.article;
+  const lowerName = r.name.toLowerCase();
+  const article = a ? [
+    section(`How ${aOrAn(r.name)} ${lowerName} works`, `<p>${esc(String(a.operating_model).trim())}</p>`),
+    section(`How to start ${aOrAn(r.name)} ${lowerName}`, `<p>${esc(String(a.starting).trim())}</p>`),
+    section(`${r.name} economics and profit margin`,
+      `<p>${esc(String(a.economics).trim())}</p>` +
+      (a.benchmarks?.length
+        ? table(["figure", "value", "what it assumes", "source"],
+            a.benchmarks.map((b) => [esc(b.scope), esc(b.value), esc(b.note ?? ""), `<a href="${escAttr(b.source)}">${esc(b.source_name)}</a>`])) +
+          `<p class="note">Published figures for the scope shown, read from the linked source on the release date. Local costs, mix, and scale move every one of them.</p>`
+        : "")),
+  ].join("\n") : "";
   const body = [
     statline,
     r.abstract && children.length
       ? `<p class="note">Shared reference model. Extended directly by ${links(children.map((c) => c.id))}.</p>`
       : "",
     summary ? `<div class="summary">${summary}</div>` : "",
+    article,
     section("Revenue", revenue),
     structure,
     section("Document flow", flowDiagram(r)),
@@ -891,12 +921,15 @@ for (const r of resolved.values()) {
   ].join("\n");
   const authoredTitle = normalizeTitleBrand(r.seo?.title);
   const businessDescription = metaDescription(
+    a ? `How ${aOrAn(r.name)} ${lowerName} works, what it takes to start one, and where the money is: revenue streams, margins, licenses, roles, and the skills it runs.` : "",
     r.abstract ? completeSentence(businessSummaryText) : businessSummaryText,
     `${r.name} operating model with skills, roles, documents, metrics, software, licenses, and relationships.`,
   );
   page({
     path: `/business/${r.id}/`,
-    title: authoredTitle && authoredTitle.length <= 65
+    title: a
+      ? businessTitle(r.name)
+      : authoredTitle && authoredTitle.length <= 65
       ? authoredTitle
       : contextualTitle(
           abstractName,
@@ -935,6 +968,16 @@ function skillMd(d) {
   L.push("## What this skill is");
   L.push("");
   L.push(String(d.summary ?? "").trim());
+  if (d.article?.what) {
+    L.push("");
+    L.push(String(d.article.what).trim());
+  }
+  if (d.article?.why) {
+    L.push("");
+    L.push("## Why it matters");
+    L.push("");
+    L.push(String(d.article.why).trim());
+  }
   if (d.tension) {
     L.push("");
     L.push("## The tension it manages");
@@ -1070,7 +1113,7 @@ const nodeJsonLd = (n, description) => n.label === "skill" || (n.label === "metr
   ? {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: n.label === "skill" ? `${n.name}: business process and controls` : `${n.name}: formula, benchmarks, and what moves it`,
+      headline: n.label === "skill" ? `${processName(n.name)}: steps, records, and controls` : `${n.name}: formula, benchmarks, and what moves it`,
       description,
       url: `${SITE}${href(n.id)}`,
       mainEntityOfPage: `${SITE}${href(n.id)}`,
@@ -1124,7 +1167,9 @@ for (const n of graph.nodes) {
   const description = metaDescription(
     n.label === "metric" && d.article
       ? `How to calculate ${n.name.toLowerCase()}, typical ranges by business type, what moves it, and how ${bizOf(n.id).length} SMBwiki business types track it.`
-      : "",
+      : n.label === "skill" && d.article
+        ? `How the ${processName(n.name).toLowerCase()} runs: the steps, who owns each, the records it moves, how it fails, and how ${bizOf(n.id, ["skill-binding"]).length} business types use it.`
+        : "",
     d.summary,
     nodeDescriptionFallback(n),
   );
@@ -1133,12 +1178,21 @@ for (const n of graph.nodes) {
     `<p class="entity-context">${esc(context)}</p>`,
   ];
   if (n.label === "metric" && d.article) parts.push(metricArticle(n, d.article));
+  if (n.label === "skill" && d.article) {
+    const lowerProcess = processName(n.name).toLowerCase();
+    const notes = (d.steps ?? []).filter((s) => s.note).map((s) => `<li><strong>${esc(s.name)}.</strong> ${esc(String(s.note).trim())}</li>`).join("");
+    parts.push(`<p>${esc(String(d.article.what).trim())}</p>`);
+    parts.push(section(`Why the ${lowerProcess} matters`, `<p>${esc(String(d.article.why).trim())}</p>`));
+    parts.push(section(`How to run the ${lowerProcess}`,
+      `<p>${esc(String(d.article.how).trim())}</p>` + (d.steps?.length ? stepFlow(d) : "") + (notes ? `<ol class="step-notes">${notes}</ol>` : "")));
+    parts.push(section("Controls and records", `<ul class="article-list">${(d.article.controls ?? []).map((c) => `<li><strong>${esc(c.name)}.</strong> ${esc(String(c.note).trim())}</li>`).join("")}</ul>`));
+  }
   parts.push(section("Relationship map", relationshipGraph(n)));
   if (n.label === "skill") {
     mkdirSync(join(DIST, "skill"), { recursive: true });
     writeFileSync(join(DIST, "skill", `${n.id}.md`), skillMd(d));
     parts.push(`<p class="skill-line">This skill is the steps, guardrails, and checks to run ${esc(n.name.toLowerCase())} anywhere it appears. <a href="/skill/${n.id}.md">Load it as SKILL.md</a>.</p>`);
-    if (d.steps?.length) {
+    if (d.steps?.length && !d.article) {
       const notes = d.steps.filter((s) => s.note).map((s) => `<li><strong>${esc(s.name)}.</strong> ${esc(String(s.note).trim())}</li>`).join("");
       parts.push(section("How it runs", stepFlow(d) + (notes ? `<ol class="step-notes">${notes}</ol>` : "")));
     }
@@ -1239,9 +1293,9 @@ for (const n of graph.nodes) {
   }
   page({
     path: `/${SEG[n.label]}/${n.id}/`,
-    title: contextualTitle(n.name, PAGE_CONTEXT[n.label]),
+    title: n.label === "skill" && d.article ? skillTitle(n.name) : contextualTitle(n.name, PAGE_CONTEXT[n.label]),
     desc: description,
-    h1: n.name,
+    h1: n.label === "skill" && d.article ? processName(n.name) : n.name,
     kicker: n.label === "skill" && d.department
       ? `${PAGE_KICKER[n.label]} · ${esc(DEPARTMENT_NAME.get(d.department) ?? d.department)}`
       : PAGE_KICKER[n.label],

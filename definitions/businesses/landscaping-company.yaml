@@ -44,3 +44,72 @@ supply_chain:
   sells_to: [homeowner]
 seo:
   title: "Landscaping Company: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A landscaping company runs two businesses on one fleet. Maintenance
+    crews follow routes on a service cadence set by the maintenance
+    agreement, while project crews install planting, irrigation, drainage,
+    or hardscape from a quoted scope. The office manager and crew lead
+    dispatch each morning from work orders, the estimator prices new work,
+    and field crews record completion with job photos before moving to the
+    next property. Dispatch, field job execution, and maintenance
+    agreements are the load-bearing skills, with quoting deciding whether
+    projects earn anything. The tension sits between route density and
+    seasonality: mowing weeks are predictable and thin, project weeks are
+    lucrative and weather-bound, and both compete for the same crew leads
+    and trucks.
+  starting: >
+    The definition binds no trade license, but pesticide or fertilizer
+    application requires a state applicator license in most states, and
+    irrigation or hardscape work can trigger a contractor license or
+    permit depending on the state and the job value, so decide which
+    services to offer before licensing. Day-one paperwork is the business
+    registration, employer registration before the first crew member is
+    hired, general liability and vehicle insurance, and sales tax
+    registration where landscaping services or plant material are taxable.
+    The minimum team is an owner-operator who sells and estimates, a crew
+    lead, and field crew, with the office manager role held by the owner
+    until route volume needs a dispatcher. The first records to set up are
+    the service agreement per property, the quote, the work order, job
+    photos, the shift schedule, and the customer invoice, and the skills
+    that must work from the first season are quoting, maintenance
+    agreements, dispatch, field job execution, and invoicing. Capital is
+    equipment and vehicle heavy: trucks, trailers, mowers, and hand tools,
+    bought or financed before the first route pays.
+  economics: >
+    Revenue is recurring maintenance sold as scheduled property visits
+    under an agreement, and landscape projects sold by scope for planting,
+    irrigation, drainage, and hardscape. Maintenance is priced per visit
+    from crew hours and drive time, so jobs per tech day is the metric
+    that decides whether a route earns: tight routes with short drives
+    make money, scattered accounts do not. Projects are priced from
+    material, labor, and equipment days, and project gross margin and
+    schedule variance decide whether the quote survives rain delays and
+    material substitutions. Callback rate matters on both sides because a
+    return visit is unpaid. Quote win rate feeds the project pipeline and
+    days sales outstanding governs cash, since commercial accounts pay on
+    terms while residential maintenance is billed monthly. The business is
+    labor and equipment intensive, which keeps margins sensitive to wages
+    and fuel and rewards operators who fill winter with projects or snow
+    work.
+  benchmarks:
+    - scope: Average net profit margin, landscape contractors
+      value: 17 percent (2025), down from 19 percent (2024)
+      note: Self-reported averages from the Lawn & Landscape Benchmarking Your Business survey fielded January 20 to February 9, 2026, 320 respondents from the United States and Canada.
+      source: https://www.lawnandlandscape.com/article/driving-landscape-profit-margin-wages-pricing/
+      source_name: Lawn & Landscape, 2026 Benchmarking Your Business Report (2025 data)
+    - scope: Average customer retention, landscape contractors
+      value: 89 percent (2025), 88 percent (2024)
+      note: Same Lawn & Landscape survey of 320 US and Canadian respondents, January to February 2026.
+      source: https://www.lawnandlandscape.com/article/driving-landscape-profit-margin-wages-pricing/
+      source_name: Lawn & Landscape, 2026 Benchmarking Your Business Report (2025 data)
+    - scope: Employees per establishment, landscaping services (NAICS 561730)
+      value: 6.8 paid employees per establishment
+      note: 802,899 paid employees in the week of March 12, 2023 across 117,969 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, landscaping services (NAICS 561730)
+      value: 51,286 dollars per employee (2023)
+      note: Annual payroll of 41,177,464 thousand dollars divided by 802,899 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

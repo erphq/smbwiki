@@ -93,3 +93,50 @@ questions:
   - >-
     Which record proves bid package management was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The bid package management process is how a commercial general
+    contractor divides a design into trade packages that can be priced
+    and awarded, and then keeps those packages honest through addenda,
+    bid leveling, and award. It starts when the construction plan is
+    issued for bidding and ends when each package has comparable bids on
+    one basis, an awarded scope with its interfaces named, and a record
+    that carries through to the closeout package at turnover. The
+    preconstruction manager owns it, with the project manager taking
+    over the awarded scopes.
+  why: >
+    Every gap between two trade packages becomes a change order in the
+    field, and every overlap becomes a dispute over who was paid to do
+    the work. Bids returned on different assumptions cannot be compared,
+    and the lowest number often wins because it left something out. A
+    late addendum that does not reach every bidder makes the award
+    challengeable. Without the process, scope boundaries are settled by
+    whoever shows up first, technical decisions arrive after award, and
+    cost and time move into rework the contractor absorbs.
+  how: >
+    The preconstruction manager reads the current construction plan and
+    revisions and confirms that the bid documents are issued, that trade
+    boundaries have been coordinated, that contractual dates and review
+    routes are known, and that the owner's decisions needed for bidding
+    have been made. The work is then divided into packages with written
+    scope, exclusions, interfaces, and bid form, with a schedule for
+    questions, addenda, and returns. As bidding runs, the manager
+    records questions, issues addenda to every bidder, logs bids as
+    received, and stops to reissue a package when a design change or an
+    unresolved boundary would make the bids incomparable. Bids are
+    leveled onto one basis and awarded, and the awarded scope, its
+    interfaces, and its approvals are carried into the project record so
+    the closeout package can show each scope complete against contract
+    documents, authority approvals, designer review, tested systems, and
+    turnover criteria.
+  controls:
+    - name: Scope matrix across packages
+      note: Every line of the design is assigned to exactly one package, and unassigned or double-assigned items are resolved before issue.
+    - name: Addendum distribution log
+      note: Each addendum is recorded as sent to and acknowledged by every bidder before bids are opened.
+    - name: Bid leveling on one basis
+      note: Returned bids are adjusted for exclusions and assumptions onto the same scope before comparison, and the leveling sheet is kept.
+    - name: Award record with named interfaces
+      note: The award states scope, exclusions, and interfaces with adjacent trades, and is signed before the subcontract is issued.
+    - name: Package status carried to closeout
+      note: Awarded scopes are tracked through approvals and testing so the closeout package can show each one accepted.

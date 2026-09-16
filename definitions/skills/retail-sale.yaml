@@ -95,3 +95,48 @@ automation:
 questions:
   - Which transaction type changes inventory without an identified reason?
   - Which returned items are waiting for a saleable, repair, or disposal decision?
+article:
+  what: >
+    The retail sale process is the transaction at the counter, from a
+    customer's chosen item to a receipt that inventory, accounting, and
+    the return desk can all rely on. It begins when a customer selects
+    merchandise and ends when payment is approved, the goods and receipt
+    are handed over, and stock has moved; a return or exchange reopens it
+    against the original sale. In a clothing boutique, an electronics
+    store, or a pet store it is owned by the sales associate, with the
+    retail manager authorizing unusual discounts and return outcomes.
+  why: >
+    A fast checkout is where shrink, margin, and tax errors hide. An item
+    sold under the wrong scan leaves inventory, margin, warranty, and the
+    customer's record describing merchandise that never left the store.
+    A discount applied without authority erases margin for a reason
+    nobody can later evaluate. A return closed without condition and
+    disposition puts damaged or fraudulent goods back into saleable
+    stock. The process fixes item identity, price authority, tender,
+    release, and reversal in one transaction record so the counter stays
+    fast without becoming untraceable.
+  how: >
+    The sales associate confirms the merchandise against the stock
+    record, checking item, variant, condition, available quantity, and
+    any promised accessories or service with the customer. The price is
+    established by applying the current price, any approved discount or
+    promotion, the tax treatment, and the return terms to the identified
+    item. Tender is completed with payment approval and change settled
+    before the merchandise is released, and the sales receipt records
+    the exact transaction. The associate transfers the goods, closing
+    quantity, serial or warranty details, packaging, pickup or delivery
+    responsibility, and the handoff. When a customer returns, the retail
+    manager records the reversal on a return record linked to the
+    original sale, with condition, disposition, and the authorized
+    financial result.
+  controls:
+    - name: Scan matches the item leaving the store
+      note: Serialized or variant items are verified against the physical goods at tender, and manual overrides require a reason code.
+    - name: Discount authority by role
+      note: Price overrides and manual discounts above the associate's limit require a manager credential and a reason code on the receipt.
+    - name: Payment approved before release
+      note: Goods are handed over only after tender is approved and recorded, and the receipt shows the tender type and amount.
+    - name: Return linked to the original receipt
+      note: A return or exchange references the original sale, and a return without a receipt follows a separate documented policy.
+    - name: Returned goods dispositioned before restock
+      note: Every return record carries a condition and a destination, whether saleable, repair, or disposal, before the item can re-enter stock.

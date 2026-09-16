@@ -94,3 +94,49 @@ questions:
   - >-
     Which record proves survey data adjustment was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The survey data adjustment process is the office stage of a boundary or
+    topographic survey where a land surveying firm turns raw field
+    observations into coordinates it will sign: angles and distances are
+    reduced, instrument and closure error is checked, an adjustment is applied
+    and justified, the adjusted figures are compared with the record calls in
+    deeds and plats, and the surveyor's judgment is written down. It begins
+    when the field crew delivers a closed set of observations and ends when
+    the licensed surveyor accepts the adjusted network as the basis for the
+    survey plat. The licensed surveyor owns it, with a survey technician doing
+    the reduction.
+  why: >
+    An adjustment spreads error across a network, and an adjustment applied
+    without thought spreads a blunder into every corner. If closure is never
+    checked, a missed setup or a wrong prism height becomes a boundary line
+    that disagrees with the monuments on the ground. If record dimensions are
+    treated as field truth, the plat can move a boundary opinion away from the
+    controlling evidence and expose the firm to a neighbor's claim. The
+    written judgment is what a second surveyor, a court, or a title company
+    reads when the line is questioned.
+  how: >
+    The surveyor confirms the work basis first: the defined purpose of the
+    survey, current deeds and plats, adjoining records, the coordinate basis,
+    and that field equipment checks and the field safety plan were completed.
+    The technician then sets the field controls for the reduction, meaning
+    which observations are in scope, the sequence of reduction, who checks
+    whose work, and the hold point where the surveyor reviews closures before
+    any adjustment runs. The work itself reduces the observations, computes
+    closure, applies the chosen adjustment, compares adjusted positions with
+    record calls, and records every decision and any observation rejected,
+    stopping when a closure exceeds what the purpose allows. Acceptance checks
+    traceable evidence, closed measurements, a resolved boundary opinion, set
+    or found monuments, complete notes, and a signed deliverable before the
+    survey plat is drawn and corrections are closed.
+  controls:
+    - name: Closure checked before adjustment
+      note: Angular and linear closure are computed and compared with the tolerance for the survey purpose before any adjustment is applied to the observations.
+    - name: Equipment check on the record
+      note: Instrument calibration and field equipment checks are recorded with the observation set, so an instrument error can be separated from a field blunder.
+    - name: Rejected observations listed with reason
+      note: Any observation removed from the network is named in the notes with the reason, so the adjusted result can be rebuilt by another surveyor.
+    - name: Record calls compared line by line
+      note: Each adjusted course is compared with the deed and plat call, and every difference beyond expected precision is explained in the surveyor's notes.
+    - name: Licensed surveyor signs the adjusted basis
+      note: The adjusted coordinates become the plat basis only after the licensed surveyor reviews closures, judgment notes, and monument evidence and signs the deliverable.

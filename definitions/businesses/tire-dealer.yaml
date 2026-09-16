@@ -45,3 +45,51 @@ org:
 supply_chain:
   buys_from: [tire-distributor]
   sells_to: [retail-consumer, commercial-client, auto-repair-shop]
+article:
+  operating_model: >
+    A tire dealer sells a product and the service to fit it. The week is
+    a stream of appointments and walk-ins where a service advisor
+    matches vehicle, size, ratings, and budget to stock, a technician
+    mounts, balances, and torques, and a sales associate handles counter
+    sales and special orders. Retail sale and repair execution are the
+    load-bearing skills, with retail replenishment deciding whether the
+    right size is on the rack when the customer arrives. The tension is
+    between stocking breadth, which costs inventory dollars, and
+    stockouts, which send the customer to the next shop; repair quality
+    control on torque, sensors, and road tests is what keeps comebacks
+    from eating the labor margin.
+  starting: >
+    A tire shop needs a bay, a lift, mounting and balancing machines, a
+    compressor, and a tire distributor account before anything else.
+    Day-one paperwork is the business registration, sales tax
+    registration, employer registration for the first technician, and
+    the scrap tire handling registration or disposal fee arrangement
+    most states require, plus a waste oil and fluids arrangement if
+    service extends beyond tires. The minimum roles are a retail manager
+    or owner-operator, a service advisor, an automotive technician, and
+    a sales associate, with a stock associate as volume grows. The first
+    records are the stock record by size and date code, the repair order
+    and work authorization, the repair completion with torque and sensor
+    actions, a quality check, the sales receipt, and the purchase order.
+    Retail sale, repair execution, repair quality control, and retail
+    replenishment must work from opening day.
+  economics: >
+    Revenue is tire and wheel sales plus installation and service:
+    mounting, balancing, repair, rotation, alignment, and disposal.
+    Tires are priced as merchandise at a markup over distributor cost
+    and service is priced by the job, so gross margin percentage blends
+    a lower-margin product with higher-margin labor. Average ticket
+    rises when installation, alignment, and road hazard coverage are
+    attached to the sale, and inventory turnover with stockout rate
+    decides how much cash sits on the rack against how many sales walk
+    out the door. Technician efficiency and labor cost percentage govern
+    the service side, and comeback rate is the tax on rushed torque and
+    sensor work. The business is inventory-heavy and space-heavy, so
+    turns per stocked size and service attachment per tire sale separate
+    a shop that pays its owner from one that only pays its distributor.
+  benchmarks:
+    - scope: "Total gross profit, independent tire dealers (peer group)"
+      value: "52 percent of sales in 2022, up from 51 percent in 2021"
+      note: "Dealer-to-Dealer Development Group members, 56 tire dealership owners representing more than 300 locations; the same data put gross profit at 181 dollars per invoice on average sales of 348 dollars per invoice, with tire dollars earning roughly 24 percent margin against about 52 percent on parts. A peer group of engaged operators, so likely above the industry average."
+      source: https://www.moderntiredealer.com/retail/article/33001301/how-dealers-achieved-gross-profit-gains-in-2022
+      source_name: "Modern Tire Dealer, How Dealers Achieved Gross Profit Gains in 2022 (Dealer-to-Dealer Development Group data, 2022)"

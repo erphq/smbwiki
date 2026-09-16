@@ -97,3 +97,52 @@ automation:
 questions:
   - Which scheduled care was missed without a resolved follow-up?
   - Which repeated observation has not changed the plan or reached a qualified reviewer?
+article:
+  what: >
+    The care plan delivery process is how a caregiver turns an assessed
+    plan into the support a person receives on a shift, and how that
+    support is recorded so the next shift and the supervisor know what
+    happened. It starts when the caregiver reviews the current care plan
+    at the start of a visit or shift and ends when every scheduled task
+    is recorded as completed, refused, omitted, or changed, medications
+    are on the medication record, and any change in condition or
+    incident has reached the care director. In an assisted living
+    facility or a home health agency the caregiver owns delivery; the
+    care director owns escalation and plan review.
+  why: >
+    The person depends on the plan being followed and on someone
+    noticing when it no longer fits. Care given from a superseded plan
+    misses a new precaution or medication. A task recorded as done that
+    was not done leaves the person without support while everyone
+    downstream sees no open need. A change in condition noted shift
+    after shift without escalation lets deterioration continue. Without
+    the process, care depends on familiar staff and handover
+    conversation, records are filled in after the shift, and nobody can
+    show a family or a regulator what was delivered.
+  how: >
+    The caregiver reviews the current care plan and confirms the person,
+    scheduled support, preferences, precautions, recent changes,
+    medications, equipment, and escalation instructions. Before
+    delivering care, identity, immediate condition, willingness, and
+    environment are checked, and any reason to delay, modify, or
+    escalate is acted on. Scheduled assistance, observation, hygiene,
+    mobility, nutrition, medication support, activity, and safety tasks
+    are then delivered according to the authorized plan. Each task is
+    recorded at the time as completed, refused, omitted, or changed,
+    with observed response, and medication administration goes on the
+    medication record against the responsible caregiver. When a change
+    in condition or an incident occurs, the care director takes over:
+    immediate protection, clinical contact, family or authority notice,
+    evidence, follow-up, and plan review are assigned, and an incident
+    report is opened.
+  controls:
+    - name: Current plan version confirmed at shift start
+      note: The caregiver checks the plan version and date against the latest assessment or order before delivering care.
+    - name: Identity and consent check before each task
+      note: The person's identity and willingness are confirmed at the point of care, and a refusal is recorded as such.
+    - name: Point-of-care recording
+      note: Care and medication are recorded at the time they are given, and bulk entries after the shift are flagged for supervisory review.
+    - name: Missed care follow-up
+      note: Any task recorded as omitted or refused generates a follow-up owned by the supervisor before the end of the shift.
+    - name: Escalation closed with a plan decision
+      note: Every incident report and repeated observation ends in a documented decision by the care director or a clinician, including no change.

@@ -90,3 +90,49 @@ questions:
   - >-
     Which record proves tile waterproofing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The tile waterproofing process is the installation by a tile contractor of
+    the membrane that keeps a shower, wet room, or exterior tiled deck dry:
+    membrane, seams, corners, penetrations, drains, upturns, transitions, and
+    protection are installed as one continuous assembly and tested before tile
+    covers them. It starts when the substrate has been prepared and accepted
+    and ends with a quality report that records the completed assembly, the
+    test result, and the release to tile setting. The lead setter owns it, and
+    on larger jobs a dedicated waterproofing installer trained on the
+    specified system does the work.
+  why: >
+    The membrane is the only thing between the tile and the framing. A seam
+    that was never overlapped, a corner that was never reinforced, a drain
+    that was never clamped, or a penetration left unsealed passes water for
+    years before the damage shows as a stained ceiling below or a soft
+    subfloor, and by then the repair means removing the finished shower. Tile
+    and grout are porous, so the assembly has to be tested while a leak can
+    still be found and repaired at the cost of a patch.
+  how: >
+    The lead setter confirms the work basis by reading the current scope and
+    revisions and verifying a stable and flat substrate, cured work, the
+    approved tile and setting system with its matching membrane, resolved
+    movement joints, the approved dry layout, and environmental control. Field
+    controls are set: the membrane system's installation requirements, the
+    sequence from drain and corners outward, seam overlaps and cure times, who
+    installs and who inspects, and the hold point for the water test. During
+    installation the operator records the areas covered, seams, corners,
+    penetrations, drain connection, upturn heights, and protection,
+    photographs the assembly before covering, and stops when the substrate or
+    a detail differs from the planned method. Acceptance checks that the
+    assembly is continuous and will support bond coverage, plane, movement
+    accommodation, drainage, and the approved appearance, the water test
+    result is recorded, corrections are closed, and the quality report is
+    issued.
+  controls:
+    - name: Membrane system matches the setting system
+      note: The membrane, seam material, and drain assembly are confirmed on the record as the manufacturer's matching components before installation starts.
+    - name: Corners, seams, and penetrations photographed
+      note: Every reinforced corner, seam overlap, drain connection, and sealed penetration is photographed with location before tile covers it.
+    - name: Cure time observed before testing
+      note: The manufacturer's cure time is recorded and has elapsed before the assembly is flooded or tiled, and the elapsed time is on the record.
+    - name: Water test recorded before tile
+      note: The tested area, starting level, duration, and result are written on the quality report, and a leak is repaired and retested before release.
+    - name: Upturn heights and transitions checked
+      note: Membrane height at curbs, walls, and thresholds is measured against the specification and recorded before the assembly is accepted.

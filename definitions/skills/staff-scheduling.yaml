@@ -84,3 +84,46 @@ automation:
 questions:
   - Which upcoming shift has no qualified backup?
   - Are schedule changes reflected before payroll and opening checks use them?
+article:
+  what: >
+    The staff scheduling process commits the right people, in the right
+    roles and with the right licenses, to the hours the business expects
+    to be busy, before those hours arrive. It starts from the
+    appointment book, operating hours, and known absences, and it ends
+    with a published shift schedule that each assigned person has
+    accepted and that payroll and the floor use as the same record.
+    Every business in the catalog with more than one employee runs it,
+    from a coffee shop or a dental clinic to a courier company, and it
+    belongs to the manager who owns the floor or the clinic day.
+  why: >
+    It protects the service the business has promised and the labor cost
+    that pays for it. A shift with headcount and no one licensed to sign
+    off the work cannot open the book it has taken; a schedule posted at
+    the last minute leaves reliable staff unable to plan and makes an
+    absence impossible to cover; a swap agreed in a group chat leaves
+    the manager, the worker, and payroll each expecting a different
+    person. Thin coverage produces queues and unsafe shortcuts, and
+    excess coverage consumes margin in hours that cannot be recovered.
+  how: >
+    The manager first sets the demand shape from appointments, operating
+    hours, and recurring rushes so it is clear when coverage is needed.
+    For each period the manager sets the minimum qualified coverage,
+    meaning the roles and licenses required to perform and to supervise
+    the work on offer, including opening, closeout, and legally required
+    breaks. People are then assigned to shifts and the schedule is
+    published, with a shift counted as covered only when the assigned
+    person has seen and accepted it. From publication onward, swaps,
+    absences, overtime, and early releases are made on that same
+    schedule, so the floor, the workers, and payroll all read one
+    version of who is expected.
+  controls:
+    - name: Qualification check per period
+      note: Every period is checked for the licensed or trained roles it needs, and a period that depends on one such person is flagged.
+    - name: Acceptance before a shift is covered
+      note: A shift shows as covered only after the assigned person has acknowledged it in the scheduling record.
+    - name: Publication deadline
+      note: The schedule is published by a fixed lead time each cycle, and late publication is recorded as an exception the owner sees.
+    - name: Single source for changes
+      note: Swaps and absences are entered on the published schedule, never agreed only in messages, before they take effect.
+    - name: Actual attendance reconciled to the schedule
+      note: Time records are compared with the schedule each pay period so payroll and coverage history reflect who actually worked.

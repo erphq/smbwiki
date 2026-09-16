@@ -59,3 +59,55 @@ supply_chain:
   sells_to: [retail-consumer]
 seo:
   title: "Bar: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A bar sells measured pours in a room whose demand changes by the
+    hour. Opening sets the cash drawer, the stock at each station, ice,
+    glassware, and the recipe cards; service is order taking, age
+    checks, tabs, and drinks made to spec at ticket speed; closing
+    reconciles open tabs and card payments against the register, counts
+    stock, records waste and breakage, and writes the next order. The
+    general-manager runs the schedule and the buying, the shift-lead
+    runs the floor, and bartenders and servers carry the tickets.
+    Beverage service and order taking are the load-bearing skills, with
+    staff scheduling deciding whether the labor is on the floor when the
+    room fills. The tension is control of the pour: every drink is
+    small, cash-like, and easy to give away, so the gap between what
+    left the shelf and what was rung up is the number the owner watches.
+  starting: >
+    The liquor license is the gating item everywhere, and in the United
+    States it is issued by the state alcohol authority, often with a
+    local approval as well; the process can take months, the license may
+    be limited by count in the city, and the premises, hours, and
+    ownership are all part of the application. Bars that serve any food
+    carry a food service license and food handler permits in most
+    jurisdictions even when the kitchen is small. Around these sit the
+    business registration, sales tax registration, an employer
+    registration, and liquor liability insurance, which landlords and
+    the licensing authority commonly require. In India the equivalent is
+    a state excise licence, and in Singapore a police liquor licence
+    with stated trading hours. The minimum team is an owner-operator or
+    general-manager, a shift-lead who can close, and bartenders and
+    servers for peak nights. The first records are the recipe card set
+    with pour sizes and prices, the order ticket system, the shift
+    schedule, and the supplier invoice file for reconciling deliveries
+    to stock. Beverage service, order taking, and staff scheduling must
+    work from the first night, and accounts payable to distributors must
+    be kept current because alcohol wholesalers in some states are
+    barred from extending credit.
+  economics: >
+    Revenue is beverage sales by the serving and private events that
+    sell the room and the service for a defined block. Pricing is a
+    multiple of pour cost, and the multiple varies by category: well
+    spirits and draft beer carry the highest markup, wine by the bottle
+    and premium spirits the lowest, and cocktails sit on labor and
+    garnish as much as liquid. Gross margin is decided by pour cost,
+    which is what the recipe card says a drink should cost, and by
+    variance, which is what the stock count says it actually cost;
+    over-pouring, comps, and theft live in that gap. Average ticket and
+    ticket time decide how much a full room yields per hour, order
+    accuracy protects the pour, and labor cost percentage against a
+    demand curve that peaks late on a few nights a week is the second
+    deciding metric. The bar is moderately capital intensive in fit-out
+    and licensing and cash intensive in stock; private events smooth the
+    weekly curve and are why many bars survive their slow nights.

@@ -95,3 +95,51 @@ questions:
   - >-
     Which record proves appraisal engagement scoping was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The appraisal engagement scoping process is how a real estate
+    appraisal firm settles, before any fieldwork, what it has been asked
+    to value and for whom. It starts when a lender, attorney, or owner
+    asks for an appraisal and ends when the engagement letter defines
+    the client, intended users and use, the property and the rights
+    being appraised, the value definition, the effective date,
+    assignment conditions, report form, and fee, so that the appraisal
+    report has a fixed basis. The appraiser signing the report owns it,
+    since the scope decisions are the ones that make the report
+    defensible.
+  why: >
+    Every later step rests on this one. An appraisal run for the wrong
+    intended use, the wrong property rights, or the wrong effective date
+    is worthless to the client and exposes the appraiser to a complaint,
+    however careful the analysis. Fee disputes, scope creep, and
+    requests to change the value after the fact all trace back to a
+    scope that was never written down. A polished report on an
+    unsupported basis is the failure this process prevents: the client's
+    reliance, the appraiser's license, and the firm's fee all depend on
+    the assignment being defined before the work begins.
+  how: >
+    The appraiser reads the request and any prior revisions and confirms
+    the client and intended use, the property rights to be appraised,
+    the effective date, the assignment conditions, whether access and
+    market data are available, and that an appraiser with the required
+    competence is assigned. Those decisions are then written into the
+    engagement letter and turned into work limits, sequence,
+    responsibilities, and hold points the appraiser and any trainee can
+    follow. As the engagement proceeds the appraiser records scope
+    decisions, client communications, and any change to the assignment,
+    and stops to re-scope when a condition such as a different property
+    interest or a new intended user changes the work. Before delivery
+    the completed assignment is checked against the scoped basis, and
+    the appraisal report is issued with the scope and assumptions
+    disclosed.
+  controls:
+    - name: Signed engagement letter before fieldwork
+      note: Client, intended use, property rights, effective date, and fee are confirmed in writing before an inspection is scheduled.
+    - name: Competency check on assignment
+      note: The assigned appraiser's competence for the property type and market is confirmed and recorded before the engagement is accepted.
+    - name: Scope change re-authorized
+      note: Any change to intended users, rights, effective date, or report form is documented as a revised scope and confirmed with the client.
+    - name: Assignment conditions disclosed
+      note: Hypothetical conditions and extraordinary assumptions agreed at scoping are carried into the report and stated in it.
+    - name: Report checked against the scope
+      note: Before signing, the report is compared to the engagement letter for client, use, rights, date, and form.

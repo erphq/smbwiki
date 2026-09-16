@@ -89,3 +89,46 @@ automation:
 questions:
   - Which prepared item is most likely to run out during the next service?
   - Are actual yield and waste changing tomorrow's prep quantity?
+article:
+  what: >
+    The food preparation process turns the day's prep list into batched,
+    portioned, labeled, and staged components the line can assemble into
+    orders during service. It starts when the prep list for the shift is
+    read against what is already on hand and ends when each station has
+    confirmed its usable quantity and flagged the item most likely to run
+    short. A sous chef or lead cook owns it in a full-service restaurant
+    or caterer; in a food truck or pizzeria it is the owner or the opening
+    cook, and a retail bakery runs the same loop overnight for the morning
+    case.
+  why: >
+    Service runs on what was prepared before it started. Prep from memory
+    produces a full batch of something already in the walk-in, misses the
+    item the rush needs, or leaves a cooling batch on the counter past the
+    safe window because nobody owned the timer. The process protects food
+    safety through cooling and labeling, protects margin through yield and
+    waste control, and protects the line from stopping to make something
+    mid-rush.
+  how: >
+    The lead cook reads the prep list against station and storage counts
+    so an earlier safe batch is used before a new one is started. The work
+    is then sequenced around cooling time, shared equipment such as the
+    oven, mixer, or slicer, allergen separation, and the order in which
+    stations open, so the longest cooling item starts first and the mixer
+    is free when the dough needs it. Each batch is produced to the recipe
+    and checked for yield and portion size while correction is still
+    possible. Every container leaves production labeled with product,
+    production time, discard or use-by point, and storage condition, and
+    goes to a designated location. At handoff each station confirms the
+    usable quantity against the list and names the item most likely to
+    run out, so replenishment can start before service does.
+  controls:
+    - name: On-hand check before batching
+      note: The prep list quantity is reduced by usable stock found at the station and in storage, and the reduction is written on the list.
+    - name: Cooling and holding log
+      note: Batches that must cool or hold at temperature are logged with start time, target, and the person responsible for the check.
+    - name: Label on every container
+      note: Product, time made, use-by point, and storage condition travel with the container, and an unlabeled container is discarded.
+    - name: Yield recorded against recipe
+      note: Actual portions from each batch are counted and compared with recipe yield, and drift changes the next day's quantities.
+    - name: Station handoff confirmed
+      note: Each station signs off its usable quantity and flags the likely shortfall before service opens.

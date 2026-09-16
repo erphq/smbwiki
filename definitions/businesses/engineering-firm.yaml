@@ -48,3 +48,59 @@ licenses:
       as_of: "2026-07-29"
 supply_chain:
   sells_to: [homeowner, general-contractor]
+article:
+  operating_model: >
+    An engineering firm converts a defined technical question into
+    calculations, models, drawings, specifications, or reviews under a
+    licensed engineer's responsibility. The week runs on scoped
+    engagements: the principal sells and sets the design basis,
+    engineers produce deliverables against time budgets, and every
+    issued document passes through an engineering check package before
+    release. Professional service delivery and engineering design
+    verification are the load-bearing skills, with client engagement
+    close behind, because the inputs from owners, architects,
+    contractors, and authorities change while the work is in progress.
+    The tension is between the fee the client agreed to and the
+    revisions those changes demand, and it shows in the check package
+    as rework.
+  starting: >
+    The firm needs a professional engineer license held by the engineer
+    in responsible charge, and in most states a separate certificate of
+    authorization or firm registration before the firm can offer
+    engineering services under its own name; the business registration,
+    professional liability insurance, and employer registration once
+    staff are hired complete the set. Sealing documents also means a
+    records retention practice from the first project. The minimum team
+    is a principal, an engineer, and a client coordinator, and at the
+    start the principal is the licensed engineer and the seller. The
+    first records are the job request, the client brief, the engagement
+    letter, the engineering check package, the deliverable, the time
+    record, and the customer invoice. The skills that must work on day
+    one are lead intake, client engagement, professional service
+    delivery, engineering design verification, and invoicing, since the
+    first invoice depends on a checked and issued deliverable.
+  economics: >
+    Revenue comes from fixed-fee engagements, time-based work, recurring
+    advisory, and engineered deliverable fees tied to defined analyses,
+    drawings, tests, or reviews. Fees are set from an estimate of
+    engineer hours at billing rates, so gross margin is the multiple of
+    billed fee over labor cost. Utilization rate and engagement gross
+    margin decide profit, with rework rate and report turnaround time
+    showing where hours leak, and work-in-progress age and days sales
+    outstanding showing how long the firm finances its own work before
+    payment. The business is labor-intensive with modest capital in
+    software and equipment, which makes payroll the dominant cost and
+    idle licensed time the fastest way to lose money. Fixed-fee work
+    rewards accurate scoping; time-based work rewards disciplined time
+    recording.
+  benchmarks:
+    - scope: Operating profit on net revenue, architecture and engineering firms
+      value: 21.4 percent (fiscal 2024 data, reported 2025)
+      note: Average across nearly 700 US and Canadian architecture and engineering firms responding to the 46th annual Deltek Clarity study; described by Deltek as a ten-year high, with net revenue per employee up 11 percent year over year. Vendor-published survey; figures as stated in the release.
+      source: https://www.deltek.com/en/about/media-center/press-releases/2025/what-the-46th-annual-deltek-clarity-ae-study-reveals-about-the-industry
+      source_name: "Deltek, 46th Annual Deltek Clarity Architecture and Engineering Industry Study press release (May 2025)"
+    - scope: Receipts per establishment and payroll share, engineering services
+      value: "$4.75 million receipts per establishment; payroll 38.7 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 541330 (engineering services) in the 2022 Economic Census, establishments with payroll; receipts of $304.3 billion across 64,121 establishments, annual payroll of $117.8 billion, 1,188,890 employees (about eighteen per establishment). Large multi-office firms pull the average up.
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector54/EC2254BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Professional, Scientific, and Technical Services: Summary Statistics for the U.S., States, and Selected Geographies, EC2254BASIC (2022)"

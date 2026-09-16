@@ -86,3 +86,49 @@ automation:
 questions:
   - Which open balance has gone longest without a customer contact?
   - How much of the aging report reflects an active dispute?
+article:
+  what: >
+    The accounts receivable process is the path an issued customer
+    invoice takes from the moment it creates a balance to the moment
+    that balance is settled, credited, or written off. It begins when
+    the invoice is issued with its date, terms, contact, and evidence of
+    delivery, and it ends when a payment record closes the balance and
+    the aging report no longer shows it. In a law firm, an HVAC
+    contractor, or a veterinary clinic it belongs to the owner or office
+    manager; in a larger business it belongs to a receivables clerk
+    under the controller.
+  why: >
+    Completed work that is not collected is customer financing at the
+    business's expense, and the aging report is where that financing
+    becomes visible. When receipts sit unapplied, a paying customer is
+    chased and the ledger overstates what is owed. When a dispute has no
+    owner, operations and finance each wait for the other while the
+    balance ages. When a promised payment date passes with no follow-up,
+    the business plans cash around money that is not coming. Without the
+    process, the bank balance stands in for the ledger and overdue
+    customers are discovered only when cash gets tight.
+  how: >
+    The balance is opened when the invoice is issued: date, terms,
+    contact, and the delivery evidence that supports the charge go on
+    the account at the same time, and the invoice appears on the aging
+    report. Receipts from the bank feed are posted daily against
+    specific invoices so that unapplied cash never makes a paying
+    customer look delinquent, and each posting produces a payment
+    record. Overdue balances are then sorted into two groups. A balance
+    the customer is disputing over price or completion goes to an
+    operational owner with a promised response date. A balance the
+    customer has simply gone silent on goes to collection follow-up. The
+    aging queue is worked from oldest balance forward, with the last
+    contact, the customer's promise, and the next action written on each
+    line.
+  controls:
+    - name: Invoice carries delivery evidence
+      note: The signed ticket, completion note, or shipment confirmation is attached when the balance is opened, so a later dispute can be answered from the record.
+    - name: Daily receipt application
+      note: Every bank receipt is allocated to an invoice the day it arrives, and unallocated cash at close of day is treated as an exception.
+    - name: Named dispute owner
+      note: A disputed balance is tagged with the person resolving it and a response date, and it is reported separately from undisputed overdue balances.
+    - name: Promise date follow-up
+      note: A customer promise that passes without a receipt triggers a contact the next working day, and the aging line is updated with the result.
+    - name: Aging report reconciled to the ledger
+      note: The aging total agrees to the receivables control account at month end, and old balances are listed by name, never absorbed into a total.

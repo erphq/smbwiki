@@ -89,3 +89,44 @@ questions:
   - >-
     Which record proves drywall hanging was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The drywall hanging process covers a room from the moment framing is
+    accepted and the space is dry to the moment every board is fastened,
+    edges are supported, and the surface is ready for taping. The crew cuts,
+    fits, lifts, and screws the specified board without damaging the face,
+    forcing joints, or leaving fasteners proud, and hands the room over with
+    a field record and a punch list of what still needs correction. A
+    drywall contractor's crew lead owns it under the foreman or project
+    manager.
+  why: >
+    Hanging defects are cheap to fix on the day and expensive once mud,
+    texture, and paint are on. A board hung on wet or unaccepted framing
+    telegraphs every stud bow under finished lighting. Unsupported edges
+    crack at the joint, proud screws pop through the finish, and a missing
+    access panel means cutting a finished wall to reach a valve. The process
+    keeps the crew from starting before the room is ready and from leaving
+    before the hidden conditions are recorded.
+  how: >
+    The crew lead reads the construction plan and current revisions, then
+    walks the room to confirm it is dry and enclosed, that framing and rough
+    work are accepted, and that board type and thickness, backing, control
+    joints, access panels, and finish level are settled. Field controls are
+    set from that walk: the hanging sequence by wall and ceiling, where the
+    crew stops for a check, and who records what. While hanging, the crew
+    records board counts, concealed backing, decisions on cuts and openings,
+    and stops if framing or rough-in differs from the plan. At acceptance
+    the lead checks orientation, fastening, joints, corners, readiness for
+    the finish level, surface tolerance, and protection, and issues the
+    punch list.
+  controls:
+    - name: Framing acceptance before the first board
+      note: The lead confirms in the field record that framing and rough-in were accepted and the space is dry before any board is lifted.
+    - name: Fastener and edge check per wall
+      note: Each wall is checked for proud or missed fasteners and unsupported edges before the crew moves to the next one.
+    - name: Concealed conditions photographed
+      note: Backing, blocking, and anything the board will cover are photographed and located in the record before they disappear.
+    - name: Changed-condition stop
+      note: When framing, openings, or rough work differ from the plan the crew stops and the lead gets the method change approved.
+    - name: Punch list issued at room handover
+      note: The lead issues the punch list with locations for every open correction so the finishers start from a known surface.

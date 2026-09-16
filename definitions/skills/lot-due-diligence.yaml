@@ -88,3 +88,47 @@ questions:
   - >-
     Which record proves lot due diligence was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The lot due diligence process is how a single-family home builder
+    finds out whether a lot can carry the house being planned before
+    design fees are spent and a price is promised. It tests title
+    constraints, access, utilities, drainage, soils, setbacks, and
+    buildable area against the proposed plan, and it ends with a
+    closeout package that records what was found, what it changes, and
+    who accepted it. It begins from the construction plan and the lot
+    documents, and the builder's project manager or estimator owns it
+    with the owner making the go decision.
+  why: >
+    It protects the builder from committing to a house that cannot be
+    built as drawn or priced. An easement, a setback, a wet lot, or a
+    missing sewer stub discovered after the contract is signed becomes
+    a redesign, a change order the customer resents, or a foundation
+    that costs far more than estimated. When the work is skipped,
+    several trades can idle while the problem is solved, and the
+    promised completion date moves before framing starts.
+  how: >
+    The project manager confirms the work basis by reading the current
+    scope and revisions, then verifying approved plans, lot controls,
+    selections, permits, trade scopes, and long-lead dates. The
+    investigation is set up as field controls: which surveys, tests,
+    and utility locates are needed, in what order, who performs each
+    one, hold points before the design or the price is released, and
+    the records to keep. During the work the operator records
+    quantities, observations, decisions, and concealed conditions such
+    as soil borings and utility depths, and stops when a finding
+    changes the planned method. At acceptance the results are checked
+    against the approved plan, inspection record, owner selections, and
+    turnover requirements, corrections are closed, and the closeout
+    package is issued for the go decision.
+  controls:
+    - name: Title and survey reviewed before design release
+      note: Easements, covenants, setbacks, and the recorded survey are read and their constraints marked on the plan before design proceeds.
+    - name: Utility availability confirmed in writing
+      note: Water, sewer or septic, power, and gas availability and connection points are confirmed with the provider and recorded.
+    - name: Soils and drainage evidence on file
+      note: Soil report, percolation or bearing results, and drainage observations are attached to the lot record before the foundation is priced.
+    - name: Buildable area check against the plan
+      note: The house footprint, driveway, and grading are laid over the constraint map to confirm fit before the price is committed.
+    - name: Go decision recorded with findings
+      note: The owner's decision to proceed references the closeout package and any conditions that must be carried into the contract.

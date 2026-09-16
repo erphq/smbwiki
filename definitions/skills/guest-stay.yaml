@@ -98,3 +98,50 @@ automation:
 questions:
   - Which arriving guest has no inspected room capable of meeting the recorded promise?
   - Which active guest issue will be invisible to the next shift?
+article:
+  what: >
+    The guest stay process carries one confirmed reservation from the day
+    before arrival to the moment the room is released for cleaning:
+    arrival preparation, registration and room assignment, the occupied
+    stay with its charges, requests, and incidents, settlement at
+    departure, and release of the room with its condition known. It
+    starts with the reservation record and the room status board and ends
+    with a settled guest folio and an updated room status. The front desk
+    agent on shift owns each step in a hotel; in a bed-and-breakfast inn
+    the innkeeper runs all of it.
+  why: >
+    A stay is a chain of promises made by different people across several
+    shifts, and money, keys, and a guest's privacy ride on it. When the
+    record is weak, a guest gets a key to a room housekeeping has not
+    released, a credit promised by the evening agent is disputed at
+    morning checkout, a room change leaves the folio charging the wrong
+    room, and an issue the guest raised at dinner is invisible to the
+    night shift. The process protects the guest's experience and safety,
+    the property's revenue, and the ability of the next shift to continue
+    the stay without the guest starting over.
+  how: >
+    The agent prepares the arrival from the reservation record and room
+    status: reservation details, room readiness, requests, payment
+    guarantee, messages, accessibility, occupancy, and arrival timing are
+    checked before the guest walks in. At registration the agent completes
+    identity, terms, room, access, deposit, payment authority, contacts,
+    and property information and opens the guest folio before keys are
+    handed over. During the occupied stay every charge, payment, message,
+    service request, room change, incident, privacy instruction, and
+    recovery decision updates the folio so the next shift reads the
+    current state. At departure the agent closes charges, credits,
+    payment, invoice, key or access, luggage, transport, and any
+    unresolved issue against the folio. The room is then released with
+    departure time and any cleaning, damage, maintenance, or lost-property
+    information carried into room status.
+  controls:
+    - name: Inspected room before key issue
+      note: A key is cut only after room status shows the room inspected and released by housekeeping for that guest.
+    - name: Identity and payment authority at registration
+      note: Identity, payment guarantee, and deposit are completed and recorded on the folio before access is granted.
+    - name: Every promise on the folio
+      note: Credits, room changes, amenities, and follow-ups promised to a guest are written on the folio with the agent's name and time.
+    - name: Folio exceptions cleared before the night audit
+      note: Unassigned or unapproved folio items are resolved or assigned an owner before the audit closes the day.
+    - name: Room release with condition record
+      note: Departure time, cleaning need, damage, maintenance, and lost property are recorded at the moment the room status changes.

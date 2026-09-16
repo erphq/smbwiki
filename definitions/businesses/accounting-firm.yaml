@@ -47,3 +47,51 @@ licenses:
       as_of: "2026-07-29"
 supply_chain:
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    An accounting firm sells signed conclusions on other people's
+    records. The week is set by reporting periods and external
+    deadlines: a client-coordinator chases missing bank statements,
+    confirmations, and answers to open questions, accountants prepare
+    workpapers and draft the deliverable, and the principal reviews,
+    clears review notes, and releases the report under the engagement
+    letter. Accounting engagement control is the load-bearing skill,
+    because the file has to show who prepared, reviewed, and approved
+    each conclusion and which matters were left unresolved. The tension
+    sits between the calendar and the evidence: filing dates do not
+    move, while client records arrive late and incomplete, so work
+    bunches into peak periods and the firm carries idle capacity for the
+    rest of the year.
+  starting: >
+    A firm that performs attest work, or that calls itself a CPA firm,
+    needs a licensed CPA as principal and, in most states, a firm permit
+    from the state board of accountancy; a firm that limits itself to
+    tax and accounting deliverables can open without one but must say so
+    in its engagement letters. Beyond that, day one needs the business
+    registration, an employer registration once the first accountant is
+    hired, professional liability insurance, and a signed engagement
+    letter template that fixes scope, independence, and the client's
+    responsibilities. The minimum team is a principal who signs and an
+    accountant who prepares, with a client-coordinator once the client
+    list outgrows the principal's inbox. The first records are the
+    client brief, the engagement letter, the workpaper file for each
+    engagement, and time records per engagement, because billing and
+    margin both depend on them. Client engagement, professional service
+    delivery, and accounting engagement control must work from the first
+    client, along with invoicing and accounts receivable so that fees
+    are collected while the deliverable is still fresh.
+  economics: >
+    Revenue is assurance and reporting fees, fixed-fee engagements,
+    time-based work, and recurring advisory, priced either as a quoted
+    fee per deliverable or as hours at staff rates. Gross margin on an
+    engagement is the fee less the cost of the hours charged to it, so
+    realization matters: a fixed fee absorbs every hour of rework and
+    every late client document. The metrics that decide profit are
+    utilization rate, engagement gross margin, work-in-progress age, and
+    days sales outstanding, because unbilled hours and unpaid invoices
+    are where a firm's cash disappears. Report turnaround time and quote
+    win rate feed the pipeline. The business is labor intensive with
+    little capital beyond software and workstations, which means the
+    principal's own billable time and the leverage of accountants to
+    principals set the ceiling, and peak-season overtime followed by
+    off-season slack is the structural drag on margin.

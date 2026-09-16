@@ -87,3 +87,50 @@ questions:
   - >-
     Which record proves mortar control was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The mortar control process governs every batch of mortar a masonry
+    crew mixes on a job: which approved materials go in, how they are
+    proportioned, how much water is added, how long the batch is mixed,
+    how long it may sit on the board, when it may be retempered and when
+    it must be discarded, and how weather protection is applied. It
+    starts from the construction plan and the approved mortar
+    specification and ends with a quality report of batch records that
+    another operator can trace. The foreman owns it at the mixer for a
+    masonry contractor, with the project manager holding the
+    specification.
+  why: >
+    It protects the strength, bond, and appearance of the finished wall,
+    none of which can be checked from the outside once the wall is up.
+    Too much water or a retempered batch past its board life weakens
+    bond and lets water through the joints; a wrong sand or an
+    unapproved admixture changes color between lifts and produces a
+    visible band the owner will reject. Cold or hot weather without
+    protection alters cure. Because masonry locks layout, structure,
+    weather control, and finish into the same installed work, a mortar
+    problem found late means taking the wall down.
+  how: >
+    The foreman confirms the work basis before the first batch: the
+    current scope and revisions, the approved mortar sample, sound
+    support, control lines, unit and mortar supply on hand, weather
+    protection ready, embeds, and interface details. Field controls are
+    then set for the crew: batch proportions in measured units, maximum
+    water, mixing time, board life, retempering limits, and the weather
+    thresholds that stop work. During production the mixer operator
+    records each batch: materials, proportions, water, time mixed, time
+    placed, and any discard, and stops when a field condition changes
+    the method. At acceptance the foreman checks line, level, plumb,
+    bond, joint profile, reinforcement, flashing, drainage, cleaning,
+    and appearance against the specification, closes corrections, and
+    issues the quality report with the batch records attached.
+  controls:
+    - name: Approved sample at the mixer
+      note: The approved mortar sample and material list are posted at the mixing station, and a substitute material stops batching until it is approved.
+    - name: Measured proportions and water
+      note: Batches are proportioned by measured container, and water is added by count, with the amount and time written on the batch record.
+    - name: Board life and retempering limit enforced
+      note: Each board is timed from mixing, retempering is allowed once inside the limit, and mortar past the limit is discarded and recorded.
+    - name: Weather thresholds written and read
+      note: Temperature, wind, and precipitation limits are on the field control sheet, and the foreman records the reading at the start of each shift.
+    - name: Batch record tied to wall location
+      note: Every batch record names the lift and wall area it was placed in so an appearance or bond problem can be traced to its batch.

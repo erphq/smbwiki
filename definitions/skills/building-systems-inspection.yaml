@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves building systems inspection was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The building systems inspection process is how a home inspection
+    service examines the heating, cooling, plumbing, electrical,
+    appliances, and controls of a property on behalf of a buyer or
+    owner, operating each system within safe limits and recording
+    material defects. It starts when the client brief and a signed scope
+    identify the property, the access, and the disclosures required, and
+    it ends when the client has an inspection report that states what
+    was observed, what could not be, and what matters. The licensed
+    inspector owns it from scope to report.
+  why: >
+    The buyer is about to make the largest purchase of their life on the
+    strength of this report. A furnace that was never run, a panel that
+    was not opened, or a limitation written vaguely enough to cover
+    anything leaves the client without the information they paid for and
+    the inspector exposed when the defect surfaces. An unsupported
+    conclusion in the other direction can kill a sale. Without the
+    process, the inspection follows the inspector's habit, the report is
+    a checklist with no evidence, and a missed area or a hedge distorts
+    what the buyer understands about the house.
+  how: >
+    The inspector reads the client brief and the signed scope and
+    confirms the property, agreed access, known occupancy and utility
+    status, required disclosures, tools, and weather conditions before
+    arriving. The field controls follow: the sequence through the
+    systems, the operating limits for each, what is opened and what is
+    not, the photo and note standard, and the conditions under which a
+    system is not operated. During the inspection the inspector operates
+    each accessible system within normal controls, records observations,
+    readings, and photographs where they are made, and stops and records
+    a limitation when a system is unsafe to operate, inaccessible, or
+    shut off. At the end the report is checked for complete accessible-
+    system observations, stated limitations, clear defect evidence, and
+    risk significance, and the inspection report is delivered to the
+    client on time.
+  controls:
+    - name: Signed scope and access before arrival
+      note: The property, systems included, access, and disclosures are confirmed in writing with the client before the inspection date.
+    - name: Each system operated or limitation stated
+      note: Every accessible system is run under normal controls, and any system not operated has the reason recorded in the report.
+    - name: Photo evidence for each material defect
+      note: Each defect reported carries a photograph and location so the client and a contractor can find it.
+    - name: Safety limits observed
+      note: Panels, equipment, and spaces are opened or entered only within the standard's safety limits, and the decision is recorded.
+    - name: Report delivered within the agreed time
+      note: The inspection report is issued to the client on the agreed date with limitations and significance stated.

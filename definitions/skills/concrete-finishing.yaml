@@ -90,3 +90,53 @@ questions:
   - >-
     Which record proves concrete finishing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The concrete finishing process controls the surface between
+    placement and curing: strike-off to grade, flatness, edges and
+    joints, the specified texture, timing around bleed water, and
+    protection of the finished surface for its intended use. It starts
+    as the last concrete is placed in an area and ends when the surface
+    is accepted and the finish is recorded on the test report. A poured
+    concrete contractor owns it through the finishing foreman, with the
+    superintendent accepting the surface.
+  why: >
+    It protects the part of the placement everyone will see and walk on.
+    Finishing that works bleed water back into the surface produces a
+    weak layer that dusts and scales. A slab troweled off its tolerance
+    means grinding, an overlay, or a rejection by the flooring
+    installer. Joints cut late crack the slab where nobody planned. A
+    finish that does not match the specified texture is rebuilt at the
+    contractor's cost, and the argument about it starts after the
+    concrete is hard.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions on the construction plan and verifying surveyed layout,
+    excavation acceptance, form dimensions, embeds, reinforcement, mix
+    information, access, and weather controls. Field controls set the
+    strike-off references, flatness tolerance, joint layout and timing,
+    texture sample, weather response, hold points, and the records the
+    crew keeps. During finishing the operator records set times, bleed-
+    water observations, joint cuts, texture applied, decisions, and any
+    concealed detail, and stops when weather or mix behavior changes the
+    planned method. Acceptance checks the completed work against
+    specified geometry, cover, placement record, finish, curing, and
+    required concrete test results, and the test report is issued after
+    correction closes.
+  controls:
+    - name: Approved finish sample on site
+      note: >
+        The texture and finish are matched to an approved sample
+        panel before finishing begins on the production area.
+    - name: Bleed-water hold before floating
+      note: >
+        Floating and troweling wait until bleed water has left the
+        surface, and the observation is recorded by area.
+    - name: Flatness and grade checked before curing
+      note: >
+        Strike-off and flatness are measured against the tolerance
+        and recorded while correction is still possible.
+    - name: Joint layout and cut timing recorded
+      note: >
+        Joint locations follow the plan and cut times are logged so
+        a late or missed cut can be traced.

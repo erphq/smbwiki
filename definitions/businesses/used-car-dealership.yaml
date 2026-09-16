@@ -40,3 +40,60 @@ summary: >
 supply_chain:
   buys_from: [retail-consumer, vehicle-auction]
   sells_to: [retail-consumer, commercial-client, vehicle-auction]
+article:
+  operating_model: >
+    A used car dealership buys one vehicle at a time and sells it before
+    the cash tied up in it goes stale. The week is acquisition at
+    auction, from trade-ins, and off the street by the used-vehicle
+    buyer; appraisal and reconditioning through the shop foreman and
+    technicians; merchandising and demonstration by the salespeople; and
+    structuring, funding, and disclosure by the finance manager. Used
+    vehicle acquisition and reconditioning and vehicle sales are the
+    load-bearing skills. The tension is days in stock: every unit ages,
+    its price drops, and its floor plan interest accrues, so the retail
+    manager decides weekly which units get a price change and which exit
+    wholesale.
+  starting: >
+    A used car dealer opens with a state motor vehicle dealer license,
+    which in most states requires an approved lot with signage and an
+    office, a surety bond, dealer plates, and a background check;
+    alongside it come the business registration, sales tax registration,
+    employer registration, garage liability coverage, a federal
+    disclosure compliance program for financing and privacy, and a title
+    and registration processing arrangement with the state.
+    Reconditioning needs a bay or a shop partner, and acquisition needs
+    auction access and a floor plan or cash line. The minimum roles are
+    an owner-operator who buys and sells, a vehicle salesperson, a
+    finance manager, and an automotive technician, with a retail
+    manager, a used-vehicle buyer, and a shop foreman as volume grows.
+    The first records are the used-vehicle condition file, the repair
+    estimate and repair order, the stock record with days in stock, the
+    client profile, the vehicle purchase agreement, and the sales
+    receipt.
+  economics: >
+    Revenue is vehicle margin, the sale price less acquisition and
+    reconditioning cost of each unit; finance and products, the dealer
+    participation and protection products in a funded deal; trade and
+    wholesale, the value recovered from trades and units sold outside
+    retail inventory; and the used-unit margin after title, transport,
+    appraisal, repair, aging, and wholesale-exit cost. Pricing is per
+    unit against the market, so gross margin is set at the auction lane
+    by how well the buyer appraises and by how tightly reconditioning is
+    scoped and executed. Vehicle gross profit and inventory turnover are
+    the metrics that decide profit, because a unit that turns slowly
+    loses gross to price drops and floor plan interest; technician
+    efficiency and comeback rate govern reconditioning cost and
+    post-sale promises. The business is working-capital heavy, with cash
+    tied to every unit from acquisition to funding, so inventory turns
+    matter more than markup.
+  benchmarks:
+    - scope: "Average retail selling price of a used vehicle"
+      value: "28,680 dollars in 2025"
+      note: "Used vehicles sold by franchised new-vehicle dealerships, NADA Data 2025 full-year report; the series ran from about 20,586 dollars in 2018 to a peak of 30,736 dollars in 2022. Independent used-car lots typically sell older, cheaper units than franchised stores."
+      source: https://www.nada.org/media/4695
+      source_name: "NADA, NADA Data 2025: Annual Financial Profile of America's Franchised New-Car Dealerships (2025)"
+    - scope: "Used-vehicle department share of total dealership sales dollars"
+      value: "31.8 percent in 2025 (32.0 percent in 2024)"
+      note: "Franchised new-car dealerships, NADA Data 2025; the remainder was new vehicles at 54.9 percent and service and parts at 13.3 percent. The same report puts used-vehicle retail sales per used-vehicle salesperson at 139 units in 2025."
+      source: https://www.nada.org/media/4695
+      source_name: "NADA, NADA Data 2025: Annual Financial Profile of America's Franchised New-Car Dealerships (2025)"

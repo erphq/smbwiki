@@ -91,3 +91,46 @@ questions:
   - >-
     Which record proves drywall punch work was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The drywall punch work process is the final inspection and repair pass
+    on a finished room: the finisher inspects every surface under light that
+    matches how the room will be used, marks each defect by location,
+    repairs it without leaving halos, ridges, or texture mismatches, and
+    releases the room for prime and paint. It starts when finishing is
+    declared complete and ends when the punch list is closed and signed. A
+    drywall contractor's finishing lead owns it, often with the general
+    contractor's superintendent walking alongside.
+  why: >
+    This is the last point at which a drywall defect is the drywall
+    contractor's problem to fix cheaply. A ridge or a missed screw pop found
+    after paint means the painter comes back, the contractor pays for it,
+    and the relationship suffers. Inspecting under a work light held at an
+    angle finds what the finished ceiling fixtures will show; inspecting
+    under general light does not. Marking defects by location keeps the
+    repair crew from hunting and lets the superintendent verify closure
+    instead of taking the finisher's word for it.
+  how: >
+    The finishing lead reads the plan and revisions and confirms the room is
+    dry, framing and rough work were accepted, and the finish level is
+    known, because the finish level sets what counts as a defect. Field
+    controls follow: the light source and angle used for inspection, the
+    marking convention, the order rooms are walked, and the hold point
+    before release. The lead walks each surface, marks defects with a
+    location on the punch list, and records any condition, such as a bowed
+    stud or damp board, that punch work cannot fix. Repairs are made and
+    feathered, then the same surfaces are re-inspected under the same light.
+    Acceptance checks joints, corners, fasteners, surface tolerance,
+    texture, and protection against the finish level, and the punch list is
+    closed and issued.
+  controls:
+    - name: Inspection under representative light
+      note: Surfaces are inspected with a raking light matching the room's finished lighting, and the light used is recorded on the list.
+    - name: Defects marked by location
+      note: Every defect is marked on the surface and listed with a room and wall reference so the repair can be verified by someone else.
+    - name: Finish level confirmed before inspection
+      note: The specified finish level is written on the punch list so the standard being applied is never in dispute.
+    - name: Re-inspection after repair
+      note: Repaired areas are checked under the same light for halos, ridges, and texture match before the item is closed.
+    - name: Non-drywall conditions escalated
+      note: Framing, moisture, or rough-in defects found during punch are routed to their owner and stay open on the record.

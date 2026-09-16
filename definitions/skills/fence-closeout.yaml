@@ -87,3 +87,45 @@ questions:
   - >-
     Which record proves fence closeout was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The fence closeout process is the final walk a fence contractor makes
+    before asking the owner to accept the job: the lead walks the full line
+    checking alignment, fasteners, sharp edges, finish, gaps, gate swing and
+    latch, cleanup, disturbed grade, and the condition of the site, then
+    closes corrections and walks the owner through the result. It starts
+    when panel installation is declared complete and ends with a signed
+    quality report and owner acceptance. A fence contractor's crew lead or
+    owner runs it.
+  why: >
+    Fences are accepted by eye and disputed by tape measure. A fence that
+    looks straight and complete can sit on the wrong line, and the
+    neighbor's surveyor finds it after the owner has paid. A gate that binds
+    after the concrete cures, a run of exposed screw tips at child height,
+    or a trench left unrestored generates the callback that turns a
+    profitable job into a loss. The closeout is where those are found by the
+    contractor's own people, corrected, and documented before the owner sees
+    them.
+  how: >
+    The lead reads the site plan and revisions and confirms the verified
+    boundary or approved alignment, located utilities, the selected system,
+    known grade, gate geometry, material, and access. Field controls set the
+    walk sequence, the checks at each post, panel, and gate, the photograph
+    required for each, and the hold point before the owner is called. On the
+    walk the lead records line and grade against the plan, fastener and edge
+    condition, finish, gaps, gate operation, cleanup, and restored grade,
+    and stops when the built line differs from the alignment. Acceptance
+    checks line, grade, post embedment, spacing, fastening, gate operation,
+    finish, security, and the restored site, corrections are closed, and the
+    quality report is issued and signed by the owner.
+  controls:
+    - name: Line checked against the approved alignment
+      note: The built line is measured against the verified boundary or approved alignment and recorded before the owner walk.
+    - name: Gate operation tested after cure
+      note: Each gate is swung, latched, and locked after posts have cured, and the result is recorded on the quality report.
+    - name: Fastener and edge sweep
+      note: Every panel is checked for proud fasteners, cut edges, and sharp ends at the height a child or a hand would reach.
+    - name: Site restoration photographed
+      note: Disturbed grade, spoil, and cleanup are photographed at each post line before the crew leaves the site.
+    - name: Owner acceptance signed on the report
+      note: The owner walks the fence with the lead and signs the quality report, with any open item listed by location.

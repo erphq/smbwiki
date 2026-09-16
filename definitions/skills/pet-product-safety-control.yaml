@@ -37,3 +37,47 @@ automation:
 questions:
   - Which lot, expiry, storage, recall, or suitability condition is unresolved?
   - Can the store identify every affected unit and prove its sale, quarantine, or disposal?
+article:
+  what: >
+    The pet product safety control process keeps the food, treats,
+    supplements, and supplies a pet store sells suitable for the animals
+    they are sold for and safe on the day they are sold. It checks each
+    receipt for identifier, lot, expiry, packaging, storage needs,
+    source, recall status, and damage; controls rotation, species and
+    life-stage placement, and the advice staff give at the shelf; and
+    removes expired, damaged, or recalled stock with a disposition
+    record. It starts at receiving and ends at the sales receipt or a
+    quarantine record. The store manager owns it, with a merchandise
+    specialist running the floor checks.
+  why: >
+    It protects the animal, the customer, and the store's ability to
+    answer a recall. A recalled lot still on the shelf can harm a pet
+    and, without lot capture at sale, the store cannot say which
+    customers bought it. Food sold past expiry or stored warm spoils. A
+    puppy food sold for a senior dog, or a treat unsuited to a species,
+    is a suitability failure the label already warned about. And staff
+    who drift from labeled use into diagnosing a condition put the store
+    in the position of giving veterinary advice it cannot stand behind.
+  how: >
+    At receiving the specialist verifies each product against the
+    inventory receipt: identifier, lot, expiry, packaging condition,
+    temperature or storage needs, source, current recall status, and any
+    damage, and writes the lot and expiry to the lot-expiry record and
+    the stock record. On the floor the process controls display and
+    advice: stock is rotated by expiry, placed by species and life
+    stage, and staff explain labeled use and refer any health diagnosis
+    or treatment question to a veterinarian. At release the store
+    records the sold lot on the sales receipt where the product warrants
+    it, removes expired, damaged, or recalled stock to quarantine, and
+    preserves the disposition evidence for each removal.
+  controls:
+    - name: Lot and expiry captured at receiving
+      note: No item reaches the floor without lot, expiry, and storage need on the lot-expiry record, and damaged packaging is quarantined at the dock.
+    - name: Recall list checked at receipt and weekly
+      note: Incoming lots and shelf stock are compared to current recall notices, and a match is pulled and recorded the same day it is found.
+    - name: Rotation walk with expiry dates
+      note: The floor is walked on a schedule against the lot-expiry record, and short-dated stock is marked down or removed before it expires.
+    - name: Advice boundary posted and trained
+      note: Staff explain labeled use only and refer diagnosis or treatment questions to qualified care, and the referral is the recorded answer.
+    - name: Quarantine disposition evidenced
+      note: Every removal to quarantine carries reason, lot, quantity, and final disposition, so an affected unit can be traced to sale, return, or disposal.

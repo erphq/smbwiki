@@ -31,3 +31,66 @@ supply_chain:
   sells_to: [homeowner]
 seo:
   title: "Pest Control Company: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A pest control company runs routes. The dispatcher builds each
+    technician's day from recurring agreement stops and new work orders,
+    the technician inspects, treats, documents, and instructs the
+    occupant, and the office manager takes calls, sells and renews
+    agreements, invoices, and collects. Lead intake, dispatch, field job
+    execution, and maintenance agreements are load-bearing, and quoting
+    sits with the owner for the larger initial services. The tension is
+    between route density and the time an active infestation needs: a
+    route packed with quick preventive stops earns well until one stop
+    turns out to need an hour of inspection and a second-stage
+    treatment, and a callback for a missed source costs a visit that
+    earns nothing.
+  starting: >
+    Every state licenses commercial pesticide application in some form:
+    the agriculture or environmental agency licenses the business,
+    requires a certified applicator in the right categories on staff,
+    and requires each technician to be trained or licensed before
+    applying restricted or, in many states, any commercial pesticide.
+    Product handling brings storage and disposal rules, labels that
+    carry legal weight, and records of what was applied where. The
+    general layer is business registration, employer registration when
+    the first technician is hired, sales tax registration where the
+    state taxes the service, and general liability cover with a
+    pesticide endorsement. A truck, a sprayer, and the starting chemical
+    stock are the capital items, so the entry cost is low compared with
+    the licensing lead time. The minimum team is an owner-operator who
+    is the certified applicator, one technician, and an office manager
+    or dispatcher who is often the owner's first hire. The first records
+    are the job request, the quote, the work order with job photos, the
+    service agreement, and the customer invoice, and lead intake,
+    dispatch, field job execution, invoicing, and maintenance agreements
+    must work from the first route.
+  economics: >
+    Revenue is service calls dispatched for demand work, initial service
+    for a defined pest condition, and recurring protection under an
+    agreement, and the agreement book is what the business is worth,
+    because it turns a route into predictable monthly revenue with a
+    renewal each year. The price basis is per visit for demand work and
+    per month or quarter for agreements, with the initial service priced
+    higher to cover inspection time and the first treatment. Gross
+    margin is technician time and chemical against the stop price;
+    chemical is a small share, so the margin is set by jobs per
+    technician day and the drive time between them. The metrics that
+    decide profit are agreement count and agreement renewal rate, jobs
+    per tech day, first-time fix rate and callback rate, because a
+    callback is a free visit, average ticket, and days sales outstanding
+    on commercial accounts. The business is labor-heavy and
+    capital-light, and density wins: a company whose agreements sit in
+    one town earns more per route hour than one with the same count
+    spread across a county.
+  benchmarks:
+    - scope: Gross profit margin, largest US pest control operator
+      value: 52.7 percent of revenue (fiscal 2024)
+      note: "Rollins, Inc. (Orkin and other brands), revenue $3.39 billion, gross profit $1.79 billion; residential, commercial, and termite lines grew organically 5.2, 8.3, and 12.2 percent. A national operator's margin, not a small-company figure, and before sales, administrative, and route overhead."
+      source: https://www.rollins.com/investor-relations/news-events/press-releases/detail/402/rollins-inc-reports-fourth-quarter-and-full-year-2024
+      source_name: Rollins, Inc., Fourth Quarter and Full Year 2024 Financial Results (2024)
+    - scope: Mean annual wage, pest control workers in exterminating and pest control services
+      value: "$44,400 (May 2023)"
+      note: "Pest control workers in NAICS 561710, 89,070 employed or 61.05 percent of the industry's 145,910 jobs; mean hourly wage $21.35."
+      source: https://www.bls.gov/oes/2023/may/naics5_561710.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 561710 Exterminating and Pest Control Services (May 2023)

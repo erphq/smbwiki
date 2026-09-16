@@ -37,3 +37,54 @@ org:
 supply_chain:
   buys_from: [flower-wholesaler]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A florist buys perishable stems, conditions them, and turns
+    occasions into arrangements on a clock that the flowers set. The
+    week is wholesale buying, cooler stock rotation, walk-in and advance
+    orders, event production, and delivery routes that must reach a
+    recipient on a date the sender chose. Retail sale, purchasing, and
+    delivery dispatch are the load-bearing skills, because inventory
+    loses value every day, substitutions have to preserve the
+    authorized design and value, and a failed delivery is a broken
+    promise the sender hears about. The tension is between buying
+    enough for peaks and holidays and the waste that unsold stems
+    become.
+  starting: >
+    Day one needs the business registration, sales tax registration
+    because arrangements and plants are taxable goods in most states,
+    employer registration once a designer or driver is hired, and an
+    account with a flower wholesaler, which often requires a resale
+    certificate; a few states also require a nursery or plant dealer
+    registration when live plants are sold. The shop needs a walk-in
+    cooler, a design bench, and a delivery vehicle before the first
+    order. The minimum team is an owner-operator who designs and buys,
+    a retail manager or sales associate at the counter, a stock
+    associate who processes stems, and a driver, with the owner
+    covering several roles at the start. The first records are the
+    stock record, purchase orders, inventory receipts, sales receipts,
+    the order ticket, the delivery ticket, and the shift schedule, and
+    the skills that must work from the first open are retail
+    replenishment, the retail sale, purchasing, delivery dispatch, and
+    payment reconciliation.
+  economics: >
+    Revenue is arrangements and retail, covering designed arrangements,
+    plants, and related merchandise, and events and delivery, covering
+    scheduled production, installation, and recipient delivery.
+    Arrangements are priced on a recipe that sets stem cost and design
+    labor, with delivery charged per zone. Gross margin percentage is
+    driven by stem cost against the recipe price and by waste, since
+    unsold product has no salvage value, so inventory turnover and
+    stockout rate are watched daily, and average ticket, labor cost
+    percentage, and delivery time decide profit. Wire-service and
+    marketplace orders arrive at a discount, which is why many florists
+    steer customers to direct orders. The business is labor-intensive
+    in design time and working-capital-intensive around holidays, when
+    a large buy precedes a short selling window and the margin for the
+    quarter is made or lost in a few days.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, florists
+      value: "$811,000 receipts per establishment; payroll 18.4 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 459310 (florists) in the 2022 Economic Census, establishments with payroll; sales of $10.2 billion across 12,613 establishments, annual payroll of $1.9 billion, 73,535 employees (about six per establishment).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector44/EC2244BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Retail Trade: Summary Statistics for the U.S., States, and Selected Geographies, EC2244BASIC (2022)"

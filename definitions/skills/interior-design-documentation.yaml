@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves interior design documentation was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The interior design documentation process is how an interior design
+    firm turns an approved program and a client brief into a
+    coordinated set of plans, elevations, reflected ceiling plans,
+    details, schedules, and specifications that consultants can price
+    and a contractor can build. It begins once the program, existing
+    conditions, consultant criteria, budget, schedule, and code basis
+    are settled, and it ends with a finish schedule and a document set
+    issued for a stated purpose, with every revision and consultant
+    input accounted for. The project designer owns it under the
+    principal.
+  why: >
+    It protects the client's money and the firm's reputation from
+    decisions made late or documented twice. A finish chosen after
+    procurement, a ceiling detail that ignores the mechanical
+    consultant, or an issued set with a stale revision reaches the
+    field as a change order, a lead-time miss, or installed work that
+    has to come out. Without a controlled issue purpose, a set drawn
+    for pricing gets built from, and the contractor and the client
+    argue over which version governs.
+  how: >
+    The designer confirms the work basis by reading the current scope
+    and revisions, then verifying the approved program, measured
+    existing conditions, consultant criteria, budget, schedule, code
+    basis, and the client's decision structure. The work is translated
+    into field controls: which sheets and schedules are in scope, the
+    sequence of coordination with consultants, who owns each drawing,
+    hold points before an issue, and the records to keep. As the set
+    develops, the designer records quantities, observations, decisions,
+    and details that will be concealed, and stops when a consultant or
+    field condition changes the planned approach. At acceptance the set
+    is checked for coordinated safe spaces, approved selections,
+    complete documents, released procurement, installed intent, and
+    resolved deficiencies, then corrections are closed and the finish
+    schedule is issued.
+  controls:
+    - name: Issue purpose on every set
+      note: Each issued set states whether it is for pricing, permit, or construction, and the revision log records what changed since the last issue.
+    - name: Consultant coordination check
+      note: Reflected ceilings, details, and schedules are cross-checked against consultant drawings before issue so nothing collides with structure or services.
+    - name: Client decision record
+      note: Every selection and approval is recorded with who decided and when, so a late change can be traced to a client instruction.
+    - name: Finish schedule reconciled to specifications
+      note: Each finish schedule entry matches the specification section, sample approval, and procurement status before the schedule is released.
+    - name: Field measurement verified before detailing
+      note: Details rely on measured existing conditions confirmed on site, never on assumed dimensions from prior drawings.

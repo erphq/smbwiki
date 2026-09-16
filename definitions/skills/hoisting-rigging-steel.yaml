@@ -97,3 +97,53 @@ questions:
   - >-
     Which record proves structural steel hoisting and rigging was accepted
     before it was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The structural steel hoisting and rigging process plans and executes
+    each pick on an erection job: the pick points and rigging for the
+    member or assembly, tag line control, the travel path from the truck
+    or laydown to the connection, the landing method and temporary
+    support, the signals between rigger, operator, and connector, and the
+    release once the piece is held by its bolts or erection aids. It
+    starts when the erection drawings, crane plan, and piece sequence are
+    approved and ends when the erected steel is within tolerance,
+    connections are complete, and the inspection release is recorded on
+    the quality report. The erection foreman owns it for a structural
+    steel erector, with a qualified rigger on every lift.
+  why: >
+    A steel pick puts tons of load over a crew on a swinging path, and a
+    piece landed before it can stand on its own puts the frame at risk of
+    collapse. Wrong pick points twist a beam, a travel path over workers
+    or power lines is an incident waiting for a gust, and a connector
+    releasing a piece before the erection bolts are in is how a member
+    comes down on the crew. The process protects the crew, the crane, the
+    erected frame's tolerance, and the schedule that stops the moment a
+    piece has to come back down.
+  how: >
+    The foreman reads the current scope and revisions and confirms the
+    approved erection drawings, stable access, crane plan, piece sequence,
+    connection information, anchor condition, and concrete strength notice
+    before the first pick. The field controls are then set: rigging and
+    pick points per piece, tag line assignments, the travel path and
+    exclusion zone, landing and temporary support method, signals and
+    communication, the release rule for each piece, hold points for anchor
+    and base conditions, and the record the crew keeps by piece. During
+    erection the crew records each piece placed, rigging used, temporary
+    supports, bolt and connection status, plumb and tolerance readings,
+    and any changed condition such as wind, an anchor bolt out of
+    position, or a piece that does not fit, and stops until the condition
+    is resolved. At acceptance the foreman checks erection tolerances,
+    connection completion, weld and bolt records, decking stability, and
+    required inspection release, closes correction, and issues the
+    quality report.
+  controls:
+    - name: Pick plan per piece
+      note: Weight, pick points, rigging, and travel path are written for each member before it is rigged, and the rigger signs it.
+    - name: Rigging inspection before each shift
+      note: Slings, shackles, and hooks are inspected and the inspection recorded before the first pick of the shift.
+    - name: Exclusion zone under the load
+      note: The travel path is cleared and controlled before the pick, and a person under the load stops the pick.
+    - name: Release only on secured connection
+      note: A piece is released from the crane only when the minimum erection bolts or erection aids are in and the connector confirms it.
+    - name: Plumb and tolerance record before decking
+      note: Column plumb and frame tolerance are checked and recorded before decking or the next tier locks the frame in.

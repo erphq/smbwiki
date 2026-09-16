@@ -102,3 +102,58 @@ org:
     reports:
       - role: client-coordinator
       - role: interior-designer
+article:
+  operating_model: >
+    An interior design firm sells a sequence of decisions. The week moves
+    between client meetings, site measurement, drawing time, and vendor
+    follow-up: the principal and interior designers program the space,
+    plan it, specify finishes, and document the result, while the client
+    coordinator keeps the client brief, engagement letter, and approvals
+    current. Design programming, space planning, and finish specification
+    are the load-bearing skills, with furnishing procurement coordination
+    close behind, because a single finish change can move lead times,
+    substrates, and the installation sequence. The tension sits between
+    the hours a fee covers and the revisions a client asks for after
+    approval; time records against each engagement show whether the firm
+    is designing or redrawing.
+  starting: >
+    The definition binds no trade license, but some states restrict the
+    title of registered interior designer or require a stamp on commercial
+    permit drawings, so check the state board before advertising regulated
+    work and pair with an architect where permits demand it. Day-one
+    paperwork is the business registration, sales tax registration where
+    the firm resells furniture or finishes, professional liability
+    insurance, and employer registration once the first designer is hired.
+    The minimum team is a principal who designs and sells, an interior
+    designer, and a client coordinator handling intake, invoicing, and
+    receivables. The first records to set up are the client brief, the
+    engagement letter, the design program, the finish schedule, and the
+    time record, and the skills that must work from the first engagement
+    are client engagement, design programming, finish specification, and
+    interior design documentation. Capital needs are light: design
+    documentation software, a sample library, and a workspace where
+    clients can review boards and samples.
+  economics: >
+    Revenue comes from fixed-fee engagements, time-based work billed at
+    agreed rates, and recurring advisory arrangements; many firms also
+    earn a margin on furnishings procured for the client, which the
+    procurement coordination skill governs. Gross margin on an engagement
+    is the fee less the designer hours it consumed, so utilization rate
+    and engagement gross margin decide profit, with quote win rate and on-
+    time completion deciding how much work is available and whether it
+    finishes before the fee is exhausted. Work-in-progress age and days
+    sales outstanding matter because design fees are often staged against
+    approvals, and a stalled approval stalls billing. The business is
+    labor-intensive with little fixed equipment, which keeps capital low
+    but makes every unbilled revision a direct margin loss.
+  benchmarks:
+    - scope: Employees per establishment, interior design services (NAICS 541410)
+      value: 3.3 paid employees per establishment
+      note: 55,286 paid employees in the week of March 12, 2023 across 16,797 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, interior design services (NAICS 541410)
+      value: 66,767 dollars per employee (2023)
+      note: Annual payroll of 3,691,277 thousand dollars divided by 55,286 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

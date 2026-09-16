@@ -96,3 +96,61 @@ questions:
   - >-
     Which record proves commercial lease administration was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The commercial lease administration process turns each signed lease
+    into a calendar of dated obligations the property team acts on: rent
+    steps, option windows, notice deadlines, insurance certificates,
+    maintenance splits, permitted use, signage rights, audit rights, and
+    expense recoveries. It starts when a lease is executed or amended
+    and ends when the abstracted obligations have been performed for the
+    period and their results appear in the property operating statement.
+    A commercial property manager owns it through the property manager
+    and the lease administrator or accountant who bills recoveries.
+  why: >
+    It protects the owner's income and the tenant relationship from
+    drift. An option notice window that passes unnoticed hands the
+    tenant a renewal on stale terms or loses one the owner wanted. A
+    recovery billed from a clause nobody abstracted gets disputed at
+    reconciliation, when the paperwork is hardest to find. An expired
+    tenant insurance certificate is discovered after the incident. Lease
+    duties, physical operations, and accounting separate quietly until a
+    dispute or a major repair exposes the gap.
+  how: >
+    The property manager confirms the work basis by reading the current
+    lease and its amendments and verifying tenant contacts, vendor
+    contracts, the property budget, building systems, the compliance
+    calendar, and owner authority. The field controls are then set:
+    obligations abstracted into dated entries with a responsible person,
+    hold points such as notice deadlines and certificate renewals, and
+    the records each one will leave. As the period runs the operator
+    records charges, recoveries, notices sent and received, decisions,
+    and any condition that changes the planned method. Acceptance checks
+    the completed period against accurate charges and recoveries,
+    maintained common areas, controlled vendors, documented tenant work,
+    and timely owner reporting, and the property operating statement is
+    issued once corrections are closed.
+  controls:
+    - name: Lease abstract reviewed against the executed document
+      note: >
+        Every abstracted date, rate, and clause is checked by a
+        second person against the signed lease and its amendments.
+    - name: Critical-date calendar with owner and lead time
+      note: >
+        Option, notice, and expiry dates carry a responsible person
+        and an advance reminder that falls inside the notice period.
+    - name: Insurance certificate tracking
+      note: >
+        Tenant and vendor certificates are logged with expiry dates
+        and chased before lapse, with the result recorded on the
+        property file.
+    - name: Recovery billing tied to the clause
+      note: >
+        Each recovery charge references the lease clause and the
+        expense support that permits it before it reaches the
+        tenant.
+    - name: Operating statement reconciled to abstracts
+      note: >
+        Billed rent and recoveries on the property operating
+        statement are reconciled to the abstracts each period before
+        the owner report goes out.

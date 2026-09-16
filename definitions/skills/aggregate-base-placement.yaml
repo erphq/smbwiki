@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves aggregate base placement was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The aggregate base placement process is how a driveway paving
+    contractor builds the compacted stone layer that carries the
+    pavement above it. It starts when the site plan fixes the limits,
+    section, and drainage for the driveway or lot, after failed material
+    has been removed and the subgrade has been proofed, and it ends when
+    the base has been placed in lifts, compacted to the specified
+    density, and accepted on a test report that the asphalt crew can
+    rely on. The paving foreman owns it, with the grade checker and the
+    compaction operator working to his sequence.
+  why: >
+    Base is the layer nobody sees once the asphalt goes down, so a
+    defect here is paid for years later as cracking, rutting, and
+    pumping at the edges. Thin lifts placed on a wet subgrade, base
+    placed dry and never brought to moisture, a roller pattern that
+    misses the edges, and stone from an unapproved source all pass a
+    visual check and fail in service. Without a work basis and a test
+    report, the contractor cannot show the owner what was placed, cannot
+    defend a warranty claim, and cannot tell the next crew what is under
+    the surface.
+  how: >
+    Before placement the foreman reads the current site plan and
+    revisions and confirms the approved limits and drainage, that failed
+    material is out, that the subgrade is stable, that the section
+    thickness is confirmed, that the aggregate source is available, that
+    the weather window holds, and that traffic control is in place. He
+    then sets the field controls: lift thickness, target moisture,
+    spreading method, edge confinement, roller pattern, and the hold
+    point for density testing, written where the crew can use them.
+    During placement the crew records quantities delivered, lift depths,
+    moisture adjustments, and any concealed condition, and stops if the
+    subgrade or drainage differs from the plan. At acceptance the base
+    is checked against thickness, density, grade, smoothness, and
+    drainage, corrections are closed, and the test report is issued.
+  controls:
+    - name: Approved source and gradation ticket
+      note: Every load carries a ticket from the approved pit, and a load from another source is rejected at the gate before it is spread.
+    - name: Lift thickness check per lift
+      note: Depth is measured against the specified maximum lift before compaction begins, and an overthick lift is bladed down before the roller runs.
+    - name: Density test at the hold point
+      note: A density test is taken at the agreed frequency and location, and the next lift or the asphalt does not go down until it passes.
+    - name: Grade and drainage verification
+      note: Finished base grade is shot against the plan and the flow path is confirmed before the surface is covered.
+    - name: Test report issued before paving
+      note: The test report with quantities, tests, and corrections is closed and filed before the asphalt crew is scheduled.

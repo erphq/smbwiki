@@ -92,3 +92,47 @@ questions:
   - >-
     Which record proves exterior inspection was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The exterior inspection process is the outside portion of a home
+    inspection: the inspector walks the site and the building envelope
+    observing drainage, grading, cladding, openings, roof drainage, decks,
+    walks, vegetation, and the visible paths water takes around the house,
+    and records what was seen, what could not be accessed, and what it means
+    for the buyer. It starts from a signed client brief and ends with an
+    inspection report delivered on time. A home inspection service's
+    licensed inspector owns it and is personally responsible for the
+    conclusions.
+  why: >
+    A buyer relies on the report to decide whether to proceed and at what
+    price. A missed area, such as a deck ledger that was never looked at,
+    becomes a claim against the inspector when it fails. A vague limitation,
+    like some areas not accessible, gives the buyer no idea what was left
+    unchecked. An unsupported conclusion that a stain is cosmetic when it is
+    an active leak costs the buyer a repair and the inspector a reputation.
+    The process keeps the observation complete, the limitations specific,
+    and the evidence attached to every defect.
+  how: >
+    The inspector reads the client brief and confirms the signed scope, the
+    identified property, agreed access, known occupancy and utilities,
+    required disclosures, tools, and the weather on the day. Field controls
+    set the walking sequence around the building, the elevations and systems
+    to be observed, the photographs required at each, the point where the
+    inspector stops to record a limitation, and the report fields each
+    observation lands in. During the walk the inspector records observations
+    by location, photographs defects and water paths, notes anything
+    concealed or inaccessible, and stops when site conditions differ from
+    the brief. Acceptance checks that every accessible system was observed,
+    limitations are stated, defect evidence is clear, risk significance is
+    assigned, and the report reaches the client on time.
+  controls:
+    - name: Sequence walked in full
+      note: The inspector follows a fixed route covering every elevation and site element and marks each as observed, limited, or inaccessible.
+    - name: Photograph per defect and per limitation
+      note: Every reported defect and every area left uninspected has a located photograph in the report.
+    - name: Limitation stated with a reason
+      note: Each limitation names what was not observed and why, such as stored items, vegetation, or weather on the day.
+    - name: Significance assigned to each finding
+      note: Findings carry a risk level and a recommended action so the buyer can tell a cosmetic issue from a structural one.
+    - name: Report delivered inside the agreed time
+      note: The report is issued by the deadline in the client brief, and the delivery time is recorded.

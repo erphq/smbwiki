@@ -60,3 +60,52 @@ org:
 supply_chain:
   buys_from: [food-distributor, hospitality-supply-distributor]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A bed-and-breakfast inn sells a few rooms and a host. The week is
+    check-ins, breakfasts, and turnovers: the reservation record sets
+    the arrival window and dietary notes, breakfast is cooked to the
+    count for the morning, rooms are turned between departure and the
+    next arrival, and the owner-operator answers the guest questions
+    that a hotel would route to a department. Reservation management,
+    room turnover, and guest stay are the load-bearing skills, and the
+    owner usually covers all three, with a housekeeper and sometimes a
+    front-desk agent or line-cook on busy days. The tension is
+    inventory: with a handful of rooms, one maintenance hold or a late
+    cancellation is a large share of the night's revenue, and the same
+    person who is fixing the water heater is the one who is supposed to
+    be serving breakfast.
+  starting: >
+    The inn is first a property decision: the building must be zoned or
+    permitted for transient lodging, which in many cities means a
+    bed-and-breakfast or short-term rental permit, a fire and life
+    safety inspection for sleeping rooms, and a certificate of occupancy
+    for the use. Serving breakfast brings a food service permit and a
+    food handler card in most jurisdictions. The universal items are the
+    business registration, lodging and sales tax registration, since
+    most states and cities levy an occupancy tax on room nights, and an
+    employer registration once the first housekeeper is hired. The
+    minimum team is an owner-operator who lives on site or nearby and a
+    housekeeper, with a front-desk agent and a line-cook added as
+    occupancy justifies. The first records are the reservation record,
+    the room status board, the guest folio, the cleaning log, and the
+    maintenance log, plus a listing on the booking channels the property
+    will depend on. Reservation management, guest stay, room turnover,
+    facility cleaning, and equipment maintenance have to work from the
+    first guest.
+  economics: >
+    Revenue is room and breakfast, priced per night with breakfast
+    included, and small property extras such as packages, added meals,
+    and services. The rate is set against season, day of week, and the
+    local comparable set, and occupancy rate against that rate is the
+    top line; because the room count is small, a single unsold room is a
+    large share of the night. Average ticket rises with extras and
+    longer stays. Gross margin is high on the room itself, since the
+    marginal cost of an occupied night is cleaning, laundry, breakfast,
+    and utilities, so room turn time and labor cost percentage decide
+    what is left. Equipment uptime matters because one failed boiler
+    takes rooms out of inventory. The inn is capital intensive in the
+    property and the owner's own labor is the largest unpaid input,
+    which is why margins are judged after a fair wage to the host and a
+    reserve for the building, and why seasonality decides whether the
+    year covers the mortgage.

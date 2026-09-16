@@ -90,3 +90,48 @@ automation:
 questions:
   - Which sales promise most often conflicts with access or billing later?
   - Can a new member explain the recurring charge and cancellation route?
+article:
+  what: >
+    The member sales process takes a person who has walked in, called,
+    or finished a trial and turns that interest into a signed membership
+    agreement whose terms the member can repeat back: which location and
+    facilities, which plan, what recurs and when, how long the commitment
+    runs, how it pauses or ends, and when access starts. It begins with a
+    membership application and ends with an activated account, a signed
+    agreement, and a completed liability waiver. A membership advisor
+    owns it in a gym, and in a boutique studio the owner or the
+    front-desk lead runs it.
+  why: >
+    It protects the recurring revenue that the agreement creates and the
+    relationship that has to survive the first renewal. An agreement
+    sold on a promise the system cannot enforce, a second location, a
+    class pass, a cancellation route that does not exist in the terms,
+    turns into an access argument at the door or a billing dispute on
+    the first debit. A plan chosen without asking how the member intends
+    to train produces a member who cannot use what they are paying for
+    and cancels early. The waiver step is where the member gets to
+    disclose a condition before using the equipment.
+  how: >
+    The membership advisor starts from the application and asks about
+    intended use: which location, what times, which facilities or
+    classes, whether training is wanted, and how often the person
+    expects to come. That determines which plans fit. The advisor then
+    explains the chosen plan from the actual agreement text: access
+    boundaries, the recurring price and any add-on charges, the
+    commitment term, renewal, pause rules, and the cancellation route.
+    The agreement is completed with the selected plan and every promise
+    made in conversation written into the same terms the member signs.
+    The member then completes the liability waiver with time to disclose
+    relevant concerns and ask how facility rules apply, and the account
+    is activated with a start date.
+  controls:
+    - name: Intended use recorded before plan choice
+      note: The application captures location, schedule, facilities, and expected frequency, and the plan selected is checked against them before terms are discussed.
+    - name: Terms explained from the document
+      note: The advisor walks the recurring charge, commitment, pause, and cancellation route from the agreement itself, and the member confirms each in the sale record.
+    - name: Promises inside operable terms
+      note: Any exception offered in conversation is written into the signed agreement or withdrawn, and sales notes are compared to signed terms at activation.
+    - name: Waiver completed before first use
+      note: The liability waiver is signed with a disclosure opportunity before any facility access, and activation is blocked until it is on file.
+    - name: Early failures fed back
+      note: Access denials and first-charge disputes in the first weeks are reviewed against the sale record to find the explanation that was missed.

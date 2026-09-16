@@ -35,3 +35,53 @@ summary: >
 supply_chain:
   buys_from: [electronics-distributor]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    An electronics store sells serialized devices and the accessories,
+    setup, trade-in, and protection plans that attach to them. The week
+    runs on receiving and secure storage, the floor conversation that
+    matches a customer's existing equipment to a compatible model,
+    serial capture at the register, and return disposition for open-box
+    units. The load-bearing skills are the serialized electronics sale,
+    retail replenishment, and payment reconciliation, because every unit
+    has one record that must agree with the shelf, the receipt, and the
+    warranty. The tension is between demonstration stock and shrink: the
+    same handling that lets a customer try a device exposes it to loss,
+    price drops, and open-box markdown.
+  starting: >
+    Day one needs a business registration, sales tax registration
+    because nearly all sales are taxable goods, employer registration
+    once the first associate is hired, and supplier accounts with an
+    electronics distributor, which usually means credit references and a
+    resale certificate. Some states require a separate registration for
+    selling extended service or protection plans, so check before
+    offering them. The minimum roles are an owner-operator, a retail
+    manager, a sales associate, a stock associate, and an electronics
+    advisor who owns the setup and compatibility conversation. The first
+    records are the stock record, the serialized product record,
+    purchase orders, inventory receipts, sales receipts, return records,
+    and the shift schedule. The skills that must work from the first
+    open are retail replenishment, the retail sale, the serialized
+    electronics sale, purchasing, and payment reconciliation, with
+    secure storage and demonstration stock control settled before
+    inventory arrives.
+  economics: >
+    Revenue is merchandise sales, special orders, and the device margin
+    with setup, trade-in, installation, and protection-plan revenue
+    attached. Pricing follows manufacturer and distributor structures,
+    so the margin on the device itself is thin and the attachment sale
+    carries the store. Gross margin percentage is driven by mix:
+    accessories, setup, and protection plans earn far more per dollar
+    than the headline device, and open-box and end-of-life markdowns
+    erode it. The metrics that decide profit are average ticket, gross
+    margin percentage, inventory turnover, stockout rate, and labor cost
+    percentage. Inventory is capital-heavy and loses value on a release
+    calendar, so slow turnover ties up cash in units that are about to
+    be repriced, and a trained advisor's labor is only paid back when
+    attachment rates hold.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, electronics and appliance retailers
+      value: "$7.06 million receipts per establishment; payroll 6.8 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 449210 (electronics and appliance retailers, which includes appliance stores and large chains) in the 2022 Economic Census, establishments with payroll; sales of $175.3 billion across 24,833 establishments, annual payroll of $12.0 billion, 261,761 employees (about ten per establishment).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector44/EC2244BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Retail Trade: Summary Statistics for the U.S., States, and Selected Geographies, EC2244BASIC (2022)"

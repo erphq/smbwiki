@@ -84,3 +84,50 @@ automation:
 questions:
   - Which facts in the chart were reconfirmed for this visit?
   - What intake exception can still delay or change today's care?
+article:
+  what: >
+    The patient intake process gets a scheduled person and their chart
+    ready for the clinician, so that identity, contact details, the
+    reason for the visit, history, medications, allergies, consent, and
+    payer information are all confirmed for today before care begins. It
+    starts when the person arrives or checks in ahead of the appointment
+    and ends when the clinical team opens a chart they can rely on, with
+    the current concern and any safety issue at the top. The front-desk
+    or intake coordinator owns it in a dental clinic, a primary care
+    practice, or a physical therapy clinic; in a veterinary clinic it
+    belongs to the receptionist working with the animal's owner.
+  why: >
+    It protects the patient from being treated on someone else's
+    information or on their own outdated information. Two records with
+    similar names opened side by side is how one person's medication
+    list ends up on another's chart. A history carried forward from the
+    last visit without asking means the clinician acts on an allergy or
+    a drug list that changed months ago. Consent signed as paperwork
+    without a chance to ask what it covers is consent the practice
+    cannot defend. And a new concern written in a free-text note while
+    the visit summary stays blank sends the clinician into the room
+    without the reason the patient came.
+  how: >
+    The intake coordinator matches the person to the appointment record
+    and the patient registration using more than a name, and confirms
+    the visit purpose, before anything is added to the chart. Current
+    facts are then updated for this visit: changes in symptoms, history,
+    medications, allergies, contact details, and payer information are
+    asked about and entered with the date they were confirmed. Required
+    consents and acknowledgements that are missing or expired are
+    completed while the patient can ask what they cover. Finally the
+    chart is prepared: the current concern, any newly reported safety or
+    communication issue, and open intake exceptions are placed where the
+    clinician sees them first, and billing exceptions are routed to
+    their owner.
+  controls:
+    - name: Two-identifier match
+      note: The person is matched to the appointment and registration by at least two identifiers, and staff do not work from a name search with multiple similar results.
+    - name: Dated reconfirmation of history
+      note: Medications, allergies, and conditions carry the date they were last confirmed, and today's visit updates that date or records the change.
+    - name: Consent completed with explanation
+      note: Missing or expired consents are listed at check-in and completed with the patient present and able to ask what each one covers.
+    - name: Visit reason visible on the chart
+      note: The reason for the visit and any new safety concern are entered in the summary field, and a chart with only free-text notes is flagged.
+    - name: Intake exceptions routed
+      note: Identity conflicts, urgent clinical concerns, and eligibility problems go to a named clinical or billing owner before the patient is roomed.

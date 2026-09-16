@@ -88,3 +88,44 @@ automation:
 questions:
   - Who independently releases complex or safety-related repairs?
   - Can each failed quality check be traced to a changed shop practice?
+article:
+  what: >
+    The repair quality control process is the independent check between
+    the technician's completion and the customer's pickup. It begins when
+    a repair completion is submitted and ends when a named checker has
+    inspected the work area, rerun the original concern where practical,
+    and either released the vehicle with the evidence named or returned
+    it to the bay with a specific defect. In an auto repair shop, a tire
+    dealer, or a dealership service department it is owned by the shop
+    foreman, who has the authority to delay delivery.
+  why: >
+    The person who did the work carries the same assumptions into
+    checking it. Without an independent gate, an omission made during
+    repair is overlooked again at release, a generic checklist is ticked
+    while the customer's actual concern goes untested, and a known defect
+    reaches pickup because the vehicle was promised and the bay needed
+    space. The process transfers that pressure to a checker who starts
+    from the promised result and the original symptom and whose release
+    is recorded with the evidence behind it.
+  how: >
+    The shop foreman reviews the repair completion to learn what was
+    repaired, what test was run, and what remained outside the approved
+    scope. The foreman inspects the work area for fasteners, routing,
+    leaks, covers, warning indicators, and vehicle condition where the
+    work occurred, and verifies the concern by rerunning the original
+    condition where practical using the operating detail recorded at
+    intake and diagnosis. The foreman then releases or returns the
+    vehicle: a failed check goes back to the bay with a specific defect
+    on the quality check, and a passed check names the evidence
+    supporting release, so the service advisor can proceed to checkout.
+  controls:
+    - name: Second person on complex or safety work
+      note: Completion and release are recorded by different people for brake, steering, suspension, and other safety-related repairs.
+    - name: Operation-specific checklist
+      note: The check items follow the repair performed and the customer's concern, so identical records across unrelated repairs signal a problem.
+    - name: Original concern rerun and recorded
+      note: The quality check states whether the intake symptom was reproduced before and absent after, under the same operating conditions.
+    - name: Failed check returns the vehicle
+      note: An open quality finding sets the vehicle to returned, never to ready, until the defect is corrected and rechecked.
+    - name: Release evidence named on the record
+      note: The passed check lists the tests, scans, and observations supporting release, with the checker's name and time.

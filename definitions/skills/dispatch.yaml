@@ -79,3 +79,52 @@ questions:
   - What is allowed to break a promise window, and who approves it?
   - Which technician takes the 2am call, and is that a system or a
     habit?
+article:
+  what: >
+    The dispatch process is the daily act of turning booked job requests
+    into a sequence of technician assignments that keeps promise windows
+    while filling every truck. It starts when the day's calls are ranked
+    on the board and ends when each work order has been cut, run, and
+    reshuffled through the day without a broken promise. In an HVAC
+    contractor, a plumbing contractor, or an electrical contractor it
+    belongs to one dispatcher who owns the board, with the service
+    manager setting what may override a promise.
+  why: >
+    It protects the promise the office made to a customer who took the
+    day off, and the revenue each truck can earn. A technician sent
+    without the license or history for the address produces a callback
+    and a burned slot. A board packed by revenue alone creates
+    windshield time that quietly eats a job per truck. A same-day
+    reshuffle that touches an already promised slot spends tomorrow's
+    trust for today's billing. The dispatcher prices that trade all day,
+    one assignment at a time.
+  how: >
+    The dispatcher builds the board from the job requests, ranking the
+    day's calls by urgency, agreement status, and geography. Each job is
+    matched to a technician on skills and licenses first, drive time
+    second, and revenue third. The work order is cut with scope, site
+    history, and the parts likely needed so the truck arrives ready. As
+    the morning plan becomes obsolete, the dispatcher reshuffles live,
+    moving work between trucks without breaking a promise window and
+    escalating any exception that would.
+  controls:
+    - name: Board ranked by urgency, agreement, and geography
+      note: >
+        Every call is ranked on all three before assignment, and the
+        ranking is visible to the service manager.
+    - name: Skill and license match on the work order
+      note: >
+        The work order records the technician's qualification for
+        the job type, and a mismatch cannot be dispatched.
+    - name: Promise-window override approved
+      note: >
+        Any reshuffle that moves an already promised slot needs the
+        service manager's approval and a customer contact record.
+    - name: Jobs per truck and windows kept reviewed together
+      note: >
+        The dispatcher's daily results are reviewed on both measures
+        so neither is traded away silently.
+    - name: Named backup for the board
+      note: >
+        A second person is trained and named to own the board when
+        the dispatcher is out, and the handover is recorded.

@@ -89,3 +89,48 @@ questions:
   - >-
     Which record proves gate installation was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The gate installation process sets the posts that carry a gate's load,
+    establishes the clearances the leaf needs, hangs the leaf, aligns
+    latch and stops, connects and adjusts any operator, and verifies
+    travel and security. It starts when the boundary or alignment is
+    verified, utilities are located, and the gate system, grade, and
+    geometry are known, and it ends when the gate swings or slides as
+    designed, latches, sits at the right line and grade, and the site is
+    restored, with the quality report issued. The crew lead owns it for a
+    fence contractor.
+  why: >
+    A gate is the part of a fence the owner touches every day and the part
+    that fails first. Posts set without regard to the leaf load lean
+    within a season, a gate hung before grade is known drags or leaves a
+    gap, a latch aligned on the day drifts as the post settles, and an
+    operator adjusted to a binding leaf strains until it stops. The
+    process protects the fence contractor's callback rate, the owner's
+    security, and the operator warranty.
+  how: >
+    The crew lead reads the current scope and revisions and confirms the
+    verified boundary or approved alignment, located utilities, selected
+    gate system, known finished grade, gate geometry, material, and access
+    before digging a post hole. The field controls are then set: post
+    depth and footing for the leaf load, the sequence of posts, cure,
+    hanging, latch, and operator, the hold points for post plumb and cure
+    and for clearance before hanging, and the record the crew keeps.
+    During installation the crew records post embedment and footing,
+    clearances measured against grade, hinge and latch positions, operator
+    settings, and any condition such as a utility conflict or a grade
+    change that altered the plan. At acceptance the lead checks line,
+    grade, post embedment, spacing, fastening, gate operation, finish
+    condition, security, and site restoration, closes correction, and
+    issues the quality report.
+  controls:
+    - name: Utility locate on record before digging
+      note: The locate ticket and the marked utilities are recorded in the field record before any post hole is dug.
+    - name: Post embedment and cure hold point
+      note: Post depth, footing, and plumb are recorded, and the leaf is not hung until the footing has cured.
+    - name: Clearance check against finished grade
+      note: Ground clearance across the full swing or travel is measured against the known finished grade before the leaf is hung.
+    - name: Operator settings recorded
+      note: Force, limit, and safety settings on any gate operator are written on the quality report at commissioning.
+    - name: Operation and security test at acceptance
+      note: The gate is cycled, latched, and locked with the owner present, and the result is recorded on the quality report.

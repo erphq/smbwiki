@@ -35,3 +35,52 @@ summary: >
 supply_chain:
   buys_from: [book-distributor, publisher]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A bookstore sells selection and the people who made it. The week is
+    receiving and shelving new releases by exact identifier, handselling
+    on the floor, taking special orders and preorders, and pulling aged
+    stock for return to the distributor or publisher before the return
+    window closes. The retail-manager places the buys and manages
+    returns, booksellers know the shelves and the customers, and stock
+    associates receive and shelve. Title discovery and special order is
+    the load-bearing skill, with retail replenishment deciding whether
+    the new release is on the table on its release date. The tension is
+    the return privilege: the trade lets a store send unsold titles back
+    for credit, which makes broad selection possible, but every returned
+    book cost freight and shelf time, so the buyer is always choosing
+    between a wide table and cash.
+  starting: >
+    Day one needs the business registration, a sales tax permit, an
+    employer registration once the first bookseller is hired, and a
+    certificate of occupancy for the retail space; there is no trade
+    license for bookselling in the United States. The gating items are
+    commercial: accounts with a book distributor and with the publishers
+    whose terms the store will depend on, credit terms and return
+    privileges on those accounts, and an opening inventory buy that will
+    be the largest single outlay. The minimum team is an owner-operator
+    or retail-manager who buys and one bookseller, with a stock
+    associate as receiving volume grows. The first records are the
+    purchase order and inventory receipt for the opening buy, the stock
+    record by identifier, the title order record for special orders and
+    preorders, the sales receipt, and the return record that tracks what
+    went back and what credit was received. Retail sale, purchasing,
+    retail replenishment, title discovery and special order, and payment
+    reconciliation must work from the first day.
+  economics: >
+    Revenue is title sales, preorders, institutional orders, and
+    ticketed or sponsored events, plus general merchandise and special
+    orders. Books are priced at the publisher's cover price, so the
+    store does not set the price; it earns the difference between cover
+    and the discount the distributor or publisher gives it, which is why
+    gross margin percentage is decided by the buying terms and by the
+    mix of trade books against higher-margin sidelines. Inventory
+    turnover decides profit more than anything else, because the store's
+    cash is on the shelf and a title that does not sell before the
+    return window is a loss on freight both ways. Stockout rate on new
+    releases loses the sale to online sellers. Average ticket rises with
+    sidelines, cards, and events; labor cost percentage against modest
+    gross margin is the second deciding metric. The business is
+    inventory-capital intensive, and events, memberships, and
+    institutional orders exist to lift margin above what cover-price
+    bookselling alone yields.

@@ -86,3 +86,47 @@ automation:
 questions:
   - Which menu item creates the most disruption outside its own station?
   - Do all ordering channels show the same current price and availability?
+article:
+  what: >
+    The menu planning process decides what a food operation will sell,
+    at what price, with which modifiers, and through which channels, and
+    confirms the kitchen can produce it during a normal service before
+    it is published. It starts with a costed recipe card for a proposed
+    item and ends with a published menu carrying one effective date
+    across the counter, the kitchen references, the ordering channels,
+    and the supplier order. In a full-service restaurant the chef and
+    the owner own it together; in a coffee shop, a food truck, or a
+    retail bakery the owner usually decides with the lead on the line.
+  why: >
+    It protects margin and service stability. An item costed on
+    ingredients alone can look profitable while its prep time, waste,
+    packaging, and slow assembly consume the margin on every ticket. An
+    item that overloads one appliance or one station slows unrelated
+    orders and destabilizes the whole service period, which is a cost
+    the recipe card never shows. And when the counter, delivery, and
+    online menus carry different versions, staff take orders at prices
+    and with modifiers the operation cannot fulfil as displayed, and
+    every one of those becomes a correction at the pass.
+  how: >
+    The owner or chef reviews the item economics from the recipe card:
+    portion cost, expected waste, packaging, and the labor the item
+    loads onto the line, before any selling price is discussed. The item
+    is then run through the operation as a test: prep, storage, station
+    space, equipment, ticket flow, and the handoff to service, to see
+    what it does to other orders. Price and boundaries are set next:
+    size, included sides, allowed modifiers, availability by daypart,
+    and channel rules, so an order cannot become a new recipe at the
+    counter. Publication is a single change: the menu, kitchen
+    references, ordering channels, supplier needs, and staff training
+    all switch on one effective date.
+  controls:
+    - name: Full cost before price
+      note: The recipe card carries portion, waste, packaging, and labor before a price is proposed, and an item with only ingredient cost cannot advance.
+    - name: Service test recorded
+      note: The item is run during a live or simulated service and its effect on station load and ticket times is noted before approval.
+    - name: Modifier and channel boundaries written
+      note: Allowed modifiers, sizes, sides, availability, and channel rules are defined in the menu system, so free-text substitutions are blocked at order entry.
+    - name: One effective date across channels
+      note: Counter, online, delivery, and kitchen references are compared at publication and again after any price change so no channel drifts.
+    - name: Item review with waste and disruption
+      note: Item performance is reviewed with waste and station disruption alongside sales so weak items are removed cleanly instead of lingering.

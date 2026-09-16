@@ -23,3 +23,70 @@ revenue_model:
 supply_chain:
   buys_from: [grocery-wholesaler, beverage-distributor]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A convenience store week runs on deliveries, shifts, and the
+    register. Grocery wholesalers and beverage distributors deliver
+    several times a week, the stock associate receives against purchase
+    orders and fills shelves and coolers with little reserve stock, and
+    sales associates keep short visits moving through checkout while
+    handling age-restricted sales, lottery, prepared food, and cash.
+    The retail manager watches stockouts, spoilage, shrink, price
+    changes, and cash differences at each shift handoff. The
+    load-bearing skills are retail replenishment, retail sale, and
+    payment reconciliation, because a cooler that runs out on a hot
+    afternoon and a cash drawer that does not balance are the failures
+    that recur daily. The tension is between long hours with thin
+    staffing and the attention that security, equipment alarms, and
+    compliance checks demand from the same person who is serving the
+    line.
+  starting: >
+    Starting a convenience store is a site and supplier decision: a
+    corner with traffic, a lease that allows long hours, and accounts
+    with a grocery wholesaler and a beverage distributor who will
+    deliver frequently to a small store. Day-one paperwork is the
+    business registration, sales tax registration, employer
+    registration once staff are hired, a certificate of occupancy, and,
+    depending on what is sold, a tobacco retail license, a lottery
+    retailer agreement, a beer and wine license where the state allows
+    it, and a food service permit with a health inspection for any
+    prepared food. Fuel adds tank registration and environmental
+    compliance and sits outside this model. The minimum team is a
+    retail manager, often the owner, and enough sales associates to
+    cover every open hour with a second person on late shifts where
+    security requires it; a stock associate is added once deliveries
+    exceed what the floor staff can put away. The first records are the
+    purchase order, the inventory receipt, the stock record, the sales
+    receipt, the return record, the shift schedule, and the payment
+    record, kept in a retail management system with scanning at the
+    register. Purchasing, retail replenishment, retail sale, payment
+    reconciliation, and staff scheduling must work from the first open.
+  economics: >
+    Revenue is convenience merchandise, meaning packaged food, drinks,
+    household items, and other immediate-need goods, plus prepared food
+    and services such as foodservice, lottery, and bill payment.
+    Pricing is per item at a premium over grocery prices in exchange
+    for proximity and hours, and gross margin varies widely by
+    category: cigarettes and lottery carry thin margins on high volume,
+    packaged beverages and prepared food carry the wide ones. The
+    metrics that decide profit are gross margin percentage by category,
+    inventory turnover, stockout rate, average ticket, and labor cost
+    percentage, because the store earns on many small baskets and
+    cannot afford either an empty cooler or a full backroom. Shrink
+    from theft, spoilage, and cash differences comes straight out of
+    margin and is why payment reconciliation and receiving discipline
+    matter as much as sales. The business is labor-intensive relative
+    to its ticket size because of long hours, and moderately
+    capital-intensive in refrigeration and fixtures, so profit depends
+    on the mix shifting toward prepared food and beverages.
+  benchmarks:
+    - scope: Foodservice share of in-store sales and of in-store gross margin dollars
+      value: 27.7 percent of in-store sales, 38.6 percent of in-store gross margin dollars, 2024
+      note: "NACS State of the Industry data for U.S. convenience stores, calendar 2024; foodservice includes prepared food, commissary, and hot, cold, and frozen dispensed beverages. Total in-store sales were 335.5 billion dollars across 152,255 stores in the same release."
+      source: https://www.convenience.org/stay-current/press-releases/2025-press-releases/c-store-foodservice-delivered-exceptional-growth-i
+      source_name: NACS, C-Store Foodservice Delivered Exceptional Growth in 2024, State of the Industry Summit press release (April 2025)
+    - scope: Packaged beverages share of in-store sales and of gross profit dollars
+      value: 17.9 percent of in-store sales, 21.2 percent of gross profit dollars, 2024
+      note: "Same NACS State of the Industry release; packaged beverages exclude beer, wine, and liquor."
+      source: https://www.convenience.org/stay-current/press-releases/2025-press-releases/c-store-foodservice-delivered-exceptional-growth-i
+      source_name: NACS, C-Store Foodservice Delivered Exceptional Growth in 2024, State of the Industry Summit press release (April 2025)

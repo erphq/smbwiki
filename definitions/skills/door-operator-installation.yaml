@@ -95,3 +95,47 @@ questions:
   - >-
     Which record proves door operator installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The door operator installation process starts when a work order assigns
+    a crew to a verified opening and ends when the operator has been
+    mounted, wired, set for travel and force, fitted with a manual release,
+    tested for reversal, and handed to the owner with a commissioning
+    record. A garage door contractor runs it on every powered residential
+    and commercial door, and the lead installer owns it under the service
+    manager or the owner.
+  why: >
+    A powered door is a moving load over people and vehicles. When the
+    process is weak the operator gets mounted on a door whose spring balance
+    was never checked, so the motor carries weight it was never sized for
+    and the drive fails early or the door drops when the release is pulled.
+    Force limits set by feel let the door close on an object without
+    reversing. A photoelectric sensor out of alignment, a release the owner
+    was never shown, and a blank commissioning record mean the next
+    technician has no basis for a callback and the contractor has no proof
+    the safety functions worked on the day of handover.
+  how: >
+    The installer reads the work order and the current scope, then confirms
+    the opening and structure, the selected door and operator, the
+    electrical provision, the hardware and spring design, and site
+    protection before unloading. The crew lead sets the field controls:
+    which door is worked first, where the hold points fall (spring balance
+    before the operator is attached, force and travel before the first
+    powered cycle), and which record each check lands in. During the install
+    the crew records mount points, wiring route, travel and force settings,
+    and any concealed condition, and stops when the opening or structure
+    differs from the plan. Acceptance checks secure attachment, balanced
+    travel, clearances, control function, entrapment reversal, manual
+    release, seals, and owner instruction; corrections are closed and the
+    commissioning record is issued.
+  controls:
+    - name: Spring balance check before attachment
+      note: The door is balanced by hand and held at mid travel before the operator carriage is connected, and the result is written in the field record.
+    - name: Entrapment reversal test on record
+      note: The reversal test against a fixed obstruction and the photoelectric interruption test are run, witnessed, and recorded with the force setting used.
+    - name: Manual release demonstrated to the owner
+      note: The owner operates the release and reconnects the carriage in front of the installer, and the commissioning record notes who was instructed.
+    - name: Changed-condition stop
+      note: When the header, structure, spring, or power provision differs from the work order, the crew stops and gets the revised method approved before continuing.
+    - name: Commissioning record issued before the truck leaves
+      note: The record carries the settings, tests, photos, and open corrections, and the job stays open in the office until every field is complete.

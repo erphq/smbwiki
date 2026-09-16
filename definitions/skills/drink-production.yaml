@@ -87,3 +87,44 @@ automation:
 questions:
   - Where does work in progress accumulate during the busiest service period?
   - Which remake reason should change the station or ticket setup?
+article:
+  what: >
+    The drink production process is what happens between an order ticket
+    reaching the bar and a finished beverage leaving it under the right
+    name: the barista reads the ticket against the recipe card, marks the
+    cup, sequences the grinder, espresso machine, steam wand, blender, and
+    cold bar across the tickets already in progress, builds to the recipe,
+    and checks the drink against the ticket at handoff. A coffee shop runs
+    it all day at every bar position, and the bar lead or shift supervisor
+    owns the station setup and the sequence.
+  why: >
+    Every remake costs product, a minute of bar time, and the customer's
+    confidence in the next order. When cups are not marked before the first
+    irreversible step, the wrong milk or size is discovered at the counter
+    after the whole build. When shared equipment is not sequenced, shots die
+    in the portafilter while milk steams, and the queue in front of the
+    espresso machine becomes the real bottleneck no one can see. When the
+    handoff is not checked, a correct drink goes to the wrong person and the
+    right customer waits for a remake that was never needed.
+  how: >
+    The barista takes the ticket, reads size, base, temperature, milk,
+    modifiers, and the pickup name from it and the recipe card, and marks
+    the cup before touching the grinder. With the ticket marked, the barista
+    orders the work across the active tickets: shots pulled when the milk is
+    nearly ready, cold builds started while a blender runs, so that no
+    component waits on another past its window. The drink is built to the
+    recipe card's dose, yield, amounts, and temperature, consistent across
+    bar positions. Before it leaves the bar, the ticket, the cup mark, the
+    drink in hand, and the customer or pickup identity are compared, and
+    remakes are logged with a reason so the station setup can change.
+  controls:
+    - name: Cup marked before the first shot
+      note: Size, milk, temperature, modifiers, and the pickup name are on the cup before any irreversible step begins.
+    - name: Recipe card visible at every position
+      note: Dose, yield, ingredient amounts, and temperature come from the posted card so drinks match regardless of who builds them.
+    - name: Handoff check against the ticket
+      note: The barista reads the ticket and the cup mark together and calls the pickup name before the drink leaves the bar.
+    - name: Remake reason logged
+      note: Every remake is recorded with its cause so the shift lead can see whether layout, training, or equipment needs to change.
+    - name: Equipment queue watched during peaks
+      note: The shift lead checks where work in progress is piling up and moves a position when one machine becomes the hidden queue.

@@ -24,3 +24,54 @@ revenue_model:
 supply_chain:
   buys_from: [media-owner, production-vendor]
   sells_to: [commercial-client]
+article:
+  operating_model: >
+    An advertising agency turns a client brief into creative and media
+    work and gets paid for the judgment in between. A week runs in
+    rounds: research and concept for new briefs, production and review
+    for work in flight, trafficking and launch for approved work, and
+    monitoring and reporting for what is live. The client-coordinator
+    owns the approval trail and the versions, the professionals
+    (strategists, creatives, media planners) own the work, and the
+    principal owns the client relationship and the scope. Client
+    engagement and professional service delivery are the load-bearing
+    skills, with staff scheduling close behind because creative capacity
+    is booked in days. The tension is between what the client approved
+    and what the client now wants: unbilled revisions eat the margin on
+    a fixed campaign fee, and media spend that runs without a signed
+    authorization is the agency's liability.
+  starting: >
+    There is no trade license for advertising in the United States; day
+    one needs the business registration, sales tax registration where
+    the state taxes advertising or production services, and an employer
+    registration once the first hire is made. The contracts matter more
+    than the permits: an engagement letter or master services agreement
+    that separates agency fees from pass-through media and production,
+    states who holds usage rights to the creative, and fixes the
+    approval structure and spend authority. The minimum team is a
+    principal who sells and directs, one professional who can carry
+    strategy and creative, and a client-coordinator who runs the
+    approval trail; media buying and production are bought from media
+    owners and production vendors until volume justifies staff. The
+    first records are the client brief, the engagement letter, the
+    deliverable register with versions and approvals, and time records
+    per campaign. Lead intake, client engagement, professional service
+    delivery, invoicing, and accounts payable to vendors must all work
+    from the first campaign, because the agency often pays the media
+    owner before the client pays the agency.
+  economics: >
+    Revenue comes from campaign and retainer fees for strategy,
+    creative, production, and account service, and from authorized media
+    and production management compensation, whether a commission on
+    placement, a markup, or a management fee on outside production.
+    Pass-through media is the trap: it inflates the top line while
+    contributing little margin and a lot of receivable risk. Gross
+    margin is agency fee less the staff hours behind it, so utilization
+    rate and engagement gross margin decide profit, with
+    work-in-progress age and days sales outstanding showing whether the
+    agency is financing its clients. Quote win rate and booking rate
+    size the pipeline against the payroll. The business is almost pure
+    labor; the retainers that cover a stable share of payroll are what
+    keep a small agency solvent between campaign wins, and the swing
+    between pitch season and production season is where margin is made
+    or lost.

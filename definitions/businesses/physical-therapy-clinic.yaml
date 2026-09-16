@@ -46,3 +46,63 @@ licenses:
       as_of: "2026-07-29"
 seo:
   title: "Physical Therapy Clinic: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A physical therapy clinic sells therapist time across a plan of
+    care, so the week is a schedule of evaluations and treatment visits
+    against therapists, assistants, and treatment space. The
+    receptionist schedules and checks coverage, the clinical assistant
+    sets up and supports the visit, the physical therapist evaluates,
+    treats, documents against the goals, and decides to progress,
+    revise, discharge, or refer, and the billing specialist files claims
+    that must match the plan, the authorization, and the visit limits.
+    Appointment scheduling, clinical care, and claims billing are
+    load-bearing. The tension is attendance: a plan of care only works
+    if the patient comes to the visits, and every missed visit
+    interrupts the outcome, consumes a slot that could have been sold,
+    and pushes the plan toward its authorization limit without progress
+    to show.
+  starting: >
+    The physical therapist license is required for every therapist, and
+    in most states physical therapist assistants are licensed or
+    certified as well; direct access rules that let a patient start
+    without a physician referral vary by state and shape how the clinic
+    markets. Payer credentialing and enrollment in federal programs take
+    months and gate most evaluation and treatment visit revenue, so they
+    begin before the lease. The general layer is business registration,
+    employer registration once staff are hired, and a tax account;
+    therapy services are usually exempt from sales tax but retail items
+    may not be. Treatment tables, exercise equipment, and private
+    evaluation space are the capital items, modest compared with other
+    clinical practices. The minimum team is a physical therapist who is
+    often the owner, a receptionist, and a billing specialist, with a
+    clinical assistant added as the schedule fills and the office
+    manager role held by the owner at first. The first records are the
+    appointment record, the patient registration and insurance
+    verification, the patient chart, the clinical note, the treatment
+    plan with goals and visit count, and the recall list. Appointment
+    scheduling, coverage verification, patient intake, clinical care,
+    and claims billing must work from the first evaluation.
+  economics: >
+    Revenue is evaluations, treatment visits delivered against a
+    documented plan, and direct-pay services outside third-party
+    billing. The price basis is a payer fee schedule per visit or per
+    billed unit for covered care and a set cash rate for direct pay, so
+    revenue per visit is fixed by contract and the clinic's levers are
+    visits per therapist day, units per visit within the rules, and the
+    share of visits paid directly. Therapist labor is the dominant cost,
+    and gross margin is the visit fee less the therapist and assistant
+    time it consumed. The metrics that decide profit are the appointment
+    no-show rate, which is lost therapist hours and an interrupted plan,
+    the clean claim rate, because therapy claims are denied often for
+    authorization and documentation mismatches, days sales outstanding,
+    and the recall reappointment rate, which keeps discharged patients
+    returning for new episodes. The clinic is labor-heavy and
+    capital-light, and margin follows the visit count each therapist
+    completes against the hours the clinic pays for.
+  benchmarks:
+    - scope: Mean annual wage, physical therapists and assistants in therapist offices
+      value: "$92,620 physical therapists, $60,270 physical therapist assistants (May 2023)"
+      note: "NAICS 621340 Offices of Physical, Occupational and Speech Therapists, and Audiologists; 87,190 physical therapists (19.08 percent of the industry's 457,060 jobs) at a mean of $44.53 per hour and 47,910 assistants (10.48 percent) at $28.98 per hour."
+      source: https://www.bls.gov/oes/2023/may/naics5_621340.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 621340 Offices of Physical, Occupational and Speech Therapists, and Audiologists (May 2023)

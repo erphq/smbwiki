@@ -23,3 +23,55 @@ revenue_model:
   - remove: [fixed-fee-engagements, time-based-work, recurring-advisory]
 supply_chain:
   sells_to: [commercial-client]
+article:
+  operating_model: >
+    An employment agency runs two pipelines at once: client searches and
+    candidate flow. The week is intake calls that turn a role into a
+    search record, sourcing and screening, interview scheduling,
+    feedback loops with the hiring manager, references, offers, and the
+    follow-through that decides whether a placement fee is earned or a
+    replacement guarantee is triggered. Client engagement and
+    professional service delivery are the load-bearing skills, because
+    the recruiter must keep verified fact, candidate statement,
+    recruiter assessment, and client decision separate on one record
+    while protecting confidential employment information. The tension
+    is that most work on a contingent search is unpaid until a hire
+    starts, so the principal has to decide which searches deserve the
+    hours.
+  starting: >
+    Day one needs the business registration, employer registration for
+    the agency's own staff, and, in the states and cities that license
+    employment agencies or require a bond for placement services, that
+    license before advertising; where a jurisdiction licenses agencies
+    the rule usually attaches to charging fees for placements, so check
+    both the state and the city. A written fee agreement template, a
+    candidate consent form, and a data handling practice for résumés
+    and references are needed before the first search. The minimum team
+    is a principal who sells and closes, a professional who recruits,
+    and a client coordinator who schedules and invoices; a solo
+    principal fills all three at the start. The first records are the
+    job request, the client brief, the engagement letter, the time
+    record, the customer invoice, and the shift schedule, and the
+    skills that must work immediately are lead intake, client
+    engagement, professional service delivery, and invoicing.
+  economics: >
+    Revenue is placement fees, contingent or retained and tied to a
+    completed hire, plus search and recruiting services sold as
+    authorized sourcing, screening, or project recruitment. Fees are
+    usually a share of first-year compensation for placements and a
+    fixed or time-based fee for recruiting projects. Gross margin
+    depends on how many recruiter hours a placement consumes and how
+    many searches close, so engagement gross margin, utilization rate,
+    quote win rate, and booking rate decide profit, with
+    work-in-progress age showing searches that have absorbed hours
+    without an offer. Days sales outstanding matters because a fee is
+    invoiced at start and can be clawed back if the hire leaves inside
+    the guarantee period. The business is almost entirely labor; there
+    is little capital, which means margins track recruiter productivity
+    and the principal's pricing discipline.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, employment placement agencies
+      value: "$2.96 million receipts per establishment; payroll 55.7 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 561311 (employment placement agencies) in the 2022 Economic Census, establishments with payroll; receipts of $21.4 billion across 7,212 establishments, annual payroll of $11.9 billion, 290,172 employees (about forty per establishment, which suggests some respondents carry placed workers on their own payroll).
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector56/EC2256BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Administrative and Support Services: Summary Statistics for the U.S., States, and Selected Geographies, EC2256BASIC (2022)"

@@ -94,3 +94,49 @@ questions:
   - >-
     Which record proves property vendor control was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The property vendor control process governs every outside service a
+    commercial property manager brings onto a building, from janitorial,
+    landscaping, and elevator service to HVAC, security, and repair
+    contractors. It begins when a lease or the property budget creates a
+    service obligation and ends when the work has been scoped, insured,
+    dispatched, verified, invoiced, and reported to the owner on the
+    property operating statement. It is owned by the property manager,
+    with maintenance staff checking completion and the property
+    accountant reconciling invoices to contracts and tenant recoveries.
+  why: >
+    Vendors are how lease promises get kept and how owner money leaves
+    the property. Without control, an uninsured contractor works on the
+    roof, a recurring service is billed at a rate the contract no longer
+    supports, common area maintenance is charged back to tenants without
+    proof it was performed, and a tenant dispute or a major repair is the
+    first time anyone compares the lease, the work, and the accounting.
+    The process keeps scope, insurance, dispatch, completion, and invoice
+    attached to one vendor record so those gaps show up on the statement
+    and never in a lawsuit.
+  how: >
+    The property manager confirms the work basis by reading current
+    leases, tenant contacts, vendor contracts, the property budget,
+    building systems, the compliance calendar, and owner authority
+    limits, so every service need has a contract, a budget line, and an
+    approver. The field controls then define scope, access, hours,
+    insurance requirements, hold points such as tenant notification, and
+    the completion record each vendor must leave. As work is dispatched
+    and performed, the manager and maintenance staff record what was
+    done, when, by whom, and any condition that changed the plan.
+    Acceptance checks accurate charges and recoveries, maintained common
+    areas, controlled vendors, documented tenant work, and timely owner
+    reporting; corrections are closed and the results flow into the
+    property operating statement.
+  controls:
+    - name: Certificate of insurance current before dispatch
+      note: No vendor is released to the property until its liability and workers' compensation certificates are on file and unexpired.
+    - name: Contract rate matched on every invoice
+      note: Each vendor invoice is checked against the contract rate, the dispatched scope, and the completion record before it is approved for payment.
+    - name: Completion verified by property staff
+      note: A manager or maintenance technician confirms the work was performed to scope before the vendor's invoice moves to approval.
+    - name: Tenant recovery traced to the lease
+      note: Every charge recovered from tenants maps to a lease clause and a performed service, so the reconciliation survives a tenant audit.
+    - name: Recurring performance record
+      note: Response time, missed visits, and quality findings are logged by vendor so contract renewal decisions rest on evidence.

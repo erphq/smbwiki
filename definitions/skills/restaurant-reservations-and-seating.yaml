@@ -93,3 +93,46 @@ automation:
 questions:
   - Which arriving party is promised against a table that is not yet truly available?
   - Where is seating pace exceeding the floor or kitchen's current capacity?
+article:
+  what: >
+    The restaurant reservations and seating process is the host's control
+    of who sits where and when. It begins when a booking is taken or a
+    walk-in arrives and ends when the party has been seated, handed to a
+    server, and the table has been released back to available after
+    departure and reset. In a full-service restaurant it is owned by the
+    host, with the manager on duty adjusting pacing and resolving
+    conflicts when promised and actual capacity differ.
+  why: >
+    A restaurant's capacity is a moving target, and a promise made
+    against it in error is broken in front of the guest. When the
+    reservation book and the walk-in list drift apart, the same table is
+    promised twice. When availability ignores reset state, a party is
+    called to a table that is still dirty. When seating ignores server
+    and kitchen load, several parties enter the same queue together and
+    everyone waits longer for a greeting, a drink, and a course. The
+    process keeps the room, the queue, and the kitchen visible together
+    so every quoted wait is one the floor can meet.
+  how: >
+    The host maintains the reservation book so date, time, party size,
+    contact, table needs, deposit or policy, notes, changes,
+    cancellations, and confirmations stay current. Before each seating
+    decision the host reads the room, weighing occupied, reserved,
+    resetting, blocked, and available tables together with server
+    sections and the kitchen's current load. Reservations and walk-ins
+    are quoted a realistic wait and given a durable place in the arrival
+    order without promising the same capacity twice. When a party is
+    seated the host records party, table, server, seating time, needs,
+    and service state on the table status so the floor team sees it.
+    After payment and departure the host releases the table only after
+    clearing, reset, and readiness are confirmed on the table status.
+  controls:
+    - name: One arrival list for reservations and walk-ins
+      note: Both queues are merged in the order they will be seated, so early and late reservations change walk-in quotes immediately.
+    - name: Table set to available only after reset
+      note: A departed table stays in resetting until a busser or the host confirms it is clean, complete, and ready.
+    - name: Server section load checked before seating
+      note: The host checks how many tables in a section were seated in the last interval before adding another party to it.
+    - name: Reservation confirmations and no-shows recorded
+      note: Each booking carries its confirmation status and outcome so booking intervals and deposit policy rest on evidence.
+    - name: Quoted wait logged against actual seat time
+      note: The quote given and the time the party was seated are both recorded, so the host can see when quotes drift from reality.

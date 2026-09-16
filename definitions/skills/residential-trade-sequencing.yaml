@@ -93,3 +93,48 @@ questions:
   - >-
     Which record proves residential trade sequencing was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The residential trade sequencing process is the superintendent's
+    daily control of which crew works where on a house and what must be
+    true before each one starts. It begins once the preconstruction
+    baseline is released and the site is mobilized, and it ends when
+    inspections, dry-in, rough trades, insulation, finishes, fixtures,
+    and correction work have all been completed in order and the closeout
+    package shows each stage accepted. In a single-family home builder it
+    is owned by the superintendent, with trade leads confirming readiness
+    and the builder's quality inspector accepting each stage.
+  why: >
+    A house is a compact site with dependent crews, so one trade starting
+    early or one inspection missed stalls everyone behind it. Drywall
+    hung before the rough inspection is opened up again; insulation
+    installed before the plumber finishes hides a leak; cabinets
+    delivered before the floor is done are stored in the garage and
+    damaged. The process keeps the order and the readiness conditions
+    explicit, records what each stage looked like before it was covered,
+    and stops the next trade when a changed condition invalidates the
+    plan.
+  how: >
+    The superintendent confirms the work basis by reading the current
+    scope and revisions and verifying approved plans, lot controls,
+    selections, permits, trade scopes, and long-lead dates for the stage
+    ahead. The field controls set the trade order, the inspection and
+    dry-in hold points, who calls each trade, and the photographs and
+    inspection records each stage must leave. As crews work, the
+    superintendent records progress, observations, decisions, and
+    concealed conditions, and stops a following trade when the field
+    condition changes the planned sequence. Each stage is accepted
+    against the approved plan, the inspection record, owner selections,
+    and turnover requirements, corrections are closed, and the accepted
+    record goes into the closeout package.
+  controls:
+    - name: Inspection passed before cover
+      note: No trade closes a wall, ceiling, or floor until the required inspection is recorded as passed with the date and inspector.
+    - name: Readiness confirmed the day before
+      note: The superintendent confirms predecessor work, material on site, and access with each trade lead before the crew is committed.
+    - name: Concealed work photographed by room
+      note: Rough trades and insulation are photographed by location before they are covered, and the photographs go into the closeout package.
+    - name: Changed condition stops the next trade
+      note: A field finding that alters the sequence is recorded and the following trade is held until the plan is revised and reissued.
+    - name: Stage acceptance recorded with corrections
+      note: Each stage is accepted by a named person with its open corrections listed, so nothing is carried forward silently.

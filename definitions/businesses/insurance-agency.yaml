@@ -30,3 +30,77 @@ licenses:
 supply_chain:
   buys_from: [insurance-carrier]
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    An insurance agency sells other companies' policies and is paid a
+    commission on each one placed and renewed. A prospect's request
+    becomes a client brief that gathers the people, property, activity,
+    limits, loss history, and existing coverage a carrier needs; the
+    producer submits to the carriers the agency is appointed with,
+    compares quotes, and presents a proposal that keeps coverage,
+    exclusions, premium, and term together; binding starts a service
+    record that runs for years. The week splits between new business and
+    service: the principal and producers quote and present, and the
+    client coordinator handles endorsements, evidence of insurance
+    requests, payments, renewals, audits, and claims notices as they
+    arrive from carriers on different timelines. Client engagement and
+    professional service delivery are the load-bearing skills, with lead
+    intake as the pipeline. The tension is that the book pays every year
+    but only if it is serviced well enough to renew, so service work
+    that earns nothing new consumes most of the hours while new business
+    is what grows the commission base.
+  starting: >
+    Before quoting a single risk, the agency and every person who sells,
+    solicits, or negotiates need a producer license from the state
+    insurance department in the lines they will write, which requires
+    pre-licensing education, an exam, and a background check, plus a
+    nonresident license for each additional state where clients are
+    located; the agency then needs appointments with carriers, which
+    small agencies often obtain through an aggregator or cluster because
+    carriers set premium volume expectations. Add business registration,
+    employer registration, errors and omissions insurance that carriers
+    require before appointment, and a trust or premium account where the
+    state requires client money to be segregated. Capital is small: an
+    agency management system that records every policy, endorsement, and
+    conversation, a comparative rater for personal lines, a phone
+    system, and working capital for the months before renewal
+    commissions accumulate. The minimum team is a licensed principal who
+    produces and a client coordinator who is also licensed so service
+    requests can be handled without the principal. The first records are
+    the job request, the client brief, the engagement letter or agency
+    agreement, the policy register as the deliverable record, the time
+    record for service work, and the commission statement
+    reconciliation. Lead intake, client engagement, professional service
+    delivery, and invoicing for authorized fees must work from the first
+    bind.
+  economics: >
+    Revenue is policy commissions, a percentage of premium set by the
+    carrier and paid on new business and on renewal for as long as the
+    policy stays with the agency, plus authorized service fees where the
+    state permits a fee for defined placement or service work. There is
+    no cost of goods; the pricing basis is the carrier's commission
+    schedule, so the agency's controllable margin is the staff time
+    spent per policy against the commission it yields. Gross margin is
+    highest on commercial lines and renewals of a settled book, and
+    lowest on small personal lines policies that generate service
+    requests out of proportion to their premium. The metrics that decide
+    profit are quote win rate, utilization rate of licensed staff,
+    engagement gross margin per account, and work in progress age,
+    because a submission sitting with a carrier or a renewal not
+    remarketed in time is lost commission. Days sales outstanding
+    applies only to agency-billed premium and fees, since carriers pay
+    commission on their own schedule. The business is labor-intensive
+    with almost no capital, and its value accumulates in the renewal
+    book, which is why retention and organic growth are the two figures
+    agency buyers examine first.
+  benchmarks:
+    - scope: Pro forma EBITDA margin, Best Practices independent agencies
+      value: 26.1 percent (2024 results)
+      note: Average across agencies nominated and selected as Best Practices agencies in the Big I and Reagan Consulting study, grouped in revenue bands from under 1.25 million dollars to over 100 million dollars; top performers by construction, so typical agencies run lower. Prior year record was 26.3 percent.
+      source: https://www.independentagent.com/news/big-i-and-reagan-consulting-release-2025-best-practices-study/
+      source_name: Big I and Reagan Consulting, 2025 Best Practices Study (2024 data)
+    - scope: Organic revenue growth and revenue per employee, Best Practices independent agencies
+      value: 10.7 percent organic growth; 228,321 dollars revenue per employee (2024 results)
+      note: Same Best Practices Study sample; growth driven by personal property and casualty and group benefits in a hard pricing market. Net unvalidated producer payroll held at 2.0 percent of revenue.
+      source: https://www.independentagent.com/news/big-i-and-reagan-consulting-release-2025-best-practices-study/
+      source_name: Big I and Reagan Consulting, 2025 Best Practices Study (2024 data)

@@ -26,3 +26,55 @@ licenses:
     - remove: [liquor-license]
 supply_chain:
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    An ice cream shop sells scoops, sundaes, shakes, and packaged pints
+    across a counter to a line that forms when the weather is warm and
+    disappears when it is not. The day runs on the freezer and the line:
+    the manager or head of production sets flavors and batch or delivery
+    quantities against forecast, staff pull product to the dipping
+    cabinet at serving temperature, take orders, portion, add toppings,
+    collect payment, and hand off in a small space, and sold-out flavors
+    come off the board as they go. Order taking, food prep, and food
+    inventory are the load-bearing skills. The tension is between demand
+    that swings by hour, day, and season and product that has a shelf
+    life once opened; the shop must be fully staffed and stocked for a
+    hot Saturday evening while carrying the same rent and freezer cost
+    through a cold weekday in winter, and a freezer failure overnight
+    can destroy the inventory.
+  starting: >
+    Day-one paperwork is business registration, a food service license
+    from the state or local health authority after a plan review and
+    inspection of the sinks, refrigeration, and finishes, food handler
+    permits for staff in most jurisdictions with a certified food
+    protection manager on site where required, sales tax registration
+    because prepared food is taxable in most states, employer
+    registration, and a certificate of occupancy; shops that make their
+    own base or use dairy may fall under a state dairy or frozen dessert
+    license with separate inspection. Capital is dipping cabinets,
+    reach-in and walk-in freezers with temperature monitoring, a batch
+    freezer and pasteurizer if producing in house, a point of sale that
+    handles a fast line, and opening inventory of product, cones, cups,
+    and toppings. The minimum team is a general manager who also
+    produces or receives, and counter staff scaled to the line across
+    all open hours. The first records are the menu and flavor board, the
+    recipe card, the prep list, the order ticket, the purchase order, a
+    temperature log, and the shift schedule. Menu planning, food prep,
+    order taking, and food inventory must work from the first open.
+  economics: >
+    Revenue is counter dessert sales, frozen desserts and drinks
+    prepared for walk-in customers, plus take-home products such as
+    packaged pints, cakes, and advance orders that smooth demand and
+    lift the ticket. Pricing is per scoop or item, with sundaes, shakes,
+    and toppings carrying the margin because the base product cost is
+    low and the labor is the same. Gross margin is high on each serving;
+    the costs that decide whether the shop makes money are food cost
+    percentage, which moves with portion control and waste, labor cost
+    percentage against a line that is idle most hours and slammed a few,
+    and waste percentage from melted, expired, or over-batched product.
+    Ticket time decides how much of a peak line the shop actually serves
+    before people leave. The business is seasonal and hour-of-day
+    dependent with fixed rent and freezer costs all year, so the annual
+    profit is earned in a few warm months and protected by staffing to
+    the forecast, keeping flavors that sell, and selling pints, cakes,
+    and catering when the walk-in line is gone.

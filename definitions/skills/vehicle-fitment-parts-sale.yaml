@@ -37,3 +37,47 @@ automation:
 questions:
   - Which vehicle or component attribute can still change the selected application?
   - What fitment evidence and customer confirmation support this released part?
+article:
+  what: >
+    The vehicle fitment parts sale process is how an auto parts store gets the
+    right part across the counter: the counter specialist identifies the
+    vehicle and the repair, resolves the exact application from catalog
+    evidence, supersessions, dimensions, connectors, side, and production
+    splits, confirms core, warranty, and availability, and releases the part
+    with the fitment basis and the customer's confirmation recorded. It starts
+    with a request at the counter, by phone, or from a commercial account and
+    ends with a sales receipt tied to a vehicle fitment record. The counter
+    specialist owns each sale and the store manager owns catalog notes and
+    supplier escalation.
+  why: >
+    A part that looks right and does not fit stops a repair, may come back
+    damaged, and costs the store the restock, the return freight, and the
+    customer's next visit. Vehicles built either side of a production split,
+    with a different engine option, or with a component changed by a
+    supersession are where a plausible part number goes wrong. Cores released
+    without terms and warranties given without a recorded application become
+    disputes the store cannot win. The fitment record is what lets the store
+    defend a sale and improve its catalog notes.
+  how: >
+    The specialist identifies the vehicle and the need on the job request:
+    vehicle identity by VIN or plate, configuration, the production split
+    where it matters, the symptom, the existing component, and the intended
+    repair. The application is then resolved by comparing catalog evidence,
+    supersessions, dimensions, connectors, side, condition, core terms, and
+    warranty terms, and by checking the stock record for availability and the
+    supplier for what is missing from the shelf. On release the specialist
+    records the fitment basis, the customer's confirmation of the vehicle and
+    application, the selected part, any exceptions the customer accepted, core
+    custody, and the return conditions on the vehicle fitment record, and the
+    sales receipt closes the transaction.
+  controls:
+    - name: Vehicle identifier on every fitment record
+      note: The VIN or an equivalent identifier is recorded before an application is resolved, and a sale on a model description alone is flagged as an exception.
+    - name: Production split checked when the catalog shows one
+      note: When the catalog lists a production difference, the specialist records which side the vehicle falls on and the evidence used to decide.
+    - name: Customer confirmation recorded at release
+      note: The customer confirms the vehicle, the application, and any accepted exception, and the confirmation is written on the fitment record before the part is released.
+    - name: Core and warranty terms on the receipt
+      note: Core charge, core return conditions, and warranty terms are printed on the sales receipt and linked to the fitment record.
+    - name: Returns reviewed for fitment cause
+      note: Every no-fit return is reviewed against its fitment record, and the cause is added to the catalog notes or the counter questions.

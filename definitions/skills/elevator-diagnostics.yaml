@@ -92,3 +92,46 @@ questions:
   - >-
     Which record proves elevator diagnostics was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The elevator diagnostics process is the fault-finding work on a unit
+    with a complaint: the mechanic reproduces the reported behavior, reads
+    the controller's fault history, isolates the door, drive, control,
+    leveling, safety, and communication circuits one at a time, and records
+    the causal evidence before any part is replaced. It starts from a
+    service ticket and ends with a test report that names the cause and the
+    corrective action. An elevator service contractor's route mechanic owns
+    it, with a troubleshooter or adjuster called in for intermittent faults.
+  why: >
+    Elevator callbacks repeat when the mechanic resets the controller and
+    leaves. The rider sees the same door stall the next week, the building
+    loses confidence, and the contract is at risk. Parts replaced on a guess
+    cost money and outage time without fixing the fault. Diagnostics done
+    without the fault history and without reproducing the complaint miss
+    intermittent conditions in braking, leveling, or door protection that
+    can become a safety event. The recorded evidence is also what lets a
+    second mechanic pick up the unit without starting over.
+  how: >
+    The mechanic reads the ticket and confirms the unit, its maintenance
+    history, code status, safe access, the outage arrangement with the
+    building, parts on the truck, staffing, and rescue provisions. Field
+    controls set the order of isolation, where the unit must be locked out,
+    what readings are taken at each circuit, and where the evidence is
+    recorded. The mechanic reproduces the complaint, pulls the fault log,
+    and works through the circuits, recording readings and observations and
+    stopping when the unit's condition differs from the planned approach.
+    The cause and the corrective action are written on the test report, and
+    acceptance checks safe operation, protection, corrected defects,
+    recorded tests, the current unit log, and inspection status before the
+    unit returns to service.
+  controls:
+    - name: Complaint reproduced before isolation
+      note: The mechanic records the conditions under which the reported fault was observed before touching any circuit.
+    - name: Fault history captured
+      note: The controller fault log is read and recorded on the ticket before any reset clears it from the unit.
+    - name: Cause named on the report
+      note: The test report states the causal finding and the evidence for it; a reset or adjustment without a finding stays open.
+    - name: Lockout at each isolation step
+      note: The unit is locked out and the rescue plan is in place before any safety, brake, or door circuit is opened.
+    - name: Return to service on tested modes
+      note: The affected operating modes are function-tested and recorded before the unit is released back to the building.

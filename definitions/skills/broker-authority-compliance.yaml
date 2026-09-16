@@ -96,3 +96,50 @@ automation:
 questions:
   - When was active authority last verified from the public agency record?
   - What open filing notice or entity change can affect operating authority?
+article:
+  what: >
+    The broker authority compliance process is how a freight brokerage
+    keeps its federal operating authority alive. The authority depends
+    on two filings staying current with the agency: the financial
+    security filing, a surety bond or trust, and the process agent
+    designation. The process starts when the brokerage is granted
+    authority and never really ends; it runs as a monitoring loop that
+    verifies the filings, watches the public status, controls changes,
+    and publishes a broker authority record that tells the operating
+    team whether the brokerage may arrange freight today. The carrier
+    compliance specialist owns it.
+  why: >
+    Authority is not permanent. A surety can cancel the bond, a process
+    agent can drop the designation, and an entity or address change that
+    does not reach the filer can invalidate what is on file. The public
+    record moves before anyone in sales notices, and a brokerage that
+    arranges a load while its authority shows inactive has a legal and
+    payment problem it cannot fix afterward. Without the process,
+    supporting filings are looked at when a customer or the agency
+    raises an issue, and the internal belief that authority is fine
+    outlives the public fact.
+  how: >
+    The compliance specialist first verifies that the legal entity and
+    authority identifiers on the financial security filing and the
+    process agent designation match what the agency has on record for
+    the brokerage. Public authority status, filing state, any
+    cancellation or invalidation notice, effective dates, and unresolved
+    agency correspondence are then reviewed through an owned queue on a
+    set cadence. When the entity, address, surety or trust, process
+    agent, or registration changes, the specialist coordinates the
+    change with the authorized filer and confirms it in the agency
+    record before relying on it. The broker authority record is then
+    published with current status, identifiers, supporting filings,
+    verification time, open notices, owner, and any operating
+    restriction, where sales and operations can see it.
+  controls:
+    - name: Identifier match across filings
+      note: Entity name, address, and authority numbers on the bond or trust and the process agent designation are compared to the agency record and any mismatch is worked to closure.
+    - name: Scheduled public status verification
+      note: The public authority record is checked on a fixed cadence and after every filing event, and the verification time is recorded.
+    - name: Replacement confirmed before reliance
+      note: A replacement bond, trust, or process agent is confirmed accepted in the agency record before the prior filing is allowed to lapse.
+    - name: Notice queue with an owner
+      note: Every agency notice or filing alert lands in a queue with a named owner and a response date.
+    - name: Operating restriction published
+      note: When status is pending, cancelled, or uncertain, the authority record states the restriction and operations stops arranging freight until it clears.

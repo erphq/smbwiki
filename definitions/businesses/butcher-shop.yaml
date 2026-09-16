@@ -37,3 +37,55 @@ org:
 supply_chain:
   buys_from: [meat-processor, food-distributor]
   sells_to: [retail-consumer]
+article:
+  operating_model: >
+    A butcher shop buys whole or primal cuts by weight and sells
+    portions by weight, and the difference between those two weights is
+    the business. The day starts with receiving refrigerated product by
+    supplier, lot, and condition, then breaking, trimming, grinding, and
+    portioning against a prep list, then filling the case and serving
+    the counter, then cleaning under a sanitation schedule. The butcher
+    runs production, sales associates run the counter, the stock
+    associate receives and rotates, and the retail-manager places orders
+    and watches yield. Food prep and retail replenishment are the
+    load-bearing skills, because ordering is a guess about what the case
+    will sell before the sell-by date. The tension is yield against
+    waste: trim and bones have to become sausage, stock, or ground
+    product, and anything that reaches its date in the case was bought
+    at full cost and sold at nothing.
+  starting: >
+    A shop that cuts and sells raw meat needs a retail food
+    establishment license from the state or county health authority in
+    most states, issued after an inspection of refrigeration, hand
+    sinks, cutting surfaces, and sanitation procedures; food handler
+    permits for staff and a written food safety plan follow in many
+    jurisdictions, and a shop that also cures, smokes, or cooks product
+    may need added approvals for those processes. Around those sit the
+    business registration, sales tax registration for the taxable items,
+    an employer registration, and a certified scale, because selling by
+    weight means the weights and measures office will inspect it. The
+    capital items are walk-in and display refrigeration, a band saw, a
+    grinder, a slicer, and a vacuum packer. The minimum team is a
+    butcher who can break primals and a counter associate; the
+    owner-operator usually is the butcher. The first records are the
+    purchase order and inventory receipt by lot and weight, the prep
+    list, the stock record, the sales receipt, and a temperature log the
+    inspector will ask for. Purchasing, food prep, retail sale, retail
+    replenishment, and payment reconciliation must work from the first
+    delivery.
+  economics: >
+    Revenue is fresh meat sales by weight or unit and prepared and
+    special orders, which are value-added products and
+    customer-requested cuts. Pricing is per pound by cut, set so that
+    the saleable yield from a primal covers the purchase weight, the
+    trim, and the labor of breaking it; the cuts that sell at the
+    highest price subsidize the ones that move only as grind. Gross
+    margin percentage therefore depends on yield and on the share of
+    product sold as prepared items, where the shop's labor earns more
+    than it does on a raw chop. Waste percentage is the metric that
+    decides profit, followed by inventory turnover, because product has
+    a sell-by date and cash is tied up in the walk-in. Stockout rate on
+    the case loses the visit; average ticket rises with prepared
+    products and special orders. Labor cost percentage is high because
+    skilled cutting is the product, and refrigeration makes the shop
+    capital and utility intensive relative to its size.

@@ -40,3 +40,80 @@ summary: >
 supply_chain:
   buys_from: [vehicle-manufacturer]
   sells_to: [retail-consumer, commercial-client, fleet-operator]
+article:
+  operating_model: >
+    A new car dealership runs several businesses on one lot: new
+    vehicles, used vehicles, finance and insurance, and service and
+    parts. The week is a set of queues that share the customer and the
+    vehicle. The new-vehicle inventory manager works the manufacturer
+    allocation, orders, and readiness of each unit; salespeople convert
+    leads to appointments and appointments to deals; the finance manager
+    funds the deal and sells protection products; the shop foreman and
+    technicians turn repair orders. New-vehicle allocation and
+    readiness, vehicle sales, and repair execution are load-bearing, and
+    payment reconciliation ties the deals, the lender funding, and the
+    manufacturer incentives together. The tension is that each deal must
+    preserve manufacturer program eligibility, disclosure rules, lender
+    conditions, trade payoff, and title work at the same time as it
+    protects gross.
+  starting: >
+    A new car dealership starts with a franchise agreement, because the
+    manufacturer decides who may sell its vehicles and where. Beyond
+    that, states license motor vehicle dealers, require a bonded and
+    inspected sales location, and issue dealer plates, and the
+    dealership registers as a business, for sales tax, and as an
+    employer. Finance work needs lender agreements and, in most states,
+    whatever license the state attaches to retail installment sales; the
+    service department needs a repair shop registration where the state
+    requires one, plus environmental permits for waste oil, refrigerant,
+    and paint. Floor plan financing has to be in place before the first
+    allocation arrives, and the land, building, and manufacturer image
+    requirements make this the most capital-heavy start in retail. The
+    minimum roles are an owner-operator, a retail manager, a new-vehicle
+    inventory manager, salespeople, a finance manager, a shop foreman,
+    technicians, and a stock associate for parts. The first records are
+    the manufacturer allocation record, the stock record for each unit,
+    the vehicle purchase agreement, the repair order, and the sales
+    receipt, and the dealer management system that connects them has to
+    be live from the first sale.
+  economics: >
+    Revenue is new-unit margin as adjusted by manufacturer allocation,
+    incentives, holdback, and accessories, vehicle margin on used units,
+    finance and products on funded deals, trade and wholesale recovery,
+    and the service and parts department. New-vehicle front gross is
+    thin and shaped by the manufacturer's incentives and the days of
+    supply on the lot; used, finance, and service carry most of the
+    dealership's gross. The metrics that decide profit are vehicle gross
+    profit per unit, inventory turnover on both new and used units,
+    because floor plan interest runs every day a vehicle sits,
+    technician efficiency and comeback rate in the shop, and the booking
+    rate on leads. The dealership is capital-heavy in land, buildings,
+    and floored inventory, so net profit is a small share of a very
+    large sales number, and it moves with interest rates, allocation,
+    and how well the service department absorbs the fixed costs.
+  benchmarks:
+    - scope: Total sales, average franchised new-car dealership
+      value: "$76.60 million (2025)"
+      note: Average across 16,990 franchised light-vehicle dealerships with combined sales of $1.30 trillion; includes new, used, and service and parts departments. The profile does not publish a net profit margin.
+      source: https://www.nada.org/media/4695/download?inline=
+      source_name: "NADA, NADA Data 2025: Annual Financial Profile of America's Franchised New-Car Dealerships (2025)"
+    - scope: Share of dealership sales dollars by department
+      value: 54.9 percent new vehicles, 31.8 percent used vehicles, 13.3 percent service and parts (2025)
+      note: Sales dollars, not gross profit; the prior year split was 54.7, 32.0, and 13.2 percent.
+      source: https://www.nada.org/media/4695/download?inline=
+      source_name: "NADA, NADA Data 2025: Annual Financial Profile of America's Franchised New-Car Dealerships (2025)"
+    - scope: New vehicles sold per dealership
+      value: 955 units at an average retail selling price of $48,205 (2025)
+      note: Average dealership; the unit count was 935 in 2024 and 819 at the 2022 low. Source cites Wards Auto and NADA.
+      source: https://www.nada.org/media/4695/download?inline=
+      source_name: "NADA, NADA Data 2025: Annual Financial Profile of America's Franchised New-Car Dealerships (2025)"
+    - scope: Service and parts sales per dealership
+      value: "$9,687,942 across 16,252 repair orders (2025)"
+      note: "Average dealership, 16 technicians including body shop, average customer mechanical labor rate $186, parts inventory $572,382."
+      source: https://www.nada.org/media/4695/download?inline=
+      source_name: "NADA, NADA Data 2025: Annual Financial Profile of America's Franchised New-Car Dealerships (2025)"
+    - scope: Employees per dealership
+      value: 65, at average weekly earnings of $1,619 (2025)
+      note: 1,123,100 dealership employees nationally; NADA compiles the figure from Bureau of Labor Statistics data and notes methodology differences from other wage series.
+      source: https://www.nada.org/media/4695/download?inline=
+      source_name: "NADA, NADA Data 2025: Annual Financial Profile of America's Franchised New-Car Dealerships (2025)"

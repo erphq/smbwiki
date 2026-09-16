@@ -95,3 +95,49 @@ automation:
 questions:
   - Which upcoming event still has two plausible versions of the truth?
   - What missing venue fact can still change production, loading, or service?
+article:
+  what: >
+    The event production planning process turns an accepted quote into the
+    working records for an event: one confirmed event version, a kitchen
+    prep list with quantities and owners, a service order that tells
+    loading, delivery, and setup what goes where and when, confirmed venue
+    facts, and a briefing that puts the kitchen, driver, service lead, and
+    customer on the same version. It starts when the quote is accepted and
+    ends when the event is released to production with a change cutoff in
+    place. A caterer's general manager owns it with the head chef building
+    quantities; an event planning company runs the same sequence across its
+    vendors.
+  why: >
+    Events fail on version drift. The kitchen cooks for the guest count on
+    the quote while the customer confirmed a higher number to the sales
+    contact, and the shortfall appears at service with no recovery. A venue
+    assumption about power, water, or loading that was never confirmed
+    cannot be fixed at arrival. A load list packed from memory misses the
+    one chafing fuel or serving utensil that stops service. The process
+    exists so that every team works from one current version and every venue
+    dependency has a confirmed fact behind it.
+  how: >
+    The general manager confirms the event version against the accepted
+    quote: date, service window, venue, guest count, menu, dietary needs,
+    service style, rentals, staffing, payment, and the change cutoff. The
+    head chef builds production quantities from it, turning portions, yield,
+    batch size, holding, packaging, reserve, and timing into a prep list
+    with named owners. The general manager builds the service order: items,
+    quantities, labels, destination, setup, service sequence, contacts, and
+    promised times become the order ticket. Venue and load are confirmed
+    with the site contact before packing, covering access, parking, power,
+    water, prep space, loading route, tables, equipment, waste,
+    restrictions, and recovery options. At release the kitchen, driver,
+    service lead, and customer are briefed on the same version, and late
+    changes go through one approval route.
+  controls:
+    - name: One event version with a revision date
+      note: Every record for the event carries the same version identifier, and the kitchen and event lead cite it in the briefing.
+    - name: Change cutoff and single approval route
+      note: Changes after the cutoff are approved by one named person and communicated to every team through one channel.
+    - name: Venue facts confirmed by a contact
+      note: Each venue-dependent requirement has a confirmed answer and a named site contact recorded on the service order.
+    - name: Load list checked against the service order
+      note: Equipment and supplies are packed against a printed list derived from the service order, and the check is signed.
+    - name: Prep list quantities with owners
+      note: Every production line on the prep list has a quantity, a reserve, a timing, and a named cook responsible for it.

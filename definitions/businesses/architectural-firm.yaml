@@ -48,3 +48,55 @@ licenses:
 supply_chain:
   buys_from: [engineering-firm]
   sells_to: [homeowner, general-contractor]
+article:
+  operating_model: >
+    An architectural firm sells decisions fixed in drawings. The week is
+    organized by project phase: program and concept work for new
+    commissions, design development and construction documents for the
+    projects that pay the bills, and construction administration for
+    what is being built, with site observations, submittal reviews, and
+    answers to contractor questions. Architects draw and coordinate, the
+    client-coordinator keeps owner decisions and authority comments
+    attached to the right issue, and the principal seals the set and
+    manages the owner. Architectural design coordination is the
+    load-bearing skill because structural, mechanical, and civil inputs
+    from engineering firms have to land in one coordinated set before it
+    is issued. The tension is authority: the firm controls design intent
+    but not construction, so every revision has to be tracked against
+    who asked for it and whether it changes scope, fee, or liability.
+  starting: >
+    An architectural firm cannot offer regulated architectural services
+    without a licensed architect taking responsibility for the work, and
+    most states also require the firm itself to register with the
+    licensing board and to carry the seal holder's name on its filings;
+    check the operating state. Around that sit the business
+    registration, an employer registration once staff are hired, and
+    professional liability insurance, which owners and lenders will ask
+    to see before signing. The minimum team is a licensed principal, one
+    architect or designer who produces the drawings, and a
+    client-coordinator once several projects run at once; engineering is
+    bought from consulting firms per project. The first records are the
+    client brief, the engagement letter that defines phases and
+    additional services, the design program, the coordinated design set
+    with revision control, and time records by phase. Client engagement,
+    professional service delivery, and architectural design coordination
+    must exist from the first commission, along with invoicing tied to
+    phase approvals, because a firm that cannot bill on phase completion
+    is financing the owner's project.
+  economics: >
+    Revenue is phased design fees earned as each phase is approved, plus
+    fixed-fee engagements, time-based work for additional services, and
+    recurring advisory. The pricing basis is a percentage of
+    construction cost, a lump sum by phase, or hourly, and the choice
+    decides who carries the risk of a changing program. Gross margin on
+    an engagement is fee less the hours charged and the consultant fees
+    passed through, so utilization rate, engagement gross margin, and
+    rework rate decide profit: an owner-driven redesign that is not
+    written up as an additional service is unpaid work. Schedule
+    variance and work-in-progress age show whether fees are being earned
+    on time, and days sales outstanding shows whether they are being
+    collected. The firm is labor intensive with capital limited to
+    software and workstations; leverage of drafting staff to licensed
+    principals, and the share of fee kept after consultants, set the
+    margin ceiling, and quote win rate on a pipeline of long sales
+    cycles decides whether that staff stays billable.

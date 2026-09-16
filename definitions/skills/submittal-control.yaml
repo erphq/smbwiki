@@ -89,3 +89,53 @@ questions:
   - >-
     Which record proves submittal control was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The submittal control process manages the product data, shop
+    drawings, samples, and calculations that a trade must have approved
+    before it can fabricate or install. It plans which submittals are
+    needed and when, prepares or collects them, routes them through the
+    general contractor's review and the designer's review, returns them
+    with their action, and releases the approved version to the field.
+    It starts once the bid documents, review routes, and contract dates
+    are settled and ends when the approved submittals have been carried
+    into the closeout package. A commercial general contractor owns it
+    through the project engineer.
+  why: >
+    It protects fabrication lead time and the installed work. A curtain
+    wall shop drawing submitted late, a rejected mechanical equipment
+    submittal left unanswered for weeks, or a subcontractor building
+    from a submittal the designer marked revise and resubmit each shows
+    up as material that is missing when the schedule needs it, or
+    material that is there and wrong. The submittal log is also the
+    record that proves what was approved when a product fails, and it
+    feeds the closeout package the owner uses to maintain the building.
+  how: >
+    The project engineer reads the current scope and revisions, then
+    confirms issued bid documents, coordinated trade boundaries,
+    contractual dates, review routes, and owner decisions before
+    building the submittal schedule. The schedule is set out as work
+    limits by specification section, a sequence driven by fabrication
+    lead times and the construction schedule, responsibilities between
+    subcontractor, general contractor, and designer, hold points where a
+    submittal must be approved before release to fabrication, and the
+    submittal log everyone uses. During the work the engineer collects
+    submittals, reviews them for completeness and conformance before
+    forwarding, tracks review turnaround, returns actions, manages
+    resubmittals, records every revision and its status, and stops when
+    a design change or an owner decision changes what is required. At
+    acceptance the submittals are checked against contract documents,
+    authority approvals, designer review, tested systems, and owner
+    turnover criteria, open items are closed, and the approved set
+    enters the closeout package.
+  controls:
+    - name: Submittal schedule tied to need dates
+      note: Each required submittal carries the fabrication lead time and the date it must be approved to keep the construction schedule.
+    - name: Contractor review before forwarding
+      note: The general contractor checks each submittal for completeness and conformance and stamps it before the designer sees it.
+    - name: Log with turnaround tracking
+      note: Every submittal records the dates sent and returned at each stop, so an overdue review is visible and chased.
+    - name: Release to fabrication only on approved status
+      note: No material is released for fabrication or installation from a submittal marked anything other than approved or approved as noted.
+    - name: Closeout set assembled from the log
+      note: The final approved revisions are compiled from the log into the closeout package with product data and warranties.

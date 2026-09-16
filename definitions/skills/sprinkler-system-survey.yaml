@@ -95,3 +95,50 @@ questions:
   - >-
     Which record proves sprinkler system survey was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The sprinkler system survey process records what exists before a
+    system is designed or modified, meaning the water supply, the
+    existing riser and zones, the occupancy hazards, ceiling and
+    structure, obstructions, temperature exposure, and the constraints
+    on tying in to what is already there. It starts when a bid or a
+    design needs field facts and ends when the survey record has been
+    checked and issued to the designer and estimator. A fire sprinkler
+    contractor owns it through a surveyor, often the designer or a
+    senior fitter, working ahead of the detailing.
+  why: >
+    It protects the estimate and the design from what the drawings do
+    not show. An existing riser with a seized valve, a zone that serves
+    more than the drawings say, a freezer that puts a wet line at risk,
+    a ceiling full of duct where the branch lines were supposed to run,
+    or an occupancy that has changed since the last design each moves
+    the price and the approach. Found on the survey they are line items;
+    found after mobilization they are change orders, tie-in outages, and
+    coverage arguments with the authority.
+  how: >
+    The surveyor reads the current scope and revisions, then confirms
+    what is already known about the hazard and occupancy, the hydraulic
+    basis, coordinated drawings, listed material, fabrication release,
+    access, and the outage plan before the visit. The survey is set out
+    as work limits by area, a route through the building,
+    responsibilities, and the record form with the measurements, photos,
+    and readings to capture. On site the surveyor records the water
+    supply and riser, existing zones and valves, occupancy hazards by
+    area, ceiling heights and structure, obstructions, temperature
+    exposure, and tie-in constraints, and stops to flag anything that
+    changes the intended approach. At acceptance the survey record is
+    checked so it can support approved coverage, support and clearances,
+    clean piping, the hydrostatic result, alarm and supervisory
+    operation, inspection, and owner records, gaps are closed, and the
+    record is issued.
+  controls:
+    - name: Riser and valve condition recorded with photos
+      note: Every existing control valve, gauge, and riser component is photographed and its condition and position noted on the record.
+    - name: Occupancy walked area by area
+      note: The hazard for each area is recorded from what is actually stored or done there, with photos, and compared with the drawings.
+    - name: Obstructions mapped to the ceiling plan
+      note: Ducts, beams, lights, and equipment that affect head placement are located on the plan with their heights.
+    - name: Tie-in constraints and outage needs listed
+      note: Where the new work connects to existing systems, the shutdown, drain, and notification requirements are recorded.
+    - name: Survey record checked against the scope
+      note: The designer confirms the survey answers each item the design and estimate depend on before the record is issued.

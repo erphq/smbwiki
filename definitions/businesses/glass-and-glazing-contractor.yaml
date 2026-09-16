@@ -24,3 +24,55 @@ revenue_model:
 supply_chain:
   buys_from: [glass-fabricator]
   sells_to: [homeowner, general-contractor]
+article:
+  operating_model: >
+    A glass and glazing contractor turns a field-measured opening into
+    an order at a glass fabricator and then installs what comes back.
+    The estimator quotes from drawings or a site visit, the office
+    manager places purchase orders once dimensions are verified, and the
+    crew lead and field crew set frames, glaze units, seal perimeters,
+    and photograph concealed work before it is covered. The week is
+    shaped by fabricator lead times and by breakage: a unit measured
+    wrong or cracked in transit cannot be fixed on site, so the order is
+    re-placed and the schedule slips by the full lead time. Quoting and
+    project delivery are the load-bearing skills, with purchasing as the
+    control point between them. Repair and replacement calls for broken
+    storefront or residential glass fill gaps between projects and pay
+    faster. The tension is between measured-and-ordered work that ties
+    up cash in fabricated units and installation dates set by a general
+    contractor whose site may not be ready when the glass arrives.
+  starting: >
+    Day-one paperwork is business registration, employer registration,
+    general liability and workers compensation insurance sized for work
+    at height and heavy lifting, and a contractor license where the
+    state or locality licenses glazing as a specialty or requires a
+    general contractor class for the work; sales tax registration
+    applies where installed materials are taxable. Commercial work also
+    needs the insurance certificates and lien waiver forms general
+    contractors demand before releasing payment. Capital is a truck with
+    glass racks, suction cups and lifting equipment, cutting and sealing
+    tools, ladders or a lift arrangement, and a trade account with a
+    glass fabricator. The minimum team is an owner who estimates and
+    leads the crew, one field crew member, and an office manager who
+    handles purchasing and invoicing. The first records are the job
+    request, the quote with verified field dimensions, the purchase
+    order to the fabricator, the work order, job photos of perimeter and
+    sealant work, and the customer invoice. Lead intake, quoting,
+    purchasing, and project delivery must work from the first job.
+  economics: >
+    Revenue is fabricated installations, where measured glass, framing,
+    hardware, and field labor are sold as one quoted price, and repair
+    and replacement work sold under a bounded scope. Pricing is per
+    opening or per project, with glass and framing cost passed through
+    at a markup and labor estimated by crew day. Gross margin depends on
+    measurement accuracy and breakage, because a re-fabricated unit is
+    paid for twice and installed once. The metrics that decide profit
+    are quote win rate, project gross margin, and schedule variance,
+    since a crew waiting on a site that is not ready or on glass that
+    has not arrived is paid without producing. Days sales outstanding
+    matters on commercial work, where retainage and pay-when-paid terms
+    stretch collection past the installation date, so repair and
+    replacement work is valued for its cash speed. The business is labor
+    and working-capital intensive; the margin is protected by verifying
+    openings before ordering and by photographing concealed work so
+    disputes at closeout are short.

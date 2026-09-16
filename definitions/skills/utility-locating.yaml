@@ -88,3 +88,50 @@ questions:
   - >-
     Which record proves utility locating was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The utility locating process is the work a site preparation contractor
+    does before an excavator breaks ground: utility records and locate
+    requests are coordinated, known services are marked on the ground,
+    conflicts between records and marks are reconciled, critical crossings are
+    potholed to expose the actual line, and equipment operators are briefed on
+    the tolerance zones around each mark. It starts when the site plan and
+    survey control are available and the locate request window has opened, and
+    ends with a daily report that records the marks, potholes, and briefing
+    that release each area for excavation. The site superintendent owns it,
+    and the excavation foreman is responsible for keeping the marks alive.
+  why: >
+    A strike on a gas main, a fiber trunk, or a water main stops the job,
+    injures people, and produces a repair bill and a fine that can exceed the
+    contract value. Records are wrong often enough that a mark on the ground
+    from a locate ticket is a starting point, and a crossing that was never
+    potholed is a guess. Marks fade, get graded off, and expire, so an
+    operator working from last week's paint is working blind. The daily report
+    is the record that the contractor did what the law and the owner require
+    before digging.
+  how: >
+    The superintendent confirms the work basis by reading the current scope
+    and revisions and verifying survey control, the utility information on
+    hand, permits, erosion controls, equipment access, the haul route, soil
+    direction, and the weather plan. Field controls are then set: the locate
+    ticket numbers and expiry dates, the marking convention, which crossings
+    get potholed, the tolerance zone rules for each utility, who briefs the
+    operators, and the daily report format. During locating the operator
+    records each mark, its source, potholes with depth and photos, conflicts
+    between records and marks, and the operator briefings, and stops when an
+    unmarked line, an unexpected depth, or a conflict changes the planned
+    excavation. Acceptance checks that the specified limits are marked, safe
+    slopes and support are planned around the lines, grades and drainage are
+    approved, and recorded quantities match, corrections are closed, and the
+    daily report releases the area.
+  controls:
+    - name: Locate ticket valid for the dig area
+      note: The ticket number, the utilities that responded, and the expiry date are recorded for each area, and digging stops when a ticket expires or a utility has not responded.
+    - name: Conflicts reconciled before excavation
+      note: Any disagreement between the record drawing and the marks on the ground is resolved by pothole or by the utility owner before the area is released.
+    - name: Potholes recorded with depth
+      note: Every potholed crossing is photographed and recorded with location and depth, and the result is added to the site plan for the crew.
+    - name: Operator briefing signed
+      note: Each equipment operator signs the briefing on tolerance zones and hand-dig requirements for the area before working in it.
+    - name: Marks maintained and rechecked
+      note: Faded or disturbed marks are refreshed and rechecked against the record before work continues, and the recheck is noted on the daily report.

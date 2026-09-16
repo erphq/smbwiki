@@ -88,3 +88,60 @@ automation:
 questions:
   - Which delivered load still lacks one item required for customer acceptance?
   - What accessorial on the current invoice cannot be traced to approval?
+article:
+  what: >
+    The customer invoicing process turns a delivered load and its proof
+    of delivery into a bill the shipper can process on first pass: the
+    charges agree with the sell rate and approved accessorials, the
+    references and attachments follow the account setup, and submission
+    goes through the route the customer requires. It starts when the
+    proof of delivery arrives and ends when the invoice is accepted into
+    the customer's payable workflow and aging begins. A freight
+    brokerage, a general freight trucking company, or a courier company
+    runs it through a billing specialist.
+  why: >
+    It protects cash timing and the customer relationship. Every day
+    between delivery and an accepted invoice delays payment; an invoice
+    missing the proof, an approval, a reference, or the right portal
+    restarts the customer's payable process. An exception noted on the
+    delivery receipt and sent through as a clean invoice means the claim
+    begins late and the charge is disputed later. An accessorial with no
+    approval evidence is short-paid while the carrier still has to be
+    paid for it.
+  how: >
+    The billing specialist validates the proof of delivery first:
+    signature, date, location, count, condition, exception notation, and
+    image quality must meet the customer's billing requirement. Charges
+    are reconciled next, with line haul, fuel, stops, detention,
+    layover, handling, and other accessorials traced to the accepted
+    sell terms and their approval evidence. Customer routing is applied
+    from the account setup: purchase order, load reference, cost center,
+    attachments, invoice format, portal, recipient, and terms. The
+    customer invoice is issued, and the submission and acceptance
+    evidence are kept so the aging clock starts from a bill the
+    customer's system has entered.
+  controls:
+    - name: Exception fields read on every proof
+      note: >
+        Handwritten and electronic exception notations are reviewed
+        before the proof is attached, and any exception opens claim
+        handling.
+    - name: Accessorial approval on file
+      note: >
+        Each accessorial charge links to the governing term or the
+        customer's written authorization before it appears on the
+        invoice.
+    - name: Account routing checklist
+      note: >
+        References, attachments, format, portal, and recipient are
+        checked against the customer's account setup before
+        submission.
+    - name: Submission acceptance confirmed
+      note: >
+        The invoice is marked sent only when a receipt, portal
+        status, or acknowledgement is stored, with rejections in a
+        worked queue.
+    - name: Unbilled delivered loads reviewed
+      note: >
+        Delivered loads without an issued invoice are listed on a
+        fixed cadence with the missing item named for each.

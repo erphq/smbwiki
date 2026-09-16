@@ -85,3 +85,46 @@ automation:
 questions:
   - Which successful payment currently lacks a confirmed machine start?
   - Can a retry be traced to the original failed activation?
+article:
+  what: >
+    The machine activation process is how a laundromat turns a
+    customer's payment into a running washer or dryer and a transaction
+    the owner can reconcile. It begins when the customer selects a
+    machine and program at a card reader, coin slot, kiosk, or phone
+    app, and it ends with a transaction record that ties the payment
+    result, the machine's response, the amount, the program, and the
+    time together, including any refund or service path. The attendant
+    handles recovery on site; the owner or operator owns the payment
+    and machine systems.
+  why: >
+    It protects revenue and the customer's patience at the same time.
+    Where payment and machine start are only loosely linked, a customer
+    pays and the machine stays idle, a retry charges them twice or
+    gives a second free cycle, and the wrong machine starts because the
+    label and the screen disagree. Staff then issue refunds from the
+    customer's description, and the owner cannot say how much revenue
+    matched actual equipment use.
+  how: >
+    The customer's selection fixes location, machine, price, and
+    available cycle before any payment is requested. Coin, card, stored
+    value, or mobile authorization is accepted and reaches one clear
+    success or failure state, never an ambiguous one. The paid amount
+    and selected cycle are sent to the intended machine, and the
+    machine's response is returned to the payment system so the two
+    can be associated. The activation is recorded as one transaction:
+    payment result, machine response, amount, program, time, and any
+    refund or service path. When the machine does not start after a
+    successful payment, the attendant follows the recovery path from
+    that transaction, so the retry or refund is linked to the original
+    attempt.
+  controls:
+    - name: Payment and start correlated per attempt
+      note: Every payment authorization is matched to a machine-start response under one transaction identity, and unmatched payments are flagged immediately.
+    - name: Retry linked to the original attempt
+      note: A second attempt on the same machine references the failed transaction so duplicate charges and duplicate activations are prevented.
+    - name: Machine identity confirmed at selection
+      note: Machine labels, reader prompts, and app screens show the same identifier, and mismatches are corrected before customers use them.
+    - name: Refund tied to the transaction
+      note: Refunds are issued against the specific failed transaction, with the reason recorded, never from a verbal description alone.
+    - name: Activation faults feed maintenance
+      note: Repeated start failures on one machine create a maintenance request so the fault is fixed instead of refunded again.

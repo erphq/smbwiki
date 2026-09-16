@@ -95,3 +95,55 @@ questions:
   - >-
     Which record proves income approach valuation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The income approach valuation process develops a value indication for
+    an income-producing property from the income it can generate: market
+    rent and vacancy are built from comparable leases and the subject's
+    rent roll, operating expenses are normalized to a stabilized year, net
+    operating income is derived, a capitalization rate or discount rate
+    and holding assumptions are selected from market evidence, and the
+    resulting indication is tested against the other approaches and the
+    market. It starts when the engagement letter defines the client,
+    intended use, property rights, and effective date, and ends when the
+    supported analysis is reconciled into the signed appraisal report. The
+    appraiser assigned to the engagement owns it at a real estate
+    appraisal firm, with a reviewing appraiser signing where required.
+  why: >
+    An income approach can be arithmetically clean and still unsupported.
+    A market rent taken from the owner's pro forma, an expense ratio
+    borrowed from a different property class, or a capitalization rate
+    chosen to hit a number makes a polished value conclusion a liability
+    for the lender, the client, and the appraiser's license. The process
+    protects the credibility of the value opinion, the appraiser's
+    compliance with the applicable standards, and the client's decision
+    that rests on it.
+  how: >
+    The appraiser reads the engagement letter and its revisions and
+    confirms the identified client and intended use, property rights
+    appraised, effective date, assignment conditions, access, available
+    market data, and their own competence for the property type before
+    analysis begins. The analysis controls are then set: the data sources
+    for rent, vacancy, expenses, and rates, the verification each data
+    point needs, the normalization rules for expenses, the hold points
+    where the reviewer checks inputs, and the workfile record. During the
+    analysis the appraiser records each comparable lease and sale with its
+    source and verification, each expense adjustment with its reason, the
+    rate selection with its support, and any assignment condition or data
+    limitation that changed the method, and stops when the property or
+    the market data do not support the planned approach. At acceptance the
+    reviewer checks that the analyses are credible and supported, scope
+    and assumptions are disclosed, the value opinion is reconciled, the
+    report is compliant, and delivery is signed, then the appraisal report
+    is issued.
+  controls:
+    - name: Rent and expense inputs verified to source
+      note: Each market rent, vacancy, and expense figure records its source and how it was verified, and an owner's pro forma is labeled as such.
+    - name: Expense normalization documented
+      note: Every adjustment from the subject's historical expenses to the stabilized year carries a stated reason in the workfile.
+    - name: Rate selection supported
+      note: The capitalization or discount rate is tied to named market transactions or surveys, and the range considered is shown in the workfile.
+    - name: Reconciliation to other approaches
+      note: The income indication is tested against the sales comparison and cost indications and any gap is explained before the opinion is reconciled.
+    - name: Review sign-off before delivery
+      note: A reviewing appraiser checks inputs, scope disclosure, and compliance and signs before the report is delivered to the client.

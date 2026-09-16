@@ -93,3 +93,48 @@ questions:
   - >-
     Which record proves texture application was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The texture application process is the last finishing operation a drywall
+    contractor performs before paint: a sample is approved, the mix and spray
+    equipment are set, adjacent work is masked, the texture is applied at a
+    consistent pattern across each room, breaks are blended, and curing
+    surfaces are protected. It starts when the finished board has been
+    accepted at the specified finish level and the sample is signed off, and
+    ends with a punch list closed and the textured surfaces released to the
+    painter. The finishing foreman owns it in a drywall contractor, with the
+    estimator or owner approving the sample with the customer.
+  why: >
+    Texture is where every earlier defect becomes visible. A joint that was
+    slightly proud, a fastener that was never set, or a room that was too cold
+    for the mud all show up as a pattern change under finished lighting, when
+    correction means refinishing whole walls in a nearly complete space.
+    Overspray onto windows, cabinets, and finished floors is a cost the
+    contractor carries, and a texture that drifts from the approved sample
+    between rooms leads to a rejected house and a dispute over what was
+    agreed.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions and verifying that the space is dry and enclosed, framing and
+    rough work are accepted, board type and thickness, backing, control
+    joints, and access panels match the plan, and the finish level under the
+    texture is complete. Field controls are then set: the approved sample
+    posted, the mix ratio and equipment settings recorded, the sequence of
+    rooms, who masks and who sprays, and the hold point after the first room.
+    During application the operator records batches, rooms completed, pattern
+    checks, weather and temperature, and any concealed repair, and stops when
+    the surface, the mix, or the space changes the planned method. Acceptance
+    checks board orientation, fastening, joints, corners, finish level,
+    surface tolerance, texture match, protection, and punch closure,
+    corrections are closed, and the punch list is issued.
+  controls:
+    - name: Sample approved before the first room
+      note: A texture sample on the actual board and finish level is approved and signed by the customer or general contractor before production spraying begins.
+    - name: Mix and equipment settings recorded per batch
+      note: Material, water ratio, tip, and pressure are written on the daily record for every batch so a pattern change can be traced.
+    - name: First-room hold point
+      note: The first room sprayed is compared with the approved sample under working light and accepted before the crew moves on.
+    - name: Masking checked before spraying
+      note: Windows, cabinets, floors, and adjacent finishes are masked and inspected by the foreman before the gun is started in that space.
+    - name: Punch list closed against the sample
+      note: Every texture defect on the punch list is corrected and rechecked against the approved sample before the surface is released to paint.

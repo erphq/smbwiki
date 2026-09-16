@@ -93,3 +93,53 @@ questions:
   - >-
     Which record proves cabinet installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The cabinet installation process is how a finish carpentry
+    contractor sets and fastens kitchen, bath, and built-in casework so
+    that it is level, plumb, tight to the structure, and ready for
+    counters and finish. It starts when the space is conditioned, field
+    dimensions are verified against the construction plan, and the
+    cabinets are on site and dry, and it ends when the cases are hung
+    and joined, fronts are adjusted, surfaces are protected, and a punch
+    list records what remains. The finish carpentry lead owns it, with
+    the general contractor responsible for the conditions the cabinets
+    need.
+  why: >
+    Cabinets are where every earlier tolerance shows. Framing out of
+    plumb, drywall out of flat, and a floor out of level all arrive at
+    the most visible work in the house, and a cabinet run fastened to a
+    bowed wall or set on the high point will never have straight reveals
+    or doors that close. Cases hung into missing backing pull loose.
+    Cabinets set in an unconditioned space move as the wood dries.
+    Without the process, the crew shims by eye, the counter template is
+    off, and the punch list becomes a dispute about whose tolerance the
+    carpenter was supposed to absorb.
+  how: >
+    The lead reads the current construction plan and revisions and
+    confirms that the space is stable and conditioned, that field
+    dimensions have been verified, that the material is dry, that
+    profiles and samples are approved, that backing is complete, and
+    that access is protected. The field controls are then set: the level
+    line and high point, the layout from the plan, the fastening
+    schedule to structure, the sequence of uppers and bases, the method
+    for joining cases, the reveal and scribe standard, and the
+    protection for finished surfaces. During installation the crew
+    records field dimensions, shim locations, fastener locations, and
+    any service or backing that differs from the plan, and stops when a
+    wall, floor, or opening is out of tolerance for the method. At
+    acceptance the lead checks fit, reveal, joints, door and drawer
+    operation, fastening, surface condition, alignment, hardware, and
+    finish readiness, closes what can be closed, and issues the punch
+    list.
+  controls:
+    - name: Field dimensions verified against the plan
+      note: Walls, openings, and services are measured on site and compared to the plan before cabinets are ordered or set.
+    - name: Level line established and recorded
+      note: A level reference and the high point of the floor are marked and written down before the first base is set.
+    - name: Fastening to structure confirmed
+      note: Each fastener into a stud or backing is confirmed, and a case over missing backing is held until backing is added.
+    - name: Reveals and operation checked per run
+      note: Reveals, door and drawer alignment, and operation are checked at the end of each run before surfaces are protected.
+    - name: Punch list issued with owner and date
+      note: Remaining items are listed with a responsible party and a date before the lead leaves the job.

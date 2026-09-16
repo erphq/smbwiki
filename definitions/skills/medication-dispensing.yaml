@@ -98,3 +98,50 @@ automation:
 questions:
   - Which prescription is waiting on an exception with no named resolver?
   - Where can one person's data entry error pass through every later check?
+article:
+  what: >
+    The medication dispensing process is how a pharmacy converts an
+    authorized prescription into the correct labeled product in the
+    hands of the correct patient. It begins when a prescription arrives
+    by paper, phone, or electronic transmission and ends when the
+    patient or their authorized representative takes custody after
+    counseling, with a dispensing record that links prescriber,
+    medication, dose, directions, clinical checks, claim, stock,
+    product identity, pharmacist release, and pickup. Pharmacy
+    technicians handle intake and preparation; the pharmacist owns
+    clinical resolution, the independent check, and release.
+  why: >
+    It protects the patient from direct harm. A data entry error that
+    changes the drug, strength, quantity, or directions is followed
+    faithfully by every later step, and a final pharmacist glance is a
+    weak defense against it. An exception cleared without a pharmacist
+    or prescriber decision reaches the patient as an interaction or an
+    uncovered claim, and a pickup without identity evidence puts a
+    correct medication in the wrong hands. Each of those is also a
+    regulatory finding the pharmacy has to answer.
+  how: >
+    A technician validates the prescription against the source:
+    patient, prescriber, date, drug, strength, directions, quantity,
+    refills, authentication, and any missing information. The
+    pharmacist resolves clinical and payment exceptions, including
+    allergy, interaction, duplication, dose, timing, substitution,
+    coverage, prior authorization, and prescriber questions, under
+    professional authority. The technician prepares the fill with
+    product and lot, quantity, calculation, label, container, warnings,
+    claim, stock movement, and supporting records. The pharmacist
+    performs an independent check comparing prescription, patient,
+    product, strength, quantity, label, directions, image or contents,
+    and resolved exceptions. At release, identity, payment, counseling,
+    questions, pickup or delivery, signature, and final custody
+    complete the dispensing record.
+  controls:
+    - name: Source image retained with entry
+      note: The original prescription image or transmission stays attached to the record so every later check compares against the prescriber's words.
+    - name: Exception hold released by name
+      note: A clinical or coverage hold is removed only by a pharmacist or with a documented prescriber decision, recorded on the prescription.
+    - name: Independent pharmacist verification
+      note: The final check is performed by a pharmacist who did not prepare the fill, comparing product, label, and source before release.
+    - name: Identity and custody at pickup
+      note: Patient or representative identity is confirmed and recorded with a signature before the medication leaves the pharmacy's custody.
+    - name: Lot and stock movement recorded
+      note: The product lot and stock decrement are recorded on the dispensing record so recalls and counts can trace every fill.

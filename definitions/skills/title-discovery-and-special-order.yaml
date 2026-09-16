@@ -37,3 +37,48 @@ automation:
 questions:
   - Which title attribute must be exact for the reader's intended use?
   - Does the order record prove the edition, commitment, status, and final handoff?
+article:
+  what: >
+    The title discovery and special order process is how a bookstore turns a
+    reader's half-remembered description into the exact book: the bookseller
+    works out the title, author, edition, and format the reader needs, checks
+    the store's stock and the suppliers, and either reserves a copy, places a
+    preorder, or opens a supplier order with the customer's commitment
+    recorded. It starts with a request at the counter, by phone, or online and
+    ends when the reader collects the book and the sales receipt closes the
+    title order record, or the order is cancelled and any supplier return is
+    handled. The bookseller on the floor owns each request and the buyer owns
+    supplier terms.
+  why: >
+    The wrong edition is a real cost in a bookstore. A textbook in the
+    previous edition, a translation the reader did not want, a paperback when
+    the gift needed a hardcover, or a title that arrives after the date it was
+    needed leaves the reader without the book and the store holding a copy it
+    may be unable to return. Free-text requests that live in a notebook make
+    the customer repeat the story at every contact and let orders go
+    unclaimed. The order record is what lets any member of staff pick up the
+    request and tell the customer where it stands.
+  how: >
+    The bookseller clarifies the reading request first, capturing every clue
+    the reader offers about title, author, subject, audience, language,
+    format, edition, when it is needed, and which alternatives would be
+    acceptable, and writes it on the job request. The bookseller then resolves
+    title and supply, verifying the identifier, edition, price, and
+    publication status against the catalog, checking the stock record and
+    supplier availability, and confirming supplier terms, the arrival
+    estimate, and whether the item can be returned. On commitment the exact
+    item, the customer's confirmation, any deposit, and the notification route
+    are recorded on the title order record, and from there the record tracks
+    status, arrival, pickup, cancellation, or supplier return until the sales
+    receipt closes it.
+  controls:
+    - name: Identifier and edition on every order
+      note: No supplier order is placed without the exact identifier, edition, and format written on the title order record and read back to the customer.
+    - name: Customer confirmation before commitment
+      note: The customer confirms the exact item, price, arrival estimate, and cancellation terms, and that confirmation is recorded before the store commits to a supplier.
+    - name: Returnability checked for special orders
+      note: Whether the supplier accepts returns on the item is checked and recorded before ordering, so a nonreturnable title carries a deposit or a firm sale.
+    - name: Open orders reviewed on a schedule
+      note: Title order records are reviewed for overdue arrivals, uncollected pickups, and unanswered notifications, and each one has a next action.
+    - name: Receipt closes the order record
+      note: The sales receipt, or the cancellation and supplier return, is linked to the title order record so no order stays open after the book has left the store.

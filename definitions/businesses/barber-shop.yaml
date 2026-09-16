@@ -30,3 +30,52 @@ licenses:
 supply_chain:
   buys_from: [beauty-supply-distributor]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A barber shop sells short, repeatable services from a fixed number
+    of chairs. The day is a queue: walk-ins and appointments are
+    assigned to a chair, the barber consults briefly, cuts, and checks
+    out, and the service ticket notes what was done so the next visit is
+    repeatable. The owner-operator watches chair use, wait times,
+    rebooking, and the retail shelf; a client-coordinator, where the
+    shop has one, runs the book and the front counter. Personal service
+    delivery is the load-bearing skill, with appointment scheduling
+    deciding whether chairs are busy and waits are short at the same
+    time. The tension is the chair arrangement: barbers paid on
+    commission or renting a chair are effectively independent businesses
+    inside the shop, so tool sanitation, pricing, and the client record
+    have to be standard even when the barbers are not employees.
+  starting: >
+    Every person cutting hair needs a barber license from the state
+    barbering or cosmetology board, earned through licensed training
+    hours and an exam, and in most states the shop itself needs a
+    separate establishment license with an inspection of stations,
+    sanitation, and plumbing before opening. Around those sit the
+    business registration, sales tax registration for product sales and,
+    in some states, for services, and an employer registration if
+    barbers are employees; a shop renting chairs instead needs written
+    chair agreements. The build-out is chairs, stations, sinks,
+    sterilization equipment, and a waiting area. The minimum team is an
+    owner-operator who cuts and one more service-provider, so the shop
+    stays open when one is off. The first records are the appointment
+    record, the client profile, the service ticket, and purchase orders
+    to the beauty supply distributor. Appointment scheduling, client
+    consultation, personal service delivery, client checkout, and
+    purchasing must work from day one, and the sanitation log the
+    inspector will ask for should be started before the first client.
+  economics: >
+    Revenue is barbering services, priced per service with add-ons for
+    shaves and treatments, and products and chair arrangements, which
+    are retail margin on the shelf plus chair rent or the shop's share
+    of commission. The pricing basis is the service menu against the
+    minutes a service takes, so service ticket time and service
+    utilization decide how much a chair earns per day; a barber whose
+    book is full at short ticket times out-earns one with long, slow
+    appointments. Rebooking rate is the metric that decides whether the
+    shop has a clientele or a series of walk-ins, and appointment
+    no-show rate is the leak in a booked day. Average ticket rises with
+    retail attached to the service. Labor cost percentage is the
+    deciding cost on a commission model; on a chair-rent model the
+    shop's margin is fixed and the risk shifts to the barber. Capital is
+    light beyond the fit-out, so profit is a function of chairs, hours,
+    and repeat clients.

@@ -88,3 +88,46 @@ questions:
   - >-
     Which record proves elevator repair was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The elevator repair process is the planned replacement or correction of
+    a known defective component on a unit: the mechanic controls the
+    shutdown and access, verifies that the replacement part is compatible
+    with the equipment, performs the repair, restores guards and settings,
+    and function-tests every operating mode the repair touched. It starts
+    from a service ticket with a diagnosed cause and ends with a test report
+    and an updated unit log. An elevator service contractor's route mechanic
+    or repair crew owns it under the service supervisor.
+  why: >
+    A repair done without controlling the shutdown puts the mechanic in the
+    hoistway with a car that can move. A part that fits but is the wrong
+    rating or revision fails again or introduces a new fault. Guards left
+    off and settings left at defaults after a repair are the conditions
+    inspectors and injury claims find. A repair that is never
+    function-tested across the modes it affects, such as door operation
+    after a drive change, returns the unit to the building with the fault
+    moved somewhere else.
+  how: >
+    The mechanic reads the service ticket and the diagnosis, then confirms
+    the unit, its maintenance history, code status, safe access, the outage
+    arrangement, that the parts on hand are the right ones, staffing, and
+    rescue provisions. Field controls set the lockout and access sequence,
+    the hold point where part compatibility is verified against the
+    equipment record, the order of the repair, and the records each step
+    leaves. During the repair the mechanic records what was removed, what
+    was installed with its part identity, settings restored, and any
+    concealed condition, and stops when the unit differs from the ticket.
+    Acceptance function-tests the affected modes, checks safe operation,
+    guards and clearances, corrected defects, recorded tests, the unit log,
+    and inspection status, and the test report is issued.
+  controls:
+    - name: Lockout and access controlled before work
+      note: The unit is shut down, locked out, and access secured, and the rescue plan is confirmed before the repair begins.
+    - name: Part compatibility verified on record
+      note: The replacement part's identity is checked against the equipment record and written on the ticket before installation.
+    - name: Guards and settings restored checklist
+      note: Every guard removed and every setting changed is listed and checked off as restored before testing starts.
+    - name: Affected modes function-tested
+      note: Each operating mode the repair touched is tested and the result recorded before the unit is released.
+    - name: Unit log updated with the repair
+      note: The log records the defect, part, work, and test so the next mechanic and the inspector can see what was done.

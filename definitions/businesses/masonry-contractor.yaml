@@ -110,3 +110,63 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    A masonry contractor builds walls in lifts. The estimator prices a
+    scope from the construction plan, the project manager and site
+    superintendent sequence it with the general contractor and adjacent
+    trades, and the trade foreperson runs the crew: layout, corners and
+    leads, mortar control, unit installation, flashing, and cleaning, with
+    a quality report against the approved sample. Masonry layout, unit
+    masonry installation, and masonry flashing are the load-bearing
+    skills, with mortar control deciding whether color and strength stay
+    consistent across batches. The tension sits between daily height and
+    quality: a crew that lays too fast loses joint consistency and cavity
+    cleanliness, a crew that lays too slowly loses the scaffold rental and
+    the schedule.
+  starting: >
+    The definition binds no trade license, but most states require a
+    contractor license for masonry above a job value threshold, and cities
+    issue building permits and inspect structural masonry, so licensing
+    comes before the first bid. Add the business registration, employer
+    registration before the first installer is hired, general liability
+    and workers compensation insurance that general contractors will ask
+    for as certificates, and bonding capacity if the firm bids public
+    work. The minimum team is an owner-operator who estimates and manages,
+    a trade foreperson, and installers, with the project manager and site
+    superintendent roles combined in the owner or foreperson until job
+    count grows. The first records to set up are the quote, the work
+    order, the construction plan with the approved sample recorded, job
+    photos of flashing and embeds before they are covered, the quality
+    report, and the customer invoice, and the skills that must work from
+    the first job are quoting, project delivery, masonry layout, mortar
+    control, unit masonry installation, and masonry flashing. Capital is
+    mixers, saws, scaffold or a scaffold rental account, and a truck.
+  economics: >
+    Revenue is quoted projects priced from installed wall or unit
+    quantity, adjusted for the masonry material, reinforcing, flashing,
+    grout, scaffold, cleaning, and weather protection each job needs. The
+    quote is a unit rate times quantity plus access and protection, so
+    project gross margin depends on crew productivity in units per day
+    matching the estimate and on material batches arriving without color
+    mismatch. Rework rate decides profit because a wall rebuilt or an
+    acid-burned face replaced consumes the same labor twice, schedule
+    variance decides whether scaffold rental and crew time overrun, and
+    on-time completion decides whether general contractors bid the firm
+    again. Quote win rate feeds the pipeline and days sales outstanding
+    matters because progress billings under general contractors carry
+    retainage and pay slowly. The business is labor-intensive with rented
+    access and weather exposure, so margins depend on keeping crews
+    productive through the season and closing out punch work before it
+    erodes the last payment.
+  benchmarks:
+    - scope: Employees per establishment, masonry contractors (NAICS 238140)
+      value: 7.7 paid employees per establishment
+      note: 139,844 paid employees in the week of March 12, 2023 across 18,258 employer establishments, all legal forms of organization; ratio derived from the two published counts in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)
+    - scope: Annual payroll per employee, masonry contractors (NAICS 238140)
+      value: 61,509 dollars per employee (2023)
+      note: Annual payroll of 8,601,702 thousand dollars divided by 139,844 paid employees, employer establishments only; ratio derived from the two published totals in the national CBP file.
+      source: https://www2.census.gov/programs-surveys/cbp/datasets/2023/cbp23us.zip
+      source_name: US Census Bureau, County Business Patterns 2023, United States file (2023 data)

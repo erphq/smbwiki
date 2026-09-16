@@ -89,3 +89,45 @@ automation:
 questions:
   - Which open tab or completed drink has lost a clear owner?
   - What station condition is most likely to slow or stop service next?
+article:
+  what: >
+    The beverage service process is what a bartender does with each
+    order in a bar: confirm who is asking and whether they can be
+    served, build the drink to the recipe and measure, put it on the
+    right tab, hand it to the right guest, and leave the station ready
+    for the next ticket. It starts when the order ticket reaches the
+    station and ends when the drink is in the guest's hand, the charge
+    is recorded, and the station is reset. The bartender owns each
+    order; the bar manager owns the standards and the escalation.
+  why: >
+    A bar loses money and takes on risk one drink at a time. Product
+    that leaves without a charge, a heavy pour under pressure, or a
+    drink that reaches the wrong seat costs margin and consistency.
+    Serving a guest who should not be served, or debating that call
+    while no manager owns it, turns a busy night into a safety,
+    licensing, or security incident. Without the process, bartenders
+    remember orders and tabs, pour by feel, restock only when a bottle
+    runs dry, and the closing count cannot be reconciled with what was
+    sold.
+  how: >
+    The bartender reads the order ticket and confirms the guest, the
+    age-check state, the drink and modifiers, the tab or payment route,
+    and whether anything about the guest's condition calls for a pause.
+    The drink is built from the recipe card with the specified product,
+    measure, glass, temperature, and garnish, in the station's sequence.
+    The bartender then records the item on the correct tab and hands it
+    to the intended guest so that item, price, tab, and server or bar
+    position stay traceable. Before the next ticket, used tools and
+    glassware leave the work area, spills are controlled, and any stock
+    or ice gap is flagged so the station is ready.
+  controls:
+    - name: Age and condition check before build
+      note: Identification and guest state are confirmed on the ticket before any product is poured.
+    - name: Measured pour against the recipe card
+      note: Jiggers or metered dispensers are used for every spirit, and a station that stops measuring during a rush is corrected on the spot.
+    - name: Drink tied to a tab at handoff
+      note: No drink leaves the bar without an item on a named tab or a completed payment.
+    - name: Manager escalation for service refusal
+      note: A decision to slow or stop serving a guest is made by the manager on duty and noted on the tab.
+    - name: Closing reconciliation of sales to stock
+      note: Product movement is compared with recorded sales at close, and variance by station is reviewed.

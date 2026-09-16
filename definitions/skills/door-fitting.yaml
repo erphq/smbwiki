@@ -86,3 +86,54 @@ questions:
   - >-
     Which record proves door fitting was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The door fitting process hangs or adjusts each door leaf so it
+    swings, latches, seals, and, where required, meets its fire rating:
+    checking the opening geometry, setting clearances, fitting latch and
+    hardware, and verifying the operation. It starts when the openings
+    are dry, dimensioned, and backed and ends when each door is accepted
+    or listed on the punch list. A finish carpentry contractor owns it
+    through the lead carpenter, with the superintendent or the general
+    contractor accepting the work.
+  why: >
+    It protects the most visible work on the job from tolerances that
+    arrived with everyone else. Finish carpentry absorbs accumulated
+    framing, drywall, floor, and casework error, and a door that rubs,
+    sags, or shows an uneven reveal is what the owner notices first. A
+    fire door fitted outside its clearance or hardware requirement fails
+    inspection after the finish is on. Hardware fitted before the leaf
+    is set right is drilled twice. Unrecorded field adjustments become
+    disputed punch items.
+  how: >
+    The lead carpenter confirms the work basis by reading the current
+    scope and revisions on the construction plan and verifying stable
+    conditioned space, verified field dimensions, dry material, approved
+    profiles and samples, complete backing, and protected access. Field
+    controls set the fitting sequence by opening, clearance and reveal
+    targets, hardware templates, hold points for fire-rated openings,
+    and the records the crew keeps. During the work the carpenter
+    records each opening's geometry, adjustments made, hardware fitted,
+    observations, decisions, and concealed conditions, and stops when an
+    opening is out of the range the planned method can absorb.
+    Acceptance checks each door against fit, reveal, joint, operation,
+    fastening, surface condition, alignment, hardware, and finish
+    readiness, and the punch list is issued once correction closes.
+  controls:
+    - name: Opening geometry recorded before hanging
+      note: >
+        Width, height, plumb, and level of each opening are measured
+        and recorded, and out-of-range openings are reported before
+        fitting.
+    - name: Clearance and reveal check per door
+      note: >
+        Each leaf's clearances and reveals are measured against the
+        target and recorded before hardware is fitted.
+    - name: Fire-rated openings as hold points
+      note: >
+        Rated doors are verified for label, clearance, hardware, and
+        closer before the opening is released for finish.
+    - name: Operation test recorded
+      note: >
+        Swing, latch, and seal are tested on every door and the
+        result is recorded on the punch list or acceptance record.

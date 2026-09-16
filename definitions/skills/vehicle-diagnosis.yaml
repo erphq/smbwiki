@@ -90,3 +90,48 @@ automation:
 questions:
   - What test result supports each part or operation being recommended?
   - Can quality control reproduce the original concern from this report?
+article:
+  what: >
+    The vehicle diagnosis process is the technician's work between the repair
+    order and the estimate in an auto repair shop: the recorded concern is
+    reproduced under the conditions the driver described, the baseline
+    readings and fault codes are captured before anything is disturbed,
+    testing narrows the failure until the evidence supports a repair, and the
+    findings are written in an inspection report an advisor or another
+    technician can review. It starts when a repair order with a concern line
+    is assigned to a bay and ends when the inspection report supports a
+    recommended repair or records why the concern could not be reproduced. The
+    technician owns the finding and the shop foreman reviews it.
+  why: >
+    Diagnosis is where a shop earns or loses its reputation. A part replaced
+    because a fault code named it, while the wiring, the leak, or the upstream
+    cause remains, brings the car back with the same complaint and a customer
+    who paid twice. Codes cleared before they were read, or a baseline never
+    captured, remove the evidence needed to justify the repair to the
+    customer. Open-ended testing consumes bay time the customer never agreed
+    to buy, so the process needs a decision point where the advisor goes back
+    to the customer with what is known.
+  how: >
+    The technician reads the concern line on the repair order and reproduces
+    the condition under the temperature, speed, load, and timing recorded at
+    intake, before any part is removed or any code is cleared. The baseline is
+    then established: fault codes, freeze-frame data, relevant measurements,
+    fluid condition, and visible evidence are captured in their original
+    state. The technician isolates the cause by choosing tests that
+    discriminate between the remaining possibilities, and stops at the agreed
+    diagnostic time to have the advisor confirm further testing with the
+    customer. Findings are recorded on the inspection report with the
+    confirmed faults, related risks, and the tests that passed kept
+    distinguishable, so the advisor can build the estimate and quality control
+    can rerun the same condition.
+  controls:
+    - name: Reproduction attempted before disassembly
+      note: The report records the conditions under which the concern was reproduced, or the attempts made, before any component is removed.
+    - name: Baseline captured before clearing codes
+      note: Fault codes, freeze-frame data, and measurements are stored on the report in their original state before any code is cleared or any test performed.
+    - name: Test result behind every recommendation
+      note: Each recommended part or operation on the inspection report cites the measurement or test that supports it, and a code description alone is sent back.
+    - name: Diagnostic time checkpoint
+      note: When the authorized diagnostic time is reached, the technician stops and the advisor records the customer's decision on further testing on the repair order.
+    - name: Foreman review of uncertain findings
+      note: Findings labeled as uncertain or intermittent are reviewed by the foreman before the estimate is presented to the customer.

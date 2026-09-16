@@ -90,3 +90,57 @@ questions:
   - >-
     Which record proves concrete placement was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The concrete placement process runs the pour itself: mix arrival
+    timed to the crew, testing at the truck, pump or chute access
+    confirmed, lifts placed in sequence, consolidation, joints located
+    as planned, weather response ready, and a placement record that ties
+    every load to where it went. It starts when the formwork,
+    reinforcement, and embeds are accepted and ends when the last load
+    is placed and recorded ahead of finishing and curing. A poured
+    concrete contractor owns it through the foreman, with the
+    superintendent releasing the pour.
+  why: >
+    It protects work that cannot be corrected once the concrete sets. A
+    pour that starts before reinforcement or embeds are checked buries
+    the mistake permanently. A load accepted without a slump or air test
+    can be the one that fails the break. Poor consolidation leaves voids
+    at the face; a cold joint from a late truck lands where the design
+    never allowed one. Any of these becomes demolition or structural
+    repair, and the placement record is the only way to show what was
+    done.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions on the construction plan and verifying surveyed layout,
+    excavation acceptance, form dimensions, embeds, reinforcement, mix
+    information, access, and weather controls. Field controls set the
+    lift sequence, truck spacing, pump or chute positions, testing
+    frequency, joint locations, weather response, hold points, and the
+    placement records the crew keeps. During the pour the operator
+    records each load, its test results, placement location,
+    consolidation, joints, observations, decisions, and concealed
+    details, and stops when a truck delay, rejected load, or weather
+    change alters the planned method. Acceptance checks the completed
+    work against specified geometry, cover, placement record, finish,
+    curing, and required concrete test results, and the test report is
+    issued once correction closes.
+  controls:
+    - name: Pre-pour inspection signed before release
+      note: >
+        Forms, reinforcement, cover, and embeds are inspected and
+        signed off on the checklist before the first truck is
+        called.
+    - name: Load testing and rejection recorded
+      note: >
+        Slump, air, temperature, and cylinder samples are taken at
+        the specified frequency, and any rejected load is logged
+        with the reason.
+    - name: Placement record by load and location
+      note: >
+        Each ticket is matched to the area and lift it was placed
+        in, so a low test result can be traced to its location.
+    - name: Cold-joint and weather response ready
+      note: >
+        A planned response for truck delay, rain, heat, or cold is
+        set before the pour and its use is recorded.

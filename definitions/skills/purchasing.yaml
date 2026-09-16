@@ -83,3 +83,46 @@ automation:
 questions:
   - Which open order can currently delay committed work?
   - Can each received item be traced to its job, location, or stock level?
+article:
+  what: >
+    The purchasing process turns an approved purchase order into
+    delivered goods with an invoice the business can pay. It starts when
+    a need has been validated with a quantity, required date,
+    destination, and expense owner, and it ends when the delivery has
+    been received, shortages or damage noted, and the supplier invoice
+    attached to the order. In a hardware store, an HVAC contractor, or a
+    veterinary clinic it is owned by whoever buys, usually the owner, a
+    manager, or a buyer, with the receiver and the bookkeeper closing the
+    loop.
+  why: >
+    It protects the schedule and the cash at the same time. A job crew, a
+    customer appointment, or a production run planned around material the
+    supplier never promised stops on the day it was supposed to start. A
+    substitution accepted without approval changes the result promised to
+    the customer. Material that lands in a general expense account makes
+    a job look profitable when it was not. The process keeps the promise,
+    the delivery, and the cost attached to the order so each of those is
+    caught before it costs a day or a margin.
+  how: >
+    The buyer validates the need on the purchase order, settling
+    quantity, required date, destination, and expense owner before the
+    supplier sees it. The order is placed and the supplier's
+    acknowledgement is read for substitutions, backorders, price changes,
+    and freight, with any difference approved or rejected in writing.
+    While the order is open the buyer tracks the promised date and raises
+    a late item while the schedule can still move. On delivery the
+    receiver checks what arrived against the order, records shortages,
+    damage, and returns, and the supplier invoice is attached to the
+    order with those exceptions still visible so accounts payable can
+    match it.
+  controls:
+    - name: Acknowledged ship date on every open order
+      note: An order without a supplier-confirmed date is flagged for follow-up so labor and appointments are never scheduled against an unpromised delivery.
+    - name: Substitution approved in writing
+      note: Any change between the order and the acknowledgement is accepted by the expense owner and noted on the order before the supplier ships.
+    - name: Destination on every line
+      note: Each ordered item carries the job, location, or stock level it is for, so the cost lands where the material is used.
+    - name: Receiving record against the order
+      note: Quantity and condition received are recorded against the order lines, with shortages and damage kept open until credited or resolved.
+    - name: Invoice attached to the order
+      note: The supplier invoice is linked to its order and receiving record so a price or quantity difference is visible before payment.

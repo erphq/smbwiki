@@ -86,3 +86,49 @@ questions:
   - >-
     Which record proves wall framing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The wall framing process is the framing contractor's work of building and
+    standing the walls of a structure: plates are laid out from control lines,
+    studs, headers, and openings are cut and assembled to the plan, shear
+    walls are sheathed and nailed to the schedule, walls are anchored, braced,
+    and plumbed, and the openings and blocking that other trades need are left
+    in place. It starts when the floor or slab is accepted and the lumber
+    package and connectors are on site and ends with a quality report that
+    records the walls accepted for the next floor, roof, or inspection. The
+    framing foreman owns it and the lead carpenter owns layout.
+  why: >
+    A layout error in the first wall repeats through every floor, roof,
+    window, cabinet, and finish that follows it, and it costs the least to fix
+    when it is still a pencil line on a plate. A missing header, an undersized
+    bearing point, a shear wall nailed off the schedule, or a hold-down
+    installed off its bolt is structural and hidden once sheathing and drywall
+    go on. Walls out of plumb produce doors that swing, cabinets that gap, and
+    tile that will not run true. The inspection depends on the framer being
+    able to show what is inside the wall.
+  how: >
+    The foreman confirms the work basis by reading the current scope and
+    revisions and verifying current dimensions, control lines, the lumber or
+    component package, connectors, openings, bearing points, and that
+    supporting work has been corrected. Field controls follow: plate layout
+    checked against the plan, header and shear schedules posted, the wall
+    build and stand sequence, bracing and anchor rules, who checks plumb and
+    line, the hold points before sheathing and before the next level loads the
+    walls, and the records to keep. During framing the operator records walls
+    built, connectors and hold-downs installed, shear nailing, changes made
+    for field conditions, and photographs concealed details, and stops when a
+    dimension, a bearing point, or a component differs from the plan.
+    Acceptance checks specified layout, bearing, fastening, bracing, openings,
+    plane, and inspection readiness, corrections are closed, and the quality
+    report is issued.
+  controls:
+    - name: Plate layout checked before cutting
+      note: The lead carpenter's plate layout is checked against the plan dimensions and control lines by a second person before studs are cut.
+    - name: Header and shear schedules posted on site
+      note: The header sizes, shear wall nailing, and hold-down schedule are posted where the crew works and each shear wall is signed off against it.
+    - name: Plumb and line recorded per wall
+      note: Plumb, line, and diagonal checks are recorded for each wall after bracing and before the next level or roof loads it.
+    - name: Concealed connectors photographed
+      note: Hold-downs, straps, and anchor bolts are photographed in place with location before sheathing or drywall covers them.
+    - name: Inspection readiness confirmed on the report
+      note: The quality report lists the walls, corrections closed, and the concealed evidence available before the framing inspection is requested.

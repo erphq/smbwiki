@@ -93,3 +93,51 @@ questions:
   - >-
     Which record proves rough opening control was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The rough opening control process checks every framed opening before
+    the thing that fits into it arrives. It begins when the wall or roof
+    framing around doors, windows, equipment, and finish assemblies is
+    complete and the window, door, and equipment schedules with the
+    current revision are on site, and it ends when size, location, level,
+    plumb, backing, sill condition, and clearance have been measured
+    against the schedule, corrected where needed, and recorded on a
+    quality report before the openings are covered or the units are
+    delivered. In a framing contractor it is owned by the lead framer,
+    with the quality checker accepting the work.
+  why: >
+    A rough opening that is wrong is cheap to fix on the day it is framed
+    and expensive the day the window arrives. An opening framed an inch
+    narrow, a sill out of level, a header set at the wrong height, or
+    missing backing for a grab bar or a cabinet is discovered by another
+    trade, on a different day, with the unit already ordered. Small
+    layout errors repeat through floors, walls, windows, cabinets, and
+    finishes. The process measures each opening against the schedule
+    while the framer is still on site and leaves a record the installer
+    can trust.
+  how: >
+    The lead framer confirms the work basis by reading the current scope
+    and revisions, then verifying current dimensions, control lines, the
+    component package, connectors, the door and window schedules, bearing
+    points, and that supporting work has been corrected. The field
+    controls set which openings are checked, the tolerance for each, who
+    measures, the hold point before sheathing or drywall, and the
+    checklist and photographs the crew leaves. During the check the
+    framer measures width, height, location, level, plumb, backing, sill
+    condition, and clearance for each opening, records the result,
+    corrects deviations, and stops when a schedule conflict cannot be
+    resolved on site. Acceptance confirms layout, bearing, fastening,
+    bracing, openings, plane, and inspection readiness against the
+    specification, corrections are closed, and the quality report is
+    issued for the installer and the inspector.
+  controls:
+    - name: Every opening measured against the schedule
+      note: Each door, window, and equipment opening is measured and the result written next to the scheduled size on the checklist.
+    - name: Current schedule revision on site
+      note: The schedule the crew measures against is the current revision, and its number is recorded on the quality report.
+    - name: Backing and blocking verified before cover
+      note: Backing for cabinets, fixtures, grab bars, and equipment is confirmed and photographed before drywall goes up.
+    - name: Deviations corrected and re-measured
+      note: A failed opening is corrected and measured again by a second person before it is marked accepted on the report.
+    - name: Quality report shared with the installer
+      note: The window, door, and equipment installers receive the report so they can flag a conflict before delivery.

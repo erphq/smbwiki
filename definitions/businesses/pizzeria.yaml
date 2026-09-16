@@ -74,3 +74,52 @@ supply_chain:
 products: [conveyor-pizza-oven, commercial-dough-mixer]
 seo:
   title: "Pizzeria: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A pizzeria runs a dough schedule and a ticket queue. Dough is mixed
+    and fermented on a schedule that starts a day ahead, prep fills the
+    line before service, and then counter, phone, and app orders land on
+    the kitchen display as tickets with a promised time. The pizzaiolo
+    and line cook stretch, top, bake, cut, and box, counter staff take
+    orders and hand off, and a driver or a third-party courier delivers.
+    Dough production, food prep, order taking, and delivery dispatch are
+    load-bearing, and the owner-operator handles food inventory and the
+    supplier bills. The tension is oven capacity against the promised
+    times: every channel promises a time, the oven bakes a fixed number
+    of pies per hour, and when tickets exceed that rate the shop either
+    quotes longer times, pauses a channel, or delivers late and cold.
+  starting: >
+    A pizzeria needs the food service license from the state or local
+    health authority, with a plan review and inspection before opening,
+    and a food handler permit or manager certification for the staff in
+    most jurisdictions. The general layer is business registration,
+    sales tax registration because prepared food is taxable almost
+    everywhere, and employer registration once the first cook is hired;
+    delivery with the shop's own drivers adds commercial auto cover, and
+    third-party apps add contracts and commissions. The oven, the dough
+    mixer, refrigeration, the hood and fire suppression, and the point
+    of sale with online ordering are the capital items, and the hood and
+    grease interceptor are often the reason a build-out runs long. The
+    minimum team is an owner-operator, a pizzaiolo who runs the kitchen,
+    a line cook, counter staff, and a driver if the shop delivers
+    itself. The first records are the prep list, the order ticket, the
+    delivery ticket, the purchase order, and the supplier invoice. Dough
+    production, food prep, order taking, and food inventory must work
+    from the first service, with delivery dispatch on the first night
+    the shop promises a delivery time.
+  economics: >
+    Revenue is dine-in, takeout, and delivery, with the same pizza
+    priced the same across channels but earning differently: dine-in
+    adds beverages and seating cost, takeout is the cleanest margin, and
+    app delivery gives up a commission on every order. The price basis
+    is a menu built on food cost per pie, where flour and sauce are
+    cheap and the cheese price decides the month. The metrics that
+    decide profit are the food cost percentage and waste percentage,
+    because dough that did not get used and toppings prepped for a slow
+    night are the leak, dough yield, which is the number of pies a batch
+    produces, ticket time and order accuracy, which decide whether the
+    customer comes back, and delivery time on the orders that leave the
+    building. Labor is the other large cost, and the shop is
+    capital-moderate in the oven and hood. Margins improve with channel
+    mix toward pickup, tight dough scheduling, and enough volume to run
+    the oven near capacity through the dinner rush.

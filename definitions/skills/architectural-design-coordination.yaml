@@ -37,3 +37,46 @@ automation:
 questions:
   - Which unresolved interface can make the current issue set unsafe or unusable?
   - What record identifies the exact drawings, specifications, checks, and authorization issued?
+article:
+  what: >
+    The architectural design coordination process is how an
+    architectural firm turns an approved program, the site plan, the
+    code path, owner decisions, and the structural, mechanical,
+    electrical, and civil consultants' work into one set of drawings and
+    specifications that agree with each other. It starts when a phase or
+    submission requires an issue and ends when the project architect
+    authorizes a coordinated design set with a named revision and
+    purpose for bidding, permit, or construction. The project architect
+    owns it, with discipline leads responsible for their own interfaces.
+  why: >
+    A set issued with a beam where a duct needs to run, two different
+    dimensions for the same wall, or a specification that names a
+    product the drawings do not show sends the conflict to the bidder or
+    the field crew, where it comes back as a change order, a delay, or
+    rework at the owner's cost and the firm's reputation. Without the
+    process, each discipline issues its own files on its own date,
+    nobody owns the interfaces, and the owner's unresolved decisions are
+    buried in the set as if they were settled.
+  how: >
+    The project architect fixes the design basis first: program,
+    existing conditions, code path, budget, schedule, who is responsible
+    for what, and which owner decisions are made for this phase. The
+    disciplines then coordinate against that basis, reconciling plans,
+    sections, details, schedules, and specifications with each
+    consultant's drawings and with authority comments, and logging each
+    interface conflict with an owner and a resolution. Before release,
+    the project architect reviews the issue set, closes every critical
+    conflict, records the open items that will carry forward, assigns
+    the revision identity and purpose, and approves distribution of the
+    coordinated design set.
+  controls:
+    - name: Design basis record signed off
+      note: Program, site, code path, budget, and phase decisions are recorded and confirmed with the owner before coordination begins.
+    - name: Interface log with owners
+      note: Every cross-discipline conflict found in review is logged with a responsible person and a resolution before the set is issued.
+    - name: Issue check against the basis
+      note: Dimensions, systems, details, and revision references are checked across disciplines in a documented review before authorization.
+    - name: Open items listed in the issue
+      note: Unresolved decisions are named in the transmittal so bidders and builders know what is still moving.
+    - name: Revision identity on every sheet
+      note: Each sheet and specification section carries the revision and purpose of the issue, and superseded sheets are withdrawn.

@@ -96,3 +96,52 @@ questions:
   - >-
     Which record proves sprinkler testing and acceptance was accepted before
     it was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The sprinkler testing and acceptance process proves an installed
+    system works and assembles the evidence the authority and the owner
+    will accept. The piping is flushed and pressure-tested, alarms and
+    supervisory devices are operated, valves and drains are checked,
+    deficiencies are corrected, and the acceptance records are compiled.
+    It starts when installation is complete against the approved
+    drawings and ends when the test report has been signed and the
+    system is in service. A fire sprinkler contractor owns it through
+    the foreman or a designated test technician, with the authority's
+    inspector witnessing.
+  why: >
+    It protects the building's occupants and the contractor's
+    acceptance. A main flushed poorly leaves scale that plugs a head; a
+    hydrostatic test skipped on a hidden section leaves a joint to fail
+    in service; an alarm valve that never sent a signal to the
+    monitoring company means a fire without a call. A deficiency found
+    by the inspector on the acceptance day costs a retest, a delayed
+    certificate of occupancy, and a strained relationship with the
+    general contractor and the authority.
+  how: >
+    The test technician reads the current scope and revisions, then
+    confirms the verified hazard and occupancy, the approved hydraulic
+    basis, coordinated drawings, listed material, fabrication release,
+    access, and the outage plan before scheduling tests. The testing is
+    set out as a sequence with work limits by system, responsibilities
+    including who witnesses, hold points where a test must pass before
+    the next begins, and the test forms that will become the acceptance
+    record. During the work the technician flushes the underground and
+    mains, holds the hydrostatic test for the required period, operates
+    the alarm and supervisory devices with the monitoring company
+    confirming receipt, checks control valves and drains, records
+    readings and deficiencies, and stops when a failed test changes the
+    plan. At acceptance the system is checked against approved coverage,
+    support and clearances, clean piping, the hydrostatic result, alarm
+    and supervisory operation, inspection, and owner records,
+    corrections are closed, and the test report is issued.
+  controls:
+    - name: Flush witnessed and recorded
+      note: The flow, duration, and discharge condition of the flush are recorded and witnessed before the system is connected.
+    - name: Hydrostatic test held for the full period
+      note: The test pressure, duration, gauge reading at start and finish, and any drop are recorded on the form with the witness named.
+    - name: Alarm receipt confirmed with the monitoring company
+      note: Every alarm and supervisory signal is verified as received at the monitoring station, with the time and operator noted.
+    - name: Deficiency list closed before signature
+      note: Each deficiency found during testing is recorded, corrected, retested, and closed before the acceptance form is signed.
+    - name: Acceptance package assembled per authority
+      note: The test report, material listings, drawings, and calculations are compiled in the form the authority and the owner require.

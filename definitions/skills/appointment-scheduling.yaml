@@ -84,3 +84,48 @@ automation:
 questions:
   - Which appointment types most often run beyond their reserved time?
   - Does a cancellation release every person and resource it held?
+article:
+  what: >
+    The appointment scheduling process is how a service business turns a
+    request for a service into a reserved block of a named person's time
+    and the room, chair, bay, or equipment that person will need. It
+    starts when the appointment request arrives by phone, web, or walk-
+    in, and it ends when an appointment record holds the customer, the
+    work, the duration, the assigned professional, and the physical
+    resource, and everyone involved has confirmed the same commitment.
+    In a dental clinic, a hair salon, or an auto repair shop the front
+    desk owns it, under the practice manager or shop owner.
+  why: >
+    The appointment book is the business's production plan. A booking
+    made without scoping the work reserves too little time and makes the
+    professional late for the rest of the day, or too much time and
+    leaves a gap that cannot be sold at short notice. A booking that
+    reserves the professional without the chair, bay, or equipment puts
+    two customers in front of one resource at arrival. A reschedule that
+    reaches the customer and not the staff, or the reverse, wastes
+    preparation or leaves the customer standing at the old time. Without
+    the process, conflicts are found at the door.
+  how: >
+    The scheduler first clarifies the request: what service is wanted,
+    any special requirement, and therefore how long it takes and which
+    qualified person can do it. She then searches for usable capacity,
+    checking both the professional's calendar and the calendar of the
+    room, chair, bay, or equipment the appointment will occupy, and
+    rejecting a slot that would create an impossible transition or an
+    unsellable gap. The appointment is reserved as one record that shows
+    duration, preparation, price assumptions, and cancellation terms,
+    and the customer receives a confirmation. When the appointment moves
+    or is cancelled, the change releases every resource it held and
+    produces a confirmation event to both the customer and the assigned
+    staff.
+  controls:
+    - name: Service duration from a scoped request
+      note: Reserved time comes from the confirmed service and its special requirements, and a request too vague to scope is called back before booking.
+    - name: Resource reserved with the person
+      note: The room, chair, bay, or equipment is booked on the same record as the professional, so a conflict is caught at booking.
+    - name: Confirmation to both sides
+      note: Every new, moved, or cancelled appointment generates a confirmation event to the customer and the assigned staff, and a missing confirmation is an open item.
+    - name: Cancellation releases all holds
+      note: A cancelled appointment frees the person and every physical resource it reserved, and the released slot is visible to waitlist follow-up.
+    - name: Actual time reviewed against booked time
+      note: Appointment types that repeatedly run over or under are reviewed and their default duration adjusted.

@@ -192,6 +192,89 @@ for (const { file, value: skill } of skills) {
     failures.push(`${label} contains the obsolete generic acceptance question`);
 }
 
+// Skill pages are articles too: what the process is, why it matters, how it
+// runs in prose ahead of the step list, and the controls that keep it honest.
+const SKILL_PROSE_FLOORS = { what: 60, why: 50, how: 60 };
+const skillWhat = new Map();
+const wordsIn = (value) => String(value ?? "").trim().split(/\s+/).filter(Boolean).length;
+function walkProse(value, label) {
+  if (typeof value === "string") proseGate(value, label);
+  else if (Array.isArray(value)) value.forEach((item, index) => walkProse(item, `${label}[${index}]`));
+  else if (value && typeof value === "object")
+    for (const [key, inner] of Object.entries(value)) walkProse(inner, `${label}.${key}`);
+}
+function checkNamedNotes(list, label, min, max, noteFloor = 12) {
+  requireList(list, label);
+  if (!Array.isArray(list)) return;
+  if (list.length < min || list.length > max)
+    failures.push(`${label} has ${list.length} items; expected ${min} to ${max}`);
+  for (const [index, item] of list.entries()) {
+    requireText(item?.name, `${label} ${index + 1} name`);
+    requireText(item?.note, `${label} ${index + 1} note`);
+    if (wordsIn(item?.note) < noteFloor)
+      failures.push(`${label} ${index + 1} note has ${wordsIn(item?.note)} words; expected at least ${noteFloor}`);
+  }
+}
+function checkBenchmarkRows(rows, label) {
+  for (const [index, row] of rows.entries()) {
+    const rowLabel = `${label} ${index + 1}`;
+    requireText(row?.scope, `${rowLabel} scope`);
+    requireText(row?.value, `${rowLabel} value`);
+    requireText(row?.source_name, `${rowLabel} source_name`);
+    if (typeof row?.source !== "string" || !/^https?:\/\/\S+$/.test(row.source))
+      failures.push(`${rowLabel} source is not an absolute URL`);
+  }
+}
+for (const { file, value: skill } of skills) {
+  const label = `skills/${file}`;
+  const article = skill.article;
+  if (!article || typeof article !== "object") {
+    failures.push(`${label} article is missing`);
+    continue;
+  }
+  walkProse(article, `${label} article`);
+  for (const [field, floor] of Object.entries(SKILL_PROSE_FLOORS)) {
+    requireText(article[field], `${label} article.${field}`);
+    if (wordsIn(article[field]) < floor)
+      failures.push(`${label} article.${field} has ${wordsIn(article[field])} words; expected at least ${floor}`);
+  }
+  checkNamedNotes(article.controls, `${label} article.controls`, 3, 5);
+  const normalized = String(article.what ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  if (normalized) {
+    if (skillWhat.has(normalized)) failures.push(`${label} article.what duplicates ${skillWhat.get(normalized)}`);
+    skillWhat.set(normalized, label);
+  }
+}
+
+// Business pages carry three prose sections that match how people search:
+// how the business works, how to start one, and the economics. Benchmarks
+// are optional but every row needs a real source.
+const BUSINESS_PROSE_FLOORS = { operating_model: 60, starting: 80, economics: 80 };
+const businessProse = new Map();
+for (const { file, value: business } of businesses) {
+  const label = `businesses/${file}`;
+  const article = business.article;
+  if (!article || typeof article !== "object") {
+    failures.push(`${label} article is missing`);
+    continue;
+  }
+  walkProse(article, `${label} article`);
+  for (const [field, floor] of Object.entries(BUSINESS_PROSE_FLOORS)) {
+    requireText(article[field], `${label} article.${field}`);
+    if (wordsIn(article[field]) < floor)
+      failures.push(`${label} article.${field} has ${wordsIn(article[field])} words; expected at least ${floor}`);
+    const normalized = String(article[field] ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    if (normalized) {
+      if (businessProse.has(normalized)) failures.push(`${label} article.${field} duplicates ${businessProse.get(normalized)}`);
+      businessProse.set(normalized, `${label} article.${field}`);
+    }
+  }
+  if (article.benchmarks !== undefined) {
+    requireArray(article.benchmarks, `${label} article.benchmarks`);
+    if (Array.isArray(article.benchmarks)) checkBenchmarkRows(article.benchmarks, `${label} article.benchmarks`);
+  }
+}
+
 // Metric pages are articles: the number, how to compute it, published ranges
 // with a source each, what moves it, and how it is misread. Every metric must
 // carry the whole contract so the corpus cannot regress to unit-and-direction

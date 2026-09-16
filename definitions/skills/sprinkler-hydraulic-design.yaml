@@ -95,3 +95,54 @@ questions:
   - >-
     Which record proves sprinkler hydraulic design was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The sprinkler hydraulic design process sets the numbers behind a
+    sprinkler system, meaning the design criteria for the hazard, head
+    spacing, pipe sizing, the calculation nodes, the available water
+    supply, the hose allowance, and the margin the authority requires
+    between supply and demand. It starts when the hazard and occupancy
+    are verified and the water supply is tested, and it ends when the
+    calculated design has been approved and the installed system has
+    been tested against it. A fire sprinkler contractor owns it through
+    a designer, with a licensed engineer where the jurisdiction requires
+    one.
+  why: >
+    It protects the building's occupants and the approval. A design that
+    assumes a stronger water supply than the hydrant test shows, or a
+    remote area chosen where the calculation happens to pass, leaves the
+    most demanding part of the building underprotected in a fire. A
+    design without the required margin is returned by the reviewer, and
+    a design that passes on paper but was calculated to an outdated
+    occupancy has to be redone after the pipe is bought. The calculation
+    is the document that every later inspection and every future
+    modification refers back to.
+  how: >
+    The designer reads the current scope and revisions, then confirms
+    the verified hazard and occupancy, the approved hydraulic basis
+    including the water supply test, coordinated drawings, listed
+    material, fabrication release, access, and the outage plan before
+    calculating. The design work is set out with work limits by system
+    and zone, the sequence from criteria through sizing to calculation,
+    responsibilities between designer and reviewer, hold points where
+    criteria and supply are confirmed before sizing, and the calculation
+    record the reviewer will read. During the work the designer sets
+    criteria, spacing, pipe sizes, and nodes, runs the calculation
+    against the supply with the hose allowance and margin, records
+    assumptions and decisions, and stops when a field survey or a
+    coordination change alters the basis. At acceptance the design is
+    checked against approved coverage, support and clearances, clean
+    piping, the hydrostatic result, alarm and supervisory operation,
+    inspection, and owner records, corrections are closed, and the test
+    report is issued.
+  controls:
+    - name: Water supply from a dated flow test
+      note: The calculation uses a hydrant flow test with its date, location, and readings on the record, with a safety margin applied to the result.
+    - name: Hazard classification confirmed with the authority
+      note: The occupancy and commodity classification are agreed with the authority and recorded before criteria are set.
+    - name: Remote area justified on the drawing
+      note: The hydraulically most demanding area is identified and shown on the calculation drawing with the reason it was chosen.
+    - name: Independent check of the calculation
+      note: Another designer or the engineer reviews criteria, nodes, and results before submission, and the check is signed on the record.
+    - name: Calculation revised with every layout change
+      note: A head move or pipe reroute triggers a recorded recalculation so the installed system matches the approved numbers.

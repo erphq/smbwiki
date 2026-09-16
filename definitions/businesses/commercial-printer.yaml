@@ -38,3 +38,64 @@ summary: >
 supply_chain:
   buys_from: [paper-distributor, ink-supplier]
   sells_to: [commercial-client, graphic-design-studio]
+article:
+  operating_model: >
+    A commercial printer's week runs job by job through prepress,
+    press, bindery, and shipping. The estimator quotes from the
+    specification, the customer order becomes a production order with a
+    routing sheet, the prepress operator preflights the file and sends
+    a proof, and only an approved proof releases plates or the digital
+    queue. Machine operators run the press against the production
+    order, the quality inspector checks color and finishing counts, and
+    the maintenance technician keeps presses and finishing equipment
+    running between jobs. The load-bearing skills are print preflight
+    and proofing and production control, because a file error caught
+    before the press costs minutes and one caught after costs the
+    paper, the ink, and the run. The tension is between filling press
+    time and protecting first-pass yield: a rushed makeready to hold a
+    due date raises waste and the risk of a reprint, and a reprint
+    consumes the capacity promised to the next customer.
+  starting: >
+    Starting a commercial printer is a capital decision about presses,
+    finishing equipment, and the building that holds them, so most new
+    entrants begin with digital presses and a narrow finishing line or
+    buy an existing shop with equipment in place. Day-one paperwork is
+    the business registration, sales tax registration with resale
+    certificates for paper and ink, employer registration once
+    operators are hired, and a certificate of occupancy; depending on
+    the state, solvent-based inks, coatings, and press cleaning may
+    require an air permit or hazardous waste handling registration. No
+    trade license is specific to printing. The minimum team is an
+    owner-operator who also estimates, a prepress operator, a machine
+    operator, and a production manager role held by one of them, with
+    quality inspection and maintenance shared until volume justifies
+    dedicated staff. The first records are the job request, the quote,
+    the customer order, the production order, the routing sheet, the
+    print production proof with its approval, the quality report, the
+    delivery ticket, and the customer invoice, held in a manufacturing
+    operations system tied to accounting. Quoting, print preflight and
+    proofing, production control, production quality control, and
+    customer invoicing must work on the first job.
+  economics: >
+    Revenue is production orders, setup and engineering charges, and
+    print finishing and fulfillment: the printed quantity, the
+    makeready to set up each job, and the finishing, personalization,
+    packaging, mailing, and delivery around it. Pricing is per job from
+    an estimate of paper, ink, press time, and finishing labor, so the
+    estimator's accuracy sets the margin before the job starts. Gross
+    margin depends on material waste rate and first-pass yield, because
+    paper is the largest variable cost and a spoiled run is paid for
+    twice. Equipment uptime and on-time completion decide whether the
+    shop can sell its capacity, and quote win rate against booking rate
+    shows whether pricing matches what the market will pay. The
+    business is capital-intensive with presses that depreciate whether
+    or not they run, so margins are judged after equipment financing
+    and the shop needs enough recurring accounts to keep presses
+    loaded; days sales outstanding matters because commercial clients
+    pay on terms while paper is bought on shorter ones.
+  benchmarks:
+    - scope: Sales growth, operating cost inflation, and price increases, printing companies
+      value: sales up 0.4 percent, operating costs up 4.8 percent, prices up 2.8 percent, 2025 averages
+      note: "PRINTING United Alliance State of the Industry Report 2026, survey of 258 participating companies across commercial printing, wide-format graphics, package and label production, and apparel decoration. Real inflation-adjusted sales fell 2.4 percent on average; pre-tax profitability as a share of sales was lower than the prior year for 36.8 percent of companies and higher for 33.6 percent."
+      source: https://www.printing.org/docs/default-source/research-docs---public/2026_state_of_the_industry_report_executive_summary.pdf?sfvrsn=207e2c2a_1
+      source_name: PRINTING United Alliance, State of the Industry Report 2026 Executive Summary (May 2026, full-year 2025 data)

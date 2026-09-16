@@ -93,3 +93,47 @@ questions:
   - >-
     Which record proves residential preconstruction was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The residential preconstruction process converts a sold plan into a
+    baseline the field can build from. It begins when a buyer's sales
+    plan and lot are fixed and ends when permits are issued, the plan is
+    costed against trade scopes, long-lead materials are purchasable with
+    dates, the schedule is set, and every buyer selection has a named
+    decision deadline. In a single-family home builder it is owned by the
+    preconstruction or purchasing manager, with the superintendent
+    accepting the baseline before the first trade is scheduled.
+  why: >
+    Every missing dependency at the start becomes several idle trades
+    later. A permit condition found after excavation, a selection still
+    open when the cabinet order date passes, a trade scope that omits the
+    gap between two contracts, or a long-lead window nobody booked moves
+    the promised completion date and the buyer's move-in. The process
+    forces plans, permits, selections, trade scopes, and lead times to be
+    settled and dated before the site is mobilized, and leaves a baseline
+    that another operator can trace when the schedule is questioned.
+  how: >
+    The preconstruction manager confirms the work basis by reading the
+    current scope and revisions, then verifying approved plans, lot
+    controls, selections, permits, trade scopes, and long-lead dates
+    against the sales contract. The field controls translate the baseline
+    into work limits, sequence, responsibilities, hold points, and the
+    records the superintendent and trades will use, including selection
+    deadlines tied to order dates. As the baseline is built the manager
+    records quantities, decisions, and open items and stops when a plan
+    or permit condition changes the intended method. Acceptance checks
+    the baseline against the approved plan, inspection requirements,
+    owner selections, and turnover requirements before it is released to
+    the field, and corrections are closed into the closeout package that
+    follows the house to handover.
+  controls:
+    - name: Permit and plan revision matched
+      note: The permitted plan set and the current construction revision are compared and reconciled before the baseline is released to the field.
+    - name: Selection deadline on every long-lead item
+      note: Each buyer selection that drives an order carries a decision date set back from the order lead time, and the buyer has it in writing.
+    - name: Trade scopes checked for gaps and overlaps
+      note: Adjacent trade contracts are read together so every scope line has exactly one owner before purchasing begins.
+    - name: Cost baseline signed before mobilization
+      note: The costed plan is approved by the person accountable for margin before the first trade is scheduled on the lot.
+    - name: Baseline accepted by the superintendent
+      note: The superintendent reviews and accepts the baseline, and that acceptance is recorded in the job file before the site is mobilized.

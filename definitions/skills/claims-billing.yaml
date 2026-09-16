@@ -90,3 +90,61 @@ automation:
 questions:
   - Which claims are waiting on documentation or a payer response today?
   - What repeated rejection reason should be fixed upstream this week?
+article:
+  what: >
+    The claims billing process begins when a clinician signs the note
+    for a visit and ends when the payer has adjudicated the claim and
+    the patient holds a statement that explains what remains theirs to
+    pay. The billing specialist assembles codes and charges from the
+    signed record and the insurance verification, submits the claim,
+    works every payer response, and only then posts patient
+    responsibility. A dental clinic, a physical therapy clinic, and a
+    primary care practice all run it, usually with one billing
+    specialist or an outsourced biller answering to the practice owner.
+  why: >
+    It protects the practice's cash and its standing with payers at the
+    same time. A claim built from the schedule ahead of the signed note
+    can bill a service that was planned and never delivered, which later
+    means repayment or a defense. A rejection left in a portal with no
+    owner quietly runs out its filing window while the balance looks
+    submitted. A patient statement sent before adjudication asks for
+    money the payer may still cover, and the call that follows costs
+    more trust than the balance is worth.
+  how: >
+    The billing specialist starts from the source record: the signed
+    clinical note, service date, provider, coverage from the insurance
+    verification, and authorization status set what can be billed. The
+    claim is built with codes and charges that follow the documented
+    care, and required payer fields are completed before submission.
+    Once submitted, acceptance, rejection, requests for information, and
+    adjudication stay tied to the original claim in an owned work queue
+    with a reason category and next action. When the payer response
+    reaches a defined adjudication state, payer adjustments and prior
+    payments are applied and the patient statement is issued with the
+    remaining charges explained.
+  controls:
+    - name: Signed note before claim
+      note: >
+        No claim line is created from the appointment or the
+        treatment plan; the billing specialist waits for the signed
+        clinical note.
+    - name: Required fields check on every claim
+      note: >
+        Provider, patient, service, code, charge, and coverage are
+        validated as one consistent description of the visit before
+        electronic submission.
+    - name: Owned rejection queue
+      note: >
+        Every rejected or pended claim carries an owner, a reason
+        category, a next action, and its filing deadline, reviewed
+        on a fixed cadence.
+    - name: Adjudication gate before patient statement
+      note: >
+        Patient responsibility is posted only after the related
+        claim reaches a defined adjudication state, so statements
+        reflect payer adjustments.
+    - name: Rejection reasons fed upstream
+      note: >
+        Repeated rejection causes are reported to intake,
+        verification, and clinical documentation owners so the
+        defect is fixed at its source.

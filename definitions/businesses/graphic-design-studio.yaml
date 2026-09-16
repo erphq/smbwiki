@@ -43,3 +43,55 @@ summary: >
 supply_chain:
   buys_from: [commercial-printer, stock-asset-provider]
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    A graphic design studio sells approved creative scope and the
+    production files that follow it. A job request becomes a client
+    brief, the brief becomes an engagement letter that fixes
+    deliverables and revision rounds, and designers work through
+    concepts, feedback, and proofs until the client approves a creative
+    proof and the studio releases production-ready files. The week runs
+    on designer hours: the principal sells and directs, the client
+    coordinator manages briefs, feedback, and invoices, and designers
+    log time against engagements. Client engagement and professional
+    service delivery are the load-bearing skills, with creative proof
+    and release as the control that turns an approval into a file a
+    printer can use. The tension is between unlimited feedback and a
+    fixed fee: a client who changes content after approval, or who never
+    supplies the images and copy the brief required, ages work in
+    progress and burns hours the letter did not price.
+  starting: >
+    Day-one paperwork is business registration, employer registration
+    once the first designer is hired, and sales tax registration in
+    states that tax design services or printed deliverables; the studio
+    also needs font and stock asset licenses in the business name,
+    because using a designer's personal licenses on client work is a
+    rights problem. Capital is small: workstations, design software
+    subscriptions, calibrated displays, proofing output, and a website
+    with a portfolio. The minimum team is a principal who sells and
+    designs, one graphic designer, and a client coordinator who can be
+    part-time. The first records are the job request, the client brief,
+    the engagement letter with revision rounds and usage rights spelled
+    out, the time record, the approved creative proof, the deliverable
+    register with source files, and the customer invoice. Lead intake,
+    client engagement, professional service delivery, and creative proof
+    and release must work from the first engagement, because the first
+    dispute is always about what was included.
+  economics: >
+    Revenue is creative project and production fees plus fixed-fee
+    engagements, time-based work, and recurring advisory retainers for
+    brand upkeep. Pricing is per project against estimated hours or per
+    hour, with production fees for asset preparation, licensing
+    coordination, and print release. Gross margin is designer time sold
+    against designer time paid: engagement gross margin falls when
+    revision rounds exceed the letter and when unbilled hours
+    accumulate. The metrics that decide profit are utilization rate,
+    engagement gross margin, work in progress age, and rework rate,
+    because an engagement that stalls waiting on client content ties up
+    a designer who cannot be sold twice. Quote win rate and booking rate
+    feed the pipeline, and days sales outstanding matters because small
+    clients pay slowly and printers must be paid on release. The
+    business is labor-intensive with little capital, so margins are
+    decided by scoping, by change orders when content changes after
+    approval, and by keeping designers billable across overlapping
+    projects.

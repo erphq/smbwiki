@@ -37,3 +37,47 @@ automation:
 questions:
   - Which title, history, condition, repair, or market assumption can still change the buy decision?
   - Does the condition file prove acquisition authority, actual reconditioning, disclosure, and sale readiness?
+article:
+  what: >
+    The used vehicle acquisition and reconditioning process is how a used car
+    dealership decides to buy a vehicle and gets it ready to sell: the buyer
+    establishes who owns the unit and what it is, appraises its condition
+    against market evidence and repair exposure, buys it within an approved
+    authority, and then controls the reconditioning until the unit is priced
+    and released to retail or wholesale. It starts with a trade-in, an auction
+    lane, or a private seller and ends when the used vehicle condition file
+    shows the buy authority, actual reconditioning cost, disclosures, and
+    release. The used vehicle manager or buyer owns the decision, the service
+    manager owns the repair orders, and the dealer principal sets the
+    authority limits.
+  why: >
+    Every dollar of surprise is paid out of the unit's gross. A lien, a
+    branded title, or a mileage discrepancy found after the purchase can make
+    the unit unsaleable or expose the dealership to a disclosure claim.
+    Repairs found after the appraisal, or a reconditioning queue that takes
+    weeks, turn an expected gross into a loss and tie up capital while the
+    market moves. A condition file that cannot show what was found and what
+    was fixed leaves the salesperson representing a condition nobody verified.
+  how: >
+    The buyer establishes ownership and identity first, verifying seller
+    authority, title status, VIN, mileage, history, equipment, keys, liens,
+    disclosures, and the transfer path, and starts the used vehicle condition
+    file. The buyer then appraises condition and economics, inspecting and
+    driving the unit, pricing market alternatives from the stock record and
+    market data, estimating repairs on a repair estimate, classifying the
+    risk, and buying inside the approved acquisition authority. On
+    reconditioning the service manager works from approved repair orders,
+    tracks actual cost and days, verifies repairs and disclosures, and the
+    used vehicle manager prices the unit and authorizes retail or wholesale
+    release with the file complete.
+  controls:
+    - name: Title and lien verified before funds
+      note: Title status, liens, and history are confirmed from the record, and a discrepancy holds the purchase until it is resolved or priced into the deal.
+    - name: Acquisition inside written authority
+      note: The buy price plus estimated reconditioning is approved against the buyer's authority limit and recorded in the condition file before the deal is done.
+    - name: Repair estimate reconciled to actual
+      note: Every reconditioning repair order is compared with the appraisal estimate, and the variance is recorded on the condition file.
+    - name: Disclosures written before release
+      note: Accident history, prior damage, open recalls, and repairs performed are recorded as disclosures on the condition file before the unit is priced for retail.
+    - name: Release authorized on a complete file
+      note: The unit goes to the lot only when the manager signs the release with title, inspection, repairs, cost, and disclosures all present.

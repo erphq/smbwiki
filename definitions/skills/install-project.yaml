@@ -90,3 +90,51 @@ automation:
 questions:
   - What unconfirmed dependency can still move the committed install date?
   - Which closeout item currently blocks inspection, payment, or customer use?
+article:
+  what: >
+    The install project process is how a contractor carries an accepted
+    quote for a planned installation through to a finished,
+    commissioned, inspected, and handed-over system. It starts when the
+    customer accepts the quote and a permit is in play, and it ends when
+    the work order is closed with commissioning results, inspection,
+    punch work, customer instruction, warranty, and final payment all
+    owned. An HVAC contractor, an electrical contractor, a roofing
+    contractor, or a sign shop runs it for any job too large or too
+    dependent on permits and material to live on the same-day service
+    board. The project manager or the owner runs it, with the office
+    holding the dependency list.
+  why: >
+    It protects the install date, the margin, and the customer's trust
+    in the finished system. Without it the date is sold before the
+    permit is issued or the major equipment ships, the crew arrives to
+    find the site unprepared, field changes get absorbed without a
+    commercial decision, and the customer learns the true cost at the
+    final invoice. Commissioning treated as a checkbox lets equipment
+    enter service with settings and readings outside the design, which
+    surfaces later as a warranty call the contractor pays for.
+  how: >
+    The project manager establishes the baseline from the accepted
+    quote: scope, exclusions, design information, payment milestones,
+    customer responsibilities, and the route for changes. Permits and
+    supply are cleared next, with permit status, required inspections,
+    major material, special tools, outside services, and delivery
+    access confirmed before any date is fixed. Site and crew are then
+    committed on the schedule, including customer preparation,
+    shutdowns, crew qualifications, sequence, duration, protection, and
+    contingency. The work order is released to field staff with the
+    current scope, design, permit, material, site, change authority,
+    inspection, and commissioning requirements. Closeout is controlled
+    until commissioning results, inspection, punch work, customer
+    instruction, warranty, remaining payment, and final documents each
+    have an owner.
+  controls:
+    - name: Date gate on critical-path supply
+      note: The install date is committed only after the permit, major material, and any outside service on the critical path show confirmed status.
+    - name: Change log with dated decision owner
+      note: Any change to scope, labor, or material in the field is recorded with who decided, when, and how the customer approved it.
+    - name: Work order matches the baseline
+      note: Before release, the work order is checked against the accepted quote and design so the crew builds what was sold.
+    - name: Commissioning results recorded
+      note: Startup is complete only when required readings, settings, and operating results are written into the closeout, never a checkbox.
+    - name: Closeout ownership list
+      note: Inspection, punch items, customer instruction, warranty registration, and final payment each carry a named owner until closed.

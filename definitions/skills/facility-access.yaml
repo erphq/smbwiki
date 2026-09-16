@@ -87,3 +87,45 @@ automation:
 questions:
   - Which manual access override still lacks a resolved account action?
   - How quickly does an agreement change reach every entry point?
+article:
+  what: >
+    The facility access process decides, at the door, whether a person
+    presenting a credential gets in: the credential is read, its current
+    permissions are evaluated against plan, account state, hours, location,
+    age, guest, and supervision rules, the person is admitted or routed to
+    staff with a reason, and the result is written to the attendance log. It
+    runs at every entry point of a gym and at the gate of a self-storage
+    facility, and the front-desk attendant owns the exceptions while the
+    account system owns the permissions.
+  why: >
+    The door is where the business's agreement with a member is enforced. A
+    shared credential lets an unverified person into a space where the
+    operator has a duty of care and makes the attendance record useless for
+    capacity or investigation. An override granted without a reason turns
+    one attendant's judgment into invisible policy, and the account problem
+    behind it stays unresolved. When the door and the desk hold different
+    status, a member who just paid is refused in front of others, and an
+    account that ended last month is still opening the gate.
+  how: >
+    The credential is read at the entry point and the event carries the
+    credential, the member, the location, and the time before any decision
+    is made. The system, or the attendant when the system cannot, evaluates
+    the current permission: plan access, account state, hours, location
+    rules, age, guest, and supervision conditions, applied the same way
+    every time. When conditions are met the member is admitted. When they
+    are not, the attendant sees the reason and the allowed remedy and
+    resolves it without reading account detail across the lobby. Every
+    result is recorded on the attendance log, with successful entries,
+    denials, and overrides kept distinct and overrides carrying the
+    operator, reason, and follow-up.
+  controls:
+    - name: Permission read from the live account
+      note: Entry decisions come from the account system's current state, and the desk keeps no separate list of who should be let in.
+    - name: Override with operator, reason, and follow-up
+      note: Every manual admission is logged with who allowed it, why, and the account action that resolves it.
+    - name: Denials kept distinct in the log
+      note: Refused and overridden attempts are recorded separately from successful entries so patterns can be reviewed.
+    - name: Duplicate-use review
+      note: Credentials appearing in implausibly close entry events are flagged by the system and reviewed by the manager each week.
+    - name: Account change reaches every entry point
+      note: When an agreement changes, the time until every door reflects it is checked, and failures are escalated to the vendor.

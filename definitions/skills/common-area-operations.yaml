@@ -93,3 +93,55 @@ questions:
   - >-
     Which record proves common-area operations was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The common-area operations process keeps the shared parts of a
+    commercial property working for every tenant: inspection rounds,
+    cleaning, security, waste, lighting, landscape, life-safety access,
+    comfort, and repair, each planned by area and paid for through the
+    lease recoveries. It starts from the lease obligations and property
+    budget for the period and ends when the period's work and costs are
+    accepted and appear in the property operating statement. A
+    commercial property manager owns it through the property manager and
+    the building engineer or facilities lead.
+  why: >
+    It protects the tenant's use of the space and the owner's ability to
+    recover the cost. A blocked egress or a dark stairwell is a life-
+    safety exposure before it is a complaint. Cleaning and landscape
+    delivered outside the vendor contract cannot be recovered from
+    tenants and lands on the owner. A repair with no record becomes a
+    dispute at reconciliation. Tenants judge the whole building by the
+    lobby, the parking area, and the restrooms they share.
+  how: >
+    The property manager confirms the work basis by reading the current
+    leases and revisions and verifying tenant contacts, vendor
+    contracts, the property budget, building systems, the compliance
+    calendar, and owner authority. Field controls are set as an area
+    plan: inspection rounds, service frequencies, vendor
+    responsibilities, hold points for life-safety items, and the records
+    each round leaves. As the period runs, the operator records
+    inspections, vendor work, incidents, repairs, decisions, and any
+    changed condition, and stops when a finding alters the planned
+    method. Acceptance checks the period against accurate charges and
+    recoveries, maintained common areas, controlled vendors, documented
+    tenant work, and timely owner reporting, and the property operating
+    statement is issued once corrections close.
+  controls:
+    - name: Inspection round log by area
+      note: >
+        Each shared area is inspected on its scheduled frequency
+        with findings, photos, and follow-up recorded on one log.
+    - name: Life-safety items as hold points
+      note: >
+        Egress, emergency lighting, and fire-system access findings
+        stop the round until they are corrected or escalated to the
+        owner.
+    - name: Vendor work tied to contract scope
+      note: >
+        Cleaning, landscape, and security work is accepted only
+        against the vendor contract and its stated service
+        frequency.
+    - name: Repair record with cost and recovery treatment
+      note: >
+        Every repair carries a work record, the cost, and whether
+        the lease permits recovery, before it is billed to tenants.

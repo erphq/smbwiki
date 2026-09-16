@@ -90,3 +90,47 @@ questions:
   - >-
     Which record proves excavation control was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The excavation control process governs how a site preparation crew takes
+    ground down to a designed limit: the foreman sets the limits and depth
+    from the site plan, chooses slope or shoring, controls where equipment
+    enters and spoil goes, manages water, verifies the bearing surface, and
+    records any material that differs from the soil report. It starts when
+    the site plan, utility locates, and permits are in hand and ends with
+    the excavation accepted at grade and a daily report that records
+    quantities and conditions. A site preparation contractor's foreman owns
+    it under the project manager.
+  why: >
+    Excavation is where the unknowns in the ground become the contractor's
+    cost. A utility strike from unverified locates stops the job and can
+    injure the operator. An unsupported trench wall collapses on a worker.
+    Unsuitable soil left under a footing becomes a settlement claim years
+    later. Water left unmanaged turns the subgrade to mud and the crew
+    handles the same material twice. Quantities left unrecorded cannot be
+    billed for and cannot be defended when the owner disputes the
+    changed-material claim.
+  how: >
+    The foreman reads the site plan and revisions and confirms survey
+    control, utility information, permits, erosion controls, equipment
+    access, the haul route, where soil is going, and the weather plan. Field
+    controls set the excavation limits and target depths on the ground, the
+    slope or support method for each depth, the entry and spoil locations,
+    the dewatering approach, and the hold point where bearing is verified
+    before the next trade proceeds. As the work runs the foreman records
+    quantities moved, observations of the exposed material, decisions on
+    support and water, and stops when the material or a utility differs from
+    the plan. Acceptance checks limits, safe slopes or support, approved
+    grades, drainage, compaction, stabilized access, and recorded
+    quantities, and the daily report is issued.
+  controls:
+    - name: Utility locates verified before digging
+      note: Locate marks and the ticket are checked in the field and recorded before the first bucket, with hand digging near marked lines.
+    - name: Slope or support decided per depth
+      note: The protective system for each excavation depth is chosen from the soil condition and recorded before workers enter.
+    - name: Bearing verified at a hold point
+      note: The exposed subgrade is inspected and, where required, tested before footings or fill proceed, and the result is on the report.
+    - name: Changed material recorded the day found
+      note: Soil that differs from the report is described, located, and photographed on the daily report before it is removed.
+    - name: Daily report with quantities and conditions
+      note: Each day closes with cut and haul quantities, water, weather, and any stop recorded for the project record.

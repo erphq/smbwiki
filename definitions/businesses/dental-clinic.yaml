@@ -77,3 +77,80 @@ products:
   - dental-handpiece
 seo:
   title: "Dental Clinic: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A dental clinic week runs on two schedules that share rooms: the
+    hygiene column of preventive visits and recall, and the dentist's
+    column of examinations and restorative or elective treatment
+    accepted from a plan. The receptionist books, confirms, and
+    verifies coverage before each visit, the dental assistant sets up
+    rooms and moves instruments through cleaning, packaging,
+    sterilization, and release, and the billing specialist sends claims
+    from completed notes and posts payments to patient balances. The
+    load-bearing skills are clinical care, patient recall, and
+    instrument sterilization, because hygiene recall fills the book
+    that finds the restorative work, and sterilization decides whether
+    the next room can open. The tension is between chair utilization
+    and treatment acceptance: a full hygiene schedule produces
+    diagnoses, but a plan the patient does not accept or schedule is a
+    room that stays empty and a claim never sent.
+  starting: >
+    A dental clinic starts with a licensed dentist and a licensed
+    dental hygienist, since both state licenses are required before
+    either can see a patient, and with a build-out that carries
+    plumbing, compressed air, suction, and radiation shielding to each
+    operatory. Day-one paperwork is the business registration, employer
+    registration, a state radiation machine registration for the x-ray
+    equipment in most states, a dental facility or professional entity
+    registration where the state requires it, a controlled substance
+    registration for prescribing, medical waste and amalgam separator
+    compliance, and a certificate of occupancy; payer credentialing
+    should start months before opening if the clinic will bill
+    insurance. The minimum team is the dentist, a dental hygienist, a
+    dental assistant, and a receptionist who also verifies coverage,
+    with billing handled by the receptionist or an outside service
+    until volume justifies a billing specialist. The first records are
+    the patient registration, the insurance verification, the patient
+    chart, the clinical note, the treatment plan, the insurance claim,
+    the patient statement, the recall list, the instrument log, and the
+    sterilization log, held in a practice management system paired with
+    an electronic health record and imaging. Patient intake,
+    appointment scheduling, coverage verification, clinical care,
+    patient recall, instrument sterilization, and claims billing must
+    work from the first open.
+  economics: >
+    Revenue is preventive visits that recur on a patient schedule,
+    restorative treatment delivered across one or more visits from an
+    accepted plan, and elective treatment paid directly by the patient.
+    Pricing is a fee schedule per procedure, discounted by the
+    insurance contracts the clinic joins, so the payer mix sets the
+    effective price for the same chair time. Gross margin is chair time
+    and clinical labor against the fee, with laboratory fees and
+    supplies as the variable costs of restorative and elective work.
+    The metrics that decide profit are chair utilization, treatment
+    acceptance rate, recall reappointment rate, appointment no-show
+    rate, clean claim rate, and days sales outstanding, because a
+    diagnosed plan that is not accepted earns nothing, a recall that
+    does not rebook loses next year's preventive visit and the
+    diagnosis it would have produced, and a rejected claim delays the
+    largest share of cash. The business is capital-intensive in
+    operatories, imaging, and sterilization equipment and
+    labor-intensive in licensed staff, so margins are judged after
+    equipment financing and depend on each operatory being occupied
+    most of the week.
+  benchmarks:
+    - scope: Average net income, general practitioner dentists in private practice
+      value: 215,320 dollars, 2025
+      note: "ADA Health Policy Institute Survey of Dental Practice; average across general dentists in private practice. Specialists averaged 346,520 dollars in the same survey."
+      source: https://www.ada.org/resources/research/health-policy-institute/dental-practice-research
+      source_name: American Dental Association Health Policy Institute, Income, Gross Billings, Expenses, and Characteristics, Survey of Dental Practice (2025)
+    - scope: Average gross billings per dentist, general practitioners in private practice
+      value: 965,660 dollars per dentist, 2025
+      note: "Same ADA HPI survey; gross billings before collections and practice expenses. Specialists averaged 1,213,040 dollars. Read with the net income row, the gap is practice expense plus uncollected billings."
+      source: https://www.ada.org/resources/research/health-policy-institute/dental-practice-research
+      source_name: American Dental Association Health Policy Institute, Income, Gross Billings, Expenses, and Characteristics, Survey of Dental Practice (2025)
+    - scope: Median annual wage, dentists
+      value: 176,110 dollars, May 2025
+      note: "BLS Occupational Outlook Handbook; wage and salary dentists across all settings, including employed associates; self-employed owners are outside the wage survey. About 161,400 jobs in 2025, projected growth 6 percent from 2025 to 2035."
+      source: https://www.bls.gov/ooh/healthcare/dentists.htm
+      source_name: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Dentists (May 2025 wages)

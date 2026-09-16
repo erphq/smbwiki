@@ -24,3 +24,64 @@ revenue_model:
 supply_chain:
   buys_from: [maintenance-contractor]
   sells_to: [homeowner]
+article:
+  operating_model: >
+    A residential property manager runs on the tenant ledger and the
+    maintenance queue. The property manager lists vacant units, takes
+    lease applications, screens, signs leases, collects rent, posts it
+    to the ledger, issues notices, and handles renewals and move-outs,
+    while the maintenance coordinator turns maintenance requests into
+    work orders for outside contractors and closes them with job
+    photos. Lease administration and maintenance coordination are the
+    load-bearing skills, and payment reconciliation is what keeps owner
+    money, tenant money, and the firm's fees separate. The tension is
+    that the manager sits between an owner who wants spending held down
+    and a tenant with habitability and access rights, and each
+    exception needs a decision, an authority, and evidence of whose
+    funds paid for it.
+  starting: >
+    In most states, managing rentals for others for a fee is licensed
+    real estate activity, so the firm needs a broker license or a
+    dedicated property manager license depending on the state, and a
+    trust account for security deposits and owner funds kept apart from
+    operating cash. Beyond that come the business registration, employer
+    registration once staff are hired, general liability and errors and
+    omissions coverage, and a management agreement template that
+    spells out spending limits, reserve cash, fees, and the owner's
+    authority. The minimum team is a property manager and a maintenance
+    coordinator, with the owner-operator often holding the license and
+    the coordinator role at first, plus a bench of maintenance
+    contractors that can be dispatched. The first records are the lease
+    application, the lease, the tenant ledger, the maintenance request,
+    the work order with job photos, the supplier invoice, and the
+    payment record, and the skills that must work from the first door
+    are lease administration, maintenance coordination, accounts
+    receivable for rent, accounts payable for vendors, and payment
+    reconciliation so the monthly owner statement balances.
+  economics: >
+    Revenue is recurring management fees, usually a percentage of rent
+    collected or a flat amount per unit, plus leasing and project fees
+    for placement, renewals, inspections, and managed improvements.
+    Because the main fee is tied to collected rent, rent collection
+    rate and vacancy rate move revenue directly, and the manager earns
+    nothing on an empty unit. Gross margin is driven by doors per
+    manager and by how much of the vendor work carries a markup or
+    coordination fee, since labor is the dominant cost and a manager
+    who can carry more units at the same service level is the whole
+    lever. The metrics that decide profit are vacancy rate, rent
+    collection rate, and maintenance response time, which also drives
+    renewal. Owner compensation distorts reported margins in small
+    firms, which is why benchmark studies adjust it to a market salary
+    before comparing. The business is capital light and labor heavy,
+    with lumpy leasing income layered on a stable fee base.
+  benchmarks:
+    - scope: Property management profit margin, adjusted for owner compensation
+      value: 11 percent average, 32 percent for the top quartile (2021)
+      note: 2022 NARPM Financial Performance Guide produced by ProfitCoach, 153 participating companies; profit on property management revenue only, after restating owner compensation to a market salary and separating maintenance and brokerage divisions. Adjusted average was 6 percent in 2017 and 2019 and 8 percent in 2020; unadjusted average was 16 percent in 2021.
+      source: https://www.narpm.org/docs/NARPM_FinancialPerformanceGuideOverview.pdf
+      source_name: NARPM and ProfitCoach, 2022 NARPM Financial Performance Guide (2021 data)
+    - scope: Establishments, employment, and average pay, NAICS 531311 residential property managers
+      value: "77,238 establishments, 537,935 employees, average annual pay $63,884 (2024 annual averages)"
+      note: BLS Quarterly Census of Employment and Wages, private ownership, US total, 2024 annual averages; includes on-site staff at managed communities as well as third-party management offices.
+      source: https://data.bls.gov/cew/data/api/2024/a/area/US000.csv
+      source_name: Bureau of Labor Statistics, Quarterly Census of Employment and Wages, 2024 annual averages

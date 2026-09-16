@@ -94,3 +94,45 @@ questions:
   - >-
     Which record proves fence panel installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The fence panel installation process is the work of hanging rails,
+    pickets, or panels on set posts so that the top line runs true across
+    grade changes, spacing and fastening are consistent, expansion is
+    allowed for, cut edges are finished, and privacy is achieved where
+    specified. It starts when posts have cured and been accepted and ends
+    with an installed run recorded on the quality report ready for closeout.
+    A fence contractor's crew lead owns it with the installer doing the
+    work.
+  why: >
+    Panels are what the owner sees, and mistakes here are the ones the owner
+    complains about. A top line that steps unevenly across a slope, pickets
+    whose gaps drift wider down the run, and a vinyl panel with no expansion
+    gap that buckles in the first summer are all visible from the street.
+    Fastening into posts that have not cured loosens the whole run. Cut
+    edges left raw rust or splinter. The process keeps spacing, top line,
+    and fastening under control so the closeout walk finds nothing.
+  how: >
+    The lead reads the site plan and revisions and confirms the boundary or
+    approved alignment, located utilities, the selected system, known grade,
+    gate geometry, material on hand, and access. Field controls set the
+    string line for the top, the method for stepping or racking across
+    grade, the spacing gauge, the fastener type and pattern, expansion gaps
+    for the material, and the hold point where the first bay is checked
+    before the crew proceeds. During installation the crew records bays
+    completed, grade transitions and how they were handled, cut edges
+    finished, and any post that does not match the layout, and stops when
+    grade or post condition differs from the plan. Acceptance checks line,
+    grade, spacing, fastening, gate operation, finish condition, and
+    security, and the quality report is updated.
+  controls:
+    - name: First bay checked before proceeding
+      note: The first panel or bay is checked for top line, spacing, and fastening against the plan, and the crew continues only after it passes.
+    - name: Post cure confirmed before hanging
+      note: The date posts were set is checked against the cure time on the record before any panel is fastened.
+    - name: Grade transition method recorded
+      note: How each slope was handled, stepped or racked, is recorded with a photograph at the transition.
+    - name: Spacing gauge used and checked
+      note: Picket or rail spacing is set with a gauge, and the run is spot-checked at intervals recorded on the report.
+    - name: Cut edges and fasteners finished per bay
+      note: Each bay is checked for finished cut edges and correct fasteners before the crew moves to the next bay.

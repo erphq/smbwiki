@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves overhead door installation was accepted before it was
     covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The overhead door installation process is the site work that puts a
+    sectional garage door and its hardware into a surveyed opening:
+    setting jamb brackets and vertical track, assembling the sections,
+    installing rollers and hinges, hanging the horizontal track,
+    aligning travel, fitting the spring system and operator, sealing the
+    opening, and securing everything to the structure. It starts from a
+    work order with a completed opening survey and ends with a
+    commissioning record showing the door balanced, safe, and handed to
+    the owner. The lead installer owns it for a garage door contractor.
+  why: >
+    It protects the people who will walk under the door every day. A
+    door can run under power and look finished while its springs are
+    out of balance, its track brackets are into weak framing, or its
+    photo eyes and force reversal have never been tested, and each of
+    those is a crushing or falling hazard that shows up later without
+    warning. It also protects the contractor: a callback for a door that
+    binds, a seal that leaks, or an operator that was never programmed
+    for the owner costs a crew day and the customer's confidence.
+  how: >
+    The lead installer confirms the work basis on arrival: current scope
+    and revisions, the surveyed opening and structure, the selected door
+    and operator, electrical provision, hardware, spring design, access,
+    and site protection. Field controls set the sequence, who does what,
+    the hold points at spring tensioning and first powered cycle, and
+    the records to be kept. During installation the crew sets brackets
+    and track, stacks and pins sections, installs rollers and hinges,
+    aligns travel, tensions springs, mounts and wires the operator,
+    seals the perimeter, and secures the assembly, recording concealed
+    fastening and any deviation, and stopping when the opening or the
+    structure differs from the survey. Acceptance checks secure
+    attachment, balanced travel, clearances, functional controls,
+    entrapment protection, manual release, seals, and owner instruction,
+    corrections are closed, and the commissioning record is issued.
+  controls:
+    - name: Survey matched before track goes up
+      note: Opening dimensions and structure are re-measured against the survey and the work order, and a difference is recorded and resolved first.
+    - name: Spring tensioning as a hold point
+      note: Spring winding is done by the lead installer with the door locked down, and the turn count is recorded on the commissioning record.
+    - name: Balance test before operator connection
+      note: The door is cycled by hand and holds at mid-travel before the operator arm is attached, and the result is written on the record.
+    - name: Entrapment protection tested and recorded
+      note: Photo-eye interruption and force reversal are tested on the installed door and the results, with the operator settings, go on the record.
+    - name: Owner instruction signed
+      note: The owner is shown manual release, safety features, and maintenance needs, and signs the commissioning record at handover.

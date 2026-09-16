@@ -98,3 +98,51 @@ automation:
 questions:
   - Which released order is missing one item needed at its next operation?
   - Which due date is already impossible under current queue and capacity?
+article:
+  what: >
+    The production control process converts a customer order into
+    authorized, sequenced work on the shop floor and keeps revision,
+    material, routing, setup, labor, equipment, due date, quantity,
+    progress, downtime, and actual output attached to one production
+    order from release to closeout. It starts when a customer order is
+    complete enough to build and ends when accepted quantity, remaining
+    work, material, outside services, and actual cost are reconciled
+    and the order is ready to ship. The production manager owns it in a
+    machine shop, a commercial printer, or a sign shop, with machine
+    operators reporting from the work centers.
+  why: >
+    It protects capacity from being spent on the wrong thing. An
+    obsolete revision that reaches the shop produces output the customer
+    cannot accept; a job released with a missing tool, program, or
+    material burns setup time while people search; progress reported
+    only at completion means shortages, scrap, and schedule loss are
+    discovered after the time to recover has gone. Keeping every machine
+    busy is a poor goal, because utilization at the wrong resource
+    creates queues, partial work, and late orders where the real
+    constraint lies.
+  how: >
+    The production manager verifies the order: item, specification,
+    revision, quantity, due date, delivery, material, quality
+    requirements, and approval state are all complete. The routing is
+    planned and the production order and routing sheet are issued:
+    operations, work centers, setup, tooling, material, outside work,
+    inspection points, labor, lot size, and sequence become controlled
+    instructions. Before release the manager clears readiness: the
+    current drawing, material, tooling, program, fixture, capacity,
+    predecessor work, and inspection method are on hand. Machine
+    operators run the routing and report setup, start and stop,
+    completed quantity, scrap, rework, downtime, and material use at
+    each operation. At close the manager reconciles accepted quantity,
+    remaining work, material, outside service, actual cost, records, and
+    shipment readiness on the production order.
+  controls:
+    - name: Revision match at release
+      note: The work packet revision is compared to the released customer order and the current drawing, and a mismatch holds the order at the desk.
+    - name: Readiness checklist before dispatch
+      note: Drawing, material, tooling, program, fixture, capacity, and inspection method are ticked on the production order before it reaches the dispatch list.
+    - name: Operation-level reporting
+      note: Each operation reports quantity, scrap, rework, downtime, and signoff as it completes, and an active routing with no operation status is flagged.
+    - name: Due-date review against queue
+      note: Open orders are reviewed against current queue and capacity on a set cycle, and an impossible date is raised with the customer before it is missed.
+    - name: Closeout reconciliation
+      note: Accepted quantity, material used, outside services, and actual cost are reconciled to the order before it is closed and costed.

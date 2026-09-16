@@ -92,3 +92,50 @@ automation:
 questions:
   - Which open guest promise has no named owner or response time?
   - Which repeated issue continues to receive compensation without preventive action?
+article:
+  what: >
+    The guest recovery process is what a full-service restaurant does when
+    service fails at the table: a wrong or late dish, an allergen concern,
+    a spill, a billing error, or a guest who is upset for a reason the
+    team has not yet understood. It starts when a server or any staff
+    member notices or hears the concern and ends when the guest knows
+    what happened next, any payment change is visible on the check, and a
+    guest issue record captures the concern, the response, and the cause.
+    The server receives it and the general manager owns the response and
+    the record.
+  why: >
+    The guest who has a problem handled well comes back; the guest who
+    explains it four times and receives a silent comp does not. Without a
+    process, recovery depends on which manager is on shift, concessions
+    vanish into payment adjustments with no record, and the same kitchen
+    or pacing failure keeps being paid for at the table. The process
+    protects the guest's immediate safety when the issue is an allergen or
+    a hazard, the restaurant's margin from unrecorded comps, and the
+    operating changes that stop the recurrence.
+  how: >
+    The server receives the concern and stabilizes it first: any food,
+    allergy, safety, timing, conduct, payment, or comfort risk is
+    understood and handled before anyone discusses cause or policy. The
+    general manager then establishes the service facts from the order
+    ticket and guest check, the table, the timing, the people involved,
+    and the promise made, with the guest telling the story once. The
+    manager chooses and delivers a response, whether a remake, a
+    replacement, a table move, an explanation, a check adjustment, a
+    refund, a follow-up, or an escalation, with one owner and honest
+    timing. The server confirms the outcome with the guest so they know
+    what is happening, sees any payment change on the check, and has a
+    named follow-up route for anything unresolved. The manager records the
+    concern, context, response, cost, outcome, owner, and recurring cause
+    in the guest issue record, and repeated causes go into the operating
+    review.
+  controls:
+    - name: Safety first, cause later
+      note: Any allergen, injury, or conduct risk is handled and recorded before the team discusses what went wrong or what the guest is owed.
+    - name: One telling of the story
+      note: The manager gathers the facts from the ticket, the check, and the server so the guest is never asked to repeat the account.
+    - name: Comp tied to a recorded response
+      note: A check adjustment cannot be entered without a guest issue record naming the operational response that went with it.
+    - name: Follow-up with owner and time
+      note: Any promise to contact the guest later carries a named role and a time in the issue record before the guest leaves.
+    - name: Recurring cause review
+      note: Issue records are grouped by cause on a set cadence and repeated causes are assigned an operating change with an owner.

@@ -95,3 +95,49 @@ automation:
 questions:
   - Which saleable lot lacks one required result or release signoff?
   - Which exception changed the product after its supporting sample was taken?
+article:
+  what: >
+    The beverage quality release process is the gate between a finished
+    batch and a sale. It starts when a batch record reaches the stage
+    where bulk or packaged product could become available and ends when
+    a beverage release record shows the decision, the evidence, the
+    released quantity, any remaining hold, and the signature of the
+    person who released it. In a brewery or winery the quality
+    technician gathers and reviews the evidence, and the production lead
+    or winemaker holds the authority to release, hold, or dispose.
+  why: >
+    The process protects the customer and the brand from product that
+    has not been proven. A passing result that cannot be tied to a
+    specific vessel or package run proves nothing about what is being
+    sold. Inventory that shows as saleable while a result is still
+    pending gets picked, shipped, and served. A blend, treatment, or
+    relabel done to fix an exception invalidates the evidence that
+    preceded it. Without the process, release follows the schedule and
+    an informal taste, and a batch problem becomes a customer complaint,
+    a compliance finding, or a recall.
+  how: >
+    The quality technician establishes the release requirements for the
+    product, lot, and stage: which tests, sensory checks, and label or
+    package conditions apply, what the limits are, and who may decide.
+    Samples are drawn with sample point, vessel or package, lot, time,
+    condition, and handler attached, and that identity stays with the
+    sample through the laboratory. The technician then reviews the lab
+    results, trends, sensory notes, packaging checks, and any open
+    process exception for completeness and consistency against the batch
+    record. Exceptions go to the production lead, who decides on hold,
+    more time, retest, blend, treatment, rework, relabel, downgrade, or
+    disposal, preserving lot identity. The production lead then records
+    the decision, evidence, released quantity, remaining hold, date, and
+    signoff on the beverage release record before inventory status
+    changes.
+  controls:
+    - name: Release specification per product and stage
+      note: Required tests, sensory checks, and limits are written for each product and stage before samples are drawn.
+    - name: Sample chain of identity
+      note: Every sample carries lot, vessel or package, time, and handler from draw to result, and a result without them is void.
+    - name: Inventory locked until release
+      note: Product remains unavailable in the inventory system until the release record is signed, regardless of schedule.
+    - name: Post-action resample
+      note: Any blend, treatment, time extension, or relabel triggers a new sample and review before release.
+    - name: Release record signed by named authority
+      note: The record shows who released what quantity on what evidence, and the signer's authority is on file.

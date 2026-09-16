@@ -86,3 +86,51 @@ questions:
   - >-
     Which record proves air sealing was accepted before it was covered,
     loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The air sealing process is how an insulation contractor closes the
+    leaks in a building's air barrier before insulation covers them: top
+    plates, chases, penetrations, rim joists, window and door openings,
+    and the transitions between wall, roof, and floor. It starts when
+    the construction plan and the framing, plumbing, and electrical
+    rough-ins are complete enough to define the air-control layer, and
+    it ends when every sealed location is recorded on an inspection
+    report and the insulation crew can begin. The insulation foreman
+    owns it, working ahead of his own batt or blown crew.
+  why: >
+    An unsealed gap behind insulation is a permanent defect. Air moves
+    through it for the life of the building, carrying heat, moisture,
+    and dust past the insulation and making the rated R-value
+    meaningless in that spot. The gap cannot be found or fixed once
+    drywall is on without opening the wall. Without the process, the
+    crew seals what is visible, misses chases and top plates that are
+    already hard to reach, uses a sealant that is incompatible with the
+    material it is meant to bond to, and leaves nothing that a blower-
+    door test or an energy inspector can trace back.
+  how: >
+    The foreman starts by reading the current construction plan and
+    revisions and confirming that the air-control layer is defined and
+    complete, that the cavities are dry, that known leaks have been
+    closed by other trades, that services are installed, that the
+    insulation system has been approved, and that the crew can reach the
+    work safely. He then sets the field controls: the list of locations
+    to seal, the sealant or foam for each substrate, the sequence
+    through the building, the hold point before insulation, and the
+    record form. During the work the crew records the locations sealed,
+    material used, and any penetration or opening that was not on the
+    plan, and stops when a condition such as a wet cavity or a missing
+    service changes the method. At acceptance the sealed boundary is
+    checked for continuity, clearances are confirmed, concealed work is
+    photographed, corrections are closed, and the inspection report is
+    issued to the builder.
+  controls:
+    - name: Sealing location list from the plan
+      note: Top plates, chases, penetrations, rim areas, and openings are listed from the construction plan before work starts, and each is ticked off by location.
+    - name: Material compatibility check
+      note: The sealant or foam for each substrate is confirmed against the manufacturer's listing before it is applied, and an unlisted pairing is stopped.
+    - name: Photo record before cover
+      note: Every sealed location that insulation or drywall will conceal is photographed with a location reference before the next trade starts.
+    - name: Hold point before insulation
+      note: The insulation crew does not begin until the foreman has walked the sealed boundary and signed the hold point.
+    - name: Inspection report issued
+      note: The report lists locations, materials, exceptions, and corrections and is filed before the building is closed in.

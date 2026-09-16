@@ -113,3 +113,63 @@ supply_chain:
 products: []
 seo:
   title: "Freight Brokerage: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A freight brokerage sells transportation it does not perform. The
+    week is shipper calls that become load requests, quotes built
+    against current carrier rates, tenders to approved carriers, rate
+    confirmations, tracking from pickup to delivery, proof-of-delivery
+    collection, customer invoicing, and carrier payment. Carrier
+    sourcing, load execution, and carrier onboarding are the
+    load-bearing skills, because the margin is made when a load is
+    covered at the right cost and lost when a carrier falls off, arrives
+    late, or turns out to be unverified; a claims coordinator handles
+    the damage and shortage disputes that follow. The tension is
+    between covering loads fast and verifying carrier identity,
+    authority, and insurance every time.
+  starting: >
+    A brokerage needs federal broker authority before arranging its
+    first interstate load, which comes with a surety bond or trust fund
+    filing, a process agent designation in every state, and a unified
+    carrier registration; the business registration and employer
+    registration once the first broker is hired complete the general
+    set. A transportation management system, a carrier monitoring
+    service, and a bank line or factoring arrangement are day-one
+    requirements because carriers expect payment in weeks and shippers
+    pay in months. The minimum team is an owner-operator who sells to
+    shippers and a freight broker who covers loads, with carrier
+    compliance, tracking, billing, and claims handled by the same two
+    people until volume justifies a carrier sales representative, a
+    tracking coordinator, a billing specialist, and a claims
+    coordinator. The first records are the load request, the quote, the
+    load tender, the carrier packet and approved carrier record, the
+    rate confirmation, the bill of lading, the proof of delivery, the
+    customer invoice, and the carrier invoice. The skills that must work
+    from the first load are shipper sales, freight quoting, carrier
+    onboarding, carrier sourcing, load execution, customer invoicing,
+    and carrier payment.
+  economics: >
+    Revenue is margin per load, the shipper charge less purchased
+    carrier cost and load-specific accessorials, plus contract lanes at
+    agreed shipper rates and managed transportation fees across a
+    shipper's load book. Spot loads are priced against the carrier
+    market that day; contract lanes are priced ahead and carry the risk
+    that carrier cost rises. Gross margin per load and loads per broker
+    day decide profit, since a broker's salary is spread across the
+    loads covered; tender acceptance rate, on-time pickup and delivery
+    rates, and claims rate protect the margin already earned. Cash
+    timing is the other half: carrier days to pay is short and days
+    sales outstanding is long, so working capital, and the cost of
+    financing it, scales with volume. The business has almost no fixed
+    capital and is limited by broker headcount and credit capacity.
+  benchmarks:
+    - scope: Adjusted gross profit margin, North American surface transportation brokerage (largest US broker)
+      value: 14.8 percent of total revenues (full year 2025)
+      note: "C.H. Robinson North American Surface Transportation segment: total revenues of $11,562.7 million and adjusted gross profits of $1,706.3 million for the year ended December 31, 2025; fourth quarter margin 14.6 percent. Adjusted gross profit is revenue less purchased transportation, the same construct as margin per load. A scale operator; small brokerages commonly run higher percentage margins on lower volume."
+      source: https://www.sec.gov/Archives/edgar/data/1043277/000104327726000005/ex991earningsreleaseq41231.htm
+      source_name: "C.H. Robinson Worldwide, Form 8-K Exhibit 99.1, 2025 Fourth Quarter Results (January 2026)"
+    - scope: Receipts per establishment and payroll share, freight transportation arrangement
+      value: "$5.74 million receipts per establishment; payroll 19.1 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 488510 (freight transportation arrangement, which covers freight brokers together with freight forwarders and customs brokers) in the 2022 Economic Census, establishments with payroll; receipts of $134.9 billion across 23,482 establishments, annual payroll of $25.7 billion, 354,889 employees (about fifteen per establishment). Receipts are gross, including purchased transportation.
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector48/EC2248BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Transportation and Warehousing: Summary Statistics for the U.S., States, and Selected Geographies, EC2248BASIC (2022)"

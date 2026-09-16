@@ -67,3 +67,57 @@ supply_chain:
   sells_to: [individual-client]
 seo:
   title: "Veterinary Clinic: How the Business Works | smbwiki"
+article:
+  operating_model: >
+    A veterinary clinic works on a patient that cannot report history
+    and an owner who must authorize and pay. The day is a schedule of
+    preventive visits, illness visits, procedures, and urgent requests,
+    with laboratory work and callbacks about patients already seen
+    layered on top; a receptionist runs intake and recall, a veterinary
+    technician prepares the patient and assists, and the veterinarian
+    examines, estimates, and treats. Clinical care and patient intake
+    are the load-bearing skills, with purchasing keeping medications and
+    supplies stocked. The tension is the estimate: the owner needs a
+    decision point before added work, and the team needs a named owner
+    for every result and follow-up task.
+  starting: >
+    A veterinary clinic opens with a licensed veterinarian, and the
+    day-one paperwork is the business registration, employer
+    registration, sales tax registration where dispensed products are
+    taxable, the veterinary premises or facility permit some states
+    require, controlled substance registration for anesthetics and pain
+    medication, radiation registration for imaging equipment, and a
+    medical waste disposal arrangement; a supplier account with a
+    veterinary distributor must be open before the first patient. The
+    minimum team is a veterinarian, a veterinary technician, and a
+    receptionist, with an office manager over the front desk and the
+    books. The first records are the appointment record, patient
+    registration, the patient chart with clinical notes and treatment
+    plan, the customer invoice, the purchase order, and the recall list.
+    Appointment scheduling, patient intake, clinical care, invoicing,
+    and purchasing must work on the first day.
+  economics: >
+    Revenue is examinations, diagnostics and procedures, and medications
+    and products dispensed as part of care, priced by service and by
+    product markup, and paid by the owner at the visit because pet
+    insurance is uncommon. Gross margin is driven by the mix of service
+    against product, by doctor time per visit, and by how much
+    diagnostic work the owner authorizes when an estimate is presented
+    clearly. Average ticket is the metric that decides profit, with
+    appointment no-show rate governing whether scheduled doctor hours
+    are used and recall reappointment rate governing whether preventive
+    visits come back on time. Days sales outstanding is short when
+    payment is collected at discharge and grows when it is not. Labor is
+    the largest cost, and equipment for imaging, laboratory, and surgery
+    is capital that must be used often to pay for itself.
+  benchmarks:
+    - scope: "Gross revenue per full-time-equivalent veterinarian, companion animal exclusive practices"
+      value: "616,667 dollars median; 411,111 dollars lower quartile, 867,901 dollars upper quartile (2023 revenue, reported 2024)"
+      note: "AVMA Veterinary Practice Owners Survey productivity metrics, 2025 Report on the Economic State of the Veterinary Profession; companion animal predominant practices reported a 608,553 dollar median and mixed animal practices 416,250 dollars. Respondent count for this table is not stated."
+      source: https://ebusiness.avma.org/files/productdownloads/002_AVMA_SotPReport25_NoPasswordPRO.pdf
+      source_name: "AVMA, 2025 Report on the Economic State of the Veterinary Profession (2023 revenue reported in 2024)"
+    - scope: "Average gross revenue per practice, companion animal exclusive"
+      value: "about 1.6 million dollars (2023 revenue, reported 2024)"
+      note: "AVMA Veterinary Practice Owners Survey; brick-and-mortar practices averaged about 1.7 million dollars and practices in the West South Central region about 1.9 million dollars. Most practice types saw a slight decrease between the 2023 and 2024 reports."
+      source: https://ebusiness.avma.org/files/productdownloads/002_AVMA_SotPReport25_NoPasswordPRO.pdf
+      source_name: "AVMA, 2025 Report on the Economic State of the Veterinary Profession (2023 revenue reported in 2024)"

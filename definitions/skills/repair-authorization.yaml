@@ -87,3 +87,46 @@ automation:
 questions:
   - Can the shop show exactly what the customer approved and when?
   - How does the bay learn that authorized scope changed?
+article:
+  what: >
+    The repair authorization process captures the customer's informed yes
+    or no on each line of a repair estimate before the bay touches the
+    vehicle. It begins when the estimate is ready to present and ends
+    when approved and declined lines, the total, the contact method, and
+    the approval time are recorded on a work authorization and the same
+    scope has reached the technician and the parts desk. In an auto
+    repair shop it is owned by the service advisor, and every added
+    finding during the repair reopens it for a fresh decision.
+  why: >
+    An unclear approval costs more than the repair. A customer who was
+    told to proceed without a list of lines can dispute any of them at
+    pickup, and the shop cannot prove which estimate version or price was
+    accepted. A verbal add-on that never reached the record appears on
+    the invoice with no evidence behind it. A declined safety item that
+    loses its date and reason is gone the next time the vehicle comes in.
+    The process turns each decision into a durable record that protects
+    both the customer's consent and the shop's right to bill.
+  how: >
+    The service advisor presents the choices from the repair estimate,
+    explaining for each decision line the finding, the proposed
+    correction, the consequence of waiting, the price, and the timing.
+    The advisor answers scope questions, confirming what the selected
+    work will resolve and which recorded concerns will remain open. The
+    decision is captured on the work authorization with approved and
+    declined lines, the total, the contact method, and the approval time,
+    backed by a signature or a timestamped digital approval. The advisor
+    then releases the work so the bay and the parts desk receive exactly
+    the authorized scope the customer accepted, and any new finding
+    during the repair returns to the advisor for a new authorization
+    event.
+  controls:
+    - name: Line-level approval
+      note: The work authorization lists each approved and declined line with its price, so a blanket proceed is never the only evidence of consent.
+    - name: Timestamp and contact method recorded
+      note: Every approval carries when it was given and how, whether in person, by phone, or by digital signature.
+    - name: Declined lines kept with date and reason
+      note: Declined work stays on the vehicle history with the decline date so the recommendation can be revisited at the next visit.
+    - name: Estimate version tied to the authorization
+      note: The authorization names the estimate version it approves so a later price change cannot be confused with what the customer accepted.
+    - name: Added scope requires a new authorization
+      note: Work beyond the approved lines stops until a new authorization event is recorded and the bay is notified.

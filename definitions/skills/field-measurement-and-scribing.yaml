@@ -95,3 +95,47 @@ questions:
   - >-
     Which record proves field measurement and scribing was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The field measurement and scribing process is how a finish carpenter
+    takes the room as it actually exists, with walls out of plumb, floors
+    out of level, and openings out of square, and turns it into casing,
+    base, cabinet fillers, and panel reveals that read straight and tight.
+    It starts when the space is conditioned and dry and the profiles and
+    samples are approved, and it ends with the fitted work accepted and
+    any correction captured on a punch list. The lead carpenter owns it on
+    a finish carpentry contractor's crew, with the foreman signing off
+    acceptance.
+  why: >
+    Finish carpentry is the last trade the owner looks at and the first
+    place accumulated framing, drywall, floor, and casework tolerances
+    become visible. Without measured scribes and planned reveals, a crew
+    cuts to the drawing dimension, finds the gap on installation, and
+    hides it with caulk, filler, or a forced joint that opens as the
+    material moves. The process protects the appearance the client is
+    paying for, the material that cannot be recut once it is short, and
+    the labor that would otherwise go into a second fitting.
+  how: >
+    The lead carpenter starts by reading the current scope and revisions
+    from the construction plan and confirming the space is conditioned,
+    the field dimensions have been checked, material is dry, backing is
+    complete, and access is protected. The scribing plan is then set:
+    which edges get scribed, which get a reveal or filler, the sequence of
+    rooms, the hold points where a fit is checked before fastening, and
+    the record the crew keeps. During the work the carpenter records field
+    dimensions, scribe decisions, and any concealed backing or shim
+    conditions, and stops when a wall or floor turns out further off than
+    the profile can absorb. At acceptance the foreman checks fit, reveal,
+    joint, alignment, fastening, and surface condition, closes correction,
+    and issues the punch list.
+  controls:
+    - name: Field dimension check before cutting
+      note: Every run is measured in place and compared against the plan dimension, and a difference beyond the reveal is resolved before stock is cut.
+    - name: Approved sample and profile on site
+      note: The signed-off profile and finish sample stay with the crew so a scribed piece is checked against what the client approved instead of a recollection.
+    - name: Hold point before fastening
+      note: A scribed piece is dry-fit and checked at the hold point before nails or adhesive commit it, so a bad fit costs one trip to the saw.
+    - name: Field record of concealed conditions
+      note: Shims, backing, and out-of-plane conditions the trim will cover are photographed and noted before they disappear behind finished work.
+    - name: Punch list closed at acceptance
+      note: The foreman walks the fitted work, lists every open joint or misaligned reveal with an owner, and signs the punch list closed.

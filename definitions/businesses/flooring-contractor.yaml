@@ -23,3 +23,55 @@ revenue_model:
 supply_chain:
   buys_from: [flooring-distributor]
   sells_to: [homeowner, general-contractor]
+article:
+  operating_model: >
+    A flooring contractor turns room measurements and a material
+    selection into an installation that is only as good as the
+    substrate under it. The week is estimates in occupied homes and on
+    job sites, material orders matched to product and dye lot, and
+    crews doing demolition, prep, and installation in a sequence that
+    changes when moisture, flatness, or hidden damage appears. Quoting
+    and project delivery are the load-bearing skills, with purchasing
+    close behind, because the order has to match the approved product
+    and waste allowance, and the crew has to record substrate condition
+    and get approval before covering the evidence that justifies a
+    change. The tension is between the fixed quote and what the floor
+    reveals on demolition day.
+  starting: >
+    Flooring installation is licensed as a specialty trade in some
+    states and falls under general contracting thresholds in others, so
+    the state board is the first call; general contractor clients will
+    also ask for insurance certificates. Day-one paperwork is the
+    business registration, sales tax registration because installed
+    material is taxable in most states, employer registration when the
+    crew is hired, and an account with a flooring distributor, which
+    sets the lead times and the product lines the estimator can sell.
+    Moisture meters and a flatness check are day-one tools because the
+    quote depends on them. The minimum team is an owner-operator, an
+    estimator, a crew lead, and a field crew, with an office manager
+    added for intake and invoicing. The first records are the job
+    request, the quote, the work order, job photos before covering the
+    substrate, purchase orders, and the customer invoice. The skills
+    that must work from the first job are lead intake, quoting,
+    purchasing, project delivery, and invoicing.
+  economics: >
+    Revenue is installation projects sold as material and labor for a
+    measured scope, plus preparation and repair for demolition,
+    leveling, moisture control, and substrate correction. Installation
+    is priced per square foot by material with labor and material
+    separated, and prep work is priced per condition found. Gross
+    margin is driven by material markup, waste allowance, and crew
+    square feet per day, so project gross margin and quote win rate
+    decide profit, with schedule variance showing the cost of material
+    delays and substrate surprises. Booking rate and days sales
+    outstanding matter because homeowner jobs pay on completion and
+    builder work pays on draws. The business is labor-intensive with
+    little equipment, and material is bought per job, so the working
+    capital exposure is the deposit gap between paying the distributor
+    and collecting from the customer.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, flooring contractors
+      value: "$1.38 million receipts per establishment; payroll 19.6 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 238330 (flooring contractors) in the 2022 Economic Census, establishments with payroll; receipts of $24.2 billion across 17,513 establishments, annual payroll of $4.7 billion, 85,979 employees (about five per establishment). Material sold through the contractor is inside receipts, which is why the payroll share is lower than in labor-only trades.
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector23/EC2223BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Construction: Summary Statistics for the U.S., States, and Selected Geographies, EC2223BASIC (2022)"

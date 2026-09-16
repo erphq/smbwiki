@@ -32,3 +32,56 @@ skills:
 supply_chain:
   buys_from: [venue-operator, event-vendor]
   sells_to: [individual-client, commercial-client]
+article:
+  operating_model: >
+    An event planning company turns a client's purpose, audience,
+    budget, and date into one coordinated production that cannot be
+    rehearsed in full. The week is client meetings, venue and vendor
+    negotiation, contracts and deposits, floor plans and run-of-show
+    documents, guest communication, and on event days a command role
+    over timing, vendor failure, weather, and attendee issues. Event
+    production planning and client engagement are the load-bearing
+    skills, with professional service delivery managing the hours,
+    because every client decision has to be pushed through supplier
+    scope, cost, schedule, and payment before the date arrives. The
+    tension is change control: clients keep deciding, vendors need lead
+    time, and the planner absorbs the gap.
+  starting: >
+    Day one needs the business registration, employer registration when
+    the first coordinator is hired, general liability insurance that
+    venues will ask to see, and, where the planner resells alcohol,
+    staffing, or taxable goods, the sales tax or permit rules those
+    bring in that state; most planners avoid holding those permits by
+    contracting licensed vendors directly to the client. A client
+    agreement template that sets the planner's authority to commit
+    deposits, and a vendor agreement template, are needed before the
+    first booking. The minimum team is a principal who sells and runs
+    the event, a professional who plans, and a client coordinator who
+    handles invoicing and logistics; solo operators start as all three
+    and staff event days with contractors. The first records are the
+    job request, the client brief, the engagement letter, the work
+    order for each vendor, the time record, and the customer invoice,
+    and the skills that must work from the first inquiry are lead
+    intake, client engagement, event production planning, and
+    invoicing.
+  economics: >
+    Revenue is planning and production fees sold by project, phase, or
+    management fee, and vendor and event services where the company
+    procures, staffs, or supplies production work under its own
+    contract. Fees are quoted against estimated hours and complexity,
+    while pass-through services carry a markup or a coordination fee.
+    Gross margin depends on whether hours stay inside the fee, so
+    engagement gross margin, project gross margin, utilization rate,
+    and schedule variance decide profit, with quote win rate and
+    booking rate showing whether the pipeline fills the calendar. Days
+    sales outstanding and work-in-progress age matter because deposits
+    are collected early and final balances after the event. The
+    business is labor and working-capital intensive, holding client
+    deposits against vendor commitments, and margins fall when the
+    planner carries vendor risk without pricing it.
+  benchmarks:
+    - scope: Receipts per establishment and payroll share, convention and trade show organizers
+      value: "$2.61 million receipts per establishment; payroll 22.1 percent of receipts (2022)"
+      note: Derived from published US totals for NAICS 561920 (convention and trade show organizers, the code that also carries event planners) in the 2022 Economic Census, establishments with payroll; receipts of $17.4 billion across 6,671 establishments, annual payroll of $3.8 billion, 74,735 employees (about eleven per establishment). Large trade show producers pull the average well above a small planning firm.
+      source: https://www2.census.gov/programs-surveys/economic-census/data/2022/sector56/EC2256BASIC.zip
+      source_name: "US Census Bureau, 2022 Economic Census, Administrative and Support Services: Summary Statistics for the U.S., States, and Selected Geographies, EC2256BASIC (2022)"

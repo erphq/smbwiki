@@ -24,3 +24,51 @@ revenue_model:
 supply_chain:
   buys_from: [appliance-parts-distributor]
   sells_to: [homeowner, property-management-company]
+article:
+  operating_model: >
+    An appliance repair service sells a technician's time at someone's
+    kitchen. The week is a dispatch board: calls come in with a symptom
+    and an appliance identity, the dispatcher books a window, the
+    technician diagnoses on site, quotes the repair, and either fixes it
+    from truck stock or orders the part and books a return visit.
+    Dispatch and field job execution are the load-bearing skills, with
+    purchasing right behind, because the model and serial number decide
+    whether the part exists, whether the appliance is under warranty,
+    and whether the visit can be completed in one trip. The tension is
+    the return visit: every part that has to be ordered means a second
+    drive, a disassembled appliance in an occupied home, and a customer
+    who is now comparing the repair quote to a replacement.
+  starting: >
+    Day one needs the business registration, sales tax registration
+    because parts are resold, an employer registration once the first
+    technician is on payroll, and general liability insurance that
+    covers work in customers' homes; technicians who open sealed
+    refrigeration systems need the federal refrigerant handling
+    certification, and a few cities license appliance repair businesses,
+    so check the locality. Manufacturer authorization matters as much as
+    any permit: warranty work and access to service data come through
+    authorized servicer programs, and without them the shop is limited
+    to out-of-warranty repairs. The minimum team is an owner-operator
+    who can diagnose and repair, a dispatcher or office-manager taking
+    calls and booking windows, and a parts account with an appliance
+    parts distributor. The first records are the job request, the quote,
+    the work order with job photos, purchase orders for parts, and the
+    customer invoice. Lead intake, dispatch, field job execution,
+    purchasing, and invoicing have to work from the first call, and the
+    work order must carry authorization, ordered parts, and a named next
+    action so nothing is lost between visits.
+  economics: >
+    Revenue is the diagnostic call, charged for travel and diagnosis
+    before or within an approved repair, and parts and labor on
+    authorized work. Pricing is a flat diagnostic fee plus flat-rate or
+    hourly labor and a marked-up part. Gross margin depends on parts
+    markup and on how much of a technician's day is billable, which is
+    why first-time fix rate, jobs per technician day, and callback rate
+    decide profit: a job that needs a second visit halves the productive
+    day and a callback erases the margin on the first. Average ticket
+    and quote win rate show whether customers are choosing repair over
+    replacement. The business is labor and vehicle intensive with modest
+    capital in trucks, tools, and truck stock; the choice of how much
+    inventory to carry on the truck trades cash for fewer return visits,
+    and the balance between warranty work paid at manufacturer rates and
+    retail work paid at the shop's rates sets the blended margin.

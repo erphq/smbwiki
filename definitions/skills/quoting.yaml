@@ -86,3 +86,48 @@ automation:
 questions:
   - What site assumption can most change the current quote after acceptance?
   - Can the crew tell exactly where quoted scope ends?
+article:
+  what: >
+    The quoting process turns a qualified job request into a written
+    offer the business can honor and the customer can accept. It begins
+    when a request has been confirmed as real, with the site, existing
+    system, access, and acceptance criteria understood, and it ends when
+    a versioned quote carrying price, scope, tax, payment terms,
+    validity, schedule basis, warranty, and acceptance route is issued.
+    In a plumbing contractor, a moving company, or a sign shop it is
+    owned by the estimator or the owner, with the person who will run the
+    job checking that the scope boundary is one they can work to.
+  why: >
+    The quote is the promise the whole job is measured against. A price
+    built without a site survey turns access, capacity, code, or damage
+    into work the crew discovers after acceptance and cannot bill. An
+    exclusion left implied leaves the customer and the contractor each
+    assuming the other owns the permit, the disposal, or the restoration.
+    A major item quoted without a confirmed source or lead time makes the
+    accepted schedule depend on supply nobody promised. The process makes
+    those exposures explicit while there is still time to price or
+    exclude them.
+  how: >
+    The estimator defines the requested outcome from the job request,
+    confirming site condition, existing system, access, constraints,
+    responsibility, and acceptance criteria before any price is built.
+    Scope and cost are then assembled under the job owner: labor,
+    material, equipment, permits, outside work, disposal, uncertainty,
+    and schedule exposure, with supplier cost and lead time checked for
+    major items. Assumptions and choices are reviewed so alternatives
+    have distinct outcomes and every exclusion and customer-supplied
+    dependency is written down. The quote is issued as one versioned
+    offer carrying price, scope, tax, payment terms, validity, schedule
+    basis, warranty, and acceptance route, and each later revision
+    replaces the prior version on the record.
+  controls:
+    - name: Site survey or recorded assumption
+      note: A site-dependent quote carries the measurement, survey, or written assumption it rests on, so the crew knows what was and was not seen.
+    - name: Exclusions and customer duties listed by name
+      note: Every adjacent task the quote does not cover is named with its owner, so no permit, repair, or disposal is assigned to both parties.
+    - name: Supplier cost and lead time confirmed for major items
+      note: A quoted item that drives price or schedule has a current source, cost, and lead time recorded before the quote goes out.
+    - name: One versioned quote
+      note: Revisions supersede the prior version on the same record so the accepted price, scope, and terms can be shown without a search.
+    - name: Estimate reviewed against actuals
+      note: Closed jobs feed labor, material, and change actuals back to the estimator so recurring uncertainty becomes an allowance or a survey.

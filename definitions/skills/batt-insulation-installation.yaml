@@ -95,3 +95,49 @@ questions:
   - >-
     Which record proves batt insulation installation was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The batt insulation installation process is how an insulation
+    contractor fills framed cavities with fiberglass or mineral wool
+    batts cut and fitted to full depth around wiring, piping, boxes,
+    blocking, and irregular framing without compressing them or leaving
+    gaps. It starts when air sealing is complete and the construction
+    plan defines the assemblies and R-values, and it ends when every
+    cavity is filled and an inspection report records what was installed
+    before drywall covers it. The insulation foreman owns it, and the
+    crew installs to his sequence.
+  why: >
+    A batt that is compressed behind a pipe, stuffed around a box, or
+    cut short of the top plate leaves a cold spot that will condense,
+    stain, and cost energy for the life of the wall, and the energy
+    inspector's grade for the whole house drops on those details. None
+    of it can be seen once drywall is hung. Without the process, the
+    crew works from memory, wind washing at eaves and bypasses at chases
+    survive a glance, and the builder has no record to answer a
+    homeowner's comfort complaint or a code inspector's question.
+  how: >
+    The foreman reads the current construction plan and revisions and
+    confirms that the air-control layer is complete, that cavities are
+    dry, that leaks have been sealed, that services are installed, that
+    the insulation system and R-values are approved, and that access is
+    safe. The field controls are then set: batt type and thickness per
+    assembly, the method for splitting around wiring and fitting behind
+    piping, the sequence through the building, the hold point before
+    drywall, and the record form. During installation the crew records
+    bags used, areas completed, and any cavity that could not be filled
+    to depth, and stops when a wet cavity, missing service, or framing
+    change alters the method. At acceptance the foreman checks the
+    boundary for continuity, full depth, correct density, and protected
+    clearances, photographs concealed work, closes corrections, and
+    issues the inspection report.
+  controls:
+    - name: R-value and assembly map from the plan
+      note: Each cavity type is matched to its specified batt thickness and R-value before material is ordered.
+    - name: Full-depth fit check per room
+      note: Batts are checked for compression, gaps, and splits around services before the crew leaves a room.
+    - name: Clearances protected
+      note: Required clearances at flues, recessed lights, and vents are confirmed and recorded before the cavity is closed.
+    - name: Photo record before drywall
+      note: Concealed cavities are photographed with location references before the drywall crew is released.
+    - name: Inspection report issued
+      note: Areas, materials, exceptions, and corrections are written into the inspection report and filed with the builder.

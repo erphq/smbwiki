@@ -97,3 +97,53 @@ questions:
   - >-
     Which record proves hazardous-material coordination was accepted before it
     was covered, loaded, energized, occupied, or handed over?
+article:
+  what: >
+    The hazardous-material coordination process holds demolition until the
+    materials in the building are known and handled: survey and sampling
+    for asbestos, lead, and other regulated materials, definition of the
+    regulated scope, notifications to the authority, containment and
+    abatement by a licensed contractor where required, clearance before
+    disturbance, and a disposal route for each waste stream. It starts
+    when the engineering survey is complete and before any disturbance,
+    and it ends when the regulated materials are removed or protected,
+    clearance is documented, and the daily report records the condition
+    the demolition crew is working in. The project manager owns it for a
+    demolition contractor.
+  why: >
+    A demolition crew that opens a wall with unknown material in it
+    exposes itself, the neighbors, and the owner to contamination, a
+    regulatory stop, and a cleanup that costs more than the demolition.
+    Unknown loads, hidden utilities, and undocumented materials make an
+    unplanned removal sequence dangerous, and a notification filed late or
+    a waste stream sent to the wrong facility carries fines that follow
+    the contractor. The process protects the crew, the site, the schedule,
+    and the contractor's license.
+  how: >
+    The project manager reads the current scope and revisions and confirms
+    the completed engineering survey, utility shutdown, hazardous-material
+    disposition, exclusion zones, removal sequence, and disposal routes
+    before any disturbance. The field controls are then set: which areas
+    are held pending sampling or abatement, the notification dates and
+    authorities, containment and exclusion zone limits, the licensed
+    abatement contractor's scope, the clearance hold point before
+    demolition enters each area, waste segregation and manifests, and the
+    daily report. During the work the manager records sampling results,
+    notifications sent, abatement progress, clearance documents, waste
+    manifests, and any suspect material or hidden condition found during
+    demolition, and stops work in that area until it is resolved. At
+    acceptance the manager checks specified removals, stable remaining
+    structure, protected services and finishes, segregated waste, clean
+    limits, and documented changed conditions, closes correction, and
+    issues the daily report.
+  controls:
+    - name: Survey and sampling before disturbance
+      note: No area is opened until the survey result for that area is on file and any suspect material has been sampled.
+    - name: Notification dates tracked
+      note: Each required notification is recorded with authority, date sent, and the earliest date work may start in the affected area.
+    - name: Clearance hold point by area
+      note: Demolition enters an abated area only after the clearance document for that area is received and filed.
+    - name: Waste manifests by stream
+      note: Every regulated load leaving the site carries a manifest that names the stream, the hauler, and the receiving facility.
+    - name: Suspect material stop rule
+      note: Material found during demolition that does not match the survey stops work in that area and is recorded on the daily report.

@@ -106,3 +106,51 @@ org:
     reports:
       - role: client-coordinator
       - role: real-estate-appraiser
+article:
+  operating_model: >
+    An appraisal firm runs on assignments. The client coordinator logs a
+    request, the principal or appraiser scopes the intended use, value
+    question, effective date, and credential required, and issues the
+    engagement letter. The appraiser inspects the property, verifies
+    records against observed condition and legal rights, analyzes
+    comparable sales or income evidence, reconciles the approaches, and
+    signs the appraisal report. Engagement scoping and reconciliation
+    and reporting are the load-bearing skills, since a reviewer must be
+    able to follow how the opinion arose from the evidence. The tension
+    is between report turnaround, which lenders and their management
+    companies measure in days, and the verification and judgment each
+    assignment actually needs.
+  starting: >
+    The credential comes first: the appraiser signing work must hold the
+    state appraiser credential at the level matching the property type
+    and value being appraised, which means completing the required
+    education and supervised experience before the firm can accept that
+    class of assignment. The firm also needs the business registration,
+    employer registration when staff are hired, professional liability
+    coverage, access to multiple listing and public record data, and
+    approval with the lenders or appraisal management companies that
+    will send residential work. The minimum team is a principal who is
+    a credentialed appraiser and a client coordinator handling intake,
+    invoicing, and receivables; a second appraiser follows when
+    turnaround suffers. The first records are the job request, the
+    engagement letter, the appraisal report, the time record, and the
+    customer invoice, and the skills that must work from the first
+    assignment are lead intake, client engagement, engagement scoping,
+    property data verification, comparable sales analysis, and
+    reconciliation and reporting, with income approach valuation added
+    when commercial work is accepted.
+  economics: >
+    Revenue is fixed fee engagements for defined assignments, time based
+    work for consulting, review, and testimony, and recurring advisory
+    for clients with repeated valuation needs. Fees for lender work are
+    set close to the market by the ordering party, so gross margin is
+    driven by appraiser hours per report and by how much data
+    verification and travel each assignment absorbs. The metrics that
+    decide profit are report turnaround time, utilization rate,
+    engagement gross margin, and work in progress age, because a late
+    report loses the client and unbilled work ties up the only asset the
+    firm sells, which is credentialed time. Days sales outstanding
+    matters when management companies pay on their own cycle. The
+    business is capital light and labor bound: growth means adding
+    credentialed appraisers, and each one takes years of supervised
+    experience to produce.

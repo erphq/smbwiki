@@ -35,3 +35,60 @@ licenses:
 supply_chain:
   buys_from: [beauty-supply-distributor]
   sells_to: [individual-client]
+article:
+  operating_model: >
+    A nail salon sells technician time at a station, so the week is a
+    schedule of appointments and walk-ins against the number of licensed
+    technicians on shift. The client coordinator books and checks out,
+    the service provider consults, delivers the service, and records the
+    products used on the ticket, and the owner-operator handles
+    purchasing, staff scheduling, and the bills. Appointment scheduling,
+    personal service delivery, and client checkout are load-bearing, and
+    disinfection between clients runs underneath everything. The tension
+    is between speed and safety: ticket time drives revenue per station,
+    but a skin break, a suspected infection, or a product reaction
+    requires the technician to stop, modify, or refuse, and the ticket
+    has to record what was used in case the client reports a reaction
+    later.
+  starting: >
+    Every technician needs the state nail technician license, and in
+    most states the premises need a cosmetology establishment license
+    that is inspected before opening, with rules on ventilation,
+    sanitation, and disinfection equipment. The general layer is
+    business registration, sales tax registration because retail
+    products and, in some states, the services are taxable, and
+    employer registration once the first technician is hired; salons
+    that use booth renters instead need rental agreements and a clear
+    line on who holds which license. The minimum team is an
+    owner-operator who is often a technician, one or two service
+    providers, and a client coordinator at the desk who can be the owner
+    at first. Stations, pedicure chairs, ventilation, and an autoclave
+    or equivalent are the capital items. The first records are the
+    appointment record, the client profile with the consultation and
+    condition notes, the service ticket, and the purchase order and
+    supplier invoice for products. Appointment scheduling, client
+    consultation, personal service delivery, and client checkout must
+    work on the first day, along with the cleaning and disinfection
+    routine that the inspector will check.
+  economics: >
+    Revenue is nail services (manicure, pedicure, enhancements, removal)
+    priced per service, plus enhancements and retail as design work
+    added to the ticket and take-home products. Labor is the largest
+    cost, and the labor cost percentage decides whether the salon is
+    profitable, because a technician on the clock without a client is
+    pure cost. Average ticket and service ticket time together set
+    revenue per station hour: a longer, higher-priced enhancement
+    service can earn more per hour than two quick manicures, or less,
+    depending on the technician's speed. Service utilization measures
+    how much of the paid technician time is booked, the appointment
+    no-show rate measures the slots lost, and the rebooking rate at
+    checkout is the cheapest way to fill next month's schedule. The
+    salon is capital-light beyond stations, chairs, and ventilation, so
+    margins follow the labor structure (commission, hourly, or booth
+    rental) more than anything else in the model.
+  benchmarks:
+    - scope: Mean annual wage, manicurists and pedicurists in personal care services
+      value: "$36,390 (May 2023)"
+      note: "Manicurists and pedicurists in NAICS 8121 Personal Care Services, 141,930 employed or 19.38 percent of the industry's 732,500 jobs; mean hourly wage $17.50. Industry group covers hair, nail, and skin care establishments together."
+      source: https://www.bls.gov/oes/2023/may/naics4_812100.htm
+      source_name: BLS, Occupational Employment and Wage Statistics, NAICS 8121 Personal Care Services (May 2023)

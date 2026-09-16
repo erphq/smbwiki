@@ -86,3 +86,54 @@ automation:
 questions:
   - Which part of delivery time is currently invisible to dispatch?
   - What condition allows one delayed stop to be removed from a driver's run?
+article:
+  what: >
+    The delivery dispatch process moves completed orders from the
+    counter to the customer's door on time: confirming each order is
+    ready and complete, grouping stops that can share a driver,
+    assigning the driver and route, and managing the live run until
+    every handoff is recorded. It starts when an order ticket is marked
+    ready and ends when the delivery ticket is closed with handoff
+    evidence. A pizzeria, a caterer, or a florist runs it through the
+    shift lead or a dispatcher at the store.
+  why: >
+    It protects the promise time and the product's condition on arrival.
+    A driver sent on an expected ready time waits at the kitchen while
+    earlier orders lose their window. A stop with a gate, lobby, or
+    elevator that dispatch never noted turns a short map distance into a
+    long handoff and the later stops miss. A delay with no dispatcher
+    deciding on redelivery, substitution, or return leaves the driver,
+    the customer, and the store all waiting on each other.
+  how: >
+    The dispatcher confirms readiness from the order ticket: the order,
+    packaging, address, contact, payment state, and promised time are
+    complete before assignment. Compatible runs are built so that stops
+    share a driver only when travel and handoff time keep each order
+    inside its usable delivery window. The driver and route are assigned
+    and the delivery ticket carries the stop sequence, items, customer
+    instruction, contact route, and the named exception owner. Through
+    the live run, delays, failed contact, wrong addresses, and returns
+    update the customer and the dispatch board while recovery is still
+    possible, and the ticket closes with proof of handoff.
+  controls:
+    - name: Ready event before assignment
+      note: >
+        A driver is assigned only after the order ticket records a
+        ready event, never from an expected completion time.
+    - name: Window check on every batched stop
+      note: >
+        Each stop added to a run is checked against the promised
+        windows of the stops already on it before the run is
+        released.
+    - name: Access notes on the delivery ticket
+      note: >
+        Parking, gate, lobby, and elevator requirements are recorded
+        per address and travel with the driver on the ticket.
+    - name: Exception owner named on the ticket
+      note: >
+        Every active delivery ticket shows who decides on
+        redelivery, substitution, or return when a stop fails.
+    - name: Handoff evidence closes the ticket
+      note: >
+        Photo, signature, or recipient confirmation is captured at
+        each stop before the ticket is marked delivered.

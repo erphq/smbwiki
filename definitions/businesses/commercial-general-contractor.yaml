@@ -120,3 +120,61 @@ org:
               - role: trade-foreperson
                 reports:
                   - role: installer
+article:
+  operating_model: >
+    The week is run from the project schedule. The estimator prices bid
+    packages against drawings and material takeoffs, the project
+    manager buys out trade packages into subcontracts, and the site
+    superintendent runs the daily sequence of subcontractors,
+    inspections, deliveries, and safety on site. Requests for
+    information go to the design team when the drawings do not answer a
+    field question, submittals move product data through approval
+    before installation, and change orders capture what the owner adds
+    or the site reveals. The load-bearing skills are subcontractor
+    buyout, RFI control, and submittal control, because an unanswered
+    question or an unapproved product becomes a stopped crew. The
+    tension is between holding the schedule and waiting for
+    information: the superintendent can push a trade forward on an
+    assumption or hold it for an answer, and both choices cost money in
+    different ledgers. Closeout is its own sequence of tests, training,
+    records, and punch work before the owner accepts and retention is
+    released.
+  starting: >
+    A commercial general contractor starts with bonding capacity and a
+    contractor license. Most states license general contractors at the
+    state level, with exams, experience proof, financial statements,
+    and a bond; some cities license separately, and public work adds
+    prequalification. Alongside that come the universal registrations:
+    entity registration, employer registration, workers' compensation
+    and general liability insurance at limits owners require, and sales
+    tax handling for materials that varies by state. Surety bonding is
+    the practical gate, since an owner will not award a contract the
+    contractor cannot bond. The minimum team is an owner-operator who
+    estimates and manages the first project, an office manager for
+    contracts and pay applications, and a site superintendent on the
+    job; trade foreperson and installer crews are hired or
+    subcontracted per project. The first records are the quote, the
+    subcontract, the construction plan, the material takeoff, the
+    request for information, the submittal, the change order, the work
+    order, and the closeout package, held in construction management
+    and takeoff software with accounting behind them. Quoting,
+    subcontractor buyout, RFI control, submittal control, and project
+    delivery must work on the first job.
+  economics: >
+    Revenue is quoted projects: a fee or markup on the cost of the work
+    plus general conditions, the time-bound cost of supervision,
+    temporary facilities, logistics, and coordination billed for as
+    long as the project runs. Pricing is a lump sum, a guaranteed
+    maximum, or cost plus a fee, and each shifts risk differently
+    between owner and contractor. Gross margin is thin on the trade
+    packages because they are bought competitively and passed through,
+    so profit lives in the fee, in general conditions that end when the
+    schedule ends, and in change orders priced correctly. The metrics
+    that decide profit are project gross margin, schedule variance,
+    change order cycle time, and days sales outstanding, because every
+    week of overrun consumes general conditions the fee did not cover,
+    and slow pay applications with retention held mean the contractor
+    is financing the owner's building. The business is working-capital
+    intensive and light on its own payroll: the contractor pays
+    subcontractors before the owner pays, so cash management and the
+    quote win rate against bid cost decide survival.
