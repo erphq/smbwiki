@@ -4,6 +4,9 @@ codes:
   naics: '236220'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: construction-management-and-general-conditions
+    note: project fee or markup plus time-bound supervision, logistics, temporary facilities, coordination, and other general conditions
 summary: >-
   A commercial general contractor holds the contract that joins an owner's
   design, permits, subcontractors, schedule, cost, safety, quality, and

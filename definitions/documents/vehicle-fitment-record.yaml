@@ -1,0 +1,6 @@
+id: vehicle-fitment-record
+name: Vehicle fitment record
+kind: document
+summary: >
+  Vehicle identity, configuration, application lookup, selected part,
+  compatibility basis, core terms, warranty, and exception approval.

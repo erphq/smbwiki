@@ -1,0 +1,39 @@
+id: machining-process-planning
+name: Machining process planning
+kind: skill
+department: operations
+summary: >-
+  Converts the current part definition, material, quantity, tolerance, and
+  due date into a controlled machining route, setup, program, and inspection plan.
+inputs: [customer-order, routing-sheet]
+outputs: [machining-setup-sheet, production-order]
+steps:
+  - name: Confirm part and material basis
+    note: Verify revision, model, drawing, material, stock, quantity, tolerances, finishes, certificates, and deviations.
+  - name: Plan route and setup
+    note: Select sequence, machine, fixture, datum, tools, program, offsets, in-process checks, and outside operations.
+  - name: Prove and release
+    note: Verify setup and first piece, record measured results, authorize production, and control every subsequent change.
+tension: >-
+  Machine availability and delivery pressure can push work forward before
+  revision, material, datum, workholding, tool access, and inspection are proven.
+failure_modes:
+  - name: Production runs from an unproven setup
+    cost: Material, capacity, tools, and due date can be lost across the entire lot.
+    signal: Quantity production begins without an accepted first piece tied to the current program and setup sheet.
+maturity:
+  - level: run badly
+    looks_like: Setup knowledge stays with one machinist and inspection discovers route errors after quantity is produced.
+  - level: run well
+    looks_like: Revision, material, route, datum, setup, program, checks, first piece, and change history stay linked.
+  - level: run excellently
+    looks_like: Setup time, tool wear, deviations, and inspection results improve estimates, fixtures, programs, and controls.
+competencies:
+  - name: Machining route and setup design
+    note: The planner balances datum integrity, workholding, access, capability, inspection, risk, and production sequence.
+automation:
+  now: Manufacturing systems can manage revisions, routes, tool lists, programs, offsets, checks, and first-piece release.
+  human: Process selection, workholding judgment, changed-condition response, and setup acceptance remain human.
+questions:
+  - Which revision, material, datum, tool, or tolerance remains unproven?
+  - What setup and first-piece evidence authorizes this exact production run?

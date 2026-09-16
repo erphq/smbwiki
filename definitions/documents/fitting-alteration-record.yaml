@@ -1,0 +1,6 @@
+id: fitting-alteration-record
+name: Fitting and alteration record
+kind: document
+summary: >
+  Garment variant, fitting observations, requested changes, measurements,
+  custody, due date, approval, and completed handoff.

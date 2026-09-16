@@ -1,0 +1,6 @@
+id: electronics-advisor
+name: Electronics advisor
+kind: role
+summary: >
+  Matches customer requirements and installed equipment to a compatible
+  model, accessory set, warranty path, and supported handoff.

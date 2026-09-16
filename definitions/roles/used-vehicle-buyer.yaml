@@ -1,0 +1,6 @@
+id: used-vehicle-buyer
+name: Used vehicle buyer
+kind: role
+summary: >
+  Appraises title, history, condition, market value, and reconditioning
+  exposure before committing acquisition money to a used vehicle.

@@ -4,6 +4,30 @@ codes:
   naics: "541430"
 catalog_group: professional-financial
 extends: professional-services-base
+revenue_model:
+  - id: creative-project-and-production-fees
+    note: fees for approved creative scope, revision rounds, asset preparation, licensing coordination, and production release
+skills:
+  - ref: client-engagement
+    roles: [principal, graphic-designer, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, project-operations]
+  - ref: professional-service-delivery
+    roles: [graphic-designer, principal, client-coordinator]
+    documents: [engagement-letter, approved-creative-proof, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [design-documentation, project-operations]
+  - ref: creative-proof-and-release
+    roles: [graphic-designer, principal]
+    documents: [client-brief, approved-creative-proof, deliverable]
+    metrics: [on-time-completion, rework-rate]
+    software: [design-documentation, project-operations]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: graphic-designer
 summary: >
   A graphic design studio converts a communication need, audience,
   message, content, format, brand system, production method, and

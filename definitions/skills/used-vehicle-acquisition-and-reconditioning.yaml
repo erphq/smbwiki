@@ -1,0 +1,39 @@
+id: used-vehicle-acquisition-and-reconditioning
+name: Used vehicle acquisition and reconditioning
+kind: skill
+department: supply
+summary: >-
+  Converts title, history, condition, market evidence, and repair exposure
+  into an approved used-vehicle acquisition and controlled retail-readiness plan.
+inputs: [stock-record, repair-estimate]
+outputs: [used-vehicle-condition-file, repair-order]
+steps:
+  - name: Establish ownership and identity
+    note: Verify seller authority, title status, VIN, mileage, history, equipment, keys, liens, disclosures, and transfer path.
+  - name: Appraise condition and economics
+    note: Inspect and test the unit, price market alternatives, estimate repairs, classify risk, and set acquisition authority.
+  - name: Recondition and release
+    note: Approve work, track actual cost and delay, verify repairs and disclosures, price the unit, and authorize retail or wholesale.
+tension: >-
+  Buying speed and inventory demand can outrun title verification, physical
+  inspection, repair discovery, market movement, and realistic reconditioning capacity.
+failure_modes:
+  - name: Hidden title or condition cost defeats the appraisal
+    cost: Capital becomes trapped in an unsaleable or unprofitable unit and represented condition may be wrong.
+    signal: Acquisition closes with unresolved title evidence, history discrepancy, inspection exception, or repair allowance.
+maturity:
+  - level: run badly
+    looks_like: Buyers rely on surface condition and target price while title and repair costs emerge after acquisition.
+  - level: run well
+    looks_like: Ownership, history, inspection, appraisal, authority, repairs, actual cost, disclosure, and release share one file.
+  - level: run excellently
+    looks_like: Missed defects, days to ready, actual cost, aging, and gross improve buy rules and reconditioning capacity.
+competencies:
+  - name: Used-vehicle appraisal and readiness
+    note: The buyer reconciles legal ownership, represented condition, repair exposure, market value, and exit alternatives.
+automation:
+  now: Dealership tools can aggregate history and market data, capture inspections, approve buys, track repairs, and calculate actual cost.
+  human: Condition interpretation, risk pricing, seller negotiation, disclosure judgment, and release authority remain human.
+questions:
+  - Which title, history, condition, repair, or market assumption can still change the buy decision?
+  - Does the condition file prove acquisition authority, actual reconditioning, disclosure, and sale readiness?

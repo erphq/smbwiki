@@ -1,0 +1,9 @@
+id: liquor-licence-singapore
+name: Liquor licence (Singapore)
+kind: license
+geo: [sg]
+summary: >
+  Licence from the Singapore Police Force under the Liquor Control
+  (Supply and Consumption) Act 2015, required to supply liquor at a
+  premises and setting the permitted trading hours.
+jurisdiction: Singapore

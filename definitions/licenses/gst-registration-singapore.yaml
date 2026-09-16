@@ -1,0 +1,9 @@
+id: gst-registration-singapore
+name: GST registration (Singapore)
+kind: license
+geo: [sg]
+summary: >
+  Registration for Goods and Services Tax with the Inland Revenue
+  Authority of Singapore, compulsory once taxable turnover exceeds
+  one million Singapore dollars.
+jurisdiction: Singapore

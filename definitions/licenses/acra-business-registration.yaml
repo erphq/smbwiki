@@ -1,0 +1,9 @@
+id: acra-business-registration
+name: ACRA business registration
+kind: license
+geo: [sg]
+summary: >
+  Registration of the business entity or business name with the
+  Accounting and Corporate Regulatory Authority before commencing
+  business, filed through BizFile.
+jurisdiction: Singapore

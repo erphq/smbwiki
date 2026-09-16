@@ -4,6 +4,30 @@ codes:
   naics: "541211"
 catalog_group: professional-financial
 extends: professional-services-base
+revenue_model:
+  - id: assurance-and-reporting-fees
+    note: fees for defined financial reporting, assurance, review, compilation, tax, or accounting deliverables
+skills:
+  - ref: client-engagement
+    roles: [principal, accountant, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, practice-management]
+  - ref: professional-service-delivery
+    roles: [accountant, principal, client-coordinator]
+    documents: [engagement-letter, accounting-workpaper-file, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [practice-management, accounting]
+  - ref: accounting-engagement-control
+    roles: [accountant, principal]
+    documents: [engagement-letter, accounting-workpaper-file, deliverable]
+    metrics: [report-turnaround-time, work-in-progress-age]
+    software: [practice-management, accounting]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: accountant
 summary: >
   An accounting firm accepts responsibility for defined financial
   statements, assurance, accounting, or advisory work using client

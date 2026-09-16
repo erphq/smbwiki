@@ -4,6 +4,23 @@ codes:
   naics: "459210"
 catalog_group: retail-vehicles
 extends: retail-store-base
+revenue_model:
+  - id: title-sales-preorders-and-events
+    note: margin from stocked titles, customer special orders, preorders, institutional orders, and ticketed or sponsored events
+skills:
+  - ref: title-discovery-and-special-order
+    roles: [bookseller, retail-manager]
+    documents: [stock-record, title-order-record, sales-receipt]
+    metrics: [inventory-turnover, average-ticket]
+    software: [retail-management, inventory-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+          - role: bookseller
 summary: >
   A bookstore selects titles across subject, audience, format, edition,
   price, publisher terms, release date, and local demand. Receiving and

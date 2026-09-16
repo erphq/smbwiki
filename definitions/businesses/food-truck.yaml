@@ -2,6 +2,7 @@ id: food-truck
 name: Food Truck
 codes:
   naics: "722330"
+  nic: "56103"
 catalog_group: food-lodging
 extends: restaurant-base
 summary: >

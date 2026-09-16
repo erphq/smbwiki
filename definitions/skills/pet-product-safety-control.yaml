@@ -1,0 +1,39 @@
+id: pet-product-safety-control
+name: Pet product safety control
+kind: skill
+department: quality
+summary: >-
+  Controls species and life-stage suitability, lot and expiry, storage,
+  recall response, advice limits, and safe handoff of pet merchandise.
+inputs: [inventory-receipt, stock-record]
+outputs: [lot-expiry-record, sales-receipt]
+steps:
+  - name: Verify product and receiving condition
+    note: Record identifier, lot, expiry, packaging, temperature or storage needs, source, recall status, and damage.
+  - name: Control display and advice
+    note: Protect rotation and compatibility, explain labeled use, and refer health diagnosis or treatment questions to qualified care.
+  - name: Release or quarantine
+    note: Record the sold lot when needed, remove expired, damaged, or recalled stock, and preserve disposition evidence.
+tension: >-
+  Broad species and care questions can exceed product guidance while recurring
+  stock movement makes lot, expiry, storage, and recall control easy to lose.
+failure_modes:
+  - name: Unsafe or recalled product remains saleable
+    cost: An animal can be harmed and the store may be unable to identify affected customers or stock.
+    signal: A stocked item lacks lot, expiry, location, recall status, or a completed quarantine disposition.
+maturity:
+  - level: run badly
+    looks_like: Rotation relies on shelf observation and health advice extends beyond verified product guidance.
+  - level: run well
+    looks_like: Suitability, lot, expiry, storage, recall, advice boundary, quarantine, and disposition are controlled.
+  - level: run excellently
+    looks_like: Damage, expiry, recall, and suitability patterns improve assortment, receiving, rotation, and staff guidance.
+competencies:
+  - name: Pet merchandise safety
+    note: The specialist applies species and life-stage product knowledge while maintaining a clear veterinary referral boundary.
+automation:
+  now: Inventory systems can capture lots and expiry, rotate stock, block recalled items, issue alerts, and record disposition.
+  human: Suitability conversations, animal observation, escalation, and responsibility for quarantine release remain human.
+questions:
+  - Which lot, expiry, storage, recall, or suitability condition is unresolved?
+  - Can the store identify every affected unit and prove its sale, quarantine, or disposal?

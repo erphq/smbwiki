@@ -1,0 +1,6 @@
+id: bookseller
+name: Bookseller
+kind: role
+summary: >
+  Connects readers with the correct title and edition while controlling
+  reservations, preorders, special orders, and supplier returns.

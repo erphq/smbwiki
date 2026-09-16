@@ -4,6 +4,9 @@ codes:
   naics: '238350'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: finish-carpentry-labor-and-millwork
+    note: installed trim or millwork scope plus field measurement, material, fabrication coordination, finishing, protection, and punch work
 summary: >-
   A finish carpentry contractor installs doors, trim, cabinets, panels,
   hardware, and other fitted woodwork after the building has accumulated

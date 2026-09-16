@@ -4,6 +4,9 @@ codes:
   naics: '238990'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: paving-material-and-maintenance
+    note: installed paving quantity plus base repair, mobilization, sealcoating, striping, drainage correction, and maintenance work
 summary: >-
   A driveway paving contractor removes failed pavement, prepares subgrade,
   places aggregate base, lays asphalt, compacts the mat, seals surfaces, and

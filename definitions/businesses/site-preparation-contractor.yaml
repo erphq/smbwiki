@@ -4,6 +4,9 @@ codes:
   naics: '238910'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: earthwork-hauling-and-disposal
+    note: measured excavation, fill, grading, and compaction plus mobilization, trucking, imported material, disposal, dewatering, and stabilization
 summary: >-
   A site preparation contractor clears land, locates utilities, excavates,
   grades, manages water, places fill, compacts soil, and establishes access

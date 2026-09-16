@@ -1,0 +1,6 @@
+id: lot-expiry-record
+name: Lot and expiry record
+kind: document
+summary: >
+  Product identifier, lot, expiry, receiving condition, storage,
+  location, recall status, damage, and final disposition.

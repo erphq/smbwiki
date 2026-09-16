@@ -1,0 +1,6 @@
+id: machining-setup-sheet
+name: Machining setup sheet
+kind: document
+summary: >
+  Current part revision, material, datum, operation, machine, fixture,
+  tools, offsets, program, in-process checks, and setup approval.

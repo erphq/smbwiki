@@ -4,6 +4,23 @@ codes:
   naics: "458110"
 catalog_group: retail-vehicles
 extends: retail-store-base
+revenue_model:
+  - id: apparel-margin-and-alterations
+    note: garment and accessory margin supplemented by alteration, styling, reservation, and special-order charges
+skills:
+  - ref: boutique-fit-and-alteration
+    roles: [style-advisor, retail-manager]
+    documents: [stock-record, fitting-alteration-record, sales-receipt]
+    metrics: [gross-margin-percentage, inventory-turnover]
+    software: [retail-management, inventory-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+          - role: style-advisor
 summary: >
   A clothing boutique buys a narrow assortment across style, size,
   color, season, delivery window, and price point, then presents it as a

@@ -1,0 +1,39 @@
+id: serialized-electronics-sale
+name: Serialized electronics sale
+kind: skill
+department: sales
+summary: >-
+  Matches customer use and installed equipment to a compatible serialized
+  product, accessory set, warranty path, setup, and documented handoff.
+inputs: [stock-record, job-request]
+outputs: [serialized-product-record, sales-receipt]
+steps:
+  - name: Establish the use and environment
+    note: Confirm required function, existing devices, interfaces, dimensions, power, network, data, budget, and support need.
+  - name: Verify product and unit
+    note: Check model specifications, compatibility, required accessories, serial, condition, warranty, privacy, and return status.
+  - name: Configure and hand off
+    note: Record unit identity, setup, data handling, customer acceptance, warranty route, trade-in, and open-box disposition.
+tension: >-
+  Rapid model change and sales pressure can obscure compatibility gaps,
+  missing accessories, open-box condition, privacy work, and warranty limits.
+failure_modes:
+  - name: Product is sold without a compatible operating path
+    cost: Setup fails, returns rise, customer data is exposed, or warranty support is disputed.
+    signal: The sale lacks a recorded requirement, interface check, unit serial, condition, or accessory dependency.
+maturity:
+  - level: run badly
+    looks_like: Compatibility and serial details are reconstructed only after setup or return fails.
+  - level: run well
+    looks_like: Requirement, model, serial, condition, accessories, setup, privacy, warranty, and acceptance share one record.
+  - level: run excellently
+    looks_like: Return, setup, fraud, and support patterns improve advice, assortment, controls, and supplier feedback.
+competencies:
+  - name: Product compatibility and unit control
+    note: The advisor distinguishes model capability from the condition, identity, configuration, and support path of one unit.
+automation:
+  now: Retail systems can compare specifications, capture serials, reserve accessories, route setup, and track warranty or return.
+  human: Interpretation of customer use, privacy choices, substitute quality, and handoff acceptance remain human.
+questions:
+  - Which requirement, interface, accessory, or policy can still prevent successful use?
+  - Does the unit record prove serial, condition, setup, warranty, and customer acceptance?

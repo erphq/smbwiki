@@ -4,6 +4,9 @@ codes:
   naics: '238910'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: demolition-hauling-and-salvage
+    note: demolition scope supplemented by hauling, disposal, recycling, salvage credit, hazardous-material coordination, and equipment charges
 summary: >-
   A demolition contractor surveys, isolates, removes, sorts, hauls, and
   documents existing building or site work in a controlled sequence.

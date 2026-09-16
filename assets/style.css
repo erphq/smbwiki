@@ -33,6 +33,8 @@ nav a:hover { text-decoration: underline; }
 footer { border-top: 1px solid var(--hair); margin-top: 3rem; }
 footer .wrap { padding-top: 0.9rem; padding-bottom: 1.6rem; font-size: 0.85rem; color: var(--soft); }
 footer a { color: var(--blue); text-decoration: none; }
+footer p { margin: 0.15rem 0; }
+footer p + p { color: var(--muted); }
 
 main.wrap { padding-top: 1.4rem; padding-bottom: 1rem; }
 .kicker { font-size: 0.82rem; color: var(--muted); margin: 0 0 0.15rem; }
@@ -41,8 +43,7 @@ main.wrap { padding-top: 1.4rem; padding-bottom: 1rem; }
 .skill-line { font-size: 0.9rem; color: var(--soft); border-left: 2px solid var(--ink); padding-left: 0.8rem; margin: 0.9rem 0; }
 
 h1 { font: 400 2.1rem/1.2 Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", Georgia, serif; letter-spacing: -0.01em; margin: 0 0 0.6rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--hair); }
-h2 { font: 400 1.4rem/1.25 Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", Georgia, serif; margin: 2.1rem 0 0.5rem; }
-h2::after { content: ""; display: block; width: 3.5rem; border-bottom: 2px solid var(--ink); margin-top: 0.3rem; }
+h2 { font: 400 1.4rem/1.25 Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", Georgia, serif; margin: 2.1rem 0 0.5rem; padding-bottom: 0.2rem; border-bottom: 1px solid var(--hair); }
 p { margin: 0.55rem 0; }
 ul, ol { margin: 0.55rem 0; padding-left: 1.5rem; }
 li { margin: 0.3rem 0; }
@@ -59,6 +60,23 @@ main a:visited { color: var(--blue-visited); }
 .index-cols { columns: 4 13rem; column-gap: 2.6rem; list-style: none; margin: 0.6rem 0 0; padding: 0; font-size: 0.92rem; }
 .index-cols li { break-inside: avoid; margin: 0; padding: 0.16rem 0; }
 .usecount { color: var(--muted); font-size: 0.78rem; }
+/* project pages: figures and the build pipeline */
+/* figures wear the wiki thumb frame: hairline border, caption inside */
+.fig { margin: 1.4rem 0; max-width: 40rem; border: 1px solid var(--hair); background: #f8f9fa; padding: 0.6rem 0.7rem 0.5rem; }
+.fig svg { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--hair-lt); font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.fig figcaption { margin-top: 0.45rem; font-size: 0.85rem; color: var(--soft); }
+.pipeline { margin: 1.2rem 0; padding-left: 1.6rem; max-width: 40rem; }
+.pipeline li { margin: 0 0 0.7rem; }
+.pipeline b { display: block; font-weight: 600; font-size: 0.95rem; }
+.pipeline span { font-size: 0.9rem; color: var(--soft); }
+
+/* the six lists ship closed; the heading is the toggle */
+.kind-index { list-style: none; margin: 0.6rem 0 0; padding: 0; columns: 2 14rem; column-gap: 2.6rem; font-size: 0.95rem; }
+.kind-index li { break-inside: avoid; margin: 0; padding: 0.16rem 0; }
+.index-fold summary { cursor: pointer; width: fit-content; }
+.index-fold summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.index-fold summary h2 { display: inline-block; border-bottom: 0; }
+.index-fold[open] summary { display: block; border-bottom: 1px solid var(--hair); }
 
 /* tables */
 .tblwrap { overflow-x: auto; }
@@ -105,8 +123,8 @@ th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap
   font-variant-numeric: tabular-nums;
 }
 
-/* homepage hero: same structure, given room. White field, no tint band.
-   Hierarchy comes from type scale and vertical rhythm, not boxes. */
+/* homepage lead: the one place the site keeps its room. Big title, wide
+   margins, and a hairline link rail; the wiki grammar resumes below it. */
 .home-lead {
   margin-top: clamp(2.4rem, 6vw, 4.5rem);
   padding-bottom: clamp(2.4rem, 4.5vw, 3.4rem);
@@ -133,10 +151,10 @@ th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap
 .home-copy p { margin: 0; }
 .home-copy p + p { margin-top: 1.15rem; }
 .thesis { color: var(--soft); }
-/* navigation column: hairline-separated rows, not bullets */
+/* navigation rail: hairline-separated rows, not bullets */
 .contents { margin: 0; padding: 0; list-style: none; }
+.contents ul { list-style: none; margin: 0; padding: 0; }
 .contents li { margin: 0; }
-/* rules sit between rows only, so the first link aligns with the copy */
 .contents a { display: block; padding: 0.72rem 0; border-top: 1px solid var(--hair-lt); }
 .contents li:first-child a { padding-top: 0; border-top: 0; }
 .home-lead + h2 { margin-top: clamp(2.2rem, 4vw, 2.7rem); }
@@ -146,7 +164,7 @@ th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap
 .catalog-filter label { color: var(--soft); font-size: 0.82rem; font-weight: 600; }
 .catalog-filter input {
   grid-column: 2; width: 100%; max-width: 26rem; font: inherit; color: var(--ink);
-  background: #fff; border: 1px solid var(--hair); border-radius: 2px; padding: 0.32rem 0.5rem;
+  background: #fff; border: 1px solid var(--hair); border-radius: 0; padding: 0.32rem 0.5rem;
 }
 .catalog-filter input:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; border-color: var(--blue); }
 .filter-hint { grid-column: 2; margin: 0.35rem 0 0; font-size: 0.82rem; color: var(--muted); }
@@ -200,7 +218,7 @@ th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap
 .op-medium #opcanvas { height: 22rem; }
 .op-small #opcanvas { height: 14rem; }
 .op-tools { position: absolute; top: 0.5rem; right: 0.5rem; z-index: 5; display: flex; gap: 0.3rem; }
-.op-tools button { font: 600 0.85rem/1 -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: #fff; border: 1px solid var(--hair); border-radius: 2px; padding: 0.35em 0.6em; cursor: pointer; }
+.op-tools button { font: 600 0.85rem/1 -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: #fff; border: 1px solid var(--hair); border-radius: 0; padding: 0.35em 0.6em; cursor: pointer; }
 .op-tools button:hover { border-color: var(--ink); }
 .op-tools button:focus-visible, .graph-relationships summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .graph-relationships { margin-top: 0.45rem; font-size: 0.84rem; color: var(--soft); }
@@ -217,8 +235,8 @@ th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap
   #opcanvas { height: 24rem; }
   .graph-relationships ul { columns: 1; }
 }
-.dept { margin: 1.5rem 0 0.3rem; font: 600 0.82rem/1.4 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--soft); text-transform: uppercase; letter-spacing: 0.06em; }
-.dept .muted { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.dept { margin: 1.5rem 0 0.3rem; font: 600 0.86rem/1.4 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--soft); }
+.dept .muted { font-weight: 400; }
 
 /* what a skill is: a full-width inset panel, laid out across so it stays
    short. As a right-hand box in the hero grid it left a tall column of
@@ -231,7 +249,7 @@ th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap
   padding: 1.3rem 1.5rem;
   background: #f8f9fa;
   border: 1px solid var(--hair-lt);
-  border-radius: 2px;
+  border-radius: 0;
   font-size: 0.92rem;
   line-height: 1.62;
 }
@@ -239,20 +257,16 @@ th { font-weight: 600; border-bottom: 1px solid var(--hair); white-space: nowrap
   margin: 0 0 0.5rem; padding: 0; border: 0;
   font: 400 1.2rem/1.25 Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
-.skillbox h2::after { display: none; }
 .skillbox p { margin: 0 0 0.7rem; }
 .skillbox p:last-child { margin-bottom: 0; }
 .skillbox-text, .skillbox-try { min-width: 0; }
-.skillbox-sub {
-  margin: 0 0 0.3rem; color: var(--muted);
-  font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em;
-}
+.skillbox-sub { margin: 0 0 0.3rem; color: var(--soft); font-size: 0.86rem; font-weight: 600; }
 .skillbox .note { font-size: 0.86rem; }
 .paste { margin: 0 0 0.7rem; }
 .paste code {
   display: block; overflow-x: auto; white-space: pre-wrap; word-break: break-word;
   font: 0.78rem/1.55 var(--mono); color: var(--ink);
-  background: #fff; border: 1px solid var(--hair); border-radius: 2px;
+  background: #fff; border: 1px solid var(--hair); border-radius: 0;
   padding: 0.55rem 0.65rem;
 }
 

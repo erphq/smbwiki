@@ -4,6 +4,9 @@ codes:
   naics: '236115'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: home-sale-options-and-allowances
+    note: contracted home value adjusted through land or lot terms, buyer selections, allowances, options, change orders, and closing credits
 summary: >-
   A single-family home builder controls a house from lot and plan review
   through permits, trade contracts, selections, construction, inspections, and

@@ -1,0 +1,9 @@
+id: shops-and-establishments-registration
+name: Shops and establishments registration
+kind: license
+geo: [in]
+summary: >
+  Registration of a shop or commercial establishment under the state
+  Shops and Establishments Act, covering working hours, holidays, and
+  employment conditions. Each state runs its own act and register.
+jurisdiction: India, state

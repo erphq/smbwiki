@@ -1,0 +1,6 @@
+id: machinist
+name: Machinist
+kind: role
+summary: >
+  Sets up and runs machining operations from the current routing,
+  material identity, program, tooling, tolerance, and inspection plan.

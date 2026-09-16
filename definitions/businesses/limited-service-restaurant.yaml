@@ -2,6 +2,8 @@ id: limited-service-restaurant
 name: Limited-Service Restaurant
 codes:
   naics: "722513"
+  nic: "56102"
+  ssic: "56121"
 catalog_group: food-lodging
 extends: restaurant-base
 summary: >

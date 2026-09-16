@@ -2,6 +2,8 @@ id: coffee-shop
 name: Coffee Shop
 codes:
   naics: "722515"
+  nic: "56302"
+  ssic: "56112"
 catalog_group: food-lodging
 extends: restaurant-base
 summary: >

@@ -1,0 +1,6 @@
+id: consulting-decision-record
+name: Consulting decision record
+kind: document
+summary: >
+  Business question, source evidence, diagnosis, alternatives,
+  recommendation, management decision, action owner, and outcome check.

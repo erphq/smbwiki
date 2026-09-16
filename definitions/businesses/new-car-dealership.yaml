@@ -4,6 +4,27 @@ codes:
   naics: "441110"
 catalog_group: retail-vehicles
 extends: vehicle-dealer-base
+revenue_model:
+  - id: manufacturer-program-and-new-unit-margin
+    note: new-vehicle front and back gross adjusted for manufacturer allocation, incentives, holdback, accessories, and program eligibility
+skills:
+  - ref: new-vehicle-allocation-and-readiness
+    roles: [new-vehicle-inventory-manager, retail-manager]
+    documents: [manufacturer-allocation-record, stock-record, vehicle-purchase-agreement]
+    metrics: [inventory-turnover, vehicle-gross-profit]
+    software: [dealership-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: new-vehicle-inventory-manager
+          - role: vehicle-salesperson
+          - role: stock-associate
+      - role: finance-manager
+      - role: shop-foreman
+        reports:
+          - role: automotive-technician
 summary: >
   A new car dealership receives allocated and ordered vehicles from a
   manufacturer, tracks each unit through transport, inspection,

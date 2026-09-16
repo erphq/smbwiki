@@ -1,0 +1,39 @@
+id: boutique-fit-and-alteration
+name: Boutique fit and alteration
+kind: skill
+department: sales
+summary: >-
+  Controls garment variant, fitting-room custody, fit decision, hold,
+  alteration, approval, and final handoff for a boutique sale.
+inputs: [stock-record, job-request]
+outputs: [fitting-alteration-record, sales-receipt]
+steps:
+  - name: Identify variant and fit need
+    note: Confirm style, size, color, condition, occasion, fit preference, availability, and return constraints.
+  - name: Control fitting or alteration
+    note: Track custody, observations, measurements, requested change, feasibility, price, due date, and responsible party.
+  - name: Approve and hand off
+    note: Check the completed garment, record customer acceptance, update variant stock, and close return or alteration terms.
+tension: >-
+  Personalized service can detach garments from accurate variant inventory,
+  custody, due dates, alteration limits, and return policy.
+failure_modes:
+  - name: Garment custody or alteration scope is ambiguous
+    cost: The wrong item can be changed, delayed, lost, or disputed at pickup.
+    signal: The held garment lacks a variant identifier, customer, requested change, measurement, due date, or condition.
+maturity:
+  - level: run badly
+    looks_like: Garments move through fitting, hold, and alteration on verbal notes while inventory stays saleable.
+  - level: run well
+    looks_like: Variant, custody, fit observations, scope, approval, due date, inventory, and handoff remain connected.
+  - level: run excellently
+    looks_like: Fit, return, alteration, and size-gap patterns improve buying, service, and vendor selection.
+competencies:
+  - name: Garment fit and custody control
+    note: The advisor translates fit needs into a controlled variant decision, alteration scope, and accepted handoff.
+automation:
+  now: Retail systems can reserve variants, record customer profiles, track alterations, notify pickup, and update inventory.
+  human: Fit judgment, style advice, alteration feasibility, and customer acceptance remain human.
+questions:
+  - Which variant, condition, or requested alteration remains unconfirmed?
+  - What record proves custody, completed scope, customer acceptance, and inventory disposition?

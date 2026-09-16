@@ -1,0 +1,40 @@
+id: engineering-design-verification
+name: Engineering design verification
+kind: skill
+department: quality
+summary: >-
+  Verifies that a technical design follows its stated basis, uses controlled
+  inputs, resolves interfaces, and supports every released result with a
+  traceable check.
+inputs: [client-brief]
+outputs: [engineering-check-package, deliverable]
+steps:
+  - name: Confirm the design basis
+    note: Identify criteria, loads, inputs, assumptions, interfaces, methods, limitations, and responsible discipline.
+  - name: Perform the independent check
+    note: Recalculate critical results, review models and drawings, test interfaces, and classify every comment.
+  - name: Close and release
+    note: Resolve comments, synchronize deliverables, record deviations, and authorize the checked revision.
+tension: >-
+  Design development and external coordination continue while independent
+  checking needs stable inputs, enough time, and authority to stop release.
+failure_modes:
+  - name: A checked calculation and issued design diverge
+    cost: Construction or operation can rely on a result the checker did not evaluate.
+    signal: Drawing values, model outputs, assumptions, or revisions differ from the signed check package.
+maturity:
+  - level: run badly
+    looks_like: Checking is an informal review after documents are already committed.
+  - level: run well
+    looks_like: Check scope, independence, comments, resolutions, and released revision are explicit and traceable.
+  - level: run excellently
+    looks_like: Defect patterns improve calculation templates, interface controls, design reviews, and release planning.
+competencies:
+  - name: Technical verification
+    note: The checker tests criteria, assumptions, methods, calculations, interfaces, and document consistency.
+automation:
+  now: Engineering tools can manage revisions, compare outputs, run rule checks, route comments, and preserve approvals.
+  human: Selection of critical checks, interpretation of evidence, and professional release responsibility remain human.
+questions:
+  - Which assumption or interface carries the greatest unverified consequence?
+  - Does the check package identify the exact design revision that was released?

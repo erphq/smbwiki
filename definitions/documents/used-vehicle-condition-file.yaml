@@ -1,0 +1,6 @@
+id: used-vehicle-condition-file
+name: Used vehicle condition file
+kind: document
+summary: >
+  Ownership and title evidence, history, mileage, equipment, inspection,
+  defects, appraisal, reconditioning plan, actual cost, and disclosure.

@@ -4,6 +4,26 @@ codes:
   naics: "332710"
 catalog_group: logistics-production
 extends: production-shop-base
+revenue_model:
+  - id: machined-parts-setup-and-outside-process
+    note: part margin by lot or unit with setup, programming, fixture, inspection, material, and coordinated outside-process charges
+skills:
+  - ref: machining-process-planning
+    roles: [machinist, production-manager]
+    documents: [routing-sheet, machining-setup-sheet, production-order]
+    metrics: [first-pass-yield, scrap-rate]
+    software: [manufacturing-operations]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: production-manager
+        reports:
+          - role: machinist
+          - role: machine-operator
+          - role: quality-inspector
+          - role: maintenance-technician
 summary: >
   A machine shop converts drawings, models, material, tolerances,
   quantity, process requirements, and due date into routings across

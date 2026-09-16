@@ -1,0 +1,9 @@
+id: sfa-food-shop-licence
+name: SFA food shop licence
+kind: license
+geo: [sg]
+summary: >
+  Singapore Food Agency licence to operate a retail food outlet,
+  covering restaurants, cafes, bakeries, snack counters, and mobile
+  food wagons. Applied for through GoBusiness.
+jurisdiction: Singapore

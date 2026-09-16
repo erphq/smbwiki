@@ -4,6 +4,9 @@ codes:
   naics: '238170'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: cladding-material-trim-and-repair
+    note: installed cladding area plus weather barrier, flashing, trim, accessories, removal, disposal, repair, and warranty work
 summary: >-
   A siding contractor covers the exterior wall with weather barrier,
   flashings, trim, cladding, fasteners, joints, and sealant interfaces. Field

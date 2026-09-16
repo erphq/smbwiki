@@ -2,6 +2,8 @@ id: pizzeria
 name: Pizzeria
 codes:
   naics: "722513"
+  nic: "56101"
+  ssic: "56111"
 catalog_group: food-lodging
 extends: restaurant-base
 summary: >

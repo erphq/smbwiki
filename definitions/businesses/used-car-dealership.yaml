@@ -4,6 +4,27 @@ codes:
   naics: "441120"
 catalog_group: retail-vehicles
 extends: vehicle-dealer-base
+revenue_model:
+  - id: used-unit-appraisal-and-reconditioning-margin
+    note: used-vehicle gross after acquisition, title, transport, appraisal, repair, reconditioning, aging, and wholesale-exit cost
+skills:
+  - ref: used-vehicle-acquisition-and-reconditioning
+    roles: [used-vehicle-buyer, retail-manager]
+    documents: [used-vehicle-condition-file, repair-estimate, repair-order]
+    metrics: [inventory-turnover, vehicle-gross-profit]
+    software: [dealership-management, auto-repair-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: used-vehicle-buyer
+          - role: vehicle-salesperson
+          - role: stock-associate
+      - role: finance-manager
+      - role: shop-foreman
+        reports:
+          - role: automotive-technician
 summary: >
   A used car dealership acquires individual vehicles whose title,
   history, condition, equipment, mileage, keys, repairs, market value,

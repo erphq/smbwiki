@@ -4,6 +4,9 @@ codes:
   naics: '238130'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: framing-labor-material-and-truss
+    note: framed area or package value adjusted for lumber and truss supply, crane, hardware, sheathing, openings, and correction work
 summary: >-
   A framing contractor converts structural plans and field control into
   floors, walls, roofs, openings, sheathing, connectors, and bracing. Layout

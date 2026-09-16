@@ -1,0 +1,9 @@
+id: state-excise-liquor-license
+name: State excise liquor licence
+kind: license
+geo: [in]
+summary: >
+  Licence from the state excise department to serve or sell alcohol.
+  Liquor is a state subject, so licence categories, fees, and
+  eligibility differ by state.
+jurisdiction: India, state

@@ -1,0 +1,39 @@
+id: legal-matter-and-deadline-control
+name: Legal matter and deadline control
+kind: skill
+department: compliance
+summary: >-
+  Controls client authority, conflicts, jurisdiction, privilege, evidence,
+  commitments, filings, service, and deadlines across one legal matter.
+inputs: [engagement-letter, client-brief]
+outputs: [legal-matter-file, deliverable]
+steps:
+  - name: Open the controlled matter
+    note: Confirm client identity and authority, conflicts, scope, jurisdiction, objectives, key facts, deadlines, and custody.
+  - name: Direct actions and evidence
+    note: Assign responsibility, protect privilege, verify facts and law, control versions, and calendar every dependent action.
+  - name: Record completion or next duty
+    note: Preserve authorization, filing or service evidence, client decisions, remaining obligations, and responsible counsel.
+tension: >-
+  Urgent client and tribunal demands can collide with conflict checks,
+  evidence verification, privilege controls, authorization, and procedural rules.
+failure_modes:
+  - name: A controlling deadline lacks an owned response
+    cost: The client can lose rights, incur sanctions, or face avoidable legal exposure.
+    signal: A deadline has no verified source, responsible attorney, predecessor action, reminder, or completion evidence.
+maturity:
+  - level: run badly
+    looks_like: Deadlines and client instructions live in personal inboxes and matter status depends on recollection.
+  - level: run well
+    looks_like: Authority, evidence, privilege, actions, deadlines, decisions, and completion records share one matter control.
+  - level: run excellently
+    looks_like: Near misses and matter outcomes improve intake, deadline rules, review paths, and client decision prompts.
+competencies:
+  - name: Matter duty control
+    note: The operator distinguishes client instruction, professional duty, procedural requirement, evidence, and authorization.
+automation:
+  now: Matter systems can calculate dates, assign actions, preserve versions, restrict access, and record filings and service.
+  human: Legal judgment, ethical duties, advocacy decisions, and responsibility for released action remain human.
+questions:
+  - Which deadline or duty can change the client's position before the next review?
+  - What matter record proves authorization, completion, filing, or service?

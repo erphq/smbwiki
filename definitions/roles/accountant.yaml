@@ -1,0 +1,6 @@
+id: accountant
+name: Accountant
+kind: role
+summary: >
+  Prepares and reconciles financial information, resolves evidence
+  exceptions, and assembles work for technical review and release.

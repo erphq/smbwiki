@@ -14,6 +14,13 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const BUILD = join(ROOT, "build");
 const DIST = join(ROOT, "dist");
 const SITE = "https://smbwiki.com";
+const releaseDate = (() => {
+  try {
+    return execSync("git log -1 --format=%cI", { cwd: ROOT, encoding: "utf8" }).trim().slice(0, 10);
+  } catch {
+    return null;
+  }
+})();
 const CATALOG_GROUPS = [
   ["construction-property", "Construction and property"],
   ["food-lodging", "Food, drink, and lodging"],
@@ -85,7 +92,54 @@ const href = (id) => {
   const n = nodes.get(id);
   return n ? `/${SEG[n.label]}/${id}/` : null;
 };
-const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const esc = (s) => String(s ?? "")
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;");
+const escAttr = (s) => esc(s)
+  .replace(/"/g, "&quot;")
+  .replace(/'/g, "&#39;");
+const cleanText = (s) => String(s ?? "").replace(/\s+/g, " ").trim();
+const descriptionSentences = (value) => {
+  const text = cleanText(value);
+  if (!text) return [];
+  return (text.match(/.*?[.!?](?=\s|$)|.+$/g) ?? [text])
+    .map((sentence) => cleanText(sentence))
+    .filter(Boolean)
+    .map((sentence) => /[.!?]$/.test(sentence)
+      ? sentence
+      : `${sentence.replace(/[,:;\s]+$/, "")}.`);
+};
+const completeSentence = (value) => descriptionSentences(value)[0] ?? "";
+const metaDescription = (...parts) => {
+  for (const part of parts) {
+    const sentences = descriptionSentences(part);
+    const complete = sentences.find((sentence) => sentence.length >= 50 && sentence.length <= 155);
+    if (complete) return complete;
+    const semantic = sentences.find((sentence) => sentence.length >= 50);
+    if (!semantic) continue;
+    const clipped = semantic.slice(0, 154);
+    const boundary = clipped.lastIndexOf(" ");
+    return `${clipped.slice(0, boundary > 0 ? boundary : 154).replace(/[,:;\s]+$/, "")}…`;
+  }
+  return completeSentence(parts.find((part) => cleanText(part)));
+};
+const contextualTitle = (name, context) => {
+  const full = `${name}: ${context} | SMBwiki`;
+  if (full.length <= 65) return full;
+  const suffix = " | SMBwiki";
+  const nameOnly = `${name}${suffix}`;
+  if (nameOnly.length <= 65) return nameOnly;
+  const available = 65 - suffix.length;
+  const clipped = String(name).slice(0, available);
+  const boundary = clipped.lastIndexOf(" ");
+  return `${clipped.slice(0, boundary > 0 ? boundary : available).trim()}${suffix}`;
+};
+const normalizeTitleBrand = (title) => cleanText(title).replace(/\|\s*smbwiki$/i, "| SMBwiki");
+const jsonScriptData = (value) => JSON.stringify(value)
+  .replace(/&/g, "\\u0026")
+  .replace(/</g, "\\u003c")
+  .replace(/>/g, "\\u003e");
 const sentenceLabel = (s) => {
   const text = String(s ?? "").replace(/-/g, " ");
   return text ? text[0].toUpperCase() + text.slice(1) : "";
@@ -97,6 +151,23 @@ const link = (id) => {
     : `<span class="external-concept">${esc(sentenceLabel(id))}</span>`;
 };
 const links = (ids) => (ids ?? []).map(link).join(", ");
+const COUNT_WORD = [
+  "no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+  "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
+  "eighteen", "nineteen", "twenty",
+];
+const countWord = (n) => COUNT_WORD[n] ?? String(n);
+// Node names are Title Case for headings; inside a sentence they read lowercase.
+// Acronyms keep their case, so "HVAC Contractor" reads "HVAC contractor".
+const linkLower = (id) => {
+  const n = nodes.get(id);
+  if (!n) return esc(id);
+  const name = n.name
+    .split(" ")
+    .map((word) => (word === word.toUpperCase() ? word : word.toLowerCase()))
+    .join(" ");
+  return `<a href="${href(id)}">${esc(name)}</a>`;
+};
 
 // ---- reverse indexes -----------------------------------------------------
 // usedBy: shared-node id -> [{biz, binding}] ; docFlow per doc; org role usage
@@ -124,6 +195,16 @@ for (const r of resolved.values()) {
 const bizOf = (id, kinds) =>
   [...new Set((usedBy.get(id) ?? []).filter((c) => !kinds || kinds.includes(c.kind)).map((c) => c.biz))]
     .filter((b) => !resolved.get(b)?.abstract);
+const documentSkills = (id) => [...new Set(
+  graph.edges
+    .filter((edge) =>
+      edge.to === id && (edge.type === "PRODUCES" || edge.type === "CONSUMES"))
+    .map((edge) => edge.from),
+)];
+const documentBusinesses = (id) => [...new Set([
+  ...bizOf(id, ["binding-document"]),
+  ...documentSkills(id).flatMap((skill) => bizOf(skill, ["skill-binding"])),
+])];
 
 const KIND_NAME = {
   business: "business type",
@@ -255,7 +336,7 @@ function graphShell(data, caption, relationships) {
     <div id="opcanvas" role="img" aria-label="${esc(data.ariaLabel)}"></div>
   </div>
   <p class="figcaption">${caption}</p>${fallback ? `\n  ${fallback}` : ""}
-  <script id="opgraph-data" type="application/json">${JSON.stringify(data)}</script>
+  <script id="opgraph-data" type="application/json">${jsonScriptData(data)}</script>
   <script src="${OPGRAPH_HREF}" defer></script>`;
 }
 
@@ -575,27 +656,37 @@ function page({ path, title, desc, h1, kicker, body, jsonld, yamlPath, jsonPath,
   const src = yamlPath
     ? `<p class="source">Definition: <a href="${yamlPath}">YAML</a>${jsonPath ? ` · <a href="${jsonPath}">resolved JSON</a>` : ""} · <a href="https://github.com/erphq/smbwiki">repo</a></p>`
     : "";
+  const ogType = jsonld?.["@type"] === "Article" ? "article" : "website";
   const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ${indexable ? "" : '<meta name="robots" content="noindex">'}
-<meta name="description" content="${esc(desc)}">
+<meta name="description" content="${escAttr(desc)}">
 <link rel="canonical" href="${SITE}${path}">
+<meta property="og:site_name" content="SMBwiki">
+<meta property="og:type" content="${ogType}">
+<meta property="og:title" content="${escAttr(title)}">
+<meta property="og:description" content="${escAttr(desc)}">
+<meta property="og:url" content="${SITE}${path}">
+<meta property="og:image" content="${SITE}/static/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <title>${esc(title)}</title>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="stylesheet" href="${CSS_HREF}">
-${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
+${jsonld ? `<script type="application/ld+json">${jsonScriptData(jsonld)}</script>` : ""}
 </head>
 <body>
-<header><div class="wrap"><a class="wordmark" href="/">smbwiki</a><nav><a href="/#business-types">business types</a><a href="https://github.com/erphq/smbwiki">source</a></nav></div></header>
+<header><div class="wrap"><a class="wordmark" href="/">SMBwiki</a><nav><a href="/#business-types">business types</a><a href="/about/">about</a><a href="https://github.com/erphq/smbwiki">source</a></nav></div></header>
 <main class="wrap">
 ${bare ? "" : `${kicker ? `<p class="kicker">${kicker}</p>` : ""}\n<h1>${esc(h1 ?? title)}</h1>`}
 ${body}
 ${src}
 </main>
-<footer><div class="wrap">smbwiki · <a href="https://github.com/erphq/smbwiki">source on GitHub</a> · MIT</div></footer>
+<footer><div class="wrap"><p>SMBwiki · <a href="/about/">about</a> · <a href="/graph/">how the graph is built</a> · <a href="/research/">research</a> · <a href="/llms.txt">llms.txt</a> · <a href="https://github.com/erphq/smbwiki">source on GitHub</a> · MIT</p><p>Definitions anchored to NAICS and standards-body sources · made by <a href="https://github.com/protosphinx">protosphinx</a></p></div></footer>
 </body>
 </html>`;
   const dir = join(DIST, path);
@@ -630,20 +721,40 @@ function deltaSection(r) {
   const lic = (x) => new Set(allLicenseBindings(x).map(({ entry }) => entry.ref));
   const licDrop = [...lic(p)].filter((x) => !lic(r).has(x));
   const licAdd = [...lic(r)].filter((x) => !lic(p).has(x));
-  const items = [];
-  if (added.length) items.push(`adds ${links(added)}`);
-  if (removed.length) items.push(`drops ${links(removed)}`);
-  if (rebound.length) items.push(`rebinds ${links(rebound)}`);
-  if (revAdd.length) items.push(`adds revenue: ${revAdd.map((id) => esc(sentenceLabel(id))).join(", ")}`);
-  if (revDrop.length) items.push(`drops revenue: ${revDrop.map((id) => esc(sentenceLabel(id))).join(", ")}`);
-  if (licAdd.length) items.push(`adds ${links(licAdd)}`);
-  if (licDrop.length) items.push(`drops ${links(licDrop)}`);
-  if (JSON.stringify(p.org) !== JSON.stringify(r.org)) items.push("restructures the org");
-  if (!items.length) return "";
-  return section(
-    `vs ${esc(p.name)}`,
-    `<p>Inherits from ${link(r.extends)} and ${items.join("; ")}.</p>`,
+  // Reader prose, not diff-speak: name the shared model, name the businesses
+  // it is shared with, then say in whole sentences what this trade changes.
+  const baseName = p.name.replace(/\s*\(base\)$/i, "").toLowerCase();
+  const baseLink = `<a href="${href(r.extends)}">${esc(baseName)}</a>`;
+  const siblings = [...resolved.values()]
+    .filter((x) => !x.abstract && x.extends === r.extends && x.id !== r.id)
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const revName = (id) => esc(sentenceLabel(id).toLowerCase());
+  const andJoin = (parts) =>
+    parts.length > 1 ? `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}` : parts.join("");
+  const linksAnd = (ids) => andJoin((ids ?? []).map(link));
+  const sentences = [];
+  const sibExamples = siblings.slice(0, 2).map((x) => x.id);
+  sentences.push(
+    siblings.length === 0
+      ? `A ${linkLower(r.id)} runs on the ${baseLink} model.`
+      : siblings.length <= 2
+        ? `A ${linkLower(r.id)} runs on the ${baseLink} model it shares with ${linksAnd(sibExamples)}.`
+        : `A ${linkLower(r.id)} runs on the ${baseLink} model it shares with ${countWord(siblings.length)} other business types, among them ${linksAnd(sibExamples)}.`,
   );
+  if (added.length) sentences.push(`On top of that shared machinery it adds ${linksAnd(added)}.`);
+  const orJoin = (parts) =>
+    parts.length > 1 ? `${parts.slice(0, -1).join(", ")} or ${parts.at(-1)}` : parts.join("");
+  if (removed.length) sentences.push(`It does not run ${orJoin(removed.map(link))}.`);
+  if (rebound.length) sentences.push(`It runs ${linksAnd(rebound)} with its own roles and records.`);
+  if (revAdd.length && revDrop.length)
+    sentences.push(`Its revenue comes from ${andJoin(revAdd.map(revName))} in place of the base model's ${andJoin(revDrop.map(revName))}.`);
+  else if (revAdd.length) sentences.push(`It adds ${andJoin(revAdd.map(revName))} revenue.`);
+  else if (revDrop.length) sentences.push(`It does not earn ${andJoin(revDrop.map(revName))}.`);
+  if (licAdd.length) sentences.push(`It adds the ${linksAnd(licAdd)}.`);
+  if (licDrop.length) sentences.push(`It does not need the ${orJoin(licDrop.map(link))}.`);
+  if (JSON.stringify(p.org) !== JSON.stringify(r.org)) sentences.push("Its org chart is arranged differently.");
+  if (sentences.length < 2) return "";
+  return section("Shared model", `<p>${sentences.join(" ")}</p>`);
 }
 
 // ---- render: business pages ----------------------------------------------
@@ -694,10 +805,6 @@ for (const r of resolved.values()) {
   const geoProcessCount = Object.values(r.geo ?? {}).reduce((n, layer) => n + (layer.skills ?? []).length, 0);
   const orgDepth = (ns, d = 1) => Math.max(d, ...(ns ?? []).flatMap((n) => (n.reports?.length ? [orgDepth(n.reports, d + 1)] : [d])));
   const orgCount = (ns) => (ns ?? []).reduce((a, n) => a + 1 + orgCount(n.reports), 0);
-  const structure = r.abstract ? "" : section(
-    "Structure",
-    `<p>The definition contains ${(r.skills ?? []).length} core skills${geoProcessCount ? ` and ${geoProcessCount} country-specific ${geoProcessCount === 1 ? "skill" : "skills"}` : ""}. The org chart contains ${orgCount(r.org)} roles across ${orgDepth(r.org)} levels.</p>`,
-  );
   const metricRows = [];
   const seenM = new Set();
   for (const { binding: p, geo } of allSkillBindings(r))
@@ -714,6 +821,14 @@ for (const r of resolved.values()) {
       ]);
     }
   const children = [...resolved.values()].filter((c) => c.extends === r.id);
+  const descendants = concrete.filter((candidate) => {
+    let parent = candidate.extends;
+    while (parent) {
+      if (parent === r.id) return true;
+      parent = resolved.get(parent)?.extends;
+    }
+    return false;
+  });
   const orgN = (function c(ns) { return (ns ?? []).reduce((a, n) => a + 1 + c(n.reports), 0); })(r.org);
   const processN = new Set(allSkillBindings(r).map(({ binding }) => binding.ref)).size;
   const licenseN = allLicenseBindings(r).length;
@@ -724,19 +839,34 @@ for (const r of resolved.values()) {
     licenseN ? `<b>${licenseN}</b> ${licenseN === 1 ? "license" : "licenses"}` : "",
     productN ? `<b>${productN}</b> linked ${productN === 1 ? "product" : "products"}` : "",
   ].filter(Boolean);
-  const statline = r.abstract ? "" : `<p class="statline">${stats.join(" · ")}</p>`;
-  const summary = (r.summary ?? "").trim()
+  if (r.abstract) stats.unshift(`<b>${descendants.length}</b> inheriting business ${descendants.length === 1 ? "type" : "types"}`);
+  const statline = `<p class="statline">${stats.join(" · ")}</p>`;
+  const abstractName = r.name.replace(/\s*\(base\)$/i, "");
+  const descendantExamples = descendants
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .slice(0, 3)
+    .map((business) => business.name);
+  const abstractSummary = r.abstract
+    ? `${abstractName} is SMBwiki's shared operating model for ${descendants.length} business ${descendants.length === 1 ? "type" : "types"}${descendantExamples.length ? `, including ${descendantExamples.join(", ")}` : ""}. It defines the common skills, roles, documents, metrics, software, and compliance structure those businesses inherit.`
+    : "";
+  const businessSummarySource = String(r.summary ?? "").trim() || abstractSummary;
+  const businessSummaryText = cleanText(businessSummarySource);
+  const summary = businessSummarySource
     .split(/\n+/)
     .filter(Boolean)
     .map((p) => `<p>${esc(p)}</p>`)
     .join("\n");
+  const structure = section(
+    r.abstract ? "Model scope" : "Structure",
+    `<p>This ${r.abstract ? "shared operating model" : "business definition"} contains ${(r.skills ?? []).length} core skills${geoProcessCount ? ` and ${geoProcessCount} country-specific ${geoProcessCount === 1 ? "skill" : "skills"}` : ""}. The org chart contains ${orgCount(r.org)} roles across ${orgDepth(r.org)} levels.${r.abstract && children.length ? ` It is extended directly by ${children.length} ${children.length === 1 ? "model" : "models"}.` : ""}</p>`,
+  );
   const revenue = `<ul class="revenue-list">${(r.revenue_model ?? []).map((m) =>
     `<li><strong>${esc(sentenceLabel(m.id))}</strong>${m.note ? `: ${esc(m.note)}` : ""}</li>`,
   ).join("")}</ul>`;
   const body = [
     statline,
-    r.abstract
-      ? `<p class="note">Abstract base. ${children.length ? `Extended by ${links(children.map((c) => c.id))}.` : ""}</p>`
+    r.abstract && children.length
+      ? `<p class="note">Shared reference model. Extended directly by ${links(children.map((c) => c.id))}.</p>`
       : "",
     summary ? `<div class="summary">${summary}</div>` : "",
     section("Revenue", revenue),
@@ -753,28 +883,44 @@ for (const r of resolved.values()) {
       "Supply chain",
       `<p>Buys from ${links(r.supply_chain.buys_from) || "none"}. Sells to ${links(r.supply_chain.sells_to) || "none"}.</p>` +
       ([...(r.supply_chain.buys_from ?? []), ...(r.supply_chain.sells_to ?? [])].some((id) => !nodes.has(id))
-        ? `<p class="note">Names without links are external counterparties that are not yet modeled as smbwiki entities.</p>`
+        ? `<p class="note">Names without links are external counterparties that are not yet modeled as SMBwiki entities.</p>`
         : ""),
     ) : "",
     r.products?.length ? section("Equipment and products handled", `<p>${r.products.map((x) => `<a href="https://bomwiki.com/item/${x}/">${esc(x.replace(/-/g, " "))}</a>`).join(", ")} <span class="muted">(on bomwiki)</span></p>`) : "",
     deltaSection(r),
   ].join("\n");
+  const authoredTitle = normalizeTitleBrand(r.seo?.title);
+  const businessDescription = metaDescription(
+    r.abstract ? completeSentence(businessSummaryText) : businessSummaryText,
+    `${r.name} operating model with skills, roles, documents, metrics, software, licenses, and relationships.`,
+  );
   page({
     path: `/business/${r.id}/`,
-    title: r.seo?.title ?? `${r.name}: How the Business Works | smbwiki`,
-    desc: (r.summary ?? `${r.name}: structure, skills, roles, documents, and metrics.`).slice(0, 155),
+    title: authoredTitle && authoredTitle.length <= 65
+      ? authoredTitle
+      : contextualTitle(
+          abstractName,
+          r.abstract ? "Shared Business Operating Model" : "How the Business Works",
+        ),
+    desc: businessDescription,
     h1: r.name,
-    kicker: r.abstract ? "abstract base" : `business type${r.codes?.naics ? ` · US NAICS ${r.codes.naics}` : ""}`,
+    kicker: r.abstract ? "shared business operating model" : `business type${r.codes?.naics ? ` · US NAICS ${r.codes.naics}` : ""}`,
     body,
     yamlPath: `/definitions/businesses/${r.id}.yaml`,
     jsonPath: r.abstract ? null : `/api/def/${r.id}.json`,
-    jsonld: r.abstract ? null : {
+    jsonld: {
       "@context": "https://schema.org", "@type": "Article",
-      headline: `${r.name}: how the business works`,
+      headline: r.abstract ? `${abstractName}: shared business operating model` : `${r.name}: how the business works`,
+      description: businessDescription,
+      url: `${SITE}/business/${r.id}/`,
+      mainEntityOfPage: `${SITE}/business/${r.id}/`,
       about: { "@type": "Thing", name: r.name },
-      isBasedOn: `${SITE}/api/def/${r.id}.json`, license: "https://opensource.org/license/mit",
+      ...(r.abstract ? {} : { isBasedOn: `${SITE}/api/def/${r.id}.json` }),
+      isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+      dateModified: releaseDate,
+      license: "https://opensource.org/license/mit",
     },
-    indexable: !r.abstract,
+    indexable: true,
   });
 }
 
@@ -784,7 +930,7 @@ function skillMd(d) {
   const L = [];
   L.push(`# ${d.name}`);
   L.push("");
-  L.push(`A distilled business skill from smbwiki.${d.department ? ` Department: ${DEPARTMENT_NAME.get(d.department) ?? d.department}.` : ""} ${runners.length ? `Held by ${runners.length} business type${runners.length === 1 ? "" : "s"} in the catalog. ` : ""}Source of truth: ${SITE}/skill/${d.id}/ (structured data: ${SITE}/definitions/skills/${d.id}.yaml).`);
+  L.push(`A distilled business skill from SMBwiki.${d.department ? ` Department: ${DEPARTMENT_NAME.get(d.department) ?? d.department}.` : ""} ${runners.length ? `Held by ${runners.length} business type${runners.length === 1 ? "" : "s"} in the catalog. ` : ""}Source of truth: ${SITE}/skill/${d.id}/ (structured data: ${SITE}/definitions/skills/${d.id}.yaml).`);
   L.push("");
   L.push("## What this skill is");
   L.push("");
@@ -850,11 +996,115 @@ function skillMd(d) {
 
 // ---- render: shared-node pages -------------------------------------------
 const KICKER = { skill: "skill", role: "role", document: "document", metric: "metric", "software-category": "software category", license: "license", market: "market" };
+const PAGE_CONTEXT = {
+  skill: "Process and Controls",
+  role: "Responsibilities and Workflows",
+  document: "Purpose and Workflow",
+  metric: "Definition and Business Use",
+  "software-category": "Functions and Business Uses",
+  license: "Scope and Requirements",
+  market: "Buyer Context",
+};
+const PAGE_KICKER = {
+  skill: "business skill",
+  role: "role in small-business operations",
+  document: "document in small-business operations",
+  metric: "metric in small-business operations",
+  "software-category": "software category for small businesses",
+  license: "license or credential in a business operating model",
+  market: "customer market in the SMBwiki graph",
+};
+const unique = (values) => [...new Set(values.filter(Boolean))];
+const nodeSummary = (id) => completeSentence(
+  nodes.get(id)?.data?.summary ??
+    `${nodes.get(id)?.name ?? sentenceLabel(id)} in the SMBwiki operating-model graph.`,
+);
+const businessSummary = (id) => completeSentence(
+  resolved.get(id)?.summary ?? `${resolved.get(id)?.name ?? sentenceLabel(id)} business operating model.`,
+);
+const entityContext = (n) => {
+  const contexts = usedBy.get(n.id) ?? [];
+  const businesses = n.label === "document" ? documentBusinesses(n.id) : bizOf(n.id);
+  const skills = unique(contexts.map((context) => context.process));
+  if (n.label === "skill")
+    return `Within SMBwiki, this skill is part of ${businesses.length} concrete business ${businesses.length === 1 ? "model" : "models"}. The page connects its steps, owners, documents, metrics, software, failure modes, and operating questions.`;
+  if (n.label === "role")
+    return `Within SMBwiki, this role appears in ${businesses.length} concrete business ${businesses.length === 1 ? "model" : "models"} and is assigned to ${skills.length} ${skills.length === 1 ? "skill" : "skills"}. The relationships below show where the role sits and what work it owns.`;
+  if (n.label === "document") {
+    const producers = unique(graph.edges.filter((edge) => edge.type === "PRODUCES" && edge.to === n.id).map((edge) => edge.from));
+    const consumers = unique(graph.edges.filter((edge) => edge.type === "CONSUMES" && edge.to === n.id).map((edge) => edge.from));
+    return `Within SMBwiki, this document appears in ${businesses.length} concrete business ${businesses.length === 1 ? "model" : "models"}. It is produced by ${producers.length} ${producers.length === 1 ? "skill" : "skills"} and consumed by ${consumers.length}, which places the record in its operating lifecycle.`;
+  }
+  if (n.label === "metric")
+    return `Within SMBwiki, this metric is used by ${skills.length} ${skills.length === 1 ? "skill" : "skills"} across ${businesses.length} concrete business ${businesses.length === 1 ? "model" : "models"}. Its unit, preferred direction, and business-level uses are listed below.`;
+  if (n.label === "software-category")
+    return `Within SMBwiki, this software category supports ${skills.length} ${skills.length === 1 ? "skill" : "skills"} across ${businesses.length} concrete business ${businesses.length === 1 ? "model" : "models"}. The page shows the operational work the system category is expected to run.`;
+  if (n.label === "license") {
+    const licenseContexts = contexts.filter((context) => context.kind === "license" && !resolved.get(context.biz)?.abstract);
+    const countries = unique(licenseContexts.map((context) => context.geo));
+    return `Within SMBwiki, this license or credential applies to ${businesses.length} concrete business ${businesses.length === 1 ? "model" : "models"} across ${countries.length} modeled ${countries.length === 1 ? "country layer" : "country layers"}. The dated applicability table provides operating context, not legal advice.`;
+  }
+  if (n.label === "market")
+    return `Within SMBwiki, this market is served by ${businesses.length} concrete business ${businesses.length === 1 ? "model" : "models"}. The relationship map connects the customer type to the businesses and operating work that serve it.`;
+  return "This page places the entity in the SMBwiki operating-model graph.";
+};
+const nodeDescriptionFallback = (n) => {
+  const count = (n.label === "document" ? documentBusinesses(n.id) : bizOf(n.id)).length;
+  if (n.label === "skill")
+    return `${n.name}: process steps, controls, records, measures, and use across ${count} SMBwiki business models.`;
+  if (n.label === "role")
+    return `${n.name}: responsibilities, owned workflows, and use across ${count} modeled SMBwiki business types.`;
+  if (n.label === "document")
+    return `${n.name}: purpose, producing and consuming workflows, and use across ${count} modeled SMBwiki business types.`;
+  if (n.label === "metric")
+    return `${n.name}: definition, unit, preferred direction, measured workflows, and use across ${count} SMBwiki business models.`;
+  if (n.label === "software-category")
+    return `${n.name}: supported workflows and use across ${count} modeled SMBwiki business types.`;
+  if (n.label === "license")
+    return `${n.name}: jurisdiction, scope, dated applicability, and use across ${count} modeled SMBwiki business types.`;
+  if (n.label === "market")
+    return `${n.name}: buyer context and the ${count} modeled SMBwiki business types that serve this market.`;
+  return `${n.name}: definition, operating context, and relationships in the SMBwiki graph.`;
+};
+const nodeJsonLd = (n, description) => n.label === "skill"
+  ? {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: `${n.name}: business process and controls`,
+      description,
+      url: `${SITE}${href(n.id)}`,
+      mainEntityOfPage: `${SITE}${href(n.id)}`,
+      about: { "@type": "Thing", name: n.name },
+      isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+      dateModified: releaseDate,
+      license: "https://opensource.org/license/mit",
+    }
+  : {
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      name: n.name,
+      description,
+      url: `${SITE}${href(n.id)}`,
+      termCode: n.id,
+      inDefinedTermSet: {
+        "@type": "DefinedTermSet",
+        name: "SMBwiki operating-model graph",
+        url: `${SITE}/graph/`,
+      },
+    };
 
 for (const n of graph.nodes) {
   if (n.label === "business") continue;
   const d = n.data;
-  const parts = [(d.summary ? `<p>${esc(d.summary.trim())}</p>` : "")];
+  const context = entityContext(n);
+  const description = metaDescription(
+    d.summary,
+    nodeDescriptionFallback(n),
+  );
+  const parts = [
+    (d.summary ? `<p>${esc(d.summary.trim())}</p>` : ""),
+    `<p class="entity-context">${esc(context)}</p>`,
+  ];
   parts.push(section("Relationship map", relationshipGraph(n)));
   if (n.label === "skill") {
     mkdirSync(join(DIST, "skill"), { recursive: true });
@@ -884,18 +1134,51 @@ for (const n of graph.nodes) {
       .map((c) => [link(c.biz), c.geo ? esc(countryName(c.geo)) : "core", links(c.binding.roles), links(c.binding.metrics), links(c.binding.software)]);
     parts.push(section("Run by", table(["business", "layer", "owned by", "measured by", "software"], rows)));
   } else if (n.label === "metric") {
+    const measuredBy = unique((usedBy.get(n.id) ?? [])
+      .filter((context) => context.kind === "binding-metric" && !resolved.get(context.biz)?.abstract)
+      .map((context) => context.process));
     parts.push(`<p class="muted">${esc(d.unit ?? "")}${d.direction ? ` · ${d.direction} is better` : ""}</p>`);
+    parts.push(section(
+      "How to read it",
+      `<p>${esc(n.name)} is tracked in ${esc(d.unit ?? "the unit recorded by the operating business")}. ${d.direction === "lower" ? "Lower values generally indicate improvement" : d.direction === "higher" ? "Higher values generally indicate improvement" : "Interpret the direction against the operating target"}. Compare values using the same definition, scope, and reporting period.</p>`,
+    ));
+    parts.push(section("Measured through", table(
+      ["skill", "operating context", "business models"],
+      measuredBy.map((skill) => [link(skill), esc(nodeSummary(skill)), `${bizOf(skill, ["skill-binding"]).length}`]),
+    )));
     parts.push(section("Measured in", table(["business", "skill", "layer"], (usedBy.get(n.id) ?? []).filter((c) => c.kind === "binding-metric" && !resolved.get(c.biz).abstract).map((c) => [link(c.biz), link(c.process), c.geo ? esc(countryName(c.geo)) : "core"]))));
   } else if (n.label === "document") {
     const prod = graph.edges.filter((e) => e.type === "PRODUCES" && e.to === n.id).map((e) => e.from);
     const cons = graph.edges.filter((e) => e.type === "CONSUMES" && e.to === n.id).map((e) => e.from);
     parts.push(section("Lifecycle", `<p>Produced by ${links(prod) || "none"}. Consumed by ${links(cons) || "none"}.</p>`));
-    parts.push(section("Appears in", `<p>${links(bizOf(n.id, ["binding-document"])) || "none"}</p>`));
+    parts.push(section("Workflow context", table(
+      ["stage", "skill", "what the work covers", "business models"],
+      [
+        ...unique(prod).map((skill) => ["produced by", link(skill), esc(nodeSummary(skill)), `${bizOf(skill, ["skill-binding"]).length}`]),
+        ...unique(cons).map((skill) => ["consumed by", link(skill), esc(nodeSummary(skill)), `${bizOf(skill, ["skill-binding"]).length}`]),
+      ],
+    )));
+    parts.push(section("Appears in", `<p>${links(documentBusinesses(n.id)) || "none"}</p>`));
   } else if (n.label === "role") {
     parts.push(section("Appears in", `<p>${links(bizOf(n.id, ["org", "binding-role"])) || "none"}</p>`));
     const owns = [...new Set((usedBy.get(n.id) ?? []).filter((c) => c.kind === "binding-role").map((c) => c.process))];
-    if (owns.length) parts.push(section("Owns", `<p>${links(owns)}</p>`));
+    if (owns.length) parts.push(section("Responsibilities and workflows", table(
+      ["skill", "what the work covers", "department", "business models"],
+      owns.map((skill) => [
+        link(skill),
+        esc(nodeSummary(skill)),
+        esc(DEPARTMENT_NAME.get(nodes.get(skill)?.data?.department) ?? sentenceLabel(nodes.get(skill)?.data?.department ?? "operations")),
+        `${bizOf(skill, ["skill-binding"]).length}`,
+      ]),
+    )));
   } else if (n.label === "software-category") {
+    const supportedSkills = unique((usedBy.get(n.id) ?? [])
+      .filter((context) => context.kind === "binding-software" && !resolved.get(context.biz)?.abstract)
+      .map((context) => context.process));
+    parts.push(section("Supported workflows", table(
+      ["skill", "what the work covers", "business models"],
+      supportedSkills.map((skill) => [link(skill), esc(nodeSummary(skill)), `${bizOf(skill, ["skill-binding"]).length}`]),
+    )));
     parts.push(section("Runs", table(["business", "skill", "layer"], (usedBy.get(n.id) ?? []).filter((c) => c.kind === "binding-software" && !resolved.get(c.biz).abstract).map((c) => [link(c.biz), link(c.process), c.geo ? esc(countryName(c.geo)) : "core"]))));
     parts.push(`<p class="muted">Typical system area: ${esc(sentenceLabel(d.erpai_category ?? "none"))}</p>`);
   } else if (n.label === "license") {
@@ -915,7 +1198,11 @@ for (const n of graph.nodes) {
       `<p class="note">These dated states describe the modeled business context, not a nationwide legal conclusion. Confirm current requirements with the authority for the operating jurisdiction.</p>`,
     ));
   } else if (n.label === "market") {
-    parts.push(section("Sold to by", `<p>${links(bizOf(n.id, ["sells-to"])) || "none"}</p>`));
+    const sellers = bizOf(n.id, ["sells-to"]);
+    parts.push(section("Businesses serving this market", table(
+      ["business type", "operating context"],
+      sellers.map((business) => [link(business), esc(businessSummary(business))]),
+    )));
   }
   if (n.label === "skill") {
     mkdirSync(join(DIST, "process", n.id), { recursive: true });
@@ -924,15 +1211,16 @@ for (const n of graph.nodes) {
   }
   page({
     path: `/${SEG[n.label]}/${n.id}/`,
-    title: `${n.name} (${KICKER[n.label]}) | smbwiki`,
-    desc: (d.summary ?? n.name).slice(0, 155),
+    title: contextualTitle(n.name, PAGE_CONTEXT[n.label]),
+    desc: description,
     h1: n.name,
     kicker: n.label === "skill" && d.department
-      ? `${KICKER[n.label]} · ${esc(DEPARTMENT_NAME.get(d.department) ?? d.department)}`
-      : KICKER[n.label],
+      ? `${PAGE_KICKER[n.label]} · ${esc(DEPARTMENT_NAME.get(d.department) ?? d.department)}`
+      : PAGE_KICKER[n.label],
     body: parts.join("\n"),
     yamlPath: `/definitions/${DEF_DIR[n.label]}/${n.id}.yaml`,
-    indexable: n.label === "skill",
+    jsonld: nodeJsonLd(n, description),
+    indexable: true,
   });
   for (const alias of d.aliases ?? []) {
     const target = `/${SEG[n.label]}/${n.id}/`;
@@ -1027,18 +1315,62 @@ const businessCatalog = CATALOG_GROUPS.map(([id, label]) => {
   }).join("");
   return `<section class="business-sector"><h3>${esc(label)}</h3><ul class="business-list">${rows}</ul></section>`;
 }).join("");
-const PLURAL = { skill: "Skills", role: "Roles", document: "Documents", metric: "Metrics", "software-category": "Software categories", license: "Licenses" };
+const PLURAL = { skill: "Skills", role: "Roles", document: "Documents", metric: "Metrics", "software-category": "Software categories", license: "Licenses", market: "Customer markets" };
 const USE_KINDS = {
   skill: ["skill-binding"], role: ["org", "binding-role"], document: ["binding-document"],
   metric: ["binding-metric"], "software-category": ["binding-software"], license: ["license"],
+  market: ["sells-to"],
 };
-const kindList = (label, seg) => {
+const kindEntries = (label, seg) => {
   const items = graph.nodes.filter((n) => n.label === label).sort((a, b) => a.name.localeCompare(b.name));
   const rows = items.map((n) => {
     const uses = bizOf(n.id, USE_KINDS[label]).length;
     return `<li><a href="/${seg}/${n.id}/">${esc(n.name)}</a>${uses > 1 ? ` <span class="usecount">${uses}</span>` : ""}</li>`;
   }).join("");
-  return `<h2>${esc(PLURAL[label].toLowerCase())} <span class="muted">(${items.length})</span></h2><ul class="index-cols">${rows}</ul>`;
+  return { items, rows };
+};
+// One index page per node kind. The homepage used to carry all seven lists,
+// about 670 links, which flattened the link graph so no page inherited
+// weight. Now the homepage links the seven pages and each page carries one
+// list, with prose that explains what the counts mean.
+const KIND_INDEXES = [
+  ["skill", "skill"], ["role", "role"], ["document", "document"], ["metric", "metric"],
+  ["software-category", "software"], ["license", "license"], ["market", "market"],
+];
+const SINGULAR = { skill: "skill", role: "role", document: "document", metric: "metric", "software-category": "software category", license: "license", market: "customer market" };
+const KIND_INTRO = {
+  skill: "A skill is one piece of work a business runs: the steps, the roles that own each step, the records it takes in and produces, and how the result is judged. Every skill page is also published as a plain Markdown file an AI agent can load.",
+  role: "A role is a seat in a business that holds skills. The same role name in two business types points at the same node, so each page shows every trade that seat appears in and the skills it owns there.",
+  document: "A document is a record a skill takes in or produces: the order, the estimate, the inspection report, the invoice. Each page shows which skills move it and which business types keep it.",
+  metric: "A metric is how a business judges a piece of work. Each page defines the measure, shows the skills it judges, and lists the business types that track it.",
+  "software-category": "A software category is the kind of system a skill runs on, named by function rather than by vendor. Each page shows the skills that depend on it and the business types that run it.",
+  license: "A license is a permit or registration a business type must hold before it can operate. Each page names the jurisdiction and the business types bound to it.",
+  market: "A customer market is who a business type sells to. Each page lists the business types that serve that market and the revenue mechanics they use.",
+};
+const kindIndexPage = (label, seg) => {
+  const { items, rows } = kindEntries(label, seg);
+  const plural = PLURAL[label];
+  const lower = plural.toLowerCase();
+  page({
+    path: `/${seg}/`,
+    title: `All ${items.length} ${lower} across ${concrete.length} business types | SMBwiki`,
+    h1: plural,
+    kicker: `${items.length} ${lower} in the operating-model graph`,
+    desc: `An alphabetical index of the ${items.length} ${lower} in the SMBwiki operating-model graph, each marked with how many of the ${concrete.length} business types use it.`,
+    jsonld: {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: `${plural} on SMBwiki`,
+      description: `Index of the ${items.length} ${lower} used by ${concrete.length} business types.`,
+      url: `${SITE}/${seg}/`,
+      isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+      dateModified: releaseDate,
+    },
+    indexable: true,
+    body: `<p>${KIND_INTRO[label]}</p>
+<p>A number after a name shows how many of the ${concrete.length} business types use that ${SINGULAR[label]}. A name without a number belongs to one business type. Every entry is a page with its own relationship map.</p>
+<ul class="index-cols">${rows}</ul>`,
+  });
 };
 // The lead opens on one real business rather than describing what a page
 // contains. Every name, count, and link below is read from the definition.
@@ -1053,24 +1385,7 @@ const leadDocuments = new Set(leadBindings.flatMap((b) => b.documents ?? []));
 const leadRoles = new Set();
 (function walkOrg(ns) { ns?.forEach((n) => { leadRoles.add(n.role); walkOrg(n.reports); }); })(lead.org);
 const leadHead = lead.org?.[0]?.role;
-const COUNT_WORD = [
-  "no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
-  "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
-  "eighteen", "nineteen", "twenty",
-];
-const countWord = (n) => COUNT_WORD[n] ?? String(n);
 const COUNTRY_ARTICLE = { us: "the " };
-// Node names are Title Case for headings; inside a sentence they read lowercase.
-// Acronyms keep their case, so "HVAC Contractor" reads "HVAC contractor".
-const linkLower = (id) => {
-  const n = nodes.get(id);
-  if (!n) return esc(id);
-  const name = n.name
-    .split(" ")
-    .map((word) => (word === word.toUpperCase() ? word : word.toLowerCase()))
-    .join(" ");
-  return `<a href="${href(id)}">${esc(name)}</a>`;
-};
 // How many concrete business types touch each shared node. Used to pick the
 // most characteristic role, record, and measure a business has.
 const shareCount = (kinds) => (id) => bizOf(id, kinds).length;
@@ -1097,6 +1412,9 @@ const leadSentences = [
   leadRun
     ? `${link(leadRun.ref)} runs on ${softwareLink(rarest(leadRun.software, ["binding-software"]))} and answers for ${linkLower(leadSecondMeasure)}.`
     : "",
+  // "Skill" is this site's term of art. Define it in the sentence where a
+  // reader first meets it, from the examples just shown.
+  leadOwned ? "Each of those is a skill: a named piece of work with an owner, records, and a measure." : "",
   `${sentenceLabel(countWord(leadBindings.length))} skills in all, ${countWord(leadRoles.size)} roles under ${leadHead ? `an ${linkLower(leadHead)}` : "the owner"}, and ${countWord(leadDocuments.size)} documents between them.`,
   // Licensed trades say so. Trades that need no license do not pretend to.
   leadLicenses.length
@@ -1127,19 +1445,19 @@ const specificRows = CATALOG_GROUPS.map(([group]) =>
 const AI_EXAMPLE = leadOwned?.ref ?? "production-control";
 const aiExampleName = nodeName(AI_EXAMPLE);
 const aiExampleReach = skillReach.get(AI_EXAMPLE) ?? 0;
-// A magazine sidebar, not a section: it sits beside the lead so the page
-// still reads hero then catalog without an interruption.
+// A magazine pull-out placed after the catalog: readers get the whole
+// human path first, and this box gathers everything machine-facing.
 const PASTE = `Read ${SITE}/skill/${AI_EXAMPLE}.md and follow it. Then: set up ${aiExampleName.toLowerCase()} for my business.`;
 const skillsAndAi = `<aside class="skillbox" id="skills-and-ai" aria-labelledby="skillbox-title">
       <div class="skillbox-text">
-        <h2 id="skillbox-title">What a skill is</h2>
-        <p>A prompt asks for a result. A skill records the process used to produce and check it: the steps and who runs each, the records in and out, how the work fails, and what stays human. ${skillReach.size} of them here, plain Markdown, no key and no account.</p>
-        <p class="note">Business skills live here. Skills for building and shipping things live at <a href="https://sphinxstack.com/skills/">sphinxstack</a>.</p>
+        <h2 id="skillbox-title">Use it with an AI agent</h2>
+        <p>A skill records how a piece of work is done: the steps and who runs each, the records in and out, how the work fails, and what stays human. A prompt asks for a result; a skill carries the process used to produce and check it. All ${skillReach.size} are published as plain Markdown files, free to read without an account.</p>
+        <p class="note">Business skills live here. Skills for software development live at <a href="https://sphinxstack.com/skills/">sphinxstack</a>.</p>
       </div>
       <div class="skillbox-try">
         <p class="skillbox-sub">Paste into any agent</p>
         <p class="paste"><code>${esc(PASTE)}</code></p>
-        <p>That one is ${link(AI_EXAMPLE)}. <a href="/skill/${AI_EXAMPLE}.md">Read the file</a>, <a href="/business/${LEAD_ID}/#skills">see a full set by department</a>, or take <a href="/llms.txt">llms.txt</a>.</p>
+        <p>That one is ${link(AI_EXAMPLE)}. <a href="/skill/${AI_EXAMPLE}.md">Read the file</a>, <a href="/business/${LEAD_ID}/#skills">see a full set by department</a>, or take <a href="/llms.txt">llms.txt</a>. Every page is built from a <a href="/definitions/businesses/${LEAD_ID}.yaml">YAML definition</a> in the <a href="https://github.com/erphq/smbwiki">open-source repo</a>.</p>
       </div>
     </aside>`;
 
@@ -1152,8 +1470,16 @@ const sharedWork = `<h2 id="shared-work">shared and specific work</h2>
 
 page({
   path: "/",
-  title: "smbwiki: how businesses work",
+  title: "SMBwiki: how businesses work",
   desc: `Operating models for ${concrete.length} familiar business types, covering revenue, skills, roles, documents, metrics, software, licenses, and supply chains.`,
+  jsonld: {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "SMBwiki",
+    description: `A free encyclopedia of how ${concrete.length} small-business types work, built from one connected operating-model graph.`,
+    url: SITE,
+    dateModified: releaseDate,
+  },
   bare: true,
   body: [
     `<div class="home-lead">
@@ -1162,38 +1488,38 @@ page({
       <div class="home-brief">
         <div class="home-copy">
           <p>${leadSentences}</p>
-          <p class="thesis">All ${concrete.length} business types are documented that way. Every skill is also published as a file any AI agent can load, which is how this corpus connects to AI. There are <a href="#skills-and-ai">${skillReach.size} of them</a>.</p>
+          <p class="thesis">All ${concrete.length} business types are documented that way. Every skill is also published as a plain-text file <a href="#skills-and-ai">any AI agent can load</a>.</p>
         </div>
         <ul class="contents">
           <li><a href="#business-types">Browse the catalog</a></li>
           <li><a href="/business/${LEAD_ID}/">Read an example business</a></li>
-          <li><a href="/definitions/businesses/${LEAD_ID}.yaml">Read a definition file</a></li>
-          <li><a href="https://github.com/erphq/smbwiki">Open the source</a></li>
+          <li><a href="#shared-work">See what businesses share</a></li>
+          <li><a href="#skills-and-ai">Use it with an AI agent</a></li>
+          <li><a href="#index">Index by kind</a></li>
         </ul>
       </div>
     </div>`,
-    skillsAndAi,
     `<h2 id="business-types">business types</h2>
      <div class="catalog-filter" hidden>
        <label for="catalog-q">Filter</label>
        <input id="catalog-q" type="search" autocomplete="off" spellcheck="false"
               placeholder="name, skill, record, measure, or NAICS code">
-       <p class="filter-hint">Try <button type="button" data-q="production control">production control</button>, <button type="button" data-q="scrap rate">scrap rate</button>, or <button type="button" data-q="332710">332710</button>.</p>
+       <p class="filter-hint">Try <button type="button" data-q="plumber">plumber</button>, <button type="button" data-q="pizzeria">pizzeria</button>, or <button type="button" data-q="scrap rate">scrap rate</button>.</p>
      </div>
      <p class="filter-status" role="status" aria-live="polite" hidden></p>
      <div class="business-sectors">${businessCatalog}</div>
      <p class="filter-empty" hidden>No business type matches that.</p>
      <script src="${CATALOG_HREF}" defer></script>`,
     sharedWork,
-    kindList("skill", "skill"),
-    kindList("role", "role"),
-    kindList("document", "document"),
-    kindList("metric", "metric"),
-    kindList("software-category", "software"),
-    kindList("license", "license"),
+    skillsAndAi,
+    `<h2 id="index">index</h2>
+     <p>Every node in the graph has its own page. The seven indexes list them by kind, each name marked with how many of the ${concrete.length} business types use it.</p>
+     <ul class="kind-index">${KIND_INDEXES.map(([label, seg]) => `<li><a href="/${seg}/">${esc(PLURAL[label])}</a> <span class="usecount">${graph.nodes.filter((n) => n.label === label).length}</span></li>`).join("")}</ul>`,
   ].join("\n"),
   indexable: true,
 });
+
+for (const [label, seg] of KIND_INDEXES) kindIndexPage(label, seg);
 
 // ---- static passthroughs -------------------------------------------------
 cpSync(join(ROOT, "definitions"), join(DIST, "definitions"), { recursive: true });
@@ -1209,30 +1535,297 @@ for (const r of concrete)
   cpSync(join(BUILD, "resolved", `${r.id}.json`), join(DIST, "api", "def", `${r.id}.json`));
 cpSync(join(ROOT, "assets", "style.css"), join(DIST, "style.css"));
 cpSync(join(ROOT, "assets", "favicon.svg"), join(DIST, "favicon.svg"));
+// IndexNow key (Bing and partners). Served at /<key>.txt so submissions verify.
+const indexNowKey = readFileSync(join(ROOT, "assets", "indexnow-key.txt"), "utf8").trim();
+cpSync(join(ROOT, "assets", "indexnow-key.txt"), join(DIST, indexNowKey + ".txt"));
+cpSync(join(ROOT, "assets", "card.png"), join(DIST, "static", "card.png"));
 cpSync(join(ROOT, "assets", "opgraph.js"), join(DIST, "static", "opgraph.js"));
 cpSync(join(ROOT, "assets", "catalog.js"), join(DIST, "static", "catalog.js"));
 cpSync(join(ROOT, "assets", "vendor"), join(DIST, "static", "vendor"), { recursive: true });
 const sitemapPaths = [
   "/",
-  ...[...concrete]
-    .sort((a, b) => a.id.localeCompare(b.id))
-    .map((r) => `/business/${r.id}/`),
+  "/about/",
+  "/graph/",
+  "/research/",
+  ...KIND_INDEXES.map(([, seg]) => `/${seg}/`),
   ...graph.nodes
-    .filter((n) => n.label === "skill")
-    .sort((a, b) => a.id.localeCompare(b.id))
-    .map((n) => `/skill/${n.id}/`),
+    .sort((a, b) => a.label.localeCompare(b.label) || a.id.localeCompare(b.id))
+    .map((n) => href(n.id)),
 ];
-// Every page is regenerated from the same corpus, so the release commit date
-// is the honest lastmod. Taken from git rather than the clock, so a rebuild of
-// an unchanged tree produces an identical sitemap.
-const releaseDate = (() => {
-  try {
-    return execSync("git log -1 --format=%cI", { cwd: ROOT, encoding: "utf8" }).trim().slice(0, 10);
-  } catch {
-    return null;
-  }
-})();
 const lastmod = releaseDate ? `<lastmod>${releaseDate}</lastmod>` : "";
+
+// ---- project pages: about, graph, research -------------------------------
+// Hand-written prose, but every count in it is computed from the corpus so
+// these pages cannot drift from the data they describe.
+const fmt = (n) => n.toLocaleString("en-US");
+const releaseYear = releaseDate ? releaseDate.slice(0, 4) : "2026";
+const REPO = "https://github.com/erphq/smbwiki";
+const businessNodeCount = graph.nodes.filter((n) => n.label === "business").length;
+const baseCount = businessNodeCount - concrete.length;
+const edgeTypeCount = new Set(graph.edges.map((e) => e.type)).size;
+const bindingCount = concrete.reduce((a, r) => a + allSkillBindings(r).length, 0);
+const kindCount = (label) => graph.nodes.filter((n) => n.label === label).length;
+const inheritsModel = (business, baseId) => {
+  let parent = business.extends;
+  while (parent) {
+    if (parent === baseId) return true;
+    parent = resolved.get(parent)?.extends;
+  }
+  return false;
+};
+const baseModelRows = [...resolved.values()]
+  .filter((business) => business.abstract)
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .map((base) => {
+    const descendants = concrete.filter((business) => inheritsModel(business, base.id));
+    return [
+      link(base.id),
+      `${descendants.length} ${descendants.length === 1 ? "business type" : "business types"}`,
+      descendants.slice(0, 3).map((business) => link(business.id)).join(", "),
+    ];
+  });
+const reachValues = [...skillReach.values()];
+const reachBucket = (lo, hi) => reachValues.filter((v) => v >= lo && v <= hi).length;
+const deptSplit = new Map();
+for (const n of graph.nodes)
+  if (n.label === "skill")
+    deptSplit.set(n.data.department, (deptSplit.get(n.data.department) ?? 0) + 1);
+const deptLine = DEPARTMENTS
+  .map(([id, name]) => ({ name, n: deptSplit.get(id) ?? 0 }))
+  .sort((a, b) => b.n - a.n)
+  .map(({ name, n }) => `${name.toLowerCase()} ${n}`)
+  .join(", ");
+const spineLine = [...skillReach]
+  .sort((a, b) => b[1] - a[1] || nodeName(a[0]).localeCompare(nodeName(b[0])))
+  .slice(0, SPINE_ROWS)
+  .map(([id, n]) => `${linkLower(id)} in ${n}`)
+  .join(", ");
+
+const ARROW = (id) =>
+  `<defs><marker id="${id}" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M0 0L8 4L0 8z" fill="#72777d"/></marker></defs>`;
+
+const apReach = skillReach.get("accounts-payable") ?? 0;
+const figShared = `<figure class="fig">
+<svg viewBox="0 0 640 216" role="img" aria-label="Three business types each linked to the single shared accounts payable node">
+  ${ARROW("arr-shared")}
+  <g font-size="13" fill="var(--ink)">
+    <rect x="24" y="18" width="160" height="36" rx="0" fill="#fff" stroke="var(--hair)"/>
+    <text x="104" y="41" text-anchor="middle">Machine shop</text>
+    <rect x="24" y="81" width="160" height="36" rx="0" fill="#fff" stroke="var(--hair)"/>
+    <text x="104" y="104" text-anchor="middle">Pizzeria</text>
+    <rect x="24" y="144" width="160" height="36" rx="0" fill="#fff" stroke="var(--hair)"/>
+    <text x="104" y="167" text-anchor="middle">Law firm</text>
+    <text x="104" y="205" text-anchor="middle" font-size="12" fill="var(--muted)">…and ${apReach - 3} more</text>
+    <line x1="188" y1="36" x2="428" y2="96" stroke="var(--muted)" marker-end="url(#arr-shared)"/>
+    <line x1="188" y1="99" x2="428" y2="103" stroke="var(--muted)" marker-end="url(#arr-shared)"/>
+    <line x1="188" y1="162" x2="428" y2="110" stroke="var(--muted)" marker-end="url(#arr-shared)"/>
+    <text x="306" y="92" text-anchor="middle" font-size="11" fill="var(--muted)">has skill</text>
+    <rect x="436" y="81" width="180" height="44" rx="0" fill="#f8f9fa" stroke="var(--ink)"/>
+    <text x="526" y="108" text-anchor="middle">Accounts payable</text>
+  </g>
+</svg>
+<figcaption>${link("accounts-payable")} is one node with many parents: a single page run by ${apReach} of the ${concrete.length} business types. An improvement to it reaches all of them at once.</figcaption>
+</figure>`;
+
+const psBaseSkills = (resolved.get("professional-services-base")?.skills ?? []).map((b) => nodeName(b.ref));
+const figExtends = `<figure class="fig">
+<svg viewBox="0 0 640 300" role="img" aria-label="A law firm extends the professional services base and adds its own specialist skill">
+  ${ARROW("arr-ext")}
+  <g font-size="12.5" fill="var(--ink)">
+    <rect x="20" y="16" width="264" height="222" rx="0" fill="#f8f9fa" stroke="var(--hair)"/>
+    <text x="36" y="42" font-weight="600" font-size="13">professional-services-base</text>
+    ${psBaseSkills.map((name, i) => `<text x="36" y="${70 + i * 24}" fill="var(--soft)">${esc(name)}</text>`).join("\n    ")}
+    <line x1="352" y1="127" x2="292" y2="127" stroke="var(--muted)" marker-end="url(#arr-ext)"/>
+    <text x="322" y="116" text-anchor="middle" font-size="11" fill="var(--muted)">extends</text>
+    <rect x="360" y="16" width="260" height="268" rx="0" fill="#fff" stroke="var(--ink)"/>
+    <text x="376" y="42" font-weight="600" font-size="13">Law firm</text>
+    ${psBaseSkills.map((name, i) => `<text x="376" y="${70 + i * 24}" fill="var(--muted)">${esc(name)}</text>`).join("\n    ")}
+    <line x1="376" y1="${70 + psBaseSkills.length * 24 - 10}" x2="604" y2="${70 + psBaseSkills.length * 24 - 10}" stroke="var(--hair-lt)"/>
+    <text x="376" y="${70 + psBaseSkills.length * 24 + 12}" font-weight="600">Legal matter and deadline control</text>
+  </g>
+</svg>
+<figcaption>${sentenceLabel(countWord(baseCount))} abstract bases hold the shared machinery. A ${linkLower("law-firm")} inherits ${countWord(psBaseSkills.length)} skills from its base, then adds its own specialist skill, ${linkLower("legal-matter-and-deadline-control")}.</figcaption>
+</figure>`;
+
+const pipelineFig = `<ol class="pipeline">
+  <li><b>definitions/*.yaml</b><span>${businessNodeCount} business definitions (${concrete.length} concrete, ${baseCount} abstract bases) plus a file for every shared skill, role, document, metric, software category, license, and market: ${fmt(graph.nodes.length)} nodes in all.</span></li>
+  <li><b>build-graph: validate and resolve</b><span>Every reference must name a defined node or the build exits with an error. Inheritance is resolved so each concrete business carries its full operating model. The one allowance is supply-chain references to businesses not documented yet, which render as plain unlinked names.</span></li>
+  <li><b>graph.json and one resolved JSON per business</b><span>${fmt(graph.edges.length)} edges across ${edgeTypeCount} relationship types. The resolved files are published unchanged at /api/def/&lt;id&gt;.json, and the graph at /api/graph.json.</span></li>
+  <li><b>build-site: render everything from the graph</b><span>Business articles, a page with a relationship map for every node, ${skillReach.size} loadable skill Markdown files, the JSON APIs, and the sitemap.</span></li>
+  <li><b>three release checks</b><span>The catalog check compares the live set against the ${concrete.length}-type roadmap. The content check enforces the required operating detail on every definition. The site check re-walks the output: every internal link on every page must resolve, every published JSON must match its build twin, and the sitemap must contain exactly the intended pages. A release ships only when the build reports zero errors and all three checks pass.</span></li>
+</ol>`;
+
+const EDGE_MEANING = [
+  ["HAS_SKILL", "business type → skill", "the business runs this skill; the binding carries its roles, documents, metrics, and software"],
+  ["PERFORMED_BY", "skill → role", "who runs the work"],
+  ["RECORDS", "skill → document", "the records the work reads and writes"],
+  ["MEASURED_BY", "skill → metric", "the measure that judges the work"],
+  ["RUNS_ON", "skill → software category", "the class of software the work runs on"],
+  ["PRODUCES", "skill → document", "a record the skill creates"],
+  ["CONSUMES", "skill → document", "a record the skill needs first"],
+  ["EMPLOYS", "business type → role", "the role appears in the org chart"],
+  ["REQUIRES", "business type → license", "a credential the business must hold"],
+  ["EXTENDS", "business type → base", "inheritance of shared machinery"],
+  ["BUYS_FROM", "business type → supplier", "supply chain, upstream"],
+  ["SELLS_TO", "business type → customer", "supply chain, downstream"],
+  ["HANDLES", "business type → product", "equipment and products the business works with"],
+];
+const edgeCountByType = new Map();
+for (const e of graph.edges) edgeCountByType.set(e.type, (edgeCountByType.get(e.type) ?? 0) + 1);
+const edgeTable = table(
+  ["relationship", "joins", "meaning", "edges"],
+  EDGE_MEANING.map(([type, joins, meaning]) => [
+    `<code>${type}</code>`, esc(joins), esc(meaning), fmt(edgeCountByType.get(type) ?? 0),
+  ]),
+);
+
+const reachBuckets = [
+  ["run by one business type", reachBucket(1, 1)],
+  ["2–9 business types", reachBucket(2, 9)],
+  ["10–59 business types", reachBucket(10, 59)],
+  ["60 or more", reachBucket(60, Infinity)],
+];
+const reachMax = Math.max(...reachBuckets.map(([, v]) => v));
+const figReach = `<figure class="fig">
+<svg viewBox="0 0 640 156" role="img" aria-label="How many business types each of the ${skillReach.size} skills runs in">
+  <g font-size="12.5">
+    ${reachBuckets.map(([bLabel, v], i) => {
+      const y = 14 + i * 34;
+      const w = Math.max(3, Math.round((v / reachMax) * 320));
+      return `<text x="196" y="${y + 13}" text-anchor="end" fill="var(--soft)">${esc(bLabel)}</text>
+    <rect x="208" y="${y}" width="${w}" height="17" rx="0" fill="var(--blue)"/>
+    <text x="${208 + w + 8}" y="${y + 13}" fill="var(--ink)">${v} skills</text>`;
+    }).join("\n    ")}
+  </g>
+</svg>
+<figcaption>How many of the ${concrete.length} business types each of the ${skillReach.size} skills runs in.</figcaption>
+</figure>`;
+
+page({
+  path: "/about/",
+  title: "About · SMBwiki",
+  desc: "What SMBwiki is, where the definitions come from, how they are checked, and who makes it.",
+  jsonld: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "About SMBwiki",
+    description: "What SMBwiki is, where its business definitions come from, how they are checked, and who maintains the project.",
+    url: `${SITE}/about/`,
+    isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+    dateModified: releaseDate,
+  },
+  h1: "About SMBwiki",
+  kicker: "From SMBwiki, the free encyclopedia of how businesses work",
+  indexable: true,
+  body: `
+<p>SMBwiki is a free encyclopedia of how small businesses work. It documents ${concrete.length} familiar business types (machine shops, pizzerias, law firms, roofing contractors) as operating models: the skills each business runs, the roles that hold them, the documents the work moves, the metrics that judge it, the software it runs on, and the licenses it must carry.</p>
+<p>Pages are written for a curious reader. The same corpus is also published in machine-readable form: Markdown skill files, resolved JSON, raw YAML, and the full graph, so an AI agent can load any part of it. <a href="/llms.txt">llms.txt</a> is the index for machines.</p>
+<h2>The goal</h2>
+<p>The goal is to extract meaningful, objective data from a sea of subjectivity. Models trained on humanity's accumulated writing can surface that structure, but only when properly guardrailed. What we're trying to find out is how much guardrail consistency takes. <a href="/graph/">How the graph is built</a> describes the guardrails in place today.</p>
+<h2>Where the content comes from</h2>
+<p>Every page is generated from YAML definitions in a <a href="${REPO}">public repository</a>. Classifications, regulated credentials, and licensing details are anchored to primary sources: NAICS industry classifications from the U.S. Census Bureau and the publications of regulators, standards bodies, and state licensing boards. The <a href="${REPO}/blob/main/SOURCES.md">source register</a> lists them.</p>
+<p>The operating details, such as which role owns a skill or what records the work produces, are editorial judgment about how these businesses typically run. They describe a typical operation, and an owner should check every detail against their own business. Licensing varies by state and locality, and conditional license entries say so on the page.</p>
+<h2>How it is checked</h2>
+<p>Every reference on every page must resolve to a defined node before anything renders, the graph must stay one connected component with no isolated node, and three release checks verify the catalog count, the completeness of each definition, and every internal link on every generated page. <a href="/graph/">How the graph is built</a> explains the machinery.</p>
+<p>The checks verify structure; they cannot tell whether a description is right. Corrections happen as changes to the definitions in the repository, and because pages share nodes, one fix to a document or a metric reaches every business type that uses it.</p>
+<h2>Who makes it</h2>
+<p>SMBwiki is an ERP·AI project maintained by <a href="https://github.com/protosphinx">protosphinx</a>. The generator, the checks, and every definition are open source under the MIT license.</p>
+<p class="note">Sister sites: <a href="https://bomwiki.com/">BOMwiki</a>, the bill-of-materials encyclopedia (equipment on business pages here links to its bill of materials there), and <a href="https://sphinxstack.com/skills/">sphinxstack</a>, skills for software development.</p>`,
+});
+
+page({
+  path: "/graph/",
+  title: "How the graph is built · SMBwiki",
+  desc: `How ${fmt(graph.nodes.length)} nodes and ${fmt(graph.edges.length)} edges become every page on SMBwiki: shared nodes, inheritance from abstract bases, the build pipeline, and its checks.`,
+  jsonld: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "How the SMBwiki operating-model graph is built",
+    description: `How ${fmt(graph.nodes.length)} nodes and ${fmt(graph.edges.length)} edges become the business, skill, role, document, metric, software, license, and market pages on SMBwiki.`,
+    url: `${SITE}/graph/`,
+    isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+    dateModified: releaseDate,
+  },
+  h1: "How the graph is built",
+  kicker: "From SMBwiki, the free encyclopedia of how businesses work",
+  indexable: true,
+  body: `
+<p>Every page on SMBwiki is a view of one graph. Its ${fmt(graph.nodes.length)} nodes are the business types, skills, roles, documents, metrics, software categories, licenses, and markets, joined by ${fmt(graph.edges.length)} edges across ${edgeTypeCount} relationship types. The prose is written into the definitions; everything around it, from the skill tables to the relationship map on each page, is derived from the graph. This page explains how the graph is made and what the build guarantees.</p>
+<h2>Shared nodes</h2>
+<p>When two business types run the same work or keep the same record, the definition names the same node, and each page links to the same place. That is what the counts on the <a href="/skill/">skill index</a> and its six sibling indexes mean: how many business types share the node.</p>
+${figShared}
+<h2>Inheritance</h2>
+<p>Businesses that run alike share an abstract base: a ${linkLower("pizzeria")} extends a restaurant base, and a ${linkLower("law-firm")} a professional-services base. The build resolves the inheritance before anything renders, so every concrete business page and API carries its full operating model, with the trade-specific work layered over the shared machinery.</p>
+${figExtends}
+<h2>Shared operating models</h2>
+<p>Each shared model has its own reference page. It explains the common skills, roles, records, measures, software, and compliance structure inherited by the concrete businesses that use it.</p>
+${table(["shared model", "used by", "examples"], baseModelRows)}
+<h2>The pipeline</h2>
+${pipelineFig}
+<h2>The relationship types</h2>
+<p>Each edge carries one of ${edgeTypeCount} meanings. Skill-to-role, document, metric, and software edges come from the bindings inside each business definition; the rest describe the businesses themselves. Product edges cross to a sister encyclopedia: equipment on a business page links to its bill of materials on <a href="https://bomwiki.com/">BOMwiki</a>.</p>
+${edgeTable}
+<h2>What the build guarantees</h2>
+<p>The build guarantees that every reference resolves and that the graph stays connected. It cannot check the content itself: whether a real masonry contractor runs the work the way ${linkLower("masonry-contractor")} describes is editorial judgment, anchored to the <a href="${REPO}/blob/main/SOURCES.md">source register</a> and open to correction in the <a href="${REPO}">repository</a>. Because nodes are shared, a correction lands on every page that uses them.</p>`,
+});
+
+page({
+  path: "/research/",
+  title: "Research · SMBwiki",
+  desc: "The SMBwiki corpus as a dataset: statistics, the shape of shared and specialist work, downloads, and how to cite it.",
+  jsonld: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "SMBwiki research and dataset",
+    description: "Statistics, downloads, provenance, and citation guidance for the SMBwiki operating-model dataset.",
+    url: `${SITE}/research/`,
+    isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+    dateModified: releaseDate,
+  },
+  h1: "Research",
+  kicker: "From SMBwiki, the free encyclopedia of how businesses work",
+  indexable: true,
+  body: `
+<p>The corpus behind SMBwiki is one structured dataset: every business type, skill, role, document, metric, software category, license, and market as nodes in a single graph, with the bindings between them. This page carries the dataset's statistics, the patterns visible in it, how to load it, and how to cite it. There are no published reports on the corpus yet; when there are, they will be listed here.</p>
+<h2>The dataset</h2>
+${table(["", "current release"], [
+  ["business types", `${concrete.length} concrete, plus ${baseCount} abstract bases`],
+  ["skills", `${kindCount("skill")}`],
+  ["roles", `${kindCount("role")}`],
+  ["documents", `${kindCount("document")}`],
+  ["metrics", `${kindCount("metric")}`],
+  ["software categories", `${kindCount("software-category")}`],
+  ["licenses", `${kindCount("license")}`],
+  ["markets", `${kindCount("market")}`],
+  ["graph", `${fmt(graph.nodes.length)} nodes, ${fmt(graph.edges.length)} edges, ${edgeTypeCount} relationship types`],
+  ["skill bindings", `${fmt(bindingCount)} across the ${concrete.length} concrete businesses (${(bindingCount / concrete.length).toFixed(2)} average)`],
+])}
+<p class="note">Counts describe the current release; the corpus changes as the catalog grows. Release dates are recorded in the <a href="/sitemap.xml">sitemap</a> and the <a href="${REPO}">repository history</a>.</p>
+<h2>The shape of the work</h2>
+<p>Of the ${skillReach.size} skills, ${soleUse.size} run in exactly one business type: trade work like ${linkLower("aggregate-base-placement")} or ${linkLower("medication-dispensing")}. ${sentenceLabel(countWord(reachBucket(60, Infinity)))} run in sixty or more, and they are the back office: ${spineLine} of the ${concrete.length} types.</p>
+${figReach}
+<p>The same split shows in documents and roles. A ${linkLower("payment-record")} appears in ${bizOf("payment-record", ["binding-document"]).length} of the ${concrete.length} business types and a ${linkLower("supplier-invoice")} in ${bizOf("supplier-invoice", ["binding-document"]).length}; an ${linkLower("owner-operator")} leads ${bizOf("owner-operator", ["org", "binding-role"]).length} of them. By department, the ${skillReach.size} skills split ${deptLine}; the assignments are editorial and open to correction.</p>
+<h2>Get the data</h2>
+<ul>
+  <li><a href="/api/graph.json">/api/graph.json</a>: the full graph, nodes and typed edges</li>
+  <li><code>/api/def/&lt;id&gt;.json</code>: one resolved definition per business type, inheritance already merged (<a href="/api/def/machine-shop.json">example</a>)</li>
+  <li><code>/definitions/</code>: the source YAML, exactly as in the repository (<a href="/definitions/businesses/machine-shop.yaml">example</a>)</li>
+  <li><code>/skill/&lt;id&gt;.md</code>: each skill as a loadable Markdown file (<a href="/skill/production-control.md">example</a>)</li>
+  <li><a href="/llms.txt">/llms.txt</a>: the machine index of all of the above</li>
+  <li><a href="${REPO}">the repository</a>: definitions, generator, and checks, MIT-licensed</li>
+</ul>
+<h2>Cite</h2>
+<p>protosphinx. <i>SMBwiki: how businesses work.</i> ERP·AI, ${releaseYear}. ${SITE}/</p>
+<pre><code>@misc{smbwiki,
+  title  = {SMBwiki: how businesses work},
+  author = {protosphinx},
+  year   = {${releaseYear}},
+  url    = {${SITE}/},
+  note   = {Operating models for ${concrete.length} business types; MIT-licensed corpus}
+}</code></pre>`,
+});
+cpSync(join(BUILD, "graph.json"), join(DIST, "api", "graph.json"));
+
 writeFileSync(
   join(DIST, "sitemap.xml"),
   [
@@ -1252,7 +1845,7 @@ Sitemap: ${SITE}/sitemap.xml
 );
 writeFileSync(
   join(DIST, "llms.txt"),
-  `# smbwiki
+  `# SMBwiki
 
 Open, machine-readable definitions of how small and medium businesses
 operate. Each business type decomposes into skills, roles, documents,
@@ -1260,8 +1853,10 @@ metrics, licenses, and software categories.
 
 - Business pages: ${SITE}/business/<id>/
 - Resolved definitions (JSON): ${SITE}/api/def/<id>.json
+- Full graph (JSON): ${SITE}/api/graph.json
 - Source definitions (YAML): ${SITE}/definitions/businesses/<id>.yaml
 - Distilled skills (markdown): ${SITE}/skill/<skill-id>.md
+- About and method: ${SITE}/about/ and ${SITE}/graph/
 - All definitions: https://github.com/erphq/smbwiki (MIT)
 
 Business types: ${concrete.map((r) => r.id).join(", ")}

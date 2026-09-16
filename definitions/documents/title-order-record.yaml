@@ -1,0 +1,6 @@
+id: title-order-record
+name: Title order record
+kind: document
+summary: >
+  Exact title, author, format, edition, identifier, quantity, customer
+  commitment, supplier status, arrival, and handoff disposition.

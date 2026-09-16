@@ -4,6 +4,30 @@ codes:
   naics: "541110"
 catalog_group: professional-financial
 extends: professional-services-base
+revenue_model:
+  - id: matter-and-retainer-fees
+    note: matter fees, authorized time, retainers, or recurring counsel arrangements tied to legal scope and jurisdiction
+skills:
+  - ref: client-engagement
+    roles: [principal, attorney, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, practice-management]
+  - ref: professional-service-delivery
+    roles: [attorney, principal, client-coordinator]
+    documents: [engagement-letter, legal-matter-file, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [practice-management]
+  - ref: legal-matter-and-deadline-control
+    roles: [attorney, principal]
+    documents: [engagement-letter, legal-matter-file, deliverable]
+    metrics: [on-time-completion, work-in-progress-age]
+    software: [practice-management]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: attorney
 summary: >
   A law firm accepts a client and matter after identity, conflict,
   authority, objective, facts, deadline, jurisdiction, scope, fee, and

@@ -1,0 +1,6 @@
+id: engineer
+name: Engineer
+kind: role
+summary: >
+  Develops and checks technical analyses, calculations, models, drawings,
+  and specifications against the approved design basis.

@@ -4,6 +4,9 @@ codes:
   naics: '238290'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: elevator-maintenance-and-callouts
+    note: recurring maintenance agreements, service callouts, testing, repairs, modernization, parts, and after-hours response
 summary: >-
   An elevator service contractor maintains, troubleshoots, repairs,
   modernizes, tests, and documents vertical-transport equipment. Each unit

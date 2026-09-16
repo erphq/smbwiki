@@ -4,6 +4,30 @@ codes:
   naics: "541330"
 catalog_group: professional-financial
 extends: professional-services-base
+revenue_model:
+  - id: engineered-deliverable-fees
+    note: fees tied to defined analyses, calculations, models, drawings, specifications, tests, or technical reviews
+skills:
+  - ref: client-engagement
+    roles: [principal, engineer, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, project-operations]
+  - ref: professional-service-delivery
+    roles: [engineer, principal, client-coordinator]
+    documents: [engagement-letter, engineering-check-package, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [design-documentation, project-operations]
+  - ref: engineering-design-verification
+    roles: [engineer, principal]
+    documents: [engineering-check-package, deliverable]
+    metrics: [rework-rate, report-turnaround-time]
+    software: [design-documentation, project-operations]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: engineer
 summary: >
   An engineering firm converts a defined technical question into
   calculations, models, drawings, specifications, tests, or advice

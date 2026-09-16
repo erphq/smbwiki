@@ -4,6 +4,30 @@ codes:
   naics: "541310"
 catalog_group: professional-financial
 extends: professional-services-base
+revenue_model:
+  - id: phased-design-fees
+    note: fees earned by approved design phase, submission, additional service, or construction-phase scope
+skills:
+  - ref: client-engagement
+    roles: [principal, architect, client-coordinator]
+    documents: [client-brief, engagement-letter, design-program]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, project-operations]
+  - ref: professional-service-delivery
+    roles: [architect, principal, client-coordinator]
+    documents: [engagement-letter, coordinated-design-set, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [design-documentation, project-operations]
+  - ref: architectural-design-coordination
+    roles: [architect, principal]
+    documents: [design-program, coordinated-design-set]
+    metrics: [schedule-variance, rework-rate]
+    software: [design-documentation, project-operations]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: architect
 summary: >
   An architectural firm turns owner needs, site, code, budget, schedule,
   existing conditions, consultants, and approvals into coordinated

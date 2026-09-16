@@ -4,6 +4,9 @@ codes:
   naics: '238140'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: masonry-unit-mortar-and-access
+    note: installed wall or unit quantity adjusted for masonry material, reinforcing, flashing, grout, scaffold, cleaning, and weather protection
 summary: >-
   A masonry contractor builds brick, block, or stone assemblies from layout,
   mortar, reinforcement, anchors, flashing, units, access, and weather

@@ -4,6 +4,9 @@ codes:
   naics: '238390'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: waterproofing-system-testing-and-warranty
+    note: installed waterproofing area plus surface repair, detailing, protection, testing, maintenance, leak investigation, and warranty work
 summary: >-
   A waterproofing contractor diagnoses moisture paths and installs membranes,
   coatings, drainage layers, sealants, flashings, and protection at roofs,

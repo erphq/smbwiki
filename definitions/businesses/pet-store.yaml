@@ -4,6 +4,23 @@ codes:
   naics: "459910"
 catalog_group: retail-vehicles
 extends: retail-store-base
+revenue_model:
+  - id: recurring-pet-supply-and-care-sales
+    note: recurring food, litter, habitat, care-product, equipment, and permitted live-animal sales with controlled safety records
+skills:
+  - ref: pet-product-safety-control
+    roles: [pet-care-specialist, retail-manager]
+    documents: [inventory-receipt, lot-expiry-record, sales-receipt]
+    metrics: [inventory-turnover, stockout-rate]
+    software: [retail-management, inventory-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+          - role: pet-care-specialist
 summary: >
   A pet store carries food, litter, habitat supplies, equipment, and
   care products across species, life stage, size, compatibility, shelf

@@ -1,0 +1,39 @@
+id: print-preflight-and-proofing
+name: Print preflight and proofing
+kind: skill
+department: quality
+summary: >-
+  Converts customer files and production specifications into an imposed,
+  technically valid, approved proof that controls the released print run.
+inputs: [customer-order, deliverable]
+outputs: [print-production-proof, production-order]
+steps:
+  - name: Confirm the production specification
+    note: Fix size, quantity, stock, ink, color, pages, finishing, personalization, packaging, delivery, and revision.
+  - name: Preflight and prepare
+    note: Check fonts, links, resolution, bleed, trim, color spaces, separations, pagination, imposition, and variable data.
+  - name: Approve and release
+    note: Bind customer approval to one proof, material specification, correction record, and production-order revision.
+tension: >-
+  Press capacity and due dates create pressure to release files before
+  technical defects, content corrections, finishing assumptions, and approval are closed.
+failure_modes:
+  - name: Press runs a proof revision the customer did not approve
+    cost: The full quantity can become scrap and finishing or delivery capacity can be lost.
+    signal: Production order, imposed file, and approval record carry different revisions or specifications.
+maturity:
+  - level: run badly
+    looks_like: Operators repair files at press and infer approval from email or filename.
+  - level: run well
+    looks_like: Specification, preflight, corrections, imposed proof, approval, and production order share one revision.
+  - level: run excellently
+    looks_like: Defect and waste patterns improve file instructions, automated checks, proof choices, and scheduling.
+competencies:
+  - name: Print production preflight
+    note: The operator connects visual intent to file construction, imposition, color, substrate, finishing, and run controls.
+automation:
+  now: Preflight systems can detect file defects, normalize output, generate proofs, compare revisions, and gate production release.
+  human: Interpretation of visual intent, acceptable variation, correction responsibility, and final release remain human.
+questions:
+  - Which file, specification, approval, or finishing dependency can still invalidate the run?
+  - Does the production order point to the exact imposed proof the customer approved?

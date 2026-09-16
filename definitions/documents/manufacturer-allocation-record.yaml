@@ -1,0 +1,6 @@
+id: manufacturer-allocation-record
+name: Manufacturer allocation record
+kind: document
+summary: >
+  Vehicle order and configuration, allocation, build and transport
+  status, incentives, inspection, preparation, accessories, and release.

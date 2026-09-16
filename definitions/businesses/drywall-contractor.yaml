@@ -4,6 +4,9 @@ codes:
   naics: '238310'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: drywall-board-and-finish-level
+    note: measured board and finishing scope adjusted for assembly, height, access, finish level, texture, protection, and patch work
 summary: >-
   A drywall contractor lays out, hangs, tapes, finishes, textures, and repairs
   gypsum board after framing and rough building systems are ready. Board type,

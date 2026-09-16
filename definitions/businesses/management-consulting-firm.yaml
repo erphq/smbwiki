@@ -4,6 +4,30 @@ codes:
   naics: "541611"
 catalog_group: professional-financial
 extends: professional-services-base
+revenue_model:
+  - id: diagnostic-and-transformation-fees
+    note: fees for diagnostic work, decision support, implementation programs, and measured operating outcomes
+skills:
+  - ref: client-engagement
+    roles: [principal, management-consultant, client-coordinator]
+    documents: [client-brief, engagement-letter]
+    metrics: [quote-win-rate]
+    software: [customer-relationship-management, professional-services-automation]
+  - ref: professional-service-delivery
+    roles: [management-consultant, principal, client-coordinator]
+    documents: [engagement-letter, consulting-decision-record, deliverable, time-record]
+    metrics: [utilization-rate, engagement-gross-margin, work-in-progress-age]
+    software: [professional-services-automation, project-operations]
+  - ref: consulting-diagnosis-and-decision
+    roles: [management-consultant, principal]
+    documents: [client-brief, consulting-decision-record, deliverable]
+    metrics: [on-time-completion, engagement-gross-margin]
+    software: [professional-services-automation, project-operations]
+org:
+  - role: principal
+    reports:
+      - role: client-coordinator
+      - role: management-consultant
 summary: >
   A management consulting firm accepts a business question with a
   decision owner, desired outcome, evidence base, organizational scope,

@@ -2,6 +2,8 @@ id: caterer
 name: Caterer
 codes:
   naics: "722320"
+  nic: "56210"
+  ssic: "56200"
 catalog_group: food-lodging
 extends: restaurant-base
 summary: >
@@ -51,6 +53,9 @@ org:
         reports:
           - role: line-cook
           - role: dishwasher
+licenses:
+  sg:
+    - remove: [sfa-food-shop-licence]
 supply_chain:
   sells_to: [individual-client, commercial-client]
 seo:

@@ -1,0 +1,39 @@
+id: consulting-diagnosis-and-decision
+name: Consulting diagnosis and decision
+kind: skill
+department: operations
+summary: >-
+  Converts a defined business question and bounded evidence into a supported
+  diagnosis, evaluated choices, a management decision, and owned follow-up.
+inputs: [client-brief]
+outputs: [consulting-decision-record, deliverable]
+steps:
+  - name: Frame the decision
+    note: Confirm decision owner, desired outcome, operating scope, constraints, evidence limits, timing, and success measure.
+  - name: Test the diagnosis and choices
+    note: Reconcile interviews, operating data, financial evidence, observations, disagreements, causes, and alternatives.
+  - name: Record decision and action
+    note: Present evidence and uncertainty, capture management's choice, assign actions, and schedule outcome verification.
+tension: >-
+  Stakeholders often want a decisive recommendation before the evidence,
+  causal boundary, implementation capacity, and decision rights are settled.
+failure_modes:
+  - name: Recommendation outruns the evidence
+    cost: Management commits resources to a plausible story that does not address the operating cause.
+    signal: The recommendation cannot link its premise to a source, tested alternative, contrary evidence, or stated uncertainty.
+maturity:
+  - level: run badly
+    looks_like: Interviews become conclusions and presentation approval is treated as operating change.
+  - level: run well
+    looks_like: The record links question, evidence, diagnosis, alternatives, decision, action owner, and outcome measure.
+  - level: run excellently
+    looks_like: Outcome checks recalibrate methods, assumptions, evidence requests, and implementation support.
+competencies:
+  - name: Evidence-based operating diagnosis
+    note: The operator separates observation, inference, cause, recommendation, client decision, and measured outcome.
+automation:
+  now: Analysis and workflow tools can trace sources, compare scenarios, record decisions, assign actions, and monitor measures.
+  human: Causal judgment, stakeholder interpretation, tradeoff decisions, and management accountability remain human.
+questions:
+  - Which contrary evidence could overturn the current diagnosis?
+  - Who made the decision, what action was accepted, and how will its outcome be checked?

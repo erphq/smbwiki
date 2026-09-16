@@ -1,0 +1,6 @@
+id: new-vehicle-inventory-manager
+name: New vehicle inventory manager
+kind: role
+summary: >
+  Controls manufacturer allocation, order status, transport, preparation,
+  incentive eligibility, and retail readiness for each new vehicle.

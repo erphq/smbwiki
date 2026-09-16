@@ -4,6 +4,9 @@ codes:
   naics: '238220'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: sprinkler-inspection-service-and-monitoring
+    note: installation work supplemented by recurring inspection, testing, maintenance, emergency service, impairment response, and monitoring coordination
 summary: >-
   A fire sprinkler contractor surveys hazards and water supply, designs or
   coordinates a listed system, releases fabrication, installs piping and

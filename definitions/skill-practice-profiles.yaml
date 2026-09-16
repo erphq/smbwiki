@@ -1017,3 +1017,124 @@ wall-framing:
     name: "A framed wall is stood before layout and opening conflicts are resolved"
     cost: "Moving or cutting the wall can disrupt structure, slab anchors, services, and downstream dimensions."
     signal: "Wall assembly begins with unresolved layout, header, opening, or anchor discrepancies."
+
+accounting-engagement-control:
+  basis: "signed engagement scope, reporting period, applicable framework, client record request, materiality, independence, delivery date, and assigned preparation and review"
+  acceptance: "complete lead schedules, reconciled balances, supported adjustments, resolved exceptions and review notes, required representations, correct report, and authorized release"
+  evidence: "indexed client records, confirmations, reconciliations, test results, adjustment history, review notes, representations, and signed release"
+  risk:
+    name: "A material conclusion is released without sufficient evidence"
+    cost: "The financial deliverable can be wrong, unsupported, or subject to correction, withdrawal, or regulatory consequence."
+    signal: "A material balance or disclosure lacks a reconciled workpaper, evidence conclusion, cleared review, or identified preparer."
+architectural-design-coordination:
+  basis: "approved program, verified site and existing conditions, code path, budget, schedule, owner decisions, consultant scopes, current models, and phase issue purpose"
+  acceptance: "coordinated plans, sections, details, schedules, specifications, consultant interfaces, code response, revision identity, open-item disclosure, and issue authorization"
+  evidence: "design-basis record, coordination comments, model and drawing checks, owner decisions, code correspondence, revision register, and issued set"
+  risk:
+    name: "A cross-discipline conflict is carried into the issue set"
+    cost: "Bidders or builders receive incompatible instructions that cause delay, redesign, rework, or disputed change."
+    signal: "A dimension, system route, opening, finish, detail, or responsibility differs between current discipline documents."
+engineering-design-verification:
+  basis: "current design basis, criteria, loads and inputs, assumptions, discipline interfaces, calculation and model revisions, check scope, checker independence, and release purpose"
+  acceptance: "supported methods and results, reconciled calculations and models, consistent drawings and specifications, closed comments, disclosed deviations, and signed release"
+  evidence: "design criteria, source inputs, calculations, model outputs, independent checks, comment resolutions, revision comparison, and authorization"
+  risk:
+    name: "The released design differs from the checked technical basis"
+    cost: "Construction or operation can rely on a value, arrangement, or assumption that never received independent verification."
+    signal: "Drawing, specification, calculation, model, or check package carries a different input, result, or revision."
+creative-proof-and-release:
+  basis: "approved brief, audience and message, final content, brand rules, asset rights, accessibility needs, formats, production specifications, approver list, and version history"
+  acceptance: "correct content and hierarchy, licensed assets, accessible treatment, correct dimensions and resolution, controlled fonts and color, production-ready exports, and version-specific approval"
+  evidence: "brief, content source, rights record, annotated reviews, accessibility and file checks, marked proof, approval, export manifest, and source package"
+  risk:
+    name: "Approval is recorded against an ambiguous creative version"
+    cost: "Wrong content or design can reach production and create waste, delay, legal exposure, or reputational harm."
+    signal: "Approval lacks the exact marked proof, version identifier, format, or list of incorporated corrections."
+legal-matter-and-deadline-control:
+  basis: "verified client identity and authority, cleared conflicts, defined representation, jurisdiction, material facts, privilege boundary, procedural rules, source deadlines, responsible counsel, and custody requirements"
+  acceptance: "authorized action, verified facts and law, protected privilege, controlled document version, met filing or service requirement, recorded client decision, and owned next duty"
+  evidence: "conflict result, engagement terms, evidence index, advice and decision record, deadline source, calendar history, filed version, service proof, and counsel approval"
+  risk:
+    name: "A controlling deadline has no verified and owned response"
+    cost: "The client can lose rights, face sanctions, or incur avoidable exposure that later work cannot reverse."
+    signal: "A deadline lacks its authoritative source, calculation, predecessor action, responsible attorney, reminder path, or completion proof."
+consulting-diagnosis-and-decision:
+  basis: "defined business question, decision owner, desired outcome, operating boundary, stakeholder map, source inventory, evidence limitations, constraints, timing, and success measure"
+  acceptance: "traceable observations, reconciled quantitative and qualitative evidence, tested causal explanation, evaluated alternatives, disclosed uncertainty, management decision, owned actions, and outcome check"
+  evidence: "source register, interview and observation notes, analysis files, contrary findings, option comparison, recommendation version, decision record, action plan, and measured result"
+  risk:
+    name: "A compelling recommendation is accepted without a supported cause"
+    cost: "Management can commit resources to an intervention that leaves the operating problem unchanged or creates new harm."
+    signal: "A recommendation cannot link its premise to verified evidence, contrary findings, tested alternatives, or stated uncertainty."
+vehicle-fitment-parts-sale:
+  basis: "vehicle identity, model and engine configuration, production split, existing component, repair need, application catalog, supersessions, dimensions, core terms, warranty, and stock condition"
+  acceptance: "supported application match, correct part and side, compatible connector and dimensions, understood core and warranty terms, customer confirmation, and controlled return conditions"
+  evidence: "vehicle identifier, application lookup, component observations, selected part and supersession, exception approval, customer confirmation, core custody, and receipt"
+  risk:
+    name: "A plausible part is released for the wrong vehicle application"
+    cost: "The repair stops, the part may be damaged, and the store incurs avoidable return, labor, or warranty cost."
+    signal: "The sale lacks vehicle identity or catalog support for a controlling configuration or production difference."
+title-discovery-and-special-order:
+  basis: "reader request, title clues, author or subject, audience, language, format, edition need, timing, acceptable alternatives, catalog metadata, supplier status, and return terms"
+  acceptance: "exact title and identifier, correct edition and format, confirmed price and timing, customer commitment, tracked supplier status, notification, and final disposition"
+  evidence: "search and recommendation notes, title metadata, identifier, order commitment, supplier acknowledgement, status events, customer notices, pickup, cancellation, or return"
+  risk:
+    name: "The requested work is ordered in the wrong edition or format"
+    cost: "The customer cannot use the item as intended and the bookstore may hold a nonreturnable title."
+    signal: "The order record lacks an exact identifier, edition, format, intended-use confirmation, or supplier return term."
+boutique-fit-and-alteration:
+  basis: "identified garment variant and condition, customer fit preference, measurements, fitting-room custody, alteration request, technical feasibility, price, due date, and return policy"
+  acceptance: "correct garment and customer, controlled custody, agreed measurements and changes, acceptable completed fit and condition, customer approval, inventory update, and closed handoff"
+  evidence: "variant identifier, custody events, fitting observations, measurements, alteration scope, price and due date, completion check, acceptance, and inventory disposition"
+  risk:
+    name: "Garment custody or alteration scope becomes ambiguous"
+    cost: "The wrong item can be changed, lost, delayed, damaged, or disputed at pickup."
+    signal: "A held garment lacks its exact variant, customer, condition, requested change, measurement, responsible party, or due date."
+serialized-electronics-sale:
+  basis: "customer use, existing equipment, required interfaces, dimensions, power and network conditions, data and privacy needs, exact model specifications, accessories, unit serial, condition, warranty, and return policy"
+  acceptance: "supported compatibility, complete accessory and setup path, correct serialized unit and condition, safe data handling, explained warranty and return terms, and customer acceptance"
+  evidence: "requirement notes, compatibility comparison, model and serial record, condition check, accessory list, setup and privacy actions, warranty route, acceptance, and disposition"
+  risk:
+    name: "A serialized unit is sold without a workable compatibility path"
+    cost: "Installation fails, returns rise, customer data may be exposed, or warranty responsibility becomes disputed."
+    signal: "The unit record lacks a controlling requirement, interface check, serial, condition, accessory dependency, or setup decision."
+pet-product-safety-control:
+  basis: "product identity, species and life-stage use, labeled guidance, lot and expiry, packaging, storage and temperature needs, supplier source, recall status, display location, and advice boundary"
+  acceptance: "suitable labeled use, intact in-date product, correct storage and rotation, traceable lot, closed recall check, safe display, appropriate customer guidance, and controlled quarantine or disposition"
+  evidence: "receiving record, lot and expiry capture, storage observations, rotation checks, recall notices, affected locations, customer trace where required, quarantine, and disposition"
+  risk:
+    name: "Expired, damaged, or recalled pet product remains saleable"
+    cost: "An animal can be harmed and the store may be unable to identify the affected stock or customers."
+    signal: "A stocked unit lacks lot, expiry, storage, location, recall status, or a completed quarantine disposition."
+print-preflight-and-proofing:
+  basis: "current customer files, final content, size and quantity, stock, ink and color requirements, pages, bleed and trim, finishing, personalization, packaging, delivery, revision identity, and approver"
+  acceptance: "complete fonts and links, suitable resolution, correct color and separations, valid pagination and imposition, represented stock and finishing, closed corrections, and exact proof approval"
+  evidence: "production specification, preflight report, corrected-file history, imposed proof, color or physical proof where required, approval, revision manifest, and production release"
+  risk:
+    name: "Production runs a proof revision the customer did not approve"
+    cost: "The full quantity can become scrap and press, finishing, mailing, or delivery capacity can be lost."
+    signal: "Production order, imposed file, customer approval, or material and finishing specification carry different revisions."
+machining-process-planning:
+  basis: "current part drawing and model, material and stock identity, quantity, tolerances, finishes, certificates, machine capability, fixture and datum strategy, tools, program, outside operations, inspection plan, and due date"
+  acceptance: "controlled revision and material, feasible operation sequence, stable workholding and datums, verified tools and program, defined in-process checks, accepted first piece, and authorized quantity run"
+  evidence: "part and material release, routing, setup sheet, fixture and tool list, program revision, offset record, first-piece measurements, deviations, and production authorization"
+  risk:
+    name: "Quantity production starts from an unproven machining setup"
+    cost: "Material, machine capacity, tools, and delivery time can be lost across the entire lot."
+    signal: "The run begins without accepted first-piece results tied to the current program, offsets, fixture, and setup sheet."
+new-vehicle-allocation-and-readiness:
+  basis: "customer or stock order, exact model and configuration, manufacturer allocation, build and transport status, unit identity, price basis, incentive rules and dates, preparation work, accessories, lender conditions, and delivery promise"
+  acceptance: "matched order and VIN, verified program eligibility, completed transport and damage checks, preparation and campaign closure, installed accessories, correct disclosures and funding conditions, warranty activation, and delivery approval"
+  evidence: "order and allocation events, manufacturer status, VIN assignment, incentive program record, transport and inspection results, preparation checklist, accessory completion, deal conditions, and release"
+  risk:
+    name: "Promised deal terms depend on an ineligible unit or program"
+    cost: "Delivery can fail, gross can change, or the dealership must absorb a customer commitment it cannot fund."
+    signal: "Incentive or delivery promise lacks matching unit identity, effective dates, customer eligibility, status, or program evidence."
+used-vehicle-acquisition-and-reconditioning:
+  basis: "seller identity and authority, title and lien status, VIN and mileage, history, equipment and keys, physical and diagnostic inspection, market alternatives, repair estimate, reconditioning capacity, buy authority, and exit options"
+  acceptance: "transferable ownership, reconciled identity and history, supported condition and market appraisal, approved acquisition price, controlled repair scope, verified completed work and actual cost, accurate disclosure, and retail or wholesale release"
+  evidence: "seller and title documents, history report, inspection and diagnostic results, appraisal comparisons, buy approval, repair orders and checks, actual cost, disclosure, photographs, and release decision"
+  risk:
+    name: "Hidden title or condition exposure defeats the acquisition appraisal"
+    cost: "Capital can become trapped in an unsaleable or unprofitable unit and represented condition may be wrong."
+    signal: "The buy closes with unresolved ownership, lien, history, mileage, inspection, repair, or market-value evidence."

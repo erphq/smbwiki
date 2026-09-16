@@ -1,0 +1,39 @@
+id: architectural-design-coordination
+name: Architectural design coordination
+kind: skill
+department: operations
+summary: >-
+  Converts the approved program, site and code basis, owner decisions, and
+  consultant inputs into one coordinated architectural issue set.
+inputs: [design-program, site-plan]
+outputs: [coordinated-design-set]
+steps:
+  - name: Fix the design basis
+    note: Confirm program, existing conditions, code path, budget, schedule, responsibilities, and phase decisions.
+  - name: Coordinate the disciplines
+    note: Reconcile plans, sections, details, schedules, specifications, consultant interfaces, and authority comments.
+  - name: Authorize the issue
+    note: Close critical conflicts, record open items, identify revision and purpose, and approve distribution.
+tension: >-
+  Phase and submission dates can force issue sets forward while owner,
+  consultant, cost, code, or existing-condition decisions remain unstable.
+failure_modes:
+  - name: Conflicting design information is issued
+    cost: Bidders or builders act on incompatible instructions and generate delay, rework, or change.
+    signal: The issue review leaves contradictory dimensions, systems, details, or revision references unresolved.
+maturity:
+  - level: run badly
+    looks_like: Disciplines issue separate files and conflicts are discovered by bidders or field crews.
+  - level: run well
+    looks_like: Named interfaces, issue checks, revision identity, and unresolved decisions are controlled before release.
+  - level: run excellently
+    looks_like: Coordination findings improve the next phase plan, consultant brief, model checks, and owner decision calendar.
+competencies:
+  - name: Multidiscipline design coordination
+    note: The operator reconciles spatial, technical, code, cost, and responsibility interfaces across the current set.
+automation:
+  now: Design platforms can compare revisions, detect selected conflicts, route comments, and assemble controlled issue sets.
+  human: Design judgment, responsibility allocation, code interpretation, and authority to issue remain human.
+questions:
+  - Which unresolved interface can make the current issue set unsafe or unusable?
+  - What record identifies the exact drawings, specifications, checks, and authorization issued?

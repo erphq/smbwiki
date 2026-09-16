@@ -1,0 +1,6 @@
+id: serialized-product-record
+name: Serialized product record
+kind: document
+summary: >
+  Exact model and serial, condition, compatibility decision, accessories,
+  warranty, setup, customer acceptance, return, and disposition.

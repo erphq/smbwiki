@@ -4,6 +4,9 @@ codes:
   naics: '238990'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: fence-line-gates-and-accessories
+    note: installed fence length plus posts, gates, operators, hardware, access controls, removal, repair, and maintenance
 summary: >-
   A fence contractor lays out and installs posts, rails, panels, fabric,
   gates, operators, and hardware across changing grade and uncertain property

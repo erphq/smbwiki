@@ -4,6 +4,23 @@ codes:
   naics: "441330"
 catalog_group: retail-vehicles
 extends: retail-store-base
+revenue_model:
+  - id: parts-core-and-warranty-sales
+    note: parts margin with controlled core deposits, warranty replacements, special orders, tools, fluids, and accessories
+skills:
+  - ref: vehicle-fitment-parts-sale
+    roles: [parts-specialist, retail-manager]
+    documents: [stock-record, vehicle-fitment-record, sales-receipt]
+    metrics: [average-ticket, gross-margin-percentage]
+    software: [parts-catalog, retail-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+          - role: parts-specialist
 summary: >
   An auto parts store translates vehicle identity, configuration,
   symptom or repair scope, and existing component into a compatible

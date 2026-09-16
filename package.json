@@ -3,10 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "npm run build:graph && node scripts/build-site.mjs",
     "build:graph": "node scripts/build-graph.mjs",
     "check:catalog": "node scripts/check-catalog.mjs",
     "check:content": "node scripts/check-content.mjs",
-    "check:site": "node scripts/check-site.mjs"
+    "check:site": "node scripts/check-site.mjs",
+    "test": "npm run build:graph && npm run check:catalog && npm run check:content && node scripts/build-site.mjs && npm run check:site"
   },
   "dependencies": {
     "js-yaml": "^4.1.0"

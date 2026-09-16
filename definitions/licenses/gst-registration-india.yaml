@@ -1,0 +1,9 @@
+id: gst-registration-india
+name: GST registration (India)
+kind: license
+geo: [in]
+summary: >
+  Registration under the Goods and Services Tax once aggregate annual
+  turnover crosses the statutory threshold; the threshold differs for
+  goods and services and is lower in special category states.
+jurisdiction: India, central

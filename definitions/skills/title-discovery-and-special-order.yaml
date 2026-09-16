@@ -1,0 +1,39 @@
+id: title-discovery-and-special-order
+name: Title discovery and special order
+kind: skill
+department: sales
+summary: >-
+  Converts a reader request into an exact title, format, edition, reservation,
+  preorder, or supplier order with a controlled customer handoff.
+inputs: [job-request, stock-record]
+outputs: [title-order-record, sales-receipt]
+steps:
+  - name: Clarify the reading request
+    note: Establish title clues, author, subject, audience, language, format, edition, timing, and acceptable alternatives.
+  - name: Resolve title and supply
+    note: Verify identifier, edition, price, publication status, stock, supplier terms, arrival estimate, and returnability.
+  - name: Commit and hand off
+    note: Record the exact item, customer commitment, order status, notification, pickup, cancellation, or supplier return.
+tension: >-
+  Discovery depends on interpretation while ordering and receiving depend on
+  exact identifiers, editions, formats, supplier terms, and release dates.
+failure_modes:
+  - name: Correct title is ordered in the wrong edition
+    cost: The customer misses the intended use and the store carries a potentially nonreturnable item.
+    signal: The order record lacks an identifier, edition, format, or customer confirmation.
+maturity:
+  - level: run badly
+    looks_like: Requests are written as free text and staff rediscover title and customer details at each contact.
+  - level: run well
+    looks_like: Discovery, exact edition, supplier status, commitment, notification, and disposition share one order record.
+  - level: run excellently
+    looks_like: Request, conversion, cancellation, and supplier-return patterns improve selection and ordering rules.
+competencies:
+  - name: Bibliographic and reader discovery
+    note: The bookseller connects an expressed need to exact title metadata and a realistic supply path.
+automation:
+  now: Bookselling systems can search metadata, check suppliers, take commitments, track status, notify customers, and route returns.
+  human: Interpretation of reading intent, substitute quality, and sensitive recommendations remain human.
+questions:
+  - Which title attribute must be exact for the reader's intended use?
+  - Does the order record prove the edition, commitment, status, and final handoff?

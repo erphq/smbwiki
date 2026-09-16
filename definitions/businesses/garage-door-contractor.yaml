@@ -4,6 +4,9 @@ codes:
   naics: '238290'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: garage-door-product-service-and-parts
+    note: door and operator margin plus installation, safety testing, remotes and access devices, repair, parts, and maintenance
 summary: >-
   A garage door contractor surveys openings, installs sectional or overhead
   doors, fits tracks and hardware, balances springs and cables, adds operators

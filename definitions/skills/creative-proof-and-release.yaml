@@ -1,0 +1,39 @@
+id: creative-proof-and-release
+name: Creative proof and release
+kind: skill
+department: quality
+summary: >-
+  Controls the path from approved creative brief through content, visual
+  version, rights, format, production proof, and release-ready source files.
+inputs: [client-brief]
+outputs: [approved-creative-proof, deliverable]
+steps:
+  - name: Freeze proof inputs
+    note: Confirm audience, message, content, brand rules, rights, format, channel, production method, and approvers.
+  - name: Check the represented version
+    note: Review content, hierarchy, imagery, accessibility, dimensions, resolution, color, fonts, and production notes.
+  - name: Approve and package
+    note: Record approval against one version, export required formats, package source assets, and prevent superseded use.
+tension: >-
+  Stakeholder feedback and content changes continue while production needs one
+  unambiguous approved version with complete technical specifications.
+failure_modes:
+  - name: Approval applies to the wrong creative version
+    cost: Incorrect content or visual work reaches production and creates waste, delay, or reputational harm.
+    signal: Approval language lacks a version identifier, marked proof, format, or list of remaining changes.
+maturity:
+  - level: run badly
+    looks_like: Feedback arrives across channels and final files are identified by filenames and memory.
+  - level: run well
+    looks_like: One proof record binds content, design, technical checks, rights, approval, and released files.
+  - level: run excellently
+    looks_like: Proof defects and production feedback improve briefs, checklists, templates, and approval sequencing.
+competencies:
+  - name: Creative production control
+    note: The operator preserves design intent while checking content, rights, accessibility, and production fitness.
+automation:
+  now: Review tools can annotate versions, compare revisions, collect approvals, validate file properties, and package exports.
+  human: Creative judgment, rights decisions, accessibility interpretation, and final release authority remain human.
+questions:
+  - Which content, rights, or production condition is still unresolved?
+  - What exact proof version did the authorized approver accept?

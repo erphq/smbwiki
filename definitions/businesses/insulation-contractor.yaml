@@ -4,6 +4,9 @@ codes:
   naics: '238310'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: insulation-material-air-sealing-and-rebates
+    note: installed insulation quantity plus air sealing, assessment, removal, ventilation accessories, testing, and rebate documentation
 summary: >-
   An insulation contractor establishes the thermal and air boundary using
   sealing, batts, blown fiber, foam, or other specified systems. The work fits

@@ -1,0 +1,6 @@
+id: parts-specialist
+name: Parts specialist
+kind: role
+summary: >
+  Resolves vehicle application and component compatibility before
+  releasing a stocked, ordered, warranty, or core-exchange part.

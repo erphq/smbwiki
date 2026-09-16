@@ -4,6 +4,9 @@ codes:
   naics: '238110'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: concrete-volume-forming-and-finishing
+    note: placed concrete volume supplemented by formwork, reinforcement, pumping, finishing, curing, testing, mobilization, and protection
 summary: >-
   A poured concrete contractor turns survey control, excavation, forms,
   reinforcement, embeds, mix supply, crews, pumps, weather, and testing into

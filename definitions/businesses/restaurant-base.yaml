@@ -61,6 +61,32 @@ licenses:
       requirement: conditional
       condition: Required only when the business sells or serves alcoholic beverages under state or local rules.
       as_of: "2026-07-29"
+  in:
+    - ref: fssai-registration
+      requirement: required
+      condition: Every food business operator holds FSSAI registration or a licence; the tier follows annual turnover under the 2011 licensing regulations.
+      as_of: "2026-07-31"
+    - ref: gst-registration-india
+      requirement: conditional
+      condition: Required once aggregate annual turnover crosses the GST threshold for services; the threshold is lower in special category states.
+      as_of: "2026-07-31"
+    - ref: shops-and-establishments-registration
+      requirement: commonly-applicable
+      condition: Commonly required for a shop or commercial establishment under the operating state's Shops and Establishments Act.
+      as_of: "2026-07-31"
+  sg:
+    - ref: acra-business-registration
+      requirement: required
+      condition: The entity or business name must be registered with ACRA before commencing business.
+      as_of: "2026-07-31"
+    - ref: sfa-food-shop-licence
+      requirement: required
+      condition: Required to operate a retail food outlet; the licence attaches to the premises and the operator.
+      as_of: "2026-07-31"
+    - ref: gst-registration-singapore
+      requirement: conditional
+      condition: Compulsory once taxable turnover exceeds one million Singapore dollars in a year.
+      as_of: "2026-07-31"
 supply_chain:
   buys_from: [food-distributor, restaurant-equipment-dealer]
   sells_to: [retail-consumer]

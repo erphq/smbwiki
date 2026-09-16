@@ -4,6 +4,23 @@ codes:
   naics: "449210"
 catalog_group: retail-vehicles
 extends: retail-store-base
+revenue_model:
+  - id: device-margin-setup-and-protection
+    note: serialized device and accessory margin with authorized setup, trade-in, installation, and protection-plan revenue
+skills:
+  - ref: serialized-electronics-sale
+    roles: [electronics-advisor, retail-manager]
+    documents: [stock-record, serialized-product-record, sales-receipt]
+    metrics: [average-ticket, gross-margin-percentage]
+    software: [retail-management, inventory-management]
+org:
+  - role: owner-operator
+    reports:
+      - role: retail-manager
+        reports:
+          - role: sales-associate
+          - role: stock-associate
+          - role: electronics-advisor
 summary: >
   An electronics store manages high-value items by exact model, serial
   number, specification, compatibility, warranty, release date, and

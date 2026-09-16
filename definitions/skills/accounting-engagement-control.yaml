@@ -1,0 +1,40 @@
+id: accounting-engagement-control
+name: Accounting engagement control
+kind: skill
+department: finance
+summary: >-
+  Turns client records and a defined accounting or assurance scope into
+  reconciled workpapers, reviewed conclusions, resolved exceptions, and an
+  authorized financial deliverable.
+inputs: [engagement-letter, client-brief]
+outputs: [accounting-workpaper-file, deliverable]
+steps:
+  - name: Establish the reporting basis
+    note: Confirm scope, reporting period, framework, records, deadlines, independence, and review responsibility.
+  - name: Prepare and reconcile
+    note: Link source records to workpapers, investigate differences, document adjustments, and escalate unresolved evidence.
+  - name: Review and release
+    note: Clear review notes, lock the final evidence set, obtain representations where required, and authorize the deliverable.
+tension: >-
+  External deadlines create pressure to release conclusions before client
+  records, exceptions, review notes, and representations are complete.
+failure_modes:
+  - name: Unsupported balance reaches release
+    cost: The report can misstate the financial position and require correction or withdrawal.
+    signal: A material workpaper balance lacks a source, reconciliation, conclusion, or cleared review.
+maturity:
+  - level: run badly
+    looks_like: Staff rebuild support after reviewers ask and final versions circulate outside the workpaper file.
+  - level: run well
+    looks_like: Every material conclusion is linked to evidence, preparation, review, exception status, and release.
+  - level: run excellently
+    looks_like: Recurring client and review exceptions drive earlier requests, better testing, and faster close.
+competencies:
+  - name: Financial evidence reconciliation
+    note: The operator connects records, calculations, adjustments, and conclusions under the applicable reporting basis.
+automation:
+  now: Workpaper systems can index evidence, assign requests, compare balances, route review, and freeze released versions.
+  human: Professional judgment about materiality, evidence sufficiency, independence, and release remains human.
+questions:
+  - Which material conclusion still lacks complete and reviewed evidence?
+  - What workpaper version proves the released conclusion and who authorized it?

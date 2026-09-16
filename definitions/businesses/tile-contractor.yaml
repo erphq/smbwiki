@@ -4,6 +4,9 @@ codes:
   naics: '238340'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: tile-material-preparation-and-pattern
+    note: installed tile area plus substrate correction, waterproofing, setting material, pattern complexity, trim, grout, seal, and repair
 summary: >-
   A tile contractor prepares substrates, waterproofs wet areas, lays out
   patterns, sets tile, grouts joints, installs movement sealant, and protects

@@ -4,6 +4,9 @@ codes:
   naics: '238210'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: solar-equipment-interconnection-and-service
+    note: installed system value plus design, permitting, interconnection, monitoring, storage, maintenance, and incentive-administration scope
 summary: >-
   A solar installation contractor surveys a site, designs a photovoltaic
   system, secures permits and utility approval, procures equipment, installs

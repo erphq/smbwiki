@@ -4,6 +4,9 @@ codes:
   naics: '238120'
 catalog_group: construction-property
 extends: project-services-base
+revenue_model:
+  - id: steel-tonnage-crane-and-connections
+    note: erected steel tonnage or package adjusted for mobilization, crane, rigging, bolting, welding, decking, correction, and testing support
 summary: >-
   A structural steel erector unloads, rigs, raises, stabilizes, connects,
   aligns, and inspects fabricated members in the sequence required by the

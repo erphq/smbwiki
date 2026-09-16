@@ -2,6 +2,8 @@ id: bar
 name: Bar
 codes:
   naics: "722410"
+  nic: "56301"
+  ssic: "56130"
 catalog_group: food-lodging
 extends: restaurant-base
 summary: >
@@ -42,6 +44,17 @@ org:
             reports:
               - role: bartender
               - role: server
+licenses:
+  in:
+    - ref: state-excise-liquor-license
+      requirement: required
+      condition: Serving alcohol requires a licence from the state excise department; the category and fees follow the operating state's excise policy.
+      as_of: "2026-07-31"
+  sg:
+    - ref: liquor-licence-singapore
+      requirement: required
+      condition: Supplying liquor at the premises requires a Singapore Police Force liquor licence with stated trading hours.
+      as_of: "2026-07-31"
 supply_chain:
   sells_to: [retail-consumer]
 seo:

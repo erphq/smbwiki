@@ -1,0 +1,39 @@
+id: new-vehicle-allocation-and-readiness
+name: New vehicle allocation and readiness
+kind: skill
+department: supply
+summary: >-
+  Controls a new vehicle from manufacturer allocation or customer order
+  through build, transport, inspection, accessories, incentives, and retail release.
+inputs: [customer-order, stock-record]
+outputs: [manufacturer-allocation-record, vehicle-purchase-agreement]
+steps:
+  - name: Confirm order and allocation
+    note: Match model, trim, options, color, price basis, customer commitment, allocation, build status, and program eligibility.
+  - name: Track arrival and preparation
+    note: Control transport, damage, identity, inspection, campaigns, accessories, detailing, keys, documents, and due-bill items.
+  - name: Release the vehicle
+    note: Verify exact unit, readiness, incentives, lender conditions, disclosures, registration work, warranty activation, and acceptance.
+tension: >-
+  Allocation scarcity and incentive deadlines can cause promises before the
+  exact unit, build status, program eligibility, preparation, and funding path are certain.
+failure_modes:
+  - name: Deal terms depend on an ineligible unit or program
+    cost: Delivery is delayed, gross changes, or the dealership must absorb a promise it cannot fund.
+    signal: The deal cites an incentive without matching effective dates, customer eligibility, unit identity, and program evidence.
+maturity:
+  - level: run badly
+    looks_like: Sales promises rely on estimated arrival and staff reconcile unit, incentive, and readiness at delivery.
+  - level: run well
+    looks_like: Order, allocation, unit identity, status, preparation, eligibility, funding conditions, and release stay connected.
+  - level: run excellently
+    looks_like: Allocation, delay, damage, incentive, and readiness patterns improve ordering, promises, stocking, and delivery planning.
+competencies:
+  - name: Manufacturer pipeline and retail release control
+    note: The operator reconciles vehicle configuration, allocation status, program rules, physical readiness, and deal commitments.
+automation:
+  now: Dealership systems can ingest manufacturer status, bind VINs, track preparation, validate program fields, and gate release.
+  human: Customer commitments, exception resolution, eligibility judgment, and authority to deliver remain human.
+questions:
+  - Which allocation, program, transport, preparation, or funding condition can still stop delivery?
+  - Does one record prove the exact unit, eligible terms, completed preparation, and release?

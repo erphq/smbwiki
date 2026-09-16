@@ -2,6 +2,8 @@ id: full-service-restaurant
 name: Full-Service Restaurant
 codes:
   naics: "722511"
+  nic: "56101"
+  ssic: "56111"
 catalog_group: food-lodging
 extends: restaurant-base
 summary: >

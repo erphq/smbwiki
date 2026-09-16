@@ -287,6 +287,41 @@ for (const { file, data } of businesses) {
   resolved.set(data.id, r);
 }
 
+// A concrete business must carry an operating model that is distinguishable
+// from every other concrete business in the facts users can inspect. Summary
+// prose and supply-chain labels do not substitute for distinct work, staffed
+// roles, and revenue mechanics.
+const flattenOrgRoles = (nodes = []) =>
+  nodes.flatMap((node) => [node.role, ...flattenOrgRoles(node.reports)]);
+const operatingModels = new Map();
+for (const [id, business] of resolved) {
+  if (byId.get(id)?.data.abstract) continue;
+  const signature = JSON.stringify({
+    skills: (business.skills ?? []).map((binding) => binding.ref).sort(),
+    roles: flattenOrgRoles(business.org).sort(),
+    revenue: (business.revenue_model ?? []).map((entry) => entry.id).sort(),
+  });
+  const peers = operatingModels.get(signature) ?? [];
+  peers.push(id);
+  operatingModels.set(signature, peers);
+
+  if (
+    byId.get(id)?.data.extends === "project-services-base" &&
+    (business.revenue_model ?? []).map((entry) => entry.id).join() ===
+      "quoted-projects"
+  )
+    err(
+      `${byId.get(id).file}: contractor revenue model only contains ` +
+      `"quoted-projects"; add the trade's actual revenue mechanics`,
+    );
+}
+for (const peers of operatingModels.values())
+  if (peers.length > 1)
+    err(
+      `concrete businesses share an indistinguishable core operating model: ` +
+      peers.join(", "),
+    );
+
 for (const { kind, file, data } of byId.values()) {
   if (kind === "skill") {
     for (const x of [...(data.inputs ?? []), ...(data.outputs ?? [])]) {

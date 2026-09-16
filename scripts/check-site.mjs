@@ -15,6 +15,11 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
 const SITE = "https://smbwiki.com";
 const failures = [];
+const TITLE_MIN = 10;
+const TITLE_MAX = 65;
+const DESCRIPTION_MIN = 50;
+const DESCRIPTION_MAX = 160;
+const CONTEXT_MIN = 200;
 
 function walk(folder) {
   return readdirSync(folder)
@@ -30,6 +35,74 @@ function targetFor(href) {
   if (clean === "/") return join(DIST, "index.html");
   if (clean.endsWith("/")) return join(DIST, clean.slice(1), "index.html");
   return join(DIST, clean.slice(1));
+}
+
+function attribute(tag, name) {
+  const match = tag.match(
+    new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`, "i"),
+  );
+  return match ? match[1] ?? match[2] ?? match[3] : null;
+}
+
+function decodeHtml(value) {
+  const named = {
+    amp: "&",
+    apos: "'",
+    gt: ">",
+    lt: "<",
+    nbsp: " ",
+    quot: '"',
+  };
+  return value.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (whole, entity) => {
+    if (entity[0] !== "#") return named[entity.toLowerCase()] ?? whole;
+    const radix = entity[1].toLowerCase() === "x" ? 16 : 10;
+    const digits = radix === 16 ? entity.slice(2) : entity.slice(1);
+    const codePoint = Number.parseInt(digits, radix);
+    return Number.isInteger(codePoint) && codePoint >= 0 && codePoint <= 0x10ffff
+      ? String.fromCodePoint(codePoint)
+      : whole;
+  });
+}
+
+function cleanText(value) {
+  return decodeHtml(value.replace(/<[^>]*>/g, " ")).replace(/\s+/g, " ").trim();
+}
+
+function visibleText(value) {
+  return cleanText(
+    value
+      .replace(/<!--[^]*?-->/g, " ")
+      .replace(/<(script|style|noscript|template)\b[^>]*>[^]*?<\/\1>/gi, " "),
+  );
+}
+
+function pagePathFor(file) {
+  const rel = relative(DIST, file).split("\\").join("/");
+  if (rel === "index.html") return "/";
+  if (!rel.endsWith("/index.html")) return null;
+  return `/${rel.slice(0, -"index.html".length)}`;
+}
+
+function addToList(map, key, value) {
+  const values = map.get(key) ?? [];
+  values.push(value);
+  map.set(key, values);
+}
+
+function allJsonLdObjects(value, result = []) {
+  if (!value || typeof value !== "object") return result;
+  if (Array.isArray(value)) {
+    for (const item of value) allJsonLdObjects(item, result);
+    return result;
+  }
+  result.push(value);
+  for (const nested of Object.values(value)) allJsonLdObjects(nested, result);
+  return result;
+}
+
+function jsonLdTypes(object) {
+  const value = object?.["@type"];
+  return new Set(Array.isArray(value) ? value : value ? [value] : []);
 }
 
 if (!existsSync(DIST)) failures.push("dist/ does not exist; generate the site first");
@@ -265,14 +338,12 @@ const businessSources = readdirSync(join(ROOT, "definitions", "businesses"))
   .filter((file) => file.endsWith(".yaml"))
   .map((file) => yaml.load(readFileSync(join(ROOT, "definitions", "businesses", file), "utf8")))
   .filter((business) => !business.abstract);
+const resolvedBusinesses = new Map();
 if (uniqueHomeBusinesses.size !== businessSources.length)
   failures.push(
     `homepage links to ${uniqueHomeBusinesses.size} unique businesses; ` +
     `expected ${businessSources.length}`,
   );
-const skillSources = readdirSync(join(ROOT, "definitions", "skills"))
-  .filter((file) => file.endsWith(".yaml"))
-  .map((file) => yaml.load(readFileSync(join(ROOT, "definitions", "skills", file), "utf8")));
 for (const business of businessSources) {
   const buildPath = join(ROOT, "build", "resolved", `${business.id}.json`);
   const publicPath = join(DIST, "api", "def", `${business.id}.json`);
@@ -280,7 +351,9 @@ for (const business of businessSources) {
     failures.push(`${business.id} is missing a generated definition artifact`);
     continue;
   }
-  const built = JSON.stringify(JSON.parse(readFileSync(buildPath, "utf8")));
+  const builtDefinition = JSON.parse(readFileSync(buildPath, "utf8"));
+  resolvedBusinesses.set(business.id, builtDefinition);
+  const built = JSON.stringify(builtDefinition);
   const published = JSON.stringify(JSON.parse(readFileSync(publicPath, "utf8")));
   if (built !== published)
     failures.push(`${business.id} public JSON differs from the resolved build`);
@@ -308,46 +381,356 @@ for (const source of walk(join(ROOT, "definitions"))) {
 const skillMarkdown = files.filter((file) =>
   /^skill\/[^/]+\.md$/.test(relative(DIST, file)),
 );
+
+// Every real page comes from either the project shell or one graph node. The
+// only HTML that is deliberately not indexable is a compatibility redirect:
+// the old /process/ form of a skill URL, or a declared node alias.
+const contentTypes = new Map([
+  ["/", new Set(["WebSite"])],
+  ["/about/", new Set(["WebPage", "AboutPage"])],
+  ["/graph/", new Set(["WebPage", "CollectionPage", "Dataset"])],
+  ["/research/", new Set(["WebPage", "CollectionPage", "Dataset"])],
+  // One index page per graph node kind (moved off the homepage 2026-09-15).
+  ...["skill", "role", "document", "metric", "software", "license", "market"]
+    .map((segment) => [`/${segment}/`, new Set(["WebPage", "CollectionPage"])]),
+]);
+const contentNames = new Map();
+const entityPaths = new Set();
+const redirectTargets = new Map();
+for (const node of graph.nodes) {
+  const segment = graphSegments[node.label];
+  if (!segment) continue;
+  const path = `/${segment}/${node.id}/`;
+  contentTypes.set(
+    path,
+    new Set(
+      node.label === "business" || node.label === "skill"
+        ? ["Article"]
+        : ["DefinedTerm"],
+    ),
+  );
+  entityPaths.add(path);
+  if (node.label !== "business") contentNames.set(path, node.name);
+  if (node.label === "skill")
+    redirectTargets.set(`/process/${node.id}/`, path);
+  for (const alias of node.data?.aliases ?? []) {
+    const aliasPath = `/${segment}/${alias}/`;
+    if (redirectTargets.has(aliasPath) && redirectTargets.get(aliasPath) !== path)
+      failures.push(`${aliasPath} aliases both ${redirectTargets.get(aliasPath)} and ${path}`);
+    redirectTargets.set(aliasPath, path);
+  }
+}
+for (const path of redirectTargets.keys())
+  if (contentTypes.has(path))
+    failures.push(`${path} is both a content URL and a redirect URL`);
+
+const htmlByPath = new Map();
+for (const file of htmlFiles) {
+  const path = pagePathFor(file);
+  const rel = relative(DIST, file);
+  if (!path) {
+    failures.push(`${rel} is HTML outside a directory index URL`);
+    continue;
+  }
+  if (htmlByPath.has(path)) {
+    failures.push(`${path} is generated by more than one HTML file`);
+    continue;
+  }
+  htmlByPath.set(path, { file, rel, html: readFileSync(file, "utf8") });
+}
+for (const path of contentTypes.keys())
+  if (!htmlByPath.has(path)) failures.push(`content page ${path} is not generated`);
+for (const [path, target] of redirectTargets)
+  if (!htmlByPath.has(path)) failures.push(`redirect page ${path} -> ${target} is not generated`);
+for (const [path, { rel }] of htmlByPath)
+  if (!contentTypes.has(path) && !redirectTargets.has(path))
+    failures.push(`${rel} is neither a genuine content page nor a declared redirect`);
+
+// A document can be declared directly on a business binding or inherited from
+// the input/output contract of the bound skill. Its page must include both;
+// otherwise it can claim "Appears in none" while linking a skill used widely.
+const documentBusinesses = new Map(
+  graph.nodes
+    .filter((node) => node.label === "document")
+    .map((node) => [node.id, new Set()]),
+);
+for (const [businessId, business] of resolvedBusinesses) {
+  const bindings = [
+    ...(business.skills ?? []),
+    ...Object.values(business.geo ?? {}).flatMap((layer) => layer.skills ?? []),
+  ];
+  for (const binding of bindings) {
+    const skill = graphNodes.get(binding.ref)?.data ?? {};
+    const documents = new Set([
+      ...(binding.documents ?? []),
+      ...(skill.inputs ?? []),
+      ...(skill.outputs ?? []),
+    ]);
+    for (const documentId of documents)
+      documentBusinesses.get(documentId)?.add(businessId);
+  }
+}
+for (const [documentId, businesses] of documentBusinesses) {
+  const path = `/document/${documentId}/`;
+  const page = htmlByPath.get(path);
+  if (!page) continue;
+  const section = page.html.match(/<section id="appears-in">([^]*?)<\/section>/i)?.[1] ?? "";
+  const actual = new Set(
+    [...section.matchAll(/href="\/business\/([a-z0-9-]+)\/"/g)].map((match) => match[1]),
+  );
+  const expected = [...businesses].sort();
+  const shown = [...actual].sort();
+  if (JSON.stringify(shown) !== JSON.stringify(expected))
+    failures.push(
+      `${page.rel} Appears in lists ${shown.length} businesses; ` +
+      `expected ${expected.length} from direct and skill document contracts`,
+    );
+  const countClaim = `this document appears in ${expected.length} concrete business ` +
+    `${expected.length === 1 ? "model" : "models"}`;
+  if (!visibleText(page.html).toLowerCase().includes(countClaim))
+    failures.push(`${page.rel} document context does not state the expected ${expected.length}-business use`);
+}
+
 const sitemapPath = join(DIST, "sitemap.xml");
 const sitemap = existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "";
 if (!sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>'))
   failures.push("sitemap.xml is missing its UTF-8 XML declaration");
 if (!sitemap.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'))
   failures.push("sitemap.xml is missing the sitemap protocol namespace");
-const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-const expectedSitemapUrls = [
-  `${SITE}/`,
-  ...businessSources.map((business) => `${SITE}/business/${business.id}/`),
-  ...skillSources.map((skill) => `${SITE}/skill/${skill.id}/`),
-].sort();
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) =>
+  decodeHtml(match[1].trim()),
+);
+const expectedSitemapUrls = [...contentTypes.keys()]
+  .map((path) => `${SITE}${path}`)
+  .sort();
 const actualSitemapUrls = [...sitemapUrls].sort();
-if (JSON.stringify(actualSitemapUrls) !== JSON.stringify(expectedSitemapUrls))
+if (JSON.stringify(actualSitemapUrls) !== JSON.stringify(expectedSitemapUrls)) {
+  const expected = new Set(expectedSitemapUrls);
+  const actual = new Set(actualSitemapUrls);
+  const missing = expectedSitemapUrls.filter((url) => !actual.has(url));
+  const extra = actualSitemapUrls.filter((url) => !expected.has(url));
   failures.push(
     `sitemap contains ${actualSitemapUrls.length} URLs; expected the exact ` +
-    `${expectedSitemapUrls.length}-URL homepage, business, and skill set`,
+    `${expectedSitemapUrls.length}-URL genuine-content set` +
+    `${missing.length ? `; missing ${missing.length} (${missing.slice(0, 5).join(", ")})` : ""}` +
+    `${extra.length ? `; extra ${extra.length} (${extra.slice(0, 5).join(", ")})` : ""}`,
   );
+}
 if (new Set(sitemapUrls).size !== sitemapUrls.length)
   failures.push("sitemap.xml contains duplicate URLs");
+const sitemapPaths = new Set();
 for (const url of sitemapUrls) {
   if (!url.startsWith(`${SITE}/`)) {
     failures.push(`sitemap URL is not canonical for smbwiki.com: ${url}`);
     continue;
   }
-  if (!existsSync(targetFor(new URL(url).pathname)))
-    failures.push(`sitemap URL has no generated page: ${url}`);
+  try {
+    const parsed = new URL(url);
+    if (parsed.search || parsed.hash)
+      failures.push(`sitemap URL has a query or fragment: ${url}`);
+    sitemapPaths.add(parsed.pathname);
+    if (!existsSync(targetFor(parsed.pathname)))
+      failures.push(`sitemap URL has no generated page: ${url}`);
+  } catch {
+    failures.push(`sitemap URL is invalid: ${url}`);
+  }
 }
-const indexablePaths = new Set(sitemapUrls.map((url) => new URL(url).pathname));
-for (const file of htmlFiles) {
-  const rel = relative(DIST, file);
-  const html = readFileSync(file, "utf8");
-  const pagePath = rel === "index.html"
-    ? "/"
-    : `/${dirname(rel).split("\\").join("/")}/`;
-  const hasNoindex = /<meta name="robots" content="noindex">/.test(html);
-  if (indexablePaths.has(pagePath) && hasNoindex)
-    failures.push(`${rel} is in the sitemap but carries noindex`);
-  if (!indexablePaths.has(pagePath) && !hasNoindex)
-    failures.push(`${rel} is outside the sitemap but is missing noindex`);
+
+const titleOwners = new Map();
+const descriptionOwners = new Map();
+for (const [path, allowedTypes] of contentTypes) {
+  const page = htmlByPath.get(path);
+  if (!page) continue;
+  const { rel, html } = page;
+  const metaTags = [...html.matchAll(/<meta\b[^>]*>/gi)].map((match) => match[0]);
+  const robotsDirectives = metaTags
+    .filter((tag) => ["robots", "googlebot"].includes((attribute(tag, "name") ?? "").toLowerCase()))
+    .flatMap((tag) => (attribute(tag, "content") ?? "").toLowerCase().split(/[\s,]+/))
+    .filter(Boolean);
+  if (robotsDirectives.includes("noindex") || robotsDirectives.includes("none"))
+    failures.push(`${rel} is genuine content but carries noindex`);
+  if (!sitemapPaths.has(path))
+    failures.push(`${rel} is genuine content but is missing from sitemap.xml`);
+
+  const canonicalTags = [...html.matchAll(/<link\b[^>]*>/gi)]
+    .map((match) => match[0])
+    .filter((tag) => (attribute(tag, "rel") ?? "").toLowerCase().split(/\s+/).includes("canonical"));
+  if (canonicalTags.length !== 1) {
+    failures.push(`${rel} has ${canonicalTags.length} canonical links; expected exactly 1`);
+  } else if (attribute(canonicalTags[0], "href") !== `${SITE}${path}`) {
+    failures.push(
+      `${rel} canonical is ${attribute(canonicalTags[0], "href") ?? "missing"}; ` +
+      `expected self-canonical ${SITE}${path}`,
+    );
+  }
+
+  const titleMatches = [...html.matchAll(/<title\b[^>]*>([^]*?)<\/title>/gi)];
+  if (titleMatches.length !== 1) {
+    failures.push(`${rel} has ${titleMatches.length} title elements; expected exactly 1`);
+  } else {
+    const title = cleanText(titleMatches[0][1]);
+    const length = [...title].length;
+    if (length < TITLE_MIN || length > TITLE_MAX)
+      failures.push(
+        `${rel} title is ${length} characters; expected ${TITLE_MIN}-${TITLE_MAX}: "${title}"`,
+      );
+    if (!title.includes("SMBwiki"))
+      failures.push(`${rel} title does not use the canonical SMBwiki brand casing: "${title}"`);
+    const contentName = contentNames.get(path);
+    if (
+      contentName &&
+      `${contentName} | SMBwiki`.length <= TITLE_MAX &&
+      !title.toLocaleLowerCase("en").includes(contentName.toLocaleLowerCase("en"))
+    )
+      failures.push(`${rel} title drops its full entity name "${contentName}": "${title}"`);
+    addToList(titleOwners, title.toLocaleLowerCase("en"), rel);
+  }
+
+  const descriptionTags = metaTags.filter(
+    (tag) => (attribute(tag, "name") ?? "").toLowerCase() === "description",
+  );
+  let metaDescriptionText = null;
+  if (descriptionTags.length !== 1) {
+    failures.push(`${rel} has ${descriptionTags.length} meta descriptions; expected exactly 1`);
+  } else {
+    const description = cleanText(attribute(descriptionTags[0], "content") ?? "");
+    metaDescriptionText = description;
+    const length = [...description].length;
+    if (length < DESCRIPTION_MIN || length > DESCRIPTION_MAX)
+      failures.push(
+        `${rel} description is ${length} characters; expected ` +
+        `${DESCRIPTION_MIN}-${DESCRIPTION_MAX}: "${description}"`,
+      );
+    if (!/[.!?…]$/.test(description))
+      failures.push(`${rel} description is not a complete sentence: "${description}"`);
+    addToList(descriptionOwners, description.toLocaleLowerCase("en"), rel);
+  }
+  const ogDescriptionTags = metaTags.filter(
+    (tag) => (attribute(tag, "property") ?? "").toLowerCase() === "og:description",
+  );
+  if (ogDescriptionTags.length !== 1) {
+    failures.push(`${rel} has ${ogDescriptionTags.length} Open Graph descriptions; expected exactly 1`);
+  } else if (cleanText(attribute(ogDescriptionTags[0], "content") ?? "") !== metaDescriptionText) {
+    failures.push(`${rel} Open Graph description differs from its meta description`);
+  }
+
+  const mainMatches = [...html.matchAll(/<main\b[^>]*>([^]*?)<\/main>/gi)];
+  if (mainMatches.length !== 1) {
+    failures.push(`${rel} has ${mainMatches.length} main elements; expected exactly 1`);
+  } else {
+    const h1Matches = [...mainMatches[0][1].matchAll(/<h1\b[^>]*>([^]*?)<\/h1>/gi)];
+    if (h1Matches.length !== 1) {
+      failures.push(`${rel} has ${h1Matches.length} h1 headings in main; expected exactly 1`);
+    } else if (!cleanText(h1Matches[0][1])) {
+      failures.push(`${rel} has an empty h1 heading`);
+    }
+    const context = visibleText(mainMatches[0][1]);
+    if ([...context].length < CONTEXT_MIN)
+      failures.push(
+        `${rel} has only ${[...context].length} visible main-text characters; ` +
+        `expected at least ${CONTEXT_MIN} characters of page context`,
+      );
+    const explanatoryParagraphs = [...mainMatches[0][1].matchAll(/<p\b[^>]*>([^]*?)<\/p>/gi)]
+      .map((match) => visibleText(match[1]))
+      .filter((text) => [...text].length >= 40);
+    if (!explanatoryParagraphs.length)
+      failures.push(`${rel} has no explanatory paragraph with at least 40 characters`);
+  }
+
+  const jsonLdScripts = [...html.matchAll(/<script\b([^>]*)>([^]*?)<\/script>/gi)]
+    .filter((match) => (attribute(match[1], "type") ?? "").toLowerCase() === "application/ld+json");
+  if (jsonLdScripts.length !== 1) {
+    failures.push(`${rel} has ${jsonLdScripts.length} JSON-LD blocks; expected exactly 1`);
+  } else {
+    let data;
+    try {
+      data = JSON.parse(jsonLdScripts[0][2]);
+    } catch {
+      failures.push(`${rel} has invalid JSON-LD`);
+    }
+    if (data) {
+      const objects = allJsonLdObjects(data);
+      if (!objects.some((object) => JSON.stringify(object["@context"] ?? "").includes("schema.org")))
+        failures.push(`${rel} JSON-LD is missing a schema.org @context`);
+      const typed = !Array.isArray(data) &&
+        [...jsonLdTypes(data)].some((type) => allowedTypes.has(type))
+        ? data
+        : null;
+      if (!typed) {
+        failures.push(
+          `${rel} JSON-LD root has no appropriate type; expected one of ${[...allowedTypes].join(", ")}`,
+        );
+      } else {
+        const label = cleanText(String(typed.headline ?? typed.name ?? ""));
+        const description = cleanText(String(typed.description ?? ""));
+        if (!label) failures.push(`${rel} JSON-LD is missing a name or headline`);
+        if ([...description].length < 30)
+          failures.push(`${rel} JSON-LD description has fewer than 30 characters`);
+        if (entityPaths.has(path) && description !== metaDescriptionText)
+          failures.push(`${rel} JSON-LD description differs from its meta description`);
+        let structuredUrl = null;
+        try {
+          structuredUrl = new URL(String(typed.url ?? "")).href;
+        } catch {
+          // Report the missing or invalid URL uniformly below.
+        }
+        const expectedUrl = new URL(`${SITE}${path}`).href;
+        if (structuredUrl !== expectedUrl)
+          failures.push(`${rel} JSON-LD root URL is ${structuredUrl ?? "missing"}; expected ${expectedUrl}`);
+        if (jsonLdTypes(typed).has("Article")) {
+          let mainEntityUrl = null;
+          try {
+            mainEntityUrl = new URL(String(typed.mainEntityOfPage ?? "")).href;
+          } catch {
+            // Report the missing or invalid main-entity URL uniformly below.
+          }
+          if (mainEntityUrl !== expectedUrl)
+            failures.push(`${rel} Article mainEntityOfPage must be ${expectedUrl}`);
+        }
+      }
+    }
+  }
+}
+
+for (const [title, owners] of titleOwners)
+  if (owners.length > 1)
+    failures.push(`duplicate title "${title}" on ${owners.join(", ")}`);
+for (const [description, owners] of descriptionOwners)
+  if (owners.length > 1)
+    failures.push(`duplicate meta description "${description}" on ${owners.join(", ")}`);
+
+for (const [path, target] of redirectTargets) {
+  const page = htmlByPath.get(path);
+  if (!page) continue;
+  const { rel, html } = page;
+  if (sitemapPaths.has(path))
+    failures.push(`${rel} is a redirect but is present in sitemap.xml`);
+  const metaTags = [...html.matchAll(/<meta\b[^>]*>/gi)].map((match) => match[0]);
+  const robotsDirectives = metaTags
+    .filter((tag) => ["robots", "googlebot"].includes((attribute(tag, "name") ?? "").toLowerCase()))
+    .flatMap((tag) => (attribute(tag, "content") ?? "").toLowerCase().split(/[\s,]+/))
+    .filter(Boolean);
+  if (!robotsDirectives.includes("noindex") && !robotsDirectives.includes("none"))
+    failures.push(`${rel} is a redirect but is missing noindex`);
+  const canonicalTags = [...html.matchAll(/<link\b[^>]*>/gi)]
+    .map((match) => match[0])
+    .filter((tag) => (attribute(tag, "rel") ?? "").toLowerCase().split(/\s+/).includes("canonical"));
+  if (canonicalTags.length !== 1 || attribute(canonicalTags[0], "href") !== `${SITE}${target}`)
+    failures.push(`${rel} must have exactly one canonical link to ${SITE}${target}`);
+  const refreshTags = metaTags.filter(
+    (tag) => (attribute(tag, "http-equiv") ?? "").toLowerCase() === "refresh",
+  );
+  const refreshTarget = refreshTags.length === 1
+    ? (attribute(refreshTags[0], "content") ?? "").match(/(?:^|;)\s*url\s*=\s*(.+)\s*$/i)?.[1]
+    : null;
+  let refreshPath = null;
+  try {
+    if (refreshTarget) refreshPath = new URL(refreshTarget, `${SITE}${path}`).pathname;
+  } catch {
+    // Report the invalid or absent refresh uniformly below.
+  }
+  if (refreshTags.length !== 1 || refreshPath !== target)
+    failures.push(`${rel} must have exactly one meta refresh to ${target}`);
 }
 
 const robots = existsSync(join(DIST, "robots.txt"))
@@ -359,7 +742,8 @@ if (!robots.includes(`Sitemap: ${SITE}/sitemap.xml`))
 console.log(
   `site files=${files.length} html=${htmlFiles.length} hrefs=${hrefCount} ` +
   `businesses=${uniqueHomeBusinesses.size} api=${businessSources.length} ` +
-  `skill_markdown=${skillMarkdown.length} graph_pages=${graphPages} sitemap=${sitemapUrls.length} ` +
+  `skill_markdown=${skillMarkdown.length} graph_pages=${graphPages} ` +
+  `content=${contentTypes.size} redirects=${redirectTargets.size} sitemap=${sitemapUrls.length} ` +
   `failures=${failures.length}`,
 );
 for (const failure of failures) console.log(`ERROR: ${failure}`);

@@ -4,6 +4,26 @@ codes:
   naics: "323111"
 catalog_group: logistics-production
 extends: production-shop-base
+revenue_model:
+  - id: print-finishing-and-fulfillment
+    note: production margin from printed quantity, setup, color control, finishing, personalization, packaging, mailing, and delivery
+skills:
+  - ref: print-preflight-and-proofing
+    roles: [prepress-operator, production-manager]
+    documents: [customer-order, print-production-proof, production-order]
+    metrics: [first-pass-yield, material-waste-rate]
+    software: [manufacturing-operations]
+org:
+  - role: owner-operator
+    reports:
+      - role: office-manager
+      - role: estimator
+      - role: production-manager
+        reports:
+          - role: prepress-operator
+          - role: machine-operator
+          - role: quality-inspector
+          - role: maintenance-technician
 summary: >
   A commercial printer converts an approved file and production
   specification into imposed, proofed, printed, finished, packed, and

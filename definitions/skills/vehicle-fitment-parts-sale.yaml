@@ -1,0 +1,39 @@
+id: vehicle-fitment-parts-sale
+name: Vehicle fitment parts sale
+kind: skill
+department: sales
+summary: >-
+  Resolves vehicle identity, application, component differences, core terms,
+  warranty, and availability before releasing a part to the customer.
+inputs: [stock-record, job-request]
+outputs: [vehicle-fitment-record, sales-receipt]
+steps:
+  - name: Identify the vehicle and need
+    note: Capture vehicle identity, configuration, production split, symptom, existing component, and intended repair.
+  - name: Resolve the application
+    note: Compare catalog evidence, supersessions, dimensions, connectors, side, condition, core, and warranty terms.
+  - name: Confirm and release
+    note: Record the fitment basis, customer confirmation, selected part, exceptions, core custody, and return conditions.
+tension: >-
+  Fast counter service and incomplete vehicle information can push a plausible
+  part number through before compatibility and return constraints are known.
+failure_modes:
+  - name: Similar part is sold for the wrong application
+    cost: The repair stops, the part may be damaged, and return or warranty cost rises.
+    signal: The transaction lacks a vehicle identifier or catalog evidence for a required production difference.
+maturity:
+  - level: run badly
+    looks_like: Staff choose by appearance or broad model description and reconstruct fitment after the return.
+  - level: run well
+    looks_like: Vehicle, application evidence, selected part, core, warranty, and customer confirmation share one record.
+  - level: run excellently
+    looks_like: Return and no-fit patterns improve catalog notes, questions, stocking, and supplier escalation.
+competencies:
+  - name: Vehicle application resolution
+    note: The specialist identifies the configuration differences that control fit, function, core, and warranty.
+automation:
+  now: Parts catalogs can decode vehicles, filter applications, track supersessions, reserve stock, and record core and warranty terms.
+  human: Interpretation of incomplete evidence and responsibility for the final compatibility conversation remain human.
+questions:
+  - Which vehicle or component attribute can still change the selected application?
+  - What fitment evidence and customer confirmation support this released part?

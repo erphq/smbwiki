@@ -1,0 +1,6 @@
+id: prepress-operator
+name: Prepress operator
+kind: role
+summary: >
+  Preflights customer files, prepares production geometry and color
+  controls, and releases only the approved proof revision to print.

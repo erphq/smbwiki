@@ -1,0 +1,10 @@
+id: fssai-registration
+name: FSSAI registration or licence
+kind: license
+geo: [in]
+summary: >
+  Food-business authorization under the Food Safety and Standards
+  (Licensing and Registration of Food Businesses) Regulations, 2011.
+  Every food business operator holds one; the tier is set by annual
+  turnover, from basic registration to a state or central licence.
+jurisdiction: India, central
