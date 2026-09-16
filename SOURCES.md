@@ -4,6 +4,19 @@ Primary and standards-body references used to anchor classifications,
 regulated credentials, and operating details. Source links support the
 structured definitions; they do not replace operator review.
 
+## 2026-09-16 business benchmarks
+
+Benchmark sources for the 125 business articles live inline, one URL
+per row in `definitions/businesses/<id>.yaml`. 73 businesses carry
+144 rows from 77 sources: NAHB Cost of Doing Business studies, NADA
+Data, National Restaurant Association operations data, ATRI
+operational costs, AVMA and ADA HPI, NCPA Digest, NFDA, Urgent Care
+Association, Clio Legal Trends, Health and Fitness Association, Big I
+Best Practices, CMS rules, BLS OES and Occupational Outlook, Census
+County Business Patterns and Economic Census files, SEC filings of
+public operators, and named trade surveys. Ratios derived from two
+published totals say so in the row note.
+
 ## 2026-09-16 metric benchmarks
 
 Benchmark sources for the 91 metric articles live inline, one URL per
