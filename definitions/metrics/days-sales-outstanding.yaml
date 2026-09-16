@@ -5,3 +5,87 @@ summary: >
   Average days from invoice to payment.
 unit: days
 direction: lower
+article:
+  what: >
+    Days sales outstanding measures how long, on average, a business
+    waits between sending an invoice and receiving the cash. It is the
+    owner's number for the gap between work done and money in the bank:
+    a contractor at 45 days is financing a month and a half of payroll
+    and materials for customers, a clinic at 60 days is waiting two
+    months on insurers. Lenders read it when sizing a receivables line,
+    and a rising figure is usually the first sign that collections or
+    billing have slipped.
+  formula: Accounts receivable at period end ÷ credit sales for the period × days in the period
+  how_to_calculate: >
+    Take the receivables balance on the last day of the period, divide
+    by the sales invoiced on credit during that period, and multiply by
+    the number of days in the period, 365 for a year or 90 for a
+    quarter. Use only credit sales in the denominator; cash and card
+    sales collected at the counter dilute the figure. Some firms use
+    average receivables over the period instead of the closing balance,
+    which smooths a lumpy billing month. A countback variant subtracts
+    each month's sales from the balance until it is exhausted and is
+    better where billing is seasonal. Public company aggregates usually
+    publish receivable turnover; 365 divided by turnover gives days.
+  example: >
+    An electrical contractor invoices 1.8 million dollars of credit work
+    in a year and closes the year with 240,000 dollars of open
+    receivables. Days sales outstanding is 240,000 divided by 1.8
+    million, times 365, or about 49 days. With net 30 terms, the
+    contractor is collecting on average 19 days late, and a month of
+    that receivable balance, about 150,000 dollars, is cash the business
+    is lending to its customers.
+  benchmarks:
+    - scope: Construction services, public companies
+      value: about 41 days
+      note: 365 divided by a receivable turnover of 8.96, trailing twelve months to Q2 2026, US listed construction services firms; large firms with retainage and progress billing, so a small contractor on net 30 should read lower.
+      source: https://csimarket.com/Industry/industry_Efficiency.php?ind=205
+      source_name: CSIMarket, Construction Services industry efficiency ratios (Q2 2026)
+    - scope: Consulting services, public companies
+      value: about 81 days
+      note: 365 divided by a receivable turnover of 4.5, trailing twelve months to Q2 2026, US listed consulting firms; project billing on milestones stretches the figure.
+      source: https://csimarket.com/Industry/industry_Efficiency.php?ind=926
+      source_name: CSIMarket, Consulting Services industry efficiency ratios (Q2 2026)
+    - scope: Grocery stores, public companies
+      value: about 11 days
+      note: 365 divided by a receivable turnover of 34.33, trailing twelve months to Q2 2026; a cash and card business, so receivables are mostly card settlement and vendor allowances.
+      source: https://csimarket.com/Industry/industry_Efficiency.php?ind=1305
+      source_name: CSIMarket, Grocery Stores industry efficiency ratios (Q2 2026)
+    - scope: General
+      value: about 51 days
+      note: 365 divided by a receivable turnover of 7.14 for the total US listed market, trailing twelve months to Q3 2026; all sectors mixed, so use only as an outer reference.
+      source: https://csimarket.com/Industry/industry_Efficiency.php
+      source_name: CSIMarket, Total Market efficiency ratios (Q3 2026)
+  drivers:
+    - name: Payment terms offered
+      note: Net 30 against net 60 sets the floor; a business that quotes long terms to win work has chosen a higher figure before any invoice is late.
+    - name: Invoice timing and accuracy
+      note: An invoice sent two weeks after the job, or one that bounces back for a missing purchase order number, adds those days to every collection.
+    - name: Customer mix
+      note: Insurers, general contractors, and government buyers pay on their own cycles, so a book heavy in those payers runs longer than one billed to homeowners.
+    - name: Collection follow-up
+      note: Unchased invoices age; a reminder at day 25 and a call at day 35 pull the average in more than any change to terms.
+    - name: Deposits and progress billing
+      note: Cash taken before or during the work never enters receivables, so trades that bill deposits post lower days than those billing on completion.
+    - name: Disputes and retainage
+      note: A withheld 10 percent retainage or a contested change order sits in the balance for months and lifts the average for the whole firm.
+  improve:
+    - name: Invoice the day the work closes
+      note: Send the invoice from the field or the same day, with the customer's purchase order and job reference on it, so the payment clock starts at once.
+    - name: Take deposits and bill progress
+      note: Collect a deposit at booking and bill at milestones on larger jobs so the open balance at any point is a fraction of contract value.
+    - name: Run a written dunning calendar
+      note: Fixed touches at set ages, reminder, call, and hold on further work, applied to every account, remove the judgment calls that let invoices drift.
+    - name: Offer card and ACH at the point of service
+      note: A payment link on the invoice or a card reader on the truck converts credit sales into same-day cash and removes those jobs from the calculation.
+    - name: Review the aging by customer monthly
+      note: Sort open balances by age and payer, and put slow payers on tighter terms or prepayment before taking their next job.
+  pitfalls:
+    - name: Total sales in the denominator
+      note: Including cash and card sales collected on the spot makes the figure look better than the credit book really is; use invoiced credit sales only.
+    - name: A single month of lumpy billing annualized
+      note: A large invoice raised in the last week of the period inflates closing receivables against a normal month of sales; use the countback or an average balance.
+    - name: Written-off and disputed balances left in
+      note: Old balances the business will never collect keep the average high; move them to a bad debt reserve and track disputes separately.
+    - name: Comparing across payer types
+      note: A clinic billing insurers and a plumber billing homeowners cannot share a target; compare against the same trade and the firm's own trend.

@@ -5,3 +5,71 @@ summary: >
   Elapsed time between recording a punch item and verified closure.
 unit: days
 direction: lower
+article:
+  what: >
+    Punch list age counts the days each deficiency item stays open
+    between the walk where it was recorded and the walk where the owner
+    or architect verified it closed. It is the general contractor's
+    closeout number because open punch items hold retainage, delay
+    substantial completion, and keep superintendents on a site that is
+    no longer earning. Owners watch it as the measure of whether the
+    building will actually be finished, and trade contractors watch
+    their own items because final payment usually waits on them.
+  formula: Verified closure date minus date the punch item was recorded, reported as the average age of items closed in the period and the age of items still open
+  how_to_calculate: >
+    Record every item with a date, a location, a responsible trade, and
+    a closure date signed by the person who verified it. Age is the
+    difference between the two dates. Report two numbers each week: the
+    mean age of items closed that week, and the mean and oldest age of
+    items still open. A count of open items without their ages hides
+    the stragglers. Variants weight items by cost or by whether they
+    block occupancy, and some contractors track a separate age for
+    items reopened after a failed verification. Measure from the
+    pre-punch walk if you run one, since items found early cost less.
+  example: >
+    A commercial general contractor finishes a tenant improvement with
+    212 punch items recorded on 4 June. By 25 June, 190 items are
+    verified closed with a mean age of 11 days. The 22 open items have
+    a mean age of 21 days, and the oldest, a millwork panel awaiting a
+    replacement, is 21 days old with delivery promised in another two
+    weeks. The report shows both figures so the owner sees that most
+    work closed fast and one supplier is holding the last items.
+  benchmarks: []
+  benchmark_note: >
+    No published range for punch list age was found; contractors do
+    not report it to trade associations and project software vendors
+    do not publish aggregates. Set the target from your own contract
+    dates: items should close before the substantial completion
+    inspection, and anything older than the interval between owner
+    walks, typically one to two weeks, should be escalated. Use your
+    last three projects to set a baseline and cut it project by
+    project.
+  drivers:
+    - name: Trade availability after demobilization
+      note: A subcontractor whose crew has moved to the next job returns for punch work on its own schedule, so items age while waiting for a visit.
+    - name: Material lead time on replacements
+      note: A damaged door leaf, a wrong-color tile, or a custom light fixture is open for as long as the replacement takes to ship.
+    - name: Quality of the pre-punch
+      note: A thorough contractor walk before the architect's walk catches the easy items early and leaves a short, mostly supplier-bound list.
+    - name: Verification cadence
+      note: Items fixed on Tuesday stay open until the next owner walk; a weekly walk adds up to seven days to every item's age.
+    - name: Item definition and scope creep
+      note: Owners who add wish-list changes to the punch list inflate age with items that are really change orders awaiting approval.
+  improve:
+    - name: Punch by area as areas finish
+      note: Walking floors or zones as each completes spreads the list over months and keeps trades on site while they fix their items.
+    - name: Assign every item to a name and a date
+      note: Items with a trade, a foreman, and a due date close faster than items assigned to a company; report the list by person.
+    - name: Hold trade retainage against the list
+      note: Tie subcontractor final payment to verified closure of their items so returning for punch work has a clear financial reason.
+    - name: Verify on a fixed short cycle
+      note: Walk with the architect or owner twice a week during closeout so completed fixes are verified within days instead of weeks.
+    - name: Order replacements the day the item is recorded
+      note: Long-lead replacements should be ordered at the walk, not after the trade has been chased, since supplier time is the floor on those items.
+  pitfalls:
+    - name: Reporting count instead of age
+      note: Twenty open items sounds fine until you learn ten are sixty days old; age exposes the stuck items that count hides.
+    - name: Closing on the trade's say-so
+      note: An item marked complete by the subcontractor but never verified reopens later and distorts both the age and the closure rate.
+    - name: Starting the clock at the formal walk only
+      note: Items the superintendent noted weeks earlier and did not log look younger than they are; log at first observation.

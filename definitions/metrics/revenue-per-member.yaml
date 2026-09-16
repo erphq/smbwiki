@@ -6,3 +6,76 @@ summary: >
   period.
 unit: currency
 direction: higher
+article:
+  what: >
+    Revenue per member counts how much money a gym takes in for each
+    active member over a period, combining dues with personal training,
+    classes, retail, and other add-ons. It is the owner's and the
+    finance lead's number, and it matters because two clubs with the
+    same member count can differ by half in revenue depending on price
+    tier and how much members buy beyond the door fee: it is the
+    yield side of the membership business, where churn and conversion
+    are the volume side.
+  formula: Total membership and add-on revenue for the period ÷ average active members in the period
+  how_to_calculate: >
+    Put all revenue from members in the numerator: dues, joining fees,
+    personal training, paid classes, lockers, retail, and cafe if the
+    club counts it. Some clubs report dues only as a separate line to
+    see price mix. The denominator is average active members over the
+    period, either the mean of opening and closing counts or the mean
+    of month-end counts for an annual figure. Report monthly for
+    operations and annually for comparison with industry surveys, which
+    are annual. State whether tax is included and whether frozen
+    memberships are counted as active.
+  example: >
+    A gym collects 1,380,000 dollars in a year: 1,040,000 in dues,
+    215,000 in personal training, 75,000 in paid classes and programs,
+    and 50,000 in retail and lockers. Average active members across the
+    twelve month-ends were 1,920. Revenue per member is 1,380,000
+    divided by 1,920, or about 719 dollars a year, roughly 60 dollars
+    a month. Dues alone were 542 dollars per member, so add-ons
+    contributed about a quarter of the yield.
+  benchmarks:
+    - scope: Health clubs, United States, by club size
+      value: 630.80 dollars (smaller clubs) to 876.10 dollars (larger clubs) per member per year
+      note: IHRSA Profiles of Success figures for 2013 data as reported by Health Club Management; club size thresholds are not stated in the article and the figures are more than a decade old, so treat them as a shape (larger clubs yield more per member) and a floor for today's prices.
+      source: https://www.healthclubmanagement.co.uk/health-club-management-features/IHRSA-update-IHRSA-news/29480
+      source_name: Health Club Management citing IHRSA Profiles of Success (2013 data)
+  benchmark_note: >
+    Current revenue per member figures sit inside the Health and
+    Fitness Association's paid benchmarking report; the 2025 press
+    release gives revenue growth and retention but no per-member
+    figure. Set the target from the club's own price list: dues per
+    member times twelve is the floor, and the add-on share seen in the
+    club's best quarter is the target for the rest of the year.
+  drivers:
+    - name: Price tier mix
+      note: The share of members on premium versus promotional plans sets the dues base, and heavy discounting to hit join targets lowers yield for a year.
+    - name: Personal training attachment
+      note: Personal training is the largest add-on in most clubs, and the share of members buying it moves revenue per member more than any other line.
+    - name: Rate increases and grandfathered pricing
+      note: Members left on old rates for years hold the average down; a managed annual increase with notice lifts yield with modest churn.
+    - name: Frozen and dormant members in the count
+      note: Members paying a freeze fee or nothing at all sit in the denominator and dilute the figure; how they are counted changes the number.
+    - name: Ancillary revenue lines
+      note: Paid classes, retail, lockers, and cafe add a few dollars a month each, and clubs that run them well show it in the annual figure.
+  improve:
+    - name: Offer training at the point of joining
+      note: A discounted starter pack of sessions sold with the membership attaches training to a share of new members who would never buy it later.
+    - name: Run an annual pricing review
+      note: Move members on legacy rates toward the current price in steps, and align promotions to a fixed calendar so discounting does not become permanent.
+    - name: Build a premium tier with real content
+      note: A higher tier that includes classes, guest passes, or recovery services moves a share of members up without a rate increase for everyone.
+    - name: Report add-on revenue per member by trainer and class
+      note: Knowing which trainers and programs generate ancillary revenue directs floor time and marketing toward what members actually buy.
+    - name: Sell add-ons to existing members as well as new ones
+      note: A member two years in is a cheaper training or program sale than a new lead, and the data on their visit habits shows what to offer.
+  pitfalls:
+    - name: Denominator from a single month-end
+      note: Using December's member count for annual revenue distorts the figure in a club that grows or shrinks through the year; use an average.
+    - name: Comparing monthly and annual figures
+      note: Industry surveys report annual revenue per member; a monthly club figure must be multiplied out, and seasonal months will not match.
+    - name: Non-member revenue in the numerator
+      note: Day passes, corporate events, and space rental are not member revenue; including them inflates the yield per member.
+    - name: Mixing gross and net of tax
+      note: Sales tax on retail and services can add several percent; state the basis and keep it consistent across periods.

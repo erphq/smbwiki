@@ -5,3 +5,72 @@ summary: >
   Orders delivered exactly as placed.
 unit: percent
 direction: higher
+article:
+  what: >
+    Order accuracy is the share of orders that went out exactly as the
+    customer placed them: right items, right modifiers, right
+    quantities, nothing missing from the bag. It belongs to the shift
+    lead at the window or counter, and for a pizzeria or food truck
+    doing delivery it is the number the driver can no longer fix. A
+    wrong order costs the remake, the refund or the free item, and the
+    customer's next visit, and in a drive-thru lane or a delivery bag
+    the error is discovered after the customer has gone.
+  formula: Orders delivered exactly as placed ÷ orders delivered in the period × 100
+  how_to_calculate: >
+    The denominator is every order completed in the period, from the
+    POS. The numerator is orders with no error; count an order wrong if
+    any item, modifier, quantity, side, sauce or utensil the customer
+    asked for was missing or wrong, whether or not the customer
+    complained. Errors surface through remakes, refunds, voids after the
+    sale, delivery app issue reports and mystery shops, so combine those
+    sources and accept that complaint-based counts understate. Report by
+    channel (counter, drive-thru, phone, app, third-party delivery) and
+    by daypart; dinner and delivery usually run worst. Item-level
+    accuracy, wrong items divided by items, is a finer version.
+  example: >
+    A pizzeria fills 1,940 orders in a week across counter, phone and
+    two delivery apps. Refund and remake logs plus app-reported issues
+    show 87 orders with an error: 39 missing sides or dipping sauces, 22
+    wrong toppings, 14 wrong size, 12 missing drinks. Order accuracy is
+    1,853 divided by 1,940, or 95.5 percent. Delivery orders ran 92.8
+    percent and counter orders 97.9. A bag-check line on the ticket for
+    sides and drinks would have removed the largest category.
+  benchmarks:
+    - scope: Quick-service restaurant drive-thru, United States
+      value: 87 percent of orders accurate (study average)
+      note: Intouch Insight 25th Annual Drive-Thru Study, 13 brands, 165 mystery shops per brand, June to July 2025; AI-assisted voice orders ran 83 percent and 90 percent with an employee backing the AI. Figure as reported by MediaPost, cited because the study's own summary page prints the brand ranking without the overall average.
+      source: https://www.mediapost.com/publications/article/410137/how-ai-is-affecting-drive-thru-restaurant-ordering.html
+      source_name: Intouch Insight, 25th Annual Drive-Thru Study (2025), as reported by MediaPost
+  drivers:
+    - name: Order-taking clarity
+      note: A speaker that crackles or a cashier who does not repeat the order back turns a clear request into a guess the kitchen executes faithfully.
+    - name: Modifier load
+      note: No onions, extra sauce, half and half toppings and a substitution on one ticket multiply the places an order can go wrong.
+    - name: Bagging and expo check
+      note: Most misses are complete items left on the counter, sides and drinks above all, which a check against the ticket at hand-off would catch.
+    - name: Peak volume
+      note: Accuracy drops in the dinner rush as tickets stack and bags are closed before the last item lands, so the rate by hour shows the problem.
+    - name: Third-party menu mapping
+      note: A delivery app menu that is out of step with the POS creates orders the kitchen cannot make as written, and the app logs the substitution as an error.
+  improve:
+    - name: Repeat the order back
+      note: Reading the order back at the speaker or counter, and showing it on a confirmation screen, catches the entry error before the kitchen sees it.
+    - name: Print a bag label with the item list
+      note: A label listing every item, side and sauce lets the bagger tick against it, and the customer can check it before driving away.
+    - name: Assign an expo check at hand-off
+      note: One person at the window or pass compares bag contents to the ticket on every order at peak; it costs a few seconds and removes most missing items.
+    - name: Simplify modifiers
+      note: Fewer, clearer modifier buttons in the POS reduce mis-keyed orders and make the kitchen ticket readable at a glance.
+    - name: Audit delivery app menus monthly
+      note: Compare each app menu to the POS for items, sizes and modifiers, and retire anything the kitchen no longer makes, so app orders arrive makeable.
+    - name: Log errors by type and coach
+      note: A weekly tally of missing items, wrong items and wrong modifiers by channel tells the shift lead which step to retrain.
+  pitfalls:
+    - name: Counting only complaints
+      note: Many customers with a missing sauce say nothing and order elsewhere next time; complaint counts flatter the rate by several points.
+    - name: Mixing item and order accuracy
+      note: A five-item order with one wrong item is 80 percent accurate by item and 0 percent by order; state which basis you report.
+    - name: Leaving out third-party delivery
+      note: Errors reported through the delivery app are refunded by the platform and never reach the POS, so they vanish unless the app reports are pulled.
+    - name: Small mystery-shop samples
+      note: Twenty shops a month cannot separate 93 from 96 percent; use the full order count from logs and keep shops for the qualitative detail.

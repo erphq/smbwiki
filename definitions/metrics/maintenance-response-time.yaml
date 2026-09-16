@@ -5,3 +5,74 @@ summary: >
   Time from a maintenance request to first qualified action.
 unit: hours
 direction: lower
+article:
+  what: >
+    Maintenance response time counts the hours between a tenant or
+    resident reporting a problem and the first qualified action on it,
+    meaning a technician or vendor is assigned, has contacted the
+    resident, or is on site, depending on how the property defines it.
+    It is the property manager's number in residential and commercial
+    management and at a self-storage facility, watched because slow
+    response is the complaint residents remember at renewal, the
+    trigger for rent credits and habitability claims, and the first
+    sign that the maintenance queue is out of control.
+  formula: Time of first qualified action minus time the request was received, in hours, averaged or taken as a median across requests in the period
+  how_to_calculate: >
+    Timestamp the request when it enters the system, whether by portal,
+    call, or email, and timestamp the first qualified action: the
+    assignment to a named technician or vendor, the first contact with
+    the resident to schedule, or arrival on site. State which event you
+    use and keep it constant. Report the median and the share of
+    requests answered within the priority target, for example
+    emergencies within 4 hours and routine requests within 24 or 48
+    hours, since a mean is dragged by a few forgotten tickets. Track
+    speed of repair, request to completion, as a separate number in
+    days. Use clock hours for emergencies and business hours for
+    routine work if your policy says so, and say which.
+  example: >
+    A residential property manager receives 260 maintenance requests
+    across 900 units in a month. Measuring response as the time until
+    a technician or vendor is assigned and the resident is contacted,
+    the median is 5 hours. The 18 requests tagged emergency, no heat,
+    active leaks, and lockouts, had a median response of 1.5 hours and
+    all were answered within 4 hours. Routine requests had a median of
+    7 hours, but 21 of them waited more than 48 hours, all logged on
+    Fridays and picked up Monday, which shows the weekend queue has no
+    owner.
+  benchmarks:
+    - scope: Residential property management (repair completion, not first response)
+      value: 6.1 days median speed of repair, request to completion
+      note: Property Meld 2024 annual benchmarking report from its own customers' data across over 8.6 million work orders; 44.3 percent of work orders completed within 7 days. By category the 2024 median was 4.7 days plumbing, 5.7 HVAC, 5.8 electrical, 8.3 appliances. Vendor customer data; measures the whole repair, so first response should be well inside it.
+      source: https://propertymeld.com/wp-content/uploads/2025/03/PM24-Industry-Benchmarking-Report-December-v5.pdf
+      source_name: Property Meld, 2024 Annual Property Maintenance Operations Benchmarking Report (2024)
+  drivers:
+    - name: Intake channel and triage
+      note: Requests through a portal with a priority field are seen and assigned in minutes; voicemail and email sit until someone checks.
+    - name: In-house staff versus vendor reliance
+      note: An on-site technician can be assigned and on the way within the hour; a vendor call waits on the vendor's own schedule.
+    - name: After-hours and weekend coverage
+      note: Without an on-call rotation, a Friday evening leak is a Monday morning ticket and the median hides the two-day wait.
+    - name: Request volume per technician
+      note: A technician carrying more than the units or tickets one person can handle answers each one later, and the backlog compounds.
+    - name: Owner approval thresholds
+      note: In third-party management, repairs above the owner's approval limit wait for the owner to reply before anyone is dispatched.
+  improve:
+    - name: Define priorities and targets in writing
+      note: Publish response targets by priority to residents and staff, for example 4 hours for emergencies and 24 hours for routine, and measure against them.
+    - name: Auto-assign by category
+      note: Route plumbing, HVAC, and appliance requests to a default technician or vendor the moment they arrive, so assignment time is near zero.
+    - name: Run an on-call rotation
+      note: A named person with a phone every evening and weekend, with a vendor list, removes the weekend gap from the median.
+    - name: Raise the owner approval limit
+      note: A pre-approved repair limit in the management agreement lets routine work be dispatched without a round trip to the owner.
+    - name: Review the aging queue daily
+      note: A ten-minute morning check of unassigned and uncontacted requests catches the tickets that would otherwise wait days.
+  pitfalls:
+    - name: Counting an automatic acknowledgment as response
+      note: An auto-reply that says the request was received is not a qualified action; measure to assignment or resident contact.
+    - name: Using the mean without the tail
+      note: A few forgotten tickets barely move the mean; report the median and the share past the target so the tail is visible.
+    - name: Mixing response with completion
+      note: Response is hours to first action and speed of repair is days to done; published benchmarks mostly report the second, so compare like with like.
+    - name: Measuring only portal requests
+      note: Phone and walk-in requests logged late or not at all make the number look better than residents' experience.

@@ -6,3 +6,81 @@ summary: >
   refund or restart.
 unit: percent
 direction: lower
+article:
+  what: >
+    Cycle failure rate counts started machine cycles that did not finish
+    as intended: a washer that faulted mid-cycle and needed a refund, a
+    dryer that stopped early, a sterilizer load that aborted, failed a
+    biological or chemical indicator, or had to be rerun. In a
+    laundromat it is the owner's number, because every failed cycle is
+    a refund plus a customer who may not return. In an outpatient
+    surgery center it is the sterile processing lead's number, because
+    an aborted load delays cases and a failed indicator means recalling
+    instruments already on the shelf. Per-machine tracking is what makes
+    the number useful.
+  formula: Cycles that faulted, aborted, or required a refund, restart, or rerun ÷ cycles started × 100
+  how_to_calculate: >
+    The denominator is cycles started, from the payment system or cycle
+    counters in a laundromat and from the sterilizer printout or log in
+    a surgery center. The numerator is every cycle that ended in a fault
+    code, stopped early, was refunded or credited, or was rerun. For
+    sterilization, count aborted cycles plus loads failing a biological
+    indicator, chemical indicator, or Bowie-Dick test, plus wet packs
+    that had to be reprocessed. Record a reason with each failure and
+    exclude customer error such as a wrong cycle selection, or count it
+    separately. Compute weekly per machine and monthly for the store or
+    department, and list the machines with the most failures.
+  example: >
+    A laundromat starts 9,400 cycles in a month across 52 machines. The
+    refund and restart log shows 47 washer faults, mostly drain and door
+    lock, 22 dryer no-heat cycles, and 11 payment system errors, a total
+    of 80. Cycle failure rate is 80 divided by 9,400, or 0.85 percent,
+    and two washers account for 31 of the 47 washer faults. A surgery
+    center running 310 sterilizer loads with 4 aborts and 1 failed
+    biological indicator reads 1.6 percent.
+  benchmarks: []
+  benchmark_note: >
+    No published cycle failure or refund rate for self-service
+    laundries, and no published sterilizer cycle abort rate for
+    ambulatory surgery centers, was found at a source that could be
+    verified. Set the target from the operation's own log: after a
+    month of recording every fault with a machine and a reason, the
+    store target is the rate of the best half of the machines, and any
+    machine above twice the store rate is scheduled for repair. A
+    surgery center should treat any failed biological indicator as an
+    event to investigate regardless of the rate.
+  drivers:
+    - name: Machine age and wear parts
+      note: Door locks, drain valves, belts, igniters, and gaskets fail on a cycle-count schedule, so failures cluster on the oldest and busiest machines.
+    - name: Water pressure and steam quality
+      note: Low water pressure trips fill timeouts on washers, and wet steam or poor drainage causes wet packs and aborted sterilizer cycles.
+    - name: Loading
+      note: Overloaded washers go out of balance and stop, and overloaded or badly arranged sterilizer trays block steam contact and fail indicators.
+    - name: Payment system connectivity
+      note: A card reader or network outage that takes payment and fails to start the machine is a failed cycle to the customer even though the machine is fine.
+    - name: Preventive maintenance
+      note: Lint, scale, and worn seals turn into faults on the busiest day; a schedule by cycle count keeps them from reaching the customer.
+    - name: Operator training on the sterilizer
+      note: Wrong cycle selection, unwrapped items in a wrapped cycle, or a chamber overfilled are the usual causes of an abort that the machine did not cause.
+  improve:
+    - name: Log every failure by machine and reason
+      note: A fault code, machine number, and reason on each refund or abort turns the month into a ranked list of what to fix first.
+    - name: Fix or retire the repeat offenders
+      note: Two or three machines usually carry most failures; repairing them or pulling them from service moves the rate more than anything else.
+    - name: Service on cycle count
+      note: Pull counts from the payment system or sterilizer log and replace wear parts on the manufacturer's interval before they fail.
+    - name: Post loading guidance
+      note: A sign on the washer showing a correct load and a tray diagram in sterile processing prevent the failures that come from how the machine was filled.
+    - name: Track refunds through the payment app
+      note: Refunds issued through the card or app system come with machine, time, and reason attached, which makes the log automatic and complete.
+    - name: Check steam and water supply
+      note: Test water pressure and steam quality on a schedule and after any plumbing work, since supply problems show as failures across many machines at once.
+  pitfalls:
+    - name: Counting only refunds requested
+      note: Customers who lose a cycle and leave without asking are the majority; use fault codes and cycle logs, not the refund book alone.
+    - name: Missing failures in unattended hours
+      note: A store open overnight with no attendant records nothing; pull machine error logs or payment data for those hours or the rate is fiction.
+    - name: Mixing customer error with machine failure
+      note: A wrong cycle chosen by a customer or an operator is a training issue, not a machine issue; count it separately so repairs target the right thing.
+    - name: Reading a small monthly count in a surgery center
+      note: One abort in 60 loads is 1.7 percent and one in 60 the next month is the same, so trend over a quarter and investigate each event on its own.

@@ -5,3 +5,78 @@ summary: >
   Scheduled operating time that equipment is available for safe use.
 unit: percent
 direction: higher
+article:
+  what: >
+    Equipment uptime counts the share of scheduled operating hours that
+    a unit was available and safe to use: a truck ready to dispatch, a
+    treadmill on the gym floor, a rental excavator ready for the lot, a
+    press ready to run, a brewery glycol system holding temperature, a
+    hotel elevator in service. It is the maintenance lead's number and
+    the owner's number, because the scheduled hours were paid for in
+    depreciation, lease, insurance, and staffing whether or not the
+    unit worked. It measures availability, not use: an idle truck that
+    could have gone out counts as up.
+  formula: (Scheduled operating hours minus unplanned downtime hours) ÷ scheduled operating hours × 100
+  how_to_calculate: >
+    The denominator is the hours the unit was scheduled to be available,
+    from shifts, open hours, or rental days, never calendar hours.
+    Decide whether planned maintenance sits inside or outside the
+    scheduled hours and keep the rule fixed; excluding it gives
+    operational availability, including it gives total availability.
+    Downtime runs from failure or removal from service until return to
+    service, including time waiting for parts or a technician. Compute
+    monthly per unit and average a fleet weighted by scheduled hours. A
+    rental company counts fleet days available divided by fleet days; a
+    trucking or courier operation counts units available at dispatch
+    divided by units scheduled.
+  example: >
+    An equipment rental company runs 40 units over 26 working days, so
+    the month holds 1,040 unit days. Three skid steers wait four days
+    each for parts (12 unit days), an excavator is down eight days for
+    a hydraulic pump, and assorted faults cost 14 more, a total of 34.
+    Uptime is 1,006 divided by 1,040, or 96.7 percent; the excavator at
+    450 dollars a day cost more than the other 26 unit days combined.
+  benchmarks: []
+  benchmark_note: >
+    No published equipment uptime range for these business types was
+    found at a source that could be verified. Manufacturing software
+    vendors publish overall equipment effectiveness studies from their
+    own customers, but those combine availability with speed and
+    quality and do not separate uptime, and trucking, rental, fitness,
+    and lodging associations do not publish an availability figure.
+    Set the target by unit class from the operation's own history:
+    record downtime per unit for a quarter, take the best-performing
+    class as the target, and review any unit that misses it twice.
+  drivers:
+    - name: Age and duty cycle
+      note: Hours or miles per year and the load the unit carries set the failure rate; the busiest and oldest units carry most of a fleet's downtime.
+    - name: Preventive maintenance adherence
+      note: Service done on the interval catches wear before failure; a fleet that defers oil changes and inspections converts scheduled hours into breakdowns.
+    - name: Parts lead time
+      note: A unit waiting a week for a part is down a week regardless of how fast the technician works, so uptime tracks the spares on the shelf.
+    - name: Technician availability
+      note: One mechanic covering a fleet queues repairs; the wait in the queue is downtime for every unit behind the first.
+    - name: Operator handling
+      note: Abuse, missed pre-use checks, and untrained use cause failures that maintenance cannot prevent, which is why operator inspections belong in the program.
+    - name: Operating environment
+      note: Dust, salt, heat, and vibration shorten component life, so the same model in a different setting needs a different service interval.
+  improve:
+    - name: Service on hours or miles, not the calendar
+      note: Pull meter readings and schedule maintenance on the manufacturer's interval, so busy units are serviced more often and idle ones are not over-serviced.
+    - name: Hold critical spares for each model
+      note: Stock the parts that history shows fail most, and keep a supplier arrangement for the rest, so a repair waits hours instead of days.
+    - name: Require a pre-shift or pre-rental inspection
+      note: A checklist walk-around by the operator catches leaks, worn tires, and loose parts before the unit goes out and fails on the job.
+    - name: Track mean time to repair separately
+      note: Uptime hides whether failures are frequent or slow to fix; recording repair time by cause shows whether to buy parts, add a technician, or replace the unit.
+    - name: Standardize models across the fleet
+      note: Fewer models mean fewer spares, more familiar repairs, and interchangeable attachments, all of which shorten downtime.
+  pitfalls:
+    - name: Using calendar hours as the denominator
+      note: A unit scheduled 10 hours a day that is measured over 24 shows downtime at less than half its true share of the hours that mattered.
+    - name: Counting a degraded unit as available
+      note: A truck with a failed lift gate or a treadmill with a slipping belt is unsafe or unusable for its purpose and belongs in downtime even though it powers on.
+    - name: Averaging units without weighting
+      note: A simple average of ten units gives a spare generator the same weight as the main press; weight by scheduled hours or by revenue.
+    - name: Moving planned maintenance in and out of the count
+      note: Excluding planned work one month and including it the next makes the trend meaningless; pick one definition and label the metric with it.

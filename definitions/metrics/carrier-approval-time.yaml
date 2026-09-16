@@ -6,3 +6,68 @@ summary: >
   status.
 unit: hours
 direction: lower
+article:
+  what: >
+    Carrier approval time measures the hours between a carrier submitting a
+    complete onboarding packet and the brokerage marking it approved or
+    rejected. It is the compliance desk's number inside a freight
+    brokerage, and it sits between the carrier rep who wants to cover a
+    load with a new truck and the owner who does not want a load handed to
+    a fraud or an uninsured carrier. Operators watch it because a slow
+    approval loses the load to the board, a rushed one lets bad carriers
+    through, and the clock only starts when the packet is complete.
+  formula: Sum of hours from complete packet received to approved or rejected ÷ carriers decided in the period
+  how_to_calculate: >
+    Start the clock when the packet is complete: W-9, certificate of
+    insurance naming the brokerage, signed broker-carrier agreement, and
+    the authority, safety and identity checks returned. Time spent chasing
+    a missing document belongs in a separate packet-completion measure.
+    Stop the clock when the carrier's status changes to approved or
+    rejected in the TMS or onboarding tool. Report the median and the 90th
+    percentile in hours, and split business hours from elapsed hours when
+    the desk is closed overnight. Also record the share decided within a
+    stated target such as four business hours.
+  example: >
+    A freight brokerage onboards 84 new carriers in a month. Its onboarding
+    platform shows 71 packets completed and decided the same day with a
+    median of 1.4 hours; 13 were held for manual review of insurance or
+    identity mismatches and took a median of 26 hours. The blended mean is
+    5.2 hours and the median 1.6 hours. The owner sets a two-hour median
+    and a 90th percentile under 24 hours, and reviews the 13 holds to see
+    which check caused each one.
+  benchmarks: []
+  benchmark_note: >
+    No survey or association publishes carrier approval times; the figures
+    in circulation are onboarding vendors' claims about their own
+    products. Set the target from the desk's own timestamps: a median
+    inside the working hour in which a load is being covered, and a hard
+    limit on how long a manual hold may sit before someone decides.
+  drivers:
+    - name: Automated checks
+      note: Packets that pull FMCSA authority, insurance and safety data by API decide in minutes; packets checked by hand wait for a person.
+    - name: Identity and fraud screening
+      note: Checks for mismatched phone numbers, recently changed authority and known double-brokering patterns add holds, and holds add hours.
+    - name: Insurance verification
+      note: A certificate that names the wrong party or shows an expiring policy stops the clock until the agent responds.
+    - name: Compliance staffing and hours
+      note: A desk that closes at 5 p.m. turns a 4.30 p.m. packet into a next-day approval, which the load will not wait for.
+    - name: Incomplete packets from carrier reps
+      note: Reps who push a carrier through before the packet is complete create a queue of holds that looks like slow compliance.
+  improve:
+    - name: Use an onboarding platform with live data pulls
+      note: Authority, insurance and safety data pulled at submission remove most of the manual checks from the standard case.
+    - name: Write the rejection rules down
+      note: A list of automatic rejections, such as authority under 90 days or no cargo coverage, lets any staff member decide without escalation.
+    - name: Queue by load urgency
+      note: Flag packets tied to a load picking up today so they are decided before routine additions to the carrier base.
+    - name: Approve carriers ahead of need
+      note: Onboard the carriers reps expect to use on next month's lanes now, so approval is off the critical path when the load appears.
+    - name: Set a hold time limit
+      note: Any packet held for manual review is decided within one business day, with a named person accountable for the queue.
+  pitfalls:
+    - name: Clock started at first contact
+      note: Measuring from the rep's first call includes days of the carrier not sending documents, which is the carrier's time, not the desk's.
+    - name: Rejections left out
+      note: A rejection is a decision too; counting approvals only hides slow rejections that also blocked a load.
+    - name: Re-approvals ignored
+      note: A carrier whose insurance lapsed and was re-verified went through the same process; include re-approvals in the measure.

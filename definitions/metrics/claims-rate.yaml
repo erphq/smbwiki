@@ -5,3 +5,66 @@ summary: >
   Completed loads that produce a formal cargo or service claim.
 unit: percent
 direction: lower
+article:
+  what: >
+    Claims rate counts the share of completed loads that ended in a formal
+    claim, whether for cargo loss or damage, a shortage, or a service
+    failure such as a missed delivery that the shipper bills back. It is
+    the freight brokerage's number: the broker sits between the shipper
+    who files the claim and the carrier whose insurance or pocket should
+    pay it. Operators watch it because each claim ties up staff for weeks,
+    exposes the brokerage to paying claims a carrier will not, and because
+    shippers use it when deciding whether to keep tendering freight.
+  formula: Loads with a formal claim filed ÷ loads completed in the period × 100
+  how_to_calculate: >
+    The denominator is loads delivered in the period; the numerator is
+    claims filed against those loads, counted once per load even when the
+    shipper claims several items. Attach the claim to the month the load
+    delivered, so a late-filed claim does not distort a later period; this
+    means the rate for a recent month keeps rising for up to nine months,
+    the Carmack filing window. Separate cargo claims from service claims in
+    the report. Carriers publish a different measure, claims paid in
+    dollars divided by revenue, which compares carriers well but is a
+    dollar ratio and not an incidence rate.
+  example: >
+    A freight brokerage delivered 4,200 loads in the first quarter. By the
+    end of the third quarter, 46 of those loads carried a formal claim: 31
+    for damage, 9 for shortage and 6 service claims for missed
+    appointments. The claims rate for the quarter is 46 ÷ 4,200, or 1.1
+    percent. Nineteen of the 31 damage claims sit on loads run by four
+    carriers, which is where the carrier team starts.
+  benchmarks:
+    - scope: LTL carriers, claims ratio (dollar basis)
+      value: 0.345 percent of carrier revenue paid in claims
+      note: Weighted index of publicly traded and private LTL carriers covering 40 to 50 percent of the LTL market, first quarter 2025, down from 0.588 percent in first quarter 2020. This is claims paid divided by revenue, a dollar ratio, so it is a floor reference for a per-load incidence rate, not a substitute.
+      source: https://synchrogistics.com/wp-content/uploads/2025/08/Full-LTL-Claims-Index-Report-Updated-2Q25.pdf
+      source_name: Synchrogistics, Synchro LTL Claims Index report (updated second quarter 2025)
+  drivers:
+    - name: Carrier vetting depth
+      note: Carriers approved on authority and insurance alone, without a safety or claims history check, file into the claims log first.
+    - name: Commodity and packaging
+      note: Fragile or high-value freight and shipper packaging that fails in transit produce claims no carrier selection can prevent.
+    - name: Handling count
+      note: LTL freight crosses several docks and forklifts, so it claims at a multiple of truckload freight that is loaded once.
+    - name: Documentation at pickup and delivery
+      note: A clean bill of lading with no exceptions noted at delivery makes a concealed damage claim hard to win for anyone.
+    - name: Cargo insurance limits and exclusions
+      note: A carrier policy that excludes the commodity or caps below the load value turns a carrier claim into a brokerage cost.
+  improve:
+    - name: Run an overage, shortage and damage process at delivery
+      note: Require drivers and receivers to note exceptions on the delivery receipt with photos, and route every noted exception to the claims desk the same day.
+    - name: Verify the cargo policy behind the certificate
+      note: Check limits, deductibles and commodity exclusions on the carrier's cargo policy before tendering freight that would exceed them.
+    - name: File and chase within the windows
+      note: Acknowledge claims within 30 days and settle or deny within 120, and file the carrier claim within nine months of delivery.
+    - name: Feed packaging failures back to the shipper
+      note: When the same shipper's freight fails the same way, send photos and ask for a packaging change before the next tender.
+    - name: Put claims on the carrier scorecard
+      note: Rank carriers by claims per hundred loads and stop tendering to those above the brokerage average for two quarters.
+  pitfalls:
+    - name: Claims counted in the month filed
+      note: Counting by filing month makes a bad quarter look clean until the claims arrive; attach each claim to the delivery month.
+    - name: Denied claims dropped
+      note: A claim that was filed and later denied still consumed staff time and shipper goodwill; keep it in the count and track the denial rate separately.
+    - name: Carrier dollar ratios compared to a load count
+      note: A carrier's 0.4 percent claims ratio is claims dollars over revenue; it says nothing about how many loads produced a claim.

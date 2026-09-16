@@ -6,3 +6,75 @@ summary: >
   unplanned disposal.
 unit: percent
 direction: lower
+article:
+  what: >
+    Material waste rate counts purchased job material that never ends
+    up in the finished work: tile cut to slivers, boxes broken in
+    transit, paper spoiled on press, stock ordered for a room and left
+    over with no next use. It is the estimator's number and the project
+    manager's number, because every job was priced with a waste
+    allowance and the rate says whether the allowance and the order
+    quantity were right. It is broader than scrap rate: it covers the
+    whole material bill for a job, including over-ordering and damage,
+    which is where most of a tile contractor's leakage sits.
+  formula: (Material purchased for the job minus material in the finished work) ÷ material purchased × 100
+  how_to_calculate: >
+    Measure in the unit the material was bought in: square feet of tile,
+    sheets or pounds of paper. The numerator is material purchased less
+    material installed or delivered, with installed quantity taken from
+    the takeoff or a field measurement. It includes cut waste, breakage,
+    spoilage, and leftover stock. Decide whether unopened boxes returned
+    for credit and attic stock left with the owner are excluded; the
+    common rule excludes both, since neither is lost. Compute per job,
+    then track a rolling rate by crew, job type, and pattern, and
+    compare each job against the waste factor carried in its estimate.
+  example: >
+    A tile contractor's takeoff for a bathroom floor and shower walls is
+    420 square feet. The order is 480 square feet, a 14 percent overage.
+    The crew installs 420 square feet, cuts and breaks 38, and leaves 22
+    in opened boxes. Waste rate is 60 divided by 480, or 12.5 percent.
+    If the 22 square feet had been unopened and returned for credit, the
+    rate would be 38 divided by 480, or 7.9 percent.
+  benchmarks: []
+  benchmark_note: >
+    No published material waste rate for tile contractors or commercial
+    printers was found at a source that could be verified; the tile
+    overage percentages that circulate online come from calculator
+    pages that cite each other, and the Tile Council of North America
+    handbook is not free to read. Set the target from the estimate:
+    the waste factor carried in the quote for that layout and material
+    is the ceiling, and the target is the median of the last ten jobs
+    by pattern, reviewed against the estimate each time a job closes.
+  drivers:
+    - name: Layout pattern and tile size
+      note: Diagonal, herringbone, and large-format layouts produce more and longer cuts than a straight lay of the same area, and every cut edge is waste.
+    - name: Room geometry
+      note: Alcoves, niches, curves, and many inside corners raise the cut count per square foot, so a small complex bathroom wastes more than a large open floor.
+    - name: Breakage in transport and handling
+      note: Tile and stone break in the truck, on the stairs, and on the cutter; porcelain chips at corners and large panels crack when carried by one person.
+    - name: Order rounding to full boxes and rolls
+      note: Material sold by the box or the roll forces an order above the takeoff, and the rounding becomes leftover unless a return is arranged.
+    - name: Takeoff accuracy
+      note: A takeoff that misses a wall return or overstates an area sets the order wrong before any cutting; measure on site when drawings are old.
+    - name: Run length and makeready in print work
+      note: Short runs consume a larger share of paper in makeready and spoilage, and a reprint doubles the paper on a job with no second invoice.
+  improve:
+    - name: Estimate waste by pattern, not by a flat factor
+      note: Keep a table of waste allowances by layout and tile size built from closed jobs, and apply the matching one to each takeoff.
+    - name: Plan cut placement before setting
+      note: Lay out the room so that cut pieces land at hidden edges and offcuts from one wall become starters on the next; a dry layout costs an hour.
+    - name: Reuse offcuts within the job
+      note: Keep cut pieces sorted by size near the wet saw so a half tile from one course fills the next instead of a fresh tile being cut.
+    - name: Return unopened boxes on schedule
+      note: Confirm the supplier's return window and restocking fee at order time, and send unopened boxes back before the window closes.
+    - name: Reconcile every job at closeout
+      note: Compare purchased, installed, returned, and leftover quantities on each job and post the waste rate next to the estimate's allowance for the crew to see.
+  pitfalls:
+    - name: Counting attic stock as waste
+      note: Tile left with the owner for future repairs was specified and paid for; counting it as waste inflates the rate on every job that includes it.
+    - name: Mixing purchase and installed units
+      note: Ordering in boxes and measuring installed area in square feet gives a rate that depends on box size; convert both to the same unit before dividing.
+    - name: Forgetting dye lot repurchases
+      note: A short order that forces a second purchase from a different dye lot often gets the first lot scrapped for color match, and that loss belongs in the rate.
+    - name: Leaving out damaged-in-transit credits
+      note: Material credited by the supplier for transit damage was replaced at no cost, so counting the broken boxes as waste overstates the job's true loss.

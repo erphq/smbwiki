@@ -6,3 +6,72 @@ summary: >
   release.
 unit: minutes
 direction: lower
+article:
+  what: >
+    Prescription fill time measures how many minutes pass between a
+    fillable prescription entering the pharmacy queue and the
+    pharmacist releasing it for pickup. It is the pharmacy manager's
+    number and the technicians' daily reality, and an independent
+    pharmacy owner watches it because waiting customers are the visible
+    face of the operation: a fill time that drifts from fifteen minutes
+    to forty shows up as a crowded counter, abandoned prescriptions,
+    and customers who quietly transfer to the chain down the road.
+  formula: Sum of minutes from queue entry to pharmacist release for prescriptions filled in the period ÷ prescriptions filled
+  how_to_calculate: >
+    Start the clock when the prescription becomes fillable: the
+    e-prescription arrives, the paper script is entered, or the refill
+    request is accepted. Stop it when the pharmacist completes final
+    verification and the bag goes to the will-call bin. Report the
+    median as well as the mean, because a few insurance rejections or
+    out-of-stock items produce long tails that swamp an average. Track
+    waiters (customers in the store) separately from prescriptions
+    promised for later in the day, and exclude time the prescription
+    sat waiting on a prescriber callback or prior authorization, or
+    report it as a separate "on hold" measure.
+  example: >
+    A pharmacy fills 310 prescriptions on a Tuesday. For the 120
+    customers who waited in the store, the queue-to-release times add
+    up to 2,280 minutes, a mean of 19 minutes and a median of 16. The
+    slowest twelve took over 45 minutes, all because of a rejected
+    insurance claim or a missing dose in stock. Excluding those twelve
+    the mean drops to 15 minutes, which tells the owner the workflow is
+    fine and the exceptions are the problem.
+  benchmarks: []
+  benchmark_note: >
+    No trade association, regulator, or government statistic publishes
+    prescription fill times for community pharmacies; published wait
+    time studies cover hospital outpatient pharmacies in other countries
+    and are not comparable. Set the target from the pharmacy's own
+    system logs: most dispensing software timestamps each stage, so
+    measure the median for waiters over a month, set a promise time the
+    staff can keep on a normal day, and track the share of waiters who
+    receive their prescription inside that promise.
+  drivers:
+    - name: Insurance claim rejections
+      note: A rejected claim stops the fill until a technician resolves it with the plan or the customer, and rejections are the main source of the long tail.
+    - name: Stock availability
+      note: A partial fill or an out-of-stock item turns a fifteen-minute fill into a next-day one, and the shortfall in the ordering process shows here first.
+    - name: Technician staffing against the arrival curve
+      note: Prescriptions arrive in waves after clinic hours and at lunchtime; a bench staffed flat across the day is slow at the peaks and idle between them.
+    - name: Pharmacist verification as the bottleneck
+      note: One pharmacist verifying every fill while also counselling and taking calls caps throughput, and the queue backs up behind the final check.
+    - name: Prior authorization and prescriber clarifications
+      note: A script that needs a callback can sit for hours; how quickly the store escalates and how it communicates with the customer decides the perceived wait.
+  improve:
+    - name: Resolve claim rejections in a dedicated lane
+      note: Route rejected claims to one technician who calls the plan or customer immediately, so the rest of the queue keeps moving.
+    - name: Fill refills ahead of pickup
+      note: Batch tomorrow's expected refills overnight or first thing so walk-in demand meets a pre-filled bag instead of a queue.
+    - name: Stagger technician shifts to the arrival peaks
+      note: Add a technician from late morning through early evening when e-prescriptions from clinics arrive, and thin the bench in the quiet hours.
+    - name: Separate waiter and scheduled queues
+      note: Flag in-store waiters in the queue so they are filled first, and give promised-later prescriptions a realistic pickup time.
+    - name: Reorder from the dispensing log
+      note: Use fill history to set reorder points for the top few hundred drugs so partial fills stop being a daily cause of delay.
+  pitfalls:
+    - name: Averages hiding the long tail
+      note: A mean of 20 minutes can hide a tenth of customers waiting an hour; report the median and the share over the promise time.
+    - name: Clock started at pickup instead of queue entry
+      note: Measuring only from when the customer asks at the counter ignores the queue time that caused the wait in the first place.
+    - name: On-hold time mixed into the fill
+      note: Hours waiting for a prescriber callback are a different problem from slow bench work; log them separately or the workflow number is meaningless.

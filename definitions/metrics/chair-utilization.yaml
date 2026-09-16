@@ -6,3 +6,71 @@ summary: >
   service.
 unit: percent
 direction: higher
+article:
+  what: >
+    Chair utilization counts the share of hours that a dental
+    operatory or salon chair was open for business and had a paying
+    client in it. It is the practice owner's and the scheduler's
+    number, and it is watched because the chair is the unit of
+    capacity that everything else is built around: the room, the
+    equipment, and the staff assigned to it cost the same whether the
+    chair is full or empty, and the difference between a practice at 65
+    percent and one at 85 percent is most of its profit.
+  formula: Hours of scheduled, revenue-producing service in the chair ÷ hours the chair was available to be booked × 100
+  how_to_calculate: >
+    List every chair or operatory and the hours it was staffed and
+    open to bookings in the period, the denominator. Count in the
+    numerator the hours a paying patient or client was scheduled in it
+    and the service was delivered, excluding no-shows, cancellations,
+    and internal blocks. Report per chair and in total, and separately
+    for hygiene and doctor operatories in a dental practice, since they
+    fill differently. A dental practice with more chairs than
+    providers should also report utilization against staffed chair
+    hours, not physical chairs, or an empty fourth operatory drags
+    the number down for no operational reason.
+  example: >
+    A dental clinic runs three operatories, each open 36 hours a week,
+    108 available chair hours. Two are used by hygienists and one by
+    the dentist. Delivered appointments in the week total 78 hours
+    after removing 6 hours of no-shows and 4 hours of unfilled gaps.
+    Chair utilization is 78 divided by 108, or 72 percent. The dentist's
+    chair ran at 84 percent; the second hygiene chair at 58 percent,
+    which is the one the recall program needs to fill.
+  benchmarks: []
+  benchmark_note: >
+    Neither the ADA Health Policy Institute nor any salon trade body
+    publishes chair utilization figures; the numbers in circulation are
+    vendor and consultant targets. Set the target from the practice's
+    own schedule: measure per chair for a month, and set a target that
+    leaves 10 to 15 percent of chair hours open for emergencies and
+    same-week rebooking, since a chair booked solid weeks ahead turns
+    away the highest-value urgent work.
+  drivers:
+    - name: Recall and rebooking rate
+      note: Hygiene chairs fill from the recall list, and a practice reappointing 85 percent at the chair keeps them full months ahead without marketing.
+    - name: No-shows and late cancellations
+      note: Every missed slot is idle chair time already staffed, so the two metrics move together and the no-show fix is often the utilization fix.
+    - name: Provider hours matched to chairs
+      note: A chair without a provider assigned to it is empty by definition; utilization is bounded by staffing before it is bounded by demand.
+    - name: Appointment length templates
+      note: Slots booked longer than the procedure takes leave gaps that never fill; templates timed to actual durations fit more appointments in the same hours.
+    - name: Scheduling gaps between appointments
+      note: Fifteen-minute holes scattered through the day add up to an unbooked chair hour or two, and they are invisible without a per-chair view.
+  improve:
+    - name: Pre-appoint recall at the chair
+      note: Book the next hygiene visit before the patient leaves; it is the cheapest way to keep hygiene chairs full six months out.
+    - name: Run a short-notice list
+      note: Keep patients who want earlier appointments on a call list and fill same-day cancellations from it within the hour.
+    - name: Block schedule by procedure type
+      note: Reserve blocks for high-value doctor procedures and cluster short appointments so the day fills without gaps.
+    - name: Add provider hours before adding chairs
+      note: If a chair sits unstaffed part of the week, extend a hygienist's hours or add a part-time provider before building a new operatory.
+    - name: Review per-chair utilization weekly
+      note: A one-page report showing each chair's booked and delivered hours makes the empty chair obvious to the scheduler who can fix it.
+  pitfalls:
+    - name: Physical chairs in the denominator when they are unstaffed
+      note: A fourth operatory without a provider deflates the rate for reasons no scheduler can fix; measure against staffed hours and report the unstaffed chair separately.
+    - name: Booked hours counted as delivered
+      note: A schedule that looks 90 percent full but loses 12 percent to no-shows is delivering 79 percent; use delivered hours in the numerator.
+    - name: Mixing hygiene and doctor chairs
+      note: Hygiene chairs fill from recall and doctor chairs from treatment acceptance; a blended figure hides which system is failing.

@@ -5,3 +5,69 @@ summary: >
   Qualified inbound leads that become booked jobs.
 unit: percent
 direction: higher
+article:
+  what: >
+    Booking rate is the share of qualified inbound leads, mostly phone
+    calls, web forms, and chats, that the office turns into a scheduled
+    job or appointment. It is the number for the front desk and the
+    customer service team: marketing paid to make the phone ring, and
+    this measures how much of that spend became work on the calendar.
+    Owners watch it because a missed or mishandled call is the most
+    expensive leak in a service business, and because a ten point rise
+    in booking rate is worth the same as a ten percent rise in
+    advertising with no extra cost.
+  formula: Leads booked into a job or appointment ÷ qualified inbound leads received × 100
+  how_to_calculate: >
+    Count inbound leads in the period and remove those that are not
+    opportunities: vendor calls, existing job follow-ups, wrong numbers,
+    and requests outside the service area. Count the remaining
+    qualified leads that were booked into a job, estimate, or
+    appointment. Divide booked by qualified and express as a percent.
+    Also report the unqualified rate, because an office can flatter the
+    booking rate by marking hard calls as unqualified. Measure missed
+    and abandoned calls as leads with no booking. Segment by lead
+    source, by call taker, and by time of day so the after-hours and
+    overflow gaps show.
+  example: >
+    A plumbing contractor logs 640 inbound calls and 110 web forms in
+    a month. Reviewing the recordings, the office marks 190 as not
+    opportunities, leaving 560 qualified leads. Of those, 335 were
+    booked and 225 were lost, including 48 calls that rang out
+    unanswered. The booking rate is 335 divided by 560, or 60 percent;
+    excluding the unanswered calls it is 65 percent, so the owner sees
+    the two problems separately: answering and converting.
+  benchmarks:
+    - scope: Residential HVAC, plumbing, and electrical contractors
+      value: 42 percent of inbound calls booked
+      note: Software vendor's own platform data, June 2022, more than 3,000 US and Canadian trade businesses; plumbing 43 percent, electrical 41, HVAC 38, garage door and water treatment 31. All inbound calls in the denominator, so a qualified-lead rate reads higher. No independent survey found.
+      source: https://www.servicetitan.com/blog/data-call-booking-rates
+      source_name: ServiceTitan, Data Report - Average Call Booking Rates (June 2022)
+  drivers:
+    - name: Answer rate
+      note: A call that rings out or reaches voicemail is a lost lead in most trades, and evenings, lunch hours, and overflow are where most go unanswered.
+    - name: Call taker skill and script
+      note: Asking for the appointment, handling the price question, and offering two time slots move the rate more than any change in advertising.
+    - name: Availability on the schedule
+      note: When the next opening is a week out, callers with an urgent problem hang up and call the next listing; capacity limits the rate.
+    - name: Lead source
+      note: Referral and repeat callers book at high rates while pay-per-click and lead aggregator leads shop several firms and book lower.
+    - name: Price given on the phone
+      note: A flat price stated before value is explained loses callers; a diagnostic fee explained with what it includes keeps them.
+  improve:
+    - name: Answer every call live
+      note: Staff the phones through lunch and peak hours, route overflow to a trained backup, and use an answering service after hours that can book.
+    - name: Script the close and train on recordings
+      note: Give call takers a short script that ends with an offered time, review recorded calls weekly, and coach on the calls that did not book.
+    - name: Call back missed calls within minutes
+      note: Return every missed call and web form fast, before the customer reaches a competitor; the first firm to respond usually wins the job.
+    - name: Reserve capacity for same-day work
+      note: Hold slots for urgent calls so the office can say yes today, and sell maintenance into the slow weeks separately.
+    - name: Pay a booking incentive
+      note: Tie part of the call taker's pay to booked jobs from qualified leads, measured from recordings, so the behavior is rewarded.
+  pitfalls:
+    - name: Unqualified leads defined loosely
+      note: Marking difficult callers as unqualified inflates the rate; audit a sample of recordings and keep the unqualified share on the same report.
+    - name: Missed calls left out
+      note: Counting only answered calls hides the largest loss; every ring-out and voicemail from a prospect belongs in the denominator.
+    - name: Booked but not run
+      note: Appointments cancelled or no-showed earned nothing; track booked-to-completed alongside the booking rate.

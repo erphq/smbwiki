@@ -393,6 +393,12 @@ const contentTypes = new Map([
   // One index page per graph node kind (moved off the homepage 2026-09-15).
   ...["skill", "role", "document", "metric", "software", "license", "market"]
     .map((segment) => [`/${segment}/`, new Set(["WebPage", "CollectionPage"])]),
+  // Sector KPI pages. Group ids must stay in step with CATALOG_GROUPS in
+  // scripts/build-site.mjs.
+  ["/kpis/", new Set(["WebPage", "CollectionPage"])],
+  ...["construction-property", "food-lodging", "health-care", "personal-recreation",
+    "retail-vehicles", "professional-financial", "logistics-production"]
+    .map((group) => [`/kpis/${group}/`, new Set(["WebPage", "CollectionPage"])]),
 ]);
 const contentNames = new Map();
 const entityPaths = new Set();
@@ -406,7 +412,9 @@ for (const node of graph.nodes) {
     new Set(
       node.label === "business" || node.label === "skill"
         ? ["Article"]
-        : ["DefinedTerm"],
+        : node.label === "metric"
+          ? ["Article", "DefinedTerm"]
+          : ["DefinedTerm"],
     ),
   );
   entityPaths.add(path);

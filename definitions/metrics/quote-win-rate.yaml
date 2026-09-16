@@ -5,3 +5,77 @@ summary: >
   Quotes delivered that the customer accepts.
 unit: percent
 direction: higher
+article:
+  what: >
+    Quote win rate is the share of priced quotes a business sends that
+    the customer goes on to accept. It is the estimator's and the
+    owner's number for whether pricing, presentation, and follow-up are
+    working: a contractor winning one quote in five is spending four
+    site visits and four evenings of takeoff for every job, while one
+    winning one in two has half the cost of sale. It also reads price
+    position; a rate that jumps after a price cut says the market was
+    price sensitive, and one that holds after an increase says there
+    was room.
+  formula: Quotes accepted in the period ÷ quotes delivered in the period × 100
+  how_to_calculate: >
+    Count quotes delivered to a customer in the period, and count those
+    the customer accepted by signature, deposit, or purchase order.
+    Divide accepted by delivered and express as a percent. Decide
+    whether to measure by count or by dollar value; a firm that wins
+    small jobs and loses large ones shows a high count rate and a low
+    value rate. Match acceptance to the quote's delivery date, or use a
+    cohort of quotes old enough to have decided, so late acceptances
+    are not counted as losses. Exclude quotes still open and quotes
+    withdrawn before a decision, and track them separately.
+  example: >
+    A painting contractor delivers 84 quotes in a quarter. By quarter
+    end 31 have been signed with a deposit, 44 have been declined or
+    gone silent past 30 days, and 9 are still open. Win rate on decided
+    quotes is 31 divided by 75, or 41 percent. By value, the 31 wins
+    total 205,000 dollars of the 640,000 dollars quoted, a 32 percent
+    value rate, which tells the owner the larger exterior jobs are the
+    ones being lost.
+  benchmarks: []
+  benchmark_note: >
+    No government or trade association series publishes quote win
+    rates, and figures quoted by estimating software vendors come from
+    their own customer data without a stated sample. Set the target
+    from the firm's own history by job type and lead source, and from
+    the cost of quoting: if a quote costs a site visit and three hours
+    of estimating, the win rate needed to make the cost of sale
+    acceptable is a matter of arithmetic. A rate near 100 percent
+    usually means the firm is priced too low or quoting too few
+    prospects.
+  drivers:
+    - name: Price relative to competitors
+      note: Where three bids are in hand the customer often picks the lowest, so a firm priced above the local market loses on price alone.
+    - name: Lead quality and qualification
+      note: Quoting every inquiry, including price shoppers and out-of-area requests, adds losses to the denominator that a qualifying call would have screened.
+    - name: Speed of the quote
+      note: The first written quote in a customer's hands frames the decision, and a quote that arrives a week after the visit often finds the job already sold.
+    - name: Presentation and options
+      note: A clear scope with photos, tiered options, and financing wins against a one-line price on a text message, at the same number.
+    - name: Follow-up discipline
+      note: A call two days after delivery and again a week later converts undecided customers who would otherwise drift to whoever chased them.
+    - name: Reputation and referral share
+      note: Quotes to referred customers and repeat customers close at far higher rates than cold leads, so the lead mix sets much of the result.
+  improve:
+    - name: Qualify before the site visit
+      note: Ask about budget, timing, and decision makers on the first call, and decline or defer prospects who do not fit before spending an estimate on them.
+    - name: Deliver the quote at the visit or within a day
+      note: Price standard work from a rate book on site and send the written quote before leaving, or the next morning at the latest.
+    - name: Offer tiered options
+      note: Give a base, a recommended, and a premium scope so the customer chooses between versions of the firm, and not between the firm and a competitor.
+    - name: Run a written follow-up sequence
+      note: Schedule a call and a message at fixed intervals after every quote and log the outcome, so no quote is lost to silence.
+    - name: Review lost quotes monthly
+      note: Ask lost customers why, sort the reasons, and fix the top one, whether it is price, timing, scope, or trust.
+  pitfalls:
+    - name: Open quotes counted as losses
+      note: Measuring at period end with recent quotes in the denominator understates the rate; use decided quotes or an aged cohort.
+    - name: Count and value rates read as one
+      note: Winning many small jobs and losing large ones gives a healthy count rate and a poor value rate; report both.
+    - name: Verbal acceptance counted as a win
+      note: A customer who says yes on the phone and never signs or pays a deposit is a lost quote; count acceptance at the point of commitment.
+    - name: Chasing the rate by cutting price
+      note: A higher win rate at a lower margin can mean less profit on more work; watch gross margin alongside the win rate.

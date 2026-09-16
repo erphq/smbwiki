@@ -6,3 +6,74 @@ summary: >
   recall outreach.
 unit: percent
 direction: higher
+article:
+  what: >
+    Recall reappointment rate counts the patients who were due for a
+    routine return visit, a six-month hygiene cleaning, an annual eye
+    exam, a pet's vaccine booster, or a maintenance chiropractic visit,
+    and who actually booked the next appointment after being reminded.
+    It is the front desk's and the recall coordinator's number, and the
+    practice owner watches it because recurring care is the base load of
+    the schedule: a practice that reappoints 85 percent of its recall
+    list fills hygiene columns months ahead, one at 50 percent spends
+    every week hunting for patients to fill the gaps.
+  formula: Patients due for recall who booked the next visit ÷ patients due for recall in the period × 100
+  how_to_calculate: >
+    Build the denominator from the recall list: patients whose next
+    due date fell in the period, whether or not any outreach reached
+    them. The numerator is those who had a future appointment on the
+    book by the end of the period or by a fixed window such as 30 days
+    after the due date. A stricter dental variant, pre-appointment rate,
+    counts only patients who booked their next hygiene visit before
+    leaving the current one, and it is worth tracking separately because
+    it costs nothing to achieve. Exclude patients marked inactive,
+    moved, or deceased so the list reflects real opportunity.
+  example: >
+    A dental clinic has 520 patients whose hygiene recall fell due in
+    April. By the end of May, 364 have a hygiene appointment booked,
+    41 have declined or moved, and 115 have no response. Recall
+    reappointment rate is 364 divided by 520, or 70 percent. Of the
+    364, 290 were booked at the chair before leaving their last visit,
+    a pre-appointment rate of 290 divided by 520, or 56 percent.
+  benchmarks: []
+  benchmark_note: >
+    No trade association or government series publishes recall
+    reappointment rates for dental, optometry, chiropractic, or
+    veterinary practices; the figures in circulation come from
+    consultants' client datasets and practice-management software
+    vendors, and they vary with whether pre-appointment at the chair or
+    later booking is counted. Set the target from the practice's own
+    list: measure the current rate over two full recall cycles, split
+    chair-side pre-appointment from later outreach, and raise the
+    pre-appointment share first because it is the cheapest lever.
+  drivers:
+    - name: Booking the next visit before the patient leaves
+      note: A patient standing at the desk with the provider's recommendation fresh books at a far higher rate than one contacted six months later.
+    - name: Outreach channel and cadence
+      note: A single postcard reaches few people; a text with a booking link, followed by a call for non-responders, reaches most of the list.
+    - name: Provider's explanation of why the interval matters
+      note: Patients who heard the clinician say why they need to return in six months book more readily than those who only heard it from the front desk.
+    - name: Schedule availability at the desired interval
+      note: If the hygiene book is full for four months the patient cannot pre-appoint, and the practice loses the easiest booking of all.
+    - name: Recall list hygiene
+      note: Lists cluttered with patients who moved or switched practices depress the rate and waste outreach effort on people who will never return.
+  improve:
+    - name: Make pre-appointment the default at checkout
+      note: Train the desk to say "let's get your next visit on the book" with two specific times, and track each provider's pre-appointment rate.
+    - name: Automate a three-touch recall sequence
+      note: Text at due date with a booking link, a second text ten days later, and a phone call at thirty days for anyone still unbooked.
+    - name: Give the recall list an owner
+      note: One staff member works the unscheduled list for a set hour each day and reports the count booked; unowned lists are never worked.
+    - name: Open the schedule far enough ahead
+      note: Keep the hygiene or exam book open at least eight months so a six-month recall can always be placed before the patient leaves.
+    - name: Clean the list each quarter
+      note: Mark patients who declined, moved, or transferred so the denominator reflects the patients the practice can actually recover.
+  pitfalls:
+    - name: Counting only patients who were contacted
+      note: Dividing by the number reached instead of the number due hides everyone the outreach missed, and flatters the rate badly.
+    - name: Mixing pre-appointment and later booking
+      note: A 70 percent rate where most bookings came from months of outreach means something different from 70 percent booked at the chair; report both.
+    - name: No fixed booking window
+      note: Without a cutoff such as 30 or 60 days after the due date the rate creeps up forever as stragglers book, and monthly figures cannot be compared.
+    - name: Inactive patients left in the denominator
+      note: Patients who moved away years ago still on the recall list drag the rate down and make the practice look worse than it performs.

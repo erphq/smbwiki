@@ -6,3 +6,77 @@ summary: >
   accepted in the scheduled work area.
 unit: percent
 direction: higher
+article:
+  what: >
+    Production plan attainment counts the share of the framing quantity
+    a crew was scheduled to finish in an area during a day or a week
+    that it actually finished and had accepted: walls stood and braced,
+    floor decked, trusses set, roof sheathed, measured in the unit the
+    plan used. It is the superintendent's number, because the plumber,
+    the electrician, and the inspector are scheduled off it, and it is
+    the owner's number, because crew hours are paid whether the plan
+    was met or the crew waited on lumber. Reliable attainment is what
+    lets a framing contractor promise a dry-in date.
+  formula: Planned quantity completed and accepted in the scheduled area and period ÷ planned quantity × 100
+  how_to_calculate: >
+    The denominator is the quantity on the plan for the period: lineal
+    feet of wall, square feet of deck or sheathing, trusses set, or
+    units framed, by area. The numerator is the part of that quantity
+    completed and walked by the lead or passed by the inspector, in the
+    scheduled area only; work done ahead somewhere else does not count.
+    Compute daily and weekly and look at both. A common variant from
+    the Last Planner system counts only tasks that finished completely,
+    called percent plan complete. Weight mixed units by planned crew
+    hours when combining them. Cap each task at 100 percent so early
+    work does not mask a miss elsewhere, and exclude scope added after
+    the plan was set.
+  example: >
+    A framing crew's weekly plan lists 620 lineal feet of exterior and
+    interior wall at 120 crew hours and 2,400 square feet of second
+    floor deck at 40 crew hours. By Friday the crew has stood and
+    braced 560 feet of wall and decked the full floor. Wall attainment
+    is 90 percent and deck is 100 percent; weighted by planned hours,
+    plan attainment is 0.90 times 120 plus 1.0 times 40, divided by
+    160, or 92.5 percent.
+  benchmarks: []
+  benchmark_note: >
+    No published production plan attainment or percent plan complete
+    figure for framing contractors was found at a source that could be
+    verified. Set the target from the crew's own record: track weekly
+    attainment for two months, note the reason for every miss, and set
+    the target at the best four-week average once the top two reasons,
+    usually material delivery and predecessor readiness, are under
+    control. A plan met every week is probably set too low.
+  drivers:
+    - name: Material delivery timing
+      note: A lumber package or truss delivery that arrives a day late idles the crew for the day, and the week's plan is missed before any framing starts.
+    - name: Predecessor readiness
+      note: A slab not cured, a foundation not backfilled, or anchor bolts in the wrong place stops the crew from starting in the scheduled area.
+    - name: Weather
+      note: Wind stops truss setting and rain stops decking; a plan that ignores the forecast will be missed on the days the crew could not safely work.
+    - name: Crew size and attendance on the day
+      note: A plan built for six framers and worked by four attains two thirds at best, so daily headcount belongs next to the daily plan.
+    - name: Crane and equipment availability
+      note: Truss and wall panel sets depend on the crane or forklift being on site at the scheduled hour, and a missed booking pushes a whole area.
+    - name: Plan realism
+      note: A plan set from an optimistic estimate misses every week and teaches the crew to ignore it; a plan set from demonstrated rates gets met and improved.
+  improve:
+    - name: Run a weekly look-ahead with constraints checked
+      note: Before committing an area to the plan, confirm material on site, predecessor work done, drawings current, and equipment booked, and drop any task that fails.
+    - name: Stage lumber packages by wall and floor
+      note: Have the yard bundle and label material by area in the order it will be framed so the crew does not spend the morning sorting a pile.
+    - name: Record the reason for every miss
+      note: A one-line reason code on each missed task turns the weekly review into a list of things to fix, with delivery and readiness usually at the top.
+    - name: Set the plan from measured crew rates
+      note: Use lineal feet and square feet per crew hour from the last several jobs to size each week's plan, and adjust for the crew actually available.
+    - name: Hold a short daily huddle on the plan
+      note: Five minutes each morning on what is due today, who is here, and what is missing catches a problem before it costs the day.
+  pitfalls:
+    - name: Counting started work
+      note: A wall that is stood but not braced or plumbed is not complete; counting it lets the next trade arrive to work that is not ready.
+    - name: Rewriting the plan mid-week
+      note: Moving tasks off the plan when they slip makes attainment look fine and destroys its value; freeze the plan and record the miss.
+    - name: Averaging mixed units without weights
+      note: Averaging 90 percent of wall footage with 100 percent of deck area as a simple mean ignores that the wall took three times the hours.
+    - name: Ignoring rework returned by the inspector
+      note: Framing that fails inspection and is redone was not accepted in the period; counting it complete before the correction overstates the week.

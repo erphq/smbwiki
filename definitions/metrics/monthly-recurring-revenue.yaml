@@ -6,3 +6,72 @@ summary: >
   agreements in a month.
 unit: currency
 direction: higher
+article:
+  what: >
+    Monthly recurring revenue adds up the membership fees a gym is
+    contractually owed for the coming month from every active
+    agreement, before any drop-in, retail, or personal training sales.
+    It is the owner's number for the floor under the business: the rent
+    and payroll it will cover before the doors open, and the base a
+    buyer or lender values the club on. A club that knows its recurring
+    revenue by the first of the month knows whether the month is
+    already made or has to be sold.
+  formula: Sum of monthly membership fees on active agreements, with annual and other terms divided to a monthly amount
+  how_to_calculate: >
+    List every membership agreement active on the measurement date and
+    take its billed fee normalized to a month: an annual prepaid
+    membership contributes one twelfth, a quarterly one a third, a
+    monthly one its full fee. Exclude joining fees, one-time charges,
+    retail, and drop-in visits. Apply discounts as billed, so a family
+    plan at 20 percent off counts at the discounted amount. Frozen
+    memberships that bill a hold fee count at the hold fee; cancelled
+    agreements past their final billing date count zero. Report new,
+    expansion, contraction, and churned amounts separately so the
+    movement is explained.
+  example: >
+    A gym on 1 March has 410 monthly members at 49 dollars, 60 members
+    on a 39 dollar founders rate, and 80 annual prepaid members who paid
+    468 dollars for the year. Monthly recurring revenue is 410 times 49,
+    or 20,090, plus 60 times 39, or 2,340, plus 80 times 39, or 3,120,
+    for 25,550 dollars. If rent and staff cost 24,000 dollars a month,
+    the club clears its fixed cost from recurring fees before selling a
+    single class pack.
+  benchmarks: []
+  benchmark_note: >
+    No government or trade association series publishes recurring
+    revenue for independent gyms, and the number is a currency amount
+    that scales with club size, so no external range applies. Set the
+    target from the club's own fixed cost: recurring revenue should
+    cover rent, minimum staffing, and debt service with a margin, and
+    the monthly movement (new agreements less cancellations and
+    downgrades) should be positive. Track it as revenue per member and
+    per square foot for comparison over time.
+  drivers:
+    - name: Member count
+      note: Every joiner adds a fee and every cancellation removes one, so the join rate against the cancellation rate sets the direction each month.
+    - name: Price and plan mix
+      note: A shift of members from a premium tier to a base tier lowers the total with no change in headcount, and legacy rates never repriced hold it down.
+    - name: Freezes and holds
+      note: Members who pause billing for travel or injury drop out of the total for those months, and a club with a generous freeze policy sees it seasonally.
+    - name: Involuntary churn
+      note: Expired cards and failed drafts remove agreements from the active list until recovered, and unrecovered ones become cancellations.
+    - name: Annual prepaid share
+      note: Prepaid memberships are steady in the monthly figure but renew in a lump, so a heavy renewal month is where the total can fall sharply.
+  improve:
+    - name: Run a failed payment recovery routine
+      note: Retry declined drafts on a schedule and contact the member within days so a card expiry does not become a lost agreement.
+    - name: Reprice legacy rates on renewal
+      note: Move grandfathered members to current pricing at their next term with notice, in steps if needed, so the average fee rises with cost.
+    - name: Sell add-ons on recurring billing
+      note: Locker, towel, guest, and class add-ons billed monthly lift revenue per member without a new sale each visit.
+    - name: Enforce the freeze policy
+      note: Limit freezes to a stated number of months with a hold fee so paused agreements keep contributing and return on a date.
+    - name: Front-load retention in the first 90 days
+      note: Most cancellations come from members who never built a habit; onboarding sessions and check-ins in the first weeks protect the count.
+  pitfalls:
+    - name: Counting cash collected instead of contracted fees
+      note: Annual prepaid receipts booked in the month received inflate one month and starve the next eleven; normalize every agreement to a monthly amount.
+    - name: Including one-time and variable charges
+      note: Joining fees, personal training packs, and retail are real revenue but are not recurring, and mixing them in hides a weakening member base.
+    - name: Cancelled agreements still on the list
+      note: Members who gave notice but remain in the system until the final draft keep the total high; count only agreements that will bill next month.

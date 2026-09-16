@@ -6,3 +6,73 @@ summary: >
   workmanship within the shop's review window.
 unit: percent
 direction: lower
+article:
+  what: >
+    Comeback rate counts the share of repair orders that returned to
+    the shop for the same concern, or for a fault caused by the repair,
+    within the shop's review window. It is the shop owner's and service
+    manager's number in an auto repair shop, dealership service
+    department, or tire store because a comeback is a bay and a
+    technician's hours spent again for no labor sale, a loaner or a
+    ride the shop pays for, and a customer who arrived trusting the
+    shop and leaves less sure. Technicians on flat rate watch it
+    because comeback work is often unpaid time.
+  formula: Repair orders returned for the same concern within the window ÷ repair orders completed in the period × 100
+  how_to_calculate: >
+    Link each return visit to the original repair order when the
+    customer's concern matches or the fault traces to the earlier
+    work, and count it once. The window is set by the shop, usually 30
+    days or 1,000 miles for repairs and the warranty term for parts.
+    Divide linked returns by repair orders closed in the period. Report
+    per technician and per service advisor, and code each comeback as
+    workmanship, misdiagnosis, parts failure, or a concern that was not
+    reproduced. Exclude returns for an unrelated new failure and
+    scheduled follow-ups such as a retorque, which are planned visits.
+  example: >
+    An auto repair shop closes 410 repair orders in a month. Over the
+    following 30 days, 11 vehicles return for the same concern: four
+    for a check engine light after a sensor replacement, three for a
+    brake noise after pad and rotor work, two for an alignment pull,
+    and two for a coolant leak at a reused hose. Comeback rate is 11 ÷
+    410, or 2.7 percent. Seven of the eleven were written by the same
+    advisor and repaired by two technicians, and the brake comebacks
+    trace to a low-cost pad line the shop stopped stocking.
+  benchmarks: []
+  benchmark_note: >
+    No published comeback rate from a trade association, dealer group,
+    or industry survey could be verified; shop surveys such as the
+    Ratchet+Wrench Industry Survey collect operating data but the
+    public summaries do not report a comeback figure. Set your own
+    target from linked returns in the shop management system over the
+    last six months, cost each comeback in unpaid hours and parts, and
+    push the rate down by technician and by cause before comparing to
+    another shop.
+  drivers:
+    - name: Diagnosis before parts
+      note: Replacing the part the code points at without confirming the cause returns the car with the same light within days.
+    - name: Quality control before delivery
+      note: A road test and a second set of eyes on brake, steering, and drivability work catch the noise or pull before the customer does.
+    - name: Parts quality
+      note: Economy pads, remanufactured parts of unknown origin, and reused hoses or gaskets fail early and come back as comebacks.
+    - name: Technician skill match
+      note: Drivability and electrical diagnosis assigned to a maintenance technician produce comebacks that a master technician would not.
+    - name: Advisor write-up quality
+      note: A concern written as "noise" without conditions leads to fixing the wrong noise; a good write-up captures when, where, and how often.
+  improve:
+    - name: Verify the concern before and after
+      note: Reproduce the customer's concern on intake, fix, then confirm it is gone on a road test under the same conditions before closing.
+    - name: Add a quality-control step on safety work
+      note: A second technician or the shop foreman checks torque, bleed, and alignment readings on brake and steering jobs before delivery.
+    - name: Standardize on warrantied parts
+      note: Choose parts lines with a labor warranty and a low return history, and stop buying the cheapest option on wear items.
+    - name: Track comebacks by technician and advisor
+      note: A monthly list by name with cause coded turns the rate into a coaching conversation instead of a shop-wide lecture.
+    - name: Pay for comeback time
+      note: Paying technicians for comeback diagnosis while charging the original technician's bonus keeps the fix honest and the cause recorded.
+  pitfalls:
+    - name: Writing the return as a new repair order
+      note: An unlinked return hides the comeback, bills the customer twice, and leaves the rate reading better than the shop is.
+    - name: Counting planned follow-ups
+      note: A wheel retorque, a recheck after a fluid service, or a scheduled second stage is a planned visit and belongs outside the rate.
+    - name: No mileage or time window
+      note: Without a written window a brake noise at 8,000 miles is argued case by case; set the window and apply it every time.

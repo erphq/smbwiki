@@ -5,3 +5,84 @@ summary: >
   Labor cost as a share of revenue.
 unit: percent
 direction: lower
+article:
+  what: >
+    Labor cost percentage is the share of revenue paid out to the people
+    who produced it: wages, salaries, employer payroll taxes and
+    benefits, sometimes with contract labor. The owner and whoever
+    writes the schedule own it. It is the largest controllable cost in
+    restaurants, salons, spas, child care and most retail, and the one
+    that responds fastest to a scheduling change. A shop at 30 percent
+    keeps 70 cents of each dollar for goods, rent and profit; two points
+    of drift on 1 million dollars of sales is 20,000 dollars a year.
+  formula: Total labor cost for the period ÷ revenue for the period × 100
+  how_to_calculate: >
+    The numerator is gross wages and salaries for the period plus
+    employer payroll taxes, workers compensation, health insurance and
+    retirement contributions, and paid time off; the National Restaurant
+    Association's figures include benefits, so match that basis when
+    comparing. Include the owner's pay at a market wage, or the ratio
+    flatters an owner-operated shop. The denominator is net revenue
+    after discounts and refunds, excluding sales tax and tips. Measure
+    weekly against the schedule and monthly against the books.
+    Restaurants often split front-of-house from kitchen labor; service
+    businesses split productive staff from administrative hours.
+  example: >
+    A coffee shop takes 48,000 dollars in April. Baristas and the shift
+    lead earned 11,900 dollars in wages, the owner-manager drew 3,000
+    dollars, employer payroll taxes and workers compensation were 1,480
+    dollars, and the health stipend was 600 dollars, for total labor of
+    16,980 dollars. Labor cost percentage is 16,980 divided by 48,000,
+    or 35.4 percent. Trimming one weekday opening shift by an hour saves
+    about 22 hours a month, roughly 400 dollars, or 0.8 points.
+  benchmarks:
+    - scope: Full-service restaurant
+      value: 36.5 percent of sales (median)
+      note: Salaries and wages including benefits, 2024 results from the National Restaurant Association's 2025 Restaurant Operations Data Abstract, more than 900 operators; operators reporting a profit ran 34.2 percent and those reporting a loss 42.9 percent.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/elevated-labor-costs-had-a-significant-impact-on-restaurant-profitability-in-2024/
+      source_name: National Restaurant Association, Elevated labor costs had a significant impact on restaurant profitability in 2024 (2025 Restaurant Operations Data Abstract)
+    - scope: Limited-service restaurant
+      value: 31.7 percent of sales (median)
+      note: Salaries and wages including benefits, 2024 results, same survey; profitable operators ran 30.0 percent and loss-making operators 34.1 percent.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/elevated-labor-costs-had-a-significant-impact-on-restaurant-profitability-in-2024/
+      source_name: National Restaurant Association, Elevated labor costs had a significant impact on restaurant profitability in 2024 (2025 Restaurant Operations Data Abstract)
+    - scope: Restaurants, historical average (2010, 2013 and 2016 editions)
+      value: about 33 percent full service, about 28 percent limited service
+      note: Salaries and wages including benefits averaged across the three earlier editions of the same survey; the 2024 readings were roughly 3.5 points above these for both segments.
+      source: https://www.restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/restaurant-labor-costs-are-well-above-historical-averages/
+      source_name: National Restaurant Association, Restaurant labor costs are well above historical averages (2025 Restaurant Operations Data Abstract)
+  drivers:
+    - name: Wage rates
+      note: Minimum wage steps, tip credit rules and the local going rate for cooks, stylists or caregivers set the floor the schedule is built on.
+    - name: Schedule fit to demand
+      note: Staffing a Tuesday morning like a Saturday afternoon pays people to wait; most drift in the ratio comes from hours placed where sales are thin.
+    - name: Sales volume
+      note: Someone has to open the door and answer the phone whatever the sales, so a slow month raises the ratio even when nothing changed on the schedule.
+    - name: Turnover and training
+      note: Every replacement hire brings weeks of shadow shifts and slower output, and a business that loses half its staff a year pays for that in the ratio.
+    - name: Overtime
+      note: Hours past forty cost half again as much, so a short-staffed week covered by the same people is more expensive than the one it replaced.
+    - name: Benefits and payroll tax load
+      note: Health premiums, workers compensation rates and state unemployment tax add a fixed percentage on top of every wage dollar and move on their own schedule.
+  improve:
+    - name: Schedule by the hour to a sales forecast
+      note: Build shifts from last year's same-week sales by hour, then set a labor dollars target per shift and compare the schedule to it before it posts.
+    - name: Cross-train staff
+      note: A barista who can run the register and a stylist who can handle the front desk let a shop drop a body on slow days without dropping service.
+    - name: Cap overtime with shift rules
+      note: Set the scheduler to flag anyone crossing forty hours and cover the gap with a part-timer before the week starts.
+    - name: Raise revenue per labor hour
+      note: Menu pricing, add-on services, retail at the chair and self-service ordering all lift sales without adding hours, which moves the ratio as well as cuts do.
+    - name: Review salaried and manager hours
+      note: Manager pay is often the biggest single line; make sure managers on the floor at peak replace a scheduled shift and do not sit on top of it.
+    - name: Track it weekly
+      note: A weekly labor report against sales lets the next week's schedule fix the problem; a monthly figure from the accountant arrives too late to act on.
+  pitfalls:
+    - name: Owner pay and payroll taxes left out
+      note: An owner working sixty hours unpaid makes a 25 percent shop look like 20, and taxes and workers compensation add several points nobody scheduled.
+    - name: Tips handled inconsistently
+      note: Tips paid by guests belong to staff and are neither revenue nor labor cost; counting them on either side moves the ratio for no operational reason.
+    - name: Sales tax in the denominator
+      note: Gross register totals include tax the business only collects; use net sales or the ratio is understated by the tax rate.
+    - name: Comparing across service models
+      note: A table-service restaurant and a counter-service one differ by five points in the published medians; compare with your own segment and your own trend.

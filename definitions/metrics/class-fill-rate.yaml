@@ -5,3 +5,70 @@ summary: >
   Available class places reserved by members.
 unit: percent
 direction: higher
+article:
+  what: >
+    Class fill rate counts how many of the places on a scheduled
+    class or session roster were actually reserved. In a gym it is the
+    group fitness manager's number for each spin, yoga, or HIIT slot;
+    in a child care center it applies to enrollment against licensed
+    places in each classroom or program session. It is watched because
+    the instructor, the room, and in child care the ratio-mandated
+    staff cost the same for a class of six as for a class of twenty,
+    so fill rate decides whether each slot on the timetable earns its
+    place.
+  formula: Places reserved ÷ places available across classes in the period × 100
+  how_to_calculate: >
+    For each class, take the capacity set by the room, the equipment,
+    or the licensed ratio as the denominator, and the reservations held
+    at class start as the numerator. Sum across all classes in the week
+    for the overall figure, and keep the per-class and per-time-slot
+    view since that is where decisions are made. Decide whether to count
+    reservations or attendees; a class booked at 100 percent with 30
+    percent no-shows delivers 70 percent, and gyms with waitlists should
+    report both. Child care centers usually measure enrolled children
+    against licensed capacity per room, weekly, since places are held
+    for the term.
+  example: >
+    A gym runs 48 group classes in a week with a combined capacity of
+    960 places. Reservations at class start total 672, so class fill
+    rate is 672 divided by 960, or 70 percent. The 6:00 am and 5:30 pm
+    classes ran at 95 percent with waitlists, while the four
+    mid-afternoon classes averaged 30 percent, which tells the manager
+    to move or drop the afternoon slots and add an evening one.
+  benchmarks: []
+  benchmark_note: >
+    No fitness or child care association publishes class or session
+    fill rates; capacity depends on the room and the format, and child
+    care ratios vary by state. Set the target from the timetable
+    itself: measure each class over four weeks, set a floor below which
+    a class is moved or cut, usually the point where the instructor
+    cost is covered, and a ceiling at which a second session is added.
+  drivers:
+    - name: Time slot against member schedules
+      note: Early morning, lunchtime, and early evening classes fill; mid-morning and mid-afternoon rarely do unless the membership is retirees or shift workers.
+    - name: Instructor following
+      note: A popular instructor fills any slot and a replacement empties it; fill rate is often a rating of the person more than the format.
+    - name: Format and novelty
+      note: New formats spike for a month and settle; the classes that hold a high fill rate over a year are the ones worth protecting in the timetable.
+    - name: Booking window and no-show policy
+      note: A long booking window with no penalty fills rosters with reservations that do not show, blocking members who would have come.
+    - name: Room capacity setting
+      note: Capacity set for safety or equipment count fixes the denominator; a 12-bike spin studio can never exceed 12 regardless of demand.
+  improve:
+    - name: Rebuild the timetable from fill data
+      note: Move or drop classes under the floor each quarter and duplicate those with persistent waitlists into adjacent slots.
+    - name: Enforce a late-cancel rule
+      note: A small fee or booking suspension for no-shows frees reserved places for waitlisted members and lifts attendance to match reservations.
+    - name: Promote low-fill slots to the right members
+      note: Message members who attend at similar times, or new members with no habit yet, about the specific classes with open places.
+    - name: Rotate strong instructors into weak slots
+      note: Putting a high-following instructor into a low-fill slot for a month tests whether the time or the class was the problem.
+    - name: Right-size capacity per class
+      note: Set capacity to the equipment and floor space actually usable so the denominator reflects real places, and adjust when equipment is added.
+  pitfalls:
+    - name: Reservations reported as attendance
+      note: A 95 percent booked class with a third of reservations not showing is a 63 percent delivered class; report attendance for classes with waitlists.
+    - name: Averaging across all slots
+      note: A 70 percent average across a timetable of full evenings and empty afternoons hides both the waitlist and the waste; the per-slot view drives action.
+    - name: Capacity set to the maximum room count
+      note: Using fire-code capacity as the denominator when only 15 mats fit makes every class look half empty.

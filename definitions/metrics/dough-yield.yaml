@@ -5,3 +5,75 @@ summary: >
   Usable dough balls per batch against plan.
 unit: count
 direction: higher
+article:
+  what: >
+    Dough yield counts the usable dough balls, loaves, or portions that
+    came out of a batch, compared with the number the recipe says the
+    batch should give. It is the kitchen manager's number in a pizzeria
+    and the head baker's number in a retail bakery, because a batch
+    that should give 110 balls at 12 ounces and gives 104 means the
+    scale, the water, the mixer, or the portioner drifted, and it means
+    either running short on Friday night or over-mixing a second batch
+    to cover. The count also reveals the cost of every portion, since
+    flour and labor were spent on the plan, not on the result.
+  formula: Usable dough balls portioned from the batch (compared with the planned count; balls ÷ planned balls × 100 for the percent view)
+  how_to_calculate: >
+    Planned count is the total batch weight, flour plus water plus
+    everything else, divided by the target portion weight, less a
+    stated scaling loss. The actual count is portions weighed inside
+    the tolerance, for example 12 ounces plus or minus a quarter ounce;
+    portions torn, over or under weight and not corrected, or dough
+    discarded do not count. Record the count on the batch sheet every
+    time a batch is portioned, and record the weight of dough scraped
+    from the bowl and bench so the gap is explained. A bakery counts
+    loaves or units per dough the same way. Track by mixer and by shift,
+    and compute the percent of plan next to the count.
+  example: >
+    A pizzeria mixes a batch on 50 pounds of flour at 62 percent
+    hydration with 2 percent salt and yeast, a total of about 82.5
+    pounds, or 1,320 ounces. At a 12 ounce target ball the plan is 110.
+    The crew portions 106 balls inside tolerance, reworks 2 underweight
+    balls into the next batch, and scrapes 8 ounces off the bench.
+    Dough yield is 106, which is 96 percent of plan.
+  benchmarks: []
+  benchmark_note: >
+    No published dough yield range for pizzerias or retail bakeries was
+    found at a source that could be verified; bakery trade groups
+    publish recipe formulas and bakers percentages, and pizza trade
+    magazines publish dough weights, but neither publishes a survey of
+    balls achieved against plan. Set the target from the recipe: the
+    planned count is the ceiling, the target is the planned count less
+    the measured bowl and bench loss, and any batch more than two
+    portions short gets its scale, water, and portion weights checked
+    the same day.
+  drivers:
+    - name: Scale accuracy and ingredient weighing
+      note: Flour scooped by volume varies by a tenth from bag to bag; a batch weighed short of flour or long on water changes the ball count before mixing starts.
+    - name: Hydration and flour absorption
+      note: A new flour lot that absorbs more or less water changes dough weight and consistency, and a wetter dough sticks to the bowl and bench as loss.
+    - name: Portion tolerance and technique
+      note: A crew that portions heavy to be safe uses a ball's worth of dough every twelve balls, and one that portions light produces pies the customer notices.
+    - name: Bowl, hook, and bench loss
+      note: Dough left on the mixer hook, the bowl wall, and the bench after cutting is the routine gap between plan and count, and it grows when the crew is rushed.
+    - name: Batch size against mixer capacity
+      note: A batch over the mixer's rated capacity mixes unevenly and climbs the hook, while a small batch loses a larger share to the bowl.
+  improve:
+    - name: Weigh every ingredient, including water
+      note: Put water on the scale and use a bakers percentage sheet so each batch starts at the same total weight and the plan count is real.
+    - name: Fix the ball weight and tolerance on the sheet
+      note: Print the target weight and the allowed range on the batch sheet and keep a scale at the bench so every portion is weighed, not judged.
+    - name: Calibrate scales weekly
+      note: Check each scale against a known weight on a fixed day, since a scale that drifts a quarter ounce moves the count by several balls a batch.
+    - name: Use a divider for volume operations
+      note: A dough divider or rounder holds portion weight far tighter than hand cutting once a shop runs more than a few batches a day.
+    - name: Record yield on every batch sheet
+      note: A count and a scrape weight written on each sheet gives a trend by mixer, flour lot, and shift within a month, and points at the cause of a drop.
+  pitfalls:
+    - name: Counting by eye
+      note: A count estimated from the tray instead of tallied at the scale misses the light and heavy balls that are the whole point of the measure.
+    - name: Changing the target weight without changing the plan
+      note: Moving from 12 to 13 ounce balls without recomputing the planned count reports a shortfall that is only arithmetic.
+    - name: Leaving out dough discarded later
+      note: Balls that over-proof in the walk-in and are thrown away were counted at portioning; track them as waste so the usable count stays honest.
+    - name: Comparing batches on different flour
+      note: Two flours with different absorption give different counts at the same recipe; compare within a flour lot or adjust hydration first.

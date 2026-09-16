@@ -5,3 +5,76 @@ summary: >
   Completed jobs that generate a return visit for the same issue.
 unit: percent
 direction: lower
+article:
+  what: >
+    Callback rate counts the share of completed jobs that brought a
+    technician back to the same customer for the same problem, at the
+    company's cost, within a set window. It is the owner's and service
+    manager's number in HVAC, plumbing, electrical, pest, pool, and
+    security companies because a callback is an unpaid visit, a slot
+    lost from the board, a technician's wasted hours, and a customer
+    who now doubts the company. It differs from first-time fix rate:
+    that one asks whether the job needed a second visit at all; this
+    one asks whether finished work failed.
+  formula: Jobs requiring a return visit for the same issue within the window ÷ jobs completed in the period × 100
+  how_to_calculate: >
+    Tag every job closed as complete, then link any later visit to the
+    same customer for the same equipment or complaint within the
+    window, usually 30 days for service and 90 days or one season for
+    installs, back to the original job. The rate is linked jobs over
+    jobs completed. Report separately for service and install and by
+    technician, and record the cause for each callback: workmanship,
+    parts failure, misdiagnosis, or customer education. Exclude a new
+    and unrelated failure on the same property, which is a new job.
+    Cost each callback at labor, truck, and parts so the rate has a
+    dollar figure beside it.
+  example: >
+    An HVAC contractor completes 720 service calls and 48 installs in
+    a summer month. Within 30 days, 29 service jobs generate a return
+    visit for the same complaint, and within 90 days 3 installs do.
+    Service callback rate is 29 ÷ 720, or 4.0 percent; install
+    callback rate is 3 ÷ 48, or 6.3 percent. Eleven of the service
+    callbacks trace to one technician's refrigerant charging, and two
+    of the install callbacks to condensate drain routing, which sets
+    the training agenda.
+  benchmarks: []
+  benchmark_note: >
+    No survey-based callback rate was found from a trade association
+    or government source. ACCA's contractor blog uses a 5 percent
+    callback rate as a common illustrative figure and 2 percent as the
+    result of a quality installation program, but presents neither as
+    a measured average. Set your own target by service line from the
+    last twelve months of linked return visits, cost each callback,
+    and aim to cut the rate and the cost in half before comparing to
+    anyone else.
+  drivers:
+    - name: Technician workmanship and verification
+      note: A charge checked by superheat and subcooling, a drain tested with water, or a joint pressure-tested before leaving does not come back.
+    - name: Diagnosis quality
+      note: Replacing the part that failed without finding why it failed, such as a capacitor on a failing motor, brings the customer back within weeks.
+    - name: Parts quality and sourcing
+      note: Low-cost universal parts and reused components fail early, and every early failure is a callback the company eats.
+    - name: Time pressure on the board
+      note: A technician with the next call waiting skips the run test, and the skipped ten minutes become a two-hour return.
+    - name: Customer explanation at handoff
+      note: Callbacks for a thermostat setting, a tripped switch, or a filter are education failures that count against the rate all the same.
+  improve:
+    - name: Require a documented run test before closing
+      note: A completion checklist with measured readings, photos, and a customer walkthrough is the single largest lever on service callbacks.
+    - name: Install to a written quality standard
+      note: A commissioning checklist for airflow, charge, static pressure, drain, and electrical on every install catches the install callbacks.
+    - name: Review each callback with the technician
+      note: A short weekly review of every return visit, with the cause named, changes behavior faster than any training course.
+    - name: Pay attention to callback pay
+      note: Technicians who return on their own time to fix their own callbacks, or who lose the bonus on them, take the run test seriously.
+    - name: Buy parts you would warranty
+      note: Standardize on parts with a manufacturer warranty and a failure history you trust, even at a higher unit cost.
+  pitfalls:
+    - name: Logging callbacks as new jobs
+      note: If the return visit is booked as a fresh job the rate reads near zero and the company bills a customer for its own mistake.
+    - name: No fixed window
+      note: A callback counted one month and not the next depending on who runs the report is not a metric; write the window down.
+    - name: Counting unrelated failures
+      note: A water heater failing after a faucet repair is a new job; linking every return to the last visit inflates the rate and blames the wrong technician.
+    - name: Blending service and install
+      note: Install callbacks are fewer but far costlier; a blended rate hides both the frequency of one and the cost of the other.

@@ -5,3 +5,67 @@ summary: >
   Active or completed loads managed per broker working day.
 unit: count
 direction: higher
+article:
+  what: >
+    Loads per broker-day counts how many shipments one broker handled for
+    each working day, whether measured as loads booked, loads in transit or
+    loads delivered. It is the productivity number for a brokerage floor:
+    the owner uses it to size headcount, the desk lead uses it to see who
+    is drowning and who has room, and it sets the ceiling on gross margin
+    per employee. Operators watch it because a broker's pay is fixed while
+    the loads are variable, and because the number moves when tooling,
+    lane density and customer mix change.
+  formula: Loads managed in the period ÷ (brokers on the desk × working days in the period)
+  how_to_calculate: >
+    Choose one load count and keep it: loads delivered is the cleanest,
+    loads booked leads it by a few days, and active loads counts a load on
+    every day it is in transit and reads higher. The denominator is broker
+    headcount multiplied by working days; use full-time equivalents and
+    subtract leave days when the desk is small. Count carrier reps and
+    customer reps together when they work as a pod, or report each role
+    separately when they are split. Measure monthly and show the range
+    across brokers as well as the average, since the spread carries the
+    information.
+  example: >
+    A freight brokerage with six brokers delivered 1,380 loads in a month
+    with 21 working days. Loads per broker-day is 1,380 ÷ (6 × 21), or
+    11.0. The two brokers on a dedicated retail account ran 15 and 14 a
+    day on repeat lanes, while the two spot-market brokers ran 7 and 8.
+    That spread, more than the average, is what the owner uses when
+    deciding whether to hire a fourth contract-lane broker.
+  benchmarks: []
+  benchmark_note: >
+    No published survey reports loads per broker per day; TIA's quarterly
+    3PL Market Report gives shipments, invoice and margin by company size
+    but nothing per employee. Set a target from the desk's own trailing
+    three months by role, and treat the repeat-lane brokers as the ceiling
+    for what the current tooling supports.
+  drivers:
+    - name: Repeat-lane share
+      note: A broker on contract lanes with known carriers covers a load in minutes, while a spot load can take an hour of calls.
+    - name: Tracking and document automation
+      note: Check-calls, tracking updates and proof-of-delivery chasing consume most of a broker's day when they are done by phone.
+    - name: Carrier core group
+      note: A broker with twenty carriers who answer the phone covers more loads than one who posts every load to the board.
+    - name: Role split
+      note: Desks that split customer and carrier work let each rep handle more loads than a single rep doing both ends.
+    - name: Load complexity
+      note: Multi-stop, hazmat, cross-border and LTL loads take several times the touches of a single-stop dry van load.
+  improve:
+    - name: Route contract freight to pods
+      note: Put repeat lanes with a customer rep and a carrier rep who own them, and keep spot freight on a separate desk.
+    - name: Automate tracking and documents
+      note: ELD or app-based tracking and automated POD collection remove the calls that fill a broker's afternoon.
+    - name: Build and maintain carrier preferred lists
+      note: A list of vetted carriers per lane with agreed rates turns coverage into a message instead of a search.
+    - name: Count touches per load
+      note: Log the calls, emails and edits per load for a week and remove the two or three that add nothing.
+    - name: Drop loads that do not pay for the time
+      note: A load that takes two hours and earns eighty dollars lowers both loads per day and margin per day; price it up or decline it.
+  pitfalls:
+    - name: Active-load counting
+      note: Counting a load on each day it is in transit can double the figure against a delivered count; state which count is used.
+    - name: Owner and part-timers in the headcount
+      note: An owner who covers loads on Fridays and a trainee who shadows both distort the denominator; use full-time equivalents.
+    - name: Volume without margin
+      note: Fifteen loads a day at 120 dollars each earns less than eight at 300; read this number next to gross margin per broker-day.

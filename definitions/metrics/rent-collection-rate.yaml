@@ -6,3 +6,73 @@ summary: >
   period.
 unit: percent
 direction: higher
+article:
+  what: >
+    Rent collection rate is the share of rent and recurring charges due in
+    a period that the property actually collected, either within the
+    period or by a stated cut-off. It belongs to the property manager's
+    receivables function, and it is how an owner tells the difference
+    between a full building and a paid building. Commercial managers
+    include common-area, tax and insurance recoveries in the base;
+    self-storage operators watch it per unit and act on it with lien and
+    auction rules. Operators watch it because the gap between billed and
+    collected is bad debt in waiting, and because the timing of collections
+    sets the cash available for debt service.
+  formula: Rent and recurring charges collected for the period ÷ rent and recurring charges billed for the period × 100
+  how_to_calculate: >
+    The denominator is everything billed for the period: base rent,
+    recurring charges such as parking, pet rent, utility billbacks and
+    common-area estimates, less any concessions credited. The numerator is
+    cash received against those charges, measured either at the end of
+    the month for the same-period rate or at a fixed cut-off such as 30
+    days after the due date for the eventual rate. Apply payments to the
+    period they were billed for, so a prior-period catch-up does not
+    inflate the current month. Report on-time, month-end and 60-day
+    versions together; the spread between them shows how much rent is
+    late and how much is lost.
+  example: >
+    A residential property manager bills 186,000 dollars for a month
+    across 120 units: 178,500 dollars of rent and 7,500 dollars of pet,
+    parking and utility charges. By the 5th, 152,000 dollars is in, an
+    on-time rate of 81.7 percent. By month end 179,900 dollars has been
+    collected, 96.7 percent. At the 60-day mark two units still owe 3,100
+    dollars and one has moved out owing 1,450 dollars, so the eventual rate
+    is 97.6 percent and 4,550 dollars goes to collections and the bad-debt
+    review.
+  benchmarks:
+    - scope: Independent landlord rentals (single-family and small multifamily)
+      value: 83.2 percent of units paid full rent on time; forecast full-payment rate 95.7 percent
+      note: August 2026, 59,420 units managed through RentRedi software, analysed by Chandan Economics. On-time means full rent by the due date; the full-payment rate is the forecast share paid by the end of the month. Small landlords, so professionally managed apartment portfolios typically collect a higher on-time share.
+      source: https://www.chandan.com/post/independent-landlord-rental-performance-report-august-2026
+      source_name: Chandan Economics and RentRedi, Independent Landlord Rental Performance Report, August 2026
+  drivers:
+    - name: Tenant screening
+      note: Income at three times rent, verified employment and a clean rental history do more for collections than any late-fee policy.
+    - name: Payment channels
+      note: Tenants on autopay or an online portal pay on time far more often than those mailing a check or visiting the office.
+    - name: Due date and late fee enforcement
+      note: A late fee charged every time on the sixth changes behaviour; one waived on request teaches tenants the date is negotiable.
+    - name: Local employment conditions
+      note: A plant closure or a seasonal layoff in the area shows up in the on-time rate within a month, ahead of vacancy.
+    - name: Billing accuracy
+      note: Utility billbacks and common-area charges that tenants dispute sit unpaid, so billing errors read as collection failures.
+  improve:
+    - name: Default new leases to autopay
+      note: Make electronic payment the standard on signing and offer a small credit for enrolment; it removes most late payments from the queue.
+    - name: Contact on day two
+      note: A text and a call the day after the grace period ends, every month, collects more than a notice on day ten.
+    - name: Offer a written payment plan once
+      note: A short plan with dates for a tenant who has lost hours keeps the unit occupied and paying; a second plan is a signal to start the notice process.
+    - name: Audit recurring charges quarterly
+      note: Check utility, parking and recovery charges against leases and meters so disputes do not accumulate as receivables.
+    - name: Run the delinquency process on a calendar
+      note: Notice on day five, filing or lien on the date the lease and state law allow, every time, so the eventual rate does not drift.
+  pitfalls:
+    - name: Cash credited to the month it arrived
+      note: A tenant paying two months at once makes last month look worse and this month look better than either was; apply cash to the billed period.
+    - name: Occupancy read as collected
+      note: A 97 percent occupied building with 5 percent delinquency is 92 percent paid; the rent roll and the bank statement are different documents.
+    - name: Delinquent tenants dropped from the denominator
+      note: Removing tenants in eviction from the billed base hides the loss; keep them in until the unit is vacant or the debt is written off.
+    - name: No stated cut-off
+      note: A collection rate without a date attached cannot be compared with last month's; state on-time, month-end or 60-day every time.

@@ -6,3 +6,82 @@ summary: >
   result.
 unit: hours
 direction: lower
+article:
+  what: >
+    Specimen turnaround time counts the hours, or minutes for urgent
+    work, from the moment a valid specimen is received and accessioned
+    in the laboratory to the moment the result is released to the
+    ordering clinician. It is the laboratory director's number and the
+    supervisor's number, because clinicians judge a laboratory on it,
+    contracts with clinics and hospitals specify it, and accreditation
+    inspections ask how it is monitored. It is tracked per test and per
+    priority, stat and routine, and the 90th percentile matters more
+    than the average because the late results are the ones a physician
+    remembers.
+  formula: Time the result was released minus time the specimen was received in the laboratory, per test, summarized as a median and a 90th percentile
+  how_to_calculate: >
+    Start at the receipt or accession timestamp. Some laboratories
+    start at collection, which adds transport and is usually called
+    total turnaround; name which clock is in use. Stop at result
+    verification and release in the laboratory system. Exclude
+    specimens rejected before testing and count rejections as a separate
+    rate. Group by test and by priority, and report the median, the
+    90th percentile, and the share within the target, such as percent
+    of stat potassium results within 60 minutes. Use minutes for stat
+    chemistry and hematology, hours for routine work, and days for
+    send-outs and cultures, which need their own clock. Review weekly
+    by hour of day so peaks are visible.
+  example: >
+    An outpatient reference laboratory receives 1,850 routine complete
+    blood counts and basic metabolic panels in a week. Receipt to result
+    has a median of 3.2 hours and a 90th percentile of 6.8 hours, with
+    96 percent inside the 8 hour contract target. The same week's 70
+    stat potassium requests show a median of 32 minutes and a 90th
+    percentile of 55 minutes, so five results missed the 60 minute
+    stat target.
+  benchmarks:
+    - scope: Hospital laboratories, emergency department stat potassium and hemoglobin
+      value: median 36 minutes for potassium and 25 minutes for hemoglobin
+      note: College of American Pathologists Q-Probes study across 722 institutions, measured from phlebotomy to result reporting, so it includes transport to the laboratory; published 1992 and still the reference point cited for stat chemistry and hematology.
+      source: https://pubmed.ncbi.nlm.nih.gov/1733401/
+      source_name: College of American Pathologists Q-Probes via PubMed, Emergency department stat test turnaround times, Archives of Pathology and Laboratory Medicine (1992)
+    - scope: Hospital laboratories, emergency department troponin and CK-MB
+      value: 90 percent of results reported in slightly more than 90 minutes on average across institutions; the top quarter of institutions had a median troponin turnaround of 50 minutes or less
+      note: College of American Pathologists Q-Probes study of 159 institutions covering 7,020 troponin and 4,368 CK-MB determinations, measured order to report; published 2004, before high-sensitivity troponin assays.
+      source: https://pubmed.ncbi.nlm.nih.gov/14736289/
+      source_name: College of American Pathologists Q-Probes via PubMed, Biochemical markers of myocardial injury test turnaround time, Archives of Pathology and Laboratory Medicine (2004)
+  drivers:
+    - name: Batch versus continuous processing
+      note: An analyzer loaded in batches holds early specimens until the batch fills, so the wait before testing, not the assay, sets most of the turnaround.
+    - name: Courier and transport schedule
+      note: For an outpatient laboratory the courier route decides when specimens arrive in bulk, and a single afternoon run creates a peak that the bench cannot clear quickly.
+    - name: Accessioning staffing at peaks
+      note: Specimens queue at the receiving bench when arrivals exceed the people logging them in, and the clock is running from receipt while they wait.
+    - name: Instrument downtime and quality control failures
+      note: A failed control run or an analyzer fault stops every specimen behind it, and one hour of downtime shows as a step in the 90th percentile for the day.
+    - name: Autoverification rules
+      note: Results inside normal limits that release without a technologist's review leave the laboratory in minutes; those held for manual review wait for a person.
+    - name: Specimen quality
+      note: Hemolyzed, clotted, or mislabeled specimens need a recollection, and the second specimen's turnaround starts over while the clinician waits on the first.
+  improve:
+    - name: Turn on autoverification
+      note: Configure rules so results within limits and without flags release automatically, and reserve technologist review for the results that need judgment.
+    - name: Staff to the arrival curve
+      note: Plot receipts by hour and align accessioning and bench shifts to the peaks, since a laboratory staffed evenly serves the busiest hour worst.
+    - name: Alert on aging specimens
+      note: Middleware or the laboratory system can flag any specimen approaching its target with no result, so a missed tube is found before the clinician calls.
+    - name: Run smaller, more frequent batches
+      note: Where batching cannot be avoided, shorten the interval so no specimen waits long for the batch to fill.
+    - name: Train collection sites
+      note: Fewer hemolyzed and mislabeled specimens means fewer recollections, which removes the longest turnarounds from the tail.
+    - name: Cross-train accessioning staff
+      note: Technologists who can log specimens during a receiving surge keep the queue short at the front of the process, where minutes are cheapest to save.
+  pitfalls:
+    - name: Mixing collection-to-result with receipt-to-result
+      note: The two clocks differ by the transport time, and comparing one laboratory's total turnaround with another's intralaboratory figure proves nothing.
+    - name: Reporting only the mean
+      note: A mean of 40 minutes can hide a tenth of results over two hours; the 90th percentile and percent within target describe what clinicians experience.
+    - name: Dropping recollected specimens
+      note: A rejected specimen's replacement counts from the second receipt, but the clinician waited from the first order; track rejections so the gap is visible.
+    - name: Unsynchronized timestamps
+      note: Analyzers, the laboratory system, and the courier's device keep their own clocks, and a few minutes of drift makes short stat turnarounds unreliable.

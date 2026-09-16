@@ -5,3 +5,72 @@ summary: >
   Available asset time committed to paying rentals.
 unit: percent
 direction: contextual
+article:
+  what: >
+    Rental utilization is the share of the time a rental unit was on rent
+    and earning, out of the time it was in the fleet. The American Rental
+    Association calls this time utilization, and it is the equipment
+    rental company's core fleet number, owned by the branch manager and
+    the fleet manager. Operators watch it because a unit off rent still
+    carries depreciation, interest and insurance, because it tells them
+    what to buy and what to sell, and because a very high figure means
+    customers are being turned away and the rate is probably too low.
+  formula: Days on rent ÷ days in the fleet during the period, per unit or per class, × 100
+  how_to_calculate: >
+    Count the days each unit was on a paying contract in the period and
+    divide by the days it was in the fleet during that period; a unit
+    bought mid-month enters the denominator on its in-service date. Decide
+    whether units down for repair stay in the denominator; the ARA
+    standard keeps them in so that shop time shows as lost utilization.
+    Sum across units to get a class or branch figure, weighting by
+    original equipment cost when classes are mixed. Dollar utilization is
+    a different measure, annualized rental revenue divided by the original
+    cost of the fleet. Report both, since a class can be on rent every day
+    at a rate that does not cover its cost.
+  example: >
+    An equipment rental company runs 40 compact excavators. In a 30-day
+    month they log 864 rental days: 34 units averaged 24 days on rent,
+    four were on rent 12 days each between jobs, and two spent the month in
+    the shop. Time utilization is 864 ÷ (40 × 30), or 72 percent. The two
+    shop units stay in the denominator, so the fleet manager sees the
+    repair backlog inside the number instead of in a separate report.
+  benchmarks:
+    - scope: Equipment rental, dollar utilization (Herc Rentals, North America)
+      value: 39.3 percent dollar utilization
+      note: Second quarter 2026, up from 38.3 percent a year earlier; rental revenue divided by average original equipment cost under ARA guidelines. This is the dollar measure; public rental companies do not disclose time utilization as a percentage, so this row is a rate-times-time reference, not a time utilization figure.
+      source: https://www.sec.gov/Archives/edgar/data/0001364479/000136447926000108/herc2026q2-pressrelease.htm
+      source_name: Herc Holdings, second quarter 2026 results press release, Form 8-K exhibit (July 2026)
+    - scope: Equipment rental, dollar utilization by segment (Sunbelt Rentals, North America)
+      value: 47 percent for General Tool, 75 percent for Specialty
+      note: Trailing twelve months to 30 April 2026, against 48 and 73 percent a year earlier; dollar utilization, rental revenue over original equipment cost. Specialty fleet such as power, HVAC and pumps earns more per dollar of cost than general tool.
+      source: https://ir.sunbeltrentals.com/news-events/press-releases/detail/123/sunbelt-rentals-reports-fiscal-fourth-quarter-and-full-year-2026-results
+      source_name: Sunbelt Rentals, fiscal fourth quarter and full-year 2026 results (June 2026)
+  drivers:
+    - name: Fleet mix against local demand
+      note: A yard heavy in classes the local contractors do not rent carries idle units all year while the classes they do rent are sold out.
+    - name: Fleet age and shop downtime
+      note: Older units spend more days in the shop, and under the ARA standard every shop day is a day off rent in the denominator.
+    - name: Rate discipline
+      note: Utilization above 85 percent for a class usually means the rate is under market; utilization bought with discounts flatters this number and hurts dollar utilization.
+    - name: Contract length
+      note: Monthly contracts to contractors keep units out for weeks; daily homeowner rentals produce gaps between every rental.
+    - name: Delivery and turnaround capacity
+      note: A unit back in the yard that waits two days for a wash and inspection is off rent for those two days.
+  improve:
+    - name: Sell what does not rent
+      note: Review any unit or class under a stated utilization floor for twelve months and move it to auction or transfer it to a branch that rents it.
+    - name: Transfer between branches
+      note: Move units from a branch running 50 percent in a class to one turning away work at 90, before buying new fleet.
+    - name: Turn returns in one day
+      note: Set a check-in, wash and inspection standard of one working day so a unit is available the morning after return.
+    - name: Re-rent to cover peaks
+      note: Source units from another rental company for short peaks instead of buying fleet that will sit for the other ten months.
+    - name: Price by utilization
+      note: Raise rates on classes above 80 percent and offer term discounts on classes below 50, and review the table monthly.
+  pitfalls:
+    - name: Shop units removed from the denominator
+      note: Taking down units out of the count hides a repair backlog and makes an ageing fleet look fully rented.
+    - name: Delivered but not billed counted as on rent
+      note: A unit sitting on a jobsite under a suspended or disputed contract is out of the yard but not earning; count billing days.
+    - name: Time and dollar utilization confused
+      note: A 75 percent figure means very different things on the two measures; label every report with the measure and the ARA definition used.

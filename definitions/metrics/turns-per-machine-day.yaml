@@ -5,3 +5,73 @@ summary: >
   Completed paid cycles per installed machine per operating day.
 unit: count
 direction: higher
+article:
+  what: >
+    Turns per machine-day counts how many paid wash or dry cycles each
+    installed machine ran on an average operating day. It is the
+    laundromat's demand number: the owner uses it to see whether the store
+    is busy enough for the equipment on the floor, which machine sizes are
+    working hardest, and whether a price change moved volume. A store runs
+    on fixed costs, rent, utilities and equipment finance, so turns are the
+    lever that converts those costs into margin. Operators watch it per
+    machine class because a bank of idle top loaders beside queued
+    sixty-pound washers is a mix problem the store average hides.
+  formula: Paid cycles completed in the period ÷ (installed machines × operating days in the period)
+  how_to_calculate: >
+    Pull the cycle count from the payment system or the machines' cycle
+    counters for the period, counting paid starts only; free rewashes and
+    attendant test cycles are left out. Divide by installed machines
+    multiplied by the days the store was open. Compute washers and dryers
+    separately, and split washers by size class, since top loaders and
+    large front loaders turn at different rates. Either adjust operating
+    days for machines out of service or leave them in and treat downtime
+    as lost turns, and say which. Weekly averages smooth the weekend peak;
+    a Saturday-only figure is useful for capacity planning.
+  example: >
+    A laundromat has 36 washers: 12 top loaders, 16 twenty-pound front
+    loaders and 8 sixty-pound front loaders. In a 30-day month its card
+    system records 1,290 top-loader cycles, 2,540 twenty-pound cycles and
+    1,410 sixty-pound cycles. Turns per machine-day are 3.6, 5.3 and 5.9
+    for the three classes, and 4.9 for all washers (5,240 ÷ 1,080). The
+    top loaders are the weakest bank, which argues for replacing some of
+    them with large front loaders at the next refresh.
+  benchmarks:
+    - scope: Laundromat washers
+      value: 3 to 8 or more turns per day
+      note: Range the Coin Laundry Association gives for washing machines; the association says the figure varies widely with population density, renter share, vend prices and competition and does not publish a national average.
+      source: https://laundryassociation.org/for-investors/industry-overview/
+      source_name: CLA, The Laundry Association, Industry Overview (accessed September 2026)
+    - scope: Laundromat washers, by type
+      value: 3.8 turns per day for top loaders, 5.1 for front loaders
+      note: Respondent-reported averages in the 2026 survey, against 4.3 and 4.8 a year earlier; respondent count not stated in the article. Self-reported by owners who read the trade magazine, so likely skewed toward engaged operators.
+      source: https://americancoinop.com/articles/performance-under-pressure-operators-post-another-strong-year-part-3
+      source_name: American Coin-Op, State of the Industry Survey 2026, Part 3 (April 2026)
+  drivers:
+    - name: Renter density within a mile
+      note: Turns follow the number of households without in-unit laundry inside a short drive or walk, which is why the same store design runs 3 in one town and 7 in another.
+    - name: Vend price by machine size
+      note: Underpriced small machines fill up while large ones sit; the price ladder between sizes moves customers across the floor.
+    - name: Machine mix
+      note: Customers with big loads queue for the few large front loaders while top loaders idle, so mix sets the ceiling on store turns.
+    - name: Operating hours and attendance
+      note: A 24-hour store or one attended through the evening picks up shift workers that a 7 a.m. to 9 p.m. store never sees.
+    - name: Store condition and uptime
+      note: Out-of-order tags and a dirty floor push customers to the competitor a mile away, and each broken machine is a zero in the average.
+  improve:
+    - name: Refresh the mix toward large front loaders
+      note: Replace the idle bank of top loaders with 40- and 60-pound washers, which turn more often and vend at higher prices.
+    - name: Price by size and by hour
+      note: Set the price ladder so a large machine costs less per pound than a small one, and test an off-peak discount on weekday mornings.
+    - name: Fill off-peak hours with wash-dry-fold
+      note: Staff-run drop-off service uses the same machines on weekday mornings when self-service turns are lowest.
+    - name: Fix machines within a day
+      note: Keep the ten common parts in stock and a technician on call, so an out-of-order machine loses one day of turns instead of a week.
+    - name: Extend hours where the counters show demand
+      note: If the last hour of the day is still running at four turns, stay open another hour and measure whether it holds.
+  pitfalls:
+    - name: Free and test cycles counted
+      note: Rewashes, attendant tests and promotional free cycles inflate the count without revenue; count paid starts only.
+    - name: Out-of-service machines silently removed
+      note: Dropping broken machines from the denominator hides downtime; report it, or keep them in and show lost turns.
+    - name: Sizes averaged together
+      note: A 4.9 store average made of 3.6 top loaders and 5.9 large washers is telling the owner to change the mix; report each class.

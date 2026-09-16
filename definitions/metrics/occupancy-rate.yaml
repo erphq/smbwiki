@@ -5,3 +5,77 @@ summary: >
   Available room nights or rentable units occupied during a period.
 unit: percent
 direction: contextual
+article:
+  what: >
+    Occupancy rate is the share of the rooms a property had for sale
+    that were actually sold, night by night, over the period. It is the
+    number an owner, a lender and a revenue manager all read first,
+    because multiplied by the room rate it gives revenue per available
+    room, and it decides how many housekeepers to schedule and whether
+    the breakfast room is full. A hotel at 62 percent has, on an average
+    night, 38 of every 100 rooms empty and earning nothing; a six-room
+    bed-and-breakfast at the same figure sold about 26 of its 42 room
+    nights in a week.
+  formula: Room nights sold in the period ÷ room nights available in the period × 100
+  how_to_calculate: >
+    Room nights sold are rooms occupied by paying guests each night,
+    summed over the period; room nights available are rooms in inventory
+    times nights in the period. Take rooms closed for renovation out of
+    the denominator but leave rooms held for maintenance in, or the
+    figure hides a problem. By STR convention, complimentary and
+    house-use rooms are excluded from sold, and a day-use room counts
+    once. Compute monthly and year to date, and by day of week, since a
+    62 percent month can be 90 percent weekends and 45 percent midweek.
+    Vacation rentals and inns report the same ratio per unit; seasonal
+    properties should state the season as the period, not the calendar
+    year.
+  example: >
+    A 12-room bed-and-breakfast inn is open all of July, so it has 12
+    times 31, or 372 room nights available. Its booking system shows 241
+    room nights sold, so July occupancy is 241 divided by 372, or 64.8
+    percent. The eight Friday and Saturday nights (96 room nights) sold
+    94, or 97.9 percent, and the 23 weeknights sold 147 of 276, or 53.3
+    percent, which is where a midweek package or a corporate rate
+    belongs.
+  benchmarks:
+    - scope: United States hotels, full year 2025
+      value: 62.3 percent
+      note: All US hotels tracked by CoStar (STR), full-year 2025, down 1.2 percent from 2024; average daily rate 160.54 dollars and RevPAR 100.02 dollars; first annual occupancy and RevPAR decline since 2020.
+      source: https://lodgingmagazine.com/costar-u-s-hotels-report-full-year-occupancy-and-revpar-declines-for-the-first-time-since-2020/
+      source_name: CoStar (STR) via Lodging Magazine, U.S. hotels report full-year occupancy and RevPAR declines for the first time since 2020 (2025)
+    - scope: United States hotels, 2019 to 2025
+      value: 65.8 percent in 2019, 63.1 percent in 2024, 62.3 percent in 2025
+      note: AHLA 2026 State of the Industry report citing CoStar/STR; about 75 percent of US hotel submarkets ran below their 2019 occupancy in 2025; 2025 ADR 160.30 dollars; CoStar's 2026 forecast expects occupancy to slip slightly with ADR up 0.9 percent.
+      source: https://hotellodgingiowa.com/wp-content/uploads/2026/02/State-of-the-Industry-2026-AHLA.pdf
+      source_name: American Hotel & Lodging Association, 2026 State of the Industry Report (2025 results and 2026 outlook)
+  drivers:
+    - name: Market demand
+      note: Corporate travel, conventions, sports and leisure seasons set how many people need a bed in town on a given night, and no property controls that.
+    - name: Seasonality and day of week
+      note: A resort inn fills every weekend and sits half empty on Tuesday; the annual figure is the average of two very different businesses.
+    - name: Rate position against the competitive set
+      note: A rate ten percent above the neighbors buys empty rooms on soft nights and costs nothing on sold-out ones; occupancy and rate trade against each other.
+    - name: Distribution and reviews
+      note: Rooms not visible on the channels guests search, or listed with a 3.8 rating next to a 4.6, are not in the running for the booking.
+    - name: New supply nearby
+      note: A 120-room opening across the street divides the same demand among more rooms, and market occupancy falls until demand grows into it.
+  improve:
+    - name: Price by day and season
+      note: Set rates by day of week and demand calendar, with lower midweek and shoulder-season rates to fill nights that would otherwise sit empty.
+    - name: Build midweek business
+      note: Corporate rates for local employers, contractor and crew rates, and midweek packages target the nights a leisure property cannot fill on its own.
+    - name: Use minimum stays on peak dates
+      note: A two-night minimum on sold-out weekends pushes bookings onto the Sunday or Thursday beside them without discounting the peak.
+    - name: Manage channel mix
+      note: Keep online travel agencies for reach and drive repeat guests to direct booking with a small perk, so occupancy grows without paying commission on every stay.
+    - name: Track the competitive set
+      note: A STR report or a monthly rate shop of five neighbors shows whether an occupancy dip is the market or the property.
+  pitfalls:
+    - name: Shrinking the denominator
+      note: Rooms held out of order to make the figure look better hide a maintenance backlog; only rooms closed for renovation leave the count.
+    - name: Counting comp and house-use rooms as sold
+      note: A room given to the owner's family or an inspector is occupied, not sold; including it overstates occupancy and understates the rate.
+    - name: Reading occupancy without rate
+      note: Filling the house at half price is easy; RevPAR, occupancy times average rate, is the figure that says whether the sold nights were worth selling.
+    - name: Comparing to the national average
+      note: The US figure blends airport hotels, resorts and highway motels; a bed-and-breakfast should compare with inns in its own town and season.

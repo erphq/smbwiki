@@ -6,3 +6,70 @@ summary: >
   for the next arrival.
 unit: minutes
 direction: lower
+article:
+  what: >
+    Room turn time is how long a departed room stays out of inventory,
+    from the guest checking out or the room being flagged vacant-dirty
+    until it has been cleaned, inspected and released as vacant-ready in
+    the property system. It belongs to the executive housekeeper, and
+    the front desk lives by it on a sold-out night with early arrivals
+    waiting in the lobby. At an inn with eight rooms the number is the
+    innkeeper's afternoon; at a 150-room hotel it decides how many rooms
+    can be promised for check-in time.
+  formula: Minutes from checkout or vacant-dirty status to vacant-ready status, averaged over rooms turned in the period
+  how_to_calculate: >
+    Take the timestamps from the property management system or the
+    housekeeping app: the start is the checkout time or the moment the
+    room is flagged vacant-dirty, and the end is the inspected and
+    released time, not the moment the attendant finishes. Average over
+    departure rooms turned that day, and keep stayover cleans out, since
+    only departures need the full reset. Report same-day arrival rooms
+    on their own, because those are the ones guests wait for. Minutes of
+    attendant time per room is a different number, a labor standard,
+    measured from the attendant's own start and finish in the room.
+  example: >
+    A 40-room hotel has 26 departures on a Sunday. Checkout times and
+    vacant-ready releases from the PMS give a total of 3,380 minutes of
+    room downtime, an average of 130 minutes per room, though attendants
+    spent an average of 32 minutes cleaning each one. The gap is
+    queueing: rooms waited for an attendant, then waited for the one
+    inspector. Assigning departures first and letting senior attendants
+    self-inspect brought the average to 85 minutes and cleared the 3
+    p.m. arrivals.
+  benchmarks: []
+  benchmark_note: >
+    Hotel associations publish occupancy and rate, and labor standards
+    for minutes of cleaning per room circulate in brand manuals, but no
+    public source publishes room turn time from checkout to ready. Pull
+    a month of vacant-dirty to vacant-ready timestamps from your
+    property system, split departures from stayovers, and set the target
+    from your own best days against your check-in time.
+  drivers:
+    - name: Checkout to check-in window
+      note: An 11 a.m. checkout and a 3 p.m. check-in give four hours for every departure; late checkouts sold for revenue eat directly into that window.
+    - name: Attendant sequencing
+      note: Attendants who clean rooms in corridor order reach the rooms with arrivals last; a board that orders departures with arrivals first changes the number without adding staff.
+    - name: Inspection queue
+      note: One inspector for thirty rooms is a bottleneck that adds an hour of waiting to rooms that were clean at noon.
+    - name: Linen and supply availability
+      note: A cart that runs out of king sheets sends the attendant to the laundry, and the laundry's own cycle sets how early the cart can be stocked.
+    - name: Room condition on departure
+      note: Long stays, pets, groups and late-night parties leave rooms that take twice the standard minutes, and a Sunday full of them runs long.
+  improve:
+    - name: Order the board by arrival need
+      note: Each morning, list departures with same-day arrivals first, then by expected checkout time, and reassign as checkouts post.
+    - name: Move status updates to a phone
+      note: An app or PMS mobile status set from the doorway removes the walk to the housekeeping office and the paper sheet handed in at the end of the run.
+    - name: Let trained attendants self-inspect
+      note: Certifying senior attendants to release their own rooms, with spot audits, takes the inspection queue off the critical path.
+    - name: Stock carts the night before
+      note: Carts loaded to par at close of the previous day, with laundry timed to deliver first, remove the mid-morning supply run.
+    - name: Sell early checkout instead of late
+      note: A breakfast voucher for guests who check out by 9 a.m. on sold-out days buys two hours per room at a fraction of a late-checkout fee.
+  pitfalls:
+    - name: Reporting attendant minutes as turn time
+      note: Thirty minutes of cleaning inside a two-hour turn is the labor standard, not the guest's wait; measure from checkout to released.
+    - name: Averaging stayovers with departures
+      note: A stayover tidy is a fraction of a departure clean; mixing the two makes the average look fast while arrivals still wait.
+    - name: Ignoring the inspection gap
+      note: A room marked clean by the attendant and released an hour later by the inspector spent that hour unsellable; the clock stops at release.

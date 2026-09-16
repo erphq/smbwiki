@@ -6,3 +6,77 @@ summary: >
   processing.
 unit: percent
 direction: higher
+article:
+  what: >
+    First-pass yield counts the share of units that come off a process
+    and pass inspection the first time, with no rework, touch-up,
+    second setup, or reprint. It is the production manager's number
+    and the estimator's number: every unit that fails first pass
+    consumes a second slice of machine time, labor, and material that
+    the quote never priced. In a machine shop it separates parts that
+    shipped straight from the mill from parts that went back for a
+    deburr and re-inspection; in a print or sign shop it separates jobs
+    that ran to the sheet count from jobs that needed a reprint or a
+    second panel.
+  formula: Units accepted without rework ÷ units started × 100
+  how_to_calculate: >
+    The numerator is units that passed inspection on the first attempt.
+    A unit that was reworked and then passed still counts as a failure
+    here, even though it shipped. The denominator is units started in
+    the period, never units shipped. Compute per job or per shift and
+    roll up weekly and monthly. For a routing with several operations,
+    rolled throughput yield multiplies the first-pass yield of each
+    step, so a 95 percent step followed by a 90 percent step gives 85.5
+    percent end to end. Count in the unit the shop plans in: pieces for
+    machining, sheets or jobs for printing, panels or signs for a sign
+    shop. When a shop tracks by job, a reprint makes the whole job a
+    failed first pass.
+  example: >
+    A machine shop runs a lot of 400 brackets. At final inspection 372
+    pass, 20 need a deburr and a second inspection, and 8 are scrapped.
+    First-pass yield is 372 divided by 400, or 93 percent. Shipped yield
+    is 392 divided by 400, or 98 percent, which hides the 20 reworked
+    parts that took four hours of bench labor the quote did not carry.
+  benchmarks: []
+  benchmark_note: >
+    No published first-pass yield range for job shops, commercial
+    printers, or sign shops was found at a public URL. Printing
+    Industries of America sells a spoilage report and consulting firms
+    show benchmark charts behind paywalls, so no figure is cited here.
+    Set the target from the shop's own record: measure first-pass yield
+    by process for ninety days, take the best month as the target for
+    each process, and raise it after the top two causes of rework are
+    fixed.
+  drivers:
+    - name: Setup and first-article verification
+      note: Most rework traces to the first pieces of a run; a first article checked against the print before the full run catches offsets and tool length errors early.
+    - name: Tooling wear and machine condition
+      note: Worn inserts, loose spindles, and blanket or roller wear drift a process out of tolerance mid-run, so yield falls late in a run with no operator change.
+    - name: Incoming material variation
+      note: Bar stock out of round, paper with moisture curl, or substrate off gauge produces parts that fail through no fault of the setup.
+    - name: File and proof quality before production
+      note: In print and sign work a preflight miss, wrong bleed, low-resolution art, or an unapproved proof turns into a reprint of the whole job.
+    - name: Tolerance tightness relative to process capability
+      note: A feature toleranced tighter than the machine can hold fails a predictable share of parts; the fix is a different process or a negotiated tolerance.
+    - name: Handoffs between shifts and operators
+      note: A run that changes hands loses the operator's knowledge of the offsets and the drift, and the pieces after the change are where failures cluster.
+  improve:
+    - name: Inspect a first article before the full run
+      note: Stop after the first piece or sheet, measure every controlled feature, and sign off before committing the lot; the check costs minutes and saves the run.
+    - name: Preflight every file and hold for proof approval
+      note: Run a checklist on fonts, bleed, resolution, color mode, and size before the job hits the schedule, and do not print without a signed proof.
+    - name: Gauge in process at fixed intervals
+      note: Measure a piece every set count and plot it; a trend toward a limit is corrected before parts fail, and the record shows when the drift began.
+    - name: Track tool life and change on count
+      note: Replace inserts and consumables on a counted schedule from history, so the change happens before the parts go out of tolerance.
+    - name: Standardize setup sheets per part number
+      note: Record offsets, fixtures, feeds, and known trouble spots so the next setup starts from the last good state instead of from memory.
+  pitfalls:
+    - name: Counting reworked units as passed
+      note: A unit that needed a second operation is a first-pass failure even though it shipped; counting it as good hides the cost the metric exists to show.
+    - name: Using shipped units as the denominator
+      note: Dividing by what left the building instead of what started removes scrap from the picture and overstates yield on every lot with losses.
+    - name: Averaging jobs of different difficulty
+      note: A month of easy repeat parts mixed with one tight-tolerance job reads fine as an average while the tight job lost money; report by part or process.
+    - name: Ignoring failures found by the customer
+      note: Parts returned or reprinted under warranty failed the process; leaving them out of the count makes internal inspection look better than the product is.

@@ -6,3 +6,77 @@ summary: >
   for missing, invalid, or inconsistent information.
 unit: percent
 direction: higher
+article:
+  what: >
+    Clean claim rate counts the share of insurance claims a practice
+    sends out that pass every payer and clearinghouse edit on the first
+    try, with no missing identifiers, mismatched codes, or eligibility
+    gaps sending them back for rework. It is the billing office's
+    number, and the owner of a dental, physical therapy, or urgent care
+    practice watches it because every rejected claim delays cash by
+    weeks and costs staff time to fix, and a low rate is the earliest
+    warning that front-desk data capture or coding has slipped.
+  formula: Claims accepted on first submission ÷ total claims submitted in the period × 100
+  how_to_calculate: >
+    Count claims submitted in the month in the denominator, one line
+    per claim, not per procedure line. In the numerator count claims
+    that passed the clearinghouse and payer front-end edits without a
+    rejection; a claim later denied on medical grounds still counts as
+    clean here, because it was accepted for adjudication. Report by
+    payer and by rendering provider as well as in total, since a single
+    Medicaid plan or one new associate can hold the whole rate down.
+    The HFMA MAP Key version measures at the practice's own claims tool,
+    dividing claims that passed all edits with no manual touch by claims
+    entered into the tool, which reads higher than a payer-level count.
+  example: >
+    A physical therapy clinic submits 1,240 claims in March. The
+    clearinghouse rejects 62 for missing referring-provider NPIs and
+    payers reject another 31 for lapsed eligibility, so 1,147 went
+    through on the first pass. Clean claim rate is 1,147 divided by
+    1,240, or 92.5 percent. The 93 reworked claims each sat about three
+    extra weeks before payment, and the biller spent roughly two days
+    fixing them.
+  benchmarks:
+    - scope: Single-specialty medical groups
+      value: 8 percent of claims denied on first submission
+      note: MGMA DataDive aggregate cited in a March 2024 MGMA Stat report; this is the complementary denial measure at the payer, so a clean claim rate measured at the clearinghouse will read above the implied 92 percent. Sixty percent of 235 polled groups said denials rose in early 2024.
+      source: https://www.mgma.com/mgma-stat/strategic-improvements-in-your-rcm-to-reduce-your-practices-claim-denials
+      source_name: MGMA Stat, Strategic improvements in your RCM to reduce your practice's claim denials (March 2024)
+  benchmark_note: >
+    MGMA and HFMA both publish clean claim medians only inside paid
+    benchmark products; the MAP Key definition (claims passing edits
+    with no manual intervention divided by claims entered for billing)
+    is public but the median is not. Set the target from the practice's
+    own history: take the trailing three-month rate, list the top five
+    rejection reasons, and aim to remove the largest one each month.
+  drivers:
+    - name: Front-desk demographic and insurance capture
+      note: Most first-pass rejections trace to a wrong member ID, date of birth, or subscriber relationship typed at check-in, so intake accuracy sets the ceiling on this rate.
+    - name: Eligibility verification before the visit
+      note: A plan that lapsed or changed since the last visit rejects the whole claim; batch eligibility checks two days ahead catch these before the service is delivered.
+    - name: Coding and modifier accuracy by provider
+      note: Each rendering provider produces their own pattern of unbundled codes, missing modifiers, or diagnosis mismatches, and one new clinician can move the practice-wide rate by several points.
+    - name: Clearinghouse edit configuration
+      note: Payer-specific scrubber rules kept current stop known rejections before submission; stale rules let the same rejection recur every month for the same payer.
+    - name: Credentialing and enrollment status
+      note: Claims for a provider whose payer enrollment is pending or expired reject in bulk, often silently, until someone notices a whole month of that provider's claims missing.
+  improve:
+    - name: Work a rejection reason log weekly
+      note: Categorize every rejection by cause and payer, then fix the source process for the top category each week instead of only reworking the individual claims.
+    - name: Verify eligibility in batch before each clinic day
+      note: Run the next two days of appointments through the clearinghouse eligibility check and flag inactive coverage to the front desk before the patient arrives.
+    - name: Scrub claims at the practice before the clearinghouse
+      note: Enable practice-management edits for required fields, modifier pairs, and payer-specific rules so claims fail inside the office where they are cheap to correct.
+    - name: Give providers their own rejection rate
+      note: Show each clinician their monthly rejection count and top reasons; coding habits change quickly once the number is personal and visible.
+    - name: Track credentialing expirations on a calendar
+      note: Keep every provider's payer enrollment and revalidation dates in one list with 90-day reminders so claims never reject for an expired enrollment.
+  pitfalls:
+    - name: Counting claims that later denied as clean
+      note: Clean claim rate and first-pass payment rate are different numbers; a claim can be accepted cleanly and still be denied for medical necessity, so track both and do not mix them.
+    - name: Measuring at the clearinghouse only
+      note: A claim can pass the clearinghouse and still be rejected at the payer front end; a rate built on clearinghouse acceptance alone reads several points higher than reality.
+    - name: Resubmissions inflating the denominator
+      note: If corrected resubmissions are counted as new claims, the denominator grows and the rate is flattered; count each original claim once.
+    - name: A practice-wide average hiding one bad payer
+      note: A 94 percent overall rate can hide a Medicaid plan running at 75 percent; segment by payer before deciding the billing office is fine.

@@ -6,3 +6,76 @@ summary: >
   canceling in time for the slot to be resold.
 unit: percent
 direction: lower
+article:
+  what: >
+    Appointment no-show rate counts the booked slots that went to waste
+    because the customer neither arrived nor canceled early enough for
+    the time to be refilled. It belongs to whoever runs the schedule,
+    whether a salon front desk, a dental office manager, or a veterinary
+    receptionist, and it is watched because the provider, the room, and
+    the staff were paid for that hour regardless. In a practice with
+    fixed capacity it is the most direct measure of revenue lost to
+    scheduling behaviour that the business can influence.
+  formula: Appointments where the customer did not arrive and did not cancel in time ÷ appointments scheduled for the period × 100
+  how_to_calculate: >
+    The denominator is every appointment that was on the book for the
+    period, including those later canceled. The numerator is the subset
+    that ended with no arrival and no cancellation before the
+    business's cutoff, commonly 24 hours. Decide up front whether late
+    cancellations inside the cutoff count as no-shows; many practices
+    report them together as "lost slots" and separately as no-shows.
+    Measure weekly for scheduling decisions and monthly for the trend,
+    and break the rate out by provider, day of week, appointment type,
+    and whether the booking was new or returning, because those cuts
+    are where the causes show.
+  example: >
+    A hair salon books 640 appointments in a month. Forty-eight clients
+    never arrived and gave no notice, and another 22 canceled within the
+    24-hour window. Strict no-show rate is 48 divided by 640, or 7.5
+    percent. Counting late cancellations too, 70 lost slots out of 640
+    is 10.9 percent. At an average ticket of 85 dollars the strict
+    no-shows alone cost about 4,080 dollars of revenue that month.
+  benchmarks:
+    - scope: Single-specialty medical groups
+      value: 6.81 percent (2023)
+      note: MGMA DataDive aggregate no-show rate for single-specialty groups; 7 percent in 2019, 5.55 percent in 2020, and about 5 percent in 2021 and 2022. Medical practices only; salons and spas are not covered.
+      source: https://www.mgma.com/mgma-stat/no-show-fees-in-medical-practices-on-the-rise-to-balance-bumpy-attendance-rates
+      source_name: MGMA Stat, No-show fees in medical practices on the rise to balance bumpy attendance rates (January 2025)
+    - scope: Healthcare appointments, global literature
+      value: about 23 percent average across 105 studies
+      note: Systematic review of published no-show studies, mostly hospital and outpatient clinics; regional averages ranged from 13.2 percent in Oceania to 43.0 percent in Africa. Reads far higher than US private-practice figures because of the settings studied.
+      source: https://pubmed.ncbi.nlm.nih.gov/29482948/
+      source_name: Dantas et al., No-shows in appointment scheduling, a systematic literature review, Health Policy (2018)
+  drivers:
+    - name: Lead time between booking and appointment
+      note: The longer the gap, the more often life intervenes; appointments booked three weeks out no-show at a multiple of those booked within a few days.
+    - name: Prior no-show history of the customer
+      note: A customer who has missed before is the single strongest predictor of missing again, which is why practices flag repeat offenders for confirmation calls or deposits.
+    - name: Reminder timing and channel
+      note: A text two days ahead with a one-tap confirm or cancel gives the office time to refill the slot; a call the same morning does not.
+    - name: New versus returning customers
+      note: First-time bookings from online search or a listing site no-show more than established clients who know the provider and feel a personal obligation.
+    - name: Deposits and cancellation fees
+      note: A card on file or a small deposit changes behaviour more than any reminder, though it can suppress bookings from price-sensitive customers.
+    - name: Appointment type and time of day
+      note: Free consultations, first-of-day slots, and Monday mornings tend to run higher, while paid procedures and mid-morning slots run lower.
+  improve:
+    - name: Send a two-step reminder with a cancel link
+      note: A reminder at 48 hours and again at 24 hours, each with a one-tap cancel, converts silent no-shows into early cancellations that can be refilled.
+    - name: Keep a same-day waitlist
+      note: A short list of customers who want an earlier slot lets the front desk fill a canceled hour with a single text instead of eating the loss.
+    - name: Require a card on file for high-risk bookings
+      note: Ask new customers, long appointments, and repeat no-shows to hold the slot with a card, and state the late-cancel fee at booking.
+    - name: Shorten lead time with tighter templates
+      note: Holding a few slots each day for bookings inside 72 hours reduces the share of appointments made weeks out, which are the ones most often missed.
+    - name: Confirm high-risk appointments by phone
+      note: A live call the day before to anyone with a prior no-show or a first visit costs minutes and recovers the most expensive slots.
+  pitfalls:
+    - name: Late cancellations silently mixed into no-shows
+      note: A rate that includes cancellations inside the window will not match another practice's strict no-show figure; state the definition next to the number.
+    - name: Denominator of arrivals instead of bookings
+      note: Dividing no-shows by completed visits overstates the rate; the denominator is everything that was scheduled for the period.
+    - name: Rescheduled appointments counted twice
+      note: A visit moved from Tuesday to Thursday should count once in the denominator, or the rate is diluted by the practice's own schedule changes.
+    - name: One practice-wide number hiding a provider or day
+      note: A 6 percent average can hide a new associate at 14 percent or Saturday mornings at 12 percent; the useful view is segmented.

@@ -5,3 +5,69 @@ summary: >
   Qualified facility visitors or inquiries that activate a membership.
 unit: percent
 direction: higher
+article:
+  what: >
+    Membership conversion rate counts the share of people who showed
+    real interest in a gym, by taking a tour, using a trial pass, or
+    submitting an enquiry, and then signed a membership. It is the
+    sales manager's and each membership advisor's number, and the owner
+    watches it because lead generation costs money per head: at a
+    fixed marketing spend the conversion rate decides how many members
+    the club gains for that spend, and it is the first place a weak
+    advisor, a confusing price list, or a poor tour shows up.
+  formula: New memberships signed ÷ qualified prospects (tours, trials, or enquiries) in the period × 100
+  how_to_calculate: >
+    Pick one prospect definition and hold it: tours given, trial passes
+    redeemed, or enquiries logged with contact details. Each gives a
+    different rate, with tours converting highest and web enquiries
+    lowest, so report them as separate funnel stages if the club tracks
+    all three. The numerator is memberships signed by those prospects
+    within a window, typically 30 days from first contact. Attribute
+    each join to the prospect record it came from, and exclude
+    walk-ins who joined without a tour if tours are the denominator.
+    Report per advisor and per lead source monthly.
+  example: >
+    A gym logs 210 tours in October. Within 30 days, 88 of those
+    prospects sign a membership. Tour conversion is 88 divided by 210,
+    or 42 percent. The same month 640 web enquiries produced 61 joins,
+    an enquiry conversion of 9.5 percent, and one advisor closed 55
+    percent of her tours while another closed 28 percent, which is
+    the coaching conversation for November.
+  benchmarks: []
+  benchmark_note: >
+    The Health and Fitness Association and IHRSA publish membership
+    growth and retention but no public conversion figures, and vendor
+    numbers depend on where in the funnel the prospect is counted. Set
+    the target from the club's own funnel: track tours, trials, and
+    enquiries separately for a quarter, set a per-advisor target at the
+    club's best performer's sustained rate, and review lead sources by
+    their conversion and cost per join together.
+  drivers:
+    - name: Lead source quality
+      note: Referrals and walk-ins convert several times better than paid social leads, so a shift in lead mix moves the rate without any change in selling.
+    - name: Speed of follow-up
+      note: An enquiry answered within minutes converts far better than one answered the next day; the prospect is often contacting three clubs at once.
+    - name: Advisor skill and script
+      note: Tours that ask about the prospect's goal and show the specific class or space that fits it close more than tours that recite amenities.
+    - name: Price presentation and joining fees
+      note: A simple price with a clear joining offer closes on the day; a complex tier list sends the prospect home to think.
+    - name: Trial design
+      note: A free week with a booked induction converts; a free week left unstructured lets the prospect drift and compare.
+  improve:
+    - name: Respond to every enquiry inside five minutes
+      note: Automated acknowledgment plus a human call or text within minutes during opening hours lifts enquiry conversion more than any script change.
+    - name: Book the tour with a goal question
+      note: Ask what the prospect wants to achieve when booking, and build the tour around it, ending at the class or trainer that fits.
+    - name: Present one offer and ask for the join
+      note: Advisors close on the tour with a single recommended plan and a today-only joining offer, then log the outcome.
+    - name: Coach advisors on their own rate
+      note: Weekly per-advisor conversion with a shadowed tour for the lowest performer moves the club rate within a month.
+    - name: Follow up non-joiners at three and ten days
+      note: A personal message referencing the prospect's goal recovers a share of the ones who left to think.
+  pitfalls:
+    - name: Mixing funnel stages in one rate
+      note: Dividing joins by enquiries in one month and by tours in the next makes the trend meaningless; fix the denominator and label it.
+    - name: Joins with no prospect record
+      note: Members who join online or walk in without a logged prospect inflate the numerator against a denominator that never saw them.
+    - name: No attribution window
+      note: A prospect who toured in January and joined in June should not count in June's rate; use a fixed window such as 30 days.

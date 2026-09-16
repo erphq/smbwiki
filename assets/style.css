@@ -52,6 +52,8 @@ a:hover { text-decoration: underline; }
 main a:visited { color: var(--blue-visited); }
 .muted { color: var(--muted); font-weight: 400; }
 .note { color: var(--soft); }
+.formula { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.95rem; padding: 0.55rem 0.8rem; border-left: 3px solid var(--blue); background: var(--hair-lt); margin: 0.6rem 0 1rem; }
+.article-list li { margin: 0 0 0.5rem; }
 .dangling { color: var(--muted); }
 .source { margin-top: 2.2rem; font-size: 0.85rem; color: var(--muted); }
 .dense { line-height: 1.9; }

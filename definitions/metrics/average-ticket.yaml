@@ -5,3 +5,74 @@ summary: >
   Mean revenue per completed job or order.
 unit: currency
 direction: higher
+article:
+  what: >
+    Average ticket is the mean amount a customer pays per completed
+    transaction, job, or order. It is the owner's number for how much
+    each visit is worth: a restaurant reads it as the check, a repair
+    shop as the invoice, a retailer as the basket, and a hotel as the
+    folio. Together with the count of tickets it explains all of
+    revenue, so when sales move an operator looks here first to learn
+    whether fewer people came or each one spent less. Staff can move it
+    at the counter in a way they cannot move traffic.
+  formula: Total revenue for the period ÷ number of completed transactions in the period
+  how_to_calculate: >
+    Divide net revenue for the period by the number of closed
+    transactions in the same period. Define a transaction consistently:
+    one check per table, one invoice per repair order, one receipt per
+    retail sale, one folio per stay. Use net revenue after discounts,
+    refunds, and voids, and exclude sales tax and tips. Many operators
+    also compute it per guest or per cover for restaurants, per work
+    order for services, and by daypart, channel, or technician to find
+    where it is low. A median alongside the mean shows whether a few
+    large tickets are carrying the average.
+  example: >
+    An auto repair shop closes 620 repair orders in a month and bills
+    248,000 dollars net of discounts and sales tax. Average ticket is
+    248,000 divided by 620, or 400 dollars. Split by type, 380 oil
+    change and inspection tickets average 95 dollars while 240 repair
+    tickets average 883 dollars, which tells the owner that the
+    inspection lane, and the advisor who presents its findings, is
+    where the blended figure will be won.
+  benchmarks: []
+  benchmark_note: >
+    No public statistical series reports average ticket by business
+    type, and the figure varies so much between a coffee shop, a
+    jeweler, and an HVAC contractor that a general range would be
+    meaningless. Trade surveys such as the Ratchet+Wrench auto repair
+    industry survey and restaurant association operations reports
+    publish average repair order and average check figures for members;
+    use those for a specific trade. Otherwise set the target from the
+    business's own trailing twelve months, by ticket type, and aim to
+    lift each type by a stated percent through attachment and mix.
+  drivers:
+    - name: Price level
+      note: A menu, labor rate, or shelf price increase raises the average directly, and a price cut or a heavy promotion lowers it in the same period.
+    - name: Attachment and upsell
+      note: A drink with the meal, a filter with the service, a warranty with the appliance, or an add-on treatment adds lines to the same ticket.
+    - name: Job and product mix
+      note: A month heavy in inspections, small parts, or quick trims averages lower than one with installs, major repairs, or full color services.
+    - name: Discounts and refunds
+      note: Coupons, loyalty redemptions, and comps come off net revenue and pull the mean down without changing the count of tickets.
+    - name: Party size or scope per visit
+      note: A four-top spends more than a two-top and a whole-house service more than a single room, so booking practice shapes the number.
+  improve:
+    - name: Script one suggestion per ticket
+      note: Train staff to offer a specific relevant add-on at every checkout, and track attachment rate by employee so the habit sticks.
+    - name: Build good-better-best options
+      note: Present three tiers on estimates, menus, and service packages; a share of customers step up from the base option when it is offered.
+    - name: Bundle small items into packages
+      note: A tune-up package, a wash and wax, or a prix fixe combine low value lines into one higher priced ticket that is easier to sell.
+    - name: Review pricing on a schedule
+      note: Adjust prices at least yearly against cost and the local market so the ticket keeps pace with what the work actually costs to deliver.
+    - name: Stop discount leakage
+      note: Require a reason code for every discount and cap staff discretion so the average is set by price and mix, and not by giveaways.
+  pitfalls:
+    - name: Gross sales including tax and tips
+      note: Sales tax and gratuities pass through the business; leaving them in inflates the ticket and hides the real trend in what customers buy.
+    - name: Inconsistent definition of a transaction
+      note: Counting a split check as two tickets or a multi-day repair as several invoices lowers the average and breaks the comparison across periods.
+    - name: A few large jobs read as a trend
+      note: One full system install or a wedding party lifts a month's mean; check the median and the mix before crediting the counter with an improvement.
+    - name: Chasing the average at the cost of traffic
+      note: Pushing add-ons that customers resent raises the ticket and lowers return visits; watch rebooking or repeat rate alongside it.

@@ -4,6 +4,21 @@ Primary and standards-body references used to anchor classifications,
 regulated credentials, and operating details. Source links support the
 structured definitions; they do not replace operator review.
 
+## 2026-09-16 metric benchmarks
+
+Benchmark sources for the 91 metric articles live inline, one URL per
+benchmark row in `definitions/metrics/<id>.yaml`, with the period and
+basis in the row note. 72 distinct sources across 45 metrics: Census
+Annual Retail Trade Survey and Monthly Retail Trade (via FRED), BLS
+Survey of Occupational Injuries and Illnesses, CMS Care Compare, MGMA
+DataDive, National Restaurant Association operations data, AHLA and
+STR, CFMA Financial Benchmarker, NAHB, TIA, CSIMarket industry ratios,
+CAP Q-Probes, ALTA/NSPS standards, Coin Laundry Association, WERC DC
+Measures, ReFED, Census Housing Vacancy Survey, SEC filings, and named
+industry surveys. Rows built on vendor datasets say so in the note.
+The 46 metrics with no published range carry a `benchmark_note`
+instead of a number.
+
 ## 2026-07-31 India and Singapore food-service layer
 
 - [MoSPI, National Industrial Classification 2008](https://www.mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/nic_2008_17apr09.pdf):

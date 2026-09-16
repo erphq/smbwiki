@@ -6,3 +6,69 @@ summary: >
   activity window.
 unit: percent
 direction: higher
+article:
+  what: >
+    Active member rate counts the share of a gym's paying members who
+    actually walked through the door inside a chosen window, most often
+    the last 30 days. It is the general manager's and the retention
+    team's number, and it is watched because a member who has stopped
+    visiting is the member who cancels next: the billing report can
+    show a stable member count for months while the club is quietly
+    emptying, and the visit log is the earliest place that shows up.
+  formula: Members with at least one recorded check-in during the window ÷ members with an active membership at the end of the window × 100
+  how_to_calculate: >
+    Take every membership in good standing on the last day of the
+    window as the denominator, including frozen memberships only if the
+    club counts them as active for billing. The numerator is the subset
+    with at least one check-in, class booking attended, or door swipe
+    inside the window. Thirty days is the common window; some clubs
+    also report 14 and 90 days to see the gradient. Exclude staff and
+    complimentary accounts, and treat family memberships either as one
+    member or per person consistently. Report the rate and the count
+    of members with no visit in the window, which is the call list.
+  example: >
+    A gym has 1,850 members in good standing on 30 June. The access
+    system shows 1,240 of them checked in at least once in June.
+    Active member rate is 1,240 divided by 1,850, or 67 percent. The
+    610 members with no visit include 180 who joined more than a year
+    ago and had visited monthly until April; those are the ones the
+    retention team calls first.
+  benchmarks: []
+  benchmark_note: >
+    The Health and Fitness Association's benchmarking reports publish
+    retention and membership growth but no public figure for the share
+    of members visiting in a month, and definitions of "active" vary by
+    access system. Set the target from the club's own check-in data:
+    measure the 30-day rate for three months, then set a target that
+    reflects the club's format, since a low-price high-volume gym and a
+    boutique studio have different natural visit patterns, and track
+    the count of zero-visit members as the working list.
+  drivers:
+    - name: Onboarding in the first 60 days
+      note: Members who establish a visit habit in the first two months keep it; those who visit twice and stop rarely return without contact.
+    - name: Membership model and price
+      note: Low-price open-access gyms carry many members who pay and never visit; boutique and class-based studios run higher because the price demands use.
+    - name: Season and weather
+      note: January and September spike visits and July and December fall away, so month-on-month comparison should be against the same month last year.
+    - name: Class and program hooks
+      note: Members booked into a recurring class or a training program visit on a schedule; open-gym members visit when they feel like it, which is less.
+    - name: Access data quality
+      note: Doors propped open, shared cards, and unlinked class apps drop visits from the log and make the rate look worse than the floor.
+  improve:
+    - name: Contact members at 14 days without a visit
+      note: A text or call from a named staff member at two weeks of absence catches lapses while the habit is recoverable.
+    - name: Book new members into a program
+      note: A set of induction sessions or a starter class series in the first month builds the habit that open access alone does not.
+    - name: Report the zero-visit list weekly
+      note: Give the front desk and trainers the names, so outreach is a routine and the list shrinks every week instead of growing.
+    - name: Fix the check-in path
+      note: Make every entry, class, and app booking write to one visit log so the rate measures behaviour, not the access system's gaps.
+    - name: Tie trainer incentives to member visits
+      note: Reward trainers for the visit frequency of members they onboarded, which aligns the floor staff with retention instead of sales only.
+  pitfalls:
+    - name: Counting frozen or unpaid members as active
+      note: Including memberships on hold in the denominator drags the rate down for a reason the retention team cannot act on; report holds separately.
+    - name: Window changed between reports
+      note: A 30-day rate and a 90-day rate can differ by twenty points; pick one window for the trend and label any other cut.
+    - name: Family and multi-site memberships counted once
+      note: A family plan with four people who each visit is one member in billing; decide whether the metric counts people or accounts and apply it consistently.

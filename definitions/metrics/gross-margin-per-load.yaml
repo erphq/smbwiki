@@ -5,3 +5,77 @@ summary: >
   Shipper revenue less carrier cost and load-specific direct charges.
 unit: currency
 direction: higher
+article:
+  what: >
+    Gross margin per load is what a brokerage keeps on one shipment after
+    paying the carrier and the charges tied to that load: the shipper's
+    invoice less the carrier's rate, accessorials passed through, and
+    direct costs such as a lumper fee or a per-load insurance charge. It is
+    the freight broker's basic unit of earnings, watched by the owner, by
+    the rep who quoted the load and by the carrier rep who covered it.
+    Operators watch it because payroll, software and rent are paid from
+    the sum of these margins, and because it shows within days when the
+    market moves against the quotes already on the books.
+  formula: Shipper invoice for the load less carrier pay and load-specific direct charges, averaged over loads in the period
+  how_to_calculate: >
+    Start from the amount invoiced to the shipper for the load, including
+    fuel surcharge and any accessorials billed. Subtract the carrier's
+    linehaul and fuel, accessorials paid to the carrier, and direct costs
+    charged to the load such as lumpers, detention paid out or per-load
+    cargo insurance. Do not subtract commissions or office costs; those
+    come out of total gross margin, not the per-load figure. Average over
+    loads delivered in the period and report the percentage version,
+    margin divided by invoice, alongside it. Book the margin at delivery
+    and restate it when a late carrier accessorial or a claim arrives.
+    Report by mode, since LTL and intermodal margins differ from truckload.
+  example: >
+    A freight brokerage books a dry van load from Dallas to Atlanta at
+    2,150 dollars to the shipper, including 310 dollars of fuel surcharge.
+    It pays the carrier 1,780 dollars and reimburses a 95 dollar lumper
+    that the shipper agreed to cover, billed back at cost. Gross margin on
+    the load is 2,150 plus 95 less 1,780 less 95, or 370 dollars, which is
+    17.2 percent of the 2,150 dollar invoice. Across the month's 640 loads
+    the desk averaged 290 dollars, so this load ran above the house
+    average.
+  benchmarks:
+    - scope: Freight brokerage, truckload
+      value: 261 dollars gross margin per load on a 1,798 dollar average invoice
+      note: TIA member survey, third quarter 2024, year-over-year comparison; gross margin per load fell 8.9 percent from 287 dollars a year earlier while invoice per load fell 3.6 percent. Truckload only, all company sizes.
+      source: https://tianet.org/common/Uploaded%20files/Education/Product/Q3%202024%20Market%20Report.pdf
+      source_name: Transportation Intermediaries Association, 3PL Market Report, Third Quarter 2024 (Issue 64)
+    - scope: Freight brokerage, truckload gross margin percentage by company size
+      value: 17.6 percent under 16 million dollars revenue, 14.9 percent at 16 to 100 million, 14.4 percent over 100 million
+      note: Same TIA report and quarter; smaller brokerages run higher percentage margins on fewer loads, and all three tiers fell 80 to 120 basis points year-over-year.
+      source: https://tianet.org/common/Uploaded%20files/Education/Product/Q3%202024%20Market%20Report.pdf
+      source_name: Transportation Intermediaries Association, 3PL Market Report, Third Quarter 2024 (Issue 64)
+  drivers:
+    - name: Spot and contract mix
+      note: Contract lanes priced a year ago earn thin or negative margin when carrier rates rise, and fat margin when they fall; spot loads reprice both sides at once.
+    - name: Freight cycle timing
+      note: Shipper rates lag carrier rates by months in both directions, so margin per load expands in a softening market and compresses in a tightening one.
+    - name: Lane and equipment
+      note: Backhaul-poor lanes and reefer or flatbed freight cost more to cover, and the shipper price does not always follow.
+    - name: Coverage lead time
+      note: A load covered the same day it picks up pays whatever the board asks, while a load covered two days out can go to a core carrier at contract.
+    - name: Accessorials recovered
+      note: Detention, layover and lumper paid to the carrier and never billed to the shipper come straight out of the load's margin.
+  improve:
+    - name: Reprice contract lanes quarterly
+      note: Compare each contract lane against current spot and contract indices every quarter and renegotiate or shed lanes running under the floor.
+    - name: Cover early through a core carrier group
+      note: Route repeat lanes to a small group of carriers at agreed rates and hold the board for overflow only.
+    - name: Bill every accessorial the same week
+      note: Match carrier accessorial claims to shipper billing within the week, with the receiver's signed time on the paperwork.
+    - name: Set a quoting floor per mode
+      note: Require desk-lead approval for any quote under a stated dollar and percent margin, and review the exceptions monthly.
+    - name: Report margin by rep and lane
+      note: A per-load view by customer rep and lane shows which accounts are earning below the house average before the quarter closes.
+  pitfalls:
+    - name: Fuel surcharge in revenue but not in carrier pay
+      note: Counting the shipper's fuel surcharge as revenue while the carrier's all-in rate hides fuel overstates margin on every load.
+    - name: Margin booked at booking
+      note: Loads fall off, get re-covered at a higher rate or pick up accessorials; margin at booking can be a hundred dollars above margin at delivery.
+    - name: Claims and late charges left out
+      note: A 1,200 dollar claim absorbed on a load with 300 dollars of margin makes that load and three others worthless; restate when the claim settles.
+    - name: Modes averaged together
+      note: LTL shipments carry a fraction of the dollar margin of a truckload, so a mode shift moves the average with no change in pricing.

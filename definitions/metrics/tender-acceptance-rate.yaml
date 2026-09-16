@@ -6,3 +6,68 @@ summary: >
   acceptance.
 unit: percent
 direction: higher
+article:
+  what: >
+    Tender acceptance rate is the share of load tenders a freight
+    brokerage offers to its qualified carriers that come back with a
+    committed acceptance. It is the carrier sales desk's number: of the
+    loads the brokerage tried to cover through its established carrier
+    base at the offered rate, how many were taken on the first offer.
+    Owners watch it because every rejected tender means a second call,
+    a load board post, a higher rate, or a service failure, and because
+    the rate tracks the market: rejections rise when trucks are scarce
+    and fall when capacity is loose.
+  formula: Tenders accepted by the carrier ÷ tenders offered to qualified carriers × 100
+  how_to_calculate: >
+    Count every tender the brokerage sends to a carrier in the period,
+    by EDI, portal, email, or phone, and count the tenders the carrier
+    accepts with a commitment to the pickup. Divide accepted by offered
+    and express as a percent. Count each offer, so a load tendered to
+    three carriers before acceptance is one acceptance in three offers.
+    Separate contracted and dedicated carriers from spot carriers found
+    on a load board, since the former have agreed lanes and rates and
+    the latter are a fresh negotiation. Track by lane, equipment type,
+    lead time, and carrier, and track the rejection reasons given.
+  example: >
+    A freight brokerage offers 2,400 tenders to its core carrier base
+    in a month and receives 1,920 committed acceptances, an acceptance
+    rate of 80 percent. Dry van lanes out of the Midwest run 88 percent
+    while reefer loads with under 24 hours notice run 61 percent, and
+    one high-volume carrier has dropped from 90 to 70 percent since a
+    rate reduction. The desk raises reefer lead time with the shipper
+    and revisits the carrier's rate before the next tender cycle.
+  benchmarks:
+    - scope: Contracted truckload carriers, US national
+      value: about 93.5 percent accepted (6.48 percent rejected)
+      note: FreightWaves SONAR Outbound Tender Rejection Index, 12 December 2024, mid to large truckload carriers accepting contracted shipper tenders; acceptance is 100 minus the index. The same article gives 4.5 percent rejected on 29 September 2024 and 2.92 percent in May 2023. Measures carrier acceptance of shipper contract tenders, so a brokerage's offers to spot carriers will read lower.
+      source: https://www.freightwaves.com/news/rising-rejection-rates-amid-demand-drop-reveal-truckload-capacity-exodus
+      source_name: FreightWaves, Rising rejection rates amid demand drop reveal truckload capacity exodus (December 2024)
+  drivers:
+    - name: Rate offered against the market
+      note: Carriers reject tenders priced below what they can get on the load board that day, so acceptance falls as spot rates rise above contract.
+    - name: Market capacity
+      note: When freight demand outruns available trucks, rejections climb across every lane; in a loose market carriers take almost everything.
+    - name: Lead time on the tender
+      note: A tender with two days notice lets the carrier plan a driver; one with four hours finds the truck already committed elsewhere.
+    - name: Lane and equipment
+      note: Headhaul lanes into strong outbound markets are accepted readily, while backhaul lanes into weak markets and specialized equipment see more rejections.
+    - name: Carrier relationship and volume
+      note: A carrier given steady weekly volume and paid on time accepts to protect the account; one used only for hard loads accepts only when convenient.
+  improve:
+    - name: Tender to the right carrier first
+      note: Route each load to the carrier with the best acceptance history on that lane and equipment, using the brokerage's own data, before going wider.
+    - name: Give carriers lead time
+      note: Push shippers to tender a day or more ahead and offer standing weekly volume so carriers can plan drivers around the freight.
+    - name: Price contract lanes to the market
+      note: Review lane rates against the current spot index monthly and adjust before rejections force the load to a more expensive spot cover.
+    - name: Build a core carrier program
+      note: Concentrate volume with a set of carriers who commit capacity, pay them quickly, and give them first look at the freight.
+    - name: Log and act on rejection reasons
+      note: Record why each tender was declined, rate, timing, equipment, or lane, and fix the reason that recurs most.
+  pitfalls:
+    - name: Counting the load instead of the offer
+      note: A load accepted on the fourth carrier is one acceptance in four tenders; counting it as a covered load hides three rejections.
+    - name: Spot and contract carriers mixed
+      note: Load board carriers reject at a different rate from contracted ones, and blending them makes the figure track carrier mix instead of desk performance.
+    - name: Accepted then fallen off
+      note: A carrier that accepts and later cancels was not a real acceptance; reconcile against loads actually picked up by the accepting carrier.

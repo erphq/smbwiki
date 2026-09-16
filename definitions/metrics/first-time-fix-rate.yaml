@@ -5,3 +5,75 @@ summary: >
   Service calls resolved in a single visit.
 unit: percent
 direction: higher
+article:
+  what: >
+    First-time fix rate counts the share of service calls where the
+    technician resolved the customer's problem on the first visit,
+    with no return trip for parts, a second opinion, or a repeat of
+    the same complaint. It is the service manager's number in
+    appliance repair, HVAC, plumbing, electrical, and security
+    companies because every second visit costs a truck, a technician's
+    time, and a slot that could have gone to another customer, while
+    earning nothing new. Customers judge the company almost entirely
+    on this: one visit is a fixed problem, two visits is a story they
+    tell.
+  formula: Service calls resolved on the first visit ÷ service calls completed in the period × 100
+  how_to_calculate: >
+    The numerator is calls closed on the first visit with no follow-up
+    visit within the review window, typically 30 days, for the same
+    issue. The denominator is all service calls completed in the
+    period. Exclude calls where a second visit was planned and sold at
+    the first, such as a quoted repair the customer approved for a
+    later date, and count them separately as two-stage jobs. Include
+    calls where the technician could not diagnose, left for parts, or
+    where the customer called back for the same symptom. Report by
+    technician, by job type, and by reason for the miss: parts, skill,
+    time, or access. A month is the usual period.
+  example: >
+    An appliance repair service completes 640 service calls in a
+    month. Of those, 486 were fixed on the first visit; 98 needed a
+    part the truck did not carry and were finished on a second visit;
+    31 were escalated to a senior technician; and 25 were callbacks
+    for the same symptom within 30 days. First-time fix rate is 486 ÷
+    640, or 75.9 percent. Parts caused 64 percent of the misses, which
+    points at truck stock before it points at training.
+  benchmarks:
+    - scope: Field service organizations, all industries
+      value: 77 percent average first-time fix
+      note: The Service Council 2013 field service research, reported by its chief customer officer; averages ranged 75 to 78 percent across organizations, with the recommendation to be in the 90 percent and above bracket. Cross-industry equipment service data, not specific to home service trades.
+      source: https://www.fieldtechnologiesonline.com/doc/first-time-fix-the-underappreciated-field-service-metric-0001
+      source_name: The Service Council via Field Technologies Online, First-Time Fix, The Underappreciated Field Service Metric (August 2013)
+    - scope: Field service organizations, all industries
+      value: 75 percent average first-time fix
+      note: Aberdeen Group 2013 survey as reported on a field service software vendor's page; the survey found 1.6 additional dispatches on average for unresolved calls and that lack of parts caused 51 percent of extra visits. Vendor page citing a named survey; the original report is not freely available.
+      source: https://fieldpoint.net/first-time-fix-rates/
+      source_name: Aberdeen Group via Fieldpoint, Key First-Time Fix Rate Stats (2013 survey)
+  drivers:
+    - name: Parts on the truck
+      note: Both published surveys put parts as the largest cause of a second visit; a truck stocked from job history fixes more on the first trip.
+    - name: Diagnostic skill and information
+      note: A technician with the model's service manual, wiring diagram, and error-code history on a tablet finds the fault the first time.
+    - name: Intake quality
+      note: A dispatcher who records the model number, symptom, and photos lets the technician arrive with the likely part and the right tools.
+    - name: Time allotted per call
+      note: A board packed too tight pushes the technician to leave a hard job unfinished so the next customer is not missed.
+    - name: Access and customer readiness
+      note: Locked mechanical rooms, no power, or an absent decision maker turn a solvable call into a return trip.
+  improve:
+    - name: Stock trucks from the last year of parts usage
+      note: Build each truck's inventory from the parts actually consumed on that technician's job types, and review it quarterly.
+    - name: Capture model and symptom at booking
+      note: Require model numbers and a photo at intake so the dispatcher can pre-pull parts and assign the technician who knows the unit.
+    - name: Match technician to job
+      note: Send sealed-system, gas, and control-board work to the technicians certified on it and keep generalists on the routine calls.
+    - name: Put repair information in the truck
+      note: Manuals, diagrams, and a phone line to a senior technician cut the calls that end with a return visit for a second opinion.
+    - name: Review every miss by reason
+      note: Tag each second visit as parts, skill, time, or access and fix the largest bucket; the fix is usually cheaper than the visits.
+  pitfalls:
+    - name: Counting planned second visits as misses
+      note: A quoted repair scheduled after approval is a sold job, not a failed first visit; track it separately or the rate is unfairly low.
+    - name: Counting callbacks as new calls
+      note: A return for the same symptom logged as a fresh job inflates both the denominator and the apparent fix rate; link it to the original.
+    - name: Ignoring the review window
+      note: A fix that fails on day 20 is still a miss; without a stated window the rate depends on when the report was run.

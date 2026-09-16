@@ -5,3 +5,72 @@ summary: >
   Completed jobs per technician per working day.
 unit: count
 direction: higher
+article:
+  what: >
+    Jobs per tech-day counts how many service calls or route stops a
+    technician completes in a working day, averaged across the crew.
+    It is the dispatcher's and the owner's number in a plumbing, HVAC,
+    pest control, pool, or appliance repair company because trucks and
+    technicians are the fixed cost, and each additional completed job
+    per day is revenue on the same payroll. It also shows whether the
+    schedule is dense enough to keep technicians earning and whether
+    drive time is eating the day.
+  formula: Jobs completed in the period ÷ technician working days in the period
+  how_to_calculate: >
+    The numerator is jobs marked complete by a technician in the
+    period; count a job once even if it took two visits, or count
+    visits and call it visits per tech-day, but pick one. The
+    denominator is technician days actually worked, from timesheets,
+    excluding vacation, training, and shop days. Report by technician,
+    by job type, and for the company. Route trades such as pest and
+    pool service run high counts of short stops, while diagnostic
+    trades run two to five jobs a day, so compare within the same
+    service line. Pair the figure with revenue per tech-day and
+    callback rate, since a high count with low revenue or many
+    returns is a dispatcher rushing the board.
+  example: >
+    A plumbing contractor with six service technicians logs 118
+    technician working days in October. Completed jobs total 402.
+    Jobs per tech-day is 402 ÷ 118, or 3.4. The two technicians on
+    drain cleaning average 4.6, the four on repair and water heater
+    work average 2.8, and one repair tech at 2.1 spent a third of his
+    days on a single-technician route across the far side of the
+    service area, which the dispatcher can fix by zoning.
+  benchmarks: []
+  benchmark_note: >
+    No published figure for jobs per technician-day was found from a
+    trade association or government source; software vendors quote
+    ranges from their own customer data without stating a method.
+    Set your own target by service line from the last six months of
+    dispatch records, then raise it by reducing drive time and
+    no-shows while watching callback rate and revenue per job so the
+    count does not rise at their expense.
+  drivers:
+    - name: Territory density and zoning
+      note: A technician kept inside one zone drives twenty minutes between jobs; one sent across the county drives an hour and loses a stop.
+    - name: Job type mix
+      note: Maintenance tune-ups and route stops are predictable and short, while diagnostics and repairs vary from one hour to a full day.
+    - name: Cancellations and no-shows
+      note: A customer who is not home costs the slot and the drive, and a dispatcher without a standby list cannot refill it.
+    - name: Parts on the truck
+      note: A job that needs a supply-house run mid-day loses an hour and often turns into a second visit that counts against tomorrow.
+    - name: Booking and dispatch practice
+      note: Time windows too wide, first calls scheduled late, and technicians waiting for the next assignment all leave capacity unused.
+  improve:
+    - name: Zone the board
+      note: Assign technicians to geographic zones each day and book new calls into the zone of the nearest available truck.
+    - name: Stock trucks from job history
+      note: Build truck inventory from the parts used on the last year of jobs so common repairs finish without a supply-house trip.
+    - name: Confirm the day before
+      note: A confirmation call or text the evening before, with a standby list to fill cancellations, protects every slot on the board.
+    - name: Start the first job from home
+      note: Technicians who leave from home to the first call, with the day's route sent the night before, gain a stop over those who report to the shop.
+    - name: Track drive time separately
+      note: Report wrench time, drive time, and idle time per technician each week so the dispatcher sees where the day goes.
+  pitfalls:
+    - name: Counting visits as jobs
+      note: A repair that took three visits is three jobs under a visit count and one job under a completion count; the second is honest.
+    - name: Using scheduled days instead of worked days
+      note: Including vacation, training, or sick days in the denominator understates the number and hides a staffing gap.
+    - name: Chasing count over quality
+      note: Rushing technicians raises jobs per day and callback rate together; read the two numbers side by side.

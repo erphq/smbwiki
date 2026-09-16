@@ -6,3 +6,86 @@ summary: >
   delivered visits.
 unit: incidents per 1,000 service days
 direction: lower
+article:
+  what: >
+    Incident rate counts the recorded falls, injuries, medication
+    errors, elopements, bites, and other safety events in a care or
+    boarding setting, scaled to the number of days or visits of care
+    delivered so that a 40-bed assisted living facility and a 120-bed
+    one can be compared. It is the director of nursing's, the center
+    director's, or the kennel manager's number, and it is watched
+    because it is both a quality signal for families and regulators
+    and the leading indicator of liability, staff turnover, and
+    licensing trouble.
+  formula: Recorded incidents in the period ÷ occupied days or delivered visits in the period × 1,000
+  how_to_calculate: >
+    Define the incident list in writing: which events count, from a
+    fall without injury to a medication error to a dog bite, and whether
+    near misses are included. Count every recorded event in the period
+    in the numerator. The denominator is the exposure: resident days
+    for assisted living, child days for a child care center, visits for
+    a home health agency or dialysis center, and boarding nights for a
+    pet boarding business. Multiply by 1,000 so the figure is readable.
+    Report by incident type as well as in total, because a rising fall
+    rate and a rising medication error rate call for different fixes,
+    and report severity separately, since a rate that counts every
+    minor event will rise as reporting improves.
+  example: >
+    An assisted living facility with 62 residents delivers 1,860
+    resident days in a 30-day month. Staff record 11 incidents: seven
+    falls, two with injury, three medication errors, and one skin tear.
+    Incident rate is 11 divided by 1,860 times 1,000, or 5.9 incidents
+    per 1,000 resident days; the fall rate alone is 3.8 per 1,000. Five
+    of the seven falls happened between 6 and 9 pm on the second floor,
+    which is the staffing pattern to examine.
+  benchmarks:
+    - scope: Long-stay nursing home residents, United States
+      value: 3.4 percent of residents with a fall with major injury
+      note: CMS Care Compare national average, July 2022 to June 2023, as cited in the 2025 HHS OIG report; measured per resident over the quarter's look-back, not per 1,000 days. OIG found nursing homes failed to report 43 percent of falls with major injury and hospitalization, so the true rate is higher.
+      source: https://oig.hhs.gov/documents/evaluation/10969/OEI-05-24-00180_NiVGuCQ.pdf
+      source_name: HHS Office of Inspector General, Nursing Homes Failed To Report 43 Percent of Falls With Major Injury and Hospitalization (2025)
+    - scope: Nursing and residential care facilities, worker injuries
+      value: 5.5 recordable cases per 100 full-time workers (2024)
+      note: BLS Survey of Occupational Injuries and Illnesses, employee injuries and illnesses, not resident incidents. Continuing care and assisted living facilities (NAICS 6233) also 5.5; home health care services 1.6; child day care services 1.9; health care and social assistance overall 3.4; all private industry 2.3.
+      source: https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables/table-1-injury-and-illness-rates-by-industry-2024-national.htm
+      source_name: U.S. Bureau of Labor Statistics, Survey of Occupational Injuries and Illnesses, Table 1 incidence rates by industry (2024)
+  benchmark_note: >
+    No public series reports resident or client incidents per 1,000
+    service days for assisted living, child care, home health, or pet
+    boarding; the CMS figure covers nursing homes and the BLS figures
+    cover staff injuries, both on different bases. Set the target from
+    the facility's own log: measure by type for six months with a
+    stable definition, then set reduction targets for the two most
+    frequent types and track them monthly against the same-month
+    prior year.
+  drivers:
+    - name: Staffing level and shift coverage
+      note: Falls and errors cluster on evenings, nights, and weekends when fewer staff cover the same residents or animals, so the incident log often maps to the roster.
+    - name: Acuity and dependency of the population
+      note: A facility admitting residents with dementia or mobility limits, or a kennel taking reactive dogs, carries a higher baseline rate for the same quality of care.
+    - name: Reporting culture
+      note: A facility that encourages reporting records more minor events; a rising rate after a new director can mean better reporting, not worse care.
+    - name: Environment and equipment
+      note: Lighting, flooring, grab bars, kennel latches, and playground surfaces set the physical risk before any staff action.
+    - name: Medication and care plan processes
+      note: Medication errors track how administration is documented and double-checked; care plan incidents track whether plans are current and read.
+  improve:
+    - name: Review every incident within 72 hours
+      note: A short root-cause review with the staff on shift catches the fixable pattern, such as a call light out of reach or a gate left open.
+    - name: Staff to the incident clock
+      note: Shift an aide or handler to the hours when incidents cluster, using the incident log instead of the historical roster to place people.
+    - name: Run a falls or bite prevention program
+      note: Assess each new resident or animal for risk on arrival and apply a specific plan, from hourly rounding to separated play groups.
+    - name: Audit medication administration monthly
+      note: Compare the medication record with the pharmacy dispensing log and the care plan for a sample of residents and correct process gaps.
+    - name: Report the rate to staff by type and severity
+      note: A monthly board in the staff room showing falls, errors, and injuries against target keeps the number owned by the people who move it.
+  pitfalls:
+    - name: Bed count in the denominator instead of occupied days
+      note: Dividing by licensed beds ignores occupancy; a half-full facility looks safer than it is, and a full one looks worse.
+    - name: Changing the incident definition mid-year
+      note: Adding near misses or minor events breaks the trend; record the definition change and restart the baseline.
+    - name: Comparing with public figures on a different basis
+      note: CMS falls are per resident per quarter and BLS rates are per 100 workers per year; neither converts to incidents per 1,000 service days without the underlying counts.
+    - name: Treating a low rate as good without checking reporting
+      note: The OIG found nearly half of major falls unreported in nursing homes; a low rate with thin documentation is more often under-reporting than safety.

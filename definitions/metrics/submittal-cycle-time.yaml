@@ -6,3 +6,74 @@ summary: >
   review disposition.
 unit: days
 direction: lower
+article:
+  what: >
+    Submittal cycle time counts the days between identifying that a
+    product, shop drawing, sample, or mix design needs review and
+    receiving a disposition the trade can act on, such as approved,
+    approved as noted, or revise and resubmit with clear comments. It
+    is the general contractor's number because the GC owns the log and
+    carries the schedule risk when long-lead items cannot be released
+    for fabrication. Architects and engineers watch their share of it,
+    the review turnaround, because contracts and fee agreements set a
+    reviewer window they must meet.
+  formula: Actionable disposition date minus date the submittal requirement was identified in the log, averaged across submittals closed in the period
+  how_to_calculate: >
+    Open the clock when the submittal is entered in the log from the
+    specification review, usually at buyout, and close it on the date
+    the reviewed submittal is returned with a disposition the trade can
+    build from. Report mean and median across submittals closed in the
+    month. Split the total into three stages when you can: contractor
+    preparation (log entry to submission), review (submission to
+    return), and resubmission loops. Count each revision cycle, since a
+    submittal returned twice for revision may show a normal review
+    stage and a very long total. Track long-lead items separately
+    because a late steel or switchgear submittal costs more than a late
+    paint sample.
+  example: >
+    A commercial general contractor logs a structural steel shop
+    drawing package on 3 February when the steel subcontract is
+    executed. The fabricator submits on 24 February (21 days of
+    preparation). The engineer returns it revise and resubmit on 12
+    March (16 days). The resubmission goes in on 19 March and comes
+    back approved as noted on 31 March (12 days). Total cycle time is
+    56 days from log entry to actionable disposition, of which 28 days
+    were review and 28 days were the contractor's side.
+  benchmarks: []
+  benchmark_note: >
+    No verified published range for total submittal cycle time was
+    found. Trade guidance quotes contract review windows of 10 to 14
+    days for the reviewer's stage, but those are contract terms, and
+    the design team's actual turnaround is rarely published. Set the
+    target from the contract: the specified review period plus the
+    preparation time your trades need, then measure each stage against
+    the current log and tighten the slowest stage first.
+  drivers:
+    - name: Review window in the contract
+      note: The owner-architect agreement sets a review period, commonly 10 to 14 calendar days, and consultants reviewing structural or mechanical items add their own time.
+    - name: Quality of the first submission
+      note: Incomplete packages, missing product data, or drawings without the contractor's own review stamp are returned unreviewed and restart the clock.
+    - name: Number of consultants in the routing
+      note: A submittal that passes through the architect, a structural engineer, and a specialty consultant accumulates queue time at each desk.
+    - name: Timing of buyout
+      note: Late subcontract awards push the log entry late and compress preparation time, so long-lead items are already behind when logged.
+    - name: Volume arriving at once
+      note: Hundreds of submittals sent in the first month overwhelm a small design office and push every item to the back of the queue.
+  improve:
+    - name: Build the submittal log at buyout with dates
+      note: Assign required-on-site dates, work backward through fabrication and review time, and give each trade a submit-by date.
+    - name: Review before you forward
+      note: A GC check for completeness and specification compliance before routing removes the most common cause of a revise and resubmit.
+    - name: Sequence submissions by need date
+      note: Send long-lead and structural items first and hold finishes until reviewers have capacity, instead of dumping the whole log at once.
+    - name: Agree review turnaround in writing
+      note: Confirm the review period with the architect at the preconstruction meeting and log the promised return date on each item.
+    - name: Chase by age in the weekly OAC meeting
+      note: A list of items past their promised return date, with the responsible reviewer named, is the most reliable way to shorten the review stage.
+  pitfalls:
+    - name: Measuring only the reviewer's stage
+      note: A contractor who reports 12 days of architect review while the trade took six weeks to prepare hides the larger delay.
+    - name: Counting each revision as a new submittal
+      note: Resetting the clock on resubmission makes a package that took three rounds and ninety days look like three quick reviews.
+    - name: Treating rejected as closed
+      note: A rejection is not an actionable disposition; the item stays open until the trade has something it can fabricate from.

@@ -6,3 +6,81 @@ summary: >
   assigned transaction cost.
 unit: currency per vehicle
 direction: higher
+article:
+  what: >
+    Vehicle gross profit is the money a dealership keeps on one unit sold:
+    the selling price less what the vehicle cost to acquire, recondition
+    and put over the curb. Dealers call it front-end gross, and it leaves
+    out finance and insurance income, which is tracked as back-end gross.
+    It belongs to the sales manager who works the deal and the used-car
+    manager who bought and reconditioned the unit. Operators watch it
+    because it is the first thing that shrinks when inventory ages or the
+    market softens, and because it decides whether extra volume is worth
+    chasing.
+  formula: Vehicle selling price less acquisition cost, reconditioning cost and directly assigned transaction cost, per vehicle retailed
+  how_to_calculate: >
+    Use the retail selling price after any discount and any manufacturer
+    rebate passed to the customer. Subtract the vehicle's cost: invoice
+    less holdback and dealer cash for a new unit, purchase or trade
+    allowance plus auction fees and transport for a used one. Subtract
+    reconditioning at internal cost and transaction costs assigned to the
+    deal, such as a waived documentation fee, a spiff or a pack. Divide by
+    units retailed in the period, separately for new and used; wholesale
+    disposals are a different number. Decide whether pack is a cost or an
+    internal transfer and keep it consistent, since pack alone can move the
+    figure by several hundred dollars.
+  example: >
+    A used car dealership sells a pickup for 27,900 dollars. It bought the
+    truck at auction for 22,600 dollars, paid 450 dollars in buy fees and
+    transport, and spent 1,150 dollars on reconditioning at internal cost
+    for tyres, brakes and detail. A 300 dollar sales spiff is assigned to
+    the deal. Vehicle gross profit is 27,900 less 22,600 less 450 less
+    1,150 less 300, or 3,400 dollars, before any finance income. Across the
+    month's 62 units the store averaged 2,150 dollars.
+  benchmarks:
+    - scope: New car dealership, new vehicles (publicly traded dealer groups)
+      value: 2,764 dollars gross profit per new vehicle retailed
+      note: Second quarter 2026, down 15.8 percent year-over-year; average across the publicly traded US dealer groups, front-end gross only, as reported in the Haig Report.
+      source: https://theshopmag.com/news/haig-partners-q2-2026-report-dealership-ma-franchise-horsepower-index/
+      source_name: Haig Partners, Haig Report second quarter 2026, as reported by THE SHOP (August 2026)
+    - scope: Used vehicles at franchised dealers (publicly traded dealer groups)
+      value: 1,634 dollars gross profit per used vehicle retailed
+      note: Second quarter 2026, down 2.0 percent year-over-year, same report and sample. Public groups run large stores; an independent used lot with lower overhead often targets more per unit on fewer sales.
+      source: https://theshopmag.com/news/haig-partners-q2-2026-report-dealership-ma-franchise-horsepower-index/
+      source_name: Haig Partners, Haig Report second quarter 2026, as reported by THE SHOP (August 2026)
+    - scope: Used vehicles at franchised dealers (publicly traded dealer groups)
+      value: 1,528 dollars gross profit per used vehicle retailed
+      note: Third quarter 2025 average among the public retailers, which Haig describes as back in line with pre-pandemic levels after the 2021 to 2023 peak.
+      source: https://haigpartners.com/resources/q3-2025-haig-report-used-vehicle-gross-profits-slip-back-to-pre-pandemic-levels/
+      source_name: Haig Partners, Haig Report third quarter 2025, used vehicle gross profits (November 2025)
+  drivers:
+    - name: Days in inventory
+      note: Gross falls with every week a unit sits, through price drops, floorplan interest and the discount needed to move an aged car.
+    - name: Acquisition source and price
+      note: Trade-ins and private purchases usually carry more gross than auction units bought at market plus fees and transport.
+    - name: Reconditioning discipline
+      note: Recon that runs 400 dollars over the estimate because the shop found more work comes straight out of front-end gross.
+    - name: New-vehicle supply and incentives
+      note: When the manufacturer's inventory is high, new-unit gross drops toward invoice and dealer cash becomes the margin.
+    - name: Trade-off against finance income
+      note: A deal discounted to close and then recovered in the finance office shows low vehicle gross and high back-end gross; the two must be read together.
+  improve:
+    - name: Enforce an aging policy
+      note: Reprice at 30 days and wholesale or auction at 60, so aged units stop absorbing the gross of the fresh ones.
+    - name: Buy to retail demand
+      note: Stock what the store's own sales history and local search data show sells within 30 days, and skip the bargains nobody asks for.
+    - name: Cap reconditioning per unit
+      note: Set a recon budget per unit at appraisal and require approval to exceed it, with the overage charged to the appraiser's number.
+    - name: Price to market with a floor
+      note: Use live market pricing for the ask and a written floor per unit so desking does not give away gross to close a deal.
+    - name: Fix the pack policy
+      note: Decide whether pack is a cost or a transfer, apply it to every unit the same way, and stop restating gross when the argument comes up.
+  pitfalls:
+    - name: Finance income counted in vehicle gross
+      note: Adding finance reserve and product income to the front end hides discounting on the vehicle; keep the two grosses separate.
+    - name: Wholesale losses left out
+      note: A store showing 2,200 dollars per retail unit while losing 800 on each wholesale disposal is earning less than it reports; show both.
+    - name: Reconditioning at retail labour rates
+      note: Charging recon at the customer labour rate moves gross from the sales department to service and understates vehicle gross.
+    - name: Pack applied inconsistently
+      note: A pack charged on used units and waived on new ones, or changed mid-quarter, makes the trend line meaningless.

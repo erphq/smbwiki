@@ -192,8 +192,75 @@ for (const { file, value: skill } of skills) {
     failures.push(`${label} contains the obsolete generic acceptance question`);
 }
 
+// Metric pages are articles: the number, how to compute it, published ranges
+// with a source each, what moves it, and how it is misread. Every metric must
+// carry the whole contract so the corpus cannot regress to unit-and-direction
+// stubs. Word floors are on prose fields; list bounds keep the pages honest
+// rather than padded.
+const metrics = loadDefinitions("metrics");
+const METRIC_DIRECTIONS = ["higher", "lower", "contextual"];
+const METRIC_PROSE_FLOORS = { what: 60, how_to_calculate: 50, example: 40 };
+const METRIC_LIST_BOUNDS = { drivers: [3, 6], improve: [3, 6], pitfalls: [2, 4] };
+const wordCount = (value) => String(value ?? "").trim().split(/\s+/).filter(Boolean).length;
+const metricWhat = new Map();
+function proseWalk(value, label) {
+  if (typeof value === "string") proseGate(value, label);
+  else if (Array.isArray(value)) value.forEach((item, index) => proseWalk(item, `${label}[${index}]`));
+  else if (value && typeof value === "object")
+    for (const [key, inner] of Object.entries(value)) proseWalk(inner, `${label}.${key}`);
+}
+for (const { file, value: metric } of metrics) {
+  const label = `metrics/${file}`;
+  if (metric.kind !== "metric") failures.push(`${label} kind is not "metric"`);
+  requireText(metric.summary, `${label} summary`);
+  requireText(metric.unit, `${label} unit`);
+  if (!METRIC_DIRECTIONS.includes(metric.direction))
+    failures.push(`${label} direction is ${JSON.stringify(metric.direction ?? null)}; expected one of ${METRIC_DIRECTIONS.join(", ")}`);
+  const article = metric.article;
+  if (!article || typeof article !== "object") {
+    failures.push(`${label} article is missing`);
+    continue;
+  }
+  proseWalk(article, `${label} article`);
+  for (const [field, floor] of Object.entries(METRIC_PROSE_FLOORS)) {
+    requireText(article[field], `${label} article.${field}`);
+    if (wordCount(article[field]) < floor)
+      failures.push(`${label} article.${field} has ${wordCount(article[field])} words; expected at least ${floor}`);
+  }
+  requireText(article.formula, `${label} article.formula`);
+  for (const [field, [min, max]] of Object.entries(METRIC_LIST_BOUNDS)) {
+    requireList(article[field], `${label} article.${field}`);
+    if (!Array.isArray(article[field])) continue;
+    if (article[field].length < min || article[field].length > max)
+      failures.push(`${label} article.${field} has ${article[field].length} items; expected ${min} to ${max}`);
+    for (const [index, item] of article[field].entries()) {
+      requireText(item?.name, `${label} article.${field} ${index + 1} name`);
+      requireText(item?.note, `${label} article.${field} ${index + 1} note`);
+      if (wordCount(item?.note) < 12)
+        failures.push(`${label} article.${field} ${index + 1} note has ${wordCount(item?.note)} words; expected at least 12`);
+    }
+  }
+  requireArray(article.benchmarks, `${label} article.benchmarks`);
+  if (Array.isArray(article.benchmarks)) {
+    if (!article.benchmarks.length) requireText(article.benchmark_note, `${label} article.benchmark_note (required when benchmarks is empty)`);
+    for (const [index, row] of article.benchmarks.entries()) {
+      const rowLabel = `${label} article.benchmarks ${index + 1}`;
+      requireText(row?.scope, `${rowLabel} scope`);
+      requireText(row?.value, `${rowLabel} value`);
+      requireText(row?.source_name, `${rowLabel} source_name`);
+      if (typeof row?.source !== "string" || !/^https?:\/\/\S+$/.test(row.source))
+        failures.push(`${rowLabel} source is not an absolute URL`);
+    }
+  }
+  const normalizedWhat = String(article.what ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  if (normalizedWhat) {
+    if (metricWhat.has(normalizedWhat)) failures.push(`${label} article.what duplicates ${metricWhat.get(normalizedWhat)}`);
+    metricWhat.set(normalizedWhat, label);
+  }
+}
+
 console.log(
-  `content businesses=${businesses.length} skills=${skills.length} ` +
+  `content businesses=${businesses.length} skills=${skills.length} metrics=${metrics.length} ` +
   `specialized=${specializedSkillIds.size} failures=${failures.length}`,
 );
 for (const failure of failures) console.log(`ERROR: ${failure}`);

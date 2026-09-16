@@ -5,3 +5,73 @@ summary: >
   Agreements renewed at term end.
 unit: percent
 direction: higher
+article:
+  what: >
+    Agreement renewal rate is the share of maintenance or service
+    agreements reaching the end of their term that the customer renews
+    for another. It is the number for the recurring base of an HVAC,
+    pest control, or managed IT business: how much of last year's
+    contracted revenue carried into this year without a new sale. Owners
+    watch it because a renewed agreement costs almost nothing to keep
+    while a replacement costs a sales call, and because a buyer or
+    lender reads the rate as the durability of the firm's revenue.
+  formula: Agreements renewed at term end ÷ agreements that reached term end in the period × 100
+  how_to_calculate: >
+    Take every agreement whose term ended in the period, whether it
+    renewed or expired, and count those that renewed within the grace
+    window the firm allows, typically 30 to 60 days after expiry.
+    Divide renewed by expiring and express as a percent. Exclude
+    agreements cancelled mid-term, which belong in a churn rate, and
+    agreements that have not yet reached expiry. Measure by count for
+    customer retention and by contract value for revenue retention;
+    managed IT firms often report the value version, including
+    upgrades and downgrades at renewal. Use a cohort by expiry month so
+    late renewals are credited to the right period.
+  example: >
+    A pest control company has 480 annual agreements expiring in the
+    second quarter. By 45 days after each expiry, 372 have renewed, 24
+    have moved to a higher tier, and 108 have lapsed. The renewal rate
+    is 396 divided by 480, or 82.5 percent. By value, the renewed
+    agreements bill 224,000 dollars against 260,000 dollars expiring,
+    an 86 percent revenue retention, since the upgrades outweighed the
+    lapsed plans' below-average pricing.
+  benchmarks: []
+  benchmark_note: >
+    No government or trade association series publishes renewal rates
+    for maintenance agreements, and figures circulating on contractor
+    software blogs are unattributed. Set the target from the firm's own
+    cohorts by plan type and billing method, and treat monthly auto-pay
+    plans and annual invoiced plans as separate populations, since the
+    former renew by default and the latter require a decision. Compare
+    each quarter's cohort against the same quarter a year earlier.
+  drivers:
+    - name: Billing method at term end
+      note: Auto-renewing monthly plans continue unless the customer acts, while annual invoices require a payment decision and lapse by neglect.
+    - name: Visits delivered during the term
+      note: A customer whose tune-ups were scheduled and completed on time renews; one who had to call to get the visit they paid for does not.
+    - name: Price change at renewal
+      note: A steep increase at term end is the most common stated reason for lapse, while a small annual step with notice is usually accepted.
+    - name: Service events in the term
+      note: A repair handled well under the plan's discount proves its value, and a call-out that went badly ends the agreement at expiry.
+    - name: Renewal outreach
+      note: Reminders before expiry and a call after lapse recover agreements that would otherwise end by silence, whatever the customer's intent.
+  improve:
+    - name: Default to auto-renewal
+      note: Write agreements to renew automatically with notice and an easy opt-out, and move annual invoiced plans to monthly card billing.
+    - name: Complete every scheduled visit
+      note: Book the term's visits at signing and chase any missed one, so the customer has received all the value before the renewal decision.
+    - name: Contact expiring agreements before term end
+      note: Send a reminder 60 and 30 days out and have the technician on the last visit ask for the renewal in person.
+    - name: Step prices gently and explain them
+      note: Raise plan prices in small annual increments with a note on what is included, and hold the increase for long-tenured customers.
+    - name: Win back lapsed agreements within 90 days
+      note: Call every lapsed customer with a specific offer while the relationship is warm; recovery drops sharply after the first quarter.
+  pitfalls:
+    - name: Mid-term cancellations mixed in
+      note: Agreements ended early belong in churn, and counting them as non-renewals confuses two different problems with different fixes.
+    - name: Renewals credited too early
+      note: Counting a renewal at the reminder stage before payment inflates the rate; count when the new term is paid or the first draft clears.
+    - name: Count rate read without value rate
+      note: Renewing the small plans and losing the large commercial contracts gives a healthy count rate and a falling revenue base.
+    - name: Free bundled agreements included
+      note: Plans included with an installation that were never paid for renew at low rates and drag the figure; report paid agreements separately.

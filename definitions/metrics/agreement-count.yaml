@@ -5,3 +5,72 @@ summary: >
   Active maintenance agreements.
 unit: count
 direction: higher
+article:
+  what: >
+    Agreement count is the number of maintenance or service agreements
+    a contractor has in force on a given date. For an HVAC firm it is
+    the tune-up and priority service plans on the books; for a pest
+    control company it is the recurring treatment contracts. Owners
+    watch it because each agreement is a scheduled visit and a customer
+    who calls them first, which fills the shoulder seasons and feeds
+    replacement sales, and because buyers of service businesses price
+    the company largely on this number and on how well the agreements
+    renew.
+  formula: Number of maintenance agreements active and paid or current on the measurement date
+  how_to_calculate: >
+    Count every agreement whose term covers the measurement date and
+    whose billing is current, on the last day of each month. Count
+    agreements, not customers or systems: a customer with two homes on
+    two plans counts twice if that is how the firm bills, and a
+    multi-system plan counts once. Exclude agreements that have expired
+    without renewal, been cancelled, or fallen more than a set number
+    of days behind on payment. Report the movement each month, new
+    agreements sold less agreements cancelled or lapsed, and split by
+    plan tier and by how they were sold, on a service call, at
+    installation, or by phone.
+  example: >
+    An HVAC contractor starts the year with 1,180 active agreements.
+    Over the year technicians sell 310 plans on service calls, 95 are
+    added at new system installs, 210 expire without renewal, and 40
+    are cancelled or lapse on payment. The year-end count is 1,180 plus
+    405 minus 250, or 1,335 agreements, which at an average of 1.8
+    visits each schedules about 2,400 maintenance visits into the
+    coming year before any demand call comes in.
+  benchmarks: []
+  benchmark_note: >
+    No published series reports agreement counts, and the number scales
+    with company size, so no external range applies. Set the target as
+    a ratio: agreements per technician, or agreements as a share of
+    active customers served in the past two years, and grow both.
+    Many contractors also set a target for agreements sold per
+    technician per month on service calls, and for the share of new
+    installations that leave with a plan attached.
+  drivers:
+    - name: Sales on service calls
+      note: Technicians who present the plan on every demand call are where most agreements come from, so the presentation rate per call sets growth.
+    - name: Attachment at installation
+      note: A new system sold with the first years of maintenance included adds agreements at the moment the customer is most willing.
+    - name: Renewal and lapse
+      note: Agreements expire every month, and the count falls unless renewal reminders and auto-renewal hold the existing base.
+    - name: Plan value and price
+      note: A plan that includes priority scheduling, a discount on repairs, and a clear visit schedule sells and holds better than a bare tune-up.
+    - name: Billing method
+      note: Monthly card billing with auto-renewal keeps agreements active by default, while annual invoices lapse when the customer forgets.
+  improve:
+    - name: Require the offer on every call
+      note: Add the plan presentation to the service call checklist and pay a spiff per agreement sold so it is offered every time.
+    - name: Bundle maintenance into every install
+      note: Price new equipment with the first one or two years of maintenance included and convert the customer to a paid plan at the end.
+    - name: Move agreements to monthly auto-pay
+      note: Convert annual plans to monthly card billing with automatic renewal so the count stops dropping at term end.
+    - name: Run a renewal campaign 60 days out
+      note: Contact expiring agreements by message and call before they lapse, and let the technician on the last visit raise it in person.
+    - name: Clean the list monthly
+      note: Reconcile active agreements against billing so the count reflects paying customers and the schedule plans real visits.
+  pitfalls:
+    - name: Lapsed agreements left active
+      note: Plans that expired or stopped paying but were never closed in the system inflate the count and schedule visits that will not be paid.
+    - name: Systems or customers counted instead of agreements
+      note: Counting each unit under a multi-system plan, or each customer regardless of plans, makes the number incomparable over time.
+    - name: Free or bundled plans mixed with paid
+      note: Agreements included with an install carry no revenue until converted; report them separately so the paid base is visible.

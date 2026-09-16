@@ -7,3 +7,68 @@ summary: >
   not meet the order.
 unit: percent
 direction: lower
+article:
+  what: >
+    Drink remake rate is the share of drinks a coffee shop had to make
+    twice: the barista misread the ticket, missed a modifier, used the
+    wrong milk, or handed over something the customer sent back. It
+    belongs to the shift lead and the training lead. Each remake costs
+    the ingredients, a minute or two of bar time in the rush, and the
+    goodwill of the customer who waited twice, so a rate creeping up is
+    the earliest sign that ticket reading, labeling or training has
+    slipped.
+  formula: Drinks remade in the period ÷ drinks made in the period × 100
+  how_to_calculate: >
+    The numerator is every drink poured out or made again, whether the
+    customer complained or the barista caught it; log remakes with a
+    POS void or a remake button so the count survives the rush, and add
+    a reason code (ticket misread, wrong milk, recipe, temperature,
+    customer changed order). The denominator is all drinks sold in the
+    period, from the POS. Measure weekly and by shift, and split by
+    barista once the count is large enough to mean something. Remakes
+    caused by the customer changing their mind can be tracked but belong
+    in a separate line, since training will not move them.
+  example: >
+    A coffee shop sells 3,850 drinks in a week. The remake key on the
+    POS logs 96 remakes: 41 for wrong milk or a missed modifier, 27 for
+    recipe or temperature, 18 ticket misreads, and 10 customer changes.
+    Remake rate is 96 divided by 3,850, or 2.5 percent. At about 1.10
+    dollars of milk, syrup and cup per remake plus two minutes of bar
+    time, the week cost roughly 105 dollars in ingredients and over
+    three labor hours, most of it in the morning rush.
+  benchmarks: []
+  benchmark_note: >
+    No trade body or published survey reports drink remake rates for
+    coffee shops; chains treat the figure as internal. Turn on a remake
+    key with reason codes, run it for four weeks to get a baseline by
+    shift, and set the target below the best shift's figure, watching
+    the reasons as closely as the rate.
+  drivers:
+    - name: Ticket clarity
+      note: Handwritten cups and abbreviations that differ by barista are misread under pressure; printed labels with a fixed field order remove most misreads.
+    - name: Modifier volume
+      note: Drinks with three or four modifications fail more often than plain ones, so a menu that invites customization raises the rate by design.
+    - name: Training and recipe cards
+      note: New baristas without a recipe card at the bar guess at pumps and temperatures, and the guess becomes a remake when the regular tastes it.
+    - name: Rush pace
+      note: Remakes cluster in the morning peak when tickets stack up and the bar reads ahead; the rate by hour shows where it happens.
+    - name: Ordering channel
+      note: Mobile and app orders arrive with modifiers already structured, while counter orders depend on the cashier hearing and keying them correctly.
+  improve:
+    - name: Print cup labels from the POS
+      note: A sticker printer at the bar turns every order into the same layout, so the barista reads fields, not handwriting, and modifiers are never missed.
+    - name: Repeat the order back at the counter
+      note: A cashier who reads the drink back with size, milk and syrup catches the keying error before the ticket reaches the bar.
+    - name: Put recipe cards on the bar
+      note: A laminated card per drink with pumps, shots, milk and temperature makes the build the same on every shift, and it is the first fix for recipe remakes.
+    - name: Coach by reason code
+      note: Weekly, sort the remakes by reason and by barista, and train the top reason; a rate without reasons cannot be fixed.
+    - name: Call the name and the drink at hand-off
+      note: Saying the drink out loud at the pickup counter catches the wrong-milk remake before the customer walks away with it.
+  pitfalls:
+    - name: Only counting remakes the customer asked for
+      note: A drink poured out before hand-off is still ingredients and time; if the bar does not log it, the rate understates the cost by half.
+    - name: Counting customer mind-changes
+      note: A customer who orders oat milk and then asks for almond is a service cost, not a bar error; keep it in its own line so training targets the right thing.
+    - name: Comparing shifts of different volume
+      note: A quiet afternoon with two remakes in 80 drinks is a worse rate than a morning with twelve in 900; compare rates, and only once counts are large.

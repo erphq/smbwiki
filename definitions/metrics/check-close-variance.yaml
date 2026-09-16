@@ -6,3 +6,76 @@ summary: >
   totals that should support them.
 unit: currency
 direction: lower
+article:
+  what: >
+    Check close variance is the money gap at the end of a shift between
+    what the closed guest checks say was sold and what the tender
+    actually supports: cash in the drawer, card batch totals, gift card
+    redemptions, house accounts and recorded comps. It is the manager's
+    closeout number, and the bookkeeper reads it the next morning. A
+    steady near-zero variance means the POS, the tip-out and the deposit
+    agree; a swinging one points to open checks, mis-tendered payments,
+    unrecorded voids or a hand in the drawer.
+  formula: Closed guest check totals for the shift minus cash counted, card settlements, other tenders and recorded comps
+  how_to_calculate: >
+    Start with the POS closed-check report for the shift, gross of tax
+    and tips as the POS records it. Against it put the counted cash
+    after the opening bank is removed, the card processor's batch total
+    for the same window, gift card and house-account redemptions, and
+    every comp, void and discount recorded with manager approval. The
+    difference is the variance, kept as a signed dollar figure per shift
+    and per drawer, with the sign preserved so overages and shortages do
+    not cancel. Cash tips paid out and cash paid-outs for supplies are
+    logged and added back. Report it daily, and track the count and
+    value of checks still open at close alongside it.
+  example: >
+    A full-service restaurant closes Friday dinner with 14,860 dollars
+    in closed checks. The drawer holds 2,310 dollars after the 300
+    dollar bank is pulled, cash tips paid out were 640 dollars, the card
+    batch is 11,420 dollars, gift cards redeemed 180 dollars, and
+    manager-approved comps 260 dollars. Tender plus comps equal 14,810
+    dollars, so the variance is 50 dollars short. The same 50 dollars
+    turns up as an unclosed check the closing server transferred to the
+    bar and never settled.
+  benchmarks: []
+  benchmark_note: >
+    No published figure exists for check close variance; it is an
+    internal control that every operator expects at zero, and
+    processors and trade bodies do not survey it. Set tolerance from
+    your own drawer history, commonly a few dollars per drawer per shift
+    for coin rounding, and treat anything above that, or any variance
+    that repeats with the same sign, as an exception to investigate the
+    same night.
+  drivers:
+    - name: Open checks at close
+      note: A check transferred, split or left open at the end of the shift shows as sold with no tender behind it, and it is the most common cause.
+    - name: Mis-tendered payments
+      note: A card payment rung as cash, or a gift card keyed as a card, balances the guest but leaves the drawer short and the batch over.
+    - name: Voids and comps without a record
+      note: A plate taken off a check without a manager code is a sale the POS forgot and the kitchen still cooked, and it hides in the variance.
+    - name: Cash handling and paid-outs
+      note: Change runs, tips paid from the drawer and supplies bought with drawer cash all move money without a check, and unlogged ones become shortages.
+    - name: Card tip adjustments after batch
+      note: Tips added to card slips after the batch is closed land in tomorrow's settlement, so the two days read wrong in opposite directions.
+  improve:
+    - name: One drawer per server or cashier
+      note: A drawer with one owner has one person to ask about a shortage; shared drawers turn every variance into an argument nobody can settle.
+    - name: Force checks closed before clock-out
+      note: Set the POS so a server cannot clock out with open checks, and have the closing manager review transfers to the bar before the last drawer is counted.
+    - name: Manager approval with reason codes on every void and comp
+      note: Every removal from a check needs a code and a swipe, so the comp report explains the gap between sold and tendered before anyone counts cash.
+    - name: Batch cards at shift end and tie to the processor
+      note: Close the card batch when the drawer is counted and compare it to the processor's report the next morning, so timing differences are known, not guessed.
+    - name: Count blind
+      note: Have the closer count the drawer without seeing the POS expected figure, so the count is a count and not a target.
+    - name: Reconcile three ways daily
+      note: POS sales, processor settlement and bank deposit should agree day by day; a spreadsheet with the three columns catches drift within a week.
+  pitfalls:
+    - name: Netting overages against shortages
+      note: A drawer 40 dollars over and another 40 short is not zero; it is two errors, and netting them across drawers or days hides both.
+    - name: Comparing to the processor deposit
+      note: The bank deposit from the card processor arrives net of fees and a day or two later; reconcile to the gross batch total, and treat fees as an expense line.
+    - name: Leaving tips out of the count
+      note: Cash tips paid out of the drawer at close are real cash gone; forgetting to log them makes every shift look short by the tip-out.
+    - name: Midnight batch windows
+      note: A batch that closes at midnight while service runs to 1 a.m. splits one shift's card sales across two settlement days, so match the batch window to the shift.

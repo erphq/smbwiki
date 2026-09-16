@@ -6,3 +6,79 @@ summary: >
   them.
 unit: percent
 direction: lower
+article:
+  what: >
+    Stockout rate is the share of items a customer or an order wanted
+    that the store could not supply at that moment: the shelf was empty,
+    the size was gone, the part was not in the bin. It belongs to the
+    buyer or replenishment lead, and the store manager reads it next to
+    sales. A stockout is a sale lost or a customer sent to a competitor,
+    and in grocery the shopper who cannot find one item often leaves the
+    rest of the basket too, so it is the availability number that sits
+    opposite inventory turnover.
+  formula: Item requests that could not be filled in the period ÷ item requests in the period × 100
+  how_to_calculate: >
+    Pick one of two bases and stay with it. The demand base counts
+    requests: order lines that could not be filled, or customer asks
+    logged at the counter, divided by all lines or asks. The shelf base
+    counts audits: stocked items found empty on a walk, divided by items
+    checked, which is how grocery availability studies measure it. Count
+    an item as out when the shelf is empty even if stock sits in the
+    back room, since the customer cannot buy from the back room. Measure
+    daily for fast movers and weekly for the range, and report by
+    category and for promoted items on their own. On-shelf availability
+    is 100 minus the shelf-base rate.
+  example: >
+    A grocery store walks its top 400 selling items every morning for a
+    week, 2,800 item checks in all. Staff find 196 empty facings, 71 of
+    them on items in that week's ad. Stockout rate is 196 divided by
+    2,800, or 7.0 percent; promoted items ran 71 of 560 checks, or 12.7
+    percent, and everything else 125 of 2,240, or 5.6 percent. Raising
+    the order multiple on ad items and moving the second delivery
+    earlier were the two fixes.
+  benchmarks:
+    - scope: Fast-moving consumer goods retail, worldwide
+      value: 8.3 percent of items out of stock (average)
+      note: Average across 40 studies that reliably reported out-of-stock extent, published 2002; USA 7.9 percent, Europe 8.6, other regions 8.2; most retailers fell in a 5 to 10 percent range, and promoted items ran about twice the everyday rate. Old, but the authors and later ECR work report the level has barely moved.
+      source: https://www.supplychain247.com/images/pdfs/GMA_2002_Worldwide_OOS_Study.pdf
+      source_name: Gruen, Corsten and Bharadwaj for the Grocery Manufacturers of America, Retail Out-of-Stocks, A Worldwide Examination of Extent, Causes and Consumer Responses (2002)
+    - scope: Grocery, Europe, by category
+      value: 8.6 percent average; 0.5 percent (dishwashing products) to about 15 percent (ready meals and confectionery)
+      note: ECR Europe study figures as summarized by the ECR Retail Loss group; items on promotion ran up to 75 percent higher out-of-stock than items not on promotion.
+      source: https://ecrloss.com/managing-shelf-out-of-stocks/
+      source_name: ECR Retail Loss, Managing Shelf Out of Stocks (ECR Europe and Corsten and Gruen data)
+  drivers:
+    - name: Order quantity and forecast
+      note: Roughly half of stockouts trace to the store ordering too little or too late for the demand that showed up, according to the worldwide study.
+    - name: Shelf replenishment
+      note: About a quarter of empty shelves have the product in the back room or on a pallet in the aisle; the gap is labor to move it, not supply.
+    - name: Supplier fill and lead time
+      note: A distributor that ships 92 percent of lines leaves 8 percent of orders short before the store does anything, and long lead times widen every miss.
+    - name: Promotions
+      note: Ad items sell at multiples of their normal rate, and an order built on normal velocity runs empty by the second day of the promotion.
+    - name: Phantom inventory
+      note: When the system shows six on hand and the shelf has none, the reorder never triggers; count errors turn into permanent stockouts on slow items.
+    - name: Facings and pack size
+      note: One facing of a fast mover empties between fills whatever the order quantity, so space allocation sets a floor on the rate for top sellers.
+  improve:
+    - name: Walk the top sellers daily
+      note: A gap scan of the 200 to 400 fastest items each morning, with a fill-from-backroom list, fixes the replenishment quarter of the problem the same day.
+    - name: Set reorder points by velocity
+      note: Reorder points and order multiples built from each item's sales rate and lead time replace flat rules that under-order fast lines and over-order slow ones.
+    - name: Order promotions on uplift
+      note: Use last promotion's lift for the same item or category to size the order, and schedule a mid-promotion top-up delivery.
+    - name: Cycle count to kill phantom stock
+      note: Counting items that show stock but no sales for two weeks finds the records that are wrong and lets the reorder fire again.
+    - name: Score suppliers on fill rate
+      note: Track lines shipped complete by supplier and move volume or add a second source for any that fill under target.
+    - name: Offer a substitute at the counter
+      note: Where a stockout cannot be avoided, a staff-suggested substitute or a same-week special order keeps the sale and the customer.
+  pitfalls:
+    - name: Counting back-room stock as available
+      note: Stock the customer cannot see is a stockout from their side; measure the shelf, and treat backroom stock as the replenishment problem it is.
+    - name: Complaint-only counts
+      note: Most shoppers who find an empty shelf walk on without telling anyone, so a rate built from customer asks understates by a wide margin.
+    - name: One rate across fast and slow items
+      note: Ten thousand slow items at 1 percent hide 300 fast items at 12 percent; report the top sellers on their own, since that is where the sales are.
+    - name: Confusing shelf audits with order fill rate
+      note: A supplier fill rate measures what arrived; a shelf audit measures what the customer found; the two are different numbers with different owners.

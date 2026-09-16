@@ -5,3 +5,66 @@ summary: >
   Minutes from order placed to handed to the customer.
 unit: minutes
 direction: lower
+article:
+  what: >
+    Delivery time is the elapsed minutes between the moment a customer
+    places an order and the moment it is handed over at the door. It is
+    the operator's own number for a pizzeria, a florist running same-day
+    deliveries or a caterer sending out a lunch order, and it bundles make
+    time, time waiting for a driver, and drive time. Operators watch it
+    because customers judge the whole business on it, because cold food
+    and wilted flowers are refunded, and because a long figure usually
+    means orders sitting on a shelf while drivers are elsewhere.
+  formula: Handover time less order time, in minutes, averaged over delivered orders in the period
+  how_to_calculate: >
+    Start the clock when the order is accepted into the point-of-sale
+    system, including online and third-party orders, and stop it at the
+    driver's delivered stamp or the customer's confirmation. Average across
+    every delivered order in the period, and report the 90th percentile as
+    well, since a handful of seventy-minute orders do more damage than the
+    average shows. Split the total into make time, shelf time waiting for a
+    driver, and drive time, because each has a different fix. Take
+    scheduled orders for a future time out of the average and measure them
+    against the promised time. Carryout is a separate number.
+  example: >
+    A pizzeria delivers 310 orders on a Friday night. Its POS shows an
+    average of 11 minutes from order to boxed, 9 minutes on the heat rack
+    waiting for a driver, and 14 minutes of drive time, an average delivery
+    time of 34 minutes. The 90th percentile is 52 minutes, produced by the
+    8 p.m. hour when five drivers covered 96 orders. Adding one driver for
+    that hour cuts rack time, the cheapest of the three components to fix.
+  benchmarks:
+    - scope: Pizza chains, delivery orders
+      value: 36 minutes 31 seconds average order-to-door
+      note: 600 mystery-shopped orders across ten national and mid-sized chains, September to October 2025, half delivery and half carryout; carryout averaged 18 minutes 10 seconds. Satisfaction fell sharply past about 40 minutes.
+      source: https://www.intouchinsight.com/blog/key-pizza-trends
+      source_name: Intouch Insight, 2026 Pizza Delivery and Carryout (DELCO) Report (January 2026)
+  drivers:
+    - name: Orders per driver on shift
+      note: When orders per hour outrun drivers, finished food waits on the rack; the make line is rarely the constraint at peak.
+    - name: Make-line throughput
+      note: An oven or a wrap station that caps at a fixed rate sets a floor on delivery time no driver can recover.
+    - name: Delivery radius and batching
+      note: A wide radius adds drive minutes on every run, and batching two orders in opposite directions adds minutes to the second.
+    - name: Third-party platform orders
+      note: Orders that arrive through an aggregator often start their clock before the store sees them and are collected by a driver the store does not control.
+    - name: Remakes and errors
+      note: A wrong order restarts the clock from the kitchen, so order accuracy shows up in the tail of delivery times.
+  improve:
+    - name: Staff drivers to the hourly forecast
+      note: Schedule drivers by orders per hour from the last four weeks, and keep one on call for the peak hour on the busiest nights.
+    - name: Set the radius by minutes, not miles
+      note: Draw the delivery zone from real drive times at peak, and quote a longer promise or decline addresses beyond it.
+    - name: Fire orders against driver availability
+      note: Hold the make of an order until a driver is within a few minutes of returning, so food is boxed hot instead of waiting on a rack.
+    - name: Batch only orders that share a direction
+      note: Pair two orders on the same run only when both are ready and both addresses are on the same side of the store.
+    - name: Show the rack clock
+      note: A display of minutes since each order was boxed lets the shift lead pull a driver or call for help before the tail grows.
+  pitfalls:
+    - name: Clock started at kitchen fire
+      note: Timing from when the kitchen begins the order hides the queue in front of it; customers count from when they paid.
+    - name: Averaging away the tail
+      note: An average of 30 minutes with a 90th percentile of 55 is a store with a peak-hour problem; report both numbers.
+    - name: Scheduled orders in the average
+      note: An order placed at noon for 6 p.m. delivery reads as a six-hour delivery time; measure it against the promised time instead.

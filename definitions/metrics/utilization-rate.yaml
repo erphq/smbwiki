@@ -5,3 +5,86 @@ summary: >
   Available professional capacity recorded to client engagements.
 unit: percent
 direction: contextual
+article:
+  what: >
+    Utilization rate counts the share of a firm's paid capacity that
+    was recorded to client work. In a law firm, accounting practice,
+    consultancy, agency, or engineering office it means billable hours
+    divided by the hours the firm paid for, and it is the managing
+    partner's number because the firm sells time: a lawyer billing 3
+    hours of an 8-hour day is 38 percent utilized, and the other 5
+    hours are overhead the fee has to carry. The same word is used for
+    equipment and rooms, where it means the share of available machine
+    or room hours actually in productive use, and the two meanings
+    should never be mixed in one report.
+  formula: Billable hours recorded ÷ available (paid) hours in the period × 100
+  how_to_calculate: >
+    For professional services, put billable hours recorded to client
+    matters in the numerator, before any write-down, and paid hours in
+    the denominator. Firms differ on the denominator: some use a standard
+    2,080 hours a year, some subtract vacation and holidays, and some,
+    like the Clio Legal Trends Report, use an eight-hour day. State
+    which one is used. Realization (hours invoiced divided by hours
+    recorded) and collection (cash divided by invoiced) are separate
+    steps and should not be folded in. Report per timekeeper and by
+    role, since partners run lower by design and juniors higher. For
+    equipment, divide hours the asset ran productively by hours it was
+    scheduled to be available, and treat setup and maintenance as
+    unavailable or as downtime according to a stated rule.
+  example: >
+    A custom software consultancy pays twelve consultants for 40 hours
+    a week, 480 available hours. In a given week they record 336 hours
+    to client projects, with the rest going to a sales proposal,
+    internal tooling, and a training day. Utilization is 336 divided by
+    480, or 70 percent. At a blended rate of 175 dollars an hour the 144
+    non-billable hours represent about 25,200 dollars of capacity the
+    firm paid for that week without invoicing it.
+  benchmarks:
+    - scope: Law firms
+      value: 38 percent (3.0 billable hours per 8-hour day)
+      note: Clio Legal Trends Report 2025 average, from aggregated Clio practice-management data on tens of thousands of firms, most of them small. Realization 88 percent and collection 93 percent in the same year; 29 percent in 2017.
+      source: https://www.clio.com/resources/legal-trends/benchmarks/
+      source_name: Clio, Law Firm Key Performance Indicators from the Legal Trends Report (2025)
+    - scope: CPA firms, firmwide
+      value: 48.1 to 61.5 percent by firm size
+      note: AICPA PCPS and CPA.com 2025 National MAP Survey, fiscal 2024 data, about 1,400 firms. Firms under 200,000 dollars of net client fees 48.1 percent; 200,000 to 500,000 dollars 60.0; 500,000 to 750,000 dollars 59.2; 750,000 to 1.5 million 58.7; 1.5 to 5 million 61.5; 5 to 10 million 60.1; over 10 million 58.0. Includes partners and all staff.
+      source: https://www.incpas.org/wp-content/uploads/2025/12/2025-national-map-survey-executive-summary.pdf
+      source_name: AICPA PCPS and CPA.com, 2025 National MAP Survey Executive Summary (fiscal 2024)
+    - scope: Professional services organizations, billable staff
+      value: 68.9 percent (2024)
+      note: SPI Research 2025 Professional Services Maturity Benchmark, 403 firms, mostly IT and management consulting and embedded services units; billable consultants only, so it reads higher than firmwide figures that include partners and admin. Read from the Kantata summary page for the report.
+      source: https://www.kantata.com/resource/2025-professional-services-maturity-benchmark
+      source_name: SPI Research, 2025 Professional Services Maturity Benchmark via Kantata (2024 data)
+  drivers:
+    - name: Pipeline and work in hand
+      note: Utilization falls first when sales slow; a firm with two months of backlog keeps staff busy while one selling week to week cannot.
+    - name: Time recording discipline
+      note: Hours not captured the same day are lost, and a firm where lawyers reconstruct time on Friday records fewer billable hours than the work justified.
+    - name: Non-billable load on fee earners
+      note: Proposals, recruiting, marketing, and internal projects done by billable staff consume capacity; how much depends on whether the firm has dedicated support.
+    - name: Staffing level against demand
+      note: Hiring ahead of signed work depresses the rate for months; running lean holds it high until people burn out or work is turned away.
+    - name: Role mix and leverage
+      note: Partners sell and supervise, so their rate is lower by design; a firm with more associates per partner shows a higher blended rate.
+    - name: Fixed-fee and subscription work
+      note: Hours on fixed-fee engagements still count toward utilization, but the firm must track them or the rate looks high while the engagement loses money.
+  improve:
+    - name: Capture time daily
+      note: Timers and same-day entry recover billable hours that memory-based weekly entry drops, often several hours a week per fee earner.
+    - name: Move non-billable tasks off fee earners
+      note: Give proposal writing, scheduling, and billing to dedicated staff so consultants and lawyers spend paid hours on client matters.
+    - name: Set targets by role and review monthly
+      note: A partner at 45 percent and an associate at 75 percent can both be on plan; publish the targets and review each person's actual against them.
+    - name: Forecast capacity against the pipeline
+      note: A rolling view of booked hours per person for the next eight weeks shows the bench before it forms, in time to sell into it or delay a hire.
+    - name: Fill the bench with productized work
+      note: When client demand dips, put idle hours into fixed-scope offers that can be sold quickly, and treat that as billable if it is billed.
+  pitfalls:
+    - name: Mixing the professional and equipment meanings
+      note: A dental chair at 80 percent and an associate dentist at 80 percent measure different things with different denominators; label which is meant.
+    - name: Denominator chosen to flatter
+      note: Subtracting vacation, holidays, training, and admin from available hours lifts the rate without changing what was billed; state the basis and keep it fixed.
+    - name: Confusing utilization with realization
+      note: Hours recorded and hours actually invoiced can differ by 10 to 20 percent after write-downs; a high utilization rate with low realization still leaves the firm short.
+    - name: Chasing the number into burnout
+      note: Sustained utilization above 85 percent for staff leaves no time for training or sales and shows up later as turnover and lost pipeline.

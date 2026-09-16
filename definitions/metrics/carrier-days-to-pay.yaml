@@ -5,3 +5,73 @@ summary: >
   Days from complete carrier paperwork to released payment.
 unit: days
 direction: lower
+article:
+  what: >
+    Carrier days to pay counts the days between a brokerage receiving a
+    carrier's complete paperwork, usually the signed proof of delivery and
+    the invoice, and the day the payment is released. It is the accounts
+    payable number of a freight brokerage, watched by the owner because it
+    sets working capital needs and by carrier reps because carriers choose
+    brokers partly on it. Operators watch it because a broker that pays
+    slowly loses trucks to brokers that pay in a week, and a broker that
+    pays before its shippers pay funds the gap from its own cash or a line
+    of credit.
+  formula: Sum of days from complete carrier paperwork to payment released ÷ carrier invoices paid in the period
+  how_to_calculate: >
+    Start the clock when the paperwork is complete and legible, not at
+    delivery; days waiting for a missing proof of delivery go in a
+    separate measure. Stop it when the payment is released, the ACH sent or
+    the check mailed. Average across invoices paid in the month and report
+    the median too, since a few disputed invoices drag the mean. Quick-pay
+    invoices carry their own terms, so report standard terms and quick pay
+    separately and record the quick-pay share. Compare the standard-terms
+    figure against the term promised in the carrier agreement, usually net
+    30.
+  example: >
+    A freight brokerage pays 720 carrier invoices in a month. It paid 190
+    on quick pay at a 2.5 percent fee, released in an average of 3 days,
+    and 530 on standard terms, released in an average of 31 days against
+    net 30 in the agreement. Blended days to pay is (190 × 3 + 530 × 31) ÷
+    720, or 23.6 days. The owner watches the standard-terms figure of 31
+    days and the 27 invoices that ran past 40 days because a proof of
+    delivery was illegible.
+  benchmarks: []
+  benchmark_note: >
+    No survey publishes broker-to-carrier days to pay. The nearest
+    published figure is the other side of the brokerage's cash cycle: the
+    Bloomberg Intelligence and Truckstop broker survey for the first half
+    of 2026, 141 brokers, found 48 percent wait three to four weeks for
+    shippers to pay and 30 percent a month or more
+    (https://truckstop.com/blog/freight-broker-outlook-1h26/). Set the
+    target at the term in the carrier agreement, with a median at or under
+    it and a stated quick-pay option, and fund the gap to shipper
+    collections deliberately.
+  drivers:
+    - name: Shipper payment terms
+      note: A brokerage collecting from shippers in 45 days and paying carriers in 30 carries fifteen days of every load's carrier cost on its own balance sheet.
+    - name: Paperwork completeness
+      note: Missing, blurred or unsigned proofs of delivery are the largest cause of invoices sitting past terms.
+    - name: Pay-run cadence
+      note: A single weekly check run adds an average of three to four days to every invoice against daily ACH.
+    - name: Quick-pay and factoring uptake
+      note: Carriers that take quick pay or factor their invoices are paid in days, which changes the blended figure without changing standard terms.
+    - name: Disputes and short pays
+      note: Rate confirmation mismatches and accessorial disagreements hold the whole invoice until someone resolves them.
+  improve:
+    - name: Capture proof of delivery digitally
+      note: Driver app or emailed POD at delivery starts the clock the same day and removes the chase that adds a week.
+    - name: Run payments at least twice a week
+      note: More frequent ACH runs cut average days without changing the terms carriers agreed to.
+    - name: Offer quick pay at a stated fee
+      note: A published one-to-three percent quick-pay option gives carriers a choice and gives the brokerage an income line on early payment.
+    - name: Fund the gap on purpose
+      note: A receivables line or factoring on shipper invoices covers the difference between shipper and carrier terms without stretching carriers.
+    - name: Escalate disputes within 48 hours
+      note: Route any short pay or accessorial dispute to a named person with a two-day deadline so the invoice does not age while nobody owns it.
+  pitfalls:
+    - name: Clock started at delivery
+      note: Measuring from delivery when the carrier sent paperwork nine days later blames the brokerage for the carrier's delay; start at complete paperwork.
+    - name: Quick pay blended in
+      note: A large quick-pay share pulls the average under terms while standard-terms carriers wait 40 days; report the two separately.
+    - name: Release confused with receipt
+      note: A check mailed on day 30 arrives on day 35; say which one is being measured, and know the carrier is counting receipt.

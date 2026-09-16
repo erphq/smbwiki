@@ -6,3 +6,81 @@ summary: >
   is mathematically closed.
 unit: distance
 direction: lower
+article:
+  what: >
+    Survey closure error is the gap between where a traverse ends on
+    paper and where it started, found by summing the measured angles
+    and distances around a loop or between two known control points.
+    It is the crew chief's number and the licensed surveyor's number:
+    state minimum standards and the ALTA/NSPS requirements set the
+    largest error allowed, a closure worse than that means a blunder to
+    find before any adjustment is run, and the plat certifies the
+    precision the closure implies. It is reported as a distance and as
+    a ratio, one part in some number of parts of the traverse length.
+  formula: Linear misclosure = square root of (northing error squared plus easting error squared); precision ratio = traverse length ÷ linear misclosure, written as 1 in N
+  how_to_calculate: >
+    Sum the latitudes and departures of every course; the sums are the
+    closure errors in northing and easting, and the linear misclosure
+    is their square root of squares. Divide the traverse perimeter by
+    the misclosure and express the result as one part in N. Check
+    angular closure separately: the sum of interior angles less (n
+    minus 2) times 180 degrees, compared with the allowed k times the
+    square root of n seconds from the applicable standard. Keep units
+    consistent with the plat, feet or meters. For GNSS and least
+    squares work the equivalent measure is relative positional
+    precision between adjacent corners at the 95 percent confidence
+    level. Compute closure before adjustment; the compass rule or a
+    least squares adjustment distributes the error and does not remove
+    it.
+  example: >
+    A boundary traverse of six courses totals 3,240 feet. The sum of
+    latitudes is plus 0.08 feet and the sum of departures is minus 0.11
+    feet, so the linear misclosure is the square root of 0.0064 plus
+    0.0121, or 0.136 feet. The precision ratio is 3,240 divided by
+    0.136, about 1 in 23,800, inside a 1 in 10,000 urban standard. The
+    six angles close within 12 seconds against an allowance of 10 times
+    the square root of 6, about 24 seconds.
+  benchmarks:
+    - scope: ALTA/NSPS Land Title Surveys, all US states
+      value: Relative Positional Precision no more than 2 cm (0.07 feet) plus 50 parts per million of the distance between adjacent corners, at the 95 percent confidence level
+      note: The maximum allowed under section 3.E.v of the 2021 standards, effective February 23, 2021; it is a limit on adjacent-corner positions from an adjusted network, not a loop ratio. 50 parts per million is 0.05 feet per 1,000 feet.
+      source: https://altalandsurvey.com/wp-content/uploads/2021/01/2021-Minimum-Standard-Detail-Requirements-for-ALTA-NSPS-Land-Title-Surveys.pdf
+      source_name: ALTA and NSPS, Minimum Standard Detail Requirements for ALTA/NSPS Land Title Surveys (2021)
+    - scope: Washington State land boundary surveys
+      value: linear closure of 1 part in 10,000 for city business areas and grid traverses, and 1 part in 5,000 for residential, suburban, section subdivision, and rural work
+      note: Field traverse standards in WAC 332-130-090; angular closure is limited to 10 times the square root of n seconds for the 1 in 10,000 class and 30 times the square root of n for the 1 in 5,000 class, n being the number of angles. Each state's licensing rule sets its own figures.
+      source: https://www.law.cornell.edu/regulations/washington/WAC-332-130-090
+      source_name: Washington Administrative Code 332-130-090, Field traverse standards for land boundary surveys (effective 1990)
+  drivers:
+    - name: Instrument calibration
+      note: An uncalibrated total station or a prism constant set wrong adds a systematic error to every distance, and it shows up as a closure that will not tighten.
+    - name: Setup and centering
+      note: A tribrach out of adjustment or a plumb over the point that is a few millimeters off adds error at every setup, and short sights magnify it in the angles.
+    - name: Number of setups and sight length
+      note: More setups mean more centering and pointing errors to accumulate; balanced, longer sights close better than many short ones around obstructions.
+    - name: Atmospheric and temperature correction
+      note: Electronic distance measurement drifts with temperature and pressure by parts per million, which over a long traverse in summer heat becomes hundredths of a foot.
+    - name: Blunders
+      note: A misread height, a wrong point number, or a backsight on the wrong monument produces a closure far outside the standard, and no adjustment should be run until it is found.
+    - name: Control quality
+      note: A traverse that starts and ends on control points that are themselves in error inherits that error as closure regardless of how well the fieldwork was done.
+  improve:
+    - name: Calibrate on a schedule and check the prism constant
+      note: Send the instrument for service on the manufacturer's interval, verify it on a baseline, and confirm the prism offset for every prism the crew carries.
+    - name: Double every angle and distance
+      note: Observing angles direct and reverse and measuring distances both ways cancels instrument errors and flags a blunder on the spot.
+    - name: Close on independent control
+      note: End the traverse on a different known point than the one it started from, so a compensating error cannot hide behind a good-looking loop.
+    - name: Adjust by least squares with blunder detection
+      note: A least squares adjustment reports residuals per observation, so the one bad shot is identified instead of being spread across the whole traverse.
+    - name: Balance sight lengths and minimize setups
+      note: Plan the traverse so foresight and backsight distances are similar and the setup count is as low as the terrain allows.
+  pitfalls:
+    - name: Adjusting before checking
+      note: Running the compass rule on a traverse with a blunder spreads a gross error over every corner and produces a plat that is precisely wrong.
+    - name: Confusing the loop ratio with relative positional precision
+      note: A 1 in 20,000 closure ratio and a 2 cm plus 50 ppm precision are different statistics; the ALTA/NSPS figure comes from an adjustment's covariance, not from the loop.
+    - name: Trusting a good closure on a loop from one point
+      note: Errors in the starting coordinates or a scale error in the instrument cancel around a loop and return to the start, so a tight closure can still be a wrong survey.
+    - name: Reporting closure the standard does not define
+      note: A ratio quoted without saying whether it is before or after adjustment, or over what perimeter, cannot be checked against the rule it is meant to satisfy.

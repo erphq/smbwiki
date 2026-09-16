@@ -6,3 +6,74 @@ summary: >
   reinspection.
 unit: percent
 direction: higher
+article:
+  what: >
+    Inspection pass rate counts the share of scheduled third-party
+    inspections, by the building department, the fire marshal, the
+    owner's inspector, or a special inspector, that were accepted on
+    the first visit with no failed item and no reinspection required.
+    It is the superintendent's number on a commercial project because
+    a failed inspection stops the following trade, costs a
+    reinspection fee, and consumes days the schedule did not carry. The
+    owner and the general contractor's estimator read it as a
+    predictor of closeout trouble and of how the crews and
+    subcontractors prepare.
+  formula: Inspections passed on the first visit ÷ inspections performed in the period × 100
+  how_to_calculate: >
+    Count every inspection called and performed in the period as the
+    denominator; the numerator is those that passed with no correction
+    notice, no partial approval, and no reinspection. A partial pass
+    with corrections counts as a fail. Track by inspection type, since
+    a rough electrical and a final fire alarm test fail for different
+    reasons, and by subcontractor, since the trade that prepared the
+    work owns the result. Some contractors count inspections cancelled
+    by the inspector for not-ready conditions as fails as well, which
+    is stricter and more honest. Report monthly and per project.
+  example: >
+    A commercial general contractor calls 46 inspections on an office
+    build-out in a quarter. Thirty-nine pass on the first visit. Four
+    fail: two rough plumbing inspections for missing nail plates, one
+    framing inspection for an unblocked fire wall, and one fire alarm
+    acceptance test. Three are cancelled at the door because the work
+    was not ready. Counting cancellations as fails, the pass rate is 39
+    ÷ 46, or 84.8 percent, and the plumbing subcontractor accounts for
+    half the fails.
+  benchmarks: []
+  benchmark_note: >
+    No published first-visit pass rate for construction inspections
+    was found; building departments report inspection volumes, and
+    some publish fail counts, but no trade body aggregates them into a
+    rate. Set a target from your own log: the past year's pass rate by
+    inspection type, then a goal at or above 90 percent for rough
+    inspections, where a fail is mostly preparation. Track fails by
+    trade and by reason and raise the target as the causes are
+    removed.
+  drivers:
+    - name: Pre-inspection walk by the contractor
+      note: A superintendent who walks the work against the checklist the inspector will use catches nail plates, blocking, and labels before the visit.
+    - name: Subcontractor readiness discipline
+      note: A trade that calls inspections to hit a date before the work is truly complete produces cancellations and partial passes.
+    - name: Jurisdiction and inspector consistency
+      note: Some departments enforce items others waive, so a crew moving between cities fails on local requirements it did not expect.
+    - name: Drawing and submittal clarity
+      note: Work installed from an unapproved submittal or an unresolved RFI fails when the inspector compares it to the approved set.
+    - name: Special inspection coordination
+      note: Structural, welding, and firestop inspections that require a third-party agency fail when the agency was not scheduled for the right stage.
+  improve:
+    - name: Use the inspector's checklist as your own
+      note: Get the department's inspection checklist and require the trade foreman to sign it off before the call is placed.
+    - name: Hold the call until the walk is done
+      note: Only the superintendent schedules inspections, and only after a documented pre-walk with the responsible trade.
+    - name: Meet the inspector early
+      note: A pre-construction meeting with the jurisdiction on unusual assemblies and local practices removes the surprise fails.
+    - name: Track fails by trade and reason
+      note: A monthly list of fails with the responsible subcontractor and cause turns a percentage into a conversation with one foreman.
+    - name: Schedule special inspections with the look-ahead
+      note: Put agency inspections on the three-week look-ahead so the inspector is present when the work is exposed.
+  pitfalls:
+    - name: Counting partial passes as passes
+      note: A pass with corrections still requires a return visit and a hold on the next trade; count it as a fail.
+    - name: Ignoring cancellations
+      note: An inspection cancelled for a not-ready site is a preparation failure that cost a day and should be visible in the rate.
+    - name: Averaging across inspection types
+      note: A high rate on simple footings hides a poor rate on fire alarm and elevator acceptance tests, which cause the closeout delays.

@@ -6,3 +6,75 @@ summary: >
   time on repair work.
 unit: percent
 direction: higher
+article:
+  what: >
+    Technician efficiency counts the flat-rate or standard labor hours
+    a technician produces against the hours actually clocked on repair
+    orders. It is the service manager's number in an auto repair shop,
+    dealership, or tire store because labor is sold by the book hour
+    and paid by the clock, so a technician who beats book time earns
+    the shop more per hour on the same bay. Technicians watch it too
+    on flat-rate pay plans, since it is their paycheck, and the owner
+    reads it alongside productivity to see how much of the bay day
+    turns into billed hours.
+  formula: Flat-rate hours produced ÷ hours actually worked on repair orders × 100
+  how_to_calculate: >
+    The numerator is the hours billed or credited for the jobs a
+    technician completed, from the labor guide, the factory time, or
+    the shop's own standard. The denominator is the time the
+    technician was clocked onto those jobs, from the time-punch
+    system, excluding breaks and shop time. Report per technician per
+    pay period and for the shop. Keep it distinct from productivity,
+    hours worked divided by hours available, and from proficiency,
+    hours produced divided by hours available, which combines the two.
+    Warranty jobs paid at factory time and customer-pay jobs at a
+    higher labor guide should be reported separately, since they
+    produce different efficiency on the same work.
+  example: >
+    An auto repair shop technician is clocked on repair orders for 36.5
+    hours in a week and completes jobs credited at 42.0 flat-rate
+    hours. Efficiency is 42.0 ÷ 36.5, or 115 percent. He was in the
+    building 40 hours, so productivity is 36.5 ÷ 40, or 91 percent, and
+    proficiency is 42.0 ÷ 40, or 105 percent. At an effective labor
+    rate of 145 dollars, the 42 hours produced 6,090 dollars of labor
+    sales on 40 hours of wages.
+  benchmarks:
+    - scope: New car dealership service department
+      value: 125 percent (factory manual) and 135 percent (non-factory manual) efficiency guideline
+      note: Guideline attributed to top NADA 20 Group dealers, defined as flat-rate hours produced divided by hours worked; published by the Washington Area New Automobile Dealers Association on an undated page. A target used in dealer groups, not a measured average.
+      source: https://wanada.org/measuring-technician-performance/
+      source_name: WANADA, Measuring Technician Performance (NADA 20 Group guidelines, undated)
+    - scope: New car dealership service department
+      value: 85 to 87.5 percent productivity guideline
+      note: NADA guideline for hours worked divided by hours available, on the same WANADA page; NADA also cites 100 percent proficiency with peaks to 120 percent.
+      source: https://wanada.org/measuring-technician-performance/
+      source_name: WANADA, Measuring Technician Performance (NADA guidelines, undated)
+  drivers:
+    - name: Labor guide and time standard used
+      note: Efficiency is only as generous as the standard; a shop billing at an aftermarket guide reads higher than one billing warranty at factory time.
+    - name: Work mix by technician
+      note: Brakes, tires, and maintenance beat book time easily, while electrical diagnosis and intermittent faults run over; dispatch sets the number.
+    - name: Parts availability at the bay
+      note: A technician waiting on parts stays clocked on the job or loses the time to shop work; either way efficiency falls.
+    - name: Tooling, lifts, and information access
+      note: Missing special tools, a shared alignment rack, or slow access to repair information add clock hours the book does not pay.
+    - name: Diagnostic time billing
+      note: Shops that sell diagnosis as a billed hour keep efficiency honest; those that give it away bury unpaid clock time in every repair.
+  improve:
+    - name: Dispatch to skill
+      note: Route diagnostic work to the technician who beats book on it and maintenance to the fastest hands; misrouted jobs run over for both.
+    - name: Pre-pull parts before the car is in the bay
+      note: Have the parts counter stage parts from the scheduled work so technicians move from job to job without waiting.
+    - name: Sell diagnostic time and menu jobs
+      note: Bill diagnosis at a fixed hour and bundle inspections into menu pricing so clock time spent finding the problem is paid time.
+    - name: Report efficiency weekly by technician
+      note: Post the number, review jobs that ran over with the technician, and fix the cause, whether tooling, information, or training.
+    - name: Fix the bay
+      note: A dedicated lift, current scan tools, and repair information on a screen at the bay remove the small delays that add up to hours.
+  pitfalls:
+    - name: Confusing efficiency with productivity
+      note: A technician can be 130 percent efficient and 60 percent productive when the shop leaves him idle; report both or the picture is wrong.
+    - name: Punching on the job while waiting
+      note: Time clocked on a repair order while waiting for parts or approval belongs to a wait code, or efficiency drops for a shop problem.
+    - name: Mixing warranty and customer-pay time
+      note: Warranty jobs are paid at shorter factory times; blending them with customer-pay work punishes the technician who gets the warranty line.

@@ -6,3 +6,75 @@ summary: >
   cancel within the operating cutoff.
 unit: percent
 direction: lower
+article:
+  what: >
+    Reservation no-show rate is the share of booked parties a
+    full-service restaurant held a table for and never saw: they did not
+    arrive and did not cancel before the cutoff the house sets. It
+    belongs to the host stand and the general manager. Every no-show on
+    a full night is a table the kitchen prepped for and the floor
+    staffed for that earned nothing, and often a walk-in that was turned
+    away, so it is the first number checked when a booked-out night
+    finishes under forecast.
+  formula: Reservations that neither arrived nor cancelled by the cutoff ÷ reservations booked for the period × 100
+  how_to_calculate: >
+    Count confirmed reservations for a service and mark each as seated,
+    cancelled before the cutoff, late cancelled, or no-show; the
+    numerator is the no-shows, and most operators keep late cancels as a
+    separate line. The denominator is bookings for the period, or
+    bookings net of early cancellations if you want the share of tables
+    still expected at service time. Use the reservation system's status
+    as set by the host, since automatic time-outs miss walk-ins who
+    arrived under a different name. Report by day of week, service,
+    party size and booking channel, and count covers as well as parties,
+    since large-party no-shows hurt more.
+  example: >
+    A neighborhood full-service restaurant with 70 seats takes 612
+    reservations in May. The host marks 21 as no-shows, 34 as cancelled
+    a day or more ahead, and 15 as cancelled inside the same-day cutoff.
+    The no-show rate is 21 divided by 612, or 3.4 percent; adding late
+    cancels raises it to 5.9 percent. Those 21 parties were 68 covers,
+    about 3,700 dollars of sales at the restaurant's 54 dollar average
+    check, and 14 of them were Friday and Saturday dinner.
+  benchmarks:
+    - scope: Full-service restaurants on one reservation platform, 12 countries
+      value: 2.33 percent of reservations
+      note: Resos No-Show Index, 3,768,761 reservations at 2,417 restaurants, August 2025 to July 2026; staff-recorded no-shows only, late cancellations excluded; dinner ran 2.63 percent and lunch 1.84 percent. Vendor data from one booking system, cited because no association survey publishes a rate.
+      source: https://resos.com/restaurant-no-show-rate/
+      source_name: Resos, Restaurant no-show rate, the Resos No-Show Index 2026 (August 2025 to July 2026)
+    - scope: Full-service restaurants, United States, same platform
+      value: 3.17 percent of reservations
+      note: United States venues in the Resos No-Show Index, same period and definition; the US ran above the multi-country average, with France (5.88) and Italy (4.71) higher and Switzerland (0.49) lowest.
+      source: https://resos.com/restaurant-no-show-rate/
+      source_name: Resos, Restaurant no-show rate, the Resos No-Show Index 2026 (August 2025 to July 2026)
+  drivers:
+    - name: Booking friction
+      note: A free booking with no card on file costs the guest nothing to abandon, so the rate climbs with every extra channel that takes them.
+    - name: Reminder and confirmation flow
+      note: A text the day before with a one-tap cancel converts many would-be no-shows into cancellations the host can resell.
+    - name: Lead time
+      note: Tables booked weeks ahead are forgotten or superseded more often than same-day bookings, so a long-booking restaurant carries a higher rate.
+    - name: Booking channel
+      note: Phone bookings taken by a busy host with no confirmation step no-show more than platform bookings that were confirmed by the guest.
+    - name: Occasions and holidays
+      note: Valentine's Day, graduation weekends and New Year's Eve bring diners who book several places and choose one, and the rate spikes.
+  improve:
+    - name: Take a card hold on peak services
+      note: A card on file with a stated fee for no-shows, applied only on Friday and Saturday dinner or large parties, moves most of the rate without deterring weeknight bookings.
+    - name: Send two reminders with a cancel link
+      note: A confirmation at booking and a reminder the day before, each with one-tap cancel, turn no-shows into cancellations early enough to rebook the table.
+    - name: Hold tables for a short grace period
+      note: State a fifteen minute hold at booking and release the table to the waitlist after it, so a no-show costs part of a turn instead of a whole one.
+    - name: Run a waitlist to backfill
+      note: A live waitlist with text notification lets the host reseat a released table in minutes, which cuts the cost of each no-show even when the rate does not move.
+    - name: Flag repeat offenders
+      note: Guest notes on the second no-show, and a card requirement on the third, remove the small group that accounts for a large share of the rate.
+  pitfalls:
+    - name: Counting automatic time-outs as no-shows
+      note: A system that marks a table no-show fifteen minutes after the slot will count parties who arrived under a different name; use host-set status.
+    - name: Mixing late cancellations in
+      note: A late cancel still gives the host a chance to resell; report it on its own line so the no-show rate measures the parties who simply vanished.
+    - name: Parties without covers
+      note: Twenty no-shows of two people and twenty of eight are the same rate and very different nights; report covers lost alongside the party rate.
+    - name: Reading a small month
+      note: A restaurant with 150 bookings a month swings a full point on two parties; judge the trend over a quarter before changing policy.

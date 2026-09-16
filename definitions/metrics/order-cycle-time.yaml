@@ -6,3 +6,77 @@ summary: >
   handoff.
 unit: hours
 direction: lower
+article:
+  what: >
+    Order cycle time is the hours between a customer order becoming
+    releasable to the floor, credit cleared and stock allocated, and the
+    moment it is shipped or handed to the carrier. It belongs to the
+    warehouse or fulfillment manager, and it is the promise the sales
+    team makes to customers, so the two negotiate it. A half-day cycle
+    lets a distributor ship what arrives by noon that afternoon; a
+    two-day cycle needs more safety stock at the customer and more
+    calls asking what has shipped.
+  formula: Hours from order release to shipment confirmation, averaged over orders shipped in the period
+  how_to_calculate: >
+    Start the clock when the order is released to the warehouse, unless
+    you want to include order entry, credit hold and backorder wait,
+    which is the total cycle the customer feels and a different number.
+    Stop it at shipment confirmation, when the carrier scan or manifest
+    is done. Report the average and the share of orders over the
+    promised window, and use working hours or calendar hours
+    consistently; a Friday afternoon order shipped Monday reads 3 hours
+    or 66 depending on the choice. WERC calls the release-to-ship
+    version internal order cycle time and the placement-to-receipt
+    version total order cycle time; state which one you report.
+  example: >
+    A warehouse operator ships 3,400 orders in a week for one client.
+    Order release to carrier scan totals 20,400 hours, an average of 6.0
+    hours per order. The median is 4.2 hours; the average is pulled up
+    by 210 orders released after the 2 p.m. cutoff that shipped the next
+    morning, 18 hours each on a calendar basis. Reporting in working
+    hours, or moving the cutoff to 4 p.m. with a later carrier pickup,
+    changes the number more than any change on the floor.
+  benchmarks:
+    - scope: Distribution centers, internal order cycle time, best in class
+      value: under 3.36 hours
+      note: WERC 2025 DC Measures Report best-in-class threshold (top 20 percent of respondents), average internal time between the order being received from the customer and shipped; reproduced in a lift-truck maker's infographic because the report is sold to members.
+      source: https://www.yale.com/globalassets/coms/yale/north-america/documents/white-papers/snack-drawer/YALE-1520_WERC-DC-Metrics-infographic.pdf
+      source_name: Warehousing Education and Research Council, 2025 DC Measures Report, as summarized by Yale Lift Truck Technologies, Top 12 distribution center metrics (2025)
+    - scope: Distribution centers, total order cycle time, best in class
+      value: under 6 hours
+      note: WERC 2025 best-in-class threshold for end-to-end time from order placement to receipt by the customer; the 2024 report's best-in-class measure was under four hours, so the top fifth got slower year over year.
+      source: https://www.yale.com/globalassets/coms/yale/north-america/documents/white-papers/0000ybc0wp001_e_en-us_benchmarking-and-improving-dc-metrics.pdf
+      source_name: Warehousing Education and Research Council, 2025 DC Measures Report, as summarized in Yale Lift Truck Technologies, Benchmarking and improving distribution center metrics (2025)
+  drivers:
+    - name: Cutoff and carrier pickup
+      note: Orders released after the last pickup wait overnight whatever the floor does, so the cutoff time and the pickup schedule set the floor of the number.
+    - name: Wave scheduling
+      note: Orders held for a wave every four hours average two hours of waiting before anyone picks; more frequent, smaller waves cut that queue.
+    - name: Stock availability
+      note: An order with one backordered line waits for the line or ships short; either way the cycle stretches, and the cause is inventory, not labor.
+    - name: Slotting and pick path
+      note: Fast movers slotted at the far end of the building add walking to every order, and walking is most of a picker's day.
+    - name: Order profile
+      note: Single-line parcel orders ship in minutes; forty-line pallet orders with labels and kitting take hours; a change in mix moves the average.
+    - name: Labor at peak
+      note: Monday and month-end volumes with weekday staffing push orders into the next day, so the number follows the schedule as much as the process.
+  improve:
+    - name: Align cutoffs with pickups
+      note: Set the order cutoff as late as the last carrier pickup allows and add an evening pickup where volume justifies, so same-day becomes the default.
+    - name: Wave more often
+      note: Release picks hourly, or continuously by priority, so no order waits for a batch to fill before it starts.
+    - name: Slot by velocity
+      note: Move the top 20 percent of items to the shortest pick path and re-slot quarterly, which shortens every order that contains them.
+    - name: Release by promise date
+      note: Prioritize orders by their ship promise instead of arrival order, so at-risk orders go first and the late share drops.
+    - name: Report by client and channel
+      note: A blended average hides the client whose orders always miss; split the number, find the slowest, and fix that flow first.
+  pitfalls:
+    - name: Starting at order entry
+      note: Time spent on credit hold or waiting for stock is a sales or inventory problem; if it is in the warehouse number, the floor gets blamed for it.
+    - name: Mixing calendar and working hours
+      note: A weekend in the average is 48 hours of nothing; pick one convention and state it, or the Monday figure will look like a collapse.
+    - name: Averages hiding the tail
+      note: A 6-hour average with 8 percent of orders at 30 hours is what customers remember; report the share past the promise alongside the mean.
+    - name: Excluding backorders
+      note: Dropping orders that waited for stock makes the number clean and the customer's experience invisible; report them in a separate line, not out of the data.

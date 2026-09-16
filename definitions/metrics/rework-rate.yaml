@@ -6,3 +6,84 @@ summary: >
   before acceptance.
 unit: percent
 direction: lower
+article:
+  what: >
+    Rework rate counts the share of finished work that had to be taken
+    down, repaired, or done again before the customer, inspector, or
+    next trade would accept it. It is the trade contractor's and
+    general contractor's quality number: the foreman sees it as crews
+    tearing out yesterday's work, the estimator sees it as labor hours
+    the bid did not carry, and the owner sees it in gross margin and in
+    the schedule. Design firms track a version of it as drawings
+    reissued for errors.
+  formula: Cost or hours spent redoing completed work ÷ total cost or hours of work performed in the period × 100
+  how_to_calculate: >
+    Decide the basis first. The cost basis puts direct rework cost,
+    labor, material, equipment, and disposal to remove and redo, over
+    total construction cost for the period or project; this is the
+    Total Field Rework Factor that industry studies report. The hours
+    basis puts rework labor hours over total labor hours and suits
+    trades that track time by cost code. Count only work that was
+    completed and then redone, including work redone after a failed
+    inspection or a punch item, and exclude owner-directed changes,
+    which are change orders. Capture rework on its own cost code at
+    the time it happens; reconstructed after the fact it is always
+    understated.
+  example: >
+    A tile contractor books 4,200 crew hours in a quarter. Time coded
+    to rework, including 180 hours to pull and reset a lippage-failed
+    shower floor, 60 hours regrouting a lobby after a color mismatch,
+    and 95 hours of punch corrections across jobs, totals 335 hours.
+    Rework rate is 335 ÷ 4,200, or 8.0 percent. At a loaded 58 dollars
+    an hour that is 19,430 dollars of labor plus the tile and setting
+    materials, out of a quarter that was bid at a 34 percent gross
+    margin.
+  benchmarks:
+    - scope: General (typical construction project)
+      value: 2 to 20 percent of contract amount
+      note: Construction Industry Institute summary of the cost of rework on a typical project, from its Guide to Construction Rework Reduction (IR252-2b); a range across project types, direct cost basis.
+      source: https://www.construction-institute.org/a-guide-to-construction-rework-reduction
+      source_name: Construction Industry Institute, A Guide to Construction Rework Reduction (IR252-2b)
+    - scope: Commercial and institutional buildings
+      value: 4.6 percent of construction cost (mean total field rework factor)
+      note: Hwang, Thomas, Haas and Caldas 2009 study of 359 CII benchmarking projects, buildings subgroup of 32 projects; all building types across 179 projects averaged 5.2 percent, infrastructure 5.7 percent, heavy industrial 4.5 percent, light industrial 9.3 percent. Reported in the Navigant Construction Forum research perspective hosted by CMAA.
+      source: https://www.cmaanet.org/sites/default/files/resource/Impact%20of%20Rework%20on%20Construction.pdf
+      source_name: Navigant Construction Forum, The Impact of Rework on Construction and Some Practical Remedies (August 2012)
+    - scope: Industrial construction
+      value: 4.4 percent of construction cost (direct field rework)
+      note: CII Research Report 153-11, Investigation of Field Rework in Industrial Construction (2011), 109 industrial projects; the same Navigant paper lists earlier CII figures of 3.4 percent (1997, 19 projects) and 12 percent total including design (1989, 9 projects).
+      source: https://www.cmaanet.org/sites/default/files/resource/Impact%20of%20Rework%20on%20Construction.pdf
+      source_name: Navigant Construction Forum, The Impact of Rework on Construction and Some Practical Remedies (August 2012)
+  drivers:
+    - name: Design errors and omissions
+      note: The Hwang study found design error the largest single cause across building projects, so incomplete drawings arrive at the trade as rework later.
+    - name: Substrate and predecessor work
+      note: Tile over an out-of-flat slab, drywall over bowed studs, or siding over a wavy weather barrier gets redone for a fault the trade inherited.
+    - name: Layout and field measurement
+      note: A wrong control line or an unverified opening dimension multiplies across everything set from it before anyone notices.
+    - name: Crew skill and supervision ratio
+      note: New hires without a lead nearby produce the lippage, the misaligned joints, and the missed fasteners that inspections catch.
+    - name: Sequencing pressure
+      note: Trades pushed to start before the predecessor is complete work around unfinished conditions and return to fix what they could not finish.
+    - name: Material and product substitutions
+      note: An unapproved substitute or a wrong-lot delivery installed before anyone checks is removed at the trade's cost.
+  improve:
+    - name: Code rework separately from day one
+      note: Give crews a rework cost code and require it on timecards, so the rate is real and the causes can be sorted.
+    - name: Inspect the substrate before starting
+      note: A documented pre-installation check of flatness, moisture, dimensions, and blocking, signed by the predecessor trade, prevents inherited rework.
+    - name: Build a first-run mockup
+      note: Set the first room, wall, or panel with the foreman present and get it accepted before the crew repeats it fifty times.
+    - name: Verify layout twice
+      note: Have a second person check control lines and critical dimensions before production starts; an hour of checking saves days of tearing out.
+    - name: Review each rework event for cause
+      note: A five-minute note on what happened and which of design, substrate, layout, skill, or material caused it drives the next fix.
+  pitfalls:
+    - name: Counting change orders as rework
+      note: Owner-directed changes are paid scope; mixing them in inflates the rate and hides the work redone at the contractor's cost.
+    - name: Reconstructing rework from memory
+      note: Surveys in the CII work found about a third of respondents believed recorded rework was only 50 to 75 percent of the actual amount.
+    - name: Direct cost only
+      note: Rework also consumes supervision, schedule float, and the next trade's time; a direct-cost rate is a floor, and the studies say so.
+    - name: Comparing across project types
+      note: Light industrial and modernization projects run higher in every study; compare a building trade to building benchmarks and to its own history.

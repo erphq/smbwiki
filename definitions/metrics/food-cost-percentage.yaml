@@ -6,3 +6,91 @@ summary: >
   of every kitchen.
 unit: percent
 direction: lower
+article:
+  what: >
+    Food cost percentage is the share of every food sales dollar that
+    went to buy the ingredients in it. It is the kitchen's number: the
+    chef or kitchen manager owns it, the owner reads it weekly, and menu
+    prices are set against it. A pizzeria running 28 percent keeps 72
+    cents of each food dollar for labor, rent and profit; the same shop
+    at 36 percent has lost eight cents a dollar before paying anyone. It
+    moves with purchase prices, portioning, waste and menu mix, which is
+    why it is the first line checked when margins slip.
+  formula: Cost of food used in the period ÷ food sales for the period × 100
+  how_to_calculate: >
+    Cost of food used is opening food inventory plus purchases minus
+    closing inventory; a purchases-only version drifts whenever stock
+    levels change. Food sales excludes alcohol, and beverage cost is
+    tracked on its own line, though some operators combine food and
+    non-alcohol beverages in one figure, which is how the National
+    Restaurant Association reports it. Measure weekly with a count, or
+    monthly at minimum. Theoretical (ideal) food cost is recipe cost
+    times units sold, and the gap to actual cost is waste,
+    over-portioning, theft or unrecorded comps. Move staff meals and
+    comps out of cost of food into their own expense lines so the ratio
+    reflects what guests were charged for.
+  example: >
+    A pizzeria opens March with 6,200 dollars of food on hand, buys
+    27,400 dollars of flour, cheese, toppings and boxes during the
+    month, and closes with 5,800 dollars. Food used is 6,200 plus 27,400
+    minus 5,800, or 27,800 dollars. March food sales were 92,000
+    dollars, so food cost percentage is 27,800 divided by 92,000, or
+    30.2 percent. If recipe costs times items sold add up to 26,000
+    dollars, the 1,800 dollar gap (about two points) is waste and
+    over-portioning to hunt down.
+  benchmarks:
+    - scope: Full-service restaurant
+      value: 32.0 percent of sales (median)
+      note: Food and non-alcohol beverage cost, 2024 results from the National Restaurant Association's 2025 Restaurant Operations Data Abstract, more than 900 operators; the previous three editions averaged 34 percent.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/restaurant-operators-kept-food-cost-ratios-in-check-in-2024/
+      source_name: National Restaurant Association, Restaurant operators kept food cost ratios in check in 2024 (2025 Restaurant Operations Data Abstract)
+    - scope: Limited-service restaurant
+      value: 32.4 percent of sales (median)
+      note: Food and non-alcohol beverage cost, 2024 results, same survey; the 2010, 2013 and 2016 editions ran at about 33 percent for limited service.
+      source: https://restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/restaurant-operators-kept-food-cost-ratios-in-check-in-2024/
+      source_name: National Restaurant Association, Restaurant operators kept food cost ratios in check in 2024 (2025 Restaurant Operations Data Abstract)
+    - scope: Full-service restaurant with annual sales of 2 million dollars or more
+      value: 31.0 percent of sales (median)
+      note: Food and non-alcohol beverage cost, 2024 results, same survey; higher-volume operators buy better and waste less as a share of sales.
+      source: https://www.restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/higher-volume-restaurants-reported-lower-food-cost-ratios-in-2024/
+      source_name: National Restaurant Association, Higher volume restaurants reported lower food-cost ratios in 2024 (2025 Restaurant Operations Data Abstract)
+    - scope: Full-service restaurant with annual sales below 2 million dollars
+      value: 33.7 percent of sales (median)
+      note: Food and non-alcohol beverage cost, 2024 results, same survey; nearly three points above the larger operators, which is the range most independents fall in.
+      source: https://www.restaurant.org/research-and-media/research/restaurant-economic-insights/analysis-commentary/higher-volume-restaurants-reported-lower-food-cost-ratios-in-2024/
+      source_name: National Restaurant Association, Higher volume restaurants reported lower food-cost ratios in 2024 (2025 Restaurant Operations Data Abstract)
+  drivers:
+    - name: Purchase prices
+      note: Cheese, beef, coffee beans and dairy move with commodity markets, and a supplier price rise lands in the ratio the same week unless menu prices follow.
+    - name: Portion control
+      note: A scoop that runs a quarter ounce heavy on every pizza or sundae adds a point or more across a month without anyone noticing at the line.
+    - name: Waste and spoilage
+      note: Over-prepped product, unsold bakery cases, melted ice cream and expired dairy are bought and never sold, so they sit in cost with no sales against them.
+    - name: Menu mix
+      note: When guests shift toward the high-cost plates, the blended percentage rises even though every recipe is costed and priced correctly.
+    - name: Theft and unrecorded comps
+      note: Food that leaves without a ticket, staff meals eaten off the line and comped plates with no reason code all raise actual cost above theoretical.
+    - name: Menu pricing lag
+      note: Prices set a year ago against last year's invoices carry a hidden cost increase until the next menu print, which is why quarterly repricing matters.
+  improve:
+    - name: Cost every recipe and reprice on a schedule
+      note: Keep a recipe card with current invoice costs for every item, and reprice or reformulate any dish whose cost has crossed the target percentage.
+    - name: Standardize portions with tools
+      note: Scales, portion scoops, ladles and cheese cups at every station make the recipe card the actual portion, and spot checks keep it there.
+    - name: Count inventory weekly
+      note: A weekly count turns food cost into a number the kitchen can act on the same week, where a monthly count only explains what already happened.
+    - name: Compare theoretical to actual cost
+      note: Recipe cost times items sold gives the cost that should have happened; the gap to the counted cost is the waste, theft and portion problem to chase, item by item.
+    - name: Steer the menu mix
+      note: Place and describe low-cost high-margin items so they sell, and let high-cost items carry a price that earns the same margin dollars.
+    - name: Prep to par from production sheets
+      note: Daily prep lists built from sales history keep over-production down, and a waste log at each station shows what still gets thrown out.
+  pitfalls:
+    - name: Purchases used instead of food consumed
+      note: A month with a big delivery on the last day reads high and the next month reads low; only the opening plus purchases minus closing method tells the truth.
+    - name: Alcohol left in the denominator
+      note: Bar sales carry a much lower cost, so blending them in flatters the kitchen and hides a drifting food cost; keep food and beverage on separate lines.
+    - name: Staff meals and comps counted as guest food cost
+      note: These are labor and marketing expenses; leaving them in cost of food raises the ratio for reasons the line cooks cannot fix.
+    - name: Chasing a low percentage over margin dollars
+      note: A 40 percent steak at 38 dollars leaves 22.80 for the house; a 22 percent pasta at 16 dollars leaves 12.48. The ratio is a control, the dollars pay the rent.

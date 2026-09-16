@@ -5,3 +5,76 @@ summary: >
   Bookable provider time occupied by delivered customer services.
 unit: percent
 direction: contextual
+article:
+  what: >
+    Service utilization counts the share of a provider's bookable hours
+    that were actually spent delivering paid services to customers. It
+    is the owner's and the booking desk's number in a salon, spa,
+    massage practice, or grooming shop, and it is watched because those
+    businesses pay for capacity by the hour whether or not a client is
+    in the chair: a massage therapist scheduled for 30 bookable hours
+    who delivers 18 hours of sessions has 12 hours of paid or
+    commissioned time producing nothing, and the rent on that room
+    runs regardless.
+  formula: Hours of delivered customer services ÷ bookable provider hours in the period × 100
+  how_to_calculate: >
+    The denominator is the hours each provider was scheduled and
+    available to take bookings, after breaks, training, and approved
+    time off. The numerator is the booked duration of services actually
+    delivered, excluding no-shows and cancellations. Sum both across
+    providers for the business figure, but always keep the per-provider
+    view. Decide whether to count booked minutes or actual service
+    minutes; booked minutes match the schedule and are simpler, while
+    actual minutes reveal overruns. A weekly figure guides staffing
+    changes, and a rolling four-week figure smooths holiday weeks.
+    Above about 85 percent walk-ins and reschedules become hard to
+    place, so the direction is contextual.
+  example: >
+    A day spa has four therapists scheduled for a combined 150
+    bookable hours in a week. Delivered services total 96 hours after
+    excluding 7 hours of no-shows. Service utilization is 96 divided by
+    150, or 64 percent. One therapist ran at 88 percent with a
+    waitlist, another at 41 percent, which tells the owner the gap is
+    in demand for that provider or that shift pattern, and not in the
+    total capacity of the spa.
+  benchmarks: []
+  benchmark_note: >
+    No trade association or government series publishes provider
+    utilization for salons, spas, massage practices, or grooming
+    businesses. The figure depends on the shift pattern, the mix of
+    walk-in and booked trade, and how many hours are held for retail
+    or admin. Set the target per provider from the business's own
+    scheduling data: measure four weeks, then set a floor that covers
+    each provider's guaranteed pay and a ceiling that still leaves room
+    for rebooking, and adjust shifts toward the hours where demand is.
+  drivers:
+    - name: Demand by hour and day of week
+      note: Evenings and Saturdays fill first in most personal service businesses, and a provider scheduled Tuesday mornings will run low regardless of skill.
+    - name: Provider's client following
+      note: An established stylist or therapist with a rebooking clientele runs full; a new provider depends on walk-ins and desk allocation until the book builds.
+    - name: Rebooking at checkout
+      note: Clients who leave with the next appointment booked fill the schedule weeks ahead; those who do not must be re-won through marketing each time.
+    - name: No-shows and late cancellations
+      note: Every missed appointment converts booked time into idle time, so utilization tracks the no-show rate directly on the days it spikes.
+    - name: Shift length versus booking pattern
+      note: An eight-hour shift where the last two hours never book runs at 75 percent by construction; matching shifts to demand raises the rate without adding a client.
+  improve:
+    - name: Rebook before the client leaves
+      note: Make "when would you like to come back" part of checkout and track each provider's rebooking rate alongside utilization.
+    - name: Shift hours to where demand is
+      note: Trade a slow Tuesday morning for a Thursday evening; the same payroll hours placed against demand raise utilization for the provider and the business.
+    - name: Fill gaps with off-peak offers
+      note: A modest discount or an added service for mid-week daytime slots moves price-sensitive clients out of the crowded evenings.
+    - name: Allocate new clients to underbooked providers
+      note: Online booking and the desk should route new requests to the provider with open time, so followings build where capacity sits idle.
+    - name: Cut no-shows with reminders and deposits
+      note: Recovering even half the no-show hours lifts utilization directly, since the capacity was already staffed and paid for.
+  pitfalls:
+    - name: Total hours in the denominator instead of bookable hours
+      note: Counting lunch, cleaning, and training as available time deflates the rate and hides whether the bookable hours were sold.
+    - name: Booked hours counted as delivered
+      note: Including no-shows in the numerator reports what the schedule looked like, not what was delivered and billed.
+    - name: Chasing 100 percent
+      note: A fully booked provider has no room for the regular who calls Friday for Saturday, so the best clients start booking elsewhere.
+    - name: Business average masking provider spread
+      note: A 70 percent overall figure with one provider at 95 and another at 45 needs two different actions, and the average suggests neither.

@@ -5,3 +5,75 @@ summary: >
   Proposed treatment value or plans that patients approve and schedule.
 unit: percent
 direction: higher
+article:
+  what: >
+    Treatment acceptance rate counts how much of the dentistry a
+    practice diagnoses and presents actually gets approved and scheduled
+    by the patient. It is the dentist's and the treatment coordinator's
+    number, and the owner watches it because diagnosed but unaccepted
+    work is the largest pool of revenue a dental office already has in
+    hand: a practice presenting two million dollars of treatment a year
+    and accepting 45 percent leaves more than a million dollars on the
+    table, and much of it is care the patient needs.
+  formula: Value of presented treatment that the patient accepted and scheduled ÷ value of treatment presented in the period × 100
+  how_to_calculate: >
+    Most dental software reports two versions and they differ widely.
+    The dollar version divides the fee value of accepted treatment by the
+    fee value presented; the procedure-count version divides accepted
+    procedures by presented procedures and reads higher because small
+    fillings are accepted more readily than crowns and implants.
+    Define "accepted" as scheduled, or as scheduled plus completed within
+    a window such as 90 days, and keep that definition fixed. Exclude
+    hygiene and exams from both sides so the rate reflects restorative
+    and elective work, and report by provider and by treatment category.
+  example: >
+    A dental clinic presents 184,000 dollars of restorative and
+    elective treatment in a quarter across 312 procedures. Patients
+    schedule 82,800 dollars of it covering 187 procedures. Dollar
+    acceptance is 82,800 divided by 184,000, or 45 percent; procedure
+    acceptance is 187 divided by 312, or 60 percent. The gap tells the
+    owner that patients are saying yes to fillings and no to the crowns
+    and implants that carry the fee value.
+  benchmarks:
+    - scope: US general dental practices
+      value: 61 percent of presented treatment accepted
+      note: 2016 Dental Economics and Levin Group Annual Practice Survey as reported in Dentistry IQ; the figure includes caries treatment, which the article notes is accepted 95 to 100 percent of the time, so elective and major work runs lower. Basis (dollars or procedures) is not stated and the survey is dated.
+      source: https://www.dentistryiq.com/practice-management/industry/article/16366701/july-data-bite-heres-the-national-average-for-case-acceptance
+      source_name: Dentistry IQ citing the Dental Economics and Levin Group Annual Practice Survey (2016)
+  benchmark_note: >
+    The ADA Health Policy Institute does not publish treatment
+    acceptance rates, and the only survey figure found is a decade old
+    and undefined on basis. Set the target internally: measure dollar
+    acceptance by provider and by category for three months, then set
+    a target for the lowest category and track it monthly.
+  drivers:
+    - name: How the diagnosis is explained
+      note: Patients who see the intraoral photo or radiograph and hear the consequence of waiting accept more than those handed a printed plan at the desk.
+    - name: Cost presentation and financing
+      note: A clear fee, the insurance estimate, and a monthly payment option offered in the same conversation remove the reason most patients give for deferring.
+    - name: Who presents the plan
+      note: Practices with a treatment coordinator who sits with the patient after the dentist leaves consistently close more than those that rely on the front desk.
+    - name: Patient tenure and trust
+      note: Long-standing patients accept at a higher rate than new patients, who often want a second opinion on anything beyond a filling.
+    - name: Size and urgency of the plan
+      note: A single crown is accepted far more often than a five-quadrant plan; phasing large plans into urgent and later stages raises the rate on the urgent part.
+  improve:
+    - name: Present with images, same day
+      note: Show the patient the photo of the cracked tooth on the chairside screen and present the plan before they leave; deferred presentations rarely close.
+    - name: Offer financing on every plan over a threshold
+      note: Have third-party financing and an in-house payment plan ready, and quote the monthly figure alongside the total on plans above a few hundred dollars.
+    - name: Assign a treatment coordinator
+      note: One trained person handles the fee, insurance, scheduling, and follow-up conversation so the dentist's diagnosis is followed by a close.
+    - name: Follow up unscheduled treatment within a week
+      note: A call or text seven days after a declined or undecided plan recovers a meaningful share; unscheduled treatment reports exist for this purpose.
+    - name: Phase large plans
+      note: Break a multi-quadrant plan into the urgent phase and the rest, get the first phase scheduled, and revisit the remainder at the next visit.
+  pitfalls:
+    - name: Reporting procedure count as if it were dollars
+      note: Procedure acceptance runs 10 to 20 points above dollar acceptance in most practices, so quoting the higher one overstates the revenue captured.
+    - name: Hygiene and exams in the numerator
+      note: Cleanings and exams are accepted almost always; leaving them in inflates the rate and hides the restorative gap the metric exists to expose.
+    - name: Treatment planned but never presented
+      note: Some software counts every diagnosed procedure as presented even if the patient never heard about it; the rate then reflects diagnosis habits, not closing.
+    - name: No time cutoff on acceptance
+      note: Without a window, treatment scheduled a year later still counts, and the quarterly rate keeps drifting up after the quarter is closed.

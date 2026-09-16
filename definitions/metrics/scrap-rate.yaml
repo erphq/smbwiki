@@ -6,3 +6,76 @@ summary: >
   saleable output.
 unit: percent
 direction: lower
+article:
+  what: >
+    Scrap rate counts material or pieces that leave the process with no
+    saleable value: sheets spoiled after makeready, vinyl and substrate
+    offcuts too small to reuse, machined parts out of tolerance beyond
+    repair, chips and drops. It is the owner's number because scrap is
+    money paid to a supplier that never reaches an invoice, and it is
+    the estimator's number because every quote carried a spoilage or
+    waste allowance and the rate says whether that allowance was right.
+    A rising scrap rate with steady volume usually points at a machine,
+    a material lot, or a setup habit before it shows in margin.
+  formula: Scrapped quantity ÷ total quantity started or issued × 100
+  how_to_calculate: >
+    Choose the basis first. A piece basis divides parts scrapped by
+    parts started. A material basis divides material wasted by material
+    issued, in sheets, pounds, or square feet. The numerator is only
+    material or pieces with no recovery; a reworkable piece belongs in
+    first-pass yield, not here. Decide whether setup and makeready waste
+    is inside the count and keep that rule fixed, since printers often
+    report run spoilage after makeready separately from total paper
+    consumed. Machine shops often report scrap as a cost, scrapped
+    material and labor divided by material issued at cost. Compute per
+    job and roll up monthly by machine, press, or product family.
+  example: >
+    A commercial printer runs a 10,000 sheet job. The pressroom draws
+    10,600 sheets, uses 350 in makeready, spoils 180 during the run to
+    misregister and hickeys, and delivers 10,070 good sheets. Run
+    spoilage is 180 divided by 10,000, or 1.8 percent. Total paper
+    scrap including makeready is 530 divided by 10,600, or 5.0 percent.
+    The estimate carried 4 percent, so the job used more paper than it
+    was priced for.
+  benchmarks: []
+  benchmark_note: >
+    No published scrap or spoilage range for small manufacturers,
+    commercial printers, or sign shops was found at a URL that could be
+    read. Printing Industries of America published a spoilage survey
+    report, but it is sold to non-members and its figures are not on
+    the public page, and the Census Annual Survey of Manufactures
+    reports material cost, not scrap. Set the target from the shop's
+    estimating allowance: if quotes carry 4 percent spoilage, a run
+    above that lost money, and the monthly target is the allowance
+    less the gains from the last two fixes.
+  drivers:
+    - name: Makeready and setup count
+      note: Every press makeready or machine setup consumes sheets or bar ends before the first good piece, so many short runs scrap more than one long run of the same total.
+    - name: Material quality and lot consistency
+      note: Paper with curl or moisture, substrate off gauge, or bar stock with inclusions produces spoilage the operator cannot prevent, and it tracks by lot.
+    - name: Nesting and stock size fit
+      note: Parts or panels that do not fit the sheet or bar length well leave offcuts too small to use; the waste is decided at layout before any cutting.
+    - name: Operator attention at the start of a run
+      note: Registration, color, and dimensional problems appear in the first minutes of a run, and a run left to drift scraps until someone looks.
+    - name: Machine wear
+      note: Worn blankets, grippers, ways, or spindles cause the same defect on every piece until service, so a scrap spike on one machine usually means maintenance.
+  improve:
+    - name: Nest jobs on the sheet or panel
+      note: Combine parts and jobs onto a common sheet size with layout software so offcuts shrink; gang short-run print jobs on one press form where color allows.
+    - name: Log scrap by cause code
+      note: Record each scrapped piece or spoiled lift with a cause such as setup, material, machine, or operator, and attack the largest cause each month.
+    - name: Buy stock sized to the parts
+      note: Order bar length, sheet size, or roll width that divides evenly into the job, which costs a little more per unit and saves the drops.
+    - name: Shorten and standardize makeready
+      note: Standard plate positions, preset ink keys, saved machine offsets, and a setup checklist cut the sheets or pieces consumed before the first good one.
+    - name: Run a first-piece check
+      note: Confirm dimensions, registration, and color on the first piece and only then release the run, so a bad setup scraps one piece instead of a lift.
+  pitfalls:
+    - name: Counting makeready waste inconsistently
+      note: If one month includes setup sheets and the next does not, the trend is meaningless; write the rule down and apply it to every job.
+    - name: Reporting scrap in pieces while estimating in weight
+      note: A shop that quotes material by the pound but tracks scrap by the part cannot compare the two, and the estimator never learns the allowance was wrong.
+    - name: Scrap that goes to the bin uncounted
+      note: Chips, drops, and spoiled sheets thrown away between counts never enter the numerator, so reconcile material issued against good output at least monthly.
+    - name: Ignoring recovery value
+      note: Metal chips and waste paper have a resale value that reduces the net cost of scrap; track the cost net of recovery when the metric is expressed in money.

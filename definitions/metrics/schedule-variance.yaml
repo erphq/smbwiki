@@ -6,3 +6,70 @@ summary: >
   project.
 unit: days
 direction: lower
+article:
+  what: >
+    Schedule variance counts the days between the completion date the
+    contractor promised at contract signing, or at the last agreed
+    re-baseline, and the date the work actually finished. Positive days
+    mean late, negative days mean early. It is the project manager's
+    number on a job and the owner's number across the company, and it
+    is watched because late days carry liquidated damages, extended
+    general conditions, crews held off the next job, and customers who
+    remember the finish date long after they forget the price.
+  formula: Actual completion date minus planned completion date, in calendar days, positive when late
+  how_to_calculate: >
+    Take the planned date from the baseline schedule or the contract,
+    adjusted only by approved time extensions, and the actual date from
+    the substantial completion certificate, the final inspection, or the
+    customer sign-off, whichever the contract defines. The difference in
+    calendar days is the variance for that job. Roll it up across jobs
+    as a mean, a median, and a share of jobs finishing late, since a few
+    long overruns can hide many on-time jobs in the mean. Earned value
+    users compute a dollar version, earned value minus planned value,
+    but the calendar form is what customers and crews feel. Use working
+    days when contracts are written that way.
+  example: >
+    A residential remodeler contracts a kitchen with substantial
+    completion on 14 April. An approved change adds cabinet uppers and
+    a five-day extension, making the planned date 19 April. The final
+    walkthrough and sign-off happen on 28 April. Schedule variance is 9
+    days late. Across the company's 30 remodels finished in the
+    quarter, the mean variance is 6 days, the median 4, and 18 of 30
+    jobs (60 percent) finished after their adjusted planned date.
+  benchmarks:
+    - scope: Large capital construction projects (owner survey)
+      value: 25 percent of projects finished within 10 percent of their original deadline
+      note: KPMG interviewed executives from over 100 private and public owner organizations worldwide in late 2014, annual revenue 250 million to over 5 billion dollars, so this describes large projects and reads as a floor for a small contractor, not a target.
+      source: https://assets.kpmg.com/content/dam/kpmg/pdf/2015/05/construction-survey-201502.pdf
+      source_name: KPMG International, Global Construction Survey 2015, Climbing the curve (2015)
+  drivers:
+    - name: Baseline realism
+      note: A promised date set by the salesperson to win the job produces variance before the first crew arrives; estimating and scheduling must set the date together.
+    - name: Predecessor trades and inspections
+      note: A framer waits on the foundation, a roofer on the framer, and everyone on the inspector, so one late predecessor pushes every following finish.
+    - name: Weather and site conditions
+      note: Paving, concrete, roofing, and site work lose days to rain and frost that a schedule without weather float will always miss.
+    - name: Material and equipment lead times
+      note: Windows, trusses, switchgear, elevators, and custom tile arrive when the supplier ships, and a late delivery moves the finish by the same days.
+    - name: Change volume during the job
+      note: Each owner change adds work and often a pause for pricing; without a matching time extension it lands entirely in the variance.
+    - name: Crew allocation across jobs
+      note: Pulling a crew to start the next sale stretches the current job, a common cause of late finishes in small trade contractors.
+  improve:
+    - name: Schedule with float and publish it
+      note: Build weather days, inspection waits, and lead-time buffers into the baseline so the promised date is one you can hit most of the time.
+    - name: Order long-lead items at contract signing
+      note: Release windows, trusses, fixtures, and custom items the day the contract is signed, and set the start date from their delivery.
+    - name: Re-baseline through approved extensions only
+      note: Process time extensions with every change order so variance measures your performance, and keep the original date visible for the customer.
+    - name: Review look-ahead weekly with trades
+      note: A three-week look-ahead reviewed with every subcontractor surfaces conflicts early enough to reshuffle without losing days.
+    - name: Finish before you start the next
+      note: Keep crews on a job through punch and sign-off; the day saved on the next start is lost twice on the remobilization.
+  pitfalls:
+    - name: Measuring against a silently revised date
+      note: If the schedule is updated each week, the planned date drifts toward the actual one and variance reads near zero on a late job.
+    - name: Averaging late and early jobs together
+      note: A job 40 days late and four jobs 10 days early average to zero; report the late share and the mean of late jobs separately.
+    - name: Using the invoice date as the finish
+      note: Billing often lags sign-off by days or weeks, so a finance-sourced completion date overstates lateness; use the contractual completion event.

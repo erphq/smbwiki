@@ -5,3 +5,76 @@ summary: >
   Proposed repair value or estimate lines that customers authorize.
 unit: percent
 direction: higher
+article:
+  what: >
+    Estimate approval rate is the share of the repair work a shop
+    recommends that the customer authorizes. It is the service advisor's
+    number: after the technician inspects the vehicle and the advisor
+    writes up the findings, how much of that proposed value or how many
+    of those lines the customer says yes to. Owners watch it because
+    approved work is the shop's revenue and declined work is inspection
+    labor spent for nothing, and because a low rate usually points at
+    how the estimate was presented and not at the inspection itself.
+  formula: Estimate value or lines authorized by customers ÷ estimate value or lines presented × 100
+  how_to_calculate: >
+    For each repair order, record the value of every recommended line
+    presented to the customer and the value of the lines authorized.
+    Sum both across the period and divide authorized by presented for
+    a dollar-based rate, or count lines for a line-based rate. Report
+    both, because a customer who approves the 60 dollar wiper line and
+    declines the 900 dollar brake job gives a high line rate and a low
+    dollar rate. Separate the primary concern the customer came in for
+    from additional findings, since approval of the reason for the
+    visit is near certain and only the additional work measures selling.
+    Track by advisor and by service category.
+  example: >
+    An auto repair shop presents 96,000 dollars of recommended work
+    across 310 repair orders in a month, of which 41,000 dollars is
+    the customers' primary concerns and 55,000 dollars is additional
+    findings from inspections. Customers authorize 40,200 dollars of the
+    primary work and 23,100 dollars of the additional work. The overall
+    approval rate is 63,300 divided by 96,000, or 66 percent; the
+    additional-work rate of 42 percent is the number the owner reviews
+    with each advisor.
+  benchmarks: []
+  benchmark_note: >
+    No government or trade association series publishes estimate
+    approval rates for independent repair shops. Industry surveys such
+    as the Ratchet+Wrench annual shop survey report average repair order
+    and car count for respondents but not an approval rate. Set the
+    target from the shop's own history, measured separately for primary
+    concerns and additional findings and by advisor, and raise the
+    additional-findings rate through presentation. A very high rate can
+    mean technicians are under-inspecting, so pair it with the average
+    recommended value per inspection.
+  drivers:
+    - name: How findings are presented
+      note: Photos and video of the worn part with a plain explanation of the consequence of waiting convert far better than a line item on a phone call.
+    - name: Prioritization of recommendations
+      note: Splitting findings into safety, needed soon, and can wait lets the customer approve the urgent lines instead of declining a large total.
+    - name: Estimate size relative to the vehicle
+      note: A 2,000 dollar recommendation on a 4,000 dollar car is declined more often than the same work on a newer vehicle, whatever the advisor says.
+    - name: Advisor trust and history
+      note: Repeat customers who have seen the shop's recommendations prove right approve more, and first visits approve less until trust is earned.
+    - name: Financing and payment options
+      note: Offering a payment plan or a card with deferred interest converts approvals the customer wanted to give but could not fund that day.
+  improve:
+    - name: Use digital inspections with photos
+      note: Send the inspection with images and a short note per finding before the call so the customer sees the evidence and the advisor sells the fix.
+    - name: Present in priority order with totals per tier
+      note: Lead with safety items and give a price for each tier, so a partial approval is easy and the declined items are scheduled for next visit.
+    - name: Follow up on declined work
+      note: Log every declined line with a reason and contact the customer at the next service interval, since much declined work is deferred and not refused.
+    - name: Coach advisors on the additional-work rate
+      note: Review each advisor's rate on additional findings weekly, listen to calls, and pair low performers with the shop's best presenter.
+    - name: Offer financing at the point of estimate
+      note: Train advisors to mention the payment option when the total passes a threshold, before the customer has said no.
+  pitfalls:
+    - name: Primary concern mixed with additional findings
+      note: The reason for the visit is almost always approved, so blending it in makes every advisor look good and hides the real selling rate.
+    - name: Recommendations never presented counted as declined
+      note: Findings the advisor left off the call are not declined work; count only what was actually put to the customer.
+    - name: Line rate read without dollar rate
+      note: Approvals of small lines lift the count-based rate while the expensive repairs are declined; report by value as well.
+    - name: A high rate treated as good on its own
+      note: Advisors can raise the rate by recommending less; watch average recommended value per inspection so the shop is not leaving needed work unfound.

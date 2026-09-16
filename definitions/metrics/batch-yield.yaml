@@ -5,3 +5,77 @@ summary: >
   Saleable beverage quantity recovered from the recorded batch input.
 unit: percent
 direction: higher
+article:
+  what: >
+    Batch yield counts the share of the volume a batch was recorded to
+    start with that reaches a keg, can, bottle, or blending tank as
+    saleable product. It is the head brewer's or winemaker's number,
+    because losses accumulate at every stage, trub and yeast in the
+    fermenter, dry hop absorption, lees and racking, filtration,
+    packaging fills and purges, and the difference between 88 and 94
+    percent on a 30 barrel batch is close to two barrels, about four
+    half-barrel kegs of revenue. Cost per barrel or per case rests on
+    it, and a yield drop on one brand usually points at one stage.
+  formula: Saleable volume packaged or transferred out ÷ recorded batch input volume × 100
+  how_to_calculate: >
+    Fix the denominator once. A brewery usually uses the volume knocked
+    out into the fermenter, sometimes the brewhouse target; a winery
+    uses gallons of juice or must into the fermenter, or tons of grapes
+    with a stated gallons-per-ton convention. The numerator is volume
+    packaged in saleable containers plus volume transferred to a bright
+    or blending tank, excluding samples, laboratory pulls, line purges,
+    and anything dumped. Compute per batch and roll up by brand each
+    month. Stage yields, brewhouse to fermenter, fermenter to bright,
+    bright to package, locate the loss. Correct measured volumes for
+    temperature, since warm wort reads several percent high against a
+    cold packaged volume.
+  example: >
+    A brewery knocks out 30.5 barrels of a hoppy ale into the fermenter.
+    After yeast cropping and dry hop absorption, 28.2 barrels transfer
+    to the bright tank, and the packaging line fills 27.4 barrels into
+    kegs and cans. Batch yield is 27.4 divided by 30.5, or 89.8 percent.
+    The cellar stage lost 7.5 percent and packaging lost 2.8 percent,
+    so the dry hop regime, not the canning line, is where to look.
+  benchmarks: []
+  benchmark_note: >
+    No published batch yield or beer loss range was found at a public
+    URL. The Brewers Association's Brewery Operations Benchmarking
+    Survey covers this but is available only to members after login,
+    and no winery trade body publishes an equivalent. Set the target by
+    brand from the brewery's own records: meter every transfer for
+    three months, take the best batch of each brand as the target for
+    that brand, and treat the gap between a heavily dry-hopped beer and
+    a lager as expected, since it is a recipe difference and no fix is needed.
+  drivers:
+    - name: Dry hop rate
+      note: Hops absorb several times their weight in beer, so a heavily dry-hopped ale loses barrels in the fermenter that a lager on the same system never does.
+    - name: Yeast crop and trub volume
+      note: The cone of a fermenter holds yeast, trub, and beer; how much beer leaves with the yeast depends on dump timing and cone geometry.
+    - name: Filtration or centrifuge losses
+      note: Every pass through a filter or centrifuge leaves beer in the equipment and the lines; unfiltered beer skips the loss and takes the haze.
+    - name: Packaging line losses
+      note: Fill purges, low fills, rejected cans, and breakage on a bottling line each take a fraction, and a line run short of operators loses more.
+    - name: Rackings and lees in wine
+      note: Each racking leaves lees behind; a wine racked four times before bottling loses more than one racked twice, and topping losses add across a long élevage.
+    - name: Transfer and line volume
+      note: Beer or wine left in hoses, pumps, and heat exchangers on every transfer is a fixed loss that is a larger share on a small batch.
+  improve:
+    - name: Meter every transfer
+      note: Flow meters or calibrated sight glasses on fermenter, bright, and packaging transfers turn yield from a guess into a number per stage.
+    - name: Manage dry hop contact and removal
+      note: Reduce hop dose where flavor allows, use a hop cannon or dry-hopping vessel, and cold crash and dump hops before transfer to recover beer from the cone.
+    - name: Crop yeast on a schedule
+      note: Dump trub early and harvest yeast at the right time so the cone holds yeast, not beer, when the batch transfers.
+    - name: Track fills and rejects on the packaging line
+      note: Check fill weights every pallet and log rejects by cause; a drifting filler head is found in an hour instead of at the end of the run.
+    - name: Minimize rackings and top consistently
+      note: Plan the number of rackings for the wine style, top on a fixed schedule, and rack off gross lees once, cleanly, with a proper sight glass.
+  pitfalls:
+    - name: Mixing denominators between batches
+      note: Yield against brewhouse target on one batch and knockout volume on the next cannot be compared; write the definition on the batch sheet.
+    - name: Ignoring temperature correction
+      note: Hot wort volume reads about four percent higher than the same beer cold, so an uncorrected knockout volume makes every batch look worse than it is.
+    - name: Counting samples and lab pulls as yield loss
+      note: Quality samples are a planned use, not a loss; record them separately so the yield number points at process losses only.
+    - name: Blends that cross batches
+      note: Beer or wine blended from several batches breaks the one-batch numerator; compute yield on the blend as a whole or at the stage before blending.

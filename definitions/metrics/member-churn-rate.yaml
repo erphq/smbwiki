@@ -5,3 +5,75 @@ summary: >
   Active recurring memberships that end during the period.
 unit: percent
 direction: lower
+article:
+  what: >
+    Member churn rate counts the share of a gym's recurring memberships
+    that ended during the period, through cancellation, non-payment, or
+    expiry without renewal. It is the owner's number above all others
+    because a membership business grows only when joins exceed leavers,
+    and churn sets how many sales the club must make each month just to
+    stand still: a club of 2,000 members losing 3 percent a month must
+    sign 60 new members monthly before it grows by one.
+  formula: Memberships that ended during the period ÷ active memberships at the start of the period × 100
+  how_to_calculate: >
+    The denominator is memberships active on the first day of the
+    period; the numerator is those among them, plus any that joined and
+    left within the period if the club chooses, that were no longer
+    active on the last day. Monthly churn is the operating figure and
+    annual churn the industry comparison; twelve monthly rates do not
+    simply add, so compute annual churn on a full-year cohort.
+    Retention rate, which the Health and Fitness Association publishes,
+    is 100 minus annual churn. Decide how to treat freezes, failed
+    payments still in retry, and fixed-term memberships that reach
+    their end date, and hold the rule constant.
+  example: >
+    A gym starts March with 2,140 active memberships. During the month
+    58 members cancel, 14 are terminated after failed payments, and 9
+    twelve-month contracts end without renewal, 81 in all. Monthly
+    churn is 81 divided by 2,140, or 3.8 percent. The club signed 74
+    new members in March, so despite a busy sales desk the membership
+    fell by 7.
+  benchmarks:
+    - scope: Health clubs, global
+      value: 66.4 percent annual retention (33.6 percent churn)
+      note: Health and Fitness Association 2025 Fitness Industry Benchmarking Report, 175 companies with more than 17,000 facilities in 27 countries, surveyed April to June 2025 on 2024 results. Churn shown as 100 minus the published retention figure.
+      source: https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/
+      source_name: Health and Fitness Association, 2025 Fitness Industry Benchmarking Report (2024 data)
+    - scope: Health clubs, United States
+      value: 69.3 percent annual retention (30.7 percent churn); independents 75.8 percent, chains 62.3 percent
+      note: IHRSA 2019 Profiles of Success, 98 club companies with 10,859 locations, 2018 data. Churn shown as 100 minus retention. Independent clubs retained better than chains.
+      source: https://www.healthandfitness.org/ihrsa-releases-2019-profiles-of-success/
+      source_name: IHRSA, 2019 Profiles of Success (2018 data)
+  drivers:
+    - name: Visit frequency in the first 90 days
+      note: Members who build a habit early stay; most cancellations come from members whose visits fell to zero months before they called to quit.
+    - name: Contract terms and cancellation friction
+      note: Twelve-month contracts hold churn down during the term and release it at renewal; month-to-month plans show a smoother, higher monthly rate.
+    - name: Price against perceived value
+      note: A rate increase or a competitor opening nearby moves churn within a quarter, especially among members who visit rarely.
+    - name: Failed payment handling
+      note: Expired cards and declined debits end memberships quietly; how quickly the club retries and contacts the member decides whether a technical lapse becomes a churned member.
+    - name: Staff contact and community
+      note: Members known by name, in a class group or with a trainer, cancel less than anonymous open-gym members.
+    - name: Seasonality of joins
+      note: January cohorts churn hardest in spring, so a club whose sales concentrate in one month sees churn concentrate three to six months later.
+  improve:
+    - name: Run a structured first-90-days program
+      note: Induction sessions, a check-in at 30 days, and a booked class habit cut early churn, which is where most of the annual loss occurs.
+    - name: Chase failed payments the same day
+      note: Automated retries plus a friendly message and an easy card update recover most involuntary churn before the membership lapses.
+    - name: Contact absent members before they cancel
+      note: Use the visit log to reach members at two and four weeks without a visit; the cancellation call comes after the absence, not before it.
+    - name: Offer a pause instead of a cancel
+      note: A one- to three-month freeze keeps a member on the books through travel, injury, or a tight month and returns most of them.
+    - name: Track churn by join cohort and plan
+      note: Knowing that the promotional plan churns at twice the rate of the standard plan changes what the sales desk sells.
+  pitfalls:
+    - name: Monthly rates summed to get annual churn
+      note: Twelve months at 3 percent is not 36 percent annual churn because the base shrinks and refills; measure a cohort over a full year.
+    - name: Freezes counted as churn, or hidden from it
+      note: A frozen membership is neither active nor ended; count it in a separate line, or the rate swings with the holiday season.
+    - name: New joiners who leave within the month excluded
+      note: Members who join and cancel inside the period never appear in the start-of-period base; decide whether to include them and say so.
+    - name: Comparing month-to-month churn with contract churn
+      note: A club on annual contracts shows low monthly churn until renewal month; compare against clubs with the same contract model.

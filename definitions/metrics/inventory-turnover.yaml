@@ -5,3 +5,76 @@ summary: >
   Annualized cost of goods sold relative to average inventory held.
 unit: times per year
 direction: contextual
+article:
+  what: >
+    Inventory turnover counts how many times a business sells through
+    and replaces its stock in a year. It is the number that tells an
+    owner whether cash is moving or sitting on shelves: a store turning
+    stock twelve times a year holds about a month of sales, one turning
+    three times holds four months. Buyers use it to judge whether
+    purchasing matches demand, lenders read it as a liquidation risk
+    signal, and landlords read it as a sign of a healthy tenant.
+  formula: Cost of goods sold for the period ÷ average inventory at cost
+  how_to_calculate: >
+    Put cost of goods sold in the numerator, not sales, so both sides
+    are measured at cost; a sales-based version overstates turns by the
+    gross margin. Average inventory is the opening plus the closing
+    balance divided by two, or a monthly average where the business is
+    seasonal. Annualize a shorter period by multiplying by twelve over
+    the number of months measured. Days of inventory is 365 divided by
+    the result. Government retail statistics publish the inverse, an
+    inventories-to-sales ratio measured at retail value, and twelve
+    divided by that ratio gives turns at retail.
+  example: >
+    A hardware store closes the year with 2.1 million dollars of cost
+    of goods sold. Inventory at cost was 560,000 dollars on 1 January
+    and 640,000 dollars on 31 December, an average of 600,000 dollars.
+    Turnover is 2.1 million divided by 600,000, or 3.5 times a year,
+    which is about 104 days of stock on hand (365 divided by 3.5).
+  benchmarks:
+    - scope: Grocery store
+      value: 14 to 15 times a year at cost
+      note: US public grocery chains, trailing twelve months to Q2 2026, cost-of-sales basis (14.76); the sales basis reads 18.47.
+      source: https://csimarket.com/Industry/industry_Efficiency.php?ind=1305
+      source_name: CSIMarket, Grocery Stores industry efficiency ratios (Q2 2026)
+    - scope: Food and beverage stores, all sizes
+      value: about 16 times a year at retail value
+      note: Census inventories-to-sales ratio of 0.76 for June 2026, seasonally adjusted; twelve divided by 0.76.
+      source: https://fred.stlouisfed.org/series/MRTSIR445USS
+      source_name: U.S. Census Bureau via FRED, Retail Inventories/Sales Ratio, Food and Beverage Stores (June 2026)
+    - scope: Motor vehicle and parts dealers
+      value: about 6.5 times a year at retail value
+      note: Census ratio of 1.86 for June 2026, seasonally adjusted; twelve divided by 1.86. Covers new and used vehicles with parts, so a parts-only store turns faster than the sector figure.
+      source: https://fred.stlouisfed.org/series/MRTSIR441USS
+      source_name: U.S. Census Bureau via FRED, Retail Inventories/Sales Ratio, Motor Vehicle and Parts Dealers (June 2026)
+  drivers:
+    - name: Assortment breadth
+      note: Every additional variant carried at the same sales volume adds a slice of stock that sells slower, so wide assortments turn lower unless each line earns its place.
+    - name: Order size and frequency
+      note: Buying in large infrequent lots raises average inventory; smaller and more frequent orders lower it, at the cost of freight and handling per unit.
+    - name: Forecast accuracy
+      note: Stock bought for demand that did not arrive stays on the shelf, and the overbuy sits in the denominator until it is sold, returned, or written off.
+    - name: Dead and slow stock left on the books
+      note: Items with no sales in a year still count as inventory at cost, so a small share of dead lines can hold turnover down for the whole store.
+    - name: Shelf life and perishability
+      note: Goods that spoil force fast turns by design, which is why grocers run near fifteen and furniture or jewelry stores run in low single digits.
+  improve:
+    - name: Rank lines by turns and margin together
+      note: Gross margin return on inventory, gross margin dollars divided by average inventory cost, shows which slow lines still pay and which fast lines earn little.
+    - name: Cut order quantities on slow lines
+      note: Move slow movers to smaller reorder points with more frequent replenishment, and let fast movers carry the larger safety stock.
+    - name: Clear dead stock on a schedule
+      note: Review items with no sales in ninety days each quarter, and mark down, return to the supplier, bundle, or write off before they age further.
+    - name: Shift bulky slow lines off the balance sheet
+      note: Special order, drop ship, or supplier-managed stock keeps the item on offer without holding it at cost in the store.
+    - name: Count stock so the denominator is real
+      note: Cycle counts that correct on-hand records remove phantom inventory from the average and stop the ratio from flattering or punishing the store.
+  pitfalls:
+    - name: Sales in the numerator against inventory at cost
+      note: Mixing retail value on top with cost on the bottom inflates the result by the gross margin, so a 40 percent margin store reads about 1.7 times too high.
+    - name: A year-end snapshot used as the average
+      note: A seasonal business that empties its shelves before year end will report far more turns than it ran during the year; use a monthly average.
+    - name: Consignment and customer-owned goods counted as stock
+      note: Goods the business does not own belong outside the denominator, otherwise turnover is understated and the sale of those goods is misread.
+    - name: Comparing across different product mixes
+      note: A convenience store and a jewelry store can both be well run at fifteen and two turns respectively; compare against the same trade and the store's own trend.

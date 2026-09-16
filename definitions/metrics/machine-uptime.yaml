@@ -6,3 +6,78 @@ summary: >
   available and able to complete cycles.
 unit: percent
 direction: higher
+article:
+  what: >
+    Machine uptime counts the share of the store's open hours during
+    which each washer and dryer could accept payment and finish a
+    cycle. It is the laundromat owner's number because the revenue
+    ceiling is working machines times turns per day, and a bagged 60
+    pound washer in a store of 30 machines takes out a tenth of the
+    largest-ticket capacity while customers who find it walk to the
+    next store. It is tracked per machine and rolled up, because a
+    store average of 98 percent can hide one machine that has been
+    dead for a month.
+  formula: Machine hours available during open hours ÷ (number of machines × open hours) × 100
+  how_to_calculate: >
+    For each machine, take the store's open hours in the period and
+    subtract the hours it was bagged, faulted, or otherwise unable to
+    complete a cycle; sum across machines for the numerator. The
+    denominator is machine count times open hours. Compute weekly and
+    monthly. A partial fault such as no heat or no spin counts as down
+    from the time it is found. In an unattended store the clock starts
+    when the fault is noticed, so record the tagging time on the
+    out-of-order log. A revenue-weighted variant multiplies each
+    machine's hours by its vend price, so a large washer counts for
+    more than a top loader.
+  example: >
+    A laundromat has 24 washers and 28 dryers, opens 16 hours a day,
+    and measures a 30 day month, so capacity is 52 times 480, or
+    24,960 machine hours. One 60 pound washer is down nine days (144
+    hours), two dryers are down three days each (96 hours), and
+    assorted faults cost 40 hours, a total of 280 hours. Uptime is
+    24,680 divided by 24,960, or 98.9 percent, and the 60 pound washer
+    at 6.50 dollars a turn is most of the lost revenue.
+  benchmarks: []
+  benchmark_note: >
+    No published machine uptime or out-of-order range for self-service
+    laundries was found; the Coin Laundry Association's industry survey
+    reports costs and vend prices but not machine availability, and
+    equipment-effectiveness studies from manufacturing software vendors
+    do not cover laundries. Set the target per machine class from the
+    store's own log: after a month of recording tag and repair times,
+    take the best machine class as the target for the rest, and treat
+    any single machine below the store average for two weeks as a
+    repair-or-replace decision.
+  drivers:
+    - name: Machine age and cycle count
+      note: Bearings, door locks, drain valves, and igniters fail on a cycle-count schedule, so the oldest and busiest machines carry most of the downtime.
+    - name: Preventive maintenance habits
+      note: Lint buildup, unlubricated bearings, and clogged drain pumps turn into failures on the busiest day; a weekly checklist catches them while the machine still runs.
+    - name: Parts on hand and technician response
+      note: A machine waiting three days for a door lock is down three days; the wait for parts is usually longer than the repair itself.
+    - name: Payment system faults
+      note: A card reader or coin drop that will not accept payment takes the machine out of service exactly as a mechanical failure does, and it is often missed in the count.
+    - name: Water quality and pressure
+      note: Hard water scales heaters and valves, and low pressure lengthens fills and trips timeouts, so downtime tracks the building's plumbing as much as the machine.
+    - name: Attendant coverage
+      note: In an unattended store a faulted machine sits until a customer complains or the owner visits, so hours of coverage decide how fast downtime is noticed.
+  improve:
+    - name: Walk the floor daily with a log
+      note: Start every cycle on each machine once a day or check the payment system's cycle report, and log any machine with no cycles since the last check.
+    - name: Stock the ten most common parts
+      note: Keep door locks, drain valves, belts, igniters, and coin or card components for each model on the shelf so repairs happen the same day.
+    - name: Schedule maintenance by cycle count
+      note: Pull cycle counts from the payment system and service each machine on a count interval from the manufacturer instead of on the calendar.
+    - name: Use the payment system for remote alerts
+      note: Card and app payment systems report machines with no activity or error codes; set alerts so a dead machine is known within hours, not days.
+    - name: Contract service with a response time
+      note: A service agreement with a stated response window prices the downtime and gives the technician a reason to come the same day.
+  pitfalls:
+    - name: Counting only full failures
+      note: A dryer that runs cold still runs, and customers pay for it once; leaving degraded machines out of downtime hides the failures that cost repeat business.
+    - name: Starting the clock at the repair call
+      note: Downtime begins when the machine stopped working, not when the technician was called; a log that starts at the call understates every unattended fault.
+    - name: Using 24 hours as the denominator
+      note: A store open 16 hours that measures over 24 makes every fault look a third smaller; use open hours, and be consistent when hours change.
+    - name: Leaving dryers out
+      note: Dryers fail as often as washers and a store with dead dryers loses the wash customer too; count both, and count them separately as well.

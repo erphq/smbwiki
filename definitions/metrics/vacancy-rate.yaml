@@ -6,3 +6,86 @@ summary: >
   period.
 unit: percent
 direction: lower
+article:
+  what: >
+    Vacancy rate is the share of a property's rentable units, or rentable
+    square feet, that were empty and earning no rent during a period. It
+    is the property manager's first number, reported to the owner monthly,
+    and it decides whether the building covers its debt service.
+    Residential managers count units, commercial managers count square
+    feet, and self-storage operators count units or net rentable feet.
+    Operators watch it because every vacant unit costs the full rent plus
+    the turnover spend, and because the trend tells them whether pricing,
+    condition or the local market is the problem.
+  formula: Vacant rentable units or square feet ÷ total rentable units or square feet × 100
+  how_to_calculate: >
+    The denominator is total rentable units or square feet, leaving out
+    space that cannot be rented such as a manager's unit or a unit under
+    renovation if the owner reports it that way. The numerator is the
+    units or feet with no paying lease on the measurement date, or the
+    average across the period's days for a smoother figure. Physical
+    vacancy counts empty space; economic vacancy adds space that is
+    occupied but not paying, such as free-rent months and delinquent
+    tenants, and is the figure that matches the rent roll. Occupancy is
+    one hundred less vacancy. Government statistics measure rental vacancy
+    across all rental housing by household survey.
+  example: >
+    A residential property manager runs a 120-unit building. On the last
+    day of the month, 8 units are vacant, one of them a down unit being
+    renovated, and 2 occupied units are in a free-rent month. Physical
+    vacancy is 8 ÷ 120, or 6.7 percent; leaving the down unit out of the
+    rentable count gives 7 ÷ 119, or 5.9 percent; economic vacancy adds
+    the 2 free-rent units, 10 ÷ 120, or 8.3 percent, which is the figure
+    the owner's lender reads.
+  benchmarks:
+    - scope: US rental housing, all types
+      value: 7.3 percent
+      note: Second quarter 2026, Housing Vacancy Survey, share of the rental inventory vacant and for rent; 7.0 percent a year earlier. Covers single-family rentals and small buildings as well as apartments, and is a household survey, not a rent-roll measure.
+      source: https://www.census.gov/housing/hvs/current/index.html
+      source_name: U.S. Census Bureau, Quarterly Residential Vacancies and Homeownership, Second Quarter 2026 (July 2026)
+    - scope: US office
+      value: 18.3 percent overall, 12.3 percent for prime buildings
+      note: Second quarter 2026, CBRE-tracked US office markets, down 30 basis points in the quarter; prime is CBRE's top tier of buildings. Square-foot basis.
+      source: https://www.cbre.com/insights/figures/q2-2026-us-office-market-report
+      source_name: CBRE, Q2 2026 U.S. Office Market Report (July 2026)
+    - scope: Self-storage (Extra Space Storage same-store pool)
+      value: 5.8 percent vacant, from 94.2 percent ending occupancy
+      note: 30 June 2026, 1,870 same-store properties, against 94.4 percent occupancy a year earlier. Large REIT portfolios run tighter than a single independent facility.
+      source: https://www.prnewswire.com/news-releases/extra-space-storage-inc-reports-2026-second-quarter-results-302836983.html
+      source_name: Extra Space Storage, 2026 Second Quarter Results press release (July 2026)
+    - scope: Self-storage (SmartStop same-store pool)
+      value: 7.5 percent vacant, from 92.5 percent average physical occupancy
+      note: First quarter 2026, 157 same-store facilities, unchanged from the same quarter of 2025. Physical occupancy by unit, before economic adjustments.
+      source: https://www.sec.gov/Archives/edgar/data/0001585389/000119312526208952/ck0001585389-ex99_1.htm
+      source_name: SmartStop Self Storage REIT, first quarter 2026 results, Form 8-K exhibit (May 2026)
+  drivers:
+    - name: Local supply and demand
+      note: New deliveries in the submarket, employer moves and household formation set the floor the property can reach whatever it does.
+    - name: Asking rent against comparables
+      note: A unit priced 8 percent above the three nearest comparables stays empty an extra month, which costs more than the premium earns.
+    - name: Turnover time
+      note: Every day between move-out and make-ready complete is vacancy; a 21-day turn on a 5 percent turnover month adds a point to the rate.
+    - name: Leasing funnel
+      note: Inquiries that go unanswered for a day, and showings that are not followed up, lengthen the vacancy for the same demand.
+    - name: Unit and building condition
+      note: Prospects who see deferred maintenance in the hallway lease elsewhere, so condition shows up as vacancy before it shows up in rent.
+  improve:
+    - name: Price to leasing velocity
+      note: Adjust asking rent weekly on units vacant over 14 days, and stop holding a number the market has already answered.
+    - name: Turn units in seven days
+      note: Schedule cleaning, paint and repairs before move-out from the notice date so the unit is showable within a week.
+    - name: Start renewals ninety days out
+      note: Offer renewal terms three months before expiry, since a retained tenant is a vacancy that never happens.
+    - name: Answer inquiries the same hour
+      note: Route leads to a phone that is answered and offer a showing within 24 hours; speed of response decides most leases.
+    - name: Use concessions before rent cuts
+      note: A free month on a twelve-month lease is cheaper than a permanent rent reduction and reads as economic vacancy for one month only.
+  pitfalls:
+    - name: Month-end snapshot used as the average
+      note: A building that filled on the 28th reports zero vacancy for a month it spent mostly empty; use the daily average.
+    - name: Physical vacancy reported as economic
+      note: A full building with three non-paying tenants and two free-rent units has 4 percent economic vacancy; the lender wants that figure.
+    - name: Down units removed without saying so
+      note: Excluding renovation units flatters the rate; report the rentable count used and the units removed.
+    - name: Units and square feet mixed
+      note: In commercial property one vacant anchor space is one unit and half the rentable area; report square feet.

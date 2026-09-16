@@ -6,3 +6,75 @@ summary: >
   machine cycles.
 unit: currency
 direction: lower
+article:
+  what: >
+    Utility cost per cycle counts the water, sewer, gas, and electricity
+    a laundromat pays for each completed wash or dry cycle, allocated
+    from the utility bills to the cycles the machines ran. It is the
+    owner's number because utilities are the largest operating cost
+    after rent in a self-service laundry and the only large cost that
+    rises and falls with volume, so it sets the floor under vend
+    pricing. A rising number with flat cycle counts is the earliest
+    sign of a leaking fill valve, a failing water heater, a stuck
+    dryer damper, or a tariff change that has not reached the vend
+    price yet.
+  formula: Water, sewer, gas, and electricity cost for the period ÷ completed machine cycles in the period
+  how_to_calculate: >
+    Add the four utility bills for the billing period, excluding any
+    meter serving an apartment or another tenant, and divide by the
+    cycles the payment system or cycle counters recorded in the same
+    period, washers and dryers together. Where washers and dryers are
+    submetered, compute a cost per washer turn (water, sewer, water
+    heating gas, and motor electricity) and a cost per dryer cycle (gas
+    and electricity) separately; otherwise allocate by an engineering
+    estimate of gallons and therms per cycle. Line up the billing dates
+    with the cycle count dates, since a bill covering 33 days against
+    30 days of cycles overstates the number. Express utilities as a
+    share of gross revenue as well, since that is how the industry
+    survey reports it.
+  example: >
+    A laundromat's bills for a month are 2,900 dollars for water and
+    sewer, 1,850 dollars for gas, and 1,300 dollars for electricity, a
+    total of 6,050 dollars. The payment system shows 6,200 washer turns
+    and 5,900 dryer cycles, 12,100 cycles in all. Utility cost per cycle
+    is 6,050 divided by 12,100, or 50 cents. Against 27,500 dollars of
+    gross revenue the same bills are 22 percent of sales.
+  benchmarks:
+    - scope: US self-service laundries
+      value: utilities averaged 23 percent of gross revenue, median 22 percent
+      note: Owner-reported share of 2018 gross revenue spent on utilities in the 2019 Coin Laundry Association survey by Readex Research, 253 responding store owners from a sample of 850; 65 percent of stores reported between 15 and 29 percent. The survey does not publish a per-cycle utility cost; mean vend price per turn was 2.32 dollars for top-load washers and 3.91 dollars for 30 to 35 pound front loaders.
+      source: https://coinlaundryassociation.com/wp-content/uploads/2019/08/IndustrySurvey19.pdf
+      source_name: Coin Laundry Association, 2019 Coin Laundry Industry Survey Results (2018 data)
+  drivers:
+    - name: Water heating
+      note: Gas to heat wash water is often the largest single component, and a water heater setpoint ten degrees too high or a failed recirculation loop shows up in the number the next bill.
+    - name: Water and sewer rates
+      note: Sewer is billed on water in, so every gallon costs twice, and municipal rate increases land on the laundromat before any other tenant in the block notices.
+    - name: Washer efficiency
+      note: A top loader uses roughly twice the water per cycle of a high-efficiency front loader of similar capacity, so the machine mix decides the water line.
+    - name: Dryer condition and venting
+      note: Lint in the ducts, a blocked exhaust, or a dryer running long cycles to finish damp loads burns gas and electricity for no extra revenue.
+    - name: Leaks and stuck valves
+      note: A fill valve that does not close or a toilet running in the restroom adds gallons every hour the store is open, and the cycle count does not move.
+    - name: Tariff structure
+      note: Electricity demand charges and time-of-use gas rates change the cost of the same cycle depending on when the store is busy.
+  improve:
+    - name: Replace top loaders with high-efficiency front loaders
+      note: Fewer gallons per cycle cuts water, sewer, and water heating together, and the larger capacity raises revenue per cycle at the same utility cost.
+    - name: Set and insulate the water heater
+      note: Bring the setpoint down to what the wash program needs, insulate the tank and lines, and check the recirculation pump, since heating is the biggest lever.
+    - name: Clean lint and vents on a schedule
+      note: Daily lint screens and quarterly duct cleaning shorten dry times and cut gas per cycle, and they reduce the fire risk that insurers ask about.
+    - name: Submeter washers and dryers
+      note: A water meter on the washer supply and a gas meter on the dryers turn one blended number into two that each point at a machine group.
+    - name: Reconcile bills to cycles monthly
+      note: Post each bill against the cycle count for the same dates and watch the per-cycle trend; a step up with no rate change means a leak or a machine fault.
+  pitfalls:
+    - name: Mismatched bill and cycle periods
+      note: A 33 day water bill divided by 30 days of cycles overstates cost per cycle by a tenth; prorate the bills to the cycle count dates.
+    - name: Including meters that are not the store
+      note: An attached apartment or a neighboring tenant on the same meter inflates the number every month; separate them or estimate and deduct.
+    - name: Ignoring the washer and dryer split
+      note: A blended cost per cycle hides a dryer problem behind washer volume; without a split, a gas spike cannot be traced to the machines that caused it.
+    - name: Comparing across tariffs and climates
+      note: A store in a city with high sewer rates or cold inlet water pays more per cycle at the same efficiency, so compare against the store's own history first.

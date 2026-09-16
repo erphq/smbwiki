@@ -5,3 +5,70 @@ summary: >
   Gross margin on install projects after equipment and labor.
 unit: percent
 direction: higher
+article:
+  what: >
+    Install gross margin counts the share of an install project's
+    price left after the equipment, materials, subcontracts, permits,
+    and direct labor that went into it. It is the owner's number in an
+    HVAC, plumbing, electrical, security, or sign company because
+    installs are the large-ticket jobs that carry the year, and a few
+    points of margin on a 14,000 dollar system change more than a
+    month of service calls. Sales comp, pricing, and the decision to
+    keep or drop a product line all run off this figure.
+  formula: (Install revenue minus equipment, materials, subcontract and direct labor cost) ÷ install revenue × 100
+  how_to_calculate: >
+    Take revenue for install jobs completed in the period, including
+    change orders and after any discounts and financing fees. Subtract
+    equipment at landed cost, materials and consumables, permits,
+    subcontractors such as crane or electrical, and installer labor at
+    a burdened rate that includes payroll taxes, benefits, and paid
+    time off. Some companies add sales commission and truck cost to
+    direct cost; state whether you do. Measure per job and roll up
+    monthly, and keep install separate from service and maintenance,
+    which run at different margins. Job costing against the estimate
+    shows where each job lost margin, usually labor hours.
+  example: >
+    An HVAC contractor sells a heat pump replacement for 14,200
+    dollars. The equipment and line set cost 6,100, materials and
+    permit 650, an electrical subcontractor 400, and two installers for
+    16 hours at a burdened 42 dollars an hour 1,344. Direct cost is
+    8,494 dollars, gross profit 5,706, and install gross margin 5,706 ÷
+    14,200, or 40.2 percent. The estimate carried 12 labor hours; the
+    four extra hours cost 1.2 points of margin.
+  benchmarks:
+    - scope: Specialty trade contractors, whole company
+      value: 22.4 percent gross profit margin
+      note: CFMA 2025 Financial Benchmarker, fiscal 2024 data, 1,558 companies analyzed of which just over 40 percent were specialty trades led by plumbing, HVAC and electrical; company-wide margin after direct and indirect job costs, so an install-only job margin should read higher than this figure.
+      source: https://cfma.org/files/o-files/view-file/ce6fe0cc-2dfe-420a-999b-a2ad030acd9a
+      source_name: Construction Financial Management Association, 2025 Construction Financial Benchmarker Executive Summary (fiscal 2024)
+  drivers:
+    - name: Equipment cost and supplier terms
+      note: Distributor pricing tiers, rebates, and buying at the right time of year move equipment cost by several points on every job.
+    - name: Labor hours against estimate
+      note: The estimate assumes a crew and a day count; every extra hour on site comes straight out of margin at the burdened rate.
+    - name: Pricing method and discounting
+      note: Flat-rate pricing built from cost plus target margin holds; discounts given in the home to close the sale come out of gross profit.
+    - name: Job mix
+      note: Replacements with clean access carry higher margins than retrofits with duct rework, and commercial bid work runs thinner than residential retail.
+    - name: Callbacks and warranty labor
+      note: Return trips to correct an install are unpaid labor charged to the same job if costed honestly, and to overhead if not.
+  improve:
+    - name: Price from cost with a target margin
+      note: Build the install price sheet from current equipment cost, hours by system type, and a stated margin, and update it when costs change.
+    - name: Hold a pre-install site survey
+      note: A comfort advisor, an installer, or a sales tech who measures access, electrical, and duct conditions before pricing removes the surprise hours.
+    - name: Track hours per install by crew
+      note: Compare estimated to actual hours by crew and system type each week, and coach the crews that consistently run over.
+    - name: Bundle accessories and add-ons at sale
+      note: Thermostats, air cleaners, surge protection, and extended labor warranties sell at high margins when quoted with the system.
+    - name: Cost callbacks to the job
+      note: Charging warranty trips to the install job makes the true margin visible and rewards crews whose work does not come back.
+  pitfalls:
+    - name: Leaving burden out of labor
+      note: Wages alone understate installer cost by 20 to 30 percent once taxes, benefits, and paid time off are included, and the margin reads too high.
+    - name: Mixing service and install revenue
+      note: Service runs at different margins and labor ratios; a blended figure hides which side of the business is drifting.
+    - name: Booking equipment at invoice price instead of landed cost
+      note: Freight, crane, and disposal fees belong to the job; leaving them in overhead overstates margin on heavy installs.
+    - name: Comparing to a company-wide benchmark
+      note: Published contractor margins are whole-company figures after indirect costs, so an install job margin should be well above them.

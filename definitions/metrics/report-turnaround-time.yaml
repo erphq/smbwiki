@@ -6,3 +6,77 @@ summary: >
   signed client report.
 unit: days
 direction: lower
+article:
+  what: >
+    Report turnaround time counts the days between the last field visit
+    or data receipt an engagement needed and the delivery of the signed
+    deliverable: the inspection report, the appraisal, the plat and
+    legal description, the stamped engineering letter, the financial
+    statements. It is the owner's number because the invoice usually
+    goes out with the report and work in progress sits on the books
+    until then, and it is the client's number because a buyer, lender,
+    or contractor is waiting, and a slow report costs the next referral
+    from the agent or lender who waited.
+  formula: Date the signed report was delivered minus date the required fieldwork or data collection was completed, in days
+  how_to_calculate: >
+    Start the clock when the last required field visit is done or the
+    last client record arrives, whichever the engagement needed. Stop it
+    when the report reaches the client by email, portal, or hand, not
+    when it is drafted or sent for review. Count in calendar days, or
+    in business days where lenders score the firm that way, and say
+    which. Report the median and the 90th percentile by engagement type,
+    since a mean is dragged by a few stuck jobs. Log client-caused
+    holds so they can be excluded honestly. Appraisal clients often
+    measure order to delivery instead, so keep that figure alongside
+    when lenders are the customer.
+  example: >
+    A home inspection service completes 42 inspections in a month and
+    delivers 30 reports the same day, 9 the next day, and 3 multi-unit
+    reports on the third day: median 0 days, mean 0.4 days, 90th
+    percentile 1 day. A land surveying firm finishes boundary fieldwork
+    on 3 March and delivers the signed plat and description on 17
+    March, a 14 day turnaround, against a 10 day target for lot surveys.
+  benchmarks:
+    - scope: VA-guaranteed home loan appraisals, national average
+      value: 9.2 business days in fiscal 2022 and 7.2 business days in fiscal 2023 through 1 March 2023 (purchase 6.9, cash-out refinance 8.0)
+      note: Measured from the lender's appraisal request to the appraiser's first upload of the completed report to VA's system, so it includes scheduling and the site visit as well as report writing; VA notes there is no industry-wide standard for counting appraisal time.
+      source: https://benefits.va.gov/HOMELOANS/documents/congressionalreports/2023-cmr-recommendations-for-improving-appraisal-delivery-times.pdf
+      source_name: U.S. Department of Veterans Affairs, Congressionally Mandated Report on Recommendations for Improving Appraisal Delivery Times (2023)
+    - scope: VA appraisal timeliness expectation by state and county
+      value: 6 to 21 business days, with 7 to 10 covering most listed localities
+      note: An expectation set per locality from request to report upload, on the fee and timeliness table effective 1 May 2026; a standard for VA panel appraisers, not a measured average, and rural Alaska and similar areas carry the longest values.
+      source: https://www.benefits.va.gov/HOMELOANS/documents/docs/va-appraisal-fees-and-timeliness-table.pdf
+      source_name: U.S. Department of Veterans Affairs, VA Appraisal Fees and Timeliness table (effective May 1, 2026)
+  drivers:
+    - name: Report backlog per producer
+      note: Each inspector, appraiser, or surveyor has a queue of unwritten reports, and the queue length on Monday morning is the turnaround for the week.
+    - name: Review and sign-off steps
+      note: A report that waits for a licensed reviewer, a partner, or a second signature adds a day for every handoff that is not scheduled.
+    - name: Missing information
+      note: A client record not received, a deed not found, or a comparable sale pending verification stops the report until someone chases it.
+    - name: Template and software
+      note: A report assembled from a template with field-captured photos and notes takes an hour; one written from scratch in a word processor takes an afternoon.
+    - name: Field capture quality
+      note: Photos without captions and notes without measurements send the writer back to the site or into guesswork, and either one adds days.
+    - name: Job complexity
+      note: A multi-unit inspection, a complex property appraisal, or a boundary with conflicting records takes longer to write, so track turnaround by job type.
+  improve:
+    - name: Write in the field
+      note: Mobile software that builds the report during the inspection or survey leaves only review for the office and makes same-day delivery routine.
+    - name: Standardize templates by engagement type
+      note: A checklist-driven template with standard language for common findings removes the blank-page delay and the reviewer's rewrite.
+    - name: Run a review queue with a daily cutoff
+      note: Reports submitted before a set hour are reviewed and signed the same day; the rule turns review from a bottleneck into a scheduled step.
+    - name: Leave report time in the schedule
+      note: Booking field visits back to back leaves no hours for writing; block report time per job so the backlog cannot grow.
+    - name: Track turnaround by producer and job type
+      note: A weekly table of median and 90th percentile by person and by type shows who needs help, which job types need a different template, and what the trend is.
+  pitfalls:
+    - name: Starting the clock at the order
+      note: Order to delivery includes scheduling and client access delays; it is a different metric, and mixing the two makes the firm look slower than its writers are.
+    - name: Counting a draft as delivered
+      note: A report sitting in review or awaiting a signature has not reached the client; measure to the moment the client can open it.
+    - name: Reading only the average
+      note: A mean of two days can hide a handful of reports stuck for three weeks; the 90th percentile is what the unhappy client experienced.
+    - name: Ignoring revisions
+      note: A report reissued after a client or lender correction request has a second turnaround, and leaving it out hides the cost of errors.

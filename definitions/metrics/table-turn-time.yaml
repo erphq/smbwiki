@@ -6,3 +6,71 @@ summary: >
   party.
 unit: minutes
 direction: lower
+article:
+  what: >
+    Table turn time is the number of minutes a table is tied up by one
+    party, from the moment the host seats them until the bussers have
+    reset it and the host can seat the next. It belongs to the floor
+    manager and the host stand. On a Friday night with a line at the
+    door, every ten minutes shaved off a turn is another party seated
+    before the kitchen closes, so it decides how many covers a
+    full-service restaurant can serve from a fixed number of seats, and
+    it is the number that connects the kitchen's speed to the door.
+  formula: Minutes from seating to table reset, averaged over parties in the period
+  how_to_calculate: >
+    Record the seat time when the host assigns the table and the ready
+    time when the reset is done, using POS or reservation system
+    timestamps, since memory rounds everything to the nearest quarter
+    hour. Average over the shift, and separate lunch from dinner and
+    party sizes into bands, because a two-top and an eight-top turn at
+    different speeds. Include the reset gap; a version that stops at
+    check close hides slow bussing. Look at the distribution and the
+    slowest tenth as well as the mean, because a few campers matter more
+    than the average. Turns per seat per shift is the same fact from
+    the other side.
+  example: >
+    A 90-seat full-service restaurant logs 128 dinner parties on a
+    Saturday. Total occupied minutes across all tables, seat to reset,
+    come to 9,600, so the average turn is 75 minutes. Two-tops averaged
+    62 minutes and six-tops 104. Cutting the average to 68 minutes over
+    a five-hour dinner service would add roughly one more turn on about
+    a dozen tables, or 30 more covers at a 55 dollar check, about 1,650
+    dollars in sales from the same seats and staff.
+  benchmarks: []
+  benchmark_note: >
+    No government or trade association publishes a table turn time
+    range, and reservation platforms report their own client data only
+    in marketing pieces without a stated sample or method. Set the
+    target from your own history: pull two weeks of seat-to-reset times
+    from the POS, split by daypart and party size, and aim to move the
+    average and the slowest tenth toward your fastest quartile without
+    cutting service steps guests notice.
+  drivers:
+    - name: Kitchen ticket time
+      note: Every minute an entrée waits on the line is a minute the table waits, so the turn cannot be faster than the kitchen on a busy night.
+    - name: Check drop and payment
+      note: The gap between the last plate cleared and the check settled is often the longest idle stretch, and it is entirely in the server's hands.
+    - name: Party size and course count
+      note: Large parties order in rounds, split checks and linger, so a night heavy with six-tops turns slower than the same covers in pairs.
+    - name: Bussing and reset staffing
+      note: A cleared table that sits unset for eight minutes while the busser is on another section is dead time the host cannot sell.
+    - name: Menu length and format
+      note: Long menus and tableside explanations add minutes before the first order fires; a tight menu and a QR code shorten the front of the meal.
+  improve:
+    - name: Fire courses on a rhythm
+      note: Train servers to fire entrées as appetizers land and to check dessert interest as plates clear, so the meal moves without feeling pushed.
+    - name: Drop the check with the dessert answer
+      note: Presenting the check when dessert is declined, and settling at the table with a handheld, removes the two longest waits at the end of a meal.
+    - name: Assign resets by section
+      note: Give each busser a section and a reset standard timed in minutes, and have the host flag cleared tables on the floor plan the moment they empty.
+    - name: Match table size to party size
+      note: Seating a couple at a four-top burns two seats for the whole turn; a host stand that holds two-tops for pairs turns the room faster.
+    - name: Post the number where the floor sees it
+      note: A weekly turn time by daypart on the manager board, with the slowest tables named, gets faster on its own once servers watch it.
+  pitfalls:
+    - name: Stopping the clock at check close
+      note: The reset is part of the turn; measuring to payment hides a bussing problem and overstates how many covers the room can hold.
+    - name: Blending lunch and dinner
+      note: A 45 minute lunch and a 95 minute dinner averaged together describe no service that actually happens; report each daypart on its own.
+    - name: Speeding turns by rushing guests
+      note: A turn cut by clearing plates early and hovering with the check shows up later as a smaller check and a worse review; measure check average alongside.

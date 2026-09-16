@@ -1000,7 +1000,7 @@ const PAGE_CONTEXT = {
   skill: "Process and Controls",
   role: "Responsibilities and Workflows",
   document: "Purpose and Workflow",
-  metric: "Definition and Business Use",
+  metric: "Formula and Benchmarks",
   "software-category": "Functions and Business Uses",
   license: "Scope and Requirements",
   market: "Buyer Context",
@@ -1066,11 +1066,11 @@ const nodeDescriptionFallback = (n) => {
     return `${n.name}: buyer context and the ${count} modeled SMBwiki business types that serve this market.`;
   return `${n.name}: definition, operating context, and relationships in the SMBwiki graph.`;
 };
-const nodeJsonLd = (n, description) => n.label === "skill"
+const nodeJsonLd = (n, description) => n.label === "skill" || (n.label === "metric" && n.data.article)
   ? {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: `${n.name}: business process and controls`,
+      headline: n.label === "skill" ? `${n.name}: business process and controls` : `${n.name}: formula, benchmarks, and what moves it`,
       description,
       url: `${SITE}${href(n.id)}`,
       mainEntityOfPage: `${SITE}${href(n.id)}`,
@@ -1093,11 +1093,38 @@ const nodeJsonLd = (n, description) => n.label === "skill"
       },
     };
 
+// A metric page is an article first: what the number is, how to compute it,
+// published ranges with their sources, what moves it, and how it is misread.
+// Headings name the metric so each section answers the query it is asked as.
+const metricArticle = (n, a) => {
+  const lower = n.name.toLowerCase();
+  const bullets = (items) => `<ul class="article-list">${items.map((item) => `<li><strong>${esc(item.name)}.</strong> ${esc(String(item.note).trim())}</li>`).join("")}</ul>`;
+  const benchmarks = a.benchmarks?.length
+    ? table(["business type or scope", "typical value", "what it assumes", "source"],
+        a.benchmarks.map((b) => [esc(b.scope), esc(b.value), esc(b.note ?? ""), `<a href="${escAttr(b.source)}">${esc(b.source_name)}</a>`]))
+    : "";
+  return [
+    `<p>${esc(String(a.what).trim())}</p>`,
+    section(`How to calculate ${lower}`,
+      `<p class="formula">${esc(a.formula)}</p><p>${esc(String(a.how_to_calculate).trim())}</p><h3>Worked example</h3><p>${esc(String(a.example).trim())}</p>`),
+    section(`${n.name} benchmarks by business type`,
+      benchmarks +
+      (a.benchmark_note ? `<p>${esc(String(a.benchmark_note).trim())}</p>` : "") +
+      `<p class="note">Published figures for the scope shown, read from the linked source on the release date. Use them to set a direction, then judge your own number against your own trend and definition.</p>`),
+    section(`What moves ${lower}`, bullets(a.drivers)),
+    section(`How to improve ${lower}`, bullets(a.improve)),
+    section("Measurement mistakes", bullets(a.pitfalls)),
+  ].join("\n");
+};
+
 for (const n of graph.nodes) {
   if (n.label === "business") continue;
   const d = n.data;
   const context = entityContext(n);
   const description = metaDescription(
+    n.label === "metric" && d.article
+      ? `How to calculate ${n.name.toLowerCase()}, typical ranges by business type, what moves it, and how ${bizOf(n.id).length} SMBwiki business types track it.`
+      : "",
     d.summary,
     nodeDescriptionFallback(n),
   );
@@ -1105,6 +1132,7 @@ for (const n of graph.nodes) {
     (d.summary ? `<p>${esc(d.summary.trim())}</p>` : ""),
     `<p class="entity-context">${esc(context)}</p>`,
   ];
+  if (n.label === "metric" && d.article) parts.push(metricArticle(n, d.article));
   parts.push(section("Relationship map", relationshipGraph(n)));
   if (n.label === "skill") {
     mkdirSync(join(DIST, "skill"), { recursive: true });
@@ -1138,7 +1166,7 @@ for (const n of graph.nodes) {
       .filter((context) => context.kind === "binding-metric" && !resolved.get(context.biz)?.abstract)
       .map((context) => context.process));
     parts.push(`<p class="muted">${esc(d.unit ?? "")}${d.direction ? ` · ${d.direction} is better` : ""}</p>`);
-    parts.push(section(
+    if (!d.article) parts.push(section(
       "How to read it",
       `<p>${esc(n.name)} is tracked in ${esc(d.unit ?? "the unit recorded by the operating business")}. ${d.direction === "lower" ? "Lower values generally indicate improvement" : d.direction === "higher" ? "Higher values generally indicate improvement" : "Interpret the direction against the operating target"}. Compare values using the same definition, scope, and reporting period.</p>`,
     ));
@@ -1514,12 +1542,98 @@ page({
     skillsAndAi,
     `<h2 id="index">index</h2>
      <p>Every node in the graph has its own page. The seven indexes list them by kind, each name marked with how many of the ${concrete.length} business types use it.</p>
-     <ul class="kind-index">${KIND_INDEXES.map(([label, seg]) => `<li><a href="/${seg}/">${esc(PLURAL[label])}</a> <span class="usecount">${graph.nodes.filter((n) => n.label === label).length}</span></li>`).join("")}</ul>`,
+     <ul class="kind-index">${KIND_INDEXES.map(([label, seg]) => `<li><a href="/${seg}/">${esc(PLURAL[label])}</a> <span class="usecount">${graph.nodes.filter((n) => n.label === label).length}</span></li>`).join("")}<li><a href="/kpis/">KPIs by sector</a> <span class="usecount">${CATALOG_GROUPS.length}</span></li></ul>`,
   ].join("\n"),
   indexable: true,
 });
 
 for (const [label, seg] of KIND_INDEXES) kindIndexPage(label, seg);
+
+// ---- sector KPI pages ----------------------------------------------------
+// One page per catalog group: the metrics its business types track, ranked
+// by how many of them use each. Generated from the bindings, so the counts
+// and the skill links cannot drift from the definitions.
+const kpiPath = (group) => `/kpis/${group}/`;
+const firstSentence = (text) => descriptionSentences(text ?? "")[0] ?? "";
+const sectorKpis = (group) => {
+  const members = businessesByGroup.get(group).sort((a, b) => a.name.localeCompare(b.name));
+  const uses = new Map();
+  for (const r of members)
+    for (const { binding } of allSkillBindings(r))
+      for (const m of binding.metrics ?? []) {
+        if (!nodes.get(m)) continue;
+        if (!uses.has(m)) uses.set(m, { businesses: new Set(), skills: new Set() });
+        uses.get(m).businesses.add(r.id);
+        uses.get(m).skills.add(binding.ref);
+      }
+  const rows = [...uses].sort((a, b) =>
+    b[1].businesses.size - a[1].businesses.size || nodeName(a[0]).localeCompare(nodeName(b[0])));
+  return { members, rows };
+};
+const sectorSummaries = [];
+for (const [group, label] of CATALOG_GROUPS) {
+  const { members, rows } = sectorKpis(group);
+  const lower = label.toLowerCase();
+  const threshold = Math.max(2, Math.ceil(members.length / 3));
+  const shared = rows.filter(([, u]) => u.businesses.size >= threshold);
+  const specific = rows.filter(([, u]) => u.businesses.size < threshold);
+  const tableFor = (list) => list.length
+    ? table(["metric", "what it measures", "unit", "business types", "measured by"], list.map(([m, u]) => {
+        const d = nodes.get(m).data;
+        const skills = [...u.skills];
+        return [
+          link(m),
+          esc(firstSentence(d.article?.what ?? d.summary)),
+          esc(d.unit ?? ""),
+          `${u.businesses.size} of ${members.length}`,
+          links(skills.slice(0, 3)) + (skills.length > 3 ? ` and ${skills.length - 3} more` : ""),
+        ];
+      }))
+    : "";
+  sectorSummaries.push({ group, label, members: members.length, metrics: rows.length });
+  page({
+    path: kpiPath(group),
+    title: `${label} KPIs and metrics | SMBwiki`,
+    h1: `${label} KPIs`,
+    kicker: `${rows.length} metrics across ${members.length} business types`,
+    desc: `The ${rows.length} metrics that the ${members.length} business types in ${lower} track, ranked by how many of them use each, with the skills each one measures.`,
+    jsonld: {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: `${label} KPIs`,
+      description: `Metrics tracked by the ${members.length} ${lower} business types on SMBwiki.`,
+      url: `${SITE}${kpiPath(group)}`,
+      isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+      dateModified: releaseDate,
+    },
+    indexable: true,
+    body: `<p>${esc(label)} covers ${members.length} business types on SMBwiki: ${links(members.map((r) => r.id))}. Between them they track ${rows.length} distinct metrics. A KPI here is a metric bound to a skill inside a business definition, so every row below names the work it judges, and every count says how many of the ${members.length} types track it.</p>
+<p>The metrics most of the sector shares are the ones with published benchmarks and the ones a lender or a buyer asks for first. The metrics specific to one or two business types are the operating numbers that identify the trade. Each metric page gives the formula, the published ranges with their sources, what moves the number, and the measurement mistakes to avoid.</p>
+${section(`Metrics most ${lower} businesses track`, tableFor(shared))}
+${section(`Metrics specific to a few ${lower} business types`, tableFor(specific))}
+<p class="note">Every metric on SMBwiki is listed in the <a href="/metric/">metric index</a>. Other sectors: ${CATALOG_GROUPS.filter(([g]) => g !== group).map(([g, l]) => `<a href="${kpiPath(g)}">${esc(l)}</a>`).join(", ")}.</p>`,
+  });
+}
+page({
+  path: "/kpis/",
+  title: "KPIs by sector: what each trade measures | SMBwiki",
+  h1: "KPIs by sector",
+  kicker: `${CATALOG_GROUPS.length} sectors, ${concrete.length} business types`,
+  desc: `Key performance indicators for ${CATALOG_GROUPS.length} small-business sectors, each page listing the metrics its business types track and the skills they measure.`,
+  jsonld: {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "KPIs by sector",
+    description: `Metrics tracked by ${concrete.length} small-business types, grouped into ${CATALOG_GROUPS.length} sectors.`,
+    url: `${SITE}/kpis/`,
+    isPartOf: { "@type": "WebSite", name: "SMBwiki", url: SITE },
+    dateModified: releaseDate,
+  },
+  indexable: true,
+  body: `<p>A key performance indicator is a metric a business type tracks because a skill in its operating model is judged by it. SMBwiki binds ${graph.nodes.filter((n) => n.label === "metric").length} metrics to skills across ${concrete.length} business types, so the KPIs of a sector can be read straight from the definitions instead of from a generic list. Each sector page ranks its metrics by how many of its business types track them and links the skills each metric measures.</p>
+<ul class="kind-index">${sectorSummaries.map((x) => `<li><a href="${kpiPath(x.group)}">${esc(x.label)} KPIs</a> <span class="usecount">${x.metrics} metrics, ${x.members} types</span></li>`).join("")}</ul>
+<p>For one metric across every sector, use the <a href="/metric/">metric index</a>. Each metric page carries the formula, published benchmarks with their sources, what moves the number, and how it is misread.</p>`,
+});
 
 // ---- static passthroughs -------------------------------------------------
 cpSync(join(ROOT, "definitions"), join(DIST, "definitions"), { recursive: true });
@@ -1548,6 +1662,8 @@ const sitemapPaths = [
   "/graph/",
   "/research/",
   ...KIND_INDEXES.map(([, seg]) => `/${seg}/`),
+  "/kpis/",
+  ...CATALOG_GROUPS.map(([group]) => `/kpis/${group}/`),
   ...graph.nodes
     .sort((a, b) => a.label.localeCompare(b.label) || a.id.localeCompare(b.id))
     .map((n) => href(n.id)),

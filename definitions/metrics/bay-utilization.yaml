@@ -5,3 +5,73 @@ summary: >
   Available service-bay time occupied by productive vehicle work.
 unit: percent
 direction: higher
+article:
+  what: >
+    Bay utilization is the share of the hours a service bay was available
+    during which a vehicle was in it being worked on. It is the auto
+    repair shop's capacity number, owned by the foreman or service
+    manager, and it is different from technician productivity: a bay can
+    be full of a car waiting on parts while the technician is productive
+    in the next bay. Operators watch it because bays are the fixed asset
+    that rent, lifts and lighting pay for, and because low utilization
+    with a full appointment book points to parts waits, cars parked in
+    bays or dispatch problems.
+  formula: Hours bays were occupied by productive vehicle work ÷ (working bays × hours open in the period) × 100
+  how_to_calculate: >
+    The denominator is the number of working bays multiplied by the hours
+    the shop is open in the period; leave out a bay that is out of service
+    or used for storage. The numerator is the hours a vehicle was in a bay
+    and being worked on: diagnosis, repair, inspection or road test
+    preparation. Hours a vehicle sat in a bay waiting for parts, approval
+    or pickup are occupied but not productive; count them separately as
+    blocked-bay hours. Take the figures from the shop system's clock-on
+    and clock-off per job and bay, or from a weekly sample if the system
+    does not track bays. Report by week and by bay.
+  example: >
+    A six-bay auto repair shop is open nine hours a day, five days a week,
+    so it has 270 bay-hours a week. Its shop system logs 178 hours of
+    technicians clocked onto jobs across the six bays, and the foreman's
+    log shows 41 further hours where cars sat in bays waiting for parts or
+    customer approval. Bay utilization is 178 ÷ 270, or 65.9 percent; the
+    41 blocked hours are another 15.2 percent of capacity that a parts
+    runner or a no-parking rule could recover.
+  benchmarks: []
+  benchmark_note: >
+    No trade association or government series publishes bay utilization
+    for independent repair shops, and the percentages repeated in shop
+    software blogs do not cite a survey. The nearest published point of
+    reference is throughput: PartsTech's 2025 Auto Shop Survey of 752
+    shops reports 2.2 vehicles per bay per day on average
+    (https://partstech.com/resource/blog/average-shop-size-and-daily-car-count-in-general-auto-repair-shops-2025-partstech-report/),
+    which is a car count, not an hours measure. Set the target from the
+    shop's own logs: measure productive and blocked hours per bay for four
+    weeks, then set the target at the best week the shop already achieved.
+  drivers:
+    - name: Parts availability
+      note: A car on the lift waiting two hours for a part holds the bay and the technician's next job at the same time.
+    - name: Customer approval delay
+      note: An estimate that waits until the customer calls back leaves the vehicle in the bay; a shop with no holding area pays for that wait in bay-hours.
+    - name: Vehicles parked in bays
+      note: Finished cars, customer no-shows and long-term projects left in a bay overnight take capacity that never appears on a job ticket.
+    - name: Technicians per bay
+      note: A shop with six bays and three technicians cannot exceed about half utilization no matter how well it schedules.
+    - name: Job mix
+      note: Quick oil changes and inspections turn a bay many times a day, while a diagnostic or an engine job holds one bay for days.
+  improve:
+    - name: Pre-order parts for scheduled work
+      note: Confirm parts on hand the day before for every booked job, so the vehicle enters the bay only when the repair can be completed.
+    - name: Approve estimates before the lift
+      note: Inspect in a dedicated inspection bay or on the drive, send the estimate, and move the car into a repair bay only after approval.
+    - name: Enforce a no-storage rule
+      note: Finished and waiting vehicles go to the lot within fifteen minutes; a bay is for work in progress only.
+    - name: Stagger appointments through the day
+      note: Booking every customer for 8 a.m. fills bays with waiting cars; book by job length across the day so bays turn.
+    - name: Track blocked hours by cause
+      note: A weekly log of parts, approval, no-show and storage hours per bay shows which cause to fix first.
+  pitfalls:
+    - name: Occupied counted as productive
+      note: A bay with a car in it all day at 40 percent productive time is the problem this number exists to find; do not count occupancy.
+    - name: Dead bays left in the denominator
+      note: A bay used for tyre storage or a broken lift lowers the figure for the whole shop and hides how busy the working bays are.
+    - name: Confused with technician productivity
+      note: Technician hours billed over hours paid measures people; bay utilization measures space, and a shop can be high on one and low on the other.

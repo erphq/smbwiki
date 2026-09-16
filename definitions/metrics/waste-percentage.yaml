@@ -2,6 +2,80 @@ id: waste-percentage
 name: Waste percentage
 kind: metric
 summary: >
-  Purchased food discarded rather than sold.
+  Purchased food discarded instead of sold.
 unit: percent
 direction: lower
+article:
+  what: >
+    Waste percentage counts food the kitchen paid for and then threw
+    away: trim beyond the yield standard, produce and dairy that expired
+    in the walk-in, overproduction at close, dropped and remade items,
+    and what comes back on the plate. It is the chef's number and the
+    owner's number, because food is the largest cost an operator can
+    control, and a share of it that never reached a paying customer is
+    margin lost twice, once on the supplier invoice and again in the
+    labor that prepped it. A bakery or pizzeria watches it in unsold
+    product at close; a butcher watches it in trim and out-of-date cuts.
+  formula: Cost of food discarded ÷ cost of food purchased in the same period × 100
+  how_to_calculate: >
+    Log discarded food by weight or by cost at purchase value, in
+    categories such as spoilage, prep waste, overproduction, plate
+    waste, and errors. The numerator is the logged total; keep donated
+    food in a separate line, since it was not sold but was not wasted.
+    The denominator is food purchases at cost for the same week or
+    month, matched to the inventory count. A common variant divides
+    waste cost by food sales, which reads about a third as large on a
+    35 percent food cost, so state which basis is in use. Weigh with a
+    scale at the bin, or use a tracking app that prices each entry;
+    a weekly count is the workable cadence for a single restaurant.
+  example: >
+    A coffee shop buys 9,000 dollars of food and milk in a week. The
+    waste log shows 210 dollars of milk past date, 160 dollars of
+    pastries unsold at close, 95 dollars of spoiled produce, and 45
+    dollars of remade drinks, a total of 510 dollars. Waste percentage
+    is 510 divided by 9,000, or 5.7 percent of purchases. Against the
+    week's 30,000 dollars of sales the same waste reads 1.7 percent.
+  benchmarks:
+    - scope: Full-service and limited-service restaurants
+      value: about 12 percent of food cost (roughly 4 percent pre-consumer plus 8 percent plate waste), which the guide puts at as much as 4.2 percent of sales
+      note: An illustrative average for a restaurant on a 35 percent food cost; the pre-consumer share comes from Leanpath interviews and the plate waste share from a published estimate, so it is a composite and no survey median exists.
+      source: https://refed.org/downloads/Restaurant_Guide_Web.pdf
+      source_name: ReFED, Restaurant Food Waste Action Guide (2018)
+    - scope: Commercial foodservice kitchens, pre-consumer waste only
+      value: 4.2 percent of food purchases not utilized
+      note: One-time estimate from Leanpath client data used in ReFED's Insights Engine foodservice methodology; the client base excludes restaurants, so it reflects contract and institutional kitchens and leaves out plate waste.
+      source: https://docs.refed.org/methodologies/food_waste_monitor/foodservice.html
+      source_name: ReFED, Insights Engine Foodservice Methodology (beta, read September 2026)
+  drivers:
+    - name: Forecasting and par levels
+      note: Prep and order quantities set from memory overshoot slow days; a par tied to last week's sales by day keeps the walk-in from filling with product that expires.
+    - name: Menu size and ingredient overlap
+      note: Each item that needs an ingredient no other item uses creates a stock that moves slowly and spoils, so long menus waste more at the same sales.
+    - name: Prep yields and trim standards
+      note: A cook who trims a case of romaine to 60 percent when the standard is 75 percent throws away a fifth of the case without anyone noticing.
+    - name: Rotation and storage discipline
+      note: Product without dates, mixed lots, and a walk-in above temperature turn purchases into spoilage before they reach the line.
+    - name: Portion control
+      note: Over-portioned plates come back with food on them, and that plate waste is purchased food the guest did not eat and did not pay extra for.
+    - name: Receiving checks
+      note: Produce accepted warm, dented cans, or short-dated dairy arrive as waste already; a check at the door sends it back on the supplier's invoice.
+  improve:
+    - name: Run a waste log by category
+      note: Weigh or price every discard with a reason, review the totals weekly with the kitchen, and fix the top category before touching anything else.
+    - name: Set pars from sales history by day of week
+      note: Build prep sheets and order guides from the last four weeks of the same weekday, and adjust for weather and events instead of guessing.
+    - name: Cross-utilize ingredients
+      note: Design specials and menu items to use trim and overlapping ingredients so slow-moving stock has a second outlet before it expires.
+    - name: Mark down or repurpose at close
+      note: Sell day-old bakery product at a discount, turn bread into croutons, and freeze proteins on their last day instead of discarding them at close.
+    - name: Inspect and date at receiving
+      note: Check temperatures and dates, refuse short-dated or damaged goods at the door, and label everything with a use-by date as it goes onto the shelf.
+  pitfalls:
+    - name: Weighing prep waste only
+      note: A log kept at the prep bin misses plate waste and closing throwaways, which in a full-service restaurant are the larger share.
+    - name: Counting donations as waste
+      note: Food donated at close was not wasted; mixing it in overstates the rate and hides the value of the donation program.
+    - name: Comparing percent of sales with percent of purchases
+      note: The same waste reads about three times larger against purchases than against sales, so two operators quoting different bases will disagree for no reason.
+    - name: Measuring on one quiet day
+      note: A single midweek day with low volume gives a rate that has nothing to do with the weekend; log every day for a full week before drawing a conclusion.

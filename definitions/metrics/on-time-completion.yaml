@@ -5,3 +5,71 @@ summary: >
   Production orders completed by their committed finish date.
 unit: percent
 direction: higher
+article:
+  what: >
+    On-time completion counts the share of orders or jobs that finished
+    by the date the business committed to when it accepted the work. It
+    is the shop manager's or superintendent's number, and the one
+    customers use to decide whether to order again, because a customer
+    plans around a promised date and a miss costs them a launch, an
+    opening, or another trade's start. A machine shop, sign shop, or
+    trade contractor with a high percentage can promise dates with
+    confidence; one with a low percentage is quoting dates it cannot
+    keep.
+  formula: Orders completed on or before the committed date ÷ orders due in the period × 100
+  how_to_calculate: >
+    The numerator is orders whose completion event, shipment, install
+    sign-off, or inspection acceptance, falls on or before the committed
+    date. The denominator is every order that was due in the period,
+    including those still open past their date, so lateness cannot
+    hide by never finishing. Use the date committed at order acceptance
+    or the last date the customer agreed to in writing. Weekly or
+    monthly periods are typical. Variants count a small grace window,
+    such as one day, or weight by order value; state which you use.
+    Many shops also track average days late on the misses, since a 90
+    percent rate with ten-day misses is a different problem from one
+    with one-day misses.
+  example: >
+    A machine shop had 84 orders due in May. Seventy-one shipped on or
+    before their committed date, nine shipped late, and four were still
+    open at month end past their due date. On-time completion is 71 ÷
+    84, or 84.5 percent. The thirteen misses averaged 6 days late, and
+    eight of them traced to one outsourced plating vendor, which tells
+    the owner where to look first.
+  benchmarks:
+    - scope: Large capital construction projects (owner survey)
+      value: 25 percent of projects finished within 10 percent of their original deadline
+      note: KPMG interviewed executives from over 100 private and public owner organizations worldwide in late 2014, revenue 250 million to over 5 billion dollars; a large-project figure with a 10 percent tolerance, so it is context for contractors and does not describe a job shop or small trade contractor.
+      source: https://assets.kpmg.com/content/dam/kpmg/pdf/2015/05/construction-survey-201502.pdf
+      source_name: KPMG International, Global Construction Survey 2015, Climbing the curve (2015)
+  drivers:
+    - name: Promise date method
+      note: Dates set from a capacity-loaded schedule are kept; dates set from what the customer asked for are missed as soon as the shop is busy.
+    - name: Bottleneck capacity
+      note: One machine, one crew, or one outside process such as plating or powder coating sets throughput, and orders queue there regardless of the plan.
+    - name: Material and supplier delivery
+      note: Stock that arrives late pushes the start, and a shop that does not confirm delivery before promising inherits the supplier's lateness.
+    - name: Rework and first-pass yield
+      note: A part that fails inspection or a wall that fails the framing inspection consumes the schedule slack and turns a tight job into a late one.
+    - name: Rush orders and expediting
+      note: Every hot order pushed to the front delays the orders behind it, so a shop that says yes to every rush misses its regular commitments.
+    - name: Front-end delays
+      note: Late drawings, unapproved proofs, missing selections, or unsigned change orders hold the start while the due date stays fixed.
+  improve:
+    - name: Promise from loaded capacity
+      note: Quote dates from a schedule that shows current backlog at the bottleneck, and give the customer a date you have room for.
+    - name: Confirm inputs before committing the date
+      note: Hold the promise until material delivery, approved drawings, and customer selections are confirmed, and reset the date if they slip.
+    - name: Protect the bottleneck
+      note: Keep the constraint resource fed and staffed, inspect before it so bad work does not consume its time, and schedule around its capacity.
+    - name: Limit and price rush work
+      note: Charge a rush premium and cap the share of rush orders per week so expedites do not crowd out committed dates.
+    - name: Review misses weekly by cause
+      note: Tag every late order with one cause, supplier, capacity, rework, front end, or customer, and fix the largest bucket first.
+  pitfalls:
+    - name: Excluding open overdue orders
+      note: Counting only shipped orders lets an order that is three weeks late and still open vanish from the denominator.
+    - name: Measuring against the most recent revised date
+      note: If every slip is re-promised and the new date is used, the shop reports near 100 percent while customers experience chronic lateness.
+    - name: Counting partial shipments as complete
+      note: A job shipped short to hit the date is on time on paper and late for the customer; count completion when the full order is done.

@@ -5,3 +5,72 @@ summary: >
   Completed clients who reserve their next appointment before leaving.
 unit: percent
 direction: higher
+article:
+  what: >
+    Rebooking rate is the share of clients who leave a finished
+    appointment with their next one already on the calendar. It is the
+    front desk's and the stylist's number: at checkout, was the next
+    visit asked for and secured. Salon, spa, and grooming owners watch
+    it because a client booked before leaving returns at the interval
+    the service needs, while one who says they will call often drifts to
+    ten weeks or to another shop. It is the earliest signal of client
+    retention and the surest way to fill the book weeks ahead.
+  formula: Completed appointments where the client booked their next visit before leaving ÷ completed appointments × 100
+  how_to_calculate: >
+    Count completed appointments in the period and, for each, whether a
+    future appointment for the same client existed when the client
+    checked out. Divide those with a future booking by the total and
+    express as a percent. Set a rule for the window: most operators
+    count a booking made at checkout or the same day, and some allow
+    bookings made within 24 or 48 hours through the app. Exclude
+    clients whose service has no natural repeat, such as a one-off
+    event style, or report them separately. Track by service provider,
+    by service type, and by new against returning clients.
+  example: >
+    A hair salon completes 1,240 appointments in a month. At checkout,
+    620 clients book their next visit and a further 45 book through
+    the app the same day. Under a same-day rule the rebooking rate is
+    665 divided by 1,240, or 54 percent. By stylist the range is 31 to
+    78 percent, and the two lowest stylists handle most of the walk-in
+    clients, which tells the owner where the checkout script is being
+    skipped.
+  benchmarks:
+    - scope: Hair salons, Australia and New Zealand
+      value: 52 to 57 percent
+      note: Kitomba Benchmark, Q4 2020, aggregated anonymous data from salons using the vendor's software; Australia 52 percent, New Zealand 57 percent. Software vendor data, no independent survey found; US figures not published.
+      source: https://www.kitomba.com/blog/industry-insights-rebooking-rates-for-the-hair-and-beauty-industry-and-how-to-improve-yours/
+      source_name: Kitomba, Industry insights - rebooking rates for the hair and beauty industry (Q4 2020)
+    - scope: Beauty salons and spas, Australia and New Zealand
+      value: 43 to 47 percent
+      note: Same Kitomba Benchmark dataset, Q4 2020; Australia 43 percent, New Zealand 47 percent. The post reports the top percentile of salons, spas, and clinics at 80 percent and above.
+      source: https://www.kitomba.com/blog/industry-insights-rebooking-rates-for-the-hair-and-beauty-industry-and-how-to-improve-yours/
+      source_name: Kitomba, Industry insights - rebooking rates for the hair and beauty industry (Q4 2020)
+  drivers:
+    - name: Whether the next visit is asked for
+      note: Most clients who are not asked do not book, so the rate follows whether the provider and the desk make the offer every time.
+    - name: Service interval clarity
+      note: A client told the color will need a refresh in six weeks books that date; one left to judge for themselves waits until it looks bad.
+    - name: Provider retention and consistency
+      note: Clients rebook with a person, and turnover on the floor, or a provider with an erratic schedule, breaks the habit.
+    - name: Online booking ease
+      note: An app that shows the provider's availability lets undecided clients book from the car park, which a phone-only shop loses.
+    - name: Client type
+      note: Regulars on maintenance services rebook at high rates while first-time and event clients rarely do, so the mix of the day sets the number.
+  improve:
+    - name: Make the offer in the chair
+      note: Have the provider recommend the next date and interval before the client stands up, and let the desk confirm it at checkout.
+    - name: Offer a specific time
+      note: Ask which of two slots suits instead of whether the client wants to book, and show the calendar so the choice is concrete.
+    - name: Set provider targets and post them
+      note: Publish rebooking rate by provider weekly, set a floor, and coach the lowest with role play on the checkout conversation.
+    - name: Send a same-day booking link
+      note: Text the client a link to their provider's availability within hours of the visit to catch those who left without booking.
+    - name: Reward the client for booking ahead
+      note: A small loyalty credit or a guaranteed preferred slot for prebooked visits gives the client a reason to commit at the desk.
+  pitfalls:
+    - name: Counting bookings made weeks later
+      note: A client who books their next visit a month after leaving is a returning client, and counting them inflates the rate; hold to the window.
+    - name: Providers with mostly new clients compared to those with regulars
+      note: A junior on walk-ins will read lower than a senior with a full book of regulars; compare by client type and by trend.
+    - name: Rebooked appointments that never happen
+      note: Prebooked visits cancelled or no-showed did not retain the client; pair the rate with the show rate on prebooked appointments.

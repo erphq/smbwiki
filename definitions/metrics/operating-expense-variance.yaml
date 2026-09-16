@@ -6,3 +6,77 @@ summary: >
   for the same period and accounting basis.
 unit: currency
 direction: lower
+article:
+  what: >
+    Operating expense variance is the dollar gap between what a
+    commercial property actually spent to operate for a period and what
+    the approved budget said it would spend, line by line and in total.
+    It is the property manager's number for control of the building:
+    utilities, janitorial, landscaping, repairs, insurance, and taxes
+    against the plan the owner signed off. Owners watch it because
+    overspend comes out of net operating income, and tenants on
+    net leases watch it because their expense recovery bills are built
+    from the same ledger.
+  formula: Actual operating expense for the period minus budgeted operating expense for the same period
+  how_to_calculate: >
+    Take actual operating expense from the property ledger for the
+    period and subtract the approved budget for the same period, using
+    the same accounting basis on both sides, accrual against accrual or
+    cash against cash. A positive result is overspend and a negative one
+    is underspend. Compute it for each expense line and for the total,
+    and express it also as a percent of budget so a large building and
+    a small one can be read together. Exclude capital projects, debt
+    service, and depreciation, which sit outside operating expense.
+    Compare year to date as well as the single month, since timing
+    differences wash out over the year.
+  example: >
+    A 60,000 square foot office building has an annual operating budget
+    of 480,000 dollars, or 40,000 a month. In July the ledger shows
+    46,500 dollars: electricity ran 3,800 over budget in a heat wave,
+    an emergency roof leak repair added 3,200, and janitorial came in
+    500 under. The July variance is 6,500 dollars over, about 16
+    percent of the monthly budget, and the manager flags the roof
+    repair as one-off and the electricity as a rate issue for the owner.
+  benchmarks: []
+  benchmark_note: >
+    No published series reports budget variance for commercial
+    properties, because the number depends entirely on how each budget
+    was set. Set the tolerance in the management agreement: many owners
+    ask for an explanation on any line more than a fixed percent or a
+    fixed dollar amount off budget, and treat a total within a few
+    percent of budget as on plan. Use BOMA and IREM expense per square
+    foot surveys to test whether the budget itself is realistic for the
+    building type and market.
+  drivers:
+    - name: Utility rates and weather
+      note: Electricity, gas, and water are the largest variable lines, and a rate increase or an unusual season moves them regardless of management.
+    - name: Unplanned repairs
+      note: A failed compressor, a burst pipe, or a roof leak lands in repairs and maintenance in the month it happens with no matching budget line.
+    - name: Vendor contract changes
+      note: Renewals of janitorial, security, and landscaping contracts at higher rates put a permanent step in the variance from that month on.
+    - name: Occupancy and tenant usage
+      note: A new tenant with extended hours or a data room raises utilities and cleaning above a budget built on prior occupancy.
+    - name: Timing of invoices and accruals
+      note: An annual insurance premium or a quarterly tax bill paid in one month shows as a spike unless the budget spreads it the same way.
+    - name: Property tax reassessment
+      note: A reassessment or a change in the mill rate moves the largest fixed line, and it usually arrives after the budget was approved.
+  improve:
+    - name: Reforecast quarterly
+      note: Update the remaining months of the budget with known changes so the variance measures management, and take the reforecast to the owner for approval.
+    - name: Bid recurring service contracts
+      note: Put janitorial, landscaping, and security out to competitive bid before renewal and lock multi-year pricing where the rate is good.
+    - name: Control repairs with approval thresholds
+      note: Require a work order and manager sign-off above a set amount, and keep a preventive maintenance schedule that catches failures before they become emergencies.
+    - name: Track utilities per square foot monthly
+      note: Compare consumption against the same month last year and against the building's peers to separate rate changes from usage changes.
+    - name: Match accruals to the budget calendar
+      note: Accrue annual and quarterly bills monthly, or budget them in the month they are paid, so timing differences stop showing as variance.
+  pitfalls:
+    - name: Mixed accounting basis
+      note: An accrual budget against a cash ledger, or the reverse, produces variance that is only timing; keep both sides on the same basis.
+    - name: Capital work booked as operating expense
+      note: A roof replacement or a parking lot resurfacing coded to repairs creates a huge variance and also wrongly inflates tenant recoveries.
+    - name: Reading the month without the year to date
+      note: A single month is dominated by timing; the year to date figure shows whether the property is really running over.
+    - name: Netting overspend and underspend
+      note: A total on budget can hide a utilities overrun offset by deferred maintenance, so review every line before declaring the period on plan.

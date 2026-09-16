@@ -6,3 +6,72 @@ summary: >
   service ticket reaching checkout.
 unit: minutes
 direction: lower
+article:
+  what: >
+    Service ticket time measures how many minutes pass from an
+    appointment's scheduled start until the finished ticket reaches
+    checkout, covering any late start, the service itself, and the
+    handoff to the desk. It is the owner's and the front desk's number
+    in a salon, spa, or grooming shop, and it is watched because the
+    schedule is built on an assumed duration for each service: when
+    tickets consistently run over, every later client waits, the last
+    slot of the day is lost, and the stylist or groomer works unpaid
+    minutes the book never priced.
+  formula: Minutes from the scheduled appointment start to the service ticket reaching checkout, averaged over tickets closed in the period
+  how_to_calculate: >
+    Record three timestamps per ticket: scheduled start, actual start,
+    and checkout. Service ticket time is checkout minus scheduled start;
+    the difference between scheduled and actual start is the late-start
+    component and is worth reporting on its own. Compare each ticket to
+    the booked duration for that service and report the average
+    overrun in minutes and the share of tickets closing within the
+    booked time. Report by provider and by service type, since a
+    45-minute cut and a three-hour colour service have different
+    tolerances, and use the median where a few very long tickets
+    distort the mean.
+  example: >
+    A pet grooming business books a full groom for a standard poodle
+    at 9:00 with a 120-minute slot. The groomer starts at 9:12 because
+    the previous dog ran late, finishes at 11:25, and the ticket reaches
+    the desk at 11:30. Service ticket time is 150 minutes against a
+    120-minute booking, a 30-minute overrun, of which 12 minutes was
+    late start. Across the week that groomer's tickets average 18
+    minutes over, which is why the 4:00 slot is always squeezed.
+  benchmarks: []
+  benchmark_note: >
+    No association or public dataset publishes ticket times for
+    salons, spas, or grooming shops; durations depend entirely on the
+    service menu and the provider. Set the target from the business's
+    own booking template: measure actual ticket time per service for a
+    month, adjust the booked duration to the median, and then track the
+    share of tickets that close within the booked slot as the
+    operating target.
+  drivers:
+    - name: Booked duration versus real duration
+      note: A service menu that books a balayage at 90 minutes when it takes 120 guarantees a late afternoon every day the service is sold.
+    - name: Late starts cascading through the day
+      note: The first late client or an overrun on the first ticket pushes every later appointment, so morning discipline sets the afternoon.
+    - name: Add-on services sold at the chair
+      note: A treatment or nail art added mid-service is good revenue but adds unbooked minutes unless the desk rebooks the rest of the day.
+    - name: Provider speed and setup habits
+      note: Two stylists doing the same cut can differ by twenty minutes in consultation, prep, and cleanup, which is visible only when time is measured per provider.
+    - name: Checkout handoff
+      note: A finished client waiting while the provider finishes another task or the desk is busy adds minutes to the ticket and to the queue behind.
+  improve:
+    - name: Re-time the service menu from actual data
+      note: Set each service's booked duration to the measured median per provider, and allow a longer slot for providers who need it.
+    - name: Buffer between long services
+      note: Ten-minute buffers after colour, extensions, or full grooms absorb overruns instead of passing them down the day.
+    - name: Book add-ons with time attached
+      note: When an add-on is sold at the chair the desk adds its minutes to the ticket and shifts or confirms the next appointment.
+    - name: Start the first appointment on time
+      note: Providers set up before the first client arrives and the desk checks in on the minute; the day's late-start component is mostly decided by 9:15.
+    - name: Close tickets at the chair
+      note: Let the provider send the ticket to checkout from a tablet the moment the service ends, so the client walks straight to payment.
+  pitfalls:
+    - name: Measuring from actual start instead of scheduled start
+      note: Starting the clock when the service begins hides the late-start problem, which is often the larger share of the overrun.
+    - name: Averaging across unlike services
+      note: A shop average of 62 minutes mixes ten-minute beard trims with three-hour colour work and tells the owner nothing; report per service type.
+    - name: Ignoring tickets that were re-booked
+      note: If an overrun is handled by moving the next client and the moved appointment is not tracked, the cost of the overrun disappears from the data.

@@ -6,3 +6,72 @@ summary: >
   window.
 unit: percent
 direction: higher
+article:
+  what: >
+    On-time pickup rate counts the share of loads a truck arrived to
+    collect inside the window the shipper set, at a dock or at a
+    customer's door. It is the earliest service number in a load's life
+    and it belongs to whoever committed the truck: the fleet dispatcher,
+    the broker who booked the carrier, the courier or moving company
+    owner. Operators watch it because a missed pickup costs the shipper
+    staged freight and dock labour, triggers rebooking or truck-ordered-
+    not-used fees, and because a late pickup is the most common cause of a
+    late delivery.
+  formula: Loads picked up inside the agreed pickup window ÷ loads picked up in the period × 100
+  how_to_calculate: >
+    The numerator is loads whose arrival at the shipper fell inside the
+    agreed pickup window; the denominator is every load picked up in the
+    period, usually a week or a month. Take the arrival time from the
+    driver's check-in, the ELD geofence or the shipper's gate log, and
+    agree which one governs before a dispute arises. A load the shipper
+    was not ready for at the agreed time counts as on time for the carrier
+    and is logged separately as shipper delay. A same-day rebooking by the
+    carrier counts as a miss. A brokerage computes the rate per carrier as
+    well as for the whole desk.
+  example: >
+    A freight brokerage moves 860 loads in a month. Carriers arrived inside
+    the pickup window on 794 loads, missed the window on 52, and on 14 the
+    shipper had no freight ready at the appointed time. The strict rate is
+    794 ÷ 860, or 92.3 percent. Crediting the 14 shipper-not-ready loads as
+    on time gives 808 ÷ 860, or 94.0 percent, and those 14 loads go on the
+    shipper's scorecard instead of the carrier's.
+  benchmarks: []
+  benchmark_note: >
+    No published survey or government series reports on-time pickup rates
+    for trucking, brokerage, couriers or movers. Shipper routing guides
+    usually carry a tender acceptance and on-time pickup threshold as a
+    condition of the award, so the working target is the strictest figure
+    in the contracts the operator holds, measured on the shipper's own
+    definition. Track the rate by carrier and by shipper for thirteen weeks
+    and set the internal target above the contract floor.
+  drivers:
+    - name: Coverage lead time
+      note: A load covered the same morning it picks up leaves no margin when the carrier's prior delivery runs over.
+    - name: The prior load's delivery
+      note: Most drivers pick up after a delivery, so a receiver that holds the truck for three hours pushes the next pickup late.
+    - name: Distance from the driver's last stop
+      note: A pickup 200 miles from where the driver went off duty cannot happen at 8 a.m. if the clock restarts at 6 a.m.
+    - name: Shipper staging discipline
+      note: Shippers that set windows before the freight is staged produce trucks waiting at the dock and, later, carriers that arrive late on purpose.
+    - name: Double brokering and no-shows
+      note: A carrier that resells the load to another truck loses control of the pickup time and often falls off the load entirely.
+    - name: Equipment fit
+      note: A load that needs a liftgate, a reefer or a 53-foot trailer waits when the wrong trailer arrives at the dock.
+  improve:
+    - name: Cover loads the afternoon before
+      note: Set a coverage deadline the day before pickup, and escalate anything uncovered to a second board or a dedicated carrier.
+    - name: Confirm the driver, not the dispatcher
+      note: Get the driver's name, phone and current location the evening before, and call at the start of the pickup day.
+    - name: Ask where the truck is delivering first
+      note: Record the prior consignee and its usual dwell, so a pickup after a slow receiver is booked with a wider window.
+    - name: Log shipper ready times
+      note: Track how often each shipper has freight staged at the agreed time, and adjust windows or charge for waiting where staging is chronically late.
+    - name: Score carriers on pickup as well as delivery
+      note: A carrier that picks up late and drives hard to deliver on time still cost the shipper dock labour, so both numbers go on the scorecard.
+  pitfalls:
+    - name: Shipper not ready logged as a carrier miss
+      note: The carrier arrived on time; scoring it late punishes the carrier and hides a shipper staging problem.
+    - name: Broker's promised time used instead of the shipper's window
+      note: The broker may have quoted a time the shipper never set; measure against the shipper's confirmed window.
+    - name: Fallen-off loads left out
+      note: A load that was never picked up because the carrier vanished belongs in the denominator as a miss, not in a separate uncounted list.

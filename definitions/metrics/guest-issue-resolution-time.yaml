@@ -6,3 +6,71 @@ summary: >
   the promised response or follow-up.
 unit: minutes
 direction: lower
+article:
+  what: >
+    Guest issue resolution time is the minutes between a guest concern
+    being logged, a cold entrée, a wrong order, a long wait, a billing
+    error, and the restaurant finishing whatever it promised in
+    response: a remade plate, a comped course, a manager visit, or a
+    follow-up call the next day. It belongs to the manager on duty. A
+    complaint answered in five minutes usually ends with a returning
+    guest; the same complaint left twenty minutes turns into a review,
+    so the clock measures recovery, while the count of issues measures
+    the cause.
+  formula: Minutes from a guest issue being logged to the promised response being completed, averaged over issues in the period
+  how_to_calculate: >
+    Log each issue at the moment a server or manager hears it, with the
+    table, the category and the promised fix, and close it when the fix
+    reaches the guest, not when it is handed to the kitchen. Use POS
+    comp and void reason codes plus a manager log or guest recovery form
+    so the timestamps exist. Average across issues per week and report
+    the median and the slowest cases separately, since one unanswered
+    email skews a mean. Issues raised after the visit, by review or
+    message, start the clock at receipt and often close in hours or
+    days; keep them in a separate bucket from in-service issues so the
+    two do not blur.
+  example: >
+    A full-service restaurant logs 23 guest issues in a week. Eighteen
+    were raised at the table, with an average of 7 minutes from log to
+    fix; the longest was a remade steak at 19 minutes. Five came in
+    afterward by email or review and took 26 hours on average to get a
+    manager reply and a gift card in the post. Reported separately,
+    in-service resolution is 7 minutes and post-visit resolution is
+    about a day; blended into one figure, the number would describe
+    nothing.
+  benchmarks: []
+  benchmark_note: >
+    No trade association or public survey benchmarks resolution time for
+    restaurant guest issues; the figure lives in each operator's manager
+    log. Start a log with timestamps for one month, set the in-service
+    target from your own median, and set a separate target in hours for
+    issues that arrive after the visit by message or review.
+  drivers:
+    - name: Manager presence on the floor
+      note: A manager in the office during the rush adds the walk to find them to every issue; one on the floor hears it at the same time as the server.
+    - name: Server authority to fix
+      note: When a server can comp a dessert or remake a plate without asking, the small issues close in a minute and only the large ones reach the manager.
+    - name: Kitchen ticket time
+      note: A remake is a new ticket at the back of the rail unless the expo pulls it forward, so resolution time follows the kitchen's speed at peak.
+    - name: Logging discipline
+      note: Issues fixed and never logged make the average look better and hide the pattern; the log must be as easy as a comp code with a reason.
+    - name: Channel of the complaint
+      note: An issue at the table closes in minutes; one sent by email closes when someone checks the inbox, which on a Saturday can be a day.
+  improve:
+    - name: Give servers a comp limit
+      note: A stated dollar amount a server may comp without approval, logged with a reason code, closes most issues at the table before they grow.
+    - name: Schedule manager table touches
+      note: A manager visiting every table once during the meal finds issues while they are small and starts the clock before the guest has to ask.
+    - name: Write a recovery menu
+      note: A short list of standard fixes by issue type, remake, comp, dessert, round of drinks, gift card, removes the decision and speeds the response.
+    - name: Log with a one-screen form
+      note: A tablet form with table, category, promise and two timestamps takes twenty seconds and produces the number; anything longer will be skipped at peak.
+    - name: Check the inbox and reviews daily
+      note: One person owns post-visit messages with a same-day reply target, so the after-visit bucket has a clock of its own and someone watching it.
+  pitfalls:
+    - name: Closing at kitchen hand-off
+      note: The issue is resolved when the guest has the fix in front of them; closing it when the ticket is refired understates the time by the whole cook.
+    - name: Blending in-service and post-visit issues
+      note: Minutes and days averaged together produce a figure nobody can act on; keep the two buckets and two targets.
+    - name: Logging only comped issues
+      note: A wrong order remade without a comp is still an issue with a clock; if only comps are logged, the rate and the time both read low.

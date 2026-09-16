@@ -6,3 +6,75 @@ summary: >
   outside cost.
 unit: percent
 direction: higher
+article:
+  what: >
+    Engagement gross margin is the share of an engagement's fee that
+    remains after the cost of the professionals who worked on it and
+    any outside cost passed through it. It is the partner's or
+    principal's number for whether a piece of client work paid: a
+    consulting project billed at 60,000 dollars that consumed 45,000
+    dollars of staff cost earned 25 percent, before rent and the
+    partners' own draw. Firms watch it by engagement, by client, and by
+    service line because a firm-wide margin hides the accounts that
+    lose money on every hour.
+  formula: (Engagement revenue minus assigned labor cost minus direct outside cost) ÷ engagement revenue × 100
+  how_to_calculate: >
+    Take the fee recognized on the engagement, fixed or hourly, net of
+    write-downs and discounts. Subtract the cost of the hours charged to
+    it, valued at each person's loaded cost rate, meaning salary plus
+    benefits and payroll taxes divided by expected productive hours.
+    Subtract direct outside cost such as subcontractors, expert fees,
+    stock media, and unbilled travel. Divide by revenue and express as a
+    percent. Compute it on completed engagements, or on a percentage of
+    completion basis for long ones. Decide whether partner time is
+    costed and at what rate, and apply the same rule everywhere.
+  example: >
+    An accounting firm completes a year-end audit engagement for a
+    fixed fee of 42,000 dollars. Staff charged 310 hours at a loaded
+    cost of 65 dollars, or 20,150 dollars, a manager charged 60 hours
+    at 110 dollars, or 6,600, and the firm paid 1,800 dollars to an
+    outside valuation specialist. Engagement cost is 28,550 dollars,
+    gross margin is 13,450 dollars, and engagement gross margin is
+    13,450 divided by 42,000, or 32 percent.
+  benchmarks:
+    - scope: Consulting services, public companies
+      value: 37.2 percent
+      note: US listed consulting firms, gross margin on cost of sales, trailing twelve months to Q2 2026 (37.16 percent); large firms with different cost allocation from a small practice.
+      source: https://csimarket.com/Industry/industry_Profitability_Ratios.php?ind=926
+      source_name: CSIMarket, Consulting Services industry profitability ratios (Q2 2026)
+    - scope: Professional services organizations, survey
+      value: 37.7 percent project margin
+      note: SPI Research 2026 Professional Services Maturity Benchmark, 2025 data, over 500 firms, mostly technology and consulting services organizations; 35.9 percent in 2024. Read from a software vendor's summary of the named survey, since the report itself is behind registration.
+      source: https://www.deltek.com/resources/articles/professional-services-benchmarks/
+      source_name: Deltek, 2026 PSO Benchmarks - Insights from the SPI Research Professional Services Maturity Benchmark (2026)
+  drivers:
+    - name: Realization against the fee
+      note: Hours written off to hold a fixed fee or to keep a client happy come straight out of the margin; the scope creep is the cost, the write-off is where it appears.
+    - name: Staffing leverage
+      note: Work pushed to the lowest cost person able to do it well earns more than the same work done by a partner at three times the cost rate.
+    - name: Billing rate and fee level
+      note: A fee set from last year's rate card while salaries rose ten percent gives away the margin before the engagement starts.
+    - name: Estimate accuracy at scoping
+      note: A fixed fee scoped at 200 hours that takes 300 loses a third of its expected margin, so the estimate is the margin decision.
+    - name: Pass-through cost handling
+      note: Outside experts, contractors, and travel billed at cost with no markup dilute the percent even when the firm's own work is profitable.
+  improve:
+    - name: Scope in writing with a change process
+      note: Define deliverables and assumptions, and price additional requests as change orders instead of absorbing them into the fixed fee.
+    - name: Review engagement budgets weekly
+      note: Compare hours charged to the budget while the work is live so overruns are caught at 60 percent of budget and not at the invoice.
+    - name: Push work down the leverage pyramid
+      note: Assign preparation and routine analysis to staff with review by seniors, and keep partner hours for judgment and client contact.
+    - name: Reprice on every renewal
+      note: Adjust recurring engagement fees each year for salary inflation and scope growth, with the increase explained to the client in advance.
+    - name: Mark up or bill through outside cost
+      note: Bill subcontractors and expenses with a handling margin, or exclude them from the fee so the firm's own margin is visible.
+  pitfalls:
+    - name: Salary instead of loaded cost
+      note: Using base pay without benefits, taxes, and non-productive time understates labor cost by a third or more and flatters every engagement.
+    - name: Partner time costed at zero
+      note: Engagements led by owners look profitable if their hours are free; assign a market rate for owner time so pricing reflects it.
+    - name: Margin measured on billed instead of realized fees
+      note: Hours billed at standard rates and later written down show a margin the firm never received; use collected or realizable revenue.
+    - name: Overhead allocated into the engagement
+      note: Rent, admin, and marketing belong below gross margin; loading them in makes engagement comparisons depend on the allocation formula.

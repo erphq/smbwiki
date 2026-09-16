@@ -5,3 +5,73 @@ summary: >
   Priced shipper opportunities that become booked loads.
 unit: percent
 direction: higher
+article:
+  what: >
+    Quote-to-book rate is the share of shipper opportunities a freight
+    brokerage priced that turned into booked loads. It is the quoting
+    desk's number: of everything the team spent time pricing, how much
+    freight actually moved under the brokerage's name. Owners watch it
+    because every quote costs a rep's time and a carrier check, and a
+    desk quoting 200 lanes a day to book 20 is spending most of its
+    effort on shippers who used the price to check someone else. Rising
+    rates say pricing and speed are competitive; falling ones say the
+    market or the desk has moved.
+  formula: Loads booked from quotes in the period ÷ quotes delivered to shippers in the period × 100
+  how_to_calculate: >
+    Count every priced quote sent to a shipper in the period, spot and
+    contract alike, and count the quotes that became a booked load with
+    a confirmed pickup. Divide booked by quoted and express as a
+    percent. Measure by quote count for desk productivity and by quoted
+    revenue for margin planning. Track spot and contract separately;
+    contract awards decide on an annual bid cycle and belong in a
+    different denominator from same-day spot quotes. Segment by lane,
+    mode, customer, and rep, and allow a decision window so quotes sent
+    late in the period are not scored as losses before the shipper has
+    replied.
+  example: >
+    A freight brokerage's spot desk sends 1,150 quotes in a month and
+    books 138 loads from them, a quote-to-book rate of 12 percent. The
+    dry van desk runs 15 percent on 700 quotes while the flatbed desk
+    runs 7 percent on 450, and one large shipper accounts for 300
+    quotes and 9 bookings. The owner sees that the flatbed pricing tool
+    and the low-converting account, not the reps, are where the month's
+    effort was lost.
+  benchmarks: []
+  benchmark_note: >
+    No published survey from the Transportation Intermediaries
+    Association or a government source reports quote-to-book rates for
+    brokerages, and figures vary widely by mode, lane, and whether the
+    quote was spot or contract. Set the target from the brokerage's
+    own history by desk and by customer, and from the cost of quoting:
+    a rep who can price 60 quotes a day needs a rate that produces
+    enough booked margin to cover the seat. Watch the trend and the gap
+    between desks more than any single number.
+  drivers:
+    - name: Rate competitiveness against the market
+      note: Shippers compare quotes against a benchmark rate and other brokers, so a price above the lane's going rate loses regardless of service.
+    - name: Quote turnaround time
+      note: Spot freight often books with the first acceptable price back, and a quote returned in an hour loses to one returned in ten minutes.
+    - name: Shipper intent
+      note: Some shippers quote to check their incumbent's pricing with no plan to switch, so a book of such accounts holds the rate down.
+    - name: Mode and lane
+      note: Dry van on dense lanes converts differently from flatbed, reefer, or rural lanes where capacity is thin and pricing is uncertain.
+    - name: Capacity confidence
+      note: A desk that knows it can cover the load quotes firm and fast, while one guessing at carrier cost pads the price or delays the reply.
+  improve:
+    - name: Price from live carrier cost data
+      note: Use load board and rate index data plus the brokerage's own recent covers to quote at a market price with a known margin instead of a guess.
+    - name: Automate quotes on repeat lanes
+      note: Rate the lanes the brokerage covers weekly from a table so reps return those quotes in minutes and spend judgment on the unusual ones.
+    - name: Score shippers by conversion
+      note: Rank accounts by quotes sent against loads booked and shift rep time toward those that book, with a lighter touch for chronic price checkers.
+    - name: Quote with a coverage commitment
+      note: Pairing the price with a named carrier or a firm pickup window converts better than a bare rate, especially on time-critical freight.
+    - name: Follow up on unanswered quotes
+      note: A call an hour after a spot quote and a day after a project quote recovers bookings that would have gone to the last broker to phone.
+  pitfalls:
+    - name: Contract bids mixed with spot quotes
+      note: Annual RFP lanes decide months after the quote and in bulk; mixing them with same-day spot quotes distorts both rates.
+    - name: Requotes counted as new quotes
+      note: Repricing the same load three times as the shipper negotiates inflates the denominator; count one quote per opportunity.
+    - name: Booked but not moved
+      note: A load booked and later cancelled or fallen off is a booking that earned nothing; reconcile the rate against loads actually delivered.

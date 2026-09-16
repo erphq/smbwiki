@@ -6,3 +6,97 @@ summary: >
   service delivery.
 unit: percent
 direction: higher
+article:
+  what: >
+    Gross margin percentage is the share of every sales dollar left
+    after paying for the goods or the direct cost of delivering the
+    service. For a store it is the markup the shelf actually earned
+    after discounts, shrink, and freight; for a shop it is what remains
+    to cover rent, wages, and profit. Owners watch it because it moves
+    before net profit does: a two point drop on a 30 percent margin
+    store is a seven percent cut in the money available for everything
+    else, and buyers, landlords, and lenders all read it as the health
+    of the trade itself.
+  formula: (Sales minus cost of goods sold) ÷ sales × 100
+  how_to_calculate: >
+    Start with net sales, meaning sales after returns, discounts, and
+    coupons, and subtract the cost of goods sold, which includes the
+    purchase price, inbound freight, and inventory shrink for a
+    retailer, or direct labor and materials for a service. Divide the
+    difference by net sales and express it as a percent. Measure both
+    sides over the same period, a month, quarter, or year. Retailers
+    often track it by department or category as well as for the whole
+    store. Markup on cost is a different number: a 50 percent markup on
+    cost is a 33 percent gross margin on price.
+  example: >
+    A hardware store rings up 2.4 million dollars of net sales in a
+    year. Purchases at cost plus inbound freight, adjusted for the
+    change in inventory and a 1 percent shrink allowance, come to 1.56
+    million dollars of cost of goods sold. Gross profit is 840,000
+    dollars, and gross margin percentage is 840,000 divided by 2.4
+    million, or 35 percent, leaving that amount to cover payroll, rent,
+    and the owner's return.
+  benchmarks:
+    - scope: All US retail
+      value: 31.1 percent
+      note: Census Annual Retail Trade Survey, 2022 benchmarked estimate, gross margin as a percentage of sales for all retail firms; 32.9 percent excluding motor vehicle and parts dealers.
+      source: https://www2.census.gov/programs-surveys/arts/tables/2022benchmarked/gmper.xlsx
+      source_name: U.S. Census Bureau, Annual Retail Trade Survey, Gross Margin as a Percentage of Sales by Kind of Business (2022 benchmarked)
+    - scope: Grocery stores
+      value: 28.0 percent
+      note: Census ARTS 2022 benchmarked, NAICS 4451, all firm sizes; US public grocery chains read lower at 19.99 percent on the CSIMarket cost-of-sales basis for the trailing twelve months to Q2 2026.
+      source: https://www2.census.gov/programs-surveys/arts/tables/2022benchmarked/gmper.xlsx
+      source_name: U.S. Census Bureau, Annual Retail Trade Survey, Gross Margin as a Percentage of Sales by Kind of Business (2022 benchmarked)
+    - scope: Automotive parts, accessories, and tire stores
+      value: 48.1 percent
+      note: Census ARTS 2022 benchmarked, NAICS 4413, all firm sizes; includes tire dealers with installation labor in sales.
+      source: https://www2.census.gov/programs-surveys/arts/tables/2022benchmarked/gmper.xlsx
+      source_name: U.S. Census Bureau, Annual Retail Trade Survey, Gross Margin as a Percentage of Sales by Kind of Business (2022 benchmarked)
+    - scope: Furniture and home furnishings stores
+      value: 51.0 percent
+      note: Census ARTS 2022 benchmarked, NAICS 442, all firm sizes; clothing stores (NAICS 4481) read 50.6 percent and electronics and appliance stores (NAICS 443) 29.4 percent in the same table.
+      source: https://www2.census.gov/programs-surveys/arts/tables/2022benchmarked/gmper.xlsx
+      source_name: U.S. Census Bureau, Annual Retail Trade Survey, Gross Margin as a Percentage of Sales by Kind of Business (2022 benchmarked)
+    - scope: Building materials and supplies dealers
+      value: 36.0 percent
+      note: Census ARTS 2022 benchmarked, NAICS 4441, covers hardware stores and home centers of all sizes; pharmacies and drug stores (NAICS 44611) read 28.0 percent and beer, wine, and liquor stores (NAICS 4453) 31.1 percent.
+      source: https://www2.census.gov/programs-surveys/arts/tables/2022benchmarked/gmper.xlsx
+      source_name: U.S. Census Bureau, Annual Retail Trade Survey, Gross Margin as a Percentage of Sales by Kind of Business (2022 benchmarked)
+    - scope: Retail apparel, public companies
+      value: 41.5 percent
+      note: US listed apparel retailers, trailing twelve months to Q2 2026 (41.53); the public home improvement industry reads 34.79 percent on the same basis.
+      source: https://csimarket.com/Industry/industry_Profitability_Ratios.php?ind=1301
+      source_name: CSIMarket, Retail Apparel industry profitability ratios (Q2 2026)
+  drivers:
+    - name: Purchase cost and supplier terms
+      note: Volume rebates, early payment discounts, and buying group pricing lower cost of goods directly, and a supplier price rise not passed on shows up the same month.
+    - name: Discounting and markdowns
+      note: Every promotion, clearance, and price match comes straight out of the numerator, so a store that discounts a fifth of its sales carries a lower blended margin.
+    - name: Product and category mix
+      note: A jeweler's repairs, a pet store's food, and a pharmacy's front-end goods each carry different margins, so a shift in what sells moves the store figure.
+    - name: Shrink
+      note: Theft, damage, spoilage, and count errors are counted as cost of goods when the book inventory is corrected, and a grocer or florist feels it every period.
+    - name: Freight and handling
+      note: Inbound freight, small order surcharges, and returns shipping belong in cost of goods, and rising carrier rates lower margin without any change in shelf price.
+    - name: Private label and own production
+      note: Store brand goods, a butcher's own sausage, or a brewery's taproom pours carry a higher margin than resold national brands.
+  improve:
+    - name: Reprice by category against cost changes
+      note: Review retail prices when supplier costs move, category by category, so the margin percent holds instead of eroding one invoice at a time.
+    - name: Cut unplanned markdowns
+      note: Buy closer to demand on seasonal and perishable lines and clear slow stock early at a small markdown before it needs a deep one.
+    - name: Grow the high margin mix
+      note: Give shelf space, staff training, and attachment prompts to the categories that earn most, such as accessories, own brand, and services.
+    - name: Negotiate and consolidate purchasing
+      note: Join a buying group, take vendor rebates, and pay early where the discount beats the cost of cash to lower landed cost.
+    - name: Attack shrink with counts and controls
+      note: Cycle counts, receiving checks against the invoice, and rotation of perishables reduce the write-downs that hit cost of goods.
+  pitfalls:
+    - name: Freight and shrink left out of cost of goods
+      note: Counting only the invoice price of merchandise overstates margin; landed cost and inventory write-downs belong in the numerator's deduction.
+    - name: Markup confused with margin
+      note: A 40 percent markup on cost is a 28.6 percent margin on selling price, and comparing one to the other misstates the store against any published range.
+    - name: Sales tax or gross sales as the base
+      note: Use net sales after returns and discounts and without sales tax; both errors inflate the denominator and understate the margin.
+    - name: Inventory not adjusted for the period
+      note: Using purchases as cost of goods without the change in inventory makes a stock-up month look terrible and a sell-down month look brilliant.

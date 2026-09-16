@@ -6,3 +6,79 @@ summary: >
   blending correction, relabeling, or other disposition.
 unit: percent
 direction: higher
+article:
+  what: >
+    Batch release conformance counts the share of batches that passed
+    every release check the first time, gravity, pH, dissolved oxygen,
+    carbonation, microbiology, sensory, fill and label, and shipped as
+    planned with no blending, reprocessing, relabeling, hold, or
+    downgrade. It is the quality lead's number and the owner's number
+    at a brewery or winery, because a held batch ties up a tank and a
+    release date, a blend to correct a fault dilutes a good batch to
+    save a bad one, and a dumped batch costs the full ingredient and
+    labor spend. It is the earliest measure of whether the process is
+    under control.
+  formula: Batches released without any corrective disposition ÷ batches presented for release × 100
+  how_to_calculate: >
+    The denominator is batches or packaged lots presented for release
+    in the period. The numerator is those released on the first review
+    with every specification inside its limits and no disposition:
+    no blend, no rework such as recarbonation, refiltration, or a
+    second fermentation, no relabel, no hold beyond the planned window,
+    and no downgrade to another product or bulk sale. A batch that
+    failed a first test and passed a retest counts as nonconforming
+    unless the shop has decided to count only interventions; decide
+    once and write it down. Because a small producer makes few batches,
+    report a rolling twelve month rate alongside the month, and tag
+    every nonconformance with a reason.
+  example: >
+    A winery presents 24 lots for bottling in a season. Twenty are
+    released clean; two need a second sulfur dioxide addition and a
+    retest, one is blended to bring volatile acidity inside the limit,
+    and one is held a week for label approval. Conformance is 20
+    divided by 24, or 83.3 percent for the season. On a rolling twelve
+    month view over 60 lots the same winery reads 88 percent.
+  benchmarks: []
+  benchmark_note: >
+    No published batch release conformance or right-first-time rate for
+    breweries or wineries was found at a source that could be
+    verified; the Brewers Association benchmarking survey is limited to
+    members, and winery quality data is not published by any trade
+    body. Set the target from the producer's own log: after a year of
+    tagging every disposition, the target is the rate achieved by the
+    best-controlled product, and the plan is the list of the top three
+    reasons, usually dissolved oxygen, carbonation, and sensory, with a
+    fix for each.
+  drivers:
+    - name: Raw material and process consistency
+      note: A change in malt lot, hop crop, grape brix, or water chemistry moves a batch off its target before any cellar decision is made.
+    - name: Sanitation and microbiology control
+      note: A contaminated hose, valve, or tank is the usual source of a micro failure, and one failure often means a run of held batches until the source is found.
+    - name: In-process checks catching drift early
+      note: A gravity, pH, or dissolved oxygen check during fermentation gives time to correct; the same reading at release only records a nonconformance.
+    - name: Specification limits set to the process
+      note: Limits tighter than the process can hold generate failures on good product, and limits looser than the customer notices pass product that comes back.
+    - name: Packaging line control
+      note: Dissolved oxygen pickup, low fills, and mislabeled cans happen on the line after the beer or wine was fine, and they fail the lot at release.
+    - name: Label and compliance workflow
+      note: A label approval or lot code that is not ready when the beer is holds a good batch for reasons that have nothing to do with quality.
+  improve:
+    - name: Write release specifications per product
+      note: List every test, the limit, and the method for each product, and make release a signature against that list, with results attached to the batch record.
+    - name: Add in-process gates
+      note: Check gravity, pH, and dissolved oxygen at fixed points in fermentation and transfer, and stop a batch at the gate when it is off, before it reaches release.
+    - name: Run a microbiology program
+      note: Plate wort, beer, and equipment swabs on a schedule so contamination is found on a hose, not in a packaged lot.
+    - name: Hold a trained sensory panel
+      note: A short weekly panel with reference standards catches off-flavors before packaging and calibrates the people making the release call.
+    - name: Investigate every disposition
+      note: Each blend, rework, or hold gets a one-page root cause and a change to the process, and the list is reviewed monthly for repeats.
+  pitfalls:
+    - name: Ignoring retests
+      note: A batch that failed and then passed a retest had a problem; counting only the final result erases the signal the metric exists to show.
+    - name: Counting only dumped batches
+      note: Dumps are rare and dramatic; blends, holds, and relabels are common and expensive, and leaving them out makes conformance look near perfect.
+    - name: Reading a small denominator month by month
+      note: One failure in four batches is 75 percent and means nothing on its own; use a rolling twelve months before reacting to the number.
+    - name: Loosening limits to pass
+      note: Widening a specification after a failure raises the rate without changing the product, and the customer complaint arrives anyway.

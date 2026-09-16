@@ -6,3 +6,84 @@ summary: >
   subcontract cost assigned to a completed project.
 unit: percent
 direction: higher
+article:
+  what: >
+    Project gross margin is the share of a completed project's contract
+    revenue left after every direct cost of building it: field labor,
+    materials, equipment, and subcontractors. It is the contractor's
+    number for whether the job made money before overhead: a roofing
+    job that billed 30,000 dollars and cost 22,500 to put on earned 25
+    percent toward the office, the trucks, and profit. Owners watch it
+    job by job because the company margin is the average of its
+    projects, and one estimate that missed by a third can erase the
+    gain of five good ones.
+  formula: (Contract revenue minus direct labor, material, equipment, and subcontract cost) ÷ contract revenue × 100
+  how_to_calculate: >
+    Take the final contract value including approved change orders and
+    less any credits or back charges. Subtract job-costed direct labor
+    with its burden of payroll taxes, workers compensation, and
+    benefits, materials delivered to the job, equipment at internal
+    rental rates, subcontracts, permits, and other costs charged to the
+    job. Divide by revenue and express as a percent. Measure on
+    completed projects, and on open ones at the percentage of
+    completion using cost to date against the estimate to complete.
+    Compare the result to the margin in the original estimate to
+    measure slippage.
+  example: >
+    A residential remodeler completes a kitchen for a contract of
+    68,000 dollars plus 4,500 dollars of approved changes, 72,500 in
+    all. Job cost shows 21,800 dollars of burdened labor, 24,600 of
+    materials and cabinets, 12,400 of subcontracts for electrical and
+    plumbing, and 900 of permits and dumpster, a total of 59,700
+    dollars. Gross margin is 12,800 dollars, or 17.7 percent of
+    revenue, against 24 percent in the estimate, and the review finds
+    the cabinet reorder and two extra labor days are the gap.
+  benchmarks:
+    - scope: Single-family home builders
+      value: 20.7 percent
+      note: NAHB Builders' Cost of Doing Business Study, 2025 edition, fiscal year 2023, average across responding builders with mean revenue of 11.3 million dollars; cost of sales includes land and direct and indirect construction cost. Net profit margin was 8.7 percent.
+      source: https://eyeonhousing.org/2025/03/builders-profit-margins-improved-in-2023/
+      source_name: NAHB Eye on Housing, Builders' Profit Margins Improved in 2023 (March 2025)
+    - scope: Residential remodelers
+      value: 29.9 percent
+      note: NAHB Remodelers' Cost of Doing Business Study, 2026 edition, fiscal year 2024, responding remodelers with average revenue of 2.7 million dollars; net profit margin 6.3 percent.
+      source: https://eyeonhousing.org/2026/04/remodelers-saw-profit-margin-gains-in-2024/
+      source_name: NAHB Eye on Housing, Remodelers Saw Profit Margin Gains in 2024 (April 2026)
+    - scope: Construction services, public companies
+      value: 15.5 percent
+      note: US listed construction services companies, gross margin on cost of sales, trailing twelve months to Q2 2026; large general and specialty contractors with heavy subcontract pass-through, so a self-performing trade contractor should read higher.
+      source: https://csimarket.com/Industry/industry_Profitability_Ratios.php?ind=205
+      source_name: CSIMarket, Construction Services industry profitability ratios (Q2 2026)
+  drivers:
+    - name: Estimate accuracy
+      note: The margin is set when the job is priced; a takeoff that misses a quantity or an hourly rate that ignores burden is lost before the crew arrives.
+    - name: Labor productivity
+      note: Crew hours against the estimate is the largest variable on self-performed work, and weather, rework, and waiting on materials all add hours.
+    - name: Material price movement
+      note: Lumber, copper, shingles, and steel bought weeks after the bid at a higher price take the difference out of the job unless the contract escalates.
+    - name: Change order capture
+      note: Extra work done on a verbal request and never billed is pure cost; work priced and signed as a change order carries its own margin.
+    - name: Subcontractor performance
+      note: A sub who is late, remobilizes, or leaves defects for the general to fix adds cost the estimate did not carry.
+    - name: Rework and warranty
+      note: Callbacks and corrections charged back to the job after completion lower the final margin months after it was reported.
+  improve:
+    - name: Estimate from actual job cost history
+      note: Build unit rates and production rates from the last year's completed jobs, and update them each quarter as labor and material costs move.
+    - name: Price and sign every change
+      note: Stop work on out-of-scope requests until a change order with price is signed, and give the crew lead the form to start it.
+    - name: Lock material prices at contract
+      note: Buy out major materials at award or carry an escalation clause so price rises between bid and build stay with the supplier or the owner.
+    - name: Track labor daily against the estimate
+      note: Compare crew hours to the estimate's hours by phase each day so overruns are caught on the job and not on the closeout report.
+    - name: Review every completed job against its estimate
+      note: Hold a short closeout on each project comparing estimated to actual by cost code, and feed the misses back into the estimating database.
+  pitfalls:
+    - name: Unburdened labor in job cost
+      note: Wages without payroll taxes, insurance, and benefits understate labor by 25 to 40 percent and make every job look better than it was.
+    - name: Costs posted to overhead instead of the job
+      note: Small tools, fuel, dump fees, and supervisor time left in overhead inflate the margin and hide the true cost of the work.
+    - name: Margin reported before final costs land
+      note: Late supplier invoices, retainage back charges, and warranty work arrive after the job closes; hold the final margin until the cost code is complete.
+    - name: Markup confused with margin
+      note: A 25 percent markup on cost is a 20 percent margin on price; bidding at the markup and reporting against a margin target overstates the miss.

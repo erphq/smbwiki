@@ -6,3 +6,72 @@ summary: >
   repair.
 unit: percent
 direction: lower
+article:
+  what: >
+    Damage rate counts the share of rental returns that came back needing
+    a damage assessment or an unplanned repair before the unit could go
+    out again. It is the rental company's number, owned by the yard or
+    shop manager who checks in returns, and it separates customer-caused
+    damage from ordinary wear. Operators watch it because every damaged
+    return takes a unit off the available fleet, creates a chargeback or a
+    damage-waiver claim to settle with the customer, and because a rising
+    rate points to the customers, equipment classes or delivery practices
+    that are costing the most.
+  formula: Returns requiring damage assessment or unplanned repair ÷ units returned in the period × 100
+  how_to_calculate: >
+    The denominator is every unit returned in the period, counted per unit
+    when several items come back on one contract. The numerator is returns
+    flagged at check-in as damaged beyond normal wear, whether the customer
+    was charged, the damage waiver absorbed the cost, or the company wrote
+    it off. Fix the threshold in writing: a missing pin or a cracked light
+    counts, ordinary tyre wear and dirt do not. Measure monthly and by
+    equipment class, since compact excavators and aerial lifts damage at
+    very different rates. Track the dollar version alongside it, repair
+    cost from damaged returns divided by rental revenue.
+  example: >
+    An equipment rental branch closes 620 contracts in a month and checks
+    in 740 units. Check-in flags 41 units for damage: 23 charged to the
+    customer, 12 absorbed by the damage waiver the customer bought, and 6
+    written off because the delivery paperwork was never completed. The
+    damage rate is 41 ÷ 740, or 5.5 percent. Compact equipment accounts
+    for 27 of the 41, so the branch reviews its photo-at-delivery process
+    for that class first.
+  benchmarks: []
+  benchmark_note: >
+    No published series reports a damage rate for equipment rental
+    returns. The American Rental Association's performance standards
+    define time utilization, dollar utilization and fleet age but not
+    damage frequency, and the figures that circulate in the trade press
+    are damage-waiver pricing and take-up, not damage incidence. Set the
+    target from the branch's own trailing twelve months by equipment
+    class, and treat any class running above the fleet average as the next
+    process to fix.
+  drivers:
+    - name: Customer and jobsite mix
+      note: Homeowner renters and rough-terrain sites damage more per rental day than contractors on paved commercial work.
+    - name: Delivery and pickup handling
+      note: A share of damage happens on the company's own trucks during loading and tie-down, and it shows up as customer damage unless delivery photos exist.
+    - name: Check-out inspection quality
+      note: Damage that was already on the unit when it left, and was not recorded, becomes undisputed damage on return that nobody can charge for.
+    - name: Equipment class and age
+      note: Older units carry more pre-existing wear that check-in staff misread as damage, and some classes such as scissor lifts take hits by design.
+    - name: Contract length
+      note: Long-term rentals with monthly billing return with more damage per unit and less documentation of when it happened.
+  improve:
+    - name: Photograph condition at delivery and return
+      note: Time-stamped photos on every unit, captured in the rental software, settle most disputes and let the branch charge for what it finds.
+    - name: Train and bill for misuse
+      note: Give operators a short briefing on the unit at delivery and charge cleaning and misuse under the contract, which changes behaviour on the next rental.
+    - name: Price and explain the damage waiver
+      note: A clearly explained waiver raises take-up and moves the cost of ordinary damage into a fee instead of a write-off.
+    - name: Run a check-in checklist per class
+      note: A class-specific list of the ten items that usually break turns a walk-around into a consistent decision on wear versus damage.
+    - name: Call the top offenders
+      note: Rank customers by damaged returns over twelve months and talk to the top five about deposits, waiver or operator training.
+  pitfalls:
+    - name: Wear counted as damage
+      note: Tyre wear, dirt and small scratches on a three-year-old unit are not damage, and counting them inflates the rate and annoys good customers.
+    - name: Only charged damage counted
+      note: Damage the branch ate because the paperwork was missing is still damage; counting only billed cases hides the process failure.
+    - name: Contracts instead of units in the denominator
+      note: A contract with five units and one damaged return reads as 100 percent on a contract basis and 20 percent per unit; use units.

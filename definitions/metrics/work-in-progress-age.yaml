@@ -6,3 +6,72 @@ summary: >
   into an invoice.
 unit: days
 direction: lower
+article:
+  what: >
+    Work-in-progress age counts the days that time and expenses
+    recorded on a client engagement have sat unbilled since the last
+    invoice or delivery. It is the partner's or practice owner's number
+    in an accounting firm, law firm, agency, or consultancy, because
+    every day of unbilled work is payroll already spent with no cash
+    coming back, and old WIP is written down more often than fresh WIP.
+    Clients also read it: an invoice that arrives months after the work
+    is questioned, negotiated, and paid late.
+  formula: Unbilled work in progress at cost or standard value ÷ average daily billings for the period, in days
+  how_to_calculate: >
+    Value the unbilled time and disbursements on every open matter or
+    engagement at standard rates, and divide by average daily billings
+    over the trailing three or twelve months. That gives days of
+    revenue tied up unbilled, the definition used in legal industry
+    lockup reports as realization lockup. The alternative is an aged
+    listing: for each matter, days since the last invoice, weighted by
+    the unbilled balance. Report both a firm-wide figure and an aged
+    schedule in 30, 60, 90, and over 90 day bands. Exclude retainers
+    and fixed-fee milestones billed in advance, and include contingent
+    work separately since it ages by design.
+  example: >
+    A law firm has 310,000 dollars of unbilled time at standard rates
+    on 30 September. Billings over the trailing twelve months were
+    2,920,000 dollars, or 8,000 dollars a day. WIP age is 310,000 ÷
+    8,000, or about 39 days. The aged listing shows 210,000 dollars
+    under 30 days, 60,000 in the 30 to 60 band, and 40,000 over 90
+    days, most of it on two litigation matters where the partner has
+    not released a bill since June.
+  benchmarks: []
+  benchmark_note: >
+    No published figure could be verified at a source that could be
+    fetched for this article. Clio's annual Legal Trends Report
+    publishes a median realization lockup for law firms, and Thomson
+    Reuters and PwC publish lockup figures for larger firms; check the
+    current edition of those reports for your firm size. Set your own
+    target from the billing cycle: a firm that bills monthly should
+    hold WIP age near 30 days or less, and anything over 60 days on a
+    single matter should require a partner explanation.
+  drivers:
+    - name: Billing cadence and partner release
+      note: Monthly billing with prompt partner review keeps age near 30 days; bills held for a partner's review pile up age on every matter.
+    - name: Matter type and fee arrangement
+      note: Litigation and contingent matters carry unbilled work by design, while transactional and compliance work can bill at each milestone.
+    - name: Timekeeping discipline
+      note: Time entered weeks after the work is done ages before it is even visible, and late entries miss the billing run entirely.
+    - name: Pre-bill review and write-downs
+      note: Partners who trim bills at review delay them; a slow negotiation about a discount keeps the whole matter unbilled.
+    - name: Client billing requirements
+      note: Corporate clients with e-billing portals, budget approvals, or quarterly billing terms extend age regardless of the firm's own cadence.
+  improve:
+    - name: Bill on a fixed calendar
+      note: Run pre-bills on the first business day, require partner release within five days, and send every bill by the tenth.
+    - name: Enter time daily
+      note: Same-day timekeeping with a weekly compliance report to partners removes the age hidden in late entries.
+    - name: Bill at milestones for project work
+      note: Agree stage billing in the engagement letter, deliverable by deliverable, so WIP converts to invoices as the work is delivered.
+    - name: Report aged WIP by partner monthly
+      note: A list of matters with unbilled balances over 60 days, by responsible partner, is the fastest way to release held bills.
+    - name: Use interim bills on long matters
+      note: Monthly interim invoices on litigation and large engagements keep age low and give clients smaller, expected bills.
+  pitfalls:
+    - name: Valuing WIP at billed instead of standard rates
+      note: Discounts applied at billing belong in realization; measuring age on already-discounted value blends two problems.
+    - name: Ignoring written-off time
+      note: Time written off silently at billing was old WIP; exclude it from the balance and track it as a write-down to keep age honest.
+    - name: Netting advance retainers against WIP
+      note: A retainer held in trust does not shorten the age of unbilled work; it only changes collection risk, so keep it out of the calculation.

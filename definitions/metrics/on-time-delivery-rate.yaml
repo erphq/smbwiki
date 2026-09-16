@@ -6,3 +6,74 @@ summary: >
   window.
 unit: percent
 direction: higher
+article:
+  what: >
+    On-time delivery rate counts the share of loads that arrived at the
+    consignee inside the window the shipper or receiver agreed to, whether
+    that is a fixed appointment, a two-hour slot or a delivery day. It
+    belongs to whoever promised the delivery: the fleet dispatcher, the
+    broker's operations desk, the courier or moving company owner.
+    Operators watch it because late loads produce chargebacks, lost lanes
+    and dock waits, and because shippers score carriers on it when they
+    award freight for the next year.
+  formula: Loads delivered inside the agreed window ÷ loads delivered in the period × 100
+  how_to_calculate: >
+    The numerator is loads whose recorded delivery time fell inside the
+    agreed window; the denominator is every load delivered in the same
+    period, usually a week or a month. Define the window before counting:
+    an appointment plus or minus fifteen minutes, a scheduled day, or a
+    service standard such as next day by 5 p.m. Use the consignee's signed
+    time or the ELD arrival stamp, and decide whether an early arrival that
+    the receiver refuses counts as late. Exclude loads where the receiver
+    moved the appointment after tender only when the change is documented.
+    Report by customer, lane and driver alongside the fleet total.
+  example: >
+    A regional truckload fleet delivers 1,240 loads in June. Its TMS shows
+    1,153 arrived inside the appointment window, 61 were late by more than
+    the thirty-minute grace, and 26 were late because the receiver changed
+    the appointment after tender without notice. Counting all 87 as late
+    gives 1,153 ÷ 1,240, or 93.0 percent. Excluding the 26 documented
+    receiver changes gives 1,153 ÷ 1,214, or 95.0 percent, which is the
+    figure the fleet reports to that customer with the exception log
+    attached.
+  benchmarks: []
+  benchmark_note: >
+    No government or trade association series publishes an on-time
+    delivery rate for US trucking, couriers or movers; ATRI and ATA publish
+    cost and safety data, and the 95 or 98 percent thresholds in shipper
+    scorecards are contract terms, not survey results. Set the target from
+    the contracts in hand: take the strictest scorecard threshold the
+    business must meet, track the trailing thirteen-week rate by lane and
+    customer on the same definition the shipper uses, and raise the
+    internal target as each exception cause is removed.
+  drivers:
+    - name: Appointment set before transit is checked
+      note: A window agreed before the pickup is confirmed, or tighter than the miles and hours allow, produces a late load before the truck leaves the shipper.
+    - name: Pickup delay carried downstream
+      note: A late departure from the shipper consumes the transit buffer, so the on-time pickup rate is the leading indicator for this number.
+    - name: Transit buffer in the plan
+      note: Loads dispatched with under an hour of slack across a metro delivery area miss on the first traffic incident or weather event.
+    - name: Driver hours-of-service position
+      note: A driver near the 11-hour or 14-hour limit at pickup cannot make an appointment the planner assumed a fresh driver would make.
+    - name: Receiver dock congestion
+      note: Consignees that book every appointment at 8 a.m. create queues, and a truck that arrives on time but checks in late is often recorded as late.
+    - name: Exceptions communicated before arrival
+      note: A load that will be late and is rebooked with the receiver before arrival is usually rescored as on time against the new appointment.
+  improve:
+    - name: Confirm windows against transit at tender
+      note: Check the appointment against miles, hours-of-service and known dock delays before accepting, and push back on the shipper the same day.
+    - name: Require check-calls at fixed milestones
+      note: Take a status at pickup departure, at half of transit and two hours out, so a slipping load is rebooked before it becomes a miss.
+    - name: Assign tight windows to drivers with a full clock
+      note: Dispatch appointment loads to drivers with hours available, and keep them off the last day of a driver's week.
+    - name: Code every late load
+      note: Tag each miss as shipper, receiver, carrier, weather or equipment, then work the largest carrier-caused code each month.
+    - name: Keep a receiver profile
+      note: Record each consignee's check-in rules, average wait and dock behaviour, and plan a buffer per receiver instead of a flat allowance.
+  pitfalls:
+    - name: Gate arrival counted as delivery
+      note: A truck that waited three hours in the yard is on time by the gate stamp and late by the dock stamp; use the definition written in the contract.
+    - name: Disputed loads dropped from the denominator
+      note: Removing every load with a dispute flatters the rate; exclude only documented appointment changes and keep the list where the customer can see it.
+    - name: Service standards blended together
+      note: A day-definite LTL shipment and a fifteen-minute appointment are different promises, so a single rate across both hides where the misses are.

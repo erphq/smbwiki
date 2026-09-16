@@ -5,3 +5,69 @@ summary: >
   Minutes from order fired to order ready.
 unit: minutes
 direction: lower
+article:
+  what: >
+    Ticket time is how long an order sits between the moment it is fired
+    to the line and the moment it is ready to hand off or run. It is the
+    kitchen's and the bar's own speed number, owned by the expo or the
+    shift lead, and it is the part of the guest's wait the back of house
+    controls. A food truck averaging nine minutes serves two thirds of
+    the customers per hour it would at six, and in a full-service
+    restaurant every slow ticket stretches the table turn behind it and
+    the line at the door.
+  formula: Minutes from order fired to order ready, averaged over tickets in the period
+  how_to_calculate: >
+    Use the kitchen display or POS timestamps: fired is when the ticket
+    prints or appears on the screen, ready is when the cook bumps it or
+    expo marks it complete. Average per shift and report the share of
+    tickets over a target, such as ten minutes, alongside the mean.
+    Split by station and by daypart, and in a full-service house count
+    from the fire of each course, not from order entry, or held entrées
+    inflate the number. Coffee shops and bars measure the same thing in
+    seconds from order to hand-off. Peak-hour figures matter more than
+    all-day averages, because the all-day number is mostly quiet hours.
+  example: >
+    A taco truck's kitchen display shows 212 tickets on a Saturday
+    lunch. The sum of fire-to-bump times is 1,590 minutes, an average
+    of 7.5 minutes, and 31 tickets (15 percent) took longer than 12
+    minutes, nearly all between 12:15 and 1:00 when the flat-top backed
+    up. Prepping a second batch of carnitas before the rush and adding a
+    second person on assembly for that 45 minutes brought the next
+    Saturday's peak average to 6 minutes.
+  benchmarks: []
+  benchmark_note: >
+    No published survey reports kitchen ticket time by restaurant type;
+    drive-thru studies time the whole lane from arrival to hand-off,
+    which mixes ordering and payment into the number. Set your own
+    target by pulling a month of fire-to-bump times from the kitchen
+    display, taking the median at peak, and treating the slowest tenth
+    of tickets as the list to fix, station by station.
+  drivers:
+    - name: Prep readiness
+      note: A station that starts the rush without its par of sauces, proteins and garnish spends the rush prepping, and every ticket waits on it.
+    - name: Station bottlenecks
+      note: One fryer or one espresso machine sets the pace for the whole line at peak, whatever the other stations can do.
+    - name: Menu complexity
+      note: Items with many components or long cook times hold the ticket until the slowest piece is done, and a few of them can back up a whole rail.
+    - name: Order arrival pattern
+      note: Twenty tickets in four minutes from a tour bus or an app surge will run long regardless of skill; the size of the peak sets the peak time.
+    - name: Staffing at peak
+      note: The right count on the line for the hour matters more than the day's total hours; one extra pair of hands for the rush changes the number.
+  improve:
+    - name: Prep to par before every peak
+      note: Build par sheets from sales by hour and check them fifteen minutes before the rush so no station is cutting or portioning during it.
+    - name: Simplify or pull slow items at peak
+      note: Move long-cook items to a limited peak menu or an 86 rule during the rush, and bring them back when the rail clears.
+    - name: Add a second station on the bottleneck
+      note: A second flat-top, a second grinder or a second assembly point at the choke station buys more speed than any other change.
+    - name: Batch like items
+      note: Cooks who scan the rail and drop three orders of fries together finish all three sooner than firing them one ticket at a time.
+    - name: Show ticket timers on the screen
+      note: Kitchen displays that color tickets by age let the expo pull the oldest first and give the line a target it can see.
+  pitfalls:
+    - name: Measuring from order entry
+      note: In a full-service house the entrée is held while appetizers are eaten; the clock starts at fire, or the kitchen is blamed for the pacing.
+    - name: All-day averages
+      note: A 5 minute average across the day can hide a 14 minute average at noon; report peak hours on their own.
+    - name: Bumping early to make the number
+      note: Cooks who bump the ticket before the plate is up produce a clean report and a cold line at the pass; audit bump times against hand-off.

@@ -6,3 +6,71 @@ summary: >
   price, and schedule decision.
 unit: days
 direction: lower
+article:
+  what: >
+    Change order cycle time counts the days a proposed change sits open
+    between the moment a changed condition is documented in the field
+    and the moment the owner or general contractor signs off on scope,
+    price, and schedule. It is the general contractor's number, watched
+    by the project manager because every open day is work performed at
+    risk, cash tied up in unapproved labor and material, and a schedule
+    that cannot be re-baselined. Trade contractors read the same number
+    from their side as the time they wait for a signed order from the GC.
+  formula: Signature date of the authorized change order minus date the change condition was first documented, averaged across change orders closed in the period
+  how_to_calculate: >
+    Start the clock at the first written record of the change, usually
+    a field directive, an RFI answer that changes scope, or a signed
+    time and materials tag. Stop it when the executed change order or
+    construction change directive is returned. Report the mean and the
+    median across orders closed in the month, and show the age of
+    orders still open separately so a stuck order does not vanish from
+    the report. Common variants split the total into internal pricing
+    time (documentation to priced proposal) and approval time (proposal
+    to signature), which tells you which side of the desk is slow.
+  example: >
+    A commercial general contractor closes eight change orders in
+    March. Their open periods, documentation to signature, are 14, 22,
+    9, 41, 18, 30, 12, and 26 days, a total of 172 days. Mean cycle
+    time is 172 ÷ 8, or 21.5 days; the median is 20 days. Three
+    orders still open at month end are 35, 52, and 60 days old and are
+    reported as open age alongside the closed figure.
+  benchmarks:
+    - scope: Specialty trade contractors (time waiting on the GC)
+      value: 26 days average from change order request submission to signed change order
+      note: Dodge Construction Network SmartMarket Insight sponsored by Clearstory, published 2026; 43 percent of respondents said approval takes three weeks or more. Read on the sponsor's summary page, which is a vendor site reporting a named Dodge survey.
+      source: https://www.clearstory.build/construction-blog/2026-sc-change-order-report
+      source_name: Dodge Construction Network via Clearstory, Optimizing the Change Order Process for Specialty Trade Contractors (2026)
+    - scope: Specialty trade contractors (internal pricing time)
+      value: 22 days average from a signed T&M tag in the field to a fully priced change order request
+      note: Same Dodge survey; over one third of trade contractors said internal processing takes three weeks or longer. Add the two stages for roughly two months from work performed to authorization.
+      source: https://www.clearstory.build/construction-blog/2026-sc-change-order-report
+      source_name: Dodge Construction Network via Clearstory, Optimizing the Change Order Process for Specialty Trade Contractors (2026)
+  drivers:
+    - name: Pricing turnaround from subcontractors
+      note: A GC cannot price a change until every affected trade returns its quote, so the slowest subcontractor sets the internal clock.
+    - name: Owner and architect approval chain
+      note: Each review step, including a design professional recommendation and an owner signature, adds days; public owners with board approval add weeks.
+    - name: Revision cycles on the proposal
+      note: Proposals bounced back for missing backup, unsupported markups, or schedule justification restart the review and can double the cycle.
+    - name: Contract notice and documentation terms
+      note: Contracts that require notice within a fixed number of days and specific backup formats force earlier documentation and fewer disputes.
+    - name: Volume of small changes
+      note: Dozens of low-dollar changes clog the same review path as large ones, and reviewers batch them, which stretches the average.
+  improve:
+    - name: Log the change on the day it appears
+      note: A dated field directive or T&M tag with photos starts the clock honestly and removes the argument about when the condition arose.
+    - name: Set a fixed pricing window for trades
+      note: Require subcontractor quotes within five working days and escalate silent trades to the project executive on day six.
+    - name: Submit complete packages
+      note: Include labor breakdown, material quotes, equipment, markup per contract, and schedule impact in one package to avoid a revision cycle.
+    - name: Use construction change directives for urgent work
+      note: A directive lets work proceed while price is negotiated, so the schedule does not wait on the signature.
+    - name: Review open orders weekly by age
+      note: A standing list sorted by days open, with the next action and owner named, keeps stale orders from hiding behind new ones.
+  pitfalls:
+    - name: Starting the clock at proposal submission
+      note: Measuring only the approval stage hides the internal pricing delay, which the Dodge survey found is almost as long as the GC review.
+    - name: Averaging only closed orders
+      note: Orders that never close do not enter the average, so a project with many stalled changes can report a short and misleading cycle time.
+    - name: Mixing owner-initiated and field-discovered changes
+      note: Owner-directed scope additions usually price faster because intent is clear; blending them with unforeseen conditions masks a documentation problem.

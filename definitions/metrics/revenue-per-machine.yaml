@@ -5,3 +5,70 @@ summary: >
   Collected cycle revenue divided by installed machines for the period.
 unit: currency
 direction: higher
+article:
+  what: >
+    Revenue per machine is the money a laundromat collected from its
+    washers and dryers divided by the number of machines on the floor
+    for the period. It belongs to the owner, and it is how they tell
+    whether a store is under-used, whether a machine class is earning
+    its floor space, and whether a price change worked. A 40-machine
+    store taking 12,000 dollars a month earns 300 dollars per machine;
+    if the large-capacity washers are at 500 and the top-loaders at 150,
+    the next equipment dollar has an obvious home.
+  formula: Collected machine revenue for the period ÷ machines installed in the period
+  how_to_calculate: >
+    The numerator is coin, card and app revenue actually collected from
+    the machines for the month, excluding wash-dry-fold service, vending
+    and soap sales, which have their own lines. The denominator is
+    machines installed, counted separately for washers and dryers and
+    then by size class, since a 60-pound washer and a 20-pound
+    top-loader earn very differently; a blended store figure is fine for
+    trend and useless for equipment decisions. Machines out of order for
+    the whole month can be excluded, though keeping them in shows the
+    cost of downtime. Turns per day, cycles divided by machines and
+    days, is the same fact in volume terms, and turns times vend price
+    gives revenue.
+  example: >
+    A laundromat with 24 washers and 20 dryers collects 15,840 dollars
+    from machines in September, 9,720 from washers and 6,120 from
+    dryers. Revenue per washer is 9,720 divided by 24, or 405 dollars;
+    per dryer 6,120 divided by 20, or 306 dollars. The six 60-pound
+    washers took 3,960 dollars, or 660 each, at 5.50 dollars a cycle,
+    which is 4.0 turns a day; the ten 20-pound top-loaders took 2,250,
+    or 225 each, at 2.75 dollars, 2.7 turns a day. The small machines
+    are the ones to replace.
+  benchmarks:
+    - scope: Laundromat washers, throughput
+      value: 3 to 8 or more cycles per machine per day
+      note: The Laundry Association's industry overview gives turns per day for washers as the operator's throughput range; revenue per machine follows from turns times vend price. The same page puts dryer income at 40 to 60 percent of washer income. No published dollar figure per machine was found, so this is the closest association figure.
+      source: https://laundryassociation.org/for-investors/industry-overview/
+      source_name: The Laundry Association (Coin Laundry Association), Industry Overview (read September 2026)
+  drivers:
+    - name: Vend price
+      note: Price per cycle multiplies straight into the number, and a 25 cent increase on a machine turning four times a day is 30 dollars a month per machine.
+    - name: Turns per day
+      note: Location, hours open, nearby renter density and competition set how many loads walk in, and the machines cannot earn more than the loads that arrive.
+    - name: Machine mix
+      note: Large-capacity washers earn more per cycle and per square foot; a store heavy in small top-loaders has a low figure however busy it is.
+    - name: Downtime
+      note: A machine out of order for ten days earns nothing for a third of the month, and a store with slow repairs carries several of them at any time.
+    - name: Store condition and attendance
+      note: A clean, attended, well-lit store keeps customers coming back; a dirty one loses turns to the next store on the same road.
+  improve:
+    - name: Price by size and time
+      note: Set vend prices per machine class from its cost and demand, and use card systems to run off-peak pricing that moves loads into empty hours.
+    - name: Replace the lowest earners
+      note: Rank machines by monthly revenue and swap the bottom tier of top-loaders for large-capacity front-loaders, which earn more per cycle and per square foot.
+    - name: Fix machines fast
+      note: Keep common parts on hand and a repair log with dates, so downtime per machine is known and the slowest repairs get attention.
+    - name: Add card and app payment
+      note: Card readers remove the quarters barrier, allow higher vend prices in small steps, and produce cycle counts per machine without opening a coin box.
+    - name: Extend hours where turns justify
+      note: A store closing at 9 p.m. with a queue at 8 is leaving cycles unsold; test later hours with the card system's hourly data before committing.
+  pitfalls:
+    - name: Including wash-dry-fold and vending
+      note: Service and vending revenue belong to their own lines; adding them makes the machines look busier than they are and hides a pricing problem.
+    - name: One blended figure across sizes
+      note: A store average of 350 dollars per machine can be 700 on the big washers and 150 on the small, and only the split says what to buy next.
+    - name: Counting broken machines as installed
+      note: Excluding or including out-of-order machines changes the number; pick one rule, state it, and track downtime on its own.
